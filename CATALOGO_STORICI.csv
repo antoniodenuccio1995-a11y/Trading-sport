@@ -1,0 +1,41 @@
+﻿Paese,Lega,Stagione,Fonte originale,Fonte alternativa (se disponibile),Dati HT alternativi
+Paesi Bassi,Eredivisie,2021-22,https://www.football-data.co.uk/mmz4281/2122/N1.csv,https://raw.githubusercontent.com/footballcsv/cache.footballdata/master/2021-22/nl.1.csv,generalmente disponibili dove pubblicati
+Paesi Bassi,Eredivisie,2022-23,https://www.football-data.co.uk/mmz4281/2223/N1.csv,https://raw.githubusercontent.com/footballcsv/cache.footballdata/master/2022-23/nl.1.csv,generalmente disponibili dove pubblicati
+Paesi Bassi,Eredivisie,2023-24,https://www.football-data.co.uk/mmz4281/2324/N1.csv,https://raw.githubusercontent.com/footballcsv/cache.footballdata/master/2023-24/nl.1.csv,generalmente disponibili dove pubblicati
+Paesi Bassi,Eredivisie,2024-25,https://www.football-data.co.uk/mmz4281/2425/N1.csv,,generalmente disponibili dove pubblicati
+Paesi Bassi,Eredivisie,2025-26,https://www.football-data.co.uk/mmz4281/2526/N1.csv,,generalmente disponibili dove pubblicati
+Portogallo,Primeira Liga,2021-22,https://www.football-data.co.uk/mmz4281/2122/P1.csv,https://raw.githubusercontent.com/footballcsv/cache.footballdata/master/2021-22/pt.1.csv,generalmente disponibili dove pubblicati
+Portogallo,Primeira Liga,2022-23,https://www.football-data.co.uk/mmz4281/2223/P1.csv,https://raw.githubusercontent.com/footballcsv/cache.footballdata/master/2022-23/pt.1.csv,generalmente disponibili dove pubblicati
+Portogallo,Primeira Liga,2023-24,https://www.football-data.co.uk/mmz4281/2324/P1.csv,https://raw.githubusercontent.com/footballcsv/cache.footballdata/master/2023-24/pt.1.csv,generalmente disponibili dove pubblicati
+Portogallo,Primeira Liga,2024-25,https://www.football-data.co.uk/mmz4281/2425/P1.csv,,generalmente disponibili dove pubblicati
+Portogallo,Primeira Liga,2025-26,https://www.football-data.co.uk/mmz4281/2526/P1.csv,,generalmente disponibili dove pubblicati
+Danimarca,Superliga Danimarca,2021-22,https://www.football-data.co.uk/new/DNK.csv,https://raw.githubusercontent.com/footballcsv/cache.footballdata/master/2021-22/dk.1.csv,non disponibili
+Danimarca,Superliga Danimarca,2022-23,https://www.football-data.co.uk/new/DNK.csv,https://raw.githubusercontent.com/footballcsv/cache.footballdata/master/2022-23/dk.1.csv,non disponibili
+Danimarca,Superliga Danimarca,2023-24,https://www.football-data.co.uk/new/DNK.csv,https://raw.githubusercontent.com/footballcsv/cache.footballdata/master/2023-24/dk.1.csv,non disponibili
+Danimarca,Superliga Danimarca,2024-25,https://www.football-data.co.uk/new/DNK.csv,,non disponibili
+Danimarca,Superliga Danimarca,2025-26,https://www.football-data.co.uk/new/DNK.csv,,non disponibili
+Romania,SuperLiga Romania,2021-22,https://www.football-data.co.uk/new/ROU.csv,https://raw.githubusercontent.com/footballcsv/cache.footballdata/master/2021-22/ro.1.csv,non disponibili
+Romania,SuperLiga Romania,2022-23,https://www.football-data.co.uk/new/ROU.csv,https://raw.githubusercontent.com/footballcsv/cache.footballdata/master/2022-23/ro.1.csv,non disponibili
+Romania,SuperLiga Romania,2023-24,https://www.football-data.co.uk/new/ROU.csv,https://raw.githubusercontent.com/footballcsv/cache.footballdata/master/2023-24/ro.1.csv,non disponibili
+Romania,SuperLiga Romania,2024-25,https://www.football-data.co.uk/new/ROU.csv,,non disponibili
+Romania,SuperLiga Romania,2025-26,https://www.football-data.co.uk/new/ROU.csv,,non disponibili
+Spagna,La Liga,2021-22,https://www.football-data.co.uk/mmz4281/2122/SP1.csv,https://raw.githubusercontent.com/footballcsv/cache.footballdata/master/2021-22/es.1.csv,generalmente disponibili dove pubblicati
+Spagna,La Liga,2022-23,https://www.football-data.co.uk/mmz4281/2223/SP1.csv,https://raw.githubusercontent.com/footballcsv/cache.footballdata/master/2022-23/es.1.csv,generalmente disponibili dove pubblicati
+Spagna,La Liga,2023-24,https://www.football-data.co.uk/mmz4281/2324/SP1.csv,https://raw.githubusercontent.com/footballcsv/cache.footballdata/master/2023-24/es.1.csv,generalmente disponibili dove pubblicati
+Spagna,La Liga,2024-25,https://www.football-data.co.uk/mmz4281/2425/SP1.csv,,generalmente disponibili dove pubblicati
+Spagna,La Liga,2025-26,https://www.football-data.co.uk/mmz4281/2526/SP1.csv,,generalmente disponibili dove pubblicati
+Spagna,Segunda División,2021-22,https://www.football-data.co.uk/mmz4281/2122/SP2.csv,https://raw.githubusercontent.com/footballcsv/cache.footballdata/master/2021-22/es.2.csv,generalmente disponibili dove pubblicati
+Spagna,Segunda División,2022-23,https://www.football-data.co.uk/mmz4281/2223/SP2.csv,https://raw.githubusercontent.com/footballcsv/cache.footballdata/master/2022-23/es.2.csv,generalmente disponibili dove pubblicati
+Spagna,Segunda División,2023-24,https://www.football-data.co.uk/mmz4281/2324/SP2.csv,https://raw.githubusercontent.com/footballcsv/cache.footballdata/master/2023-24/es.2.csv,generalmente disponibili dove pubblicati
+Spagna,Segunda División,2024-25,https://www.football-data.co.uk/mmz4281/2425/SP2.csv,,generalmente disponibili dove pubblicati
+Spagna,Segunda División,2025-26,https://www.football-data.co.uk/mmz4281/2526/SP2.csv,,generalmente disponibili dove pubblicati
+Francia,Ligue 1,2021-22,https://www.football-data.co.uk/mmz4281/2122/F1.csv,https://raw.githubusercontent.com/footballcsv/cache.footballdata/master/2021-22/fr.1.csv,generalmente disponibili dove pubblicati
+Francia,Ligue 1,2022-23,https://www.football-data.co.uk/mmz4281/2223/F1.csv,https://raw.githubusercontent.com/footballcsv/cache.footballdata/master/2022-23/fr.1.csv,generalmente disponibili dove pubblicati
+Francia,Ligue 1,2023-24,https://www.football-data.co.uk/mmz4281/2324/F1.csv,https://raw.githubusercontent.com/footballcsv/cache.footballdata/master/2023-24/fr.1.csv,generalmente disponibili dove pubblicati
+Francia,Ligue 1,2024-25,https://www.football-data.co.uk/mmz4281/2425/F1.csv,,generalmente disponibili dove pubblicati
+Francia,Ligue 1,2025-26,https://www.football-data.co.uk/mmz4281/2526/F1.csv,,generalmente disponibili dove pubblicati
+Francia,Ligue 2,2021-22,https://www.football-data.co.uk/mmz4281/2122/F2.csv,https://raw.githubusercontent.com/footballcsv/cache.footballdata/master/2021-22/fr.2.csv,generalmente disponibili dove pubblicati
+Francia,Ligue 2,2022-23,https://www.football-data.co.uk/mmz4281/2223/F2.csv,https://raw.githubusercontent.com/footballcsv/cache.footballdata/master/2022-23/fr.2.csv,generalmente disponibili dove pubblicati
+Francia,Ligue 2,2023-24,https://www.football-data.co.uk/mmz4281/2324/F2.csv,https://raw.githubusercontent.com/footballcsv/cache.footballdata/master/2023-24/fr.2.csv,generalmente disponibili dove pubblicati
+Francia,Ligue 2,2024-25,https://www.football-data.co.uk/mmz4281/2425/F2.csv,,generalmente disponibili dove pubblicati
+Francia,Ligue 2,2025-26,https://www.football-data.co.uk/mmz4281/2526/F2.csv,,generalmente disponibili dove pubblicati
