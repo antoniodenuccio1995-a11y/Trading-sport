@@ -1,0 +1,1873 @@
+[
+  {
+    "id": "club:ger-bayern",
+    "canonicalName": "Bayern Munich",
+    "observedAlternativeNames": [
+      "Bayern Munich",
+      "Bayern München",
+      "FC Bayern München"
+    ],
+    "evidence": "Explicit multilingual club identity, Football-Data / OpenFootball",
+    "sources": [
+      {
+        "league": "Bundesliga",
+        "name": "Bayern Munich",
+        "source": "D1_2021.csv",
+        "sourceId": null
+      },
+      {
+        "league": "Bundesliga",
+        "name": "Bayern Munich",
+        "source": "D1_2022.csv",
+        "sourceId": null
+      },
+      {
+        "league": "Bundesliga",
+        "name": "Bayern Munich",
+        "source": "D1_2023.csv",
+        "sourceId": null
+      },
+      {
+        "league": "Bundesliga",
+        "name": "Bayern Munich",
+        "source": "D1_2024.csv",
+        "sourceId": null
+      },
+      {
+        "league": "Bundesliga",
+        "name": "Bayern Munich",
+        "source": "D1_2025.csv",
+        "sourceId": null
+      },
+      {
+        "league": "Champions League",
+        "name": "Bayern München",
+        "source": "champions/2021-22/cl.txt",
+        "sourceId": null
+      },
+      {
+        "league": "Champions League",
+        "name": "Bayern München",
+        "source": "champions/2022-23/cl.txt",
+        "sourceId": null
+      },
+      {
+        "league": "Champions League",
+        "name": "FC Bayern München",
+        "source": "champions/2023-24/cl.txt",
+        "sourceId": null
+      },
+      {
+        "league": "Champions League",
+        "name": "FC Bayern München",
+        "source": "champions/2024-25/cl.txt",
+        "sourceId": null
+      },
+      {
+        "league": "Champions League",
+        "name": "FC Bayern München",
+        "source": "champions/2025-26/cl.txt",
+        "sourceId": null
+      }
+    ]
+  },
+  {
+    "id": "club:ger-dortmund",
+    "canonicalName": "Dortmund",
+    "observedAlternativeNames": [
+      "Dortmund",
+      "Borussia Dortmund"
+    ],
+    "evidence": "Explicit club identity, Football-Data / OpenFootball",
+    "sources": [
+      {
+        "league": "Bundesliga",
+        "name": "Dortmund",
+        "source": "D1_2021.csv",
+        "sourceId": null
+      },
+      {
+        "league": "Bundesliga",
+        "name": "Dortmund",
+        "source": "D1_2022.csv",
+        "sourceId": null
+      },
+      {
+        "league": "Bundesliga",
+        "name": "Dortmund",
+        "source": "D1_2023.csv",
+        "sourceId": null
+      },
+      {
+        "league": "Bundesliga",
+        "name": "Dortmund",
+        "source": "D1_2024.csv",
+        "sourceId": null
+      },
+      {
+        "league": "Bundesliga",
+        "name": "Dortmund",
+        "source": "D1_2025.csv",
+        "sourceId": null
+      },
+      {
+        "league": "Champions League",
+        "name": "Borussia Dortmund",
+        "source": "champions/2021-22/cl.txt",
+        "sourceId": null
+      },
+      {
+        "league": "Champions League",
+        "name": "Borussia Dortmund",
+        "source": "champions/2022-23/cl.txt",
+        "sourceId": null
+      },
+      {
+        "league": "Champions League",
+        "name": "Borussia Dortmund",
+        "source": "champions/2023-24/cl.txt",
+        "sourceId": null
+      },
+      {
+        "league": "Champions League",
+        "name": "Borussia Dortmund",
+        "source": "champions/2024-25/cl.txt",
+        "sourceId": null
+      },
+      {
+        "league": "Champions League",
+        "name": "Borussia Dortmund",
+        "source": "champions/2025-26/cl.txt",
+        "sourceId": null
+      }
+    ]
+  },
+  {
+    "id": "club:ger-leverkusen",
+    "canonicalName": "Leverkusen",
+    "observedAlternativeNames": [
+      "Leverkusen",
+      "Bayer 04 Leverkusen",
+      "Bayer Leverkusen"
+    ],
+    "evidence": "Explicit club identity, Football-Data / OpenFootball",
+    "sources": [
+      {
+        "league": "Bundesliga",
+        "name": "Leverkusen",
+        "source": "D1_2021.csv",
+        "sourceId": null
+      },
+      {
+        "league": "Bundesliga",
+        "name": "Leverkusen",
+        "source": "D1_2022.csv",
+        "sourceId": null
+      },
+      {
+        "league": "Bundesliga",
+        "name": "Leverkusen",
+        "source": "D1_2023.csv",
+        "sourceId": null
+      },
+      {
+        "league": "Bundesliga",
+        "name": "Leverkusen",
+        "source": "D1_2024.csv",
+        "sourceId": null
+      },
+      {
+        "league": "Bundesliga",
+        "name": "Leverkusen",
+        "source": "D1_2025.csv",
+        "sourceId": null
+      },
+      {
+        "league": "Champions League",
+        "name": "Bayer 04 Leverkusen",
+        "source": "champions/2024-25/cl.txt",
+        "sourceId": null
+      },
+      {
+        "league": "Champions League",
+        "name": "Bayer 04 Leverkusen",
+        "source": "champions/2025-26/cl.txt",
+        "sourceId": null
+      },
+      {
+        "league": "Champions League",
+        "name": "Bayer Leverkusen",
+        "source": "champions/2022-23/cl.txt",
+        "sourceId": null
+      }
+    ]
+  },
+  {
+    "id": "club:ita-milan",
+    "canonicalName": "Milan",
+    "observedAlternativeNames": [
+      "AC Milan",
+      "Milan"
+    ],
+    "evidence": "Explicit review: Football-Data / OpenFootball 2021–2025",
+    "sources": [
+      {
+        "league": "Champions League",
+        "name": "AC Milan",
+        "source": "champions/2021-22/cl.txt",
+        "sourceId": null
+      },
+      {
+        "league": "Champions League",
+        "name": "AC Milan",
+        "source": "champions/2022-23/cl.txt",
+        "sourceId": null
+      },
+      {
+        "league": "Champions League",
+        "name": "AC Milan",
+        "source": "champions/2023-24/cl.txt",
+        "sourceId": null
+      },
+      {
+        "league": "Champions League",
+        "name": "AC Milan",
+        "source": "champions/2024-25/cl.txt",
+        "sourceId": null
+      },
+      {
+        "league": "Serie A",
+        "name": "Milan",
+        "source": "I1_2021.csv",
+        "sourceId": null
+      },
+      {
+        "league": "Serie A",
+        "name": "Milan",
+        "source": "I1_2022.csv",
+        "sourceId": null
+      },
+      {
+        "league": "Serie A",
+        "name": "Milan",
+        "source": "I1_2023.csv",
+        "sourceId": null
+      },
+      {
+        "league": "Serie A",
+        "name": "Milan",
+        "source": "I1_2024.csv",
+        "sourceId": null
+      },
+      {
+        "league": "Serie A",
+        "name": "Milan",
+        "source": "I1_2025.csv",
+        "sourceId": null
+      }
+    ]
+  },
+  {
+    "id": "club:ned-ajax",
+    "canonicalName": "Ajax",
+    "observedAlternativeNames": [
+      "AFC Ajax",
+      "Ajax"
+    ],
+    "evidence": "explicit club name, source Football-Data/OpenFootball",
+    "sources": [
+      {
+        "league": "Champions League",
+        "name": "AFC Ajax",
+        "source": "champions/2021-22/cl.txt",
+        "sourceId": null
+      },
+      {
+        "league": "Champions League",
+        "name": "AFC Ajax",
+        "source": "champions/2022-23/cl.txt",
+        "sourceId": null
+      },
+      {
+        "league": "Champions League",
+        "name": "AFC Ajax",
+        "source": "champions/2025-26/cl.txt",
+        "sourceId": null
+      },
+      {
+        "league": "Eredivisie",
+        "name": "Ajax",
+        "source": "N1_2021.csv",
+        "sourceId": null
+      },
+      {
+        "league": "Eredivisie",
+        "name": "Ajax",
+        "source": "N1_2022.csv",
+        "sourceId": null
+      },
+      {
+        "league": "Eredivisie",
+        "name": "Ajax",
+        "source": "N1_2023.csv",
+        "sourceId": null
+      },
+      {
+        "league": "Eredivisie",
+        "name": "Ajax",
+        "source": "N1_2024.csv",
+        "sourceId": null
+      },
+      {
+        "league": "Eredivisie",
+        "name": "Ajax",
+        "source": "N1_2025.csv",
+        "sourceId": null
+      }
+    ]
+  },
+  {
+    "id": "club:fra-monaco",
+    "canonicalName": "Monaco",
+    "observedAlternativeNames": [
+      "AS Monaco FC",
+      "Monaco"
+    ],
+    "evidence": "Explicit Monaco club identity; French league and MCO country tag in OpenFootball",
+    "sources": [
+      {
+        "league": "Champions League",
+        "name": "AS Monaco FC",
+        "source": "champions/2024-25/cl.txt",
+        "sourceId": null
+      },
+      {
+        "league": "Champions League",
+        "name": "AS Monaco FC",
+        "source": "champions/2025-26/cl.txt",
+        "sourceId": null
+      },
+      {
+        "league": "Ligue 1",
+        "name": "Monaco",
+        "source": "F1_2021.csv",
+        "sourceId": null
+      },
+      {
+        "league": "Ligue 1",
+        "name": "Monaco",
+        "source": "F1_2022.csv",
+        "sourceId": null
+      },
+      {
+        "league": "Ligue 1",
+        "name": "Monaco",
+        "source": "F1_2023.csv",
+        "sourceId": null
+      },
+      {
+        "league": "Ligue 1",
+        "name": "Monaco",
+        "source": "F1_2024.csv",
+        "sourceId": null
+      },
+      {
+        "league": "Ligue 1",
+        "name": "Monaco",
+        "source": "F1_2025.csv",
+        "sourceId": null
+      }
+    ]
+  },
+  {
+    "id": "club:eng-arsenal",
+    "canonicalName": "Arsenal",
+    "observedAlternativeNames": [
+      "Arsenal FC",
+      "Arsenal"
+    ],
+    "evidence": "Explicit review: Football-Data / OpenFootball 2021–2025",
+    "sources": [
+      {
+        "league": "Champions League",
+        "name": "Arsenal FC",
+        "source": "champions/2023-24/cl.txt",
+        "sourceId": null
+      },
+      {
+        "league": "Champions League",
+        "name": "Arsenal FC",
+        "source": "champions/2024-25/cl.txt",
+        "sourceId": null
+      },
+      {
+        "league": "Champions League",
+        "name": "Arsenal FC",
+        "source": "champions/2025-26/cl.txt",
+        "sourceId": null
+      },
+      {
+        "league": "Premier League",
+        "name": "Arsenal",
+        "source": "E0_2021.csv",
+        "sourceId": null
+      },
+      {
+        "league": "Premier League",
+        "name": "Arsenal",
+        "source": "E0_2022.csv",
+        "sourceId": null
+      },
+      {
+        "league": "Premier League",
+        "name": "Arsenal",
+        "source": "E0_2023.csv",
+        "sourceId": null
+      },
+      {
+        "league": "Premier League",
+        "name": "Arsenal",
+        "source": "E0_2024.csv",
+        "sourceId": null
+      },
+      {
+        "league": "Premier League",
+        "name": "Arsenal",
+        "source": "E0_2025.csv",
+        "sourceId": null
+      }
+    ]
+  },
+  {
+    "id": "club:eng-aston-villa",
+    "canonicalName": "Aston Villa",
+    "observedAlternativeNames": [
+      "Aston Villa FC",
+      "Aston Villa"
+    ],
+    "evidence": "Explicit review: Football-Data / OpenFootball 2021–2025",
+    "sources": [
+      {
+        "league": "Champions League",
+        "name": "Aston Villa FC",
+        "source": "champions/2024-25/cl.txt",
+        "sourceId": null
+      },
+      {
+        "league": "Premier League",
+        "name": "Aston Villa",
+        "source": "E0_2021.csv",
+        "sourceId": null
+      },
+      {
+        "league": "Premier League",
+        "name": "Aston Villa",
+        "source": "E0_2022.csv",
+        "sourceId": null
+      },
+      {
+        "league": "Premier League",
+        "name": "Aston Villa",
+        "source": "E0_2023.csv",
+        "sourceId": null
+      },
+      {
+        "league": "Premier League",
+        "name": "Aston Villa",
+        "source": "E0_2024.csv",
+        "sourceId": null
+      },
+      {
+        "league": "Premier League",
+        "name": "Aston Villa",
+        "source": "E0_2025.csv",
+        "sourceId": null
+      }
+    ]
+  },
+  {
+    "id": "club:ita-atalanta",
+    "canonicalName": "Atalanta",
+    "observedAlternativeNames": [
+      "Atalanta",
+      "Atalanta BC"
+    ],
+    "evidence": "Explicit review: Football-Data / OpenFootball 2021–2025",
+    "sources": [
+      {
+        "league": "Champions League",
+        "name": "Atalanta",
+        "source": "champions/2021-22/cl.txt",
+        "sourceId": null
+      },
+      {
+        "league": "Champions League",
+        "name": "Atalanta BC",
+        "source": "champions/2024-25/cl.txt",
+        "sourceId": null
+      },
+      {
+        "league": "Champions League",
+        "name": "Atalanta BC",
+        "source": "champions/2025-26/cl.txt",
+        "sourceId": null
+      },
+      {
+        "league": "Serie A",
+        "name": "Atalanta",
+        "source": "I1_2021.csv",
+        "sourceId": null
+      },
+      {
+        "league": "Serie A",
+        "name": "Atalanta",
+        "source": "I1_2022.csv",
+        "sourceId": null
+      },
+      {
+        "league": "Serie A",
+        "name": "Atalanta",
+        "source": "I1_2023.csv",
+        "sourceId": null
+      },
+      {
+        "league": "Serie A",
+        "name": "Atalanta",
+        "source": "I1_2024.csv",
+        "sourceId": null
+      },
+      {
+        "league": "Serie A",
+        "name": "Atalanta",
+        "source": "I1_2025.csv",
+        "sourceId": null
+      }
+    ]
+  },
+  {
+    "id": "club:esp-atletico-madrid",
+    "canonicalName": "Ath Madrid",
+    "observedAlternativeNames": [
+      "Atlético Madrid",
+      "Club Atlético de Madrid",
+      "Ath Madrid"
+    ],
+    "evidence": "Explicit club identity, not a similarity rule",
+    "sources": [
+      {
+        "league": "Champions League",
+        "name": "Atlético Madrid",
+        "source": "champions/2021-22/cl.txt",
+        "sourceId": null
+      },
+      {
+        "league": "Champions League",
+        "name": "Atlético Madrid",
+        "source": "champions/2022-23/cl.txt",
+        "sourceId": null
+      },
+      {
+        "league": "Champions League",
+        "name": "Club Atlético de Madrid",
+        "source": "champions/2023-24/cl.txt",
+        "sourceId": null
+      },
+      {
+        "league": "Champions League",
+        "name": "Club Atlético de Madrid",
+        "source": "champions/2024-25/cl.txt",
+        "sourceId": null
+      },
+      {
+        "league": "Champions League",
+        "name": "Club Atlético de Madrid",
+        "source": "champions/2025-26/cl.txt",
+        "sourceId": null
+      },
+      {
+        "league": "La Liga",
+        "name": "Ath Madrid",
+        "source": "SP1_2021.csv",
+        "sourceId": null
+      },
+      {
+        "league": "La Liga",
+        "name": "Ath Madrid",
+        "source": "SP1_2022.csv",
+        "sourceId": null
+      },
+      {
+        "league": "La Liga",
+        "name": "Ath Madrid",
+        "source": "SP1_2023.csv",
+        "sourceId": null
+      },
+      {
+        "league": "La Liga",
+        "name": "Ath Madrid",
+        "source": "SP1_2024.csv",
+        "sourceId": null
+      },
+      {
+        "league": "La Liga",
+        "name": "Ath Madrid",
+        "source": "SP1_2025.csv",
+        "sourceId": null
+      }
+    ]
+  },
+  {
+    "id": "club:tur-besiktas",
+    "canonicalName": "Besiktas",
+    "observedAlternativeNames": [
+      "Beşiktaş",
+      "Besiktas"
+    ],
+    "evidence": "Explicit Turkish club identity; exact listed accent variants",
+    "sources": [
+      {
+        "league": "Champions League",
+        "name": "Beşiktaş",
+        "source": "champions/2021-22/cl.txt",
+        "sourceId": null
+      },
+      {
+        "league": "Süper Lig",
+        "name": "Besiktas",
+        "source": "T1_2021.csv",
+        "sourceId": null
+      },
+      {
+        "league": "Süper Lig",
+        "name": "Besiktas",
+        "source": "T1_2022.csv",
+        "sourceId": null
+      },
+      {
+        "league": "Süper Lig",
+        "name": "Besiktas",
+        "source": "T1_2023.csv",
+        "sourceId": null
+      },
+      {
+        "league": "Süper Lig",
+        "name": "Besiktas",
+        "source": "T1_2024.csv",
+        "sourceId": null
+      },
+      {
+        "league": "Süper Lig",
+        "name": "Besiktas",
+        "source": "T1_2025.csv",
+        "sourceId": null
+      }
+    ]
+  },
+  {
+    "id": "club:eng-chelsea",
+    "canonicalName": "Chelsea",
+    "observedAlternativeNames": [
+      "Chelsea FC",
+      "Chelsea"
+    ],
+    "evidence": "Explicit review: Football-Data / OpenFootball 2021–2025",
+    "sources": [
+      {
+        "league": "Champions League",
+        "name": "Chelsea FC",
+        "source": "champions/2021-22/cl.txt",
+        "sourceId": null
+      },
+      {
+        "league": "Champions League",
+        "name": "Chelsea FC",
+        "source": "champions/2022-23/cl.txt",
+        "sourceId": null
+      },
+      {
+        "league": "Champions League",
+        "name": "Chelsea FC",
+        "source": "champions/2025-26/cl.txt",
+        "sourceId": null
+      },
+      {
+        "league": "Premier League",
+        "name": "Chelsea",
+        "source": "E0_2021.csv",
+        "sourceId": null
+      },
+      {
+        "league": "Premier League",
+        "name": "Chelsea",
+        "source": "E0_2022.csv",
+        "sourceId": null
+      },
+      {
+        "league": "Premier League",
+        "name": "Chelsea",
+        "source": "E0_2023.csv",
+        "sourceId": null
+      },
+      {
+        "league": "Premier League",
+        "name": "Chelsea",
+        "source": "E0_2024.csv",
+        "sourceId": null
+      },
+      {
+        "league": "Premier League",
+        "name": "Chelsea",
+        "source": "E0_2025.csv",
+        "sourceId": null
+      }
+    ]
+  },
+  {
+    "id": "club:hrv-dinamo-zagreb",
+    "canonicalName": "Dinamo Zagreb",
+    "observedAlternativeNames": [
+      "Dinamo Zagreb",
+      "GNK Dinamo Zagreb"
+    ],
+    "evidence": "Explicit club identity; no merge with other Dinamo clubs",
+    "sources": [
+      {
+        "league": "Champions League",
+        "name": "Dinamo Zagreb",
+        "source": "champions/2022-23/cl.txt",
+        "sourceId": null
+      },
+      {
+        "league": "Champions League",
+        "name": "GNK Dinamo Zagreb",
+        "source": "champions/2024-25/cl.txt",
+        "sourceId": null
+      }
+    ]
+  },
+  {
+    "id": "club:esp-barcelona",
+    "canonicalName": "Barcelona",
+    "observedAlternativeNames": [
+      "FC Barcelona",
+      "Barcelona"
+    ],
+    "evidence": "Explicit review: Football-Data / OpenFootball 2021–2025",
+    "sources": [
+      {
+        "league": "Champions League",
+        "name": "FC Barcelona",
+        "source": "champions/2021-22/cl.txt",
+        "sourceId": null
+      },
+      {
+        "league": "Champions League",
+        "name": "FC Barcelona",
+        "source": "champions/2022-23/cl.txt",
+        "sourceId": null
+      },
+      {
+        "league": "Champions League",
+        "name": "FC Barcelona",
+        "source": "champions/2023-24/cl.txt",
+        "sourceId": null
+      },
+      {
+        "league": "Champions League",
+        "name": "FC Barcelona",
+        "source": "champions/2024-25/cl.txt",
+        "sourceId": null
+      },
+      {
+        "league": "Champions League",
+        "name": "FC Barcelona",
+        "source": "champions/2025-26/cl.txt",
+        "sourceId": null
+      },
+      {
+        "league": "La Liga",
+        "name": "Barcelona",
+        "source": "SP1_2021.csv",
+        "sourceId": null
+      },
+      {
+        "league": "La Liga",
+        "name": "Barcelona",
+        "source": "SP1_2022.csv",
+        "sourceId": null
+      },
+      {
+        "league": "La Liga",
+        "name": "Barcelona",
+        "source": "SP1_2023.csv",
+        "sourceId": null
+      },
+      {
+        "league": "La Liga",
+        "name": "Barcelona",
+        "source": "SP1_2024.csv",
+        "sourceId": null
+      },
+      {
+        "league": "La Liga",
+        "name": "Barcelona",
+        "source": "SP1_2025.csv",
+        "sourceId": null
+      }
+    ]
+  },
+  {
+    "id": "club:ita-inter",
+    "canonicalName": "Inter",
+    "observedAlternativeNames": [
+      "FC Internazionale Milano",
+      "Inter"
+    ],
+    "evidence": "TA-DATA-002 §3.1 / baseline; OpenFootball 2024/25",
+    "sources": [
+      {
+        "league": "Champions League",
+        "name": "FC Internazionale Milano",
+        "source": "champions/2023-24/cl.txt",
+        "sourceId": null
+      },
+      {
+        "league": "Champions League",
+        "name": "FC Internazionale Milano",
+        "source": "champions/2024-25/cl.txt",
+        "sourceId": null
+      },
+      {
+        "league": "Champions League",
+        "name": "FC Internazionale Milano",
+        "source": "champions/2025-26/cl.txt",
+        "sourceId": null
+      },
+      {
+        "league": "Champions League",
+        "name": "Inter",
+        "source": "champions/2021-22/cl.txt",
+        "sourceId": null
+      },
+      {
+        "league": "Champions League",
+        "name": "Inter",
+        "source": "champions/2022-23/cl.txt",
+        "sourceId": null
+      },
+      {
+        "league": "Serie A",
+        "name": "Inter",
+        "source": "I1_2021.csv",
+        "sourceId": null
+      },
+      {
+        "league": "Serie A",
+        "name": "Inter",
+        "source": "I1_2022.csv",
+        "sourceId": null
+      },
+      {
+        "league": "Serie A",
+        "name": "Inter",
+        "source": "I1_2023.csv",
+        "sourceId": null
+      },
+      {
+        "league": "Serie A",
+        "name": "Inter",
+        "source": "I1_2024.csv",
+        "sourceId": null
+      },
+      {
+        "league": "Serie A",
+        "name": "Inter",
+        "source": "I1_2025.csv",
+        "sourceId": null
+      }
+    ]
+  },
+  {
+    "id": "club:prt-porto",
+    "canonicalName": "Porto",
+    "observedAlternativeNames": [
+      "FC Porto",
+      "Porto"
+    ],
+    "evidence": "Explicit review: Football-Data / OpenFootball 2021–2025",
+    "sources": [
+      {
+        "league": "Champions League",
+        "name": "FC Porto",
+        "source": "champions/2021-22/cl.txt",
+        "sourceId": null
+      },
+      {
+        "league": "Champions League",
+        "name": "FC Porto",
+        "source": "champions/2022-23/cl.txt",
+        "sourceId": null
+      },
+      {
+        "league": "Champions League",
+        "name": "FC Porto",
+        "source": "champions/2023-24/cl.txt",
+        "sourceId": null
+      },
+      {
+        "league": "Primeira Liga",
+        "name": "Porto",
+        "source": "P1_2021.csv",
+        "sourceId": null
+      },
+      {
+        "league": "Primeira Liga",
+        "name": "Porto",
+        "source": "P1_2022.csv",
+        "sourceId": null
+      },
+      {
+        "league": "Primeira Liga",
+        "name": "Porto",
+        "source": "P1_2023.csv",
+        "sourceId": null
+      },
+      {
+        "league": "Primeira Liga",
+        "name": "Porto",
+        "source": "P1_2024.csv",
+        "sourceId": null
+      },
+      {
+        "league": "Primeira Liga",
+        "name": "Porto",
+        "source": "P1_2025.csv",
+        "sourceId": null
+      }
+    ]
+  },
+  {
+    "id": "club:ned-feyenoord",
+    "canonicalName": "Feyenoord",
+    "observedAlternativeNames": [
+      "Feyenoord Rotterdam",
+      "Feyenoord"
+    ],
+    "evidence": "Explicit club identity, Football-Data / OpenFootball",
+    "sources": [
+      {
+        "league": "Champions League",
+        "name": "Feyenoord Rotterdam",
+        "source": "champions/2023-24/cl.txt",
+        "sourceId": null
+      },
+      {
+        "league": "Champions League",
+        "name": "Feyenoord Rotterdam",
+        "source": "champions/2024-25/cl.txt",
+        "sourceId": null
+      },
+      {
+        "league": "Eredivisie",
+        "name": "Feyenoord",
+        "source": "N1_2021.csv",
+        "sourceId": null
+      },
+      {
+        "league": "Eredivisie",
+        "name": "Feyenoord",
+        "source": "N1_2022.csv",
+        "sourceId": null
+      },
+      {
+        "league": "Eredivisie",
+        "name": "Feyenoord",
+        "source": "N1_2023.csv",
+        "sourceId": null
+      },
+      {
+        "league": "Eredivisie",
+        "name": "Feyenoord",
+        "source": "N1_2024.csv",
+        "sourceId": null
+      },
+      {
+        "league": "Eredivisie",
+        "name": "Feyenoord",
+        "source": "N1_2025.csv",
+        "sourceId": null
+      }
+    ]
+  },
+  {
+    "id": "club:esp-girona",
+    "canonicalName": "Girona",
+    "observedAlternativeNames": [
+      "Girona FC",
+      "Girona"
+    ],
+    "evidence": "Explicit review: Football-Data / OpenFootball 2021–2025",
+    "sources": [
+      {
+        "league": "Champions League",
+        "name": "Girona FC",
+        "source": "champions/2024-25/cl.txt",
+        "sourceId": null
+      },
+      {
+        "league": "La Liga",
+        "name": "Girona",
+        "source": "SP1_2022.csv",
+        "sourceId": null
+      },
+      {
+        "league": "La Liga",
+        "name": "Girona",
+        "source": "SP1_2023.csv",
+        "sourceId": null
+      },
+      {
+        "league": "La Liga",
+        "name": "Girona",
+        "source": "SP1_2024.csv",
+        "sourceId": null
+      },
+      {
+        "league": "La Liga",
+        "name": "Girona",
+        "source": "SP1_2025.csv",
+        "sourceId": null
+      },
+      {
+        "league": "Segunda División",
+        "name": "Girona",
+        "source": "SP2_2021.csv",
+        "sourceId": null
+      }
+    ]
+  },
+  {
+    "id": "club:ita-juventus",
+    "canonicalName": "Juventus",
+    "observedAlternativeNames": [
+      "Juventus",
+      "Juventus FC"
+    ],
+    "evidence": "Explicit review: Football-Data / OpenFootball 2021–2025",
+    "sources": [
+      {
+        "league": "Champions League",
+        "name": "Juventus",
+        "source": "champions/2021-22/cl.txt",
+        "sourceId": null
+      },
+      {
+        "league": "Champions League",
+        "name": "Juventus",
+        "source": "champions/2022-23/cl.txt",
+        "sourceId": null
+      },
+      {
+        "league": "Champions League",
+        "name": "Juventus FC",
+        "source": "champions/2024-25/cl.txt",
+        "sourceId": null
+      },
+      {
+        "league": "Champions League",
+        "name": "Juventus FC",
+        "source": "champions/2025-26/cl.txt",
+        "sourceId": null
+      },
+      {
+        "league": "Serie A",
+        "name": "Juventus",
+        "source": "I1_2021.csv",
+        "sourceId": null
+      },
+      {
+        "league": "Serie A",
+        "name": "Juventus",
+        "source": "I1_2022.csv",
+        "sourceId": null
+      },
+      {
+        "league": "Serie A",
+        "name": "Juventus",
+        "source": "I1_2023.csv",
+        "sourceId": null
+      },
+      {
+        "league": "Serie A",
+        "name": "Juventus",
+        "source": "I1_2024.csv",
+        "sourceId": null
+      },
+      {
+        "league": "Serie A",
+        "name": "Juventus",
+        "source": "I1_2025.csv",
+        "sourceId": null
+      }
+    ]
+  },
+  {
+    "id": "club:eng-liverpool",
+    "canonicalName": "Liverpool",
+    "observedAlternativeNames": [
+      "Liverpool FC",
+      "Liverpool"
+    ],
+    "evidence": "Explicit review: Football-Data / OpenFootball 2021–2025",
+    "sources": [
+      {
+        "league": "Champions League",
+        "name": "Liverpool FC",
+        "source": "champions/2021-22/cl.txt",
+        "sourceId": null
+      },
+      {
+        "league": "Champions League",
+        "name": "Liverpool FC",
+        "source": "champions/2022-23/cl.txt",
+        "sourceId": null
+      },
+      {
+        "league": "Champions League",
+        "name": "Liverpool FC",
+        "source": "champions/2024-25/cl.txt",
+        "sourceId": null
+      },
+      {
+        "league": "Champions League",
+        "name": "Liverpool FC",
+        "source": "champions/2025-26/cl.txt",
+        "sourceId": null
+      },
+      {
+        "league": "Premier League",
+        "name": "Liverpool",
+        "source": "E0_2021.csv",
+        "sourceId": null
+      },
+      {
+        "league": "Premier League",
+        "name": "Liverpool",
+        "source": "E0_2022.csv",
+        "sourceId": null
+      },
+      {
+        "league": "Premier League",
+        "name": "Liverpool",
+        "source": "E0_2023.csv",
+        "sourceId": null
+      },
+      {
+        "league": "Premier League",
+        "name": "Liverpool",
+        "source": "E0_2024.csv",
+        "sourceId": null
+      },
+      {
+        "league": "Premier League",
+        "name": "Liverpool",
+        "source": "E0_2025.csv",
+        "sourceId": null
+      }
+    ]
+  },
+  {
+    "id": "club:eng-man-city",
+    "canonicalName": "Man City",
+    "observedAlternativeNames": [
+      "Manchester City",
+      "Manchester City FC",
+      "Man City"
+    ],
+    "evidence": "baseline explicit alias; OpenFootball 2024/25",
+    "sources": [
+      {
+        "league": "Champions League",
+        "name": "Manchester City",
+        "source": "champions/2021-22/cl.txt",
+        "sourceId": null
+      },
+      {
+        "league": "Champions League",
+        "name": "Manchester City",
+        "source": "champions/2022-23/cl.txt",
+        "sourceId": null
+      },
+      {
+        "league": "Champions League",
+        "name": "Manchester City FC",
+        "source": "champions/2023-24/cl.txt",
+        "sourceId": null
+      },
+      {
+        "league": "Champions League",
+        "name": "Manchester City FC",
+        "source": "champions/2024-25/cl.txt",
+        "sourceId": null
+      },
+      {
+        "league": "Champions League",
+        "name": "Manchester City FC",
+        "source": "champions/2025-26/cl.txt",
+        "sourceId": null
+      },
+      {
+        "league": "Premier League",
+        "name": "Man City",
+        "source": "E0_2021.csv",
+        "sourceId": null
+      },
+      {
+        "league": "Premier League",
+        "name": "Man City",
+        "source": "E0_2022.csv",
+        "sourceId": null
+      },
+      {
+        "league": "Premier League",
+        "name": "Man City",
+        "source": "E0_2023.csv",
+        "sourceId": null
+      },
+      {
+        "league": "Premier League",
+        "name": "Man City",
+        "source": "E0_2024.csv",
+        "sourceId": null
+      },
+      {
+        "league": "Premier League",
+        "name": "Man City",
+        "source": "E0_2025.csv",
+        "sourceId": null
+      }
+    ]
+  },
+  {
+    "id": "club:eng-man-united",
+    "canonicalName": "Man United",
+    "observedAlternativeNames": [
+      "Manchester United",
+      "Manchester United FC",
+      "Man United"
+    ],
+    "evidence": "TA-DATA-002 §3.1 / baseline",
+    "sources": [
+      {
+        "league": "Champions League",
+        "name": "Manchester United",
+        "source": "champions/2021-22/cl.txt",
+        "sourceId": null
+      },
+      {
+        "league": "Champions League",
+        "name": "Manchester United FC",
+        "source": "champions/2023-24/cl.txt",
+        "sourceId": null
+      },
+      {
+        "league": "Premier League",
+        "name": "Man United",
+        "source": "E0_2021.csv",
+        "sourceId": null
+      },
+      {
+        "league": "Premier League",
+        "name": "Man United",
+        "source": "E0_2022.csv",
+        "sourceId": null
+      },
+      {
+        "league": "Premier League",
+        "name": "Man United",
+        "source": "E0_2023.csv",
+        "sourceId": null
+      },
+      {
+        "league": "Premier League",
+        "name": "Man United",
+        "source": "E0_2024.csv",
+        "sourceId": null
+      },
+      {
+        "league": "Premier League",
+        "name": "Man United",
+        "source": "E0_2025.csv",
+        "sourceId": null
+      }
+    ]
+  },
+  {
+    "id": "club:ned-psv",
+    "canonicalName": "PSV",
+    "observedAlternativeNames": [
+      "PSV",
+      "PSV Eindhoven"
+    ],
+    "evidence": "explicit club name, source Football-Data/OpenFootball",
+    "sources": [
+      {
+        "league": "Champions League",
+        "name": "PSV",
+        "source": "champions/2023-24/cl.txt",
+        "sourceId": null
+      },
+      {
+        "league": "Champions League",
+        "name": "PSV",
+        "source": "champions/2024-25/cl.txt",
+        "sourceId": null
+      },
+      {
+        "league": "Champions League",
+        "name": "PSV",
+        "source": "champions/2025-26/cl.txt",
+        "sourceId": null
+      },
+      {
+        "league": "Eredivisie",
+        "name": "PSV Eindhoven",
+        "source": "N1_2021.csv",
+        "sourceId": null
+      },
+      {
+        "league": "Eredivisie",
+        "name": "PSV Eindhoven",
+        "source": "N1_2022.csv",
+        "sourceId": null
+      },
+      {
+        "league": "Eredivisie",
+        "name": "PSV Eindhoven",
+        "source": "N1_2023.csv",
+        "sourceId": null
+      },
+      {
+        "league": "Eredivisie",
+        "name": "PSV Eindhoven",
+        "source": "N1_2024.csv",
+        "sourceId": null
+      },
+      {
+        "league": "Eredivisie",
+        "name": "PSV Eindhoven",
+        "source": "N1_2025.csv",
+        "sourceId": null
+      }
+    ]
+  },
+  {
+    "id": "club:fra-psg",
+    "canonicalName": "Paris SG",
+    "observedAlternativeNames": [
+      "Paris Saint-Germain",
+      "Paris Saint-Germain FC",
+      "Paris SG"
+    ],
+    "evidence": "TA-DATA-002 §3.1; OpenFootball 2024/25",
+    "sources": [
+      {
+        "league": "Champions League",
+        "name": "Paris Saint-Germain",
+        "source": "champions/2021-22/cl.txt",
+        "sourceId": null
+      },
+      {
+        "league": "Champions League",
+        "name": "Paris Saint-Germain",
+        "source": "champions/2022-23/cl.txt",
+        "sourceId": null
+      },
+      {
+        "league": "Champions League",
+        "name": "Paris Saint-Germain FC",
+        "source": "champions/2023-24/cl.txt",
+        "sourceId": null
+      },
+      {
+        "league": "Champions League",
+        "name": "Paris Saint-Germain FC",
+        "source": "champions/2024-25/cl.txt",
+        "sourceId": null
+      },
+      {
+        "league": "Champions League",
+        "name": "Paris Saint-Germain FC",
+        "source": "champions/2025-26/cl.txt",
+        "sourceId": null
+      },
+      {
+        "league": "Ligue 1",
+        "name": "Paris SG",
+        "source": "F1_2021.csv",
+        "sourceId": null
+      },
+      {
+        "league": "Ligue 1",
+        "name": "Paris SG",
+        "source": "F1_2022.csv",
+        "sourceId": null
+      },
+      {
+        "league": "Ligue 1",
+        "name": "Paris SG",
+        "source": "F1_2023.csv",
+        "sourceId": null
+      },
+      {
+        "league": "Ligue 1",
+        "name": "Paris SG",
+        "source": "F1_2024.csv",
+        "sourceId": null
+      },
+      {
+        "league": "Ligue 1",
+        "name": "Paris SG",
+        "source": "F1_2025.csv",
+        "sourceId": null
+      }
+    ]
+  },
+  {
+    "id": "club:esp-real-madrid",
+    "canonicalName": "Real Madrid",
+    "observedAlternativeNames": [
+      "Real Madrid",
+      "Real Madrid CF"
+    ],
+    "evidence": "Explicit review: Football-Data / OpenFootball 2021–2025",
+    "sources": [
+      {
+        "league": "Champions League",
+        "name": "Real Madrid",
+        "source": "champions/2021-22/cl.txt",
+        "sourceId": null
+      },
+      {
+        "league": "Champions League",
+        "name": "Real Madrid",
+        "source": "champions/2022-23/cl.txt",
+        "sourceId": null
+      },
+      {
+        "league": "Champions League",
+        "name": "Real Madrid CF",
+        "source": "champions/2023-24/cl.txt",
+        "sourceId": null
+      },
+      {
+        "league": "Champions League",
+        "name": "Real Madrid CF",
+        "source": "champions/2024-25/cl.txt",
+        "sourceId": null
+      },
+      {
+        "league": "Champions League",
+        "name": "Real Madrid CF",
+        "source": "champions/2025-26/cl.txt",
+        "sourceId": null
+      },
+      {
+        "league": "La Liga",
+        "name": "Real Madrid",
+        "source": "SP1_2021.csv",
+        "sourceId": null
+      },
+      {
+        "league": "La Liga",
+        "name": "Real Madrid",
+        "source": "SP1_2022.csv",
+        "sourceId": null
+      },
+      {
+        "league": "La Liga",
+        "name": "Real Madrid",
+        "source": "SP1_2023.csv",
+        "sourceId": null
+      },
+      {
+        "league": "La Liga",
+        "name": "Real Madrid",
+        "source": "SP1_2024.csv",
+        "sourceId": null
+      },
+      {
+        "league": "La Liga",
+        "name": "Real Madrid",
+        "source": "SP1_2025.csv",
+        "sourceId": null
+      }
+    ]
+  },
+  {
+    "id": "club:ita-lazio",
+    "canonicalName": "Lazio",
+    "observedAlternativeNames": [
+      "SS Lazio",
+      "Lazio"
+    ],
+    "evidence": "Explicit review: Football-Data / OpenFootball 2021–2025",
+    "sources": [
+      {
+        "league": "Champions League",
+        "name": "SS Lazio",
+        "source": "champions/2023-24/cl.txt",
+        "sourceId": null
+      },
+      {
+        "league": "Serie A",
+        "name": "Lazio",
+        "source": "I1_2021.csv",
+        "sourceId": null
+      },
+      {
+        "league": "Serie A",
+        "name": "Lazio",
+        "source": "I1_2022.csv",
+        "sourceId": null
+      },
+      {
+        "league": "Serie A",
+        "name": "Lazio",
+        "source": "I1_2023.csv",
+        "sourceId": null
+      },
+      {
+        "league": "Serie A",
+        "name": "Lazio",
+        "source": "I1_2024.csv",
+        "sourceId": null
+      },
+      {
+        "league": "Serie A",
+        "name": "Lazio",
+        "source": "I1_2025.csv",
+        "sourceId": null
+      }
+    ]
+  },
+  {
+    "id": "club:ita-napoli",
+    "canonicalName": "Napoli",
+    "observedAlternativeNames": [
+      "SSC Napoli",
+      "Napoli"
+    ],
+    "evidence": "Explicit review: Football-Data / OpenFootball 2021–2025",
+    "sources": [
+      {
+        "league": "Champions League",
+        "name": "SSC Napoli",
+        "source": "champions/2022-23/cl.txt",
+        "sourceId": null
+      },
+      {
+        "league": "Champions League",
+        "name": "SSC Napoli",
+        "source": "champions/2023-24/cl.txt",
+        "sourceId": null
+      },
+      {
+        "league": "Champions League",
+        "name": "SSC Napoli",
+        "source": "champions/2025-26/cl.txt",
+        "sourceId": null
+      },
+      {
+        "league": "Serie A",
+        "name": "Napoli",
+        "source": "I1_2021.csv",
+        "sourceId": null
+      },
+      {
+        "league": "Serie A",
+        "name": "Napoli",
+        "source": "I1_2022.csv",
+        "sourceId": null
+      },
+      {
+        "league": "Serie A",
+        "name": "Napoli",
+        "source": "I1_2023.csv",
+        "sourceId": null
+      },
+      {
+        "league": "Serie A",
+        "name": "Napoli",
+        "source": "I1_2024.csv",
+        "sourceId": null
+      },
+      {
+        "league": "Serie A",
+        "name": "Napoli",
+        "source": "I1_2025.csv",
+        "sourceId": null
+      }
+    ]
+  },
+  {
+    "id": "club:esp-sevilla",
+    "canonicalName": "Sevilla",
+    "observedAlternativeNames": [
+      "Sevilla FC",
+      "Sevilla"
+    ],
+    "evidence": "Explicit review: Football-Data / OpenFootball 2021–2025",
+    "sources": [
+      {
+        "league": "Champions League",
+        "name": "Sevilla FC",
+        "source": "champions/2021-22/cl.txt",
+        "sourceId": null
+      },
+      {
+        "league": "Champions League",
+        "name": "Sevilla FC",
+        "source": "champions/2022-23/cl.txt",
+        "sourceId": null
+      },
+      {
+        "league": "Champions League",
+        "name": "Sevilla FC",
+        "source": "champions/2023-24/cl.txt",
+        "sourceId": null
+      },
+      {
+        "league": "La Liga",
+        "name": "Sevilla",
+        "source": "SP1_2021.csv",
+        "sourceId": null
+      },
+      {
+        "league": "La Liga",
+        "name": "Sevilla",
+        "source": "SP1_2022.csv",
+        "sourceId": null
+      },
+      {
+        "league": "La Liga",
+        "name": "Sevilla",
+        "source": "SP1_2023.csv",
+        "sourceId": null
+      },
+      {
+        "league": "La Liga",
+        "name": "Sevilla",
+        "source": "SP1_2024.csv",
+        "sourceId": null
+      },
+      {
+        "league": "La Liga",
+        "name": "Sevilla",
+        "source": "SP1_2025.csv",
+        "sourceId": null
+      }
+    ]
+  },
+  {
+    "id": "club:prt-benfica",
+    "canonicalName": "Benfica",
+    "observedAlternativeNames": [
+      "Sport Lisboa e Benfica",
+      "Benfica"
+    ],
+    "evidence": "Explicit club identity, Football-Data / OpenFootball",
+    "sources": [
+      {
+        "league": "Champions League",
+        "name": "Sport Lisboa e Benfica",
+        "source": "champions/2023-24/cl.txt",
+        "sourceId": null
+      },
+      {
+        "league": "Champions League",
+        "name": "Sport Lisboa e Benfica",
+        "source": "champions/2024-25/cl.txt",
+        "sourceId": null
+      },
+      {
+        "league": "Champions League",
+        "name": "Sport Lisboa e Benfica",
+        "source": "champions/2025-26/cl.txt",
+        "sourceId": null
+      },
+      {
+        "league": "Primeira Liga",
+        "name": "Benfica",
+        "source": "P1_2021.csv",
+        "sourceId": null
+      },
+      {
+        "league": "Primeira Liga",
+        "name": "Benfica",
+        "source": "P1_2022.csv",
+        "sourceId": null
+      },
+      {
+        "league": "Primeira Liga",
+        "name": "Benfica",
+        "source": "P1_2023.csv",
+        "sourceId": null
+      },
+      {
+        "league": "Primeira Liga",
+        "name": "Benfica",
+        "source": "P1_2024.csv",
+        "sourceId": null
+      },
+      {
+        "league": "Primeira Liga",
+        "name": "Benfica",
+        "source": "P1_2025.csv",
+        "sourceId": null
+      }
+    ]
+  },
+  {
+    "id": "club:prt-sporting-cp",
+    "canonicalName": "Sporting Lisbon",
+    "observedAlternativeNames": [
+      "Sporting CP",
+      "Sporting Clube de Portugal"
+    ],
+    "evidence": "TA-DATA-002 §3.1",
+    "sources": [
+      {
+        "league": "Champions League",
+        "name": "Sporting CP",
+        "source": "champions/2021-22/cl.txt",
+        "sourceId": null
+      },
+      {
+        "league": "Champions League",
+        "name": "Sporting CP",
+        "source": "champions/2022-23/cl.txt",
+        "sourceId": null
+      },
+      {
+        "league": "Champions League",
+        "name": "Sporting Clube de Portugal",
+        "source": "champions/2024-25/cl.txt",
+        "sourceId": null
+      },
+      {
+        "league": "Champions League",
+        "name": "Sporting Clube de Portugal",
+        "source": "champions/2025-26/cl.txt",
+        "sourceId": null
+      }
+    ]
+  },
+  {
+    "id": "club:eng-tottenham",
+    "canonicalName": "Tottenham",
+    "observedAlternativeNames": [
+      "Tottenham Hotspur",
+      "Tottenham Hotspur FC",
+      "Tottenham"
+    ],
+    "evidence": "Explicit review: Football-Data / OpenFootball 2021–2025",
+    "sources": [
+      {
+        "league": "Champions League",
+        "name": "Tottenham Hotspur",
+        "source": "champions/2022-23/cl.txt",
+        "sourceId": null
+      },
+      {
+        "league": "Champions League",
+        "name": "Tottenham Hotspur FC",
+        "source": "champions/2025-26/cl.txt",
+        "sourceId": null
+      },
+      {
+        "league": "Premier League",
+        "name": "Tottenham",
+        "source": "E0_2021.csv",
+        "sourceId": null
+      },
+      {
+        "league": "Premier League",
+        "name": "Tottenham",
+        "source": "E0_2022.csv",
+        "sourceId": null
+      },
+      {
+        "league": "Premier League",
+        "name": "Tottenham",
+        "source": "E0_2023.csv",
+        "sourceId": null
+      },
+      {
+        "league": "Premier League",
+        "name": "Tottenham",
+        "source": "E0_2024.csv",
+        "sourceId": null
+      },
+      {
+        "league": "Premier League",
+        "name": "Tottenham",
+        "source": "E0_2025.csv",
+        "sourceId": null
+      }
+    ]
+  },
+  {
+    "id": "club:esp-villarreal",
+    "canonicalName": "Villarreal",
+    "observedAlternativeNames": [
+      "Villarreal CF",
+      "Villarreal"
+    ],
+    "evidence": "Explicit review: Football-Data / OpenFootball 2021–2025",
+    "sources": [
+      {
+        "league": "Champions League",
+        "name": "Villarreal CF",
+        "source": "champions/2021-22/cl.txt",
+        "sourceId": null
+      },
+      {
+        "league": "Champions League",
+        "name": "Villarreal CF",
+        "source": "champions/2025-26/cl.txt",
+        "sourceId": null
+      },
+      {
+        "league": "La Liga",
+        "name": "Villarreal",
+        "source": "SP1_2021.csv",
+        "sourceId": null
+      },
+      {
+        "league": "La Liga",
+        "name": "Villarreal",
+        "source": "SP1_2022.csv",
+        "sourceId": null
+      },
+      {
+        "league": "La Liga",
+        "name": "Villarreal",
+        "source": "SP1_2023.csv",
+        "sourceId": null
+      },
+      {
+        "league": "La Liga",
+        "name": "Villarreal",
+        "source": "SP1_2024.csv",
+        "sourceId": null
+      },
+      {
+        "league": "La Liga",
+        "name": "Villarreal",
+        "source": "SP1_2025.csv",
+        "sourceId": null
+      }
+    ]
+  }
+]

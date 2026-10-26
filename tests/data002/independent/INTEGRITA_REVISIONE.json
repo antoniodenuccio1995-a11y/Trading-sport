@@ -1,0 +1,9 @@
+{
+  "commit": "b80ff664ff1ffe05045662ad43d22d5c2e9dd3fc",
+  "candidate": "Trading_Analytics_v0.2U-rc1_TA-CSV-001.html",
+  "candidate_sha256": "3b1c0bdb7ff4caf28ca96f21c99fbb49107eaea1186a8f4fa700182ad4d0ec9b",
+  "parser_sha256": "fb215d6bf283fd2d5286dfc687c4f351caa1be18c4bd178453325eb12b005f20",
+  "baseline_sha256": "819491b53edd20768ce23134c271c2a99a1b80d4bdbf3b165d478dd26794f688",
+  "tracked_changes": "",
+  "code_modified": false
+}

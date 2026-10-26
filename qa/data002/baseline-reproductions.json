@@ -1,0 +1,30 @@
+{
+  "baseline": "73fc0e2",
+  "findings": {
+    "F-01": {
+      "reproduced": true,
+      "actual": [
+        "Primeira Liga",
+        "Primeira Liga"
+      ],
+      "expected": "unknown row must not inherit P1"
+    },
+    "F-02": {
+      "reproduced": true,
+      "actual": 2025,
+      "expected": 2024
+    },
+    "F-03": {
+      "reproduced": true,
+      "previewValidRows": 1,
+      "actualError": "mancano le colonne Date, HomeTeam o AwayTeam",
+      "expected": "same normalized schema in reference and results import"
+    },
+    "F-04": {
+      "reproduced": true,
+      "actualPlayed": 2,
+      "expected": 1
+    }
+  },
+  "reconstruction_only": true
+}

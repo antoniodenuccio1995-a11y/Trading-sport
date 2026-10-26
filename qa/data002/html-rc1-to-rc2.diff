@@ -1,0 +1,615 @@
+--- rc1.html
++++ rc2.html
+@@ -1,7 +1,7 @@
+ <!doctype html>
+ <html lang="it"><head><meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+-<title>Trading Analytics v0.2U-rc1 · TA-CSV-001 · Candidata da collaudare</title>
++<title>Trading Analytics v0.2U-rc2 · TA-DATA-002 · Candidata da collaudare</title>
+ <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&display=swap">
+ <style>
+@@ -900,7 +900,7 @@
+ </div>
+ </aside>
+ <main>
+-<h1>Trading Analytics <small style="font-size:14px;color:var(--mu);font-weight:600">v0.2U-rc1 · TA-CSV-001 · CANDIDATA</small></h1>
++<h1>Trading Analytics <small style="font-size:14px;color:var(--mu);font-weight:600">v0.2U-rc2 · TA-DATA-002 · CANDIDATA</small></h1>
+ <p class="sub">Analisi dei campionati · dati separati per lega, valutazioni critiche dei mercati e calendario delle partite.</p>
+ <div class="league-hero"><div><small>CONTESTO DI ANALISI</small><h2 id="currentLeagueTitle">Serie A</h2><p id="currentLeagueDesc">Seleziona una competizione nel menu laterale.</p></div><div class="league-hero-actions"><button id="heroUpdate" type="button">↻ Aggiorna risultati</button><button type="button" id="heroArchive" data-open-workspace="dati">Gestisci i file →</button><a id="heroCsvLink" href="https://www.football-data.co.uk/mmz4281/2627/I1.csv" target="_blank" rel="noopener">Apri CSV originale ↗</a></div></div>
+ <p id="heroFeedback" role="status" aria-live="polite">Scegli la lega e importa i dati. L'aggiornamento diretto può essere bloccato dal browser: in quel caso usa il collegamento al CSV originale.</p>
+@@ -1101,7 +1101,8 @@
+ 
+ <p class="hint" style="margin-top:36px">Uno strumento di studio: un backtest positivo non garantisce guadagni futuri. Il gioco può causare dipendenza, gioca solo ciò che puoi permetterti di perdere.</p>
+ </main>
+-<script src="ta-csv-import.js"></script>
++<script src="ta-clubs-v1.js"></script>
++<script src="ta-csv-import-v02U-rc2.js"></script>
+ <script>
+ const $=s=>document.querySelector(s);
+ const e=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+@@ -1121,42 +1122,18 @@
+ const TM={o25:["Over 2.5",r=>r.h+r.a>2],o15:["Over 1.5",r=>r.h+r.a>1],btts:["Entrambe segnano",r=>r.h>0&&r.a>0],ht:["Over 0.5 primo tempo",r=>r.ht>0],dr:["Pareggio",r=>r.h==r.a],w:["Vittoria",(r,H)=>H?r.h>r.a:r.a>r.h],sc:["Segna",(r,H)=>(H?r.h:r.a)>0],cs:["Subisce gol",(r,H)=>(H?r.a:r.h)>0]};
+ 
+ // Identità esplicite: nessuna fusione fuzzy tra club distinti.
+-function archiveReadAux(key){return localStorage.getItem('ta_stab_'+key)??localStorage.getItem(key)}
+-function canonicalTeamName(name){
+- const original=String(name||'').trim();
+- const key=original.toLowerCase().replace(/[.]/g,'').replace(/\s+/g,' ').trim();
+- const aliases={
+- 'queens park rangers':'QPR','qpr':'QPR',
+- 'west ham united':'West Ham','west ham':'West Ham',
+- 'lincoln city':'Lincoln','lincoln':'Lincoln',
+- 'wolverhampton wanderers':'Wolves','wolverhampton':'Wolves','wolves':'Wolves',
+- 'blackburn rovers':'Blackburn','blackburn':'Blackburn',
+- 'bolton wanderers':'Bolton','bolton':'Bolton',
+- 'preston north end':'Preston','preston':'Preston',
+- 'charlton athletic':'Charlton','charlton':'Charlton',
+- 'derby county':'Derby','derby':'Derby',
+- 'swansea city':'Swansea','swansea':'Swansea',
+- 'west bromwich albion':'West Brom','west brom':'West Brom',
+- 'sheffield wednesday':'Sheffield Weds','sheffield weds':'Sheffield Weds',
+- 'ipswich town':'Ipswich','ipswich':'Ipswich',
+- 'birmingham city':'Birmingham','birmingham':'Birmingham',
+- 'leicester city':'Leicester','leicester':'Leicester',
+- 'norwich city':'Norwich','norwich':'Norwich',
+- 'stoke city':'Stoke','stoke':'Stoke',
+- 'cardiff city':'Cardiff','cardiff':'Cardiff',
+- 'huddersfield town':'Huddersfield','huddersfield':'Huddersfield',
+- 'plymouth argyle':'Plymouth','plymouth':'Plymouth',
+- 'nottingham forest':"Nott'm Forest",'nott m forest':"Nott'm Forest","nott'm forest":"Nott'm Forest",
+- 'manchester united':'Man United','man united':'Man United',
+- 'manchester city':'Man City','man city':'Man City',
+- 'internazionale':'Inter','internazionale milano':'Inter','inter milan':'Inter','inter':'Inter'
+- };
+- return aliases[key]||original;
+-}
+-function canonicalMatch(r){return {...r,H:canonicalTeamName(r.H),A:canonicalTeamName(r.A)}}
+-
+-let rows=[];
+-$("#m").innerHTML=Object.entries(MK).map(([k,v])=>`<option value="${k}">${v[0]}</option>`).join("");
++function archiveReadAux(key){return localStorage.getItem('ta_data002_'+key)}
++function canonicalTeamName(name,league=''){return TAClubs.resolve(name,league).name}
++function canonicalMatch(r){return TAClubs.canonicalMatch(r)}
++function canonicalManualMatch(r){
++ const o={Source:'Inserimento manuale da anagrafica',ManualInputHome:r.H,ManualInputAway:r.A};
++ for(const [side,name] of [['Home',r.H],['Away',r.A]]){
++  const matches=rows.filter(x=>x.lg===r.lg).flatMap(x=>[['Home',x.H],['Away',x.A]].filter(([,n])=>n===name).map(([from])=>({row:x,from,id:x.o?.['Club'+from+'Id']})));
++  if(new Set(matches.map(x=>x.id).filter(Boolean)).size>1)throw Error('Identità della squadra selezionata ambigua: verificare l’anagrafica');
++  const found=matches.find(x=>x.id);if(found)for(const [key,value] of Object.entries(found.row.o))if(key.startsWith('Club'+found.from))o[key.replace('Club'+found.from,'Club'+side)]=value;
++ }
++ return canonicalMatch({...r,o});
++}
+ 
+ // v0.2D — Historical league membership is independent of match-result analysis.
+ // Only confirmed division appearances are displayed. Missing CSV != relegation.
+@@ -1172,41 +1149,37 @@
+ const PATH_SOURCES={
+  wolves:{from:2018,to:2025,league:'Premier League',source:'Premier League (20/04/2026)',url:'https://www.premierleague.com/en/news/4632497/wolves-relegated-to-the-championship-after-west-ham-draw-at-palace'},
+ };
+-const PATH_CONFIRMED_2025={burnley:'Premier League',westham:'Premier League'};
++const PATH_CONFIRMED_2025={'club:eng-burnley':'Premier League','club:eng-west-ham':'Premier League'};
+ const PATH_OFFICIAL_2025='https://www.premierleague.com/en/news/4673099/the-202627-premier-league-season-officially-starts';
+-function pathClubKey(name){
+- const key=canonicalTeamName(name).normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/&/g,'and').replace(/[^a-z0-9]/g,'');
+- const synonyms={wolverhamptonwanderers:'wolves',wolverhamptonwanderersfc:'wolves',wolverhampton:'wolves',wolvesfc:'wolves',westhamunited:'westham',westhamunitedfc:'westham',burnleyfc:'burnley'};
+- return synonyms[key]||key;
+-}
++function pathClubKey(name,league=''){return TAClubs.resolve(name,league).id}
+ let leaguePathRefs=[];
+ try{
+  const loaded=JSON.parse(archiveReadAux('ta_path_memberships')||'[]');
+  if(Array.isArray(loaded))leaguePathRefs=loaded.filter(v=>v&&Number.isInteger(v.year)&&PATH_TIERS[v.league]&&typeof v.team==='string').slice(0,35000);
+ }catch(_e){leaguePathRefs=[]}
+-function pathMembership(league,team,year){
+- const key=pathClubKey(team),scope=PATH_TIERS[league];
++function pathMembership(league,team,year,cutoff=Infinity){
++ const key=pathClubKey(team,league),scope=PATH_TIERS[league];
+  if(!scope||!key||!Number.isInteger(year))return null;
+  // Prefer evidence actually present in the normal results or imported reference CSVs.
+  const found=new Map();
+  for(const r of rows){
+-  const def=PATH_TIERS[r.lg];if(!def||def.country!==scope.country||se(r)!==year)continue;
+-  if(pathClubKey(r.H)===key||pathClubKey(r.A)===key)found.set(r.lg,{league:r.lg,source:'CSV risultati/caricamento',verified:true});
++  const def=PATH_TIERS[r.lg];if(!def||def.country!==scope.country||se(r)!==year||r.d>=cutoff)continue;
++  if(pathClubKey(r.H,r.lg)===key||pathClubKey(r.A,r.lg)===key)found.set(r.lg,{league:r.lg,source:'CSV risultati/caricamento',verified:true});
+  }
+  for(const r of leaguePathRefs){
+-  if(r.year===year&&pathClubKey(r.team)===key&&PATH_TIERS[r.league]?.country===scope.country&&!found.has(r.league))found.set(r.league,{league:r.league,source:'CSV provenienza importato',verified:true});
++  if(r.year===year&&(cutoff===Infinity||Number.isFinite(r.evidenceDate)&&r.evidenceDate<cutoff)&&(r.clubId||pathClubKey(r.team,r.league))===key&&PATH_TIERS[r.league]?.country===scope.country&&!found.has(r.league))found.set(r.league,{league:r.league,source:'CSV provenienza importato',verified:true});
+  }
+  if(found.size>1)return {league:null,source:'Fonti discordanti: più categorie nella stessa stagione',conflict:true};
+  if(found.has(league))return found.get(league);
+  if(found.size===1)return [...found.values()][0];
+  // A small, explicit official-source fallback, not a guessed general roster.
+- if(key==='wolves'&&year>=PATH_SOURCES.wolves.from&&year<=PATH_SOURCES.wolves.to&&scope.country==='ENG')return {league:'Premier League',source:PATH_SOURCES.wolves.source,url:PATH_SOURCES.wolves.url,verified:true};
+- if(year===2025&&PATH_CONFIRMED_2025[key]&&scope.country==='ENG')return {league:PATH_CONFIRMED_2025[key],source:'Premier League (05/06/2026)',url:PATH_OFFICIAL_2025,verified:true};
++ if(cutoff>Date.UTC(2026,3,20)&&key==='club:eng-wolves'&&year>=PATH_SOURCES.wolves.from&&year<=PATH_SOURCES.wolves.to&&scope.country==='ENG')return {league:'Premier League',source:PATH_SOURCES.wolves.source,url:PATH_SOURCES.wolves.url,verified:true};
++ if(cutoff>Date.UTC(2026,5,5)&&year===2025&&PATH_CONFIRMED_2025[key]&&scope.country==='ENG')return {league:PATH_CONFIRMED_2025[key],source:'Premier League (05/06/2026)',url:PATH_OFFICIAL_2025,verified:true};
+  return null;
+ }
+-function pathStatus(reference,team,year,rankPresent=false){
++function pathStatus(reference,team,year,rankPresent=false,cutoff=Infinity){
+  if(rankPresent)return null;
+- const m=pathMembership(reference,team,year),main=PATH_TIERS[reference];
++ const m=pathMembership(reference,team,year,cutoff),main=PATH_TIERS[reference];
+  if(!main)return {kind:'na',label:'Non applicabile',details:'Competizione senza gerarchia nazionale'};
+  if(!m)return {kind:'unknown',label:'?',abbr:'?',details:'Campionato di appartenenza non verificato: importa i CSV delle altre divisioni.'};
+  if(m.conflict)return {kind:'unknown',label:'?',abbr:'?',details:m.source};
+@@ -1215,9 +1188,9 @@
+  const higher=source.tier<main.tier;
+  return {kind:higher?'higher':'lower',label:m.league,abbr:source.abbr,tag:higher?'↑':'↓',details:`${m.league}, ${higher?'divisione superiore':'divisione inferiore'} rispetto a ${reference}. Fonte: ${m.source}.`,url:m.url||''};
+ }
+-function pathPreview(team,league,years,series,selectedSeason){
++function pathPreview(team,league,years,series,selectedSeason,cutoff=Infinity){
+  const current=PATH_TIERS[league];if(!current)return '';
+- const absent=series.map((d,i)=>({d,st:pathStatus(league,team,d.year,d.rank!==null)})).filter(x=>x.d.rank===null);
++ const absent=series.map((d,i)=>({d,st:pathStatus(league,team,d.year,d.rank!==null,cutoff)})).filter(x=>x.d.rank===null);
+  const known=absent.filter(x=>x.st&&(x.st.kind==='higher'||x.st.kind==='lower'));
+  const unknown=absent.filter(x=>!x.st||x.st.kind==='unknown');
+  // Compact contiguous seasons belonging to the same other division into one badge.
+@@ -1231,8 +1204,8 @@
+  const details=groups.length?groups.map(x=>`<span class="path-pill ${x.st.kind}" title="${e(x.st.details)}">${labelYear(x.start)}${x.end>x.start?'–'+labelYear(x.end):''} · ${e(x.st.label)} ${x.st.tag}</span>`).join(''):`<span class="path-pill unknown">Nessuna altra categoria confermata</span>`;
+  const sourceLinks=[...new Set(known.map(x=>x.st.url).filter(Boolean))].map(url=>`<a href="${e(url)}" target="_blank" rel="noopener" style="font-size:11px;display:inline-block;margin-top:6px">Fonte ufficiale ↗</a>`).join(' ');
+  let move='';
+- const prev=pathMembership(league,team,selectedSeason-1);
+- const now=pathMembership(league,team,selectedSeason);
++ const prev=pathMembership(league,team,selectedSeason-1,cutoff);
++ const now=pathMembership(league,team,selectedSeason,cutoff);
+  if(prev?.league&&now?.league&&prev.league!==now.league&&PATH_TIERS[prev.league]&&PATH_TIERS[now.league]){
+   const delta=PATH_TIERS[now.league].tier-PATH_TIERS[prev.league].tier;
+   move=`<p><b>${delta>0?'↓ Retrocessione':delta<0?'↑ Promozione':'→ Cambio categoria'}</b> ${e(standingsSeasonLabel(selectedSeason-1))} → ${e(standingsSeasonLabel(selectedSeason))}: ${e(prev.league)} → ${e(now.league)}.</p>`;
+@@ -1250,36 +1223,30 @@
+  const yr=Number.isInteger(year)&&year>2000?year-1:currentSeasonStart()-1;
+  target.innerHTML=`<span class="hint">Scarica, poi importa qui i CSV ${e(standingsSeasonLabel(yr))} delle altre categorie:</span>`+companions.map(l=>`<a target="_blank" rel="noopener" href="https://www.football-data.co.uk/mmz4281/${code(yr)}/${options[l]}.csv">↗ ${e(l)} ${e(standingsSeasonLabel(yr))}</a>`).join('');
+ }
+-function pathImportReferenceCsv(txt,selectedLeague,name){
+- const data=csvRows(txt),headers=(data[0]||[]).map(x=>x.trim());
+- if(!['Date','HomeTeam','AwayTeam'].every(k=>headers.includes(k)))throw Error('mancano le colonne Date, HomeTeam o AwayTeam');
+- const found=[],failed=[];
+- for(let i=1;i<data.length;i++){
+-  const fields=data[i],r={};headers.forEach((key,j)=>r[key]=(fields[j]||'').trim());
+-  if(r.Div&&!PATH_DIVISIONS[r.Div]){failed.push('Codice Div non riconosciuto');continue}
+-  const division=PATH_DIVISIONS[r.Div]||selectedLeague;
+-  if(!PATH_TIERS[division]){failed.push('Divisione non riconosciuta');continue}
+-  if(r.Div&&PATH_DIVISIONS[r.Div]&&selectedLeague&&PATH_DIVISIONS[r.Div]!==selectedLeague){failed.push('Divisione in conflitto con il filtro');continue}
+-  const iso=/^(\d{4})-(\d{2})-(\d{2})/.exec(r.Date||''),eu=/^(\d{2})\/(\d{2})\/(\d{2,4})/.exec(r.Date||'');
+-  if(!iso&&!eu)continue;
+-  let yy=iso?+iso[1]:+eu[3];if(yy<100)yy+=yy<70?2000:1900;
+-  const d=iso?Date.UTC(yy,+iso[2]-1,+iso[3]):Date.UTC(yy,+eu[2]-1,+eu[1]);
+-  const year=se({d});
+-  if(!Number.isFinite(d)||year<1990||year>2100||!r.HomeTeam||!r.AwayTeam)continue;
+-  found.push({year,league:division,team:r.HomeTeam},{year,league:division,team:r.AwayTeam});
+- }
+- if(failed.length)throw Error('Il file contiene codici di divisione non riconosciuti o in conflitto: controlla la scelta.');
+- if(!found.length)throw Error('nessuna stagione/squadra riconosciuta nel CSV');
+- // Persist only team-season membership, never scores or odds.
+- const combined=new Map(leaguePathRefs.map(r=>[`${r.year}|${r.league}|${pathClubKey(r.team)}`,r]));
+- found.forEach(r=>combined.set(`${r.year}|${r.league}|${pathClubKey(r.team)}`,r));
+- leaguePathRefs=[...combined.values()];
+- let saved=false;try{localStorage.setItem('ta_stab_ta_path_memberships',JSON.stringify(leaguePathRefs));saved=true}catch(_e){}
+- return {seasons:new Set(found.map(r=>r.year)).size,clubs:new Set(found.map(r=>`${r.year}|${pathClubKey(r.team)}`)).size,added:found.length/2,saved};
++function pathPrepareReferences(records,league){
++ if(!PATH_TIERS[league])throw Error('Categoria di provenienza non supportata');
++ return records.flatMap(raw=>{const r=canonicalMatch(raw);if(r.lg!==league)throw Error('Campionato di provenienza in conflitto');
++  return [['Home',r.H],['Away',r.A]].map(([side,team])=>({year:se(r),league,team,evidenceDate:r.d,clubId:r.o['Club'+side+'Id'],sourceName:r.o['Club'+side+'Raw'],identityName:r.o['Club'+side+'IdentityName'],provider:r.o['Club'+side+'Provider']??null,country:r.o['Club'+side+'Country'],associationStatus:r.o['Club'+side+'Status'],sourceId:r.o['Club'+side+'SourceId']}));
++ });
++}
++function pathCommitReferences(found){
++ if(!found.length)throw Error('Nessuna associazione squadra/stagione importabile');
++ const identity=r=>`${r.year}|${r.league}|${r.clubId||pathClubKey(r.team,r.league)}`;
++ const combined=new Map(leaguePathRefs.map(r=>[identity(r),r]));
++ found.forEach(r=>combined.set(identity(r),r));const proposed=[...combined.values()];
++ // Update memory only after persistence succeeds; a quota error cannot masquerade as success.
++ localStorage.setItem('ta_data002_ta_path_memberships',JSON.stringify(proposed));
++ leaguePathRefs=proposed;
++ return {seasons:new Set(found.map(r=>r.year)).size,clubs:new Set(found.map(identity)).size,added:found.length/2,saved:true};
++}
++function pathImportReferenceCsv(txt,selectedLeague,name,season='',confirmUnknownRows=false){
++ const report=TACsv.read(txt,{filename:name,league:selectedLeague,season,allowFixtures:true,confirmUnknownRows});
++ if(report.seasonReassigned)throw Error('Confermare la stagione delle gare di giugno/luglio tramite anteprima guidata');
++ return pathCommitReferences(pathPrepareReferences(report.records,selectedLeague));
+ }
+ $('#pathAuxFiles').addEventListener('change',async ev=>{
+  const input=ev.target,files=[...input.files],selected=$('#pathAuxLeague').value,msg=[];let imported=0;
+- for(const file of files){try{const x=pathImportReferenceCsv(await file.text(),selected,file.name);msg.push(`${file.name}: ${x.clubs} squadre-stagione, ${x.seasons} stagioni${x.saved?'':' · salvataggio non riuscito'}`);imported++}catch(ex){msg.push(`${file.name}: ERRORE — ${ex.message}`)}}
++ for(const file of files){try{const x=pathImportReferenceCsv(await smartReadText(file),selected,file.name);msg.push(`${file.name}: ${x.clubs} squadre-stagione, ${x.seasons} stagioni${x.saved?'':' · salvataggio non riuscito'}`);imported++}catch(ex){msg.push(`${file.name}: ERRORE — ${ex.message}`)}}
+  $('#pathAuxStatus').textContent=(imported?`${imported} file di riferimento importati. `:'Nessun file importato. ')+msg.join(' · ');
+  input.value='';renderStandings();
+ });
+@@ -1328,8 +1295,8 @@
+  {name:'Champions League',code:null,source:'https://it.uefa.com/uefachampionsleague/fixtures-results/'}
+ ];
+ const FIXTURES_CSV_URL='https://www.football-data.co.uk/fixtures.csv';
+-function readLeaguePreference(){try{return localStorage.getItem('ta_selected_league')||''}catch(_){return ''}}
+-function saveLeaguePreference(l){try{localStorage.setItem('ta_selected_league',l)}catch(_){}}
++function readLeaguePreference(){try{return localStorage.getItem('ta_data002_selected_league')||''}catch(_){return ''}}
++function saveLeaguePreference(l){try{localStorage.setItem('ta_data002_selected_league',l)}catch(_){}}
+ function currentSeasonStart(){const n=new Date();return n.getMonth()>=6?n.getFullYear():n.getFullYear()-1}
+ function currentSeasonCode(){const y=currentSeasonStart();return String(y%100).padStart(2,'0')+String((y+1)%100).padStart(2,'0')}
+ function currentSeasonLabel(){const y=currentSeasonStart();return y+'/'+String((y+1)%100).padStart(2,'0')}
+@@ -1427,7 +1394,7 @@
+ conds:[...document.querySelectorAll("#cd .cr")].map(d=>({s:d.querySelector(".s").value,k:d.querySelector(".k").value,op:d.querySelector(".o").value,v:+d.querySelector(".v").value}))}}
+ function setState(S){$("#nm").value=S.name||"";$("#m").value=S.m;$("#t").value=S.t;$("#n").value=S.n;$("#q").value=S.q;$("#c").value=S.c;$("#h").checked=S.h;$("#cd").innerHTML="";S.conds.forEach(addC)}
+ let mem=[];const gs=()=>{try{return JSON.parse(archiveReadAux("gp_strats")||"[]")}catch(x){return mem}};
+-const ss=a=>{try{localStorage.setItem("ta_stab_gp_strats",JSON.stringify(a));mem=a;return true}catch(x){archiveUpdateStatus("Strategie non salvate: "+x.message,true);return false}};
++const ss=a=>{try{localStorage.setItem("ta_data002_gp_strats",JSON.stringify(a));mem=a;return true}catch(x){archiveUpdateStatus("Strategie non salvate: "+x.message,true);return false}};
+ function drawS(){const a=gs();$("#sl").innerHTML=a.length?"<h2 style='margin-top:18px;font-size:16px'>Strategie salvate</h2>"+a.map((s,i)=>`<div class="sv"><span>${e(s.name||"Senza nome")} <small class="hint">(${MK[s.m][0]}, ${s.t=="B"?"punta":"banca"})</small></span><button data-l="${i}">Carica</button><button data-d="${i}" aria-label="Elimina">×</button></div>`).join(""):""}
+ $("#sl").onclick=ev=>{const a=gs(),l=ev.target.dataset.l,d=ev.target.dataset.d;if(l!==undefined)setState(a[l]);if(d!==undefined){a.splice(d,1);if(ss(a))drawS()}};
+ $("#sv").onclick=()=>{const S=state();if(!S.name){$("#nm").focus();$("#nm").placeholder="Dai un nome alla strategia";return}const a=gs().filter(x=>x.name!==S.name);a.push(S);if(!ss(a)){$("#out").textContent="Strategia non salvata: memoria non disponibile. Dati precedenti conservati.";return}drawS()};
+@@ -1521,7 +1488,7 @@
+  if(!rows.length){shownFixtures=[];$('#dailySummary').textContent='Nessuna partita importata';out.innerHTML='<p class="hint">Per vedere le partite, aggiorna il calendario, importa il CSV oppure aggiungi risultati storici.</p>';return}
+  const cutoff=dayT();
+  const selected=D().filter(r=>r.d===cutoff);
+- const manual=man.filter(m=>m.d===cutoff).map(m=>({d:m.d,lg:$('#lg').value||'Inserita a mano',H:m.H,A:m.A,up:true,o:{},manual:true}));
++ const manual=man.filter(m=>m.d===cutoff).map(m=>({...m,d:m.d,lg:m.lg||$('#lg').value||'Inserita a mano',H:m.H,A:m.A,up:true,o:m.o||{},manual:true}));
+  const unique=new Map();
+  [...selected,...manual].forEach(r=>{const key=r.H+'|'+r.A+'|'+r.lg;const existing=unique.get(key);if(!existing||(!r.up&&existing.up))unique.set(key,r)});
+  shownFixtures=[...unique.values()].sort((a,b)=>(a.o?.Time||'99:99').localeCompare(b.o?.Time||'99:99')||a.H.localeCompare(b.H));
+@@ -1543,23 +1510,24 @@
+ };
+ 
+ let man=[];try{man=JSON.parse(archiveReadAux("gp_man")||"[]").map(canonicalMatch)}catch(x){}
+-const sm=()=>{try{localStorage.setItem("ta_stab_gp_man",JSON.stringify(man));return true}catch(x){archiveUpdateStatus("Partite manuali non salvate: "+x.message,true);return false}};
++const sm=()=>{try{localStorage.setItem("ta_data002_gp_man",JSON.stringify(man));return true}catch(x){archiveUpdateStatus("Partite manuali non salvate: "+x.message,true);return false}};
+ function dayT(){const p=$("#dd").value.split("-").map(Number);return Date.UTC(p[0],p[1]-1,p[2])}
+ function lm(){const t=dayT();$("#ml").innerHTML=man.map((m,i)=>m.d==t?`<div class="sv"><span>${e(m.H)} - ${e(m.A)}</span><button data-r="${i}" aria-label="Rimuovi partita">×</button></div>`:"").join("")}
+ $("#mb").onclick=()=>{const H=$("#mh").value.trim(),A=$("#ma").value.trim(),n=new Set(D().flatMap(r=>[r.H,r.A])),k=$("#mm");
+ if(!rows.length){k.textContent="Carica prima i dati: servono per calcolare le statistiche delle squadre.";return}
++if(!$("#lg").value){k.textContent="Seleziona prima il campionato della partita manuale.";return}
+ if(!n.has(H)||!n.has(A)){k.textContent="Squadra non trovata: scegli i nomi dall’elenco che compare mentre scrivi.";return}
+ if(H==A){k.textContent="Le due squadre devono essere diverse.";return}
+-man.push({d:dayT(),H,A});if(!sm()){man.pop();k.textContent="Partita manuale non salvata: memoria non disponibile.";return}k.textContent="";$("#mh").value=$("#ma").value="";lm();comparisonOptions();$("#ch").value=H;$("#ca").value=A;compareMatch(H,A,dayT());today()};
++try{man.push(canonicalManualMatch({d:dayT(),lg:$("#lg").value,H,A,up:true}))}catch(ex){k.textContent=ex.message;return}if(!sm()){man.pop();k.textContent="Partita manuale non salvata: memoria non disponibile.";return}k.textContent="";$("#mh").value=$("#ma").value="";lm();comparisonOptions();$("#ch").value=H;$("#ca").value=A;compareMatch(H,A,dayT());today()};
+ $("#ml").onclick=ev=>{const i=ev.target.dataset.r;if(i!==undefined){const before=man.slice();man.splice(i,1);if(!sm())man=before;lm();today()}};
+ $("#dg").onclick=today;$("#dd").onchange=()=>{lm();today();comparisonOptions();if($("#ch").value&&$("#ca").value)compareMatch($("#ch").value,$("#ca").value,dayT())};lm();
+-const KO=["CsvSeason","Season","Time","Source","SourceTime","Avg>2.5","B365>2.5","P>2.5","Avg<2.5","B365<2.5","P<2.5","AvgD","B365D","PSD","AvgH","B365H","PSH","AvgA","B365A","PSA"];
++const KO=["ClubHomeCountry","ClubAwayCountry","ClubHomeId","ClubAwayId","ClubHomeRaw","ClubAwayRaw","ClubHomeStatus","ClubAwayStatus","ClubHomeSourceId","ClubAwaySourceId","ClubHomeSources","ClubAwaySources","ClubRegistryVersion","CsvLeagueResolution","CsvSourceFile","CsvSeason","Season","Time","Source","SourceTime","Avg>2.5","B365>2.5","P>2.5","Avg<2.5","B365<2.5","P<2.5","AvgD","B365D","PSD","AvgH","B365H","PSH","AvgA","B365A","PSA"];
+ // Archivio v0.2G: IndexedDB per volumi elevati; fallback gzip su localStorage.
+ // Il vecchio gp_rows viene letto una volta in fase di migrazione; la copia originale non viene cancellata se IndexedDB funziona.
+-const ARCHIVE_DB='TradingAnalyticsArchiveV2_Stabilized', ARCHIVE_STORE='snapshots';
++const ARCHIVE_DB='TradingAnalyticsArchiveV3_TADATA002', ARCHIVE_STORE='snapshots';
+ let archiveDb=null,archiveMode='checking',archiveFallbackMode='',archiveReady=false,archiveWarning='',archiveWriteChain=Promise.resolve();
+-const archiveCompact = list => list.map(r=>{const o={};KO.forEach(k=>{if(r.o&&r.o[k]!==undefined&&r.o[k]!==null&&r.o[k]!=='')o[k]=r.o[k]});return [r.d,r.lg,r.H,r.A,r.h,r.a,r.ht,r.up?1:0,o,r.hth??null,r.hta??null,r.shots??null]});
+-const archiveExpand = a => a.map(r=>({d:r[0],lg:r[1],H:canonicalTeamName(r[2]),A:canonicalTeamName(r[3]),h:r[4],a:r[5],ht:r[6],up:!!r[7],o:r[8]||{},hth:Number.isInteger(r[9])?r[9]:null,hta:Number.isInteger(r[10])?r[10]:null,shots:Array.isArray(r[11])&&r[11].length===4&&r[11].every(Number.isInteger)?r[11]:null}));
++const archiveCompact = list => list.map(r=>{const o=JSON.parse(JSON.stringify(r.o||{}));return [r.d,r.lg,r.H,r.A,r.h,r.a,r.ht,r.up?1:0,o,r.hth??null,r.hta??null,r.shots??null]});
++const archiveExpand = a => TAClubs.expandCompact(a).map(canonicalMatch);
+ function archiveOpenDb(){return new Promise((resolve,reject)=>{
+  if(!('indexedDB' in window))return reject(Error('IndexedDB non supportato'));
+  let settled=false,req;const fail=ex=>{if(settled)return;settled=true;clearTimeout(timer);reject(ex)};
+@@ -1585,27 +1553,27 @@
+  tx.objectStore(ARCHIVE_STORE).put({version:2,rows:compact,updatedAt:Date.now()},'matches');
+  tx.oncomplete=()=>done(resolve);tx.onerror=tx.onabort=()=>done(reject,tx.error||Error('Scrittura archivio interrotta o scaduta'));
+ })}
+-async function archivePackGzip(compact){const txt=JSON.stringify(compact);if(typeof CompressionStream==='undefined')return {key:'gp_rows',value:txt};const stream=new Blob([txt]).stream().pipeThrough(new CompressionStream('gzip'));const bytes=new Uint8Array(await new Response(stream).arrayBuffer());let binary='';for(let i=0;i<bytes.length;i+=8192)binary+=String.fromCharCode(...bytes.subarray(i,i+8192));return {key:'gp_rows_gzip',value:btoa(binary)}}
+-async function archiveReadGzip(){const text=localStorage.getItem('gp_rows_gzip');if(!text)return null;if(typeof DecompressionStream==='undefined')throw Error('Il browser non può decomprimere questo archivio');const bin=atob(text),bytes=Uint8Array.from(bin,c=>c.charCodeAt(0)),stream=new Blob([bytes]).stream().pipeThrough(new DecompressionStream('gzip'));return JSON.parse(await new Response(stream).text())}
+-function archiveRawLegacy(){try{return JSON.parse(localStorage.getItem('gp_rows')||'[]')}catch(_){return []}}
++async function archivePackGzip(compact){const txt=JSON.stringify(compact);if(typeof CompressionStream==='undefined')return {key:'ta_data002_gp_rows',value:txt};const stream=new Blob([txt]).stream().pipeThrough(new CompressionStream('gzip'));const bytes=new Uint8Array(await new Response(stream).arrayBuffer());let binary='';for(let i=0;i<bytes.length;i+=8192)binary+=String.fromCharCode(...bytes.subarray(i,i+8192));return {key:'ta_data002_gp_rows_gzip',value:btoa(binary)}}
++async function archiveReadGzip(){const text=localStorage.getItem('ta_data002_gp_rows_gzip');if(!text)return null;if(typeof DecompressionStream==='undefined')throw Error('Il browser non può decomprimere questo archivio');const bin=atob(text),bytes=Uint8Array.from(bin,c=>c.charCodeAt(0)),stream=new Blob([bytes]).stream().pipeThrough(new DecompressionStream('gzip'));return JSON.parse(await new Response(stream).text())}
++function archiveRawLegacy(){try{return JSON.parse(localStorage.getItem('ta_data002_gp_rows')||'[]')}catch(_){return []}}
+ async function archiveFallbackPut(compact){
+  const packed=await archivePackGzip(compact);
+  const envelope=JSON.stringify({version:1,key:packed.key,value:packed.value});
+- localStorage.setItem('ta_stab_fallback_v1',envelope);
+- if(localStorage.getItem('ta_stab_fallback_v1')!==envelope)throw Error('Verifica memoria alternativa fallita');
+- archiveMode=packed.key==='gp_rows_gzip'?'compressed':'localStorage';return true;
++ localStorage.setItem('ta_data002_fallback_v1',envelope);
++ if(localStorage.getItem('ta_data002_fallback_v1')!==envelope)throw Error('Verifica memoria alternativa fallita');
++ archiveMode=packed.key==='ta_data002_gp_rows_gzip'?'compressed':'localStorage';return true;
+ }
+ async function archiveReadFallback(){
+- const text=localStorage.getItem('ta_stab_fallback_v1');if(!text)return null;
+- const env=JSON.parse(text);archiveFallbackMode=env.key==='gp_rows'?'localStorage':'compressed';if(env.version!==1||typeof env.value!=='string')throw Error('Snapshot alternativo non valido');
+- if(env.key==='gp_rows')return JSON.parse(env.value);
+- if(env.key!=='gp_rows_gzip'||typeof DecompressionStream==='undefined')throw Error('Snapshot compresso non leggibile');
++ const text=localStorage.getItem('ta_data002_fallback_v1');if(!text)return null;
++ const env=JSON.parse(text);archiveFallbackMode=env.key==='ta_data002_gp_rows'?'localStorage':'compressed';if(env.version!==1||typeof env.value!=='string')throw Error('Snapshot alternativo non valido');
++ if(env.key==='ta_data002_gp_rows')return JSON.parse(env.value);
++ if(env.key!=='ta_data002_gp_rows_gzip'||typeof DecompressionStream==='undefined')throw Error('Snapshot compresso non leggibile');
+  const bytes=Uint8Array.from(atob(env.value),c=>c.charCodeAt(0));
+  return JSON.parse(await new Response(new Blob([bytes]).stream().pipeThrough(new DecompressionStream('gzip'))).text());
+ }
+ function archiveUpdateStatus(msg='',warning=false){const panel=document.querySelector('.archive-safety'),label=document.querySelector('#archiveStorageMode'),note=document.querySelector('#archiveStorageStatus');if(!panel||!label||!note)return;panel.classList.toggle('is-warning',warning||archiveMode==='localStorage');const names={indexeddb:'Memoria estesa · IndexedDB',compressed:'Memoria compressa · limite browser',localStorage:'Memoria base · spazio limitato',checking:'Verifica in corso'};label.textContent=names[archiveMode]||archiveMode;note.textContent=msg||`${rows.filter(x=>!x.up).length.toLocaleString('it-IT')} risultati e ${rows.filter(x=>x.up).length.toLocaleString('it-IT')} partite future conservati nel browser. Esegui periodicamente il backup JSON.`}
+ async function archiveStrictWrite(list){const compact=archiveCompact(list); // Non cambiare rows finché non sappiamo che il dato è stato scritto.
+- if(archiveDb){try{await archiveDbPut(compact);const verified=await archiveDbGet();if(!verified||JSON.stringify(verified.rows)!==JSON.stringify(compact))throw Error('Rilettura archivio non corrispondente');try{localStorage.removeItem('ta_stab_fallback_v1')}catch(_){}archiveMode='indexeddb';archiveUpdateStatus();return true}catch(ex){archiveWarning=ex.message||String(ex)}}
++ if(archiveDb){try{await archiveDbPut(compact);const verified=await archiveDbGet();if(!verified||JSON.stringify(verified.rows)!==JSON.stringify(compact))throw Error('Rilettura archivio non corrispondente');try{localStorage.removeItem('ta_data002_fallback_v1')}catch(_){}archiveMode='indexeddb';archiveUpdateStatus();return true}catch(ex){archiveWarning=ex.message||String(ex)}}
+  try{await archiveFallbackPut(compact);archiveUpdateStatus('IndexedDB non disponibile: archivio salvato in modo '+(archiveMode==='compressed'?'compresso.':'standard.')+' Effettua un backup.',true);return true}catch(ex){archiveWarning=ex.message||String(ex);archiveUpdateStatus('SALVATAGGIO NON RIUSCITO: '+archiveWarning+'. Nessuna importazione verrà confermata. Scarica un backup, controlla lo spazio e riprova.',true);return false}}
+ function archiveQueueWrite(snapshot){const exact=archiveExpand(archiveCompact(snapshot));archiveWriteChain=archiveWriteChain.catch(()=>{}).then(()=>archiveStrictWrite(exact));return archiveWriteChain}
+ // Tutti i percorsi persistenti attendono archiveQueueWrite e il suo controllo di lettura.
+@@ -1643,7 +1611,7 @@
+  if(!cf){cf=1;$('#fx').textContent='Conferma eliminazione archivio';setTimeout(()=>{cf=0;$('#fx').textContent='Cancella dati salvati'},5000);return}
+  cf=0;$('#fx').textContent='Cancella dati salvati';if(!window.confirm('Eliminare tutte le partite salvate nel browser? Prima scarica il backup JSON.'))return;
+  if(!await archiveQueueWrite([])){$('#ds').textContent='Cancellazione non salvata: archivio precedente conservato.';return}
+- rows=[];storedGoalEvents=[];try{localStorage.setItem('ta_stab_gp_goal_events','[]')}catch(_){ }refreshGoalEventStatus('Archivio eliminato');$('#ds').textContent='Archivio svuotato.';fill();teams();today();comparisonOptions();refreshDataStatus();refreshStandingsControls();renderStandings();archiveUpdateStatus()};
++ rows=[];storedGoalEvents=[];try{localStorage.setItem('ta_data002_gp_goal_events','[]')}catch(_){ }refreshGoalEventStatus('Archivio eliminato');$('#ds').textContent='Archivio svuotato.';fill();teams();today();comparisonOptions();refreshDataStatus();refreshStandingsControls();renderStandings();archiveUpdateStatus()};
+ 
+ // Comparatore: dati disponibili prima della data selezionata, con campioni separati.
+ function comparisonOptions(){
+@@ -2411,6 +2379,7 @@
+ }
+ 
+ function buildMatchAnalysis(H,A,cutoff,league,compact=false){
++ H=canonicalTeamName(H,league);A=canonicalTeamName(A,league);
+  if(!H||!A||H===A)return '<p class="note">Seleziona due squadre differenti per iniziare l’analisi.</p>';
+  const season=se({d:cutoff});
+  const resolvedLeague=resolveLeague(H,A,cutoff,league);
+@@ -2662,10 +2631,10 @@
+ // Cross-season positions use a shared list of years, including absent clubs.
+ function standingsHistoryBySeason(league,team,years,selectedSeason,cutoff){
+  return years.map(y=>{
+-  const snap=standingsCompute(league,y,y===selectedSeason?cutoff:Infinity,'all');
++  const snap=standingsCompute(league,y,cutoff,'all');
+   const t=snap.table.find(x=>x.name===team);
+   const complete=snap.totalTeams>=6&&snap.games.length>=snap.totalTeams*(snap.totalTeams-1)*.85;
+-  return {year:y,label:standingsSeasonLabel(y),rank:t?t.rank:null,pts:t?t.pts:null,played:t?t.p:0,teams:snap.totalTeams,complete,games:snap.games.length,zone:t?standingsZoneInfo(league,y,snap.totalTeams,t.rank):null,origin:t?null:pathStatus(league,team,y,false)};
++  return {year:y,label:standingsSeasonLabel(y),rank:t?t.rank:null,pts:t?t.pts:null,played:t?t.p:0,teams:snap.totalTeams,complete,games:snap.games.length,zone:t?standingsZoneInfo(league,y,snap.totalTeams,t.rank):null,origin:t?null:pathStatus(league,team,y,false,cutoff)};
+  });
+ }
+ function standingsProgressByDate(league,season,team,cutoff=Infinity,scope='all',timeline=null){
+@@ -2705,7 +2674,7 @@
+   };
+   return `${bar(hc,cx-bw-3,'#15966f',H)}${bar(ac,cx+3,'#7185bd',A)}<text x="${cx}" y="${base+20}" text-anchor="middle" font-size="12" fill="var(--mu)">${String(yr).slice(-2)}/${String((yr+1)%100).padStart(2,'0')}</text>`;
+  }).join('');
+- return `<div class="stand-chart-card"><h4>${e(title)}</h4><p class="stand-chart-caption">Ogni colonna mostra la posizione ricostruita della squadra. <b>Più alta è la colonna, migliore è la posizione</b>. Quando una squadra non partecipa, la colonna resta vuota: <b>PL↑</b> indica una categoria superiore, <b>L1↓</b> una inferiore, <b>?</b> dati non verificati. Non sono posizioni simulate.</p><div class="stand-mini-legend"><span><i style="background:#15966f"></i>${e(H)}</span><span><i style="background:#7185bd"></i>${e(A)}</span></div><svg class="stand-svg" viewBox="0 0 ${W} ${HH}" role="img" aria-label="Posizioni per stagione e provenienza verificata da categorie superiori e inferiori">${grid}${columns}</svg><div class="stand-zone-chart-key"><span class="stand-zones-subtle">I numeri colorati indicano la fascia di ogni stagione; il blu e il verde delle barre distinguono le squadre.</span></div><div class="path-track">${pathPreview(H,league,years,hs,selectedSeason)}${pathPreview(A,league,years,as,selectedSeason)}</div><p class="stand-chart-meta">* Classifica provvisoria o stagione non completa nei dati. ↑ Categoria superiore, ↓ inferiore rispetto a ${e(league)}. ? Provenienza non verificata. Le stagioni in altre divisioni non entrano nella classifica o nelle medie di questa lega.</p></div>`;
++ return `<div class="stand-chart-card"><h4>${e(title)}</h4><p class="stand-chart-caption">Ogni colonna mostra la posizione ricostruita della squadra. <b>Più alta è la colonna, migliore è la posizione</b>. Quando una squadra non partecipa, la colonna resta vuota: <b>PL↑</b> indica una categoria superiore, <b>L1↓</b> una inferiore, <b>?</b> dati non verificati. Non sono posizioni simulate.</p><div class="stand-mini-legend"><span><i style="background:#15966f"></i>${e(H)}</span><span><i style="background:#7185bd"></i>${e(A)}</span></div><svg class="stand-svg" viewBox="0 0 ${W} ${HH}" role="img" aria-label="Posizioni per stagione e provenienza verificata da categorie superiori e inferiori">${grid}${columns}</svg><div class="stand-zone-chart-key"><span class="stand-zones-subtle">I numeri colorati indicano la fascia di ogni stagione; il blu e il verde delle barre distinguono le squadre.</span></div><div class="path-track">${pathPreview(H,league,years,hs,selectedSeason,cutoff)}${pathPreview(A,league,years,as,selectedSeason,cutoff)}</div><p class="stand-chart-meta">* Classifica provvisoria o stagione non completa nei dati. ↑ Categoria superiore, ↓ inferiore rispetto a ${e(league)}. ? Provenienza non verificata. Le stagioni in altre divisioni non entrano nella classifica o nelle medie di questa lega.</p></div>`;
+ }
+ function standingsPositionLines(title,league,season,H,A,cutoff,scope='all'){
+  const games=rows.filter(r=>!r.up&&r.lg===league&&se(r)===season&&r.d<cutoff);
+@@ -2741,7 +2710,7 @@
+  const overall=standingsCompute(league,season,cutoff,'all'),home=standingsCompute(league,season,cutoff,'home'),away=standingsCompute(league,season,cutoff,'away');
+  const one=(name,isAway)=>{const o=overall.table.find(t=>t.name===name),loc=(isAway?away:home).table.find(t=>t.name===name);return `<div class="stand-focus-card ${isAway?'away':''}"><h4>${standingsFocusBadge(name,focus)}</h4><small>${isAway?'Squadra ospite · trasferta':'Squadra di casa · casa'}</small><strong>${o&&o.p?o.rank+'°':'—'}</strong><small>${o&&o.p?o.pts+' punti in '+o.p+' gare':'Nessun incontro valido'}</small><p>${loc&&loc.p?loc.pts+' pt in '+loc.p+' gare nel contesto · '+loc.gf+' GF / '+loc.ga+' GS':'Nessun risultato nel contesto'}</p>${loc&&loc.p?standingsFormHtml(loc.form):''}</div>`};
+  panel.innerHTML=`<div class="stand-focus-panel">${one(focus.H,false)}${one(focus.A,true)}</div>`;
+- const years=[...new Set(rows.filter(r=>!r.up&&r.lg===league&&se(r)<=season).map(se))].sort((a,b)=>a-b);
++ const years=[...new Set(rows.filter(r=>!r.up&&r.lg===league&&r.d<cutoff&&se(r)<=season).map(se))].sort((a,b)=>a-b);
+  charts.innerHTML=`<section class="stand-chart-wrap" aria-label="Posizioni e storico della classifica"><h3>Andamento temporale delle posizioni</h3><div class="stand-chart-grid">${standingsHistogram('Posizioni per stagione · storico pluriennale',league,years,focus.H,focus.A,season,cutoff)}</div><div class="stand-chart-toolbar"><div><h3>Posizione nel corso della stagione</h3><p class="hint">Confronta classifica generale, casa e trasferta.</p></div><label>Tipo di classifica<select id="rankTrendScope"><option value="all" ${positionTrendScope==='all'?'selected':''}>Generale</option><option value="home" ${positionTrendScope==='home'?'selected':''}>Casa</option><option value="away" ${positionTrendScope==='away'?'selected':''}>Trasferta</option></select></label></div><div id="rankTrendChart">${standingsPositionLines('Andamento della posizione',league,season,focus.H,focus.A,cutoff,positionTrendScope)}</div></section>`;
+ }
+ 
+@@ -3004,7 +2973,7 @@
+    if(result.accept.length){const lookup=new Map(storedGoalEvents.map(g=>[g.key,g]));for(const x of result.accept)lookup.set(x.key,x);storedGoalEvents=[...lookup.values()];accepted+=result.accept.length;}
+   }catch(error){rejected.push(file.name+': file non leggibile')}
+  }
+- let saved=true;try{localStorage.setItem('ta_stab_gp_goal_events',JSON.stringify(storedGoalEvents));}catch(_err){saved=false}
++ let saved=true;try{localStorage.setItem('ta_data002_gp_goal_events',JSON.stringify(storedGoalEvents));}catch(_err){saved=false}
+  refreshGoalEventStatus(`${accepted} incontri accettati, ${rejected.length} scartati${saved?'':' · salvataggio non riuscito'}`+(rejected.length?' · '+rejected.slice(0,3).join('; '):''));
+  if($('#ch').value&&$('#ca').value)compareMatch($('#ch').value,$('#ca').value,dayT());
+  ev.target.value='';
+@@ -3016,16 +2985,12 @@
+ // complementary, undocumented/no-key fixture & result scoreboard. Neither is guaranteed.
+ const ESPN_LEAGUE={'Serie A':'ita.1','Serie B':'ita.2','Premier League':'eng.1','Championship':'eng.2','League One':'eng.3','Champions League':'uefa.champions'};
+ let refreshBusy=false, refreshAudit={};
+-function simpleClub(v){
+- let x=canonicalTeamName(v).normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/&/g,' and ').replace(/[^a-z0-9]+/g,' ').replace(/\b(football club|calcio|fc|afc|ac|as|us|ssc|ss|bc|cf|1907|1909|1913)\b/g,' ').replace(/\s+/g,' ').trim();
+- const alias={'internazionale milano':'inter','internazionale':'inter','inter milan':'inter','inter milano':'inter','milan':'milan','roma':'roma','napoli':'napoli','juventus turin':'juventus','wolverhampton wanderers':'wolves','wolverhampton':'wolves','west bromwich albion':'west brom','queens park rangers':'qpr','sheffield wednesday':'sheffield weds','blackburn rovers':'blackburn','bolton wanderers':'bolton','preston north end':'preston','ipswich town':'ipswich','birmingham city':'birmingham','leicester city':'leicester','norwich city':'norwich','stoke city':'stoke','swansea city':'swansea','cardiff city':'cardiff','charlton athletic':'charlton','derby county':'derby','huddersfield town':'huddersfield','plymouth argyle':'plymouth','nottingham forest':'nott m forest','manchester united':'man united','manchester city':'man city'};
+- return alias[x]||x;
+-}
+-function resultIdentity(r){return [r.d,r.lg,simpleClub(r.H),simpleClub(r.A)].join('|')}
++function simpleClub(v,league=''){return TAClubs.resolve(v,league).id}
++function resultIdentity(r){return TAClubs.matchId(r)}
+ function sourceTeam(lg,obj){
+  const options=[obj?.displayName,obj?.shortDisplayName,obj?.name,obj?.location].filter(Boolean);
+  const known=[...new Set(rows.filter(r=>r.lg===lg).flatMap(r=>[r.H,r.A]))];
+- for(const name of options){const matches=known.filter(v=>simpleClub(name)===simpleClub(v));if(matches.length===1)return matches[0]}
++ for(const name of options){const matches=known.filter(v=>simpleClub(name,lg)===simpleClub(v,lg));if(matches.length===1)return matches[0]}
+  return (options[0]||'').replace(/^(AC|AS|US|SS|SSC|FC) /i,'').replace(/ (FC|AFC|Calcio)$/i,'').trim();
+ }
+ function localKickoff(iso){
+@@ -3590,8 +3555,8 @@
+  if(entry.error)return `<div class="smart-file is-error"><div class="smart-file-head"><strong>${e(entry.name)}</strong><span>✕ File non valido</span></div><p class="smart-warning">${e(entry.error)}</p></div>`;
+  let previewSummary='',needsSeasonConfirmation=false;
+  try{
+-  const p=TACsv.read(entry.text,{filename:entry.name,league:entry.league||'',season:entry.season||'',inspect:true,allowFixtures:x.format==='fixtures'});
+-  previewSummary=`Anteprima con le scelte attuali: ${p.records.length} incontri importabili; ${p.invalid} righe non valide; ${p.incomplete} senza risultato escluse; ${p.outOfSeason} fuori stagione; ${p.missingHT} senza HT.`;
++  const p=TACsv.read(entry.text,{filename:entry.name,league:entry.league||'',season:entry.season||'',inspect:true,allowFixtures:entry.mode==='reference'||x.format==='fixtures',confirmUnknownRows:!!entry.confirmUnknownRows});
++  previewSummary=`Anteprima con le scelte attuali: ${p.records.length} incontri importabili; ${p.invalid} righe non valide; ${p.incomplete} senza risultato escluse; ${p.outOfSeason} fuori stagione; ${p.missingHT} senza HT; ${p.quarantinedLeagueRows} righe con campionato non risolto (salvataggio bloccato).`;
+   needsSeasonConfirmation=p.seasonReassigned>0;
+   if(needsSeasonConfirmation)previewSummary+=` ${p.seasonReassigned} gare di giugno/luglio assegnate alla stagione scelta anziché al criterio automatico luglio–giugno: conferma richiesta.`;
+  }catch(ex){previewSummary='Importazione bloccata: '+ex.message}
+@@ -3603,6 +3568,7 @@
+  <div class="smart-file-meta">${e(smartKindLabels[x.format])} · <b>${x.validRows}</b> righe valide (${x.finished} finali, ${x.validRows-x.finished} non concluse) · ${e(labels)}${x.skipped?' · '+x.skipped+' righe ignorate':''}</div>
+  ${x.mismatch?`<p class="smart-warning">Attenzione: il nome suggerisce ${e(standingsSeasonLabel(x.filenameYear))}, ma i risultati riportano ${e(labels)}. Controlla che sia il file corretto.</p>`:''}
+  ${x.warning?`<p class="smart-warning">${e(x.warning)}</p>`:''}
++ ${x.unresolvedLeagueRows?.length?`<label class="smart-warning"><input type="checkbox" data-smart-resolve="${i}" ${entry.confirmUnknownRows?'checked':''}> Confermo che le righe anomale ${x.unresolvedLeagueRows.map(r=>r.row).join(', ')} appartengono alla lega selezionata; i codici originali saranno conservati.</label>`:''}
+  <p class="smart-warning" data-csv-preview="${i}">${e(previewSummary)}</p>
+  <div class="smart-choices"><label>Campionato<select data-smart-league="${i}"><option value="">— Seleziona campionato —</option>${select}</select></label><label>Stagione (filtra / assegna)<select data-smart-season="${i}"><option value="">Auto: colonna Season o data</option>${seasonChoices}</select></label><label>Destinazione<select data-smart-mode="${i}"><option value="results" ${defmode==='results'?'selected':''}>Risultati e analisi</option><option value="reference" ${defmode==='reference'?'selected':''} ${!PATH_TIERS[entry.league]?'disabled':''}>Solo provenienza / categoria</option></select></label><label class="smart-skip"><input type="checkbox" data-smart-skip="${i}" ${entry.skip?'checked':''}> Non importare</label></div>
+  ${x.mismatch||needsSeasonConfirmation?`<label style="display:flex;align-items:center;gap:5px;font-size:11px;margin-top:8px"><input type="checkbox" data-smart-accept="${i}" ${entry.acceptMismatch?'checked':''}> Confermo la discrepanza di stagione rispetto al nome file o al criterio luglio–giugno</label>`:''}
+@@ -3648,11 +3614,12 @@
+ $('#f').onchange=async ev=>{await smartQueueFiles([...ev.target.files]);ev.target.value='';$('#smartImport').scrollIntoView({behavior:'smooth',block:'center'})};
+ $('#smartImportClear').addEventListener('click',()=>{smartQueue=[];smartRenderQueue();$('#smartImportStatus').textContent='Selezione rimossa. Le partite già in archivio non sono state modificate.'});
+ $('#smartFileList').addEventListener('change',ev=>{
+- const el=ev.target,idx=el.dataset.smartLeague??el.dataset.smartSeason??el.dataset.smartMode??el.dataset.smartSkip??el.dataset.smartAccept;
++ const el=ev.target,idx=el.dataset.smartLeague??el.dataset.smartResolve??el.dataset.smartSeason??el.dataset.smartMode??el.dataset.smartSkip??el.dataset.smartAccept;
+  if(idx===undefined)return;const z=smartQueue[Number(idx)];if(!z||z.error)return;
+- if(el.dataset.smartLeague!==undefined){z.league=el.value;
++ if(el.dataset.smartLeague!==undefined){z.league=el.value;z.confirmUnknownRows=false;
+   if(z.mode==='reference'&&!PATH_TIERS[z.league])z.mode='results';
+  }else if(el.dataset.smartSeason!==undefined){z.season=el.value;z.acceptMismatch=false;}
++ else if(el.dataset.smartResolve!==undefined)z.confirmUnknownRows=el.checked;
+  else if(el.dataset.smartMode!==undefined)z.mode=el.value;
+  else if(el.dataset.smartSkip!==undefined)z.skip=el.checked;
+  else if(el.dataset.smartAccept!==undefined)z.acceptMismatch=el.checked;
+@@ -3661,14 +3628,13 @@
+ function smartDataFromEntry(entry){
+  const {inspection:x,league,mode}=entry;
+  if(!league)throw Error('campionato da scegliere');
+- if(mode==='reference'){
+-  if(!PATH_TIERS[league])throw Error('non è una divisione nazionale valida per le provenienze');
+-  if(x.format!=='football')throw Error('per le categorie di provenienza serve un CSV Football-Data con Date/HomeTeam/AwayTeam');
+-  return {reference:true,records:[],entry};
+- }
+- const report=TACsv.read(entry.text,{filename:entry.name,league,season:entry.season||'',allowFixtures:x.format==='fixtures'});
++ const report=TACsv.read(entry.text,{filename:entry.name,league,season:entry.season||'',allowFixtures:mode==='reference'||x.format==='fixtures',confirmUnknownRows:!!entry.confirmUnknownRows});
+  if(report.seasonReassigned&&!entry.acceptMismatch)throw Error('Conferma la discrepanza di stagione delle gare di giugno/luglio prima di importare');
+  entry.importReport=report;
++ if(mode==='reference'){
++  entry.preparedReferences=pathPrepareReferences(report.records,league);
++  return {reference:true,records:[],entry};
++ }
+  return {reference:false,records:report.records,entry};
+ }
+ function smartMergeRecords(add,baseRows=rows){
+@@ -3686,7 +3652,7 @@
+   const hasNewHT=Number.isInteger(r.hth)&&Number.isInteger(r.hta),hasOldHT=Number.isInteger(old.hth)&&Number.isInteger(old.hta);
+   const hasNewShots=Array.isArray(r.shots)&&r.shots.length===4,hasOldShots=Array.isArray(old.shots)&&old.shots.length===4;
+   const improved=!hasOldHT&&hasNewHT||!hasOldShots&&hasNewShots;
+-  const o={...r.o,...old.o};for(const [key,value] of Object.entries(r.o||{}))if(value!==''&&value!==null&&value!==undefined)o[key]=value;
++  const o={...r.o,...old.o};for(const [key,value] of Object.entries(r.o||{}))if(value!==''&&value!==null&&value!==undefined)o[key]=value;Object.assign(o,TAClubs.mergeProvenance(old.o,r.o));
+   const combined={...old,o,hth:hasOldHT?old.hth:r.hth,hta:hasOldHT?old.hta:r.hta,ht:hasOldHT?old.ht:r.ht,shots:hasOldShots?old.shots:r.shots};
+   merged.set(k,combined);if(improved)stats.enriched++;else stats.duplicate++;
+  }
+@@ -3714,7 +3680,7 @@
+  // Detect only the SAME match/date/final score in another league.
+  // Indice per data, squadre e risultato: evita scansioni N×M su archivi grandi.
+  const crossMatches=new Map(),oldMatchIndex=new Map();
+- const crossKey=r=>[r.d,simpleClub(r.H),simpleClub(r.A),r.h,r.a].join('|');
++ const crossKey=r=>[r.d,simpleClub(r.H,r.lg),simpleClub(r.A,r.lg),r.h,r.a].join('|');
+  for(const old of oldRows){if(old.up)continue;const key=crossKey(old);if(!oldMatchIndex.has(key))oldMatchIndex.set(key,[]);oldMatchIndex.get(key).push(old)}
+  for(const incoming of all){if(incoming.up)continue;for(const old of oldMatchIndex.get(crossKey(incoming))||[]){
+   if(old.lg===incoming.lg)continue;
+@@ -3731,7 +3697,7 @@
+  rows=merging.records;archiveUpdateStatus();
+  const counts={files:0,ref:0};
+  for(const v of ready.filter(x=>x.reference)){
+-  try{const res=pathImportReferenceCsv(v.entry.text,v.entry.league,v.entry.name);counts.ref+=res.clubs;counts.files++}
++  try{const res=pathCommitReferences(v.entry.preparedReferences);counts.ref+=res.clubs;counts.files++}
+   catch(ex){problems.push(v.entry.name+': provenienza non importata ('+ex.message+')')}
+  }
+  // Main results are already saved. Report an eventual auxiliary-reference failure separately.
+@@ -3744,7 +3710,7 @@
+  smartCrossCandidates=[...crossMatches.values()];
+  $('#smartFixCrossLeague').hidden=!smartCrossCandidates.length;
+  $('#smartFixCrossLeague').textContent=`Ripara ${smartCrossCandidates.length} doppioni di lega`;
+- $('#smartImportStatus').textContent=msg+' Dettagli CSV: '+audits+'. '+(smartCrossCandidates.length?' ATTENZIONE: '+smartCrossCandidates.length+' incontri identici risultano anche sotto un altro campionato (possibile errore di una vecchia importazione). Non li ho eliminati: usa «Ripara doppioni di lega» solo dopo aver controllato.':'')+(problems.length?' Avvisi: '+problems.join(' · '):'');
++ $('#smartImportStatus').textContent=(problems.length?'Importazione parziale: controllare gli errori di provenienza. ':'')+msg+' Dettagli CSV: '+audits+'. '+(smartCrossCandidates.length?' ATTENZIONE: '+smartCrossCandidates.length+' incontri identici risultano anche sotto un altro campionato (possibile errore di una vecchia importazione). Non li ho eliminati: usa «Ripara doppioni di lega» solo dopo aver controllato.':'')+(problems.length?' Avvisi: '+problems.join(' · '):'');
+  $('#smartImportStatus').classList.toggle('smart-ok',!problems.length);
+  smartQueue=[];
+  importProgress('smartImport',5,5,'Importazione completata: '+st.added+' nuovi incontri','done');
+@@ -3791,13 +3757,13 @@
+ $('#archiveImportBackup').addEventListener('change',async ev=>{const input=ev.target,file=input.files?.[0];input.value='';if(!file)return;if(!archiveReady){archiveUpdateStatus('Attendi il caricamento dell’archivio.',true);return}
+  if(archiveBackupBusy||archiveTransferBusy||smartImportBusy||archiveMergePending){archiveUpdateStatus('Attendi la fine dell’importazione in corso.',true);return}archiveBackupBusy=true;
+  try{const obj=JSON.parse(await file.text());if(obj.format!=='TradingAnalyticsBackup'||obj.version!==2||!Array.isArray(obj.records))throw Error('Non è un backup Trading Analytics valido');
+-  const restored=smartMergeRecords(archiveExpand(obj.records),[]).records;if(restored.some(r=>!Number.isFinite(r.d)||!r.lg||!r.H||!r.A||(!r.up&&(!Number.isInteger(r.h)||!Number.isInteger(r.a)))))throw Error('Il backup contiene incontri non validi');
+-  if(!window.confirm('Sostituire gli '+rows.length+' incontri correnti con '+restored.length+' incontri del backup? Puoi scaricare prima una copia degli attuali dati.'))return;
++  const preparedMemberships=Array.isArray(obj.memberships)?obj.memberships.map(TAClubs.canonicalMembership):null;const preparedManual=Array.isArray(obj.manual)?obj.manual.map(canonicalMatch):null;const migration=TAClubs.plan(TAClubs.expandCompact(obj.records));window.taLastMigration=migration.report;if(typeof renderClubDiagnostics==='function')renderClubDiagnostics();if(!migration.report.safe)throw Error('Simulazione migrazione bloccata: '+migration.report.collisions.length+' collisioni di identità, '+migration.report.errors.length+' errori; nessuna modifica effettuata');const restored=migration.records;if(restored.some(r=>!Number.isFinite(r.d)||!r.lg||!r.H||!r.A||(!r.up&&(!Number.isInteger(r.h)||!Number.isInteger(r.a)))))throw Error('Il backup contiene incontri non validi');
++  if(!window.confirm('SIMULAZIONE: '+migration.report.inputCount+' incontri → '+migration.report.outputCount+'; '+migration.report.changedNames+' incontri con nomi normalizzati; risultati, HT e quote invariati. Sostituire gli '+rows.length+' incontri del solo archivio candidato con '+restored.length+' incontri del backup? Puoi scaricare prima una copia degli attuali dati.'))return;
+   if(!await archiveQueueWrite(restored))throw Error('Salvataggio rifiutato: '+archiveWarning);
+   rows=restored;
+-  if(Array.isArray(obj.memberships)){leaguePathRefs=obj.memberships;try{localStorage.setItem('ta_stab_ta_path_memberships',JSON.stringify(leaguePathRefs))}catch(ex){throw Error('Partite archiviate, dati ausiliari non salvati: '+ex.message+'. Esporta il backup prima di chiudere.')}}
+-  if(Array.isArray(obj.goalEvents)){storedGoalEvents=obj.goalEvents;try{localStorage.setItem('ta_stab_gp_goal_events',JSON.stringify(storedGoalEvents))}catch(ex){throw Error('Partite archiviate, dati ausiliari non salvati: '+ex.message+'. Esporta il backup prima di chiudere.')}}
+-  if(Array.isArray(obj.manual)){man=obj.manual.map(canonicalMatch);if(!sm())throw Error("Partite archiviate, partite manuali non salvate: esporta il backup")}
++  if(Array.isArray(obj.memberships)){leaguePathRefs=preparedMemberships;try{localStorage.setItem('ta_data002_ta_path_memberships',JSON.stringify(leaguePathRefs))}catch(ex){throw Error('Partite archiviate, dati ausiliari non salvati: '+ex.message+'. Esporta il backup prima di chiudere.')}}
++  if(Array.isArray(obj.goalEvents)){storedGoalEvents=obj.goalEvents;try{localStorage.setItem('ta_data002_gp_goal_events',JSON.stringify(storedGoalEvents))}catch(ex){throw Error('Partite archiviate, dati ausiliari non salvati: '+ex.message+'. Esporta il backup prima di chiudere.')}}
++  if(Array.isArray(obj.manual)){man=preparedManual;if(!sm())throw Error("Partite archiviate, partite manuali non salvate: esporta il backup")}
+   if(Array.isArray(obj.strategies)&&!ss(obj.strategies))throw Error("Partite archiviate, strategie non salvate: esporta il backup");
+   fill();teams();today();comparisonOptions();refreshDataStatus();refreshStandingsControls();renderStandings();archiveUpdateStatus('Backup ripristinato: '+restored.length+' incontri. Controlla classifiche e dati ausiliari.');$('#smartImportStatus').textContent='Backup JSON ripristinato: '+restored.length+' incontri.';
+  }catch(ex){archiveUpdateStatus('Ripristino non riuscito: '+ex.message,true)}finally{archiveBackupBusy=false}
+@@ -3814,9 +3780,9 @@
+  else throw Error('Il file non contiene un archivio di partite riconoscibile: usa il JSON esportato dalla vecchia versione.');
+  if(!original.length)throw Error('Il file di trasferimento contiene zero partite: controlla che la versione da cui lo hai esportato abbia dati.');
+  if(original.length>250000)throw Error('Archivio troppo grande per un unico recupero.');
+- const expanded=original.map(r=>Array.isArray(r)?archiveExpand([r])[0]:(r&&typeof r==='object'?canonicalMatch({...r,up:!!r.up,o:r.o||{}}):null));
++ const raw=original.map(r=>Array.isArray(r)?TAClubs.expandCompact([r])[0]:(r&&typeof r==='object'?{...r,up:!!r.up,o:r.o||{}}:null));if(raw.some(r=>!legacyIsValidRow(r)))throw Error('Formato delle partite non valido: nessuna modifica');const migration=TAClubs.plan(raw);window.taLastMigration=migration.report;renderClubDiagnostics();if(!migration.report.safe)throw Error('Simulazione migrazione bloccata: collisioni di identità o campi non validi');const expanded=migration.records;
+  if(expanded.some(r=>!legacyIsValidRow(r)))throw Error('Formato delle partite non valido o risultati mancanti: nessun dato modificato.');
+- return {data:expanded,metadata:doc};
++ if(doc&&!Array.isArray(doc)){if(Array.isArray(doc.memberships))doc.memberships=doc.memberships.map(TAClubs.canonicalMembership);if(Array.isArray(doc.manual))doc.manual=doc.manual.map(canonicalMatch);}return {data:expanded,metadata:doc};
+ }
+ function archiveTransferInfo(message,isError=false){const el=document.getElementById('archiveTransferStatus');if(el){el.textContent=message;el.style.color=isError?'#a22d29':'#1d6240'}}
+ document.getElementById('archiveCheckLocal').addEventListener('click',async()=>{
+@@ -3844,7 +3810,7 @@
+   await importYield();
+   const preview=smartMergeRecords(data);
+   const s=preview.stats;
+-  const details='Il file '+file.name+' contiene '+data.length+' incontri ('+leagues.join(', ')+'). Verranno aggiunti '+s.added+' nuovi incontri, '+s.enriched+' completati e '+s.duplicate+' già esistenti; '+s.conflict+' risultati discordanti resteranno invariati.';
++  const details='SIMULAZIONE: '+window.taLastMigration.inputCount+' incontri, '+window.taLastMigration.changedNames+' incontri con nomi normalizzati; risultati, HT e quote invariati. Il file '+file.name+' contiene '+data.length+' incontri ('+leagues.join(', ')+'). Verranno aggiunti '+s.added+' nuovi incontri, '+s.enriched+' completati e '+s.duplicate+' già esistenti; '+s.conflict+' risultati discordanti resteranno invariati.';
+   if(!window.confirm(details+'\n\nVuoi unirli all’archivio attuale? Non verrà cancellato niente.')){archiveTransferInfo('Recupero annullato. Archivio invariato.');importProgress('archiveTransfer',0,5,'Recupero annullato','done');return}
+   importProgress('archiveTransfer',4,5,'Salvataggio in corso: '+preview.records.length.toLocaleString('it-IT')+' incontri');
+   archiveTransferInfo('Salvataggio in corso: '+preview.records.length.toLocaleString('it-IT')+' incontri. Non chiudere questa pagina.');
+@@ -3852,8 +3818,8 @@
+   if(!await archiveQueueWrite(preview.records))throw Error('Salvataggio non riuscito. Archivio attuale invariato: '+archiveWarning);
+   rows=preview.records;
+   // Solo dati ausiliari mancanti, senza sovrascrivere preferenze e strategie correnti.
+-  if(metadata&&!Array.isArray(metadata)&&Array.isArray(metadata.memberships)&&!leaguePathRefs.length){leaguePathRefs=metadata.memberships;try{localStorage.setItem('ta_stab_ta_path_memberships',JSON.stringify(leaguePathRefs))}catch(ex){throw Error('Partite archiviate, dati ausiliari non salvati: '+ex.message+'. Esporta il backup prima di chiudere.')}}
+-  if(metadata&&!Array.isArray(metadata)&&Array.isArray(metadata.goalEvents)&&!storedGoalEvents.length){storedGoalEvents=metadata.goalEvents;try{localStorage.setItem('ta_stab_gp_goal_events',JSON.stringify(storedGoalEvents))}catch(ex){throw Error('Partite archiviate, dati ausiliari non salvati: '+ex.message+'. Esporta il backup prima di chiudere.')}}
++  if(metadata&&!Array.isArray(metadata)&&Array.isArray(metadata.memberships)&&!leaguePathRefs.length){leaguePathRefs=metadata.memberships;try{localStorage.setItem('ta_data002_ta_path_memberships',JSON.stringify(leaguePathRefs))}catch(ex){throw Error('Partite archiviate, dati ausiliari non salvati: '+ex.message+'. Esporta il backup prima di chiudere.')}}
++  if(metadata&&!Array.isArray(metadata)&&Array.isArray(metadata.goalEvents)&&!storedGoalEvents.length){storedGoalEvents=metadata.goalEvents;try{localStorage.setItem('ta_data002_gp_goal_events',JSON.stringify(storedGoalEvents))}catch(ex){throw Error('Partite archiviate, dati ausiliari non salvati: '+ex.message+'. Esporta il backup prima di chiudere.')}}
+   if(metadata&&!Array.isArray(metadata)&&Array.isArray(metadata.manual)&&!man.length){man=metadata.manual.map(canonicalMatch);if(!sm())throw Error("Partite archiviate, partite manuali non salvate: esporta il backup")}
+   if(metadata&&!Array.isArray(metadata)&&Array.isArray(metadata.strategies)&&!gs().length&&!ss(metadata.strategies))throw Error('Partite archiviate, strategie non salvate: esporta il backup');
+   fill();teams();today();comparisonOptions();refreshDataStatus();refreshStandingsControls();renderStandings();
+@@ -3975,6 +3941,7 @@
+ function emptyScore(m){return {market:m,score:null,reason:'Dati insufficienti',homeN:0,awayN:0,leagueN:0,seasonHome:0,seasonAway:0,observed:null,leagueRate:null,delta:null,coverage:'bassa'}}
+ function fraction(rs,m){const eligible=rs.filter(r=>!m.requireHT||(r.ht!==null&&Number.isInteger(r.ht)));return {n:eligible.length,w:eligible.filter(m.f).length,p:eligible.length?eligible.filter(m.f).length/eligible.length:null}}
+ function contextForFixture(f){
++ f=canonicalMatch(f);
+  const played=rows.filter(r=>r.lg===f.lg&&yesterdayOrEarlier(r,f.d)&&r.d>=f.d-4*366*864e5);
+  const latest=se(f), home=played.filter(r=>r.H===f.H),away=played.filter(r=>r.A===f.A);
+  const currentH=home.filter(r=>se(r)===latest),currentA=away.filter(r=>se(r)===latest);
+@@ -4004,7 +3971,7 @@
+ }
+ function evaluate(f){const c=contextForFixture(f);return MARKETS.map(m=>gradeMarket(c,m)).sort((a,b)=>(b.score??-999)-(a.score??-999)||a.market.n.localeCompare(b.market.n,'it'))}
+ function fixtureFromAnalysis(){const H=$ta('#ch')?.value,A=$ta('#ca')?.value,lg=selectedLeague();const d=dayT();return H&&A&&H!==A&&lg&&Number.isFinite(d)?{H,A,lg,d,up:true}:null}
+-function quoteFor(f,marketKey,side='back'){if(!f)return null;const code=dtUTC(f.d),H=canonicalTeamName(f.H),A=canonicalTeamName(f.A);return quotes.filter(q=>q.League===f.lg&&q.Date===code&&canonicalTeamName(q.HomeTeam)===H&&canonicalTeamName(q.AwayTeam)===A&&q.Market===marketKey&&(side===null||q.Side===side)).sort((a,b)=>b.ObservedAt.localeCompare(a.ObservedAt))[0]||null}
++function quoteFor(f,marketKey,side='back'){if(!f)return null;const code=dtUTC(f.d),H=canonicalTeamName(f.H,f.lg),A=canonicalTeamName(f.A,f.lg);return quotes.filter(q=>q.League===f.lg&&q.Date===code&&canonicalTeamName(q.HomeTeam,q.League)===H&&canonicalTeamName(q.AwayTeam,q.League)===A&&q.Market===marketKey&&(side===null||q.Side===side)).sort((a,b)=>b.ObservedAt.localeCompare(a.ObservedAt))[0]||null}
+ function gradeClass(value){return value===null?'ta-na':value>=70?'ta-good':value>=48?'ta-mid':'ta-low'}
+ function gradeCard(r,withButton=true){return `<div class="ta-grade-card"><div class="ta-grade-main"><b>${e(r.market.n)}</b><small>${e(r.coverage)} · casa ${r.homeN} / fuori ${r.awayN} · lega ${r.leagueN}</small><p>${e(r.reason)}</p></div><span class="ta-grade-number ${gradeClass(r.score)}">${r.score===null?'n.d.':r.score+' / 100'}</span>${withButton?`<button type="button" class="ta-plain-btn" data-ta-open-market="${e(r.market.k)}" ${r.score===null?'disabled title="Dati insufficenti"':''}>Apri trade →</button>`:''}</div>`}
+ let currentAnalysisFixture=null,currentAnalysisGrades=[],showAllAnalysis=false;
+@@ -4064,7 +4031,7 @@
+  target.innerHTML=scannerRows.slice(0,60).map((it,i)=>`<article class="ta-fixture-card"><div class="ta-fixture-top"><div><small>${e(it.f.lg)} · ${e(dtUTC(it.f.d))}</small><h3>${e(it.f.H)} – ${e(it.f.A)}</h3></div><button type="button" class="ta-plain-btn" data-ta-scan-analyze="${i}">Analizza partita ↗</button></div><div class="ta-fixture-grades">${it.grades.map(g=>`<div class="ta-mini-grade"><div><b>${e(g.market.n)}</b><small>n ${g.homeN} casa · ${g.awayN} fuori${quoteFor(it.f,g.market.k,null)?' · quota CSV '+quoteFor(it.f,g.market.k,null).Odds.toFixed(2):''}</small></div><span class="ta-grade-number ${gradeClass(g.score)}">${g.score}/100</span><button type="button" data-ta-scan-trade="${i}" data-ta-market="${e(g.market.k)}">Apri trade</button></div>`).join('')}</div></article>`).join('');
+  if(scannerRows.length>60)$ta('#taScanStatus').textContent+=' Mostrate le prime 60.';
+ }
+-const JOURNAL_DB='TradingAnalyticsTradeJournal_v1',JOURNAL_STORE='snapshots';
++const JOURNAL_DB='TradingAnalyticsTradeJournal_v1_TADATA002',JOURNAL_STORE='snapshots';
+ let journal=[],quotes=[],ready=false,saveChain=Promise.resolve(),storage='in verifica',draft=null;
+ function dbOpen(){return new Promise((resolve,reject)=>{
+   if(!window.indexedDB)return reject(Error('IndexedDB non disponibile'));
+@@ -4079,16 +4046,16 @@
+ function cleanItems(items){if(!Array.isArray(items))throw Error('Il backup non contiene un elenco di trade');if(items.length>10000)throw Error('Troppe operazioni nel backup');const ids=new Set();return items.map(it=>{if(!it||typeof it.id!=='string'||!it.id||ids.has(it.id)||typeof it.league!=='string'||typeof it.H!=='string'||typeof it.A!=='string'||typeof it.marketKey!=='string'||!MKEY.has(it.marketKey)||!['back','lay'].includes(it.side)||!Number.isFinite(it.odds)||it.odds<=1||!Number.isFinite(it.stake)||it.stake<=0||!Number.isFinite(it.fee)||it.fee<0||it.fee>30||!it.grade||!Number.isFinite(it.grade.score)||!Array.isArray(it.events)||it.events.length>1000||it.events.some(x=>!Number.isFinite(x.pnl)||!Number.isFinite(x.percent)||x.percent<=0)||it.events.reduce((a,x)=>a+x.percent,0)>100.01)throw Error('Il registro contiene un elemento non valido o duplicato');ids.add(it.id);return JSON.parse(JSON.stringify(it))})}
+ function setStoreStatus(message,bad=false){const el=$ta('#taTradeStorage');el.classList.toggle('ta-error',bad);el.textContent=message}
+ async function initJournal(){
+- try{const data=await dbGet(),fallbackRaw=(()=>{try{return localStorage.getItem('ta_trade_journal_v1')}catch(_){return null}})(),fallback=fallbackRaw?JSON.parse(fallbackRaw):null;const useFallback=fallback&&(!data||Date.parse(fallback.exportedAt||0)>Date.parse(data.exportedAt||0));const picked=useFallback?fallback:data;journal=cleanItems(picked?.items||[]);quotes=cleanQuotes(picked?.quotes||[]);storage=useFallback?'localStorage (backup recente)':'IndexedDB';}
+- catch(err){try{const old=localStorage.getItem('ta_trade_journal_v1');journal=cleanItems(old?JSON.parse(old).items:[]);quotes=cleanQuotes(old?JSON.parse(old).quotes||[]:[]);storage='localStorage (spazio limitato)';}catch(ex){journal=[];storage='non disponibile';setStoreStatus('Registro non accessibile: '+ex.message,true);ready=false;return}}
++ try{const data=await dbGet(),fallbackRaw=(()=>{try{return localStorage.getItem('ta_data002_trade_journal_v1')}catch(_){return null}})(),fallback=fallbackRaw?JSON.parse(fallbackRaw):null;const useFallback=fallback&&(!data||Date.parse(fallback.exportedAt||0)>Date.parse(data.exportedAt||0));const picked=useFallback?fallback:data;journal=cleanItems(picked?.items||[]);quotes=cleanQuotes(picked?.quotes||[]);storage=useFallback?'localStorage (backup recente)':'IndexedDB';}
++ catch(err){try{const old=localStorage.getItem('ta_data002_trade_journal_v1');journal=cleanItems(old?JSON.parse(old).items:[]);quotes=cleanQuotes(old?JSON.parse(old).quotes||[]:[]);storage='localStorage (spazio limitato)';}catch(ex){journal=[];storage='non disponibile';setStoreStatus('Registro non accessibile: '+ex.message,true);ready=false;return}}
+  ready=true;const quoteLabel=$ta('#taQuotesStatus');if(quoteLabel)quoteLabel.textContent=quotes.length+' quote memorizzate. Non sono state verificate automaticamente con Betfair.';setStoreStatus(`Registro: ${storage}. Conserva backup periodici: file HTML in percorsi diversi possono avere memorie separate.`);renderJournal();
+ }
+ function saveJournal(items,quoteItems=quotes){
+  // Each mutation operates on the latest verified snapshot and queues concurrent writes.
+  saveChain=saveChain.catch(()=>{}).then(async()=>{
+   const tested=cleanItems(items),testedQuotes=cleanQuotes(quoteItems),payload={format:'TradingAnalyticsTradeJournal',version:1,exportedAt:new Date().toISOString(),items:tested,quotes:testedQuotes};let error=null;
+-  try{await dbPut(payload);const verify=await dbGet();if(JSON.stringify(verify?.items)!==JSON.stringify(tested)||JSON.stringify(verify?.quotes)!==JSON.stringify(testedQuotes))throw Error('Rilettura IndexedDB non corrispondente');storage='IndexedDB';try{localStorage.removeItem('ta_trade_journal_v1')}catch(_){};}
+-  catch(ex){error=ex;try{const raw=JSON.stringify(payload);localStorage.setItem('ta_trade_journal_v1',raw);if(localStorage.getItem('ta_trade_journal_v1')!==raw)throw Error('Rilettura localStorage fallita');storage='localStorage (fallback)';error=null;}catch(ex2){throw Error('Nessun salvataggio riuscito: '+ex.message+' / '+ex2.message)}}
++  try{await dbPut(payload);const verify=await dbGet();if(JSON.stringify(verify?.items)!==JSON.stringify(tested)||JSON.stringify(verify?.quotes)!==JSON.stringify(testedQuotes))throw Error('Rilettura IndexedDB non corrispondente');storage='IndexedDB';try{localStorage.removeItem('ta_data002_trade_journal_v1')}catch(_){};}
++  catch(ex){error=ex;try{const raw=JSON.stringify(payload);localStorage.setItem('ta_data002_trade_journal_v1',raw);if(localStorage.getItem('ta_data002_trade_journal_v1')!==raw)throw Error('Rilettura localStorage fallita');storage='localStorage (fallback)';error=null;}catch(ex2){throw Error('Nessun salvataggio riuscito: '+ex.message+' / '+ex2.message)}}
+   journal=tested;quotes=testedQuotes;const el=$ta('#taQuotesStatus');if(el)el.textContent=quotes.length+' quote salvate; i prezzi inseriti da fonti esterne non sono verificati da questo gestionale.';setStoreStatus('Registro salvato e verificato in '+storage+'. Esporta periodicamente un backup.');renderJournal();return true;
+  });return saveChain;
+ }
+@@ -4193,7 +4160,7 @@
+  const outcome=form.elements.outcome.value;if(!['yes','no'].includes(outcome)){setTradeMessage('Scegli esplicitamente se l’evento del mercato si è verificato.',true);return}
+  const pnl=closeOutcomePnl(it,outcome==='yes');form.elements.pnl.value=pnl.toFixed(2);form.elements.method.value='settlement';setTradeMessage(`Importo lordo/netto semplificato calcolato: ${cash(pnl)}. Verifica sul rendiconto Betfair prima di registrare.`);
+ }
+-function mergeQuoteSnapshots(all){const map=new Map();for(const q of all){const k=[q.League,q.Date,canonicalTeamName(q.HomeTeam),canonicalTeamName(q.AwayTeam),q.Market,q.Side,q.Source,q.ObservedAt].join('|');map.set(k,q)}return [...map.values()]}
++function mergeQuoteSnapshots(all){const map=new Map();for(const q of all){const k=[q.League,q.Date,canonicalTeamName(q.HomeTeam,q.League),canonicalTeamName(q.AwayTeam,q.League),q.Market,q.Side,q.Source,q.ObservedAt].join('|');map.set(k,q)}return [...map.values()]}
+ const QUOTE_COLUMNS=['League','Date','HomeTeam','AwayTeam','Market','Side','Odds','Commission','Source','ObservedAt'];
+ function quotesCsv(items){const esc=x=>'"'+String(x??'').replace(/"/g,'""')+'"';return [QUOTE_COLUMNS,...items.map(q=>QUOTE_COLUMNS.map(k=>q[k]))].map(r=>r.map(esc).join(',')).join('\r\n')}
+ function csvExportQuote(items,name){const u=URL.createObjectURL(new Blob(['\uFEFF'+quotesCsv(items)],{type:'text/csv;charset=utf-8'})),a=document.createElement('a');a.download=name;a.href=u;document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(u),30000)}
+@@ -4654,4 +4621,22 @@
+ if(typeof refreshSidebar==='function')refreshSidebar();
+ })();
+ </script>
++
++<script>
++function renderClubDiagnostics(){
++ const host=document.getElementById('taClubDiagnostics');if(!host)return;
++ const x=TAClubs.diagnostics(),migration=window.taLastMigration;
++ host.querySelector('[data-club-counts]').textContent=`Identità osservate: ${x.verified} verificate, ${x.pending} da verificare, ${x.ambiguous} ambigue. Le identità ambigue non vengono accorpate.`;
++ host.querySelector('[data-club-report]').textContent=migration?JSON.stringify(migration,null,2):'Nessuna migrazione eseguita. Il ripristino JSON produce una simulazione prima della conferma. Le collisioni bloccano la migrazione.';
++ const table=host.querySelector('[data-club-anomalies]');table.innerHTML=x.clubs.filter(c=>c.status!=='verificata').slice(0,80).map(c=>`<tr><td>${e(c.name)}</td><td>${e(c.country)}</td><td>${e(c.status)}</td><td>${e(c.id)}</td></tr>`).join('');
++}
++(()=>{
++ const host=document.createElement('section');host.id='taClubDiagnostics';host.className='taS-bulk';
++ host.innerHTML='<h4>Anagrafica squadre · TA-DATA-002</h4><p>Archivio candidato separato dalle versioni precedenti. Importa una copia del backup dopo aver controllato la simulazione. Nessun dato personale viene migrato automaticamente.</p><p data-club-counts></p><button type="button" id="taClubExport">Esporta identità e anomalie JSON</button><button type="button" id="taClubIntegrityExport">Esporta ultima simulazione integrità</button><details><summary>Nomi da verificare / ambigui (prime 80 identità; elenco completo nel JSON)</summary><table><thead><tr><th>Nome</th><th>Paese</th><th>Stato</th><th>ID permanente</th></tr></thead><tbody data-club-anomalies></tbody></table></details><details><summary>Simulazione prima/dopo</summary><pre data-club-report style="white-space:pre-wrap"></pre></details>';
++ document.querySelector('#taRJsonBody').prepend(host);
++ document.getElementById('taClubExport').onclick=()=>archiveDownloadFile(JSON.stringify(TAClubs.diagnostics(),null,2),'TA-DATA-002_anagrafica.json');
++ document.getElementById('taClubIntegrityExport').onclick=()=>archiveDownloadFile(JSON.stringify(window.taLastMigration||{status:'nessuna simulazione'},null,2),'TA-DATA-002_integrita.json');
++ const before=refreshDataStatus;refreshDataStatus=function(...args){const result=before(...args);renderClubDiagnostics();return result};renderClubDiagnostics();
++})();
++</script>
+ </body></html>

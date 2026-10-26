@@ -1,0 +1,89 @@
+{
+  "checks": [
+    {
+      "name": "backed-up season/HT/shots/odds",
+      "status": "PASS",
+      "record": [
+        1723248000000,
+        "Eredivisie",
+        "Ajax",
+        "PSV",
+        2,
+        1,
+        0,
+        0,
+        {
+          "Div": "N1",
+          "Season": "2024/25",
+          "Date": "2024-08-10",
+          "HomeTeam": "Ajax",
+          "AwayTeam": "PSV",
+          "FTHG": "2",
+          "FTAG": "1",
+          "HTHG": "0",
+          "HTAG": "0",
+          "HS": "10",
+          "AS": "8",
+          "HST": "3",
+          "AST": "2",
+          "B365H": "2.25",
+          "Phase": "regular",
+          "CsvSeason": 2024,
+          "CsvSourceFile": "N1_2425.csv",
+          "ClubHomeRaw": "Ajax",
+          "ClubAwayRaw": "PSV",
+          "ClubHomeId": "club:ned-ajax",
+          "ClubHomeStatus": "verificata",
+          "ClubHomeSourceId": null,
+          "ClubHomeSources": [
+            {
+              "name": "Ajax",
+              "source": "N1_2425.csv",
+              "sourceId": null
+            }
+          ],
+          "ClubHomeCountry": "NED",
+          "ClubHomeIdentityName": "Ajax",
+          "ClubAwayId": "club:ned-psv",
+          "ClubAwayStatus": "verificata",
+          "ClubAwaySourceId": null,
+          "ClubAwaySources": [
+            {
+              "name": "PSV",
+              "source": "N1_2425.csv",
+              "sourceId": null
+            }
+          ],
+          "ClubAwayCountry": "NED",
+          "ClubAwayIdentityName": "PSV",
+          "ClubRegistryVersion": "TA-CLUBS-1"
+        },
+        0,
+        0,
+        [
+          10,
+          8,
+          3,
+          2
+        ]
+      ]
+    },
+    {
+      "name": "reload byte-equivalent compact fields",
+      "status": "PASS"
+    },
+    {
+      "name": "14-market analysis still renders after CsvSeason ingestion",
+      "status": "PASS"
+    },
+    {
+      "name": "seven workspaces after populated import",
+      "status": "PASS"
+    }
+  ],
+  "phaseRetention": {
+    "inParser": "regular",
+    "inBackup": "regular",
+    "scope": "Future phase-specific standings require a persistent phase field; currently absent by design"
+  }
+}

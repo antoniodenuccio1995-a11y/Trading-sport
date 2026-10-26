@@ -1,0 +1,94 @@
+{
+  "checks": [
+    "No implicit migration: old same-origin archive/journal remain separate",
+    "Migration dry-run appears before confirmation; cancellation writes no matches",
+    "Migration applies names/IDs only; all original FT/HT/shots/odds metadata preserved",
+    "Colliding alias identities block migration and preserve the existing candidate snapshot",
+    "Reimported aliases do not duplicate fixtures or retroactively rename/regrade frozen trades",
+    "IDs, source denominations and provenance persist after reload and JSON export",
+    "Same-origin old archive and frozen journal remain byte-equivalent after rc2 activity",
+    "Mixed unknown league rows require a separate explicit confirmation and retain original code evidence",
+    "Ambiguous clubs are diagnosed and kept separate from known similar names",
+    "Same-name clubs with different provider IDs remain distinct; manual calendar selection retains their permanent IDs",
+    "Calendar, analysis, standings, statistics and scanner agree before/after alias reimport (42 played + 1 fixture)",
+    "Future results do not affect analysis or multiyear history even when tagged as a prior season",
+    "Historical membership fallback also excludes evidence dated after cutoff"
+  ],
+  "pageerrors": [],
+  "integrity": [
+    {
+      "case": "old_backup_simulation_before_accept",
+      "report": {
+        "registryVersion": "TA-CLUBS-1",
+        "inputCount": 1,
+        "outputCount": 1,
+        "changedNames": 1,
+        "changedRecords": 1,
+        "changedNameFields": 2,
+        "changes": [
+          {
+            "index": 0,
+            "before": [
+              "PSG",
+              "Olympique Lyonnais"
+            ],
+            "after": [
+              "Paris SG",
+              "Lyon"
+            ]
+          }
+        ],
+        "collisions": [],
+        "errors": [],
+        "protectedFieldsUnchanged": true,
+        "safe": true
+      }
+    },
+    {
+      "case": "identity_collision_blocks_write",
+      "report": {
+        "registryVersion": "TA-CLUBS-1",
+        "inputCount": 2,
+        "outputCount": 2,
+        "changedNames": 2,
+        "changedRecords": 2,
+        "changedNameFields": 3,
+        "changes": [
+          {
+            "index": 0,
+            "before": [
+              "PSG",
+              "Olympique Lyonnais"
+            ],
+            "after": [
+              "Paris SG",
+              "Lyon"
+            ]
+          },
+          {
+            "index": 1,
+            "before": [
+              "Paris SG",
+              "Olympique Lyonnais"
+            ],
+            "after": [
+              "Paris SG",
+              "Lyon"
+            ]
+          }
+        ],
+        "collisions": [
+          {
+            "first": 0,
+            "second": 1,
+            "id": "[1723248000000,\"Ligue 1\",\"club:fra-psg\",\"club:fra-lyon\"]"
+          }
+        ],
+        "errors": [],
+        "protectedFieldsUnchanged": true,
+        "safe": false
+      }
+    }
+  ],
+  "outcome": "PASS"
+}

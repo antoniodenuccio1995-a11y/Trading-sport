@@ -1,0 +1,48 @@
+{
+  "checks": [
+    {
+      "name": "backed-up season/HT/shots/odds",
+      "status": "PASS",
+      "record": [
+        1723248000000,
+        "Eredivisie",
+        "Ajax",
+        "PSV",
+        2,
+        1,
+        0,
+        0,
+        {
+          "CsvSeason": 2024,
+          "Season": "2024/25",
+          "B365H": "2.25"
+        },
+        0,
+        0,
+        [
+          10,
+          8,
+          3,
+          2
+        ]
+      ]
+    },
+    {
+      "name": "reload byte-equivalent compact fields",
+      "status": "PASS"
+    },
+    {
+      "name": "14-market analysis still renders after CsvSeason ingestion",
+      "status": "PASS"
+    },
+    {
+      "name": "seven workspaces after populated import",
+      "status": "PASS"
+    }
+  ],
+  "phaseRetention": {
+    "inParser": "regular",
+    "inBackup": null,
+    "scope": "Future phase-specific standings require a persistent phase field; currently absent by design"
+  }
+}
