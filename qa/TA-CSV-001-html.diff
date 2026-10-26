@@ -1,0 +1,332 @@
+--- Trading_Analytics_v0.2T_Recupero_Storici.html
++++ Trading_Analytics_v0.2U-rc1_TA-CSV-001.html
+@@ -1,7 +1,7 @@
+ <!doctype html>
+ <html lang="it"><head><meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+-<title>Trading Analytics v0.2T · Recupero storici v0.2S — Import automatico e 12 nuove leghe</title>
++<title>Trading Analytics v0.2U-rc1 · TA-CSV-001 · Candidata da collaudare</title>
+ <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&display=swap">
+ <style>
+@@ -900,7 +900,7 @@
+ </div>
+ </aside>
+ <main>
+-<h1>Trading Analytics <small style="font-size:14px;color:var(--mu);font-weight:600">v0.2S</small></h1>
++<h1>Trading Analytics <small style="font-size:14px;color:var(--mu);font-weight:600">v0.2U-rc1 · TA-CSV-001 · CANDIDATA</small></h1>
+ <p class="sub">Analisi dei campionati · dati separati per lega, valutazioni critiche dei mercati e calendario delle partite.</p>
+ <div class="league-hero"><div><small>CONTESTO DI ANALISI</small><h2 id="currentLeagueTitle">Serie A</h2><p id="currentLeagueDesc">Seleziona una competizione nel menu laterale.</p></div><div class="league-hero-actions"><button id="heroUpdate" type="button">↻ Aggiorna risultati</button><button type="button" id="heroArchive" data-open-workspace="dati">Gestisci i file →</button><a id="heroCsvLink" href="https://www.football-data.co.uk/mmz4281/2627/I1.csv" target="_blank" rel="noopener">Apri CSV originale ↗</a></div></div>
+ <p id="heroFeedback" role="status" aria-live="polite">Scegli la lega e importa i dati. L'aggiornamento diretto può essere bloccato dal browser: in quel caso usa il collegamento al CSV originale.</p>
+@@ -1029,7 +1029,7 @@
+ <section class="smart-import" id="smartImport" aria-label="Importazione storici guidata">
+  <h3>Importazione guidata degli storici</h3>
+  <div class="archive-safety" aria-label="Salvataggio archivio"><div class="archive-safety-top"><b>Archivio protetto</b><span id="archiveStorageMode">Verifica memoria in corso…</span></div><p id="archiveStorageStatus" role="status" aria-live="polite">Sto controllando come salvare i dati in questo browser.</p><div class="archive-backup-actions"><button type="button" id="archiveExportBackup">↓ Scarica backup JSON</button><label class="archive-upload-btn">↑ Ripristina backup JSON <input type="file" id="archiveImportBackup" accept=".json,application/json"></label></div><small>Il backup resta sul tuo computer. Conservane una copia prima di cambiare versione o cancellare i dati del browser.</small></div>
+- 
++
+ <div id="taJsonCheckPanel" style="margin:15px 0;padding:16px;border:1px solid var(--ln);border-radius:12px;background:var(--card,transparent)">
+ <strong>🔍 Controlla il JSON prima di importarlo</strong>
+ <p style="font-size:13px">Questo controllo <b>non cambia nulla</b>: legge il file sul tuo computer, identifica il formato, conta le partite e indica quale pulsante utilizzare. Non carica il contenuto su Internet.</p>
+@@ -1101,6 +1101,7 @@
+ 
+ <p class="hint" style="margin-top:36px">Uno strumento di studio: un backtest positivo non garantisce guadagni futuri. Il gioco può causare dipendenza, gioca solo ciò che puoi permetterti di perdere.</p>
+ </main>
++<script src="ta-csv-import.js"></script>
+ <script>
+ const $=s=>document.querySelector(s);
+ const e=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+@@ -1284,33 +1285,10 @@
+ });
+ 
+ // CSV con gestione di celle tra virgolette: supporta i file della fonte e i CSV esportati.
+-function csvRows(txt){
+- const result=[];let cells=[],v='',quoted=false;
+- txt=txt.replace(/^\uFEFF/,'');
+- for(let i=0;i<txt.length;i++){
+-  const ch=txt[i];
+-  if(ch==='"') { if(quoted&&txt[i+1]==='"'){v+='"';i++}else quoted=!quoted; }
+-  else if(ch===','&&!quoted){cells.push(v);v=''}
+-  else if((ch==='\r'||ch==='\n')&&!quoted){if(ch==='\r'&&txt[i+1]==='\n')i++;cells.push(v);if(cells.some(x=>x.trim()))result.push(cells);cells=[];v=''}
+-  else v+=ch;
+- }
+- cells.push(v);if(cells.some(x=>x.trim()))result.push(cells);
+- return result;
+-}
+-function parse(txt,name,leagueOverride){const L=csvRows(txt);if(!L.length)return [];const H=L[0].map(x=>x.trim());
+- if(!['Date','HomeTeam','AwayTeam'].every(x=>H.includes(x)))return [];
+- const out=[];
+-for(let i=1;i<L.length;i++){const c=L[i];const o={};H.forEach((k,j)=>o[k]=(c[j]||"").trim());
+-const iso=/^(\d{4})-(\d{2})-(\d{2})/.exec(o.Date||""),m=(o.Date||"").split("/");if(!o.HomeTeam||(!iso&&m.length<3))continue;let y=iso?+iso[1]:+m[2];if(y<100)y+=y<70?2000:1900;
+-const d=iso?Date.UTC(y,+iso[2]-1,+iso[3]):Date.UTC(y,+m[1]-1,+m[0]);if(!Number.isFinite(d))continue;const up=o.FTHG===""||o.FTHG===undefined||o.FTAG===""||o.FTAG===undefined;if(!up&&(!Number.isFinite(+o.FTHG)||!Number.isFinite(+o.FTAG)))continue;
+-const hv=v=>v!==undefined&&v!==null&&String(v).trim()!==''&&Number.isInteger(+v)&&+v>=0?+v:null;
+-let hth=hv(o.HTHG),hta=hv(o.HTAG);
+-if(up||hth===null||hta===null||(!up&&(hth>+o.FTHG||hta>+o.FTAG))){hth=null;hta=null}
+-const ht=hth===null?null:hth+hta;
+-const shotKeys=['HS','AS','HST','AST'];const shotValues=shotKeys.map(k=>hv(o[k]));
+-const shots=shotValues.every(v=>v!==null)&&shotValues[2]<=shotValues[0]&&shotValues[3]<=shotValues[1]?shotValues:null;
+-out.push({d,lg:LN[o.Div]||o.Div||leagueOverride||$("#importLeague").value||"Campionato non specificato",H:o.HomeTeam,A:o.AwayTeam,h:up?null:+o.FTHG,a:up?null:+o.FTAG,ht,hth,hta,shots,up,o})}
+-return out}
++function csvRows(txt){return TACsv.grid(txt)}
++function parse(txt,name,leagueOverride){
++ return TACsv.read(txt,{filename:name,league:leagueOverride||'',allowFixtures:true}).records;
++}
+ async function mergeImported(add){
+  if(!archiveReady)return {ok:false,added:0,played:rows.filter(r=>!r.up).length};
+  const before=rows.length,merged=smartMergeRecords(add);
+@@ -1507,7 +1485,7 @@
+ o.innerHTML=L.length?'<table><tr><th>Squadra</th><th>Partite usate</th>'+C.map(c=>`<th><button data-k="${c[0]}" style="${c[0]==sortK?"border-color:var(--ac)":""}">${c[1]}${c[0]==sortK?" ▼":""}</button><br><small class="hint" style="font-weight:400">${c[2]}</small></th>`).join("")+"</tr>"+L.map(x=>`<tr><td><b>${e(x.t)}</b></td><td>${x.n}</td>`+C.map(c=>{const g2=c[0]=="gf"||c[0]=="gs",val=x[c[0]];return`<td${g2?"":` style="background:color-mix(in srgb,var(--ac) ${Math.round(val*.45)}%,transparent)"`}>${g2?val.toFixed(2):val.toFixed(0)+"%"}</td>`}).join("")+"</tr>").join("")+"</table>":'<p class="hint">Nessuna squadra con abbastanza partite recenti.</p>'}
+ $("#tt").onclick=ev=>{const k=ev.target.dataset.k;if(k){sortK=k;teams()}};$("#tv").onchange=$("#tn").onchange=$("#tp").onchange=$("#ts").oninput=teams;
+ const LN={I1:"Serie A",I2:"Serie B",E0:"Premier League",E1:"Championship",E2:"League One",E3:"League Two",CL:"Champions League",SP1:"La Liga",D1:"Bundesliga",F1:"Ligue 1",N1:"Eredivisie",P1:"Primeira Liga",T1:"Süper Lig",B1:"Jupiler Pro League"};
+-const se=r=>{const x=new Date(r.d),y=x.getUTCFullYear();return x.getUTCMonth()>=6?y:y-1};
++const se=r=>{const y=r.o?.CsvSeason;return Number.isInteger(y)&&y>=1900&&y<=2099?y:TACsv.dateSeason(r.d)};
+ const D=()=>{const l=$("#lg").value;return l?rows.filter(r=>r.lg==l):rows};
+ function fill(){const lg=$("#lg"),old=lg.value;
+  $("#tl").innerHTML=[...new Set(rows.flatMap(r=>[r.H,r.A]))].sort().map(t=>`<option value="${e(t)}">`).join("");
+@@ -1575,7 +1553,7 @@
+ man.push({d:dayT(),H,A});if(!sm()){man.pop();k.textContent="Partita manuale non salvata: memoria non disponibile.";return}k.textContent="";$("#mh").value=$("#ma").value="";lm();comparisonOptions();$("#ch").value=H;$("#ca").value=A;compareMatch(H,A,dayT());today()};
+ $("#ml").onclick=ev=>{const i=ev.target.dataset.r;if(i!==undefined){const before=man.slice();man.splice(i,1);if(!sm())man=before;lm();today()}};
+ $("#dg").onclick=today;$("#dd").onchange=()=>{lm();today();comparisonOptions();if($("#ch").value&&$("#ca").value)compareMatch($("#ch").value,$("#ca").value,dayT())};lm();
+-const KO=["Time","Source","SourceTime","Avg>2.5","B365>2.5","P>2.5","Avg<2.5","B365<2.5","P<2.5","AvgD","B365D","PSD","AvgH","B365H","PSH","AvgA","B365A","PSA"];
++const KO=["CsvSeason","Season","Time","Source","SourceTime","Avg>2.5","B365>2.5","P>2.5","Avg<2.5","B365<2.5","P<2.5","AvgD","B365D","PSD","AvgH","B365H","PSH","AvgA","B365A","PSA"];
+ // Archivio v0.2G: IndexedDB per volumi elevati; fallback gzip su localStorage.
+ // Il vecchio gp_rows viene letto una volta in fase di migrazione; la copia originale non viene cancellata se IndexedDB funziona.
+ const ARCHIVE_DB='TradingAnalyticsArchiveV2_Stabilized', ARCHIVE_STORE='snapshots';
+@@ -3583,33 +3561,13 @@
+ 
+ 
+ // v0.2E: guided, verified historical import. Never infer league solely from active sidebar.
+-const SMART_LEAGUES=['Serie A','Serie B','Premier League','Championship','League One','League Two','Champions League','La Liga','Bundesliga','Ligue 1','Eredivisie'];
++const SMART_LEAGUES=[...new Set(TACsv.leagues)];
+ let smartQueue=[];
+ let smartCrossCandidates=[];
+ const smartKindLabels={football:'Risultati Football-Data',community:'Risultati Open Matchday',fixtures:'Calendario Open Matchday'};
+-function smartHintFromFilename(name){
+- const f=String(name||'').toLowerCase(),normalized=f.replace(/[_-]+/g,' ');
+- const names=[['champions league','Champions League'],['premier league','Premier League'],['championship','Championship'],['league one','League One'],['league two','League Two'],['serie a','Serie A'],['serie b','Serie B'],['la liga','La Liga'],['bundesliga','Bundesliga'],['ligue 1','Ligue 1'],['eredivisie','Eredivisie']];
+- for(const [key,val] of names)if(normalized.includes(key))return val;
+- const nameCode=/(?:^|[^a-z0-9])(E0|E1|E2|E3|I1|I2|SP1|D1|F1|N1|CL)(?=[^a-z0-9]|$)/i.exec(name);
+- return nameCode?(PATH_DIVISIONS[nameCode[1].toUpperCase()]||LN[nameCode[1].toUpperCase()]||''):'';
+-}
+-function smartSeasonFromFilename(name){
+- const x=/(?:^|[^0-9])((?:19|20)\d\d)[_ -]?((?:19|20)?\d\d)(?:[^0-9]|$)/.exec(name);
+- if(x){let start=Number(x[1]),end=Number(x[2]);if(end<100)end+=Math.floor(start/100)*100;return end===start+1?start:null}
+- const y=/(?:^|[^0-9])(\d\d)(\d\d)(?:[^0-9]|$)/.exec(name);
+- if(!y)return null;
+- let a=Number(y[1]),b=Number(y[2]);return ((a+1)%100)===b?(a>=90?1900+a:2000+a):null;
+-}
+-function smartDateValue(str){
+- const iso=/^(\d{4})-(\d{1,2})-(\d{1,2})/.exec(str||'');
+- const eu=/^(\d{1,2})\/(\d{1,2})\/(\d{2,4})/.exec(str||'');
+- if(!iso&&!eu)return null;
+- let year=+(iso?iso[1]:eu[3]);if(year<100)year+=year<70?2000:1900;
+- const mm=+(iso?iso[2]:eu[2]),dd=+(iso?iso[3]:eu[1]);
+- const d=Date.UTC(year,mm-1,dd),check=new Date(d);
+- return check.getUTCFullYear()===year&&check.getUTCMonth()+1===mm&&check.getUTCDate()===dd?d:null;
+-}
++function smartHintFromFilename(name){return TACsv.filenameLeague(name)}
++function smartSeasonFromFilename(name){return TACsv.filenameSeason(name)}
++function smartDateValue(str){return TACsv.date(str)}
+ async function smartReadText(file){
+  const bytes=await file.arrayBuffer();if(bytes.byteLength>12000000)throw Error('file oltre 12 MB: importalo separatamente');
+  let text=new TextDecoder('utf-8',{fatal:false}).decode(bytes);
+@@ -3620,44 +3578,34 @@
+  return text.replace(/^\ufeff/,'');
+ }
+ function smartInspect(name,text){
+- const lines=csvRows(text);if(!lines.length)throw Error('CSV vuoto o non leggibile');
+- let h=(lines[0]||[]).map(x=>x.trim().toLowerCase());
+- const idx=k=>h.indexOf(k),must=ks=>ks.every(k=>idx(k)>=0);
+- const fd=must(['date','hometeam','awayteam']),cm=must(['date','home','away']);
+- if(!fd&&!cm)throw Error('Formato CSV non riconosciuto: servono Date,HomeTeam,AwayTeam o date,home,away');
+- const format=fd?'football':must(['ft_home','ft_away'])?'community':'fixtures';
+- const divs=new Set(),seasons=new Map();let validRows=0,finished=0,skipped=0;
+- for(const line of lines.slice(1)){
+-  const val=k=>String(line[idx(k)]??'').trim();
+-  const H=fd?val('hometeam'):val('home'),A=fd?val('awayteam'):val('away');
+-  const d=smartDateValue(val('date'));if(!d||!H||!A){skipped++;continue}
+-  validRows++;const y=se({d});seasons.set(y,(seasons.get(y)||0)+1);
+-  if(fd&&idx('div')>=0){const div=val('div').toUpperCase();if(div)divs.add(div)}
+-  const hg=fd?val('fthg'):val('ft_home'),ag=fd?val('ftag'):val('ft_away');
+-  if(hg!==''&&ag!==''&&Number.isInteger(+hg)&&Number.isInteger(+ag)&&+hg>=0&&+ag>=0)finished++;
+- }
+- if(!validRows)throw Error('nessuna partita con data e squadre riconosciute');
+- if(divs.size>1)throw Error('file con più codici Div: importare file separati per competizione');
+- const div=[...divs][0]||'',fromDiv=div?(PATH_DIVISIONS[div]||LN[div]||''):'';
+- if(div&&!fromDiv)throw Error('codice Div '+div+' non riconosciuto; non sarà assegnato a un campionato casuale');
+- const fromName=smartHintFromFilename(name);
+- if(fromDiv&&fromName&&fromDiv!==fromName)throw Error('Contraddizione: colonna Div='+div+' ('+fromDiv+'), nome file indica '+fromName);
+- const league=fromDiv||fromName||'',confidence=fromDiv?'Colonna Div':fromName?'Nome file':'Da selezionare';
+- const y=smartSeasonFromFilename(name),actual=[...seasons.keys()].sort((a,b)=>a-b);
+- const mismatch=y!==null&&!actual.includes(y);
+- return {format,league,confidence,actual,seasons,validRows,finished,skipped,mismatch,filenameYear:y,fromDiv};
++ const x=TACsv.read(text,{filename:name,inspect:true,allowFixtures:true});
++ if(!x.records.length)throw Error('Nessuna partita leggibile: '+x.issues.slice(0,3).join(' · '));
++ const format=x.format==='fixtures'?'fixtures':'football';
++ return {...x,format,validRows:x.records.length,finished:x.records.filter(r=>!r.up).length,skipped:x.invalid,
++ mismatch:x.filenameYear!==null&&!x.actual.includes(x.filenameYear),fromDiv:x.fromColumns,
++ warning:[x.unknown.length?'Metadati campionato non riconosciuti: '+x.unknown.join(', ')+'. Seleziona la lega corretta.':'',x.fromColumns&&x.fromName&&x.fromColumns!==x.fromName?'Nome file in conflitto con le colonne: prevalgono le colonne CSV.':'',x.issues.slice(0,3).join(' · ')].filter(Boolean).join(' · ')};
+ }
+ function smartMakeCard(entry,i){
+  const x=entry.inspection;
+  if(entry.error)return `<div class="smart-file is-error"><div class="smart-file-head"><strong>${e(entry.name)}</strong><span>✕ File non valido</span></div><p class="smart-warning">${e(entry.error)}</p></div>`;
++ let previewSummary='',needsSeasonConfirmation=false;
++ try{
++  const p=TACsv.read(entry.text,{filename:entry.name,league:entry.league||'',season:entry.season||'',inspect:true,allowFixtures:x.format==='fixtures'});
++  previewSummary=`Anteprima con le scelte attuali: ${p.records.length} incontri importabili; ${p.invalid} righe non valide; ${p.incomplete} senza risultato escluse; ${p.outOfSeason} fuori stagione; ${p.missingHT} senza HT.`;
++  needsSeasonConfirmation=p.seasonReassigned>0;
++  if(needsSeasonConfirmation)previewSummary+=` ${p.seasonReassigned} gare di giugno/luglio assegnate alla stagione scelta anziché al criterio automatico luglio–giugno: conferma richiesta.`;
++ }catch(ex){previewSummary='Importazione bloccata: '+ex.message}
+  const labels=x.actual.map(y=>standingsSeasonLabel(y)+' ('+x.seasons.get(y)+' gare)').join(' · ');
+  const select=SMART_LEAGUES.map(l=>`<option value="${e(l)}" ${entry.league===l?'selected':''}>${e(l)}</option>`).join('');
+  const defmode=entry.mode||'results';
++ const seasonChoices=[...new Set([...x.actual,...Array.from({length:10},(_,i)=>2021+i)])].sort((a,b)=>b-a).map(y=>`<option value="${y}" ${String(entry.season)===String(y)?'selected':''}>${standingsSeasonLabel(y)}</option>`).join('');
+  return `<div class="smart-file" data-smart-i="${i}"><div class="smart-file-head"><strong>${e(entry.name)}</strong><span class="path-pill ${x.fromDiv?'higher':'unknown'}">${e(x.confidence)}</span></div>
+  <div class="smart-file-meta">${e(smartKindLabels[x.format])} · <b>${x.validRows}</b> righe valide (${x.finished} finali, ${x.validRows-x.finished} non concluse) · ${e(labels)}${x.skipped?' · '+x.skipped+' righe ignorate':''}</div>
+  ${x.mismatch?`<p class="smart-warning">Attenzione: il nome suggerisce ${e(standingsSeasonLabel(x.filenameYear))}, ma i risultati riportano ${e(labels)}. Controlla che sia il file corretto.</p>`:''}
+- <div class="smart-choices"><label>Campionato<select data-smart-league="${i}"><option value="">— Seleziona campionato —</option>${select}</select></label><label>Destinazione<select data-smart-mode="${i}"><option value="results" ${defmode==='results'?'selected':''}>Risultati e analisi</option><option value="reference" ${defmode==='reference'?'selected':''} ${!PATH_TIERS[entry.league]?'disabled':''}>Solo provenienza / categoria</option></select></label><label class="smart-skip"><input type="checkbox" data-smart-skip="${i}" ${entry.skip?'checked':''}> Non importare</label></div>
+- ${x.mismatch?`<label style="display:flex;align-items:center;gap:5px;font-size:11px;margin-top:8px"><input type="checkbox" data-smart-accept="${i}" ${entry.acceptMismatch?'checked':''}> Confermo la differenza fra nome e stagione</label>`:''}
++ ${x.warning?`<p class="smart-warning">${e(x.warning)}</p>`:''}
++ <p class="smart-warning" data-csv-preview="${i}">${e(previewSummary)}</p>
++ <div class="smart-choices"><label>Campionato<select data-smart-league="${i}"><option value="">— Seleziona campionato —</option>${select}</select></label><label>Stagione (filtra / assegna)<select data-smart-season="${i}"><option value="">Auto: colonna Season o data</option>${seasonChoices}</select></label><label>Destinazione<select data-smart-mode="${i}"><option value="results" ${defmode==='results'?'selected':''}>Risultati e analisi</option><option value="reference" ${defmode==='reference'?'selected':''} ${!PATH_TIERS[entry.league]?'disabled':''}>Solo provenienza / categoria</option></select></label><label class="smart-skip"><input type="checkbox" data-smart-skip="${i}" ${entry.skip?'checked':''}> Non importare</label></div>
++ ${x.mismatch||needsSeasonConfirmation?`<label style="display:flex;align-items:center;gap:5px;font-size:11px;margin-top:8px"><input type="checkbox" data-smart-accept="${i}" ${entry.acceptMismatch?'checked':''}> Confermo la discrepanza di stagione rispetto al nome file o al criterio luglio–giugno</label>`:''}
+  ${!entry.league?'<p class="smart-warning">Campionato non riconoscibile dal CSV o dal nome: scegli la lega prima di importare.</p>':''}
+  </div>`;
+ }
+@@ -3675,7 +3623,7 @@
+  const hint=el.querySelector('small');if(hint)hint.textContent=state==='done'?(message.startsWith('Anteprima')?'Controlla il campionato e premi «Importa file verificati» per salvarli.':'Operazione conclusa. Puoi continuare o scaricare il backup JSON.'):(state==='error'?'L’operazione non è stata completata. Leggi il messaggio di errore sopra.':'Non chiudere questa pagina finché il salvataggio non è concluso.');
+ }
+ const importYield=()=>new Promise(resolve=>setTimeout(resolve,24));
+-async function smartQueueFiles(files){
++async function smartQueueFiles(files,defaults={}){
+  if(smartImportBusy){$('#smartImportStatus').textContent='Attendi che l’operazione precedente sia terminata.';return}
+  smartImportBusy=true;smartRenderQueue();
+  const msgs=[],added=[];
+@@ -3685,11 +3633,13 @@
+   importProgress('smartImport',fi,Math.max(files.length,1),'Controllo file '+(fi+1)+'/'+files.length+': '+file.name);
+   await importYield();
+   try{const text=await smartReadText(file),inspection=smartInspect(file.name,text);
+-   const lg=inspection.league;
+-   added.push({name:file.name,text,inspection,league:lg,mode:PATH_TIERS[lg]&&!SUPPORTED_LEAGUES.some(s=>s.name===lg)?'reference':'results',skip:false,acceptMismatch:false});
++   const lg=defaults.league||inspection.league;
++   added.push({name:file.name,text,inspection,league:lg,season:defaults.season||'',mode:PATH_TIERS[lg]&&!SUPPORTED_LEAGUES.some(s=>s.name===lg)?'reference':'results',skip:false,acceptMismatch:false});
+   }catch(ex){added.push({name:file.name,error:ex.message,skip:true});msgs.push(file.name+': '+ex.message)}
+  }
+  smartQueue.push(...added);smartImportBusy=false;smartRenderQueue();
++ const disclosure=document.getElementById('taRHistoric');if(disclosure)disclosure.open=true;
++ const leagueCard=document.getElementById('taRLeagueCard');if(leagueCard)leagueCard.open=true;
+  importProgress('smartImport',files.length,Math.max(files.length,1),'Anteprima pronta — dati NON ancora importati','done');
+  $('#smartImportStatus').textContent=added.filter(x=>!x.error).length+' file riconosciuti su '+added.length+'. Verifica campionato, stagione e destinazione, poi conferma.'+(msgs.length?' Errori: '+msgs.join(' · '):'');
+ }
+@@ -3698,11 +3648,12 @@
+ $('#f').onchange=async ev=>{await smartQueueFiles([...ev.target.files]);ev.target.value='';$('#smartImport').scrollIntoView({behavior:'smooth',block:'center'})};
+ $('#smartImportClear').addEventListener('click',()=>{smartQueue=[];smartRenderQueue();$('#smartImportStatus').textContent='Selezione rimossa. Le partite già in archivio non sono state modificate.'});
+ $('#smartFileList').addEventListener('change',ev=>{
+- const el=ev.target,idx=el.dataset.smartLeague??el.dataset.smartMode??el.dataset.smartSkip??el.dataset.smartAccept;
++ const el=ev.target,idx=el.dataset.smartLeague??el.dataset.smartSeason??el.dataset.smartMode??el.dataset.smartSkip??el.dataset.smartAccept;
+  if(idx===undefined)return;const z=smartQueue[Number(idx)];if(!z||z.error)return;
+  if(el.dataset.smartLeague!==undefined){z.league=el.value;
+   if(z.mode==='reference'&&!PATH_TIERS[z.league])z.mode='results';
+- }else if(el.dataset.smartMode!==undefined)z.mode=el.value;
++ }else if(el.dataset.smartSeason!==undefined){z.season=el.value;z.acceptMismatch=false;}
++ else if(el.dataset.smartMode!==undefined)z.mode=el.value;
+  else if(el.dataset.smartSkip!==undefined)z.skip=el.checked;
+  else if(el.dataset.smartAccept!==undefined)z.acceptMismatch=el.checked;
+  smartRenderQueue();
+@@ -3715,13 +3666,10 @@
+   if(x.format!=='football')throw Error('per le categorie di provenienza serve un CSV Football-Data con Date/HomeTeam/AwayTeam');
+   return {reference:true,records:[],entry};
+  }
+- let records=x.format==='football'?parse(entry.text,entry.name,league):communityDataParser(entry.text,league,x.format==='fixtures'?'calendario':'risultati');
+- if(!records.length)throw Error('nessuna partita importabile nel CSV');
+- if(records.some(r=>r.lg!==league))throw Error('lega reale in conflitto con scelta: blocco di sicurezza');
+- // No values from CSV can be used as a guessed 0-0 at HT.
+- records=records.filter(r=>Number.isFinite(r.d)&&r.H&&r.A&&(r.up||Number.isInteger(r.h)&&Number.isInteger(r.a)));
+- if(!records.length)throw Error('nessun incontro valido dopo il controllo');
+- return {reference:false,records,entry};
++ const report=TACsv.read(entry.text,{filename:entry.name,league,season:entry.season||'',allowFixtures:x.format==='fixtures'});
++ if(report.seasonReassigned&&!entry.acceptMismatch)throw Error('Conferma la discrepanza di stagione delle gare di giugno/luglio prima di importare');
++ entry.importReport=report;
++ return {reference:false,records:report.records,entry};
+ }
+ function smartMergeRecords(add,baseRows=rows){
+  add=add.map(canonicalMatch);
+@@ -3730,6 +3678,7 @@
+  for(const r of add){
+   const k=resultIdentity(r),old=merged.get(k);
+   if(!old){merged.set(k,r);stats.added++;if(r.up)stats.fixtures++;continue}
++  if(Number.isInteger(old.o?.CsvSeason)&&Number.isInteger(r.o?.CsvSeason)&&old.o.CsvSeason!==r.o.CsvSeason){stats.conflict++;continue}
+   if(old.up&&!r.up){merged.set(k,{...r,o:{...old.o,...r.o}});stats.enriched++;continue}
+   if(!old.up&&r.up){stats.duplicate++;continue}
+   if(!old.up&&!r.up&&(old.h!==r.h||old.a!==r.a)){stats.conflict++;continue}
+@@ -3749,7 +3698,7 @@
+  const selected=smartQueue.filter(x=>!x.error&&!x.skip),problems=[],ready=[];
+  for(const entry of selected){
+   if(!entry.league){problems.push(entry.name+': specifica il campionato');continue}
+-  if(entry.inspection.mismatch&&!entry.acceptMismatch){problems.push(entry.name+': conferma la discrepanza della stagione');continue}
++  if(entry.inspection.mismatch&&!entry.acceptMismatch&&!entry.season){problems.push(entry.name+': conferma la discrepanza della stagione');continue}
+   try{ready.push(smartDataFromEntry(entry))}catch(ex){problems.push(entry.name+': '+ex.message)}
+  }
+  if(problems.length){$('#smartImportStatus').textContent='Importazione non eseguita. '+problems.join(' · ');return}
+@@ -3790,11 +3739,12 @@
+  const oldLeague=$('#lg').value;fill();if(oldLeague&&[...$('#lg').options].some(z=>z.value===oldLeague))$('#lg').value=oldLeague;
+  comparisonOptions();teams();today();refreshDataStatus();refreshStandingsControls();renderStandings();
+  if($('#ch').value&&$('#ca').value)compareMatch($('#ch').value,$('#ca').value,dayT());
++ const audits=ready.filter(v=>!v.reference).map(v=>{const r=v.entry.importReport;return v.entry.name+': '+r.invalid+' righe non valide, '+r.incomplete+' senza risultato escluse, '+r.outOfSeason+' fuori stagione, '+r.missingHT+' senza HT'+(r.issues.length?' ('+r.issues.slice(0,3).join('; ')+')':'')}).join(' · ');
+  const msg=`Importazione completata: ${ready.length} file; ${st.added} incontri nuovi (${st.fixtures} in programma), ${st.enriched} aggiornati/completati, ${st.duplicate} già presenti, ${st.conflict} risultati discordanti conservati senza sovrascrittura. ${counts.files} file di sola provenienza (${counts.ref} squadre-stagione). Archivio: ${played} partite concluse.`;
+  smartCrossCandidates=[...crossMatches.values()];
+  $('#smartFixCrossLeague').hidden=!smartCrossCandidates.length;
+  $('#smartFixCrossLeague').textContent=`Ripara ${smartCrossCandidates.length} doppioni di lega`;
+- $('#smartImportStatus').textContent=msg+(smartCrossCandidates.length?' ATTENZIONE: '+smartCrossCandidates.length+' incontri identici risultano anche sotto un altro campionato (possibile errore di una vecchia importazione). Non li ho eliminati: usa «Ripara doppioni di lega» solo dopo aver controllato.':'')+(problems.length?' Avvisi: '+problems.join(' · '):'');
++ $('#smartImportStatus').textContent=msg+' Dettagli CSV: '+audits+'. '+(smartCrossCandidates.length?' ATTENZIONE: '+smartCrossCandidates.length+' incontri identici risultano anche sotto un altro campionato (possibile errore di una vecchia importazione). Non li ho eliminati: usa «Ripara doppioni di lega» solo dopo aver controllato.':'')+(problems.length?' Avvisi: '+problems.join(' · '):'');
+  $('#smartImportStatus').classList.toggle('smart-ok',!problems.length);
+  smartQueue=[];
+  importProgress('smartImport',5,5,'Importazione completata: '+st.added+' nuovi incontri','done');
+@@ -4335,6 +4285,9 @@
+   const jsonPanel=$('#taJsonCheckPanel');if(jsonPanel){const details=document.createElement('details');details.className='ta-tech-expand';details.innerHTML='<summary>🔍 Controllo preliminare del file JSON (senza importarlo)</summary><div id="taRJsonCheck"></div>';$('#taRLegacyTools').appendChild(details);place('#taJsonCheckPanel','#taRJsonCheck')}
+   place('#downloadHub','#taRDownloads');
+   place('#smartImport','#taRHistoricalBody');
++  // Manual CSV preview has its own explicit league controls and must be accessible
++  // even before the technical download selector has a league selected.
++  $('#taRLeagueCard .ta-tech-body').appendChild($('#taRHistoric'));
+   place('.data-update-card','#taRUpdateBody');
+   place('#taQuotesHub','#taRQuotesBody');
+   place('#dati .advanced-import','#taRLegacyTools');
+@@ -4480,7 +4433,7 @@
+  <div class="taS-actions"><label for="taSScope">Campionati inclusi</label><select id="taSScope"><option value="all">Tutte le leghe configurate</option><option value="new">Solo le 12 nuove</option></select><button id="taSStop" type="button" disabled>Interrompi dopo la lega corrente</button></div>
+  <p id="taTRecoveryNote">Recupero storico mirato: La Liga, Segunda, Ligue 1, Ligue 2, Eredivisie, Primeira Liga, Danimarca e Romania. Quando Football-Data blocca i CSV, prova un archivio pubblico alternativo per il 2021/22–2023/24. Le stagioni 2024/25 e 2025/26 potrebbero richiedere un download manuale. Per alcune leghe manca il risultato del primo tempo: <b>mai sostituito con 0–0.</b></p>
+  <p>Importa solo dalle fonti accessibili: <b>${NEW_LEAGUES.filter(autoCapable).length} nuove leghe con fonte automatica</b>, ${NEW_LEAGUES.length-NEW_LEAGUES.filter(autoCapable).length} nuove leghe solo manuali. Le altre leghe già presenti restano selezionabili. Prima del primo import è consigliato esportare il backup JSON.</p>
+- <div class="taS-actions"><label for="taTManualLeague">CSV storico scaricato manualmente</label><select id="taTManualLeague"><option value="">Seleziona la lega</option>${['Eredivisie','Primeira Liga','Superliga Danimarca','SuperLiga Romania','La Liga','Segunda División','Ligue 1','Ligue 2'].map(n=>`<option value="${n}">${n}</option>`).join('')}</select><input type="file" id="taTManualFiles" accept=".csv,text/csv" multiple title="Puoi scegliere più CSV di una lega"/><button type="button" id="taTManualImport">Importa i CSV selezionati</button></div>
++ <div class="taS-actions"><label for="taTManualLeague">CSV storico scaricato manualmente</label><select id="taTManualLeague"><option value="">Seleziona la lega</option>${['Eredivisie','Primeira Liga','Superliga Danimarca','SuperLiga Romania','La Liga','Segunda División','Ligue 1','Ligue 2'].map(n=>`<option value="${n}">${n}</option>`).join('')}</select><label>Stagione <select id="taTManualSeason"><option value="">Auto: Season o data</option><option value="2024">2024/25</option><option value="2025">2025/26</option></select></label><input type="file" id="taTManualFiles" accept=".csv,text/csv" multiple title="Puoi scegliere più CSV di una lega"/><button type="button" id="taTManualImport">Importa i CSV selezionati</button></div>
+  <p>Se il browser blocca il download automatico, apri i CSV originali dalla scheda del campionato, salvali sul PC e caricali qui. Accetta Football-Data stagionale, Football-Data extra (DNK/ROU) e la cache FootballCSV.</p>
+  <div id="taSBulkSummary" class="taS-progress" aria-live="polite" role="status">Nessuna importazione eseguita. Il download diretto può essere bloccato dalle regole CORS del browser.</div>`;
+ pick.parentNode.insertBefore(panel,pick);
+@@ -4671,23 +4624,14 @@
+ const MISSING_HISTORY=['Eredivisie','La Liga','Segunda División','Ligue 1','Ligue 2','Superliga Danimarca','Primeira Liga','SuperLiga Romania'];
+ $('#taTRecover').addEventListener('click',()=>runBulk(true,MISSING_HISTORY));
+ $('#taTManualImport').addEventListener('click',async()=>{
+- if(active||!archiveReady){append('Caricamento non disponibile: archivio occupato o non pronto','taS-error');return}
+- const lg=$('#taTManualLeague').value,files=[...$('#taTManualFiles').files];
+- if(!lg||!files.length){append('Seleziona prima una lega e uno o più file CSV','taS-error');return}
++ if(active||!archiveReady||smartImportBusy||archiveTransferBusy||archiveBackupBusy||archiveMergePending){append('Caricamento non disponibile: archivio occupato o non pronto','taS-error');return}
++ const files=[...$('#taTManualFiles').files];
++ if(!files.length){append('Seleziona uno o più CSV','taS-error');return}
+  const btn=$('#taTManualImport');btn.disabled=true;
+  try{
+-  for(const file of files){
+-   try{
+-    const txt=await file.text(),first=csvRows(txt)[0]?.map(c=>c.trim().toLowerCase())||[];
+-    let parsed=[];
+-    if(first.includes('team 1')&&first.includes('ft'))parsed=parseCachedFootballCSV(txt,lg);
+-    else if(first.includes('home')&&first.includes('hg')&&first.includes('season'))parsed=parseExtraCsv(txt,lg);
+-    else parsed=parse(txt,file.name,lg).filter(r=>r.lg===lg);
+-    if(!parsed.length)throw Error('nessuna partita riconosciuta: controlla formato e campionato');
+-    const merged=await mergeImported(parsed);if(!merged.ok)throw Error('salvataggio non riuscito');
+-    append('✓ '+file.name+': '+parsed.length+' incontri letti, '+merged.added+' nuovi, '+parsed.filter(r=>r.ht===null).length+' privi di risultato HT');
+-   }catch(ex){append('✕ '+file.name+': '+ex.message,'taS-error')}
+-  }
++  await smartQueueFiles(files,{league:$('#taTManualLeague').value,season:$('#taTManualSeason').value});
++  append('Anteprima pronta: controlla campionato, stagione e righe escluse, poi premi «Importa file verificati». Nessun dato ancora salvato.');
++  $('#smartImport').scrollIntoView({behavior:'smooth',block:'start'});
+  }finally{btn.disabled=false;$('#taTManualFiles').value=''}
+ });
+ $('#taSStop').addEventListener('click',()=>{stop=true;append('Interruzione richiesta: terminerà dopo il campionato corrente.');});
