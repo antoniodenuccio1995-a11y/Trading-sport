@@ -1,0 +1,10 @@
+{
+  "originalSHA256": "090c69f20ce9d5f76664e888ba426d51211dcbe6257603d5309789c264b084c7",
+  "changes": [
+    "Candidate and output paths",
+    "Source names compared through preserved raw-name metadata",
+    "Legacy JSON permits identity metadata while checking every original field",
+    "JSON import now waits for the preview then explicitly clicks confirm; invalid import asserts blocked report instead of old status text",
+    "All match, season, goals, odds, counts and trade assertions retained"
+  ]
+}
