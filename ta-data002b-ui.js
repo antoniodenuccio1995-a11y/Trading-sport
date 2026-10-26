@@ -18,6 +18,9 @@ function taPersistReport(report){
 function taAux(){const out={};for(const k of ['ta_path_memberships','gp_goal_events','gp_man','gp_strats'])out[k]=archiveReadAux(k)||'[]';return out;}
 function taCapture(){return {rows:archiveCompact(rows),aux:taAux(),rules:TAClubs.rules()};}
 const taFingerprint=()=>TARecovery.stable(taCapture());
+function taEnsureCurrent(disk){
+ if(disk&&(!TARecovery.equal(archiveCompact(rows),disk.rows||[])||!TARecovery.equal(TAClubs.rules(),disk.clubRules||[])||(window.taRecoveryGeneration||null)!==(disk.generation||null)))throw Error('L’archivio è cambiato in un’altra scheda. Ricarica la pagina e seleziona di nuovo il backup prima di simulare.');
+}
 async function taRefresh(){
  const snapshot=await archiveDbGet();archiveLoadBundle(snapshot);rows=archiveExpand(snapshot.rows||[]);
  fill();teams();today();comparisonOptions();refreshDataStatus();refreshStandingsControls();renderStandings();lm();drawS();renderClubDiagnostics();
@@ -83,9 +86,10 @@ function taAuxPlan(metadata,rules){
 }
 async function taPrepare(content,name,proposedRules=null,kind='importazione'){
  document.getElementById('taPartialConsent').checked=false;taIssuePage=0;
- const fingerprint=taFingerprint(),disk=await archiveDbGet(),saved=TAClubs.rules();let result,sourceRecords=[],rules=proposedRules||saved;
+ const fingerprint=taFingerprint(),disk=archiveDb?await archiveDbGet():null,saved=TAClubs.rules();let result,sourceRecords=[],rules=proposedRules||saved;
  try{
   const parsed=TARecovery.parse(content);sourceRecords=parsed.records;
+  taEnsureCurrent(disk);
   const useBackup=document.getElementById('taUseBackupRules').checked;
   if(!proposedRules&&useBackup&&parsed.metadata.clubRules){
    const merged=new Map(saved.map(r=>[TARecovery.stable([r.alias,r.country,r.fromId||'',r.provider||'',r.sourceId??null]),r]));
@@ -157,7 +161,7 @@ function renderClubDiagnostics(){
  document.getElementById('taRecoveryImpact').innerHTML=(r?.sportingImpact||[]).map(v=>{const label=s=>s?`${s.name}: ${s.played} giocate, ${s.fixtures} in programma; GF ${s.gf}, GS ${s.ga}; V/P/S ${s.wins}/${s.draws}/${s.losses}`:'Assente';return `<tr><td>${e((v.before||v.after).league)}</td><td>${e(label(v.before))}</td><td>${e(label(v.after))}</td></tr>`}).join('');
  document.getElementById('taPartialWrap').hidden=!r?.canPartial;
  document.getElementById('taBackupRulesWrap').hidden=!r?.backupRulesAvailable;
- document.getElementById('taRecoveryConfirm').disabled=!taPending||!(r?.safe||(r?.canPartial&&document.getElementById('taPartialConsent').checked));
+ document.getElementById('taRecoveryConfirm').disabled=!archiveDb||archiveMode!=='indexeddb'||!taPending||!(r?.safe||(r?.canPartial&&document.getElementById('taPartialConsent').checked));
  document.getElementById('taReportWarning').textContent=taReportPersistenceError;
  document.getElementById('taRecoveryIntegrity').textContent=taPending?.kind==='identità'?'Le formule non cambiano. Il cambio dei raggruppamenti può cambiare classifiche e statistiche: controllare i nomi prima/dopo. Registro trade invariato.':'L’archivio corrente viene conservato. Risultati e campi discordanti non vengono sovrascritti. Registro trade invariato.';
  taRenderClubs();
@@ -223,12 +227,13 @@ function renderClubDiagnostics(){
  const ruleKey=r=>TARecovery.stable([TAClubs.key(r.alias),r.country,r.provider||'',r.sourceId??null,r.scope||'alias',r.scope==='identity'?r.fromId:'']);
  async function simulateRules(additions){
   if(!archiveReady||archiveBackupBusy||archiveTransferBusy||smartImportBusy||archiveMergePending)return;
+  if(!archiveDb||archiveMode!=='indexeddb')throw Error('Per salvare associazioni in sicurezza serve la memoria estesa IndexedDB. La copia locale precedente resta disponibile.');
   archiveBackupBusy=true;try{
   const map=new Map(TAClubs.rules().map(r=>[ruleKey(r),r]));for(const r of additions)map.set(ruleKey(r),r);const rules=[...map.values()];
   const content=taSourceText||JSON.stringify({format:'TradingAnalyticsBackup',version:2,records:archiveCompact(rows),manual:man,memberships:leaguePathRefs});
   if(!rows.length&&!taSourceText){
    // Registry-only preview, still committed atomically with the unchanged archive.
-   const disk=await archiveDbGet(),saved=TAClubs.rules();try{TAClubs.configure(rules);TAClubs.configure(saved)}catch(ex){TAClubs.configure(saved);throw ex;}
+   const disk=await archiveDbGet(),saved=TAClubs.rules();taEnsureCurrent(disk);try{TAClubs.configure(rules);TAClubs.configure(saved)}catch(ex){TAClubs.configure(saved);throw ex;}
    const report={status:'pronta',operation:'identità',inputCount:0,outputCount:0,importable:0,problematic:0,errors:[],collisions:[],changes:[],safe:true,rulesAdded:additions};
    taPending={records:[],rules,aux:taAux(),fingerprint:taFingerprint(),diskToken:TARecovery.stable(disk),report,sourceRecords:[],kind:'identità'};await taPersistReport(report);
   }else{await taPrepare(content,taSourceText?taSourceName:'Associazioni club',rules,'identità');taPending.report.rulesAdded=additions;await taPersistReport(taPending.report);}

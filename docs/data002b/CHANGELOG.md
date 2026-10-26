@@ -11,3 +11,5 @@
 - Paginati i dettagli a schermo, mantenendo integrale il rapporto esportato.
 - Conservati sorgenti rc2 e precedenti, compatibilità JSON e codice del registro trade. Nessun merge, deploy stabile o evoluzione grafica delle classifiche.
 - Esplicitato l'impedimento residuo: backup personale non presente; rapporto disponibile di 28 collisioni invece delle 40 citate, senza risultati delle coppie.
+
+- Verificata la conservazione dei fallback quando IndexedDB non è disponibile e delle decisioni del bundle con un fallback più recente; bloccata anche la simulazione avviata da una scheda con dati non aggiornati.

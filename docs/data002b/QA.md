@@ -6,7 +6,7 @@ Versione candidata v0.2U-rc3, basata su rc2 `fb0ad33`. Verifiche locali riproduc
 | --- | --- | --- |
 | Recupero, duplicati, conflitti, alias, Paesi e formati | 31 test unitari PASS | `qa/data002b/unit.txt` |
 | Parser CSV effettivamente riutilizzato dalla rc3 | 30 test unitari PASS | `qa/data002b/csv-unit.txt` |
-| Procedura guidata, persistenza, rollback e identità operative | 20 gruppi browser PASS, nessun pageerror | `qa/data002b/browser.json` |
+| Procedura guidata, persistenza, rollback e identità operative | 22 gruppi browser PASS, nessun pageerror | `qa/data002b/browser.json` |
 | Matrice reale 8 campionati × 2 stagioni | 16 casi PASS, 5.151 incontri | `qa/data002b/csv-regression.json` |
 | Regressioni della suite TA-CSV-001 | 9 gruppi PASS | stesso rapporto |
 | AUDIT originale IND-01…IND-06 | PASS | `qa/data002b/audit-rc3/independent-browser.json` |
@@ -21,9 +21,9 @@ Sono 61 test unitari sulla nuova procedura e sul parser riutilizzato. I file rc2
 
 ## Copertura browser mirata
 
-Le 20 prove comprendono simulazione senza scritture, rapporto esportabile anche dopo errore, conservazione dopo ricaricamento, consenso al parziale, salvataggio coerente delle sezioni ausiliarie e ripristino. Un abort provocato dopo richieste di scrittura e prima del commit lascia invariati snapshot e puntatore di ripristino. Una revisione cambiata impedisce l'applicazione di una vecchia anteprima.
+Le 22 prove comprendono simulazione senza scritture, rapporto esportabile anche dopo errore, conservazione dopo ricaricamento, consenso al parziale, salvataggio coerente delle sezioni ausiliarie e ripristino. Un abort provocato dopo richieste di scrittura e prima del commit lascia invariati snapshot e puntatore di ripristino. Una revisione cambiata impedisce l'applicazione di una vecchia anteprima.
 
-È provato il rifiuto delle scritture localStorage durante il commit IndexedDB, il recupero con metadati ausiliari discordanti bloccato prima delle scritture, il roundtrip completo su un profilo nuovo con consenso alle regole, la stabilità degli ID dopo reload e reimportazione, la correzione di un singolo alias e la separazione senza modificare gli altri incontri. La conferma multipla richiede verifica esplicita. Sono provati eventi gol, chiavi precedenti e contesto del campionato.
+È provato il rifiuto delle scritture localStorage durante il commit IndexedDB, il recupero con metadati ausiliari discordanti bloccato prima delle scritture, il roundtrip completo su un profilo nuovo con consenso alle regole, la stabilità degli ID dopo reload e reimportazione, la correzione di un singolo alias e la separazione senza modificare gli altri incontri. Sono verificate anche la lettura del fallback senza IndexedDB e la conservazione delle decisioni e sezioni ausiliarie quando un fallback partite più recente prevale sullo snapshot. La conferma multipla richiede verifica esplicita. Sono provati eventi gol, chiavi precedenti e contesto del campionato.
 
 Il registro trade è seminato soltanto con fotografie sintetiche: voti congelati, eventi e quote rimangono uguali. Un archivio rc2 nello stesso browser/origine resta byte per byte invariato dopo il recupero rc3.
 

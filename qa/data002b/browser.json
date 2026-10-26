@@ -19,15 +19,17 @@
     "Recovery in rc3 leaves the preceding rc2 archive byte-equivalent in the same origin",
     "Only one mistaken alias can be separated from a club while the other matches retain their original IDs",
     "Country-context batch proposals require explicit verification and preserve the confirmed ID for future imports",
-    "Goal events use competition context, retain old source keys and do not duplicate identical event sequences"
+    "Goal events use competition context, retain old source keys and do not duplicate identical event sequences",
+    "Existing fallback remains readable without IndexedDB; JSON can be diagnosed and exported while atomic import is disabled",
+    "A newer match fallback retains the atomic bundle club decisions and auxiliary sections after reload"
   ],
   "pageerrors": [],
   "personalDataUsed": false,
   "testedSourceSHA256": {
-    "Trading_Analytics_v0.2U-rc3_TA-DATA-002B.html": "5ab3a5155eebdc5aaf03cf102bfbacb8327a95ab06200f66a993adc27cdd932f",
+    "Trading_Analytics_v0.2U-rc3_TA-DATA-002B.html": "fee906d5bf6da6d1e41aa29c14025d7782f6bc927e8bfdafe91af7e36d5b939a",
     "ta-clubs-v2.js": "3c7a76bd941b789f0de323c0c568b351542fa44f5b4fe931d003994b4200bb20",
     "ta-json-recovery.js": "2259e9f32550d253bb435c3670e6c78f977ff089e6bfbf7ee24c3e48657adbcd",
-    "ta-data002b-ui.js": "0129bbc7f23bcd19d76447c81aaf1994d22fcf7eecbebaf9493b091fa1a41665",
+    "ta-data002b-ui.js": "b96b4c82542e26fd0cfd3a8bf430bd1590c619c2167df9211772553ec4b99155",
     "ta-csv-import-v02U-rc2.js": "0d694d83e1e78df2cfd910af9814f01dc15ee684bcbf2a518f892582498fb991"
   },
   "outcome": "PASS"

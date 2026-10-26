@@ -1600,7 +1600,7 @@ function archiveQueueWrite(snapshot){const exact=archiveExpand(archiveCompact(sn
 try{rows=archiveExpand(archiveRawLegacy())}catch(x){rows=[]}
 async function archiveInitialize(){const initialLocal=rows.slice();let compactGzip=null;
  try{compactGzip=await archiveReadGzip()}catch(ex){archiveWarning='Backup compresso illeggibile: '+ex.message}
- try{archiveDb=await archiveOpenDb();const ownFallback=await archiveReadFallback();if(ownFallback){rows=smartMergeRecords(archiveExpand(ownFallback),[]).records;compactGzip=archiveCompact(rows);throw Error('Uso copia alternativa verificata: IndexedDB non era disponibile al salvataggio')}archiveDb=archiveDb||await archiveOpenDb();const snapshot=await archiveDbGet();archiveLoadBundle(snapshot);const dbRows=snapshot&&Array.isArray(snapshot.rows)?archiveExpand(snapshot.rows):[];
+ try{try{archiveDb=await archiveOpenDb()}catch(openError){archiveDb=null;archiveWarning=openError.message||String(openError)}const startupSnapshot=archiveDb?await archiveDbGet():null;archiveLoadBundle(startupSnapshot);const ownFallback=await archiveReadFallback();if(ownFallback){rows=smartMergeRecords(archiveExpand(ownFallback),[]).records;compactGzip=archiveCompact(rows);throw Error('Uso copia alternativa verificata: IndexedDB non era disponibile al salvataggio')}if(!archiveDb)throw Error(archiveWarning||'Memoria estesa non disponibile');const snapshot=startupSnapshot;const dbRows=snapshot&&Array.isArray(snapshot.rows)?archiveExpand(snapshot.rows):[];
   const lgRows=compactGzip?archiveExpand(compactGzip):[];
   // Conserva la memoria più ricca: un archivio locale precedente può contenere incontri non ancora migrati.
   // Un DB già popolato è la fonte di verità. Reimportare ad ogni avvio i vecchi gp_rows

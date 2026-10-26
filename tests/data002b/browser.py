@@ -65,6 +65,10 @@ try:
   upload(p,doc([row(15,H='Paris FC')]))
   p.evaluate("async()=>{await archiveDbPut(archiveCompact(rows));}")
   confirm(p);assert p.evaluate('rows.length')==1 and 'altra operazione' in p.locator('#taRecoveryStatus').inner_text()
+  p.evaluate("async()=>{const updated=rows.map(r=>({...r,o:{...r.o,OtherTab:'unseen edit'}}));await archiveDbPut(archiveCompact(updated));}")
+  upload(p,doc([row(15,H='Paris FC')]));assert p.evaluate('window.taLastMigration.safe') is False
+  assert 'Ricarica' in p.evaluate('window.taLastMigration.errors[0].error')
+  p.reload();ready(p);assert p.evaluate("rows[0].o.OtherTab")=='unseen edit'
   check('Storage revision check prevents stale preview from overwriting a concurrent writer')
   # Simulate localStorage quota denial: the JSON bundle does not depend on separate local writes.
   upload(p,doc([row(15,H='Paris FC')],strategies=[strategy('Synthetic quota-safe strategy')]))
@@ -157,6 +161,24 @@ try:
   assert p.evaluate('storedGoalEvents.length')==1 and p.evaluate('storedGoalEvents[0].RecoverySourceKeys.length')==2
   assert p.evaluate('goalTimeStats(rows,true).n')==1
   check('Goal events use competition context, retain old source keys and do not duplicate identical event sequences')
+  fallback_context=b.new_context(accept_downloads=True);fallback_context.route('**/*',lambda r:r.continue_() if r.request.url.startswith(base) else r.abort())
+  pf=fallback_context.new_page();pf.on('pageerror',lambda e:report['pageerrors'].append(str(e)));pf.goto(base+'Trading_Analytics_v0.2U-rc3_TA-DATA-002B.html');ready(pf)
+  pf.evaluate('async r=>{await archiveFallbackPut(archiveCompact([canonicalMatch(r)]));}',row())
+  fallback_context.add_init_script("IDBFactory.prototype.open=function(){throw Error('Synthetic IndexedDB unavailable')};")
+  pf.reload();ready(pf);assert pf.evaluate('rows.length')==1 and pf.evaluate('archiveMode') in ['compressed','localStorage']
+  upload(pf,doc([row(23,H='Paris FC')]));assert pf.evaluate('window.taLastMigration.inputCount')==1 and pf.locator('#taRecoveryConfirm').is_disabled()
+  assert export(pf,'#taClubIntegrityExport')['inputCount']==1
+  assert pf.evaluate('rows.length')==1
+  check('Existing fallback remains readable without IndexedDB; JSON can be diagnosed and exported while atomic import is disabled')
+  fallback_context.close()
+  bundle=export(p,'#archiveExportBackup');bc=b.new_context(accept_downloads=True);bc.route('**/*',lambda r:r.continue_() if r.request.url.startswith(base) else r.abort());pb=bc.new_page();pb.on('dialog',lambda d:d.accept());pb.on('pageerror',lambda e:report['pageerrors'].append(str(e)));pb.goto(base+'Trading_Analytics_v0.2U-rc3_TA-DATA-002B.html');ready(pb)
+  upload(pb,bundle);pb.locator('#taUseBackupRules').check();pb.wait_for_function('!archiveBackupBusy && window.taLastMigration.safe');confirm(pb)
+  pb.evaluate('async r=>{await archiveFallbackPut(archiveCompact([...rows,canonicalMatch(r)]));}',row(26,H='Paris FC'))
+  pb.reload();ready(pb);assert pb.evaluate('rows.length')==len(bundle['records'])+1
+  assert pb.evaluate('TAClubs.rules().length')==len(bundle['clubRules']) and pb.evaluate('gs().length')==len(bundle['strategies'])
+  assert pb.evaluate('storedGoalEvents.length')==len(bundle['goalEvents'])
+  check('A newer match fallback retains the atomic bundle club decisions and auxiliary sections after reload')
+  bc.close()
   p.locator('.workspace-nav button[data-open-workspace="dati"]').click();p.locator('#taRecovery').scroll_into_view_if_needed();p.screenshot(path=str(ROOT/'qa/data002b/recovery.png'),full_page=False)
   assert report['pageerrors']==[],report['pageerrors']
   assert source_hashes()==report['testedSourceSHA256'],'Sources changed during the test'
