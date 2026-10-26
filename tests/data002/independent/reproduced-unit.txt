@@ -1,0 +1,38 @@
+✔ ROU 2024/2025: league, season, scores (5.494859ms)
+✔ ROU 2025/2026: league, season, scores (1.442882ms)
+✔ DNK 2024/2025: league, season, scores (0.551333ms)
+✔ DNK 2025/2026: league, season, scores (1.093063ms)
+✔ P1 2024/2025: league, season, scores (1.780372ms)
+✔ P1 2025/2026: league, season, scores (0.378372ms)
+✔ SP1 2024/2025: league, season, scores (0.187764ms)
+✔ SP1 2025/2026: league, season, scores (0.277339ms)
+✔ SP2 2024/2025: league, season, scores (1.694452ms)
+✔ SP2 2025/2026: league, season, scores (1.120034ms)
+✔ F1 2024/2025: league, season, scores (0.450321ms)
+✔ F1 2025/2026: league, season, scores (0.459234ms)
+✔ F2 2024/2025: league, season, scores (0.581229ms)
+✔ F2 2025/2026: league, season, scores (0.474637ms)
+✔ N1 2024/2025: league, season, scores (0.422489ms)
+✔ N1 2025/2026: league, season, scores (0.481238ms)
+✔ normalized UTF-8 BOM, semicolon, case/aliases, quote escaping and Unicode (0.830706ms)
+✔ manual league required when both filename and metadata are absent (1.231312ms)
+✔ unrecognized code is recoverable through explicit selection (1.678287ms)
+✔ recognized metadata cannot be relabelled by manual selection (0.542911ms)
+✔ Country disambiguates Superliga and survives cumulative season filter (0.635561ms)
+✔ invalid dates rejected without Date.UTC rollover; EU and leap dates supported (3.684782ms)
+✔ partial, negative, fractional and non numeric scores never become zero (0.516351ms)
+✔ missing/impossible HT is null, actual 0-0 is evidence (0.41003ms)
+✔ date/metadata disagreement rejected; explicit season cannot invent games (0.487447ms)
+✔ cache and community schema remain supported (0.592526ms)
+✔ malformed quoting, duplicate aliases and shifted columns blocked (0.329218ms)
+✔ filename mapping covers new leagues without guessing active sidebar (0.144939ms)
+✔ exact 131-column utility header preserves scores, odds and explicit unknown-code recovery (1.980885ms)
+✔ candidate script syntax and protected baseline byte identity (465.937164ms)
+ℹ tests 30
+ℹ suites 0
+ℹ pass 30
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 677.328011

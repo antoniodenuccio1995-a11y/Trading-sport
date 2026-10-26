@@ -1,0 +1,236 @@
+{
+  "browser": "154.0.8037.57",
+  "tests": [
+    {
+      "id": "IND-01",
+      "name": "Known and unknown Div mixed in same CSV require explicit resolution",
+      "status": "PASS",
+      "expected": "No write without explicitly resolving unknown row league",
+      "before": {
+        "league": "Ligue 1",
+        "warnings": "Metadati campionato non riconosciuti: OTHER_UNKNOWN. Seleziona la lega corretta."
+      },
+      "after": {
+        "count": 0,
+        "leagues": [],
+        "status": "Importazione non eseguita. neutral.csv: Campionato non risolto nelle righe 3: necessaria conferma esplicita delle sole righe anomale prima di qualsiasi scrittura"
+      },
+      "persisted": 0
+    },
+    {
+      "id": "IND-02",
+      "name": "Reference import respects selected season and preview",
+      "status": "PASS",
+      "expected": "Only Season24A/B memberships in season 2024/25; no 2025/26",
+      "preview": "Anteprima con le scelte attuali: 1 incontri importabili; 0 righe non valide; 0 senza risultato escluse; 1 fuori stagione; 1 senza HT; 0 righe con campionato non risolto (salvataggio bloccato).",
+      "after": {
+        "rows": 0,
+        "refs": [
+          {
+            "year": 2024,
+            "league": "Championship",
+            "team": "Season24A",
+            "evidenceDate": 1752105600000,
+            "clubId": "club:da_verificare:ENG:name:season24a",
+            "sourceName": "Season24A",
+            "identityName": "Season24A",
+            "provider": null,
+            "country": "ENG",
+            "associationStatus": "da_verificare",
+            "sourceId": null
+          },
+          {
+            "year": 2024,
+            "league": "Championship",
+            "team": "Season24B",
+            "evidenceDate": 1752105600000,
+            "clubId": "club:da_verificare:ENG:name:season24b",
+            "sourceName": "Season24B",
+            "identityName": "Season24B",
+            "provider": null,
+            "country": "ENG",
+            "associationStatus": "da_verificare",
+            "sourceId": null
+          }
+        ],
+        "status": "Importazione completata: 1 file; 0 incontri nuovi (0 in programma), 0 aggiornati/completati, 0 già presenti, 0 risultati discordanti conservati senza sovrascrittura. 1 file di sola provenienza (2 squadre-stagione). Archivio: 0 partite concluse. Dettagli CSV: . "
+      }
+    },
+    {
+      "id": "IND-03",
+      "name": "Reference import accepts same normalized headers/separator as preview",
+      "status": "PASS",
+      "expected": "Preview valid implies same format accepted as reference, or blocked before save",
+      "preview": "Anteprima con le scelte attuali: 1 incontri importabili; 0 righe non valide; 0 senza risultato escluse; 0 fuori stagione; 1 senza HT; 0 righe con campionato non risolto (salvataggio bloccato).",
+      "after": {
+        "refs": 2,
+        "status": "Importazione completata: 1 file; 0 incontri nuovi (0 in programma), 0 aggiornati/completati, 0 già presenti, 0 risultati discordanti conservati senza sovrascrittura. 1 file di sola provenienza (2 squadre-stagione). Archivio: 0 partite concluse. Dettagli CSV: . "
+      }
+    },
+    {
+      "id": "IND-04",
+      "name": "Future cutoff of existing match standings and trajectory",
+      "status": "PASS",
+      "result": {
+        "unchanged": true,
+        "points": [
+          {
+            "x": "01/08/25",
+            "date": 1754006400000,
+            "y": 1,
+            "pts": 3,
+            "played": 1
+          },
+          {
+            "x": "02/08/25",
+            "date": 1754092800000,
+            "y": 1,
+            "pts": 3,
+            "played": 1
+          }
+        ],
+        "lastPoint": 1754092800000,
+        "cutoff": 1754179200000
+      }
+    },
+    {
+      "id": "IND-05",
+      "name": "Historical chart reuse must enforce cutoff on prior seasons too",
+      "status": "PASS",
+      "scope": "Existing helper and future reuse risk; selected-season table IND-04 remains correct",
+      "expected": "0 games, since sole match is after cutoff despite earlier CsvSeason",
+      "result": {
+        "hist": [
+          {
+            "year": 2024,
+            "label": "2024/25",
+            "rank": null,
+            "pts": null,
+            "played": 0,
+            "teams": 0,
+            "complete": false,
+            "games": 0,
+            "zone": null,
+            "origin": {
+              "kind": "na",
+              "label": "Non applicabile",
+              "details": "Competizione senza gerarchia nazionale"
+            }
+          }
+        ],
+        "cutoff": 1751328000000,
+        "futureGame": 1752105600000
+      }
+    },
+    {
+      "id": "IND-06",
+      "name": "Populated archive rejects quota failure without modifying prior state",
+      "status": "PASS",
+      "result": {
+        "ok": false,
+        "memoryUnchanged": true,
+        "diskUnchanged": true
+      }
+    },
+    {
+      "id": "IND-07",
+      "name": "Sibling JS and candidate start through file protocol in this environment",
+      "status": "ERROR",
+      "error": "page.goto: net::ERR_BLOCKED_BY_ADMINISTRATOR at file:///workspace/Trading-sport/Trading_Analytics_v0.2U-rc3_TA-DATA-002B.html\nCall log:\n\u001b[2m  - navigating to \"file:///workspace/Trading-sport/Trading_Analytics_v0.2U-rc3_TA-DATA-002B.html\", waiting until \"load\"\u001b[22m\n"
+    },
+    {
+      "id": "IND-08",
+      "name": "Season-phase rule coverage currently implemented",
+      "status": "OBSERVATION",
+      "result": {
+        "supported": [
+          {
+            "league": "Serie A",
+            "hasRules": true
+          },
+          {
+            "league": "Serie B",
+            "hasRules": true
+          },
+          {
+            "league": "Premier League",
+            "hasRules": true
+          },
+          {
+            "league": "Championship",
+            "hasRules": true
+          },
+          {
+            "league": "League One",
+            "hasRules": true
+          },
+          {
+            "league": "Champions League",
+            "hasRules": false
+          },
+          {
+            "league": "Bundesliga",
+            "hasRules": false
+          },
+          {
+            "league": "Ligue 1",
+            "hasRules": false
+          },
+          {
+            "league": "Eredivisie",
+            "hasRules": false
+          },
+          {
+            "league": "La Liga",
+            "hasRules": false
+          },
+          {
+            "league": "Segunda División",
+            "hasRules": false
+          },
+          {
+            "league": "Primeira Liga",
+            "hasRules": false
+          },
+          {
+            "league": "Liga Portugal 2",
+            "hasRules": false
+          },
+          {
+            "league": "Ligue 2",
+            "hasRules": false
+          },
+          {
+            "league": "Superliga Danimarca",
+            "hasRules": false
+          },
+          {
+            "league": "1st Division Danimarca",
+            "hasRules": false
+          },
+          {
+            "league": "HNL Croazia",
+            "hasRules": false
+          },
+          {
+            "league": "Prva NL Croazia",
+            "hasRules": false
+          },
+          {
+            "league": "SuperLiga Romania",
+            "hasRules": false
+          },
+          {
+            "league": "Liga II Romania",
+            "hasRules": false
+          }
+        ],
+        "inlineHasGraph": false,
+        "hasSeparateUefaBands": [
+          "europe",
+          "relegation"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,486 @@
+{
+  "outcome": "PASS",
+  "inputCount": 36789,
+  "outputCount": 36789,
+  "changedNames": 170,
+  "protectedFieldsSHA256Before": "7459a46de91488a8fd47a0b973580e48cba250b4265cc1c9ed8ad475ae60b885",
+  "protectedFieldsSHA256After": "7459a46de91488a8fd47a0b973580e48cba250b4265cc1c9ed8ad475ae60b885",
+  "protectedFieldsUnchanged": true,
+  "fields": [
+    "date",
+    "league",
+    "FT goals",
+    "HT goals and totals",
+    "shots",
+    "upcoming status",
+    "all original non-Club metadata including ALL source odds"
+  ],
+  "inputNotMutated": true,
+  "collisions": [],
+  "errors": [],
+  "sources": [
+    {
+      "source": "I1_2021.csv",
+      "count": 380,
+      "invalid": 0,
+      "incomplete": 0
+    },
+    {
+      "source": "I1_2022.csv",
+      "count": 380,
+      "invalid": 0,
+      "incomplete": 0
+    },
+    {
+      "source": "I1_2023.csv",
+      "count": 380,
+      "invalid": 0,
+      "incomplete": 0
+    },
+    {
+      "source": "I1_2024.csv",
+      "count": 380,
+      "invalid": 0,
+      "incomplete": 0
+    },
+    {
+      "source": "I1_2025.csv",
+      "count": 380,
+      "invalid": 0,
+      "incomplete": 0
+    },
+    {
+      "source": "I2_2021.csv",
+      "count": 380,
+      "invalid": 0,
+      "incomplete": 0
+    },
+    {
+      "source": "I2_2022.csv",
+      "count": 380,
+      "invalid": 0,
+      "incomplete": 0
+    },
+    {
+      "source": "I2_2023.csv",
+      "count": 380,
+      "invalid": 0,
+      "incomplete": 0
+    },
+    {
+      "source": "I2_2024.csv",
+      "count": 380,
+      "invalid": 0,
+      "incomplete": 0
+    },
+    {
+      "source": "I2_2025.csv",
+      "count": 380,
+      "invalid": 0,
+      "incomplete": 0
+    },
+    {
+      "source": "E0_2021.csv",
+      "count": 380,
+      "invalid": 0,
+      "incomplete": 0
+    },
+    {
+      "source": "E0_2022.csv",
+      "count": 380,
+      "invalid": 0,
+      "incomplete": 0
+    },
+    {
+      "source": "E0_2023.csv",
+      "count": 380,
+      "invalid": 0,
+      "incomplete": 0
+    },
+    {
+      "source": "E0_2024.csv",
+      "count": 380,
+      "invalid": 0,
+      "incomplete": 0
+    },
+    {
+      "source": "E0_2025.csv",
+      "count": 380,
+      "invalid": 0,
+      "incomplete": 0
+    },
+    {
+      "source": "E1_2021.csv",
+      "count": 552,
+      "invalid": 0,
+      "incomplete": 0
+    },
+    {
+      "source": "E1_2022.csv",
+      "count": 552,
+      "invalid": 0,
+      "incomplete": 0
+    },
+    {
+      "source": "E1_2023.csv",
+      "count": 552,
+      "invalid": 0,
+      "incomplete": 0
+    },
+    {
+      "source": "E1_2024.csv",
+      "count": 552,
+      "invalid": 0,
+      "incomplete": 0
+    },
+    {
+      "source": "E1_2025.csv",
+      "count": 552,
+      "invalid": 0,
+      "incomplete": 0
+    },
+    {
+      "source": "E2_2021.csv",
+      "count": 552,
+      "invalid": 0,
+      "incomplete": 0
+    },
+    {
+      "source": "E2_2022.csv",
+      "count": 552,
+      "invalid": 0,
+      "incomplete": 0
+    },
+    {
+      "source": "E2_2023.csv",
+      "count": 552,
+      "invalid": 0,
+      "incomplete": 0
+    },
+    {
+      "source": "E2_2024.csv",
+      "count": 552,
+      "invalid": 0,
+      "incomplete": 0
+    },
+    {
+      "source": "E2_2025.csv",
+      "count": 552,
+      "invalid": 0,
+      "incomplete": 0
+    },
+    {
+      "source": "E3_2021.csv",
+      "count": 552,
+      "invalid": 0,
+      "incomplete": 0
+    },
+    {
+      "source": "E3_2022.csv",
+      "count": 552,
+      "invalid": 0,
+      "incomplete": 0
+    },
+    {
+      "source": "E3_2023.csv",
+      "count": 552,
+      "invalid": 0,
+      "incomplete": 0
+    },
+    {
+      "source": "E3_2024.csv",
+      "count": 552,
+      "invalid": 0,
+      "incomplete": 0
+    },
+    {
+      "source": "E3_2025.csv",
+      "count": 552,
+      "invalid": 0,
+      "incomplete": 0
+    },
+    {
+      "source": "D1_2021.csv",
+      "count": 306,
+      "invalid": 0,
+      "incomplete": 0
+    },
+    {
+      "source": "D1_2022.csv",
+      "count": 306,
+      "invalid": 0,
+      "incomplete": 0
+    },
+    {
+      "source": "D1_2023.csv",
+      "count": 306,
+      "invalid": 0,
+      "incomplete": 0
+    },
+    {
+      "source": "D1_2024.csv",
+      "count": 306,
+      "invalid": 0,
+      "incomplete": 0
+    },
+    {
+      "source": "D1_2025.csv",
+      "count": 306,
+      "invalid": 0,
+      "incomplete": 0
+    },
+    {
+      "source": "F1_2021.csv",
+      "count": 380,
+      "invalid": 0,
+      "incomplete": 0
+    },
+    {
+      "source": "F1_2022.csv",
+      "count": 380,
+      "invalid": 0,
+      "incomplete": 0
+    },
+    {
+      "source": "F1_2023.csv",
+      "count": 306,
+      "invalid": 0,
+      "incomplete": 0
+    },
+    {
+      "source": "F1_2024.csv",
+      "count": 306,
+      "invalid": 0,
+      "incomplete": 0
+    },
+    {
+      "source": "F1_2025.csv",
+      "count": 306,
+      "invalid": 0,
+      "incomplete": 0
+    },
+    {
+      "source": "F2_2021.csv",
+      "count": 380,
+      "invalid": 0,
+      "incomplete": 0
+    },
+    {
+      "source": "F2_2022.csv",
+      "count": 380,
+      "invalid": 0,
+      "incomplete": 0
+    },
+    {
+      "source": "F2_2023.csv",
+      "count": 379,
+      "invalid": 0,
+      "incomplete": 0
+    },
+    {
+      "source": "F2_2024.csv",
+      "count": 306,
+      "invalid": 0,
+      "incomplete": 0
+    },
+    {
+      "source": "F2_2025.csv",
+      "count": 305,
+      "invalid": 0,
+      "incomplete": 1
+    },
+    {
+      "source": "SP1_2021.csv",
+      "count": 380,
+      "invalid": 0,
+      "incomplete": 0
+    },
+    {
+      "source": "SP1_2022.csv",
+      "count": 380,
+      "invalid": 0,
+      "incomplete": 0
+    },
+    {
+      "source": "SP1_2023.csv",
+      "count": 380,
+      "invalid": 0,
+      "incomplete": 0
+    },
+    {
+      "source": "SP1_2024.csv",
+      "count": 380,
+      "invalid": 0,
+      "incomplete": 0
+    },
+    {
+      "source": "SP1_2025.csv",
+      "count": 380,
+      "invalid": 0,
+      "incomplete": 0
+    },
+    {
+      "source": "SP2_2021.csv",
+      "count": 462,
+      "invalid": 0,
+      "incomplete": 0
+    },
+    {
+      "source": "SP2_2022.csv",
+      "count": 462,
+      "invalid": 0,
+      "incomplete": 0
+    },
+    {
+      "source": "SP2_2023.csv",
+      "count": 462,
+      "invalid": 0,
+      "incomplete": 0
+    },
+    {
+      "source": "SP2_2024.csv",
+      "count": 462,
+      "invalid": 0,
+      "incomplete": 0
+    },
+    {
+      "source": "SP2_2025.csv",
+      "count": 462,
+      "invalid": 0,
+      "incomplete": 0
+    },
+    {
+      "source": "N1_2021.csv",
+      "count": 306,
+      "invalid": 0,
+      "incomplete": 0
+    },
+    {
+      "source": "N1_2022.csv",
+      "count": 306,
+      "invalid": 0,
+      "incomplete": 0
+    },
+    {
+      "source": "N1_2023.csv",
+      "count": 306,
+      "invalid": 0,
+      "incomplete": 0
+    },
+    {
+      "source": "N1_2024.csv",
+      "count": 306,
+      "invalid": 0,
+      "incomplete": 0
+    },
+    {
+      "source": "N1_2025.csv",
+      "count": 306,
+      "invalid": 0,
+      "incomplete": 0
+    },
+    {
+      "source": "P1_2021.csv",
+      "count": 306,
+      "invalid": 0,
+      "incomplete": 0
+    },
+    {
+      "source": "P1_2022.csv",
+      "count": 306,
+      "invalid": 0,
+      "incomplete": 0
+    },
+    {
+      "source": "P1_2023.csv",
+      "count": 306,
+      "invalid": 0,
+      "incomplete": 0
+    },
+    {
+      "source": "P1_2024.csv",
+      "count": 306,
+      "invalid": 0,
+      "incomplete": 0
+    },
+    {
+      "source": "P1_2025.csv",
+      "count": 306,
+      "invalid": 0,
+      "incomplete": 0
+    },
+    {
+      "source": "T1_2021.csv",
+      "count": 380,
+      "invalid": 0,
+      "incomplete": 0
+    },
+    {
+      "source": "T1_2022.csv",
+      "count": 342,
+      "invalid": 0,
+      "incomplete": 0
+    },
+    {
+      "source": "T1_2023.csv",
+      "count": 380,
+      "invalid": 0,
+      "incomplete": 0
+    },
+    {
+      "source": "T1_2024.csv",
+      "count": 342,
+      "invalid": 0,
+      "incomplete": 0
+    },
+    {
+      "source": "T1_2025.csv",
+      "count": 306,
+      "invalid": 0,
+      "incomplete": 0
+    },
+    {
+      "source": "B1_2021.csv",
+      "count": 306,
+      "invalid": 0,
+      "incomplete": 0
+    },
+    {
+      "source": "B1_2022.csv",
+      "count": 306,
+      "invalid": 0,
+      "incomplete": 0
+    },
+    {
+      "source": "B1_2023.csv",
+      "count": 312,
+      "invalid": 0,
+      "incomplete": 0
+    },
+    {
+      "source": "B1_2024.csv",
+      "count": 312,
+      "invalid": 0,
+      "incomplete": 0
+    },
+    {
+      "source": "B1_2025.csv",
+      "count": 311,
+      "invalid": 0,
+      "incomplete": 0
+    },
+    {
+      "source": "ROU.csv",
+      "count": 4266,
+      "invalid": 12,
+      "incomplete": 0
+    },
+    {
+      "source": "DNK.csv",
+      "count": 3018,
+      "invalid": 0,
+      "incomplete": 0
+    }
+  ],
+  "note": "Dry run only, no database writes; source names restored before applying identity normalization."
+}

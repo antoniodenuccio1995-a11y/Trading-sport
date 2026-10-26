@@ -1,0 +1,236 @@
+{
+  "sourceFiles": 83,
+  "observations": 2136,
+  "identities": 500,
+  "verifiedObserved": 58,
+  "pending": 442,
+  "ambiguous": 0,
+  "possibleDuplicateGroups": 0,
+  "similarNameGroups": 32,
+  "coverage": [
+    {
+      "league": "Serie A",
+      "sourceFiles": [
+        "I1_2021.csv",
+        "I1_2022.csv",
+        "I1_2023.csv",
+        "I1_2024.csv",
+        "I1_2025.csv"
+      ],
+      "names": 27,
+      "identities": 27,
+      "scope": "available_histories_in_manifest"
+    },
+    {
+      "league": "Serie B",
+      "sourceFiles": [
+        "I2_2021.csv",
+        "I2_2022.csv",
+        "I2_2023.csv",
+        "I2_2025.csv",
+        "I2_2024.csv"
+      ],
+      "names": 44,
+      "identities": 44,
+      "scope": "available_histories_in_manifest"
+    },
+    {
+      "league": "Premier League",
+      "sourceFiles": [
+        "E0_2021.csv",
+        "E0_2022.csv",
+        "E0_2023.csv",
+        "E0_2024.csv",
+        "E0_2025.csv"
+      ],
+      "names": 27,
+      "identities": 27,
+      "scope": "available_histories_in_manifest"
+    },
+    {
+      "league": "Championship",
+      "sourceFiles": [
+        "E1_2021.csv",
+        "E1_2022.csv",
+        "E1_2023.csv",
+        "E1_2025.csv",
+        "E1_2024.csv"
+      ],
+      "names": 40,
+      "identities": 40,
+      "scope": "available_histories_in_manifest"
+    },
+    {
+      "league": "League One",
+      "sourceFiles": [
+        "E2_2021.csv",
+        "E2_2025.csv",
+        "E2_2022.csv",
+        "E2_2023.csv",
+        "E2_2024.csv"
+      ],
+      "names": 46,
+      "identities": 46,
+      "scope": "available_histories_in_manifest"
+    },
+    {
+      "league": "Champions League",
+      "sourceFiles": [
+        "champions/2023-24/cl.txt",
+        "champions/2021-22/cl.txt",
+        "champions/2022-23/cl.txt",
+        "champions/2024-25/cl.txt",
+        "champions/2025-26/cl.txt"
+      ],
+      "names": 89,
+      "identities": 76,
+      "scope": "available_histories_in_manifest"
+    },
+    {
+      "league": "Bundesliga",
+      "sourceFiles": [
+        "D1_2021.csv",
+        "D1_2022.csv",
+        "D1_2023.csv",
+        "D1_2024.csv",
+        "D1_2025.csv"
+      ],
+      "names": 25,
+      "identities": 25,
+      "scope": "available_histories_in_manifest"
+    },
+    {
+      "league": "Ligue 1",
+      "sourceFiles": [
+        "F1_2022.csv",
+        "F1_2021.csv",
+        "F1_2024.csv",
+        "F1_2025.csv",
+        "F1_2023.csv"
+      ],
+      "names": 25,
+      "identities": 25,
+      "scope": "available_histories_in_manifest"
+    },
+    {
+      "league": "Eredivisie",
+      "sourceFiles": [
+        "N1_2021.csv",
+        "N1_2022.csv",
+        "N1_2023.csv",
+        "N1_2024.csv",
+        "N1_2025.csv"
+      ],
+      "names": 24,
+      "identities": 24,
+      "scope": "available_histories_in_manifest"
+    },
+    {
+      "league": "La Liga",
+      "sourceFiles": [
+        "SP1_2021.csv",
+        "SP1_2023.csv",
+        "SP1_2024.csv",
+        "SP1_2025.csv",
+        "SP1_2022.csv"
+      ],
+      "names": 26,
+      "identities": 26,
+      "scope": "available_histories_in_manifest"
+    },
+    {
+      "league": "Segunda División",
+      "sourceFiles": [
+        "SP2_2022.csv",
+        "SP2_2023.csv",
+        "SP2_2024.csv",
+        "SP2_2025.csv",
+        "SP2_2021.csv"
+      ],
+      "names": 39,
+      "identities": 39,
+      "scope": "available_histories_in_manifest"
+    },
+    {
+      "league": "Primeira Liga",
+      "sourceFiles": [
+        "P1_2024.csv",
+        "P1_2025.csv",
+        "P1_2021.csv",
+        "P1_2022.csv",
+        "P1_2023.csv"
+      ],
+      "names": 26,
+      "identities": 26,
+      "scope": "available_histories_in_manifest"
+    },
+    {
+      "league": "Liga Portugal 2",
+      "sourceFiles": [],
+      "names": 0,
+      "identities": 0,
+      "scope": "not_verified_no_historical_csv_configured_or_provided"
+    },
+    {
+      "league": "Ligue 2",
+      "sourceFiles": [
+        "F2_2021.csv",
+        "F2_2023.csv",
+        "F2_2024.csv",
+        "F2_2022.csv",
+        "F2_2025.csv"
+      ],
+      "names": 36,
+      "identities": 36,
+      "scope": "available_histories_in_manifest"
+    },
+    {
+      "league": "Superliga Danimarca",
+      "sourceFiles": [
+        "DNK.csv"
+      ],
+      "names": 21,
+      "identities": 21,
+      "scope": "available_histories_in_manifest"
+    },
+    {
+      "league": "1st Division Danimarca",
+      "sourceFiles": [],
+      "names": 0,
+      "identities": 0,
+      "scope": "not_verified_no_historical_csv_configured_or_provided"
+    },
+    {
+      "league": "HNL Croazia",
+      "sourceFiles": [
+        "CRO_current.csv"
+      ],
+      "names": 10,
+      "identities": 10,
+      "scope": "current_2026_27_only"
+    },
+    {
+      "league": "Prva NL Croazia",
+      "sourceFiles": [],
+      "names": 0,
+      "identities": 0,
+      "scope": "not_verified_no_historical_csv_configured_or_provided"
+    },
+    {
+      "league": "SuperLiga Romania",
+      "sourceFiles": [
+        "ROU.csv"
+      ],
+      "names": 43,
+      "identities": 43,
+      "scope": "available_histories_in_manifest"
+    },
+    {
+      "league": "Liga II Romania",
+      "sourceFiles": [],
+      "names": 0,
+      "identities": 0,
+      "scope": "not_verified_no_historical_csv_configured_or_provided"
+    }
+  ]
+}

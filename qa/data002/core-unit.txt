@@ -1,0 +1,26 @@
+✔ F-01: mixed known/unknown requires an explicit row resolution, not merely a league option (11.951954ms)
+✔ F-01: missing row metadata cannot inherit a known code elsewhere (0.694202ms)
+✔ Five required verified aliases resolve to one permanent identity each (0.896803ms)
+✔ No similarity-only joining; distinct clubs and ambiguities stay separate (0.62907ms)
+✔ Unverified IDs are deterministic, country scoped and survive promotions (70.069791ms)
+✔ Multinational competitions require context for unverified homonyms (0.70507ms)
+✔ Provider team IDs distinguish homonyms and permit only exact scoped identifier joins (0.511002ms)
+✔ Homonymous opponents with distinct source IDs or countries stay distinct in string-based modules too (2.783377ms)
+✔ Original name, provider ID, results, HT, odds and shots remain available (1.20833ms)
+✔ F-02/F-03 shared reader preserves Season and normalizes reference schemas (1.274654ms)
+✔ A permanent stored ID is never silently reallocated by a changed registry (0.502888ms)
+✔ Migration simulation is pure and preserves all protected values (19.981193ms)
+✔ Migration collisions are reported and block application without dropping matches (0.922033ms)
+✔ Invalid backup values are reported before migration rather than coerced or saved (1.070592ms)
+✔ Provenance from alias re-imports is merged rather than discarded (0.779543ms)
+✔ Same-identity opponents cannot enter the archive (0.693264ms)
+✔ Membership normalization keeps declared year, source evidence and identity (0.504278ms)
+✔ Previous versions and score formula implementations remain byte identical (282.726891ms)
+ℹ tests 18
+ℹ suites 0
+ℹ pass 18
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 520.809275

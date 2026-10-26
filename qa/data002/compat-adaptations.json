@@ -1,0 +1,10 @@
+{
+  "original_script_sha256": "090c69f20ce9d5f76664e888ba426d51211dcbe6257603d5309789c264b084c7",
+  "changes": [
+    "repository path",
+    "candidate filename",
+    "output screenshot filename",
+    "match source denominations compared through preserved ClubHomeRaw/ClubAwayRaw, since canonical display names intentionally change",
+    "legacy compact comparison permits added Club* identity metadata but asserts all original fields unchanged"
+  ]
+}

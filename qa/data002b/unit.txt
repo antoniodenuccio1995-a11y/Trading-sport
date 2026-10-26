@@ -1,0 +1,39 @@
+✔ automatic recognition of compact v2, v1, legacy arrays and rows (8.48962ms)
+✔ diagnostic exports are clearly distinguished from backups (0.532108ms)
+✔ malformed JSON and unsupported version retain an exportable report (0.490656ms)
+✔ exact duplicate consolidated without false identity conflict (1.862357ms)
+✔ alias copies consolidate with both raw provenances (1.721581ms)
+✔ compatible fields enrich without losing odds or metadata (1.180975ms)
+✔ disagreeing final results always blocked and recorded (0.940685ms)
+✔ HT, shots, odds and season disagreements cannot overwrite each other (1.485356ms)
+✔ distinct provider evidence is preserved rather than mislabeled as incompatible (1.003915ms)
+✔ safe partial plan excludes entire conflicting input group and preserves current rows exactly (1.261807ms)
+✔ invalid rows remain in diagnostic report and cannot pass as a complete import (0.511212ms)
+✔ ambiguous labels are blocked while unknown distinct labels do not require alias verification (0.625894ms)
+✔ existing inconsistent groups cannot be partially reclassified by mirroring them into a file (0.843759ms)
+✔ fixtures and completed results combine safely (0.764335ms)
+✔ planning does not mutate input, observations or user rules (1.035027ms)
+✔ 40 synthetic former key collisions now classified, not claimed as real user records (10.21885ms)
+✔ confirmation rules persist IDs across subsequent imports and raw aliases are retained (0.636613ms)
+✔ correcting an erroneous alias association uses raw source name instead of stale canonical name (0.370943ms)
+✔ distinct club decision is stable on reload and does not join similarly named clubs (0.693594ms)
+✔ same provider and source ID keep one identity despite changed source names (0.406374ms)
+✔ unscoped UI queries do not pollute registry with UNSPECIFIED clubs (0.284966ms)
+✔ UNSPECIFIED proposals need confirmation and reuse country scoped ID afterwards (1.08793ms)
+✔ Paris FC and PSG; Manchester City and United; FCSB and CSA remain separate (0.200836ms)
+✔ cross country user rules and contradictory duplicate rules rejected (0.655674ms)
+✔ malformed auxiliary data is diagnosed before any import (0.791614ms)
+✔ coverage maps every safely consolidated source row (0.440606ms)
+✔ membership correction follows preserved raw alias instead of stale display name (0.407403ms)
+✔ same user alias in different countries is scoped, and contextless queries stay ambiguous (0.17998ms)
+✔ invalid dates outside JS range and malformed strategies produce diagnostic errors (0.228706ms)
+✔ malformed goal events cannot be saved as valid auxiliary data (0.276233ms)
+✔ equivalent numeric representations are consolidated with both originals retained as evidence (0.855317ms)
+ℹ tests 31
+ℹ suites 0
+ℹ pass 31
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 184.089476

@@ -1,0 +1,13 @@
+{
+  "baseline": "b80ff664ff1ffe05045662ad43d22d5c2e9dd3fc",
+  "original_app_commit": "73fc0e23712af598b88b95b23abf764f24c186ad",
+  "audit_zip_sha256": "17ba54da7b4deecf9d357f75afc559081df258207851d3aa5748b8bcebf29e88",
+  "files": {
+    "Trading_Analytics_v0.2T_Recupero_Storici.html": "819491b53edd20768ce23134c271c2a99a1b80d4bdbf3b165d478dd26794f688",
+    "Trading_Analytics_v0.2U-rc1_TA-CSV-001.html": "3b1c0bdb7ff4caf28ca96f21c99fbb49107eaea1186a8f4fa700182ad4d0ec9b",
+    "ta-csv-import.js": "fb215d6bf283fd2d5286dfc687c4f351caa1be18c4bd178453325eb12b005f20",
+    "Trading_Analytics_v0.2U-rc2_TA-DATA-002.html": "67b396bfae04bc4f2b120dbf2cf9e7ba31b8a478481211934ef9f5713ed9f6e3",
+    "ta-csv-import-v02U-rc2.js": "0d694d83e1e78df2cfd910af9814f01dc15ee684bcbf2a518f892582498fb991",
+    "ta-clubs-v1.js": "ceeb02aa736d240f7bb6b7deaa681ed03e1e47f79fb2db67add4b935d9a56e26"
+  }
+}

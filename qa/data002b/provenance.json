@@ -1,0 +1,27 @@
+{
+  "candidate": "v0.2U-rc3",
+  "baseCommit": "fb0ad33ddff2e5494c1c3af02bf45042e37c0796",
+  "sourceSHA256": {
+    "Trading_Analytics_v0.2U-rc3_TA-DATA-002B.html": "fee906d5bf6da6d1e41aa29c14025d7782f6bc927e8bfdafe91af7e36d5b939a",
+    "ta-clubs-v2.js": "3c7a76bd941b789f0de323c0c568b351542fa44f5b4fe931d003994b4200bb20",
+    "ta-json-recovery.js": "2259e9f32550d253bb435c3670e6c78f977ff089e6bfbf7ee24c3e48657adbcd",
+    "ta-data002b-ui.js": "b96b4c82542e26fd0cfd3a8bf430bd1590c619c2167df9211772553ec4b99155",
+    "ta-csv-import-v02U-rc2.js": "0d694d83e1e78df2cfd910af9814f01dc15ee684bcbf2a518f892582498fb991"
+  },
+  "receivedReportsAggregateOnly": {
+    "inputRowsReported": 8225,
+    "collisionsActuallyPresent": 28,
+    "errorsReported": 0,
+    "resultsAvailable": false,
+    "originalMatchBackupAvailable": false,
+    "observedClubs": 657,
+    "unspecified": 242,
+    "sameNameContextCandidates": 242,
+    "noPersonalRowsPublished": true,
+    "inputSHA256": {
+      "integrity": "1e5b0083a3614db435bdbe7b2de5da78716536b27f486919520bd45cca4c1667",
+      "registry": "17f65a83aa10a599b7ebd20070c67d16285a65d2989b5ae637a3020c25100906"
+    }
+  },
+  "privateArtifactsCommitted": false
+}

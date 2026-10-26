@@ -1,0 +1,233 @@
+{
+  "browser": "153.0.8010.0",
+  "tests": [
+    {
+      "id": "IND-01",
+      "name": "Known and unknown Div mixed in same CSV require explicit resolution",
+      "status": "FAIL",
+      "expected": "No write without explicitly resolving unknown row league",
+      "before": {
+        "league": "Ligue 1",
+        "warnings": "Metadati campionato non riconosciuti: OTHER_UNKNOWN. Seleziona la lega corretta."
+      },
+      "after": {
+        "count": 2,
+        "leagues": [
+          "Ligue 1",
+          "Ligue 1"
+        ],
+        "status": "Importazione completata: 1 file; 2 incontri nuovi (0 in programma), 0 aggiornati/completati, 0 già presenti, 0 risultati discordanti conservati senza sovrascrittura. 0 file di sola provenienza (0 squadre-stagione). Archivio: 2 partite concluse. Dettagli CSV: neutral.csv: 0 righe non valide, 0 senza risultato escluse, 0 fuori stagione, 2 senza HT. "
+      },
+      "persisted": 2
+    },
+    {
+      "id": "IND-02",
+      "name": "Reference import respects selected season and preview",
+      "status": "FAIL",
+      "expected": "Only Season24A/B memberships in season 2024/25; no 2025/26",
+      "preview": "Anteprima con le scelte attuali: 1 incontri importabili; 0 righe non valide; 0 senza risultato escluse; 1 fuori stagione; 1 senza HT.",
+      "after": {
+        "rows": 0,
+        "refs": [
+          {
+            "year": 2025,
+            "league": "Championship",
+            "team": "Season24A"
+          },
+          {
+            "year": 2025,
+            "league": "Championship",
+            "team": "Season24B"
+          },
+          {
+            "year": 2025,
+            "league": "Championship",
+            "team": "Season25A"
+          },
+          {
+            "year": 2025,
+            "league": "Championship",
+            "team": "Season25B"
+          }
+        ],
+        "status": "Importazione completata: 1 file; 0 incontri nuovi (0 in programma), 0 aggiornati/completati, 0 già presenti, 0 risultati discordanti conservati senza sovrascrittura. 1 file di sola provenienza (4 squadre-stagione). Archivio: 0 partite concluse. Dettagli CSV: . "
+      }
+    },
+    {
+      "id": "IND-03",
+      "name": "Reference import accepts same normalized headers/separator as preview",
+      "status": "FAIL",
+      "expected": "Preview valid implies same format accepted as reference, or blocked before save",
+      "preview": "Anteprima con le scelte attuali: 1 incontri importabili; 0 righe non valide; 0 senza risultato escluse; 0 fuori stagione; 1 senza HT.",
+      "after": {
+        "refs": 0,
+        "status": "Importazione completata: 1 file; 0 incontri nuovi (0 in programma), 0 aggiornati/completati, 0 già presenti, 0 risultati discordanti conservati senza sovrascrittura. 0 file di sola provenienza (0 squadre-stagione). Archivio: 0 partite concluse. Dettagli CSV: .  Avvisi: neutral.csv: provenienza non importata (mancano le colonne Date, HomeTeam o AwayTeam)"
+      }
+    },
+    {
+      "id": "IND-04",
+      "name": "Future cutoff of existing match standings and trajectory",
+      "status": "PASS",
+      "result": {
+        "unchanged": true,
+        "points": [
+          {
+            "x": "01/08/25",
+            "date": 1754006400000,
+            "y": 1,
+            "pts": 3,
+            "played": 1
+          },
+          {
+            "x": "02/08/25",
+            "date": 1754092800000,
+            "y": 1,
+            "pts": 3,
+            "played": 1
+          }
+        ],
+        "lastPoint": 1754092800000,
+        "cutoff": 1754179200000
+      }
+    },
+    {
+      "id": "IND-05",
+      "name": "Historical chart reuse must enforce cutoff on prior seasons too",
+      "status": "FAIL",
+      "scope": "Existing helper and future reuse risk; selected-season table IND-04 remains correct",
+      "expected": "0 games, since sole match is after cutoff despite earlier CsvSeason",
+      "result": {
+        "hist": [
+          {
+            "year": 2024,
+            "label": "2024/25",
+            "rank": 1,
+            "pts": 3,
+            "played": 1,
+            "teams": 2,
+            "complete": false,
+            "games": 1,
+            "zone": null,
+            "origin": null
+          }
+        ],
+        "cutoff": 1751328000000,
+        "futureGame": 1752105600000
+      }
+    },
+    {
+      "id": "IND-06",
+      "name": "Populated archive rejects quota failure without modifying prior state",
+      "status": "PASS",
+      "result": {
+        "ok": false,
+        "memoryUnchanged": true,
+        "diskUnchanged": true
+      }
+    },
+    {
+      "id": "IND-07",
+      "name": "Sibling JS and candidate start through file protocol in this environment",
+      "status": "PASS",
+      "result": {
+        "ready": true,
+        "parser": "function",
+        "workspace": "partite"
+      }
+    },
+    {
+      "id": "IND-08",
+      "name": "Season-phase rule coverage currently implemented",
+      "status": "OBSERVATION",
+      "result": {
+        "supported": [
+          {
+            "league": "Serie A",
+            "hasRules": true
+          },
+          {
+            "league": "Serie B",
+            "hasRules": true
+          },
+          {
+            "league": "Premier League",
+            "hasRules": true
+          },
+          {
+            "league": "Championship",
+            "hasRules": true
+          },
+          {
+            "league": "League One",
+            "hasRules": true
+          },
+          {
+            "league": "Champions League",
+            "hasRules": false
+          },
+          {
+            "league": "Bundesliga",
+            "hasRules": false
+          },
+          {
+            "league": "Ligue 1",
+            "hasRules": false
+          },
+          {
+            "league": "Eredivisie",
+            "hasRules": false
+          },
+          {
+            "league": "La Liga",
+            "hasRules": false
+          },
+          {
+            "league": "Segunda División",
+            "hasRules": false
+          },
+          {
+            "league": "Primeira Liga",
+            "hasRules": false
+          },
+          {
+            "league": "Liga Portugal 2",
+            "hasRules": false
+          },
+          {
+            "league": "Ligue 2",
+            "hasRules": false
+          },
+          {
+            "league": "Superliga Danimarca",
+            "hasRules": false
+          },
+          {
+            "league": "1st Division Danimarca",
+            "hasRules": false
+          },
+          {
+            "league": "HNL Croazia",
+            "hasRules": false
+          },
+          {
+            "league": "Prva NL Croazia",
+            "hasRules": false
+          },
+          {
+            "league": "SuperLiga Romania",
+            "hasRules": false
+          },
+          {
+            "league": "Liga II Romania",
+            "hasRules": false
+          }
+        ],
+        "inlineHasGraph": false,
+        "hasSeparateUefaBands": [
+          "europe",
+          "relegation"
+        ]
+      }
+    }
+  ]
+}
