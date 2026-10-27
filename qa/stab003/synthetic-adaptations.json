@@ -1,0 +1,8 @@
+{
+  "baselineScriptSHA256": "1978cde3e4517e7b7e48508a3a662deb5c4fc0747384517326ac9c6cc3a57b39",
+  "adaptations": [
+    "Candidate, module and output paths",
+    "Wait for independent Area tecnica panels before interaction"
+  ],
+  "assertionsRetained": true
+}

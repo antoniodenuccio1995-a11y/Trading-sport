@@ -1,0 +1,10 @@
+const fs=require('fs'),path=require('path'),crypto=require('crypto'),C=require('../../ta-csv-import-v02U-rc4');
+const [listFile,privateDir]=process.argv.slice(2);if(!listFile||!privateDir)throw Error('Provide private JSON list of input paths and private output directory');
+const root=path.resolve(__dirname,'../..'),out=path.resolve(privateDir);if(out.startsWith(root+path.sep)||out===root)throw Error('Private output inside repository forbidden');
+const files=JSON.parse(fs.readFileSync(listFile)),reports=[];fs.mkdirSync(out,{recursive:true});
+for(const file of files){const bytes=fs.readFileSync(file),sha=crypto.createHash('sha256').update(bytes).digest('hex');let text;try{text=new TextDecoder('utf-8',{fatal:true}).decode(bytes)}catch(_){text=new TextDecoder('windows-1252').decode(bytes)}
+ const p=C.read(text,{filename:path.basename(file),league:'Serie A',allowFixtures:true});const seasons=[...new Set(p.records.map(r=>r.o.CsvSeason))];const keys=new Set(),dupes=[];for(const [i,r] of p.records.entries()){const key=JSON.stringify([r.d,r.H,r.A]);if(keys.has(key))dupes.push(i);keys.add(key)}
+ const report={fileName:path.basename(file),sha256:sha,records:p.records.length,unique:keys.size,duplicates:dupes.length,ft:p.records.filter(r=>!r.up).length,ht:p.records.filter(r=>!r.up&&r.hth!=null&&r.hta!=null).length,shots:p.records.filter(r=>r.shots?.every(v=>Number.isFinite(v))).length,fixtures:p.records.filter(r=>r.up).length,seasons,invalid:p.invalid,incomplete:p.incomplete};reports.push(report);
+ fs.writeFileSync(path.join(out,'parsed-'+path.basename(file)+'.json'),JSON.stringify(p.records));if(sha!==crypto.createHash('sha256').update(fs.readFileSync(file)).digest('hex'))throw Error('Input was changed');
+}
+fs.writeFileSync(path.join(out,'uploaded-csv-summary.json'),JSON.stringify(reports,null,2));fs.writeFileSync(path.join(root,'qa/stab003/uploaded-csv-summary.json'),JSON.stringify({personalArchiveIncluded:false,files:reports},null,2)+'\n');console.log(JSON.stringify(reports));

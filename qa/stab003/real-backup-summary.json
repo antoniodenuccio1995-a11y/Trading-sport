@@ -1,0 +1,40 @@
+{
+  "sourceSHA256": "809d7ecce6bcf8bbc39812107e29052689520a075304bf7c743f17bc1dd31f2a",
+  "personalInputPublished": false,
+  "inputRecords": 28544,
+  "checks": [
+    "Real 28,544-record backup and two legacy manual fixtures produce a safe 28,402-match preview, without writing",
+    "Five independent panels and open/close-all preserve the actual pending recovery and unsaved alias form",
+    "Actual archive and both original manual payloads save atomically and export without losing auxiliary records",
+    "Full real archive reload and JSON re-export preserve the exact compact matches and migrated manual metadata",
+    "All 42 dated source-specific Paris identities persist: 34 Paris FC and 8 PSG, kept distinct",
+    "Real archive coverage is computed for all 138 supported competition/season combinations with FT and HT separate",
+    "Rollback restores the pre-import empty test archive and auxiliaries; real input file remains untouched",
+    "All seven supplied CSVs import and reimport against the real archive without adding duplicate matches",
+    "Real match analysis and prior-season standings exclude later results even with a poisoned earlier-season label",
+    "Actual HTTP recovery adds the independently sourced Serie A relegation playoff incrementally while keeping regular standings at 380 games",
+    "Frozen synthetic trade scores, events and quotes remain exact during real-data CSV and public-history recovery",
+    "Incremental real-data recovery persists after reload and rolls back to the exact preceding recovered archive"
+  ],
+  "documentedParisResolutions": {
+    "club:fra-paris-fc": 34,
+    "club:fra-psg": 8
+  },
+  "coverageStates": {
+    "completo verificato": 11,
+    "parziale": 98,
+    "non verificabile": 29
+  },
+  "outputRecords": 28402,
+  "migratedManual": 2,
+  "compactSHA256BeforeReload": "a3def1cee3d71a042044bcc6a382e9271323f45edbc694b856987d29d63e043e",
+  "compactSHA256AfterReload": "a3def1cee3d71a042044bcc6a382e9271323f45edbc694b856987d29d63e043e",
+  "suppliedCSVFiles": 7,
+  "temporalChecks": {
+    "analysisUnchanged": true,
+    "historyUnchanged": true,
+    "analysisBytes": 236672
+  },
+  "outcome": "PASS",
+  "pageerrorCount": 0
+}

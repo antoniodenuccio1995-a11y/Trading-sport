@@ -1,0 +1,36 @@
+{
+  "checks": [
+    "Preview classifies identical, conflicting and invalid rows without writes; failed diagnostics can be exported",
+    "Failed simulation and all row details persist after reload; stale previews cannot be confirmed",
+    "Explicit partial import preserves safe records and auxiliary data; atomic bundle survives reload and backup export",
+    "One-step rollback restores all previous rows and auxiliary sections and persists",
+    "Aborted IDB transaction commits neither rows nor auxiliary data nor undo pointer; failure report persists",
+    "Storage revision check prevents stale preview from overwriting a concurrent writer",
+    "Atomic recovery with auxiliary data succeeds despite localStorage quota denial, with correct reload",
+    "Operational identity UI resolves an ambiguous alias, previews consequences and preserves IDs across future legacy imports",
+    "Incorrect alias can be explicitly corrected, with raw names retained and no result changes",
+    "Conflicting user decisions are visible and cannot arbitrarily merge or separate clubs",
+    "Explicit distinct-club decision receives a permanent ID that survives reloading",
+    "Uploading an anagrafica report gives actionable Italian instructions and leaves the archive unchanged",
+    "Simulation remains until explicit deletion or replacement and can be cleared without deleting matches",
+    "Frozen synthetic trade scores, events and quotes remain exact across JSON recovery",
+    "Complete JSON and verified club-rule roundtrip to a new browser profile requires explicit rule consent and survives reload",
+    "Conflicting auxiliary sections block the entire operation before any row write",
+    "Recovery in rc3 leaves the preceding rc2 archive byte-equivalent in the same origin",
+    "Only one mistaken alias can be separated from a club while the other matches retain their original IDs",
+    "Country-context batch proposals require explicit verification and preserve the confirmed ID for future imports",
+    "Goal events use competition context, retain old source keys and do not duplicate identical event sequences",
+    "Existing fallback remains readable without IndexedDB; JSON can be diagnosed and exported while atomic import is disabled",
+    "A newer match fallback retains the atomic bundle club decisions and auxiliary sections after reload"
+  ],
+  "pageerrors": [],
+  "personalDataUsed": false,
+  "testedSourceSHA256": {
+    "Trading_Analytics_v0.2U-rc4_TA-STAB-003.html": "6551e2284b269439ccd437352a6590a54c4774377e2053fae886dd684b0b0fef",
+    "ta-clubs-v3.js": "f1376c41d41cc8863d65ca7b9e069ec8a4e0988890390d2e8ea9640655690157",
+    "ta-json-recovery-rc4.js": "0c65dd6ecf9d8e4df4bdc696d9a60d07ec40859c06628b3c2ff5da0dfeb0a856",
+    "ta-stab003-ui.js": "55a98bd8c7ce2ca5382ef90818e8a9c5b512d57f394386650cf7120e46b8365b",
+    "ta-csv-import-v02U-rc4.js": "02624593294e4e3cf1725564ec85d7a30df75f9d2d9c1a9be0ff7eb484124f95"
+  },
+  "outcome": "PASS"
+}

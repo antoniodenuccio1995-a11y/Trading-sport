@@ -1,0 +1,23 @@
+{
+  "originalSHA256": "809d7ecce6bcf8bbc39812107e29052689520a075304bf7c743f17bc1dd31f2a",
+  "originalUnchanged": true,
+  "originalRecords": 28544,
+  "restoredRecords": 28402,
+  "proposalRecords": 35022,
+  "addedRecords": 6620,
+  "manualOriginal": 2,
+  "manualMigrated": 2,
+  "operations": 91,
+  "incomingRowsRetainedForReview": 6480,
+  "reviewReasons": {
+    "sourceDisagreement": 27,
+    "identityOrUnreconciledFixture": 6453,
+    "other": 0
+  },
+  "coverageStates": {
+    "completo verificato": 17,
+    "parziale": 92,
+    "non verificabile": 29
+  },
+  "personalRecordsPublished": false
+}

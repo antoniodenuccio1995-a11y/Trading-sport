@@ -1,0 +1,13 @@
+{
+  "checks": [
+    "Full 35,022-match proposal produces a safe self-roundtrip preview with no extra consolidation",
+    "Complete proposal persists atomically and exports exact compact records and manual data after reload",
+    "Full proposal rollback restores the preceding empty test archive"
+  ],
+  "pageerrorCount": 0,
+  "personalRowsPublished": false,
+  "outcome": "PASS",
+  "records": 35022,
+  "manual": 2,
+  "compactSHA256": "d1f360271b72b0deb82de31aef0e5a4d7986749833049f5ca89cb4f76ad15144"
+}

@@ -1,0 +1,20 @@
+{
+  "outcome": "PASS",
+  "sourceSHA256": {
+    "Trading_Analytics_v0.2U-rc4_TA-STAB-003.html": "6551e2284b269439ccd437352a6590a54c4774377e2053fae886dd684b0b0fef",
+    "ta-clubs-v3.js": "f1376c41d41cc8863d65ca7b9e069ec8a4e0988890390d2e8ea9640655690157",
+    "ta-json-recovery-rc4.js": "0c65dd6ecf9d8e4df4bdc696d9a60d07ec40859c06628b3c2ff5da0dfeb0a856",
+    "ta-csv-import-v02U-rc4.js": "02624593294e4e3cf1725564ec85d7a30df75f9d2d9c1a9be0ff7eb484124f95",
+    "ta-stab003-ui.js": "55a98bd8c7ce2ca5382ef90818e8a9c5b512d57f394386650cf7120e46b8365b",
+    "ta-source-evidence.js": "0ceaffc1e9ccce99c43cd85b5545364550439f9c6f58f3746ff3ec579fc9675d",
+    "ta-history-coverage.js": "f17cfa864cc16b7b749d847ff96908d774e5ecd4ef87f701f9663b830226cd1d",
+    "ta-history-manifest.js": "dda24da6803d8c01317900f136c108ef02bfd2f0c27f8b61b1dcdcf070c9d1cd",
+    "ta-stab003-area.js": "4e8c834b263864a25ec723925bdce853462a21c921c80ba6d13e7185bfd3a20e"
+  },
+  "publicPackets": 138,
+  "publicReferences": 40248,
+  "disputedPublicReferences": 47,
+  "personalBackupIncluded": false,
+  "independentReviewPending": true,
+  "stableDeploymentPerformed": false
+}
