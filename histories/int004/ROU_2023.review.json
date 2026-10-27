@@ -1,0 +1,1277 @@
+{
+  "originalPacket": "histories/stab003/ROU_2023.json",
+  "originalSHA256": "edfcf93a4b1c0e266c0fdb9c2ab639a5f0fa188b02c0639b94afade25254ee5e",
+  "review": [
+    {
+      "originalIndex": 5,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1689465600000,
+        "lg": "SuperLiga Romania",
+        "H": "U Craiova 1948",
+        "A": "FCSB",
+        "h": 1,
+        "a": 3,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2023,
+          "HistSourceURL": "https://www.football-data.co.uk/new/ROU.csv",
+          "HistSourceSHA256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/ROU.csv",
+              "sha256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 8,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1689897600000,
+        "lg": "SuperLiga Romania",
+        "H": "Sepsi Sf. Gheorghe",
+        "A": "U Craiova 1948",
+        "h": 1,
+        "a": 0,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2023,
+          "HistSourceURL": "https://www.football-data.co.uk/new/ROU.csv",
+          "HistSourceSHA256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/ROU.csv",
+              "sha256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 16,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1690502400000,
+        "lg": "SuperLiga Romania",
+        "H": "U Craiova 1948",
+        "A": "U. Cluj",
+        "h": 3,
+        "a": 4,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2023,
+          "HistSourceURL": "https://www.football-data.co.uk/new/ROU.csv",
+          "HistSourceSHA256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/ROU.csv",
+              "sha256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 26,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1691193600000,
+        "lg": "SuperLiga Romania",
+        "H": "FC Botosani",
+        "A": "U Craiova 1948",
+        "h": 0,
+        "a": 1,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2023,
+          "HistSourceURL": "https://www.football-data.co.uk/new/ROU.csv",
+          "HistSourceSHA256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/ROU.csv",
+              "sha256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 32,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1691712000000,
+        "lg": "SuperLiga Romania",
+        "H": "U Craiova 1948",
+        "A": "FC Voluntari",
+        "h": 3,
+        "a": 1,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2023,
+          "HistSourceURL": "https://www.football-data.co.uk/new/ROU.csv",
+          "HistSourceSHA256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/ROU.csv",
+              "sha256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 37,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1692316800000,
+        "lg": "SuperLiga Romania",
+        "H": "Petrolul",
+        "A": "U Craiova 1948",
+        "h": 4,
+        "a": 3,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2023,
+          "HistSourceURL": "https://www.football-data.co.uk/new/ROU.csv",
+          "HistSourceSHA256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/ROU.csv",
+              "sha256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 46,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1692921600000,
+        "lg": "SuperLiga Romania",
+        "H": "U Craiova 1948",
+        "A": "FC Rapid Bucuresti",
+        "h": 3,
+        "a": 5,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2023,
+          "HistSourceURL": "https://www.football-data.co.uk/new/ROU.csv",
+          "HistSourceSHA256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/ROU.csv",
+              "sha256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 56,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1693699200000,
+        "lg": "SuperLiga Romania",
+        "H": "U Craiova 1948",
+        "A": "Farul Constanta",
+        "h": 4,
+        "a": 0,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2023,
+          "HistSourceURL": "https://www.football-data.co.uk/new/ROU.csv",
+          "HistSourceSHA256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/ROU.csv",
+              "sha256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 61,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1694736000000,
+        "lg": "SuperLiga Romania",
+        "H": "Din. Bucuresti",
+        "A": "U Craiova 1948",
+        "h": 0,
+        "a": 1,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2023,
+          "HistSourceURL": "https://www.football-data.co.uk/new/ROU.csv",
+          "HistSourceSHA256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/ROU.csv",
+              "sha256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 69,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1695340800000,
+        "lg": "SuperLiga Romania",
+        "H": "U Craiova 1948",
+        "A": "Otelul",
+        "h": 0,
+        "a": 2,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2023,
+          "HistSourceURL": "https://www.football-data.co.uk/new/ROU.csv",
+          "HistSourceSHA256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/ROU.csv",
+              "sha256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 82,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1696118400000,
+        "lg": "SuperLiga Romania",
+        "H": "CFR Cluj",
+        "A": "U Craiova 1948",
+        "h": 2,
+        "a": 0,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2023,
+          "HistSourceURL": "https://www.football-data.co.uk/new/ROU.csv",
+          "HistSourceSHA256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/ROU.csv",
+              "sha256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 86,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1696550400000,
+        "lg": "SuperLiga Romania",
+        "H": "U Craiova 1948",
+        "A": "FC Hermannstadt",
+        "h": 1,
+        "a": 1,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2023,
+          "HistSourceURL": "https://www.football-data.co.uk/new/ROU.csv",
+          "HistSourceSHA256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/ROU.csv",
+              "sha256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 98,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1697932800000,
+        "lg": "SuperLiga Romania",
+        "H": "Poli Iasi",
+        "A": "U Craiova 1948",
+        "h": 1,
+        "a": 1,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2023,
+          "HistSourceURL": "https://www.football-data.co.uk/new/ROU.csv",
+          "HistSourceSHA256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/ROU.csv",
+              "sha256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 108,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1698537600000,
+        "lg": "SuperLiga Romania",
+        "H": "U Craiova 1948",
+        "A": "UTA Arad",
+        "h": 2,
+        "a": 3,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2023,
+          "HistSourceURL": "https://www.football-data.co.uk/new/ROU.csv",
+          "HistSourceSHA256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/ROU.csv",
+              "sha256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 114,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1699056000000,
+        "lg": "SuperLiga Romania",
+        "H": "Univ. Craiova",
+        "A": "U Craiova 1948",
+        "h": 1,
+        "a": 1,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2023,
+          "HistSourceURL": "https://www.football-data.co.uk/new/ROU.csv",
+          "HistSourceSHA256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/ROU.csv",
+              "sha256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 126,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1699747200000,
+        "lg": "SuperLiga Romania",
+        "H": "FCSB",
+        "A": "U Craiova 1948",
+        "h": 2,
+        "a": 1,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2023,
+          "HistSourceURL": "https://www.football-data.co.uk/new/ROU.csv",
+          "HistSourceSHA256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/ROU.csv",
+              "sha256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 134,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1701043200000,
+        "lg": "SuperLiga Romania",
+        "H": "U Craiova 1948",
+        "A": "Sepsi Sf. Gheorghe",
+        "h": 2,
+        "a": 1,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2023,
+          "HistSourceURL": "https://www.football-data.co.uk/new/ROU.csv",
+          "HistSourceSHA256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/ROU.csv",
+              "sha256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 141,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1701561600000,
+        "lg": "SuperLiga Romania",
+        "H": "U. Cluj",
+        "A": "U Craiova 1948",
+        "h": 2,
+        "a": 1,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2023,
+          "HistSourceURL": "https://www.football-data.co.uk/new/ROU.csv",
+          "HistSourceSHA256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/ROU.csv",
+              "sha256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 149,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1702252800000,
+        "lg": "SuperLiga Romania",
+        "H": "U Craiova 1948",
+        "A": "FC Botosani",
+        "h": 2,
+        "a": 0,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2023,
+          "HistSourceURL": "https://www.football-data.co.uk/new/ROU.csv",
+          "HistSourceSHA256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/ROU.csv",
+              "sha256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 152,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1702598400000,
+        "lg": "SuperLiga Romania",
+        "H": "FC Voluntari",
+        "A": "U Craiova 1948",
+        "h": 0,
+        "a": 1,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2023,
+          "HistSourceURL": "https://www.football-data.co.uk/new/ROU.csv",
+          "HistSourceSHA256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/ROU.csv",
+              "sha256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 160,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1702944000000,
+        "lg": "SuperLiga Romania",
+        "H": "U Craiova 1948",
+        "A": "Petrolul",
+        "h": 2,
+        "a": 0,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2023,
+          "HistSourceURL": "https://www.football-data.co.uk/new/ROU.csv",
+          "HistSourceSHA256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/ROU.csv",
+              "sha256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 169,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1705622400000,
+        "lg": "SuperLiga Romania",
+        "H": "FC Rapid Bucuresti",
+        "A": "U Craiova 1948",
+        "h": 4,
+        "a": 3,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2023,
+          "HistSourceURL": "https://www.football-data.co.uk/new/ROU.csv",
+          "HistSourceSHA256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/ROU.csv",
+              "sha256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 176,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1706227200000,
+        "lg": "SuperLiga Romania",
+        "H": "Farul Constanta",
+        "A": "U Craiova 1948",
+        "h": 1,
+        "a": 0,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2023,
+          "HistSourceURL": "https://www.football-data.co.uk/new/ROU.csv",
+          "HistSourceSHA256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/ROU.csv",
+              "sha256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 185,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1706832000000,
+        "lg": "SuperLiga Romania",
+        "H": "U Craiova 1948",
+        "A": "Din. Bucuresti",
+        "h": 2,
+        "a": 1,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2023,
+          "HistSourceURL": "https://www.football-data.co.uk/new/ROU.csv",
+          "HistSourceSHA256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/ROU.csv",
+              "sha256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 192,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1707436800000,
+        "lg": "SuperLiga Romania",
+        "H": "Otelul",
+        "A": "U Craiova 1948",
+        "h": 1,
+        "a": 0,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2023,
+          "HistSourceURL": "https://www.football-data.co.uk/new/ROU.csv",
+          "HistSourceSHA256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/ROU.csv",
+              "sha256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 203,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1708128000000,
+        "lg": "SuperLiga Romania",
+        "H": "U Craiova 1948",
+        "A": "CFR Cluj",
+        "h": 1,
+        "a": 3,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2023,
+          "HistSourceURL": "https://www.football-data.co.uk/new/ROU.csv",
+          "HistSourceSHA256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/ROU.csv",
+              "sha256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 208,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1708646400000,
+        "lg": "SuperLiga Romania",
+        "H": "FC Hermannstadt",
+        "A": "U Craiova 1948",
+        "h": 1,
+        "a": 0,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2023,
+          "HistSourceURL": "https://www.football-data.co.uk/new/ROU.csv",
+          "HistSourceSHA256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/ROU.csv",
+              "sha256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 216,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1708992000000,
+        "lg": "SuperLiga Romania",
+        "H": "U Craiova 1948",
+        "A": "Poli Iasi",
+        "h": 1,
+        "a": 1,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2023,
+          "HistSourceURL": "https://www.football-data.co.uk/new/ROU.csv",
+          "HistSourceSHA256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/ROU.csv",
+              "sha256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 225,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1709337600000,
+        "lg": "SuperLiga Romania",
+        "H": "UTA Arad",
+        "A": "U Craiova 1948",
+        "h": 3,
+        "a": 2,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2023,
+          "HistSourceURL": "https://www.football-data.co.uk/new/ROU.csv",
+          "HistSourceSHA256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/ROU.csv",
+              "sha256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 238,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1710028800000,
+        "lg": "SuperLiga Romania",
+        "H": "U Craiova 1948",
+        "A": "Univ. Craiova",
+        "h": 1,
+        "a": 2,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2023,
+          "HistSourceURL": "https://www.football-data.co.uk/new/ROU.csv",
+          "HistSourceSHA256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/ROU.csv",
+              "sha256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 247,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1710720000000,
+        "lg": "SuperLiga Romania",
+        "H": "Petrolul",
+        "A": "U Craiova 1948",
+        "h": 1,
+        "a": 0,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2023,
+          "HistSourceURL": "https://www.football-data.co.uk/new/ROU.csv",
+          "HistSourceSHA256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/ROU.csv",
+              "sha256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 253,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1711843200000,
+        "lg": "SuperLiga Romania",
+        "H": "U Craiova 1948",
+        "A": "Otelul",
+        "h": 1,
+        "a": 2,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2023,
+          "HistSourceURL": "https://www.football-data.co.uk/new/ROU.csv",
+          "HistSourceSHA256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/ROU.csv",
+              "sha256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 262,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1712534400000,
+        "lg": "SuperLiga Romania",
+        "H": "Poli Iasi",
+        "A": "U Craiova 1948",
+        "h": 0,
+        "a": 0,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2023,
+          "HistSourceURL": "https://www.football-data.co.uk/new/ROU.csv",
+          "HistSourceSHA256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/ROU.csv",
+              "sha256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 268,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1713052800000,
+        "lg": "SuperLiga Romania",
+        "H": "FC Botosani",
+        "A": "U Craiova 1948",
+        "h": 4,
+        "a": 1,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2023,
+          "HistSourceURL": "https://www.football-data.co.uk/new/ROU.csv",
+          "HistSourceSHA256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/ROU.csv",
+              "sha256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 275,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1713571200000,
+        "lg": "SuperLiga Romania",
+        "H": "U Craiova 1948",
+        "A": "Din. Bucuresti",
+        "h": 1,
+        "a": 1,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2023,
+          "HistSourceURL": "https://www.football-data.co.uk/new/ROU.csv",
+          "HistSourceSHA256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/ROU.csv",
+              "sha256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 280,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1713830400000,
+        "lg": "SuperLiga Romania",
+        "H": "FC Voluntari",
+        "A": "U Craiova 1948",
+        "h": 0,
+        "a": 0,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2023,
+          "HistSourceURL": "https://www.football-data.co.uk/new/ROU.csv",
+          "HistSourceSHA256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/ROU.csv",
+              "sha256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 289,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1714176000000,
+        "lg": "SuperLiga Romania",
+        "H": "U Craiova 1948",
+        "A": "U. Cluj",
+        "h": 3,
+        "a": 2,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2023,
+          "HistSourceURL": "https://www.football-data.co.uk/new/ROU.csv",
+          "HistSourceSHA256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/ROU.csv",
+              "sha256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 302,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1714953600000,
+        "lg": "SuperLiga Romania",
+        "H": "UTA Arad",
+        "A": "U Craiova 1948",
+        "h": 3,
+        "a": 1,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2023,
+          "HistSourceURL": "https://www.football-data.co.uk/new/ROU.csv",
+          "HistSourceSHA256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/ROU.csv",
+              "sha256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 310,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1715472000000,
+        "lg": "SuperLiga Romania",
+        "H": "U Craiova 1948",
+        "A": "FC Hermannstadt",
+        "h": 1,
+        "a": 3,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2023,
+          "HistSourceURL": "https://www.football-data.co.uk/new/ROU.csv",
+          "HistSourceSHA256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/ROU.csv",
+              "sha256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 317,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1716163200000,
+        "lg": "SuperLiga Romania",
+        "H": "Din. Bucuresti",
+        "A": "Csikszereda M. Ciuc",
+        "h": 2,
+        "a": 0,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2023,
+          "HistSourceURL": "https://www.football-data.co.uk/new/ROU.csv",
+          "HistSourceSHA256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/ROU.csv",
+              "sha256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 320,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1716768000000,
+        "lg": "SuperLiga Romania",
+        "H": "Csikszereda M. Ciuc",
+        "A": "Din. Bucuresti",
+        "h": 0,
+        "a": 0,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2023,
+          "HistSourceURL": "https://www.football-data.co.uk/new/ROU.csv",
+          "HistSourceSHA256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/ROU.csv",
+              "sha256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    }
+  ]
+}

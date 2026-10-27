@@ -1,0 +1,1928 @@
+{
+  "originalPacket": "histories/stab003/DNK_2024.json",
+  "originalSHA256": "8410ec1a88f57ca4d85275d80c1e6f1f933ac3b65bf725bbb09c1fa8915697eb",
+  "review": [
+    {
+      "originalIndex": 2,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1721520000000,
+        "lg": "Superliga Danimarca",
+        "H": "Silkeborg",
+        "A": "Sonderjyske",
+        "h": 1,
+        "a": 0,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2024,
+          "HistSourceURL": "https://www.football-data.co.uk/new/DNK.csv",
+          "HistSourceSHA256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/DNK.csv",
+              "sha256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 4,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1721520000000,
+        "lg": "Superliga Danimarca",
+        "H": "Viborg",
+        "A": "Brondby",
+        "h": 3,
+        "a": 3,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2024,
+          "HistSourceURL": "https://www.football-data.co.uk/new/DNK.csv",
+          "HistSourceSHA256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/DNK.csv",
+              "sha256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 6,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1721952000000,
+        "lg": "Superliga Danimarca",
+        "H": "Sonderjyske",
+        "A": "Lyngby",
+        "h": 1,
+        "a": 1,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2024,
+          "HistSourceURL": "https://www.football-data.co.uk/new/DNK.csv",
+          "HistSourceSHA256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/DNK.csv",
+              "sha256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 11,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1722211200000,
+        "lg": "Superliga Danimarca",
+        "H": "Brondby",
+        "A": "Vejle",
+        "h": 2,
+        "a": 1,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2024,
+          "HistSourceURL": "https://www.football-data.co.uk/new/DNK.csv",
+          "HistSourceSHA256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/DNK.csv",
+              "sha256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 12,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1722556800000,
+        "lg": "Superliga Danimarca",
+        "H": "Aarhus",
+        "A": "Sonderjyske",
+        "h": 4,
+        "a": 0,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2024,
+          "HistSourceURL": "https://www.football-data.co.uk/new/DNK.csv",
+          "HistSourceSHA256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/DNK.csv",
+              "sha256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 16,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1722729600000,
+        "lg": "Superliga Danimarca",
+        "H": "Lyngby",
+        "A": "Brondby",
+        "h": 0,
+        "a": 2,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2024,
+          "HistSourceURL": "https://www.football-data.co.uk/new/DNK.csv",
+          "HistSourceSHA256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/DNK.csv",
+              "sha256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 21,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1723334400000,
+        "lg": "Superliga Danimarca",
+        "H": "Brondby",
+        "A": "Aarhus",
+        "h": 0,
+        "a": 1,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2024,
+          "HistSourceURL": "https://www.football-data.co.uk/new/DNK.csv",
+          "HistSourceSHA256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/DNK.csv",
+              "sha256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 22,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1723334400000,
+        "lg": "Superliga Danimarca",
+        "H": "Sonderjyske",
+        "A": "FC Copenhagen",
+        "h": 0,
+        "a": 2,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2024,
+          "HistSourceURL": "https://www.football-data.co.uk/new/DNK.csv",
+          "HistSourceSHA256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/DNK.csv",
+              "sha256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 25,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1723939200000,
+        "lg": "Superliga Danimarca",
+        "H": "Randers FC",
+        "A": "Sonderjyske",
+        "h": 1,
+        "a": 2,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2024,
+          "HistSourceURL": "https://www.football-data.co.uk/new/DNK.csv",
+          "HistSourceSHA256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/DNK.csv",
+              "sha256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 28,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1723939200000,
+        "lg": "Superliga Danimarca",
+        "H": "Aalborg",
+        "A": "Brondby",
+        "h": 0,
+        "a": 4,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2024,
+          "HistSourceURL": "https://www.football-data.co.uk/new/DNK.csv",
+          "HistSourceSHA256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/DNK.csv",
+              "sha256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 31,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1724457600000,
+        "lg": "Superliga Danimarca",
+        "H": "Midtjylland",
+        "A": "Sonderjyske",
+        "h": 3,
+        "a": 2,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2024,
+          "HistSourceURL": "https://www.football-data.co.uk/new/DNK.csv",
+          "HistSourceSHA256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/DNK.csv",
+              "sha256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 34,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1724544000000,
+        "lg": "Superliga Danimarca",
+        "H": "Brondby",
+        "A": "Randers FC",
+        "h": 2,
+        "a": 2,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2024,
+          "HistSourceURL": "https://www.football-data.co.uk/new/DNK.csv",
+          "HistSourceSHA256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/DNK.csv",
+              "sha256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 38,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1725148800000,
+        "lg": "Superliga Danimarca",
+        "H": "FC Copenhagen",
+        "A": "Brondby",
+        "h": 3,
+        "a": 1,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2024,
+          "HistSourceURL": "https://www.football-data.co.uk/new/DNK.csv",
+          "HistSourceSHA256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/DNK.csv",
+              "sha256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 39,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1725148800000,
+        "lg": "Superliga Danimarca",
+        "H": "Sonderjyske",
+        "A": "Viborg",
+        "h": 2,
+        "a": 2,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2024,
+          "HistSourceURL": "https://www.football-data.co.uk/new/DNK.csv",
+          "HistSourceSHA256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/DNK.csv",
+              "sha256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 46,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1726358400000,
+        "lg": "Superliga Danimarca",
+        "H": "Brondby",
+        "A": "Sonderjyske",
+        "h": 2,
+        "a": 0,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2024,
+          "HistSourceURL": "https://www.football-data.co.uk/new/DNK.csv",
+          "HistSourceSHA256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/DNK.csv",
+              "sha256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 50,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1726963200000,
+        "lg": "Superliga Danimarca",
+        "H": "Sonderjyske",
+        "A": "Vejle",
+        "h": 2,
+        "a": 1,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2024,
+          "HistSourceURL": "https://www.football-data.co.uk/new/DNK.csv",
+          "HistSourceSHA256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/DNK.csv",
+              "sha256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 52,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1726963200000,
+        "lg": "Superliga Danimarca",
+        "H": "Silkeborg",
+        "A": "Brondby",
+        "h": 3,
+        "a": 3,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2024,
+          "HistSourceURL": "https://www.football-data.co.uk/new/DNK.csv",
+          "HistSourceSHA256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/DNK.csv",
+              "sha256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 55,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1727568000000,
+        "lg": "Superliga Danimarca",
+        "H": "Aalborg",
+        "A": "Sonderjyske",
+        "h": 3,
+        "a": 0,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2024,
+          "HistSourceURL": "https://www.football-data.co.uk/new/DNK.csv",
+          "HistSourceSHA256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/DNK.csv",
+              "sha256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 59,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1727654400000,
+        "lg": "Superliga Danimarca",
+        "H": "Nordsjaelland",
+        "A": "Brondby",
+        "h": 4,
+        "a": 1,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2024,
+          "HistSourceURL": "https://www.football-data.co.uk/new/DNK.csv",
+          "HistSourceSHA256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/DNK.csv",
+              "sha256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 62,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1728172800000,
+        "lg": "Superliga Danimarca",
+        "H": "Sonderjyske",
+        "A": "Nordsjaelland",
+        "h": 1,
+        "a": 4,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2024,
+          "HistSourceURL": "https://www.football-data.co.uk/new/DNK.csv",
+          "HistSourceSHA256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/DNK.csv",
+              "sha256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 64,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1728172800000,
+        "lg": "Superliga Danimarca",
+        "H": "Brondby",
+        "A": "Midtjylland",
+        "h": 2,
+        "a": 0,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2024,
+          "HistSourceURL": "https://www.football-data.co.uk/new/DNK.csv",
+          "HistSourceSHA256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/DNK.csv",
+              "sha256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 70,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1729382400000,
+        "lg": "Superliga Danimarca",
+        "H": "Sonderjyske",
+        "A": "Midtjylland",
+        "h": 3,
+        "a": 2,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2024,
+          "HistSourceURL": "https://www.football-data.co.uk/new/DNK.csv",
+          "HistSourceSHA256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/DNK.csv",
+              "sha256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 71,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1729468800000,
+        "lg": "Superliga Danimarca",
+        "H": "Aarhus",
+        "A": "Brondby",
+        "h": 1,
+        "a": 0,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2024,
+          "HistSourceURL": "https://www.football-data.co.uk/new/DNK.csv",
+          "HistSourceSHA256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/DNK.csv",
+              "sha256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 73,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1729987200000,
+        "lg": "Superliga Danimarca",
+        "H": "Brondby",
+        "A": "FC Copenhagen",
+        "h": 0,
+        "a": 0,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2024,
+          "HistSourceURL": "https://www.football-data.co.uk/new/DNK.csv",
+          "HistSourceSHA256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/DNK.csv",
+              "sha256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 75,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1729987200000,
+        "lg": "Superliga Danimarca",
+        "H": "Viborg",
+        "A": "Sonderjyske",
+        "h": 4,
+        "a": 2,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2024,
+          "HistSourceURL": "https://www.football-data.co.uk/new/DNK.csv",
+          "HistSourceSHA256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/DNK.csv",
+              "sha256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 78,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1730505600000,
+        "lg": "Superliga Danimarca",
+        "H": "Sonderjyske",
+        "A": "Randers FC",
+        "h": 1,
+        "a": 4,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2024,
+          "HistSourceURL": "https://www.football-data.co.uk/new/DNK.csv",
+          "HistSourceSHA256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/DNK.csv",
+              "sha256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 79,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1730592000000,
+        "lg": "Superliga Danimarca",
+        "H": "Midtjylland",
+        "A": "Brondby",
+        "h": 1,
+        "a": 5,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2024,
+          "HistSourceURL": "https://www.football-data.co.uk/new/DNK.csv",
+          "HistSourceSHA256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/DNK.csv",
+              "sha256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 84,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1731024000000,
+        "lg": "Superliga Danimarca",
+        "H": "Vejle",
+        "A": "Sonderjyske",
+        "h": 1,
+        "a": 1,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2024,
+          "HistSourceURL": "https://www.football-data.co.uk/new/DNK.csv",
+          "HistSourceSHA256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/DNK.csv",
+              "sha256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 89,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1731196800000,
+        "lg": "Superliga Danimarca",
+        "H": "Brondby",
+        "A": "Nordsjaelland",
+        "h": 1,
+        "a": 1,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2024,
+          "HistSourceURL": "https://www.football-data.co.uk/new/DNK.csv",
+          "HistSourceSHA256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/DNK.csv",
+              "sha256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 93,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1732406400000,
+        "lg": "Superliga Danimarca",
+        "H": "Sonderjyske",
+        "A": "Brondby",
+        "h": 2,
+        "a": 2,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2024,
+          "HistSourceURL": "https://www.football-data.co.uk/new/DNK.csv",
+          "HistSourceSHA256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/DNK.csv",
+              "sha256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 96,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1732838400000,
+        "lg": "Superliga Danimarca",
+        "H": "Brondby",
+        "A": "Aalborg",
+        "h": 1,
+        "a": 0,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2024,
+          "HistSourceURL": "https://www.football-data.co.uk/new/DNK.csv",
+          "HistSourceSHA256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/DNK.csv",
+              "sha256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 97,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1733011200000,
+        "lg": "Superliga Danimarca",
+        "H": "Lyngby",
+        "A": "Sonderjyske",
+        "h": 0,
+        "a": 2,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2024,
+          "HistSourceURL": "https://www.football-data.co.uk/new/DNK.csv",
+          "HistSourceSHA256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/DNK.csv",
+              "sha256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 102,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1739491200000,
+        "lg": "Superliga Danimarca",
+        "H": "Brondby",
+        "A": "Viborg",
+        "h": 4,
+        "a": 1,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2024,
+          "HistSourceURL": "https://www.football-data.co.uk/new/DNK.csv",
+          "HistSourceSHA256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/DNK.csv",
+              "sha256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 104,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1739664000000,
+        "lg": "Superliga Danimarca",
+        "H": "Sonderjyske",
+        "A": "Aarhus",
+        "h": 1,
+        "a": 4,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2024,
+          "HistSourceURL": "https://www.football-data.co.uk/new/DNK.csv",
+          "HistSourceSHA256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/DNK.csv",
+              "sha256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 109,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1740268800000,
+        "lg": "Superliga Danimarca",
+        "H": "Nordsjaelland",
+        "A": "Sonderjyske",
+        "h": 3,
+        "a": 2,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2024,
+          "HistSourceURL": "https://www.football-data.co.uk/new/DNK.csv",
+          "HistSourceSHA256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/DNK.csv",
+              "sha256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 110,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1740268800000,
+        "lg": "Superliga Danimarca",
+        "H": "Vejle",
+        "A": "Brondby",
+        "h": 2,
+        "a": 2,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2024,
+          "HistSourceURL": "https://www.football-data.co.uk/new/DNK.csv",
+          "HistSourceSHA256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/DNK.csv",
+              "sha256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 115,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1740873600000,
+        "lg": "Superliga Danimarca",
+        "H": "Sonderjyske",
+        "A": "Silkeborg",
+        "h": 1,
+        "a": 3,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2024,
+          "HistSourceURL": "https://www.football-data.co.uk/new/DNK.csv",
+          "HistSourceSHA256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/DNK.csv",
+              "sha256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 119,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1740960000000,
+        "lg": "Superliga Danimarca",
+        "H": "Brondby",
+        "A": "Lyngby",
+        "h": 1,
+        "a": 1,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2024,
+          "HistSourceURL": "https://www.football-data.co.uk/new/DNK.csv",
+          "HistSourceSHA256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/DNK.csv",
+              "sha256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 124,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1741478400000,
+        "lg": "Superliga Danimarca",
+        "H": "FC Copenhagen",
+        "A": "Sonderjyske",
+        "h": 1,
+        "a": 1,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2024,
+          "HistSourceURL": "https://www.football-data.co.uk/new/DNK.csv",
+          "HistSourceSHA256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/DNK.csv",
+              "sha256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 125,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1741564800000,
+        "lg": "Superliga Danimarca",
+        "H": "Randers FC",
+        "A": "Brondby",
+        "h": 4,
+        "a": 2,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2024,
+          "HistSourceURL": "https://www.football-data.co.uk/new/DNK.csv",
+          "HistSourceSHA256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/DNK.csv",
+              "sha256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 126,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1742083200000,
+        "lg": "Superliga Danimarca",
+        "H": "Brondby",
+        "A": "Silkeborg",
+        "h": 2,
+        "a": 2,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2024,
+          "HistSourceURL": "https://www.football-data.co.uk/new/DNK.csv",
+          "HistSourceSHA256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/DNK.csv",
+              "sha256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 129,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1742083200000,
+        "lg": "Superliga Danimarca",
+        "H": "Sonderjyske",
+        "A": "Aalborg",
+        "h": 0,
+        "a": 3,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2024,
+          "HistSourceURL": "https://www.football-data.co.uk/new/DNK.csv",
+          "HistSourceSHA256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/DNK.csv",
+              "sha256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 134,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1743292800000,
+        "lg": "Superliga Danimarca",
+        "H": "Sonderjyske",
+        "A": "Silkeborg",
+        "h": 2,
+        "a": 1,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2024,
+          "HistSourceURL": "https://www.football-data.co.uk/new/DNK.csv",
+          "HistSourceSHA256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/DNK.csv",
+              "sha256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 136,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1743292800000,
+        "lg": "Superliga Danimarca",
+        "H": "Midtjylland",
+        "A": "Brondby",
+        "h": 0,
+        "a": 2,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2024,
+          "HistSourceURL": "https://www.football-data.co.uk/new/DNK.csv",
+          "HistSourceSHA256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/DNK.csv",
+              "sha256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 140,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1743897600000,
+        "lg": "Superliga Danimarca",
+        "H": "Viborg",
+        "A": "Sonderjyske",
+        "h": 2,
+        "a": 1,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2024,
+          "HistSourceURL": "https://www.football-data.co.uk/new/DNK.csv",
+          "HistSourceSHA256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/DNK.csv",
+              "sha256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 143,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1743984000000,
+        "lg": "Superliga Danimarca",
+        "H": "Brondby",
+        "A": "Aarhus",
+        "h": 2,
+        "a": 1,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2024,
+          "HistSourceURL": "https://www.football-data.co.uk/new/DNK.csv",
+          "HistSourceSHA256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/DNK.csv",
+              "sha256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 145,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1744502400000,
+        "lg": "Superliga Danimarca",
+        "H": "FC Copenhagen",
+        "A": "Brondby",
+        "h": 1,
+        "a": 2,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2024,
+          "HistSourceURL": "https://www.football-data.co.uk/new/DNK.csv",
+          "HistSourceSHA256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/DNK.csv",
+              "sha256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 149,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1744588800000,
+        "lg": "Superliga Danimarca",
+        "H": "Sonderjyske",
+        "A": "Vejle",
+        "h": 1,
+        "a": 0,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2024,
+          "HistSourceURL": "https://www.football-data.co.uk/new/DNK.csv",
+          "HistSourceSHA256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/DNK.csv",
+              "sha256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 151,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1744848000000,
+        "lg": "Superliga Danimarca",
+        "H": "Lyngby",
+        "A": "Sonderjyske",
+        "h": 0,
+        "a": 2,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2024,
+          "HistSourceURL": "https://www.football-data.co.uk/new/DNK.csv",
+          "HistSourceSHA256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/DNK.csv",
+              "sha256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 155,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1744934400000,
+        "lg": "Superliga Danimarca",
+        "H": "Brondby",
+        "A": "Nordsjaelland",
+        "h": 0,
+        "a": 0,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2024,
+          "HistSourceURL": "https://www.football-data.co.uk/new/DNK.csv",
+          "HistSourceSHA256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/DNK.csv",
+              "sha256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 156,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1745107200000,
+        "lg": "Superliga Danimarca",
+        "H": "Aalborg",
+        "A": "Sonderjyske",
+        "h": 2,
+        "a": 3,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2024,
+          "HistSourceURL": "https://www.football-data.co.uk/new/DNK.csv",
+          "HistSourceSHA256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/DNK.csv",
+              "sha256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 159,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1745193600000,
+        "lg": "Superliga Danimarca",
+        "H": "Brondby",
+        "A": "Randers FC",
+        "h": 4,
+        "a": 3,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2024,
+          "HistSourceURL": "https://www.football-data.co.uk/new/DNK.csv",
+          "HistSourceSHA256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/DNK.csv",
+              "sha256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 162,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1745539200000,
+        "lg": "Superliga Danimarca",
+        "H": "Randers FC",
+        "A": "Brondby",
+        "h": 0,
+        "a": 0,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2024,
+          "HistSourceURL": "https://www.football-data.co.uk/new/DNK.csv",
+          "HistSourceSHA256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/DNK.csv",
+              "sha256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 164,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1745712000000,
+        "lg": "Superliga Danimarca",
+        "H": "Sonderjyske",
+        "A": "Viborg",
+        "h": 2,
+        "a": 2,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2024,
+          "HistSourceURL": "https://www.football-data.co.uk/new/DNK.csv",
+          "HistSourceSHA256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/DNK.csv",
+              "sha256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 171,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1746316800000,
+        "lg": "Superliga Danimarca",
+        "H": "Brondby",
+        "A": "FC Copenhagen",
+        "h": 0,
+        "a": 3,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2024,
+          "HistSourceURL": "https://www.football-data.co.uk/new/DNK.csv",
+          "HistSourceSHA256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/DNK.csv",
+              "sha256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 173,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1746403200000,
+        "lg": "Superliga Danimarca",
+        "H": "Sonderjyske",
+        "A": "Aalborg",
+        "h": 2,
+        "a": 2,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2024,
+          "HistSourceURL": "https://www.football-data.co.uk/new/DNK.csv",
+          "HistSourceSHA256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/DNK.csv",
+              "sha256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 174,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1746921600000,
+        "lg": "Superliga Danimarca",
+        "H": "Nordsjaelland",
+        "A": "Brondby",
+        "h": 2,
+        "a": 2,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2024,
+          "HistSourceURL": "https://www.football-data.co.uk/new/DNK.csv",
+          "HistSourceSHA256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/DNK.csv",
+              "sha256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 175,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1746921600000,
+        "lg": "Superliga Danimarca",
+        "H": "Silkeborg",
+        "A": "Sonderjyske",
+        "h": 1,
+        "a": 0,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2024,
+          "HistSourceURL": "https://www.football-data.co.uk/new/DNK.csv",
+          "HistSourceSHA256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/DNK.csv",
+              "sha256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 183,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1747526400000,
+        "lg": "Superliga Danimarca",
+        "H": "Sonderjyske",
+        "A": "Lyngby",
+        "h": 5,
+        "a": 1,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2024,
+          "HistSourceURL": "https://www.football-data.co.uk/new/DNK.csv",
+          "HistSourceSHA256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/DNK.csv",
+              "sha256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 185,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1747612800000,
+        "lg": "Superliga Danimarca",
+        "H": "Brondby",
+        "A": "Midtjylland",
+        "h": 1,
+        "a": 2,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2024,
+          "HistSourceURL": "https://www.football-data.co.uk/new/DNK.csv",
+          "HistSourceSHA256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/DNK.csv",
+              "sha256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 188,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1748044800000,
+        "lg": "Superliga Danimarca",
+        "H": "Vejle",
+        "A": "Sonderjyske",
+        "h": 2,
+        "a": 3,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2024,
+          "HistSourceURL": "https://www.football-data.co.uk/new/DNK.csv",
+          "HistSourceSHA256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/DNK.csv",
+              "sha256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 189,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1748131200000,
+        "lg": "Superliga Danimarca",
+        "H": "Aarhus",
+        "A": "Brondby",
+        "h": 2,
+        "a": 3,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2024,
+          "HistSourceURL": "https://www.football-data.co.uk/new/DNK.csv",
+          "HistSourceSHA256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/DNK.csv",
+              "sha256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    }
+  ]
+}

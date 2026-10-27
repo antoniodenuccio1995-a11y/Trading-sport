@@ -1,0 +1,14 @@
+{
+  "frame": "PROPOSTA_RC4",
+  "originalRecords": 35022,
+  "conservativeRows": 34673,
+  "consolidatedCopies": 349,
+  "retainedUnresolvedRows": 46,
+  "allOriginalRowsAccountedFor": true,
+  "states": {
+    "completo verificato": 14,
+    "parziale": 95,
+    "non verificabile": 29
+  },
+  "personalRecordsPublished": false
+}

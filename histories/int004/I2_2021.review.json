@@ -1,0 +1,131 @@
+{
+  "originalPacket": "histories/stab003/I2_2021.json",
+  "originalSHA256": "4faadacdeb61d0dda489b3465d72731346ef96b96f76124facd6928101894ada",
+  "review": [
+    {
+      "originalIndex": 380,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1652313600000,
+        "lg": "Serie B",
+        "H": "L.R. Vicenza",
+        "A": "Cosenza Calcio",
+        "h": 1,
+        "a": 0,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "Phase": "Final",
+          "HomeCountry": "ITA",
+          "AwayCountry": "ITA",
+          "PublishedRound": "Final",
+          "CsvSeason": 2021,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/italy/master/2021-22/2-serieb.txt",
+              "sha256": "e82c50c484dbc45f67d1d436240e26703785cf993984eb2892e0ddb38afe86d7"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 381,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1653004800000,
+        "lg": "Serie B",
+        "H": "Cosenza Calcio",
+        "A": "L.R. Vicenza",
+        "h": 2,
+        "a": 0,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "Phase": "Final",
+          "HomeCountry": "ITA",
+          "AwayCountry": "ITA",
+          "PublishedRound": "Final",
+          "CsvSeason": 2021,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/italy/master/2021-22/2-serieb.txt",
+              "sha256": "e82c50c484dbc45f67d1d436240e26703785cf993984eb2892e0ddb38afe86d7"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 382,
+      "reason": "riferimento_secondario_regolare_non_riconciliato_per_data",
+      "record": {
+        "d": 1652400000000,
+        "lg": "Serie B",
+        "H": "Ascoli Calcio",
+        "A": "Benevento Calcio",
+        "h": 0,
+        "a": 1,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "Round 1",
+          "HomeCountry": "ITA",
+          "AwayCountry": "ITA",
+          "PublishedRound": "Round 1",
+          "CsvSeason": 2021,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/italy/master/2021-22/2-serieb.txt",
+              "sha256": "e82c50c484dbc45f67d1d436240e26703785cf993984eb2892e0ddb38afe86d7"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 383,
+      "reason": "riferimento_secondario_regolare_non_riconciliato_per_data",
+      "record": {
+        "d": 1652486400000,
+        "lg": "Serie B",
+        "H": "Brescia Calcio",
+        "A": "AC Perugia Calcio",
+        "h": 1,
+        "a": 1,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "Phase": "Round 1",
+          "HomeCountry": "ITA",
+          "AwayCountry": "ITA",
+          "PublishedRound": "Round 1",
+          "CupScoreEvidence": "3-2 a.e.t. (1-1, 1-1)",
+          "CsvSeason": 2021,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/italy/master/2021-22/2-serieb.txt",
+              "sha256": "e82c50c484dbc45f67d1d436240e26703785cf993984eb2892e0ddb38afe86d7"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 1,
+        "shots": null
+      }
+    }
+  ]
+}

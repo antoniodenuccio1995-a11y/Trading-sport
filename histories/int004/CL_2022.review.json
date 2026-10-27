@@ -1,0 +1,3323 @@
+{
+  "originalPacket": "histories/stab003/CL_2022.json",
+  "originalSHA256": "c86b15e7fd1f8259650086dbda173427dda5d0946ec9d23d6cc99e55084626e8",
+  "review": [
+    {
+      "originalIndex": 0,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1662508800000,
+        "lg": "Champions League",
+        "H": "AFC Ajax (NED)",
+        "A": "Rangers FC",
+        "h": 4,
+        "a": 0,
+        "ht": 3,
+        "up": false,
+        "o": {
+          "Phase": "Group A",
+          "HomeCountry": "INT",
+          "AwayCountry": "SCO",
+          "PublishedRound": "Group A",
+          "CsvSeason": 2022,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2022-23/cl.txt",
+              "sha256": "bf9cd05939b055f12ee9b095bec1c20a0922277bef8940172218548de2e7b93a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 3,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 1,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1662508800000,
+        "lg": "Champions League",
+        "H": "SSC Napoli (ITA)",
+        "A": "Liverpool FC",
+        "h": 4,
+        "a": 1,
+        "ht": 3,
+        "up": false,
+        "o": {
+          "Phase": "Group A",
+          "HomeCountry": "INT",
+          "AwayCountry": "ENG",
+          "PublishedRound": "Group A",
+          "CsvSeason": 2022,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2022-23/cl.txt",
+              "sha256": "bf9cd05939b055f12ee9b095bec1c20a0922277bef8940172218548de2e7b93a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 3,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 2,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1663027200000,
+        "lg": "Champions League",
+        "H": "Liverpool FC (ENG)",
+        "A": "AFC Ajax",
+        "h": 2,
+        "a": 1,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "Phase": "Group A",
+          "HomeCountry": "INT",
+          "AwayCountry": "NED",
+          "PublishedRound": "Group A",
+          "CsvSeason": 2022,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2022-23/cl.txt",
+              "sha256": "bf9cd05939b055f12ee9b095bec1c20a0922277bef8940172218548de2e7b93a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 3,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1663113600000,
+        "lg": "Champions League",
+        "H": "Rangers FC (SCO)",
+        "A": "SSC Napoli",
+        "h": 0,
+        "a": 3,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "Phase": "Group A",
+          "HomeCountry": "INT",
+          "AwayCountry": "ITA",
+          "PublishedRound": "Group A",
+          "CsvSeason": 2022,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2022-23/cl.txt",
+              "sha256": "bf9cd05939b055f12ee9b095bec1c20a0922277bef8940172218548de2e7b93a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 4,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1664841600000,
+        "lg": "Champions League",
+        "H": "AFC Ajax (NED)",
+        "A": "SSC Napoli",
+        "h": 1,
+        "a": 6,
+        "ht": 4,
+        "up": false,
+        "o": {
+          "Phase": "Group A",
+          "HomeCountry": "INT",
+          "AwayCountry": "ITA",
+          "PublishedRound": "Group A",
+          "CsvSeason": 2022,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2022-23/cl.txt",
+              "sha256": "bf9cd05939b055f12ee9b095bec1c20a0922277bef8940172218548de2e7b93a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 3,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 5,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1664841600000,
+        "lg": "Champions League",
+        "H": "Liverpool FC (ENG)",
+        "A": "Rangers FC",
+        "h": 2,
+        "a": 0,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "Group A",
+          "HomeCountry": "INT",
+          "AwayCountry": "SCO",
+          "PublishedRound": "Group A",
+          "CsvSeason": 2022,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2022-23/cl.txt",
+              "sha256": "bf9cd05939b055f12ee9b095bec1c20a0922277bef8940172218548de2e7b93a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 6,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1665532800000,
+        "lg": "Champions League",
+        "H": "SSC Napoli (ITA)",
+        "A": "AFC Ajax",
+        "h": 4,
+        "a": 2,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "Phase": "Group A",
+          "HomeCountry": "INT",
+          "AwayCountry": "NED",
+          "PublishedRound": "Group A",
+          "CsvSeason": 2022,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2022-23/cl.txt",
+              "sha256": "bf9cd05939b055f12ee9b095bec1c20a0922277bef8940172218548de2e7b93a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 2,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 7,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1665532800000,
+        "lg": "Champions League",
+        "H": "Rangers FC (SCO)",
+        "A": "Liverpool FC",
+        "h": 1,
+        "a": 7,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "Phase": "Group A",
+          "HomeCountry": "INT",
+          "AwayCountry": "ENG",
+          "PublishedRound": "Group A",
+          "CsvSeason": 2022,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2022-23/cl.txt",
+              "sha256": "bf9cd05939b055f12ee9b095bec1c20a0922277bef8940172218548de2e7b93a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 8,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1666742400000,
+        "lg": "Champions League",
+        "H": "AFC Ajax (NED)",
+        "A": "Liverpool FC",
+        "h": 0,
+        "a": 3,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "Group A",
+          "HomeCountry": "INT",
+          "AwayCountry": "ENG",
+          "PublishedRound": "Group A",
+          "CsvSeason": 2022,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2022-23/cl.txt",
+              "sha256": "bf9cd05939b055f12ee9b095bec1c20a0922277bef8940172218548de2e7b93a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 9,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1666742400000,
+        "lg": "Champions League",
+        "H": "SSC Napoli (ITA)",
+        "A": "Rangers FC",
+        "h": 3,
+        "a": 0,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "Phase": "Group A",
+          "HomeCountry": "INT",
+          "AwayCountry": "SCO",
+          "PublishedRound": "Group A",
+          "CsvSeason": 2022,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2022-23/cl.txt",
+              "sha256": "bf9cd05939b055f12ee9b095bec1c20a0922277bef8940172218548de2e7b93a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 2,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 10,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1667260800000,
+        "lg": "Champions League",
+        "H": "Rangers FC (SCO)",
+        "A": "AFC Ajax",
+        "h": 1,
+        "a": 3,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "Phase": "Group A",
+          "HomeCountry": "INT",
+          "AwayCountry": "NED",
+          "PublishedRound": "Group A",
+          "CsvSeason": 2022,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2022-23/cl.txt",
+              "sha256": "bf9cd05939b055f12ee9b095bec1c20a0922277bef8940172218548de2e7b93a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 2,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 11,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1667260800000,
+        "lg": "Champions League",
+        "H": "Liverpool FC (ENG)",
+        "A": "SSC Napoli",
+        "h": 2,
+        "a": 0,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "Phase": "Group A",
+          "HomeCountry": "INT",
+          "AwayCountry": "ITA",
+          "PublishedRound": "Group A",
+          "CsvSeason": 2022,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2022-23/cl.txt",
+              "sha256": "bf9cd05939b055f12ee9b095bec1c20a0922277bef8940172218548de2e7b93a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 12,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1662508800000,
+        "lg": "Champions League",
+        "H": "Atlético Madrid (ESP)",
+        "A": "FC Porto",
+        "h": 2,
+        "a": 1,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "Phase": "Group B",
+          "HomeCountry": "INT",
+          "AwayCountry": "PRT",
+          "PublishedRound": "Group B",
+          "CsvSeason": 2022,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2022-23/cl.txt",
+              "sha256": "bf9cd05939b055f12ee9b095bec1c20a0922277bef8940172218548de2e7b93a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 13,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1662508800000,
+        "lg": "Champions League",
+        "H": "Club Brugge KV (BEL)",
+        "A": "Bayer Leverkusen",
+        "h": 1,
+        "a": 0,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "Group B",
+          "HomeCountry": "INT",
+          "AwayCountry": "GER",
+          "PublishedRound": "Group B",
+          "CsvSeason": 2022,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2022-23/cl.txt",
+              "sha256": "bf9cd05939b055f12ee9b095bec1c20a0922277bef8940172218548de2e7b93a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 14,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1663027200000,
+        "lg": "Champions League",
+        "H": "Bayer Leverkusen (GER)",
+        "A": "Atlético Madrid",
+        "h": 2,
+        "a": 0,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "Phase": "Group B",
+          "HomeCountry": "INT",
+          "AwayCountry": "ESP",
+          "PublishedRound": "Group B",
+          "CsvSeason": 2022,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2022-23/cl.txt",
+              "sha256": "bf9cd05939b055f12ee9b095bec1c20a0922277bef8940172218548de2e7b93a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 15,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1663027200000,
+        "lg": "Champions League",
+        "H": "FC Porto (POR)",
+        "A": "Club Brugge KV",
+        "h": 0,
+        "a": 4,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "Group B",
+          "HomeCountry": "INT",
+          "AwayCountry": "BEL",
+          "PublishedRound": "Group B",
+          "CsvSeason": 2022,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2022-23/cl.txt",
+              "sha256": "bf9cd05939b055f12ee9b095bec1c20a0922277bef8940172218548de2e7b93a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 16,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1664841600000,
+        "lg": "Champions League",
+        "H": "Club Brugge KV (BEL)",
+        "A": "Atlético Madrid",
+        "h": 2,
+        "a": 0,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "Group B",
+          "HomeCountry": "INT",
+          "AwayCountry": "ESP",
+          "PublishedRound": "Group B",
+          "CsvSeason": 2022,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2022-23/cl.txt",
+              "sha256": "bf9cd05939b055f12ee9b095bec1c20a0922277bef8940172218548de2e7b93a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 17,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1664841600000,
+        "lg": "Champions League",
+        "H": "FC Porto (POR)",
+        "A": "Bayer Leverkusen",
+        "h": 2,
+        "a": 0,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "Phase": "Group B",
+          "HomeCountry": "INT",
+          "AwayCountry": "GER",
+          "PublishedRound": "Group B",
+          "CsvSeason": 2022,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2022-23/cl.txt",
+              "sha256": "bf9cd05939b055f12ee9b095bec1c20a0922277bef8940172218548de2e7b93a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 18,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1665532800000,
+        "lg": "Champions League",
+        "H": "Atlético Madrid (ESP)",
+        "A": "Club Brugge KV",
+        "h": 0,
+        "a": 0,
+        "ht": null,
+        "up": false,
+        "o": {
+          "Phase": "Group B",
+          "HomeCountry": "INT",
+          "AwayCountry": "BEL",
+          "PublishedRound": "Group B",
+          "CsvSeason": 2022,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2022-23/cl.txt",
+              "sha256": "bf9cd05939b055f12ee9b095bec1c20a0922277bef8940172218548de2e7b93a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 19,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1665532800000,
+        "lg": "Champions League",
+        "H": "Bayer Leverkusen (GER)",
+        "A": "FC Porto",
+        "h": 0,
+        "a": 3,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "Group B",
+          "HomeCountry": "INT",
+          "AwayCountry": "PRT",
+          "PublishedRound": "Group B",
+          "CsvSeason": 2022,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2022-23/cl.txt",
+              "sha256": "bf9cd05939b055f12ee9b095bec1c20a0922277bef8940172218548de2e7b93a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 20,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1666742400000,
+        "lg": "Champions League",
+        "H": "Club Brugge KV (BEL)",
+        "A": "FC Porto",
+        "h": 0,
+        "a": 4,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "Group B",
+          "HomeCountry": "INT",
+          "AwayCountry": "PRT",
+          "PublishedRound": "Group B",
+          "CsvSeason": 2022,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2022-23/cl.txt",
+              "sha256": "bf9cd05939b055f12ee9b095bec1c20a0922277bef8940172218548de2e7b93a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 21,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1666742400000,
+        "lg": "Champions League",
+        "H": "Atlético Madrid (ESP)",
+        "A": "Bayer Leverkusen",
+        "h": 2,
+        "a": 2,
+        "ht": 3,
+        "up": false,
+        "o": {
+          "Phase": "Group B",
+          "HomeCountry": "INT",
+          "AwayCountry": "GER",
+          "PublishedRound": "Group B",
+          "CsvSeason": 2022,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2022-23/cl.txt",
+              "sha256": "bf9cd05939b055f12ee9b095bec1c20a0922277bef8940172218548de2e7b93a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 2,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 22,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1667260800000,
+        "lg": "Champions League",
+        "H": "FC Porto (POR)",
+        "A": "Atlético Madrid",
+        "h": 2,
+        "a": 1,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "Phase": "Group B",
+          "HomeCountry": "INT",
+          "AwayCountry": "ESP",
+          "PublishedRound": "Group B",
+          "CsvSeason": 2022,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2022-23/cl.txt",
+              "sha256": "bf9cd05939b055f12ee9b095bec1c20a0922277bef8940172218548de2e7b93a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 2,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 23,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1667260800000,
+        "lg": "Champions League",
+        "H": "Bayer Leverkusen (GER)",
+        "A": "Club Brugge KV",
+        "h": 0,
+        "a": 0,
+        "ht": null,
+        "up": false,
+        "o": {
+          "Phase": "Group B",
+          "HomeCountry": "INT",
+          "AwayCountry": "BEL",
+          "PublishedRound": "Group B",
+          "CsvSeason": 2022,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2022-23/cl.txt",
+              "sha256": "bf9cd05939b055f12ee9b095bec1c20a0922277bef8940172218548de2e7b93a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 24,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1662508800000,
+        "lg": "Champions League",
+        "H": "Inter (ITA)",
+        "A": "Bayern München",
+        "h": 0,
+        "a": 2,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "Group C",
+          "HomeCountry": "INT",
+          "AwayCountry": "GER",
+          "PublishedRound": "Group C",
+          "CsvSeason": 2022,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2022-23/cl.txt",
+              "sha256": "bf9cd05939b055f12ee9b095bec1c20a0922277bef8940172218548de2e7b93a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 25,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1662508800000,
+        "lg": "Champions League",
+        "H": "FC Barcelona (ESP)",
+        "A": "Viktoria Plzeň",
+        "h": 5,
+        "a": 1,
+        "ht": 4,
+        "up": false,
+        "o": {
+          "Phase": "Group C",
+          "HomeCountry": "INT",
+          "AwayCountry": "CZE",
+          "PublishedRound": "Group C",
+          "CsvSeason": 2022,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2022-23/cl.txt",
+              "sha256": "bf9cd05939b055f12ee9b095bec1c20a0922277bef8940172218548de2e7b93a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 3,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 26,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1663027200000,
+        "lg": "Champions League",
+        "H": "Viktoria Plzeň (CZE)",
+        "A": "Inter",
+        "h": 0,
+        "a": 2,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "Group C",
+          "HomeCountry": "INT",
+          "AwayCountry": "ITA",
+          "PublishedRound": "Group C",
+          "CsvSeason": 2022,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2022-23/cl.txt",
+              "sha256": "bf9cd05939b055f12ee9b095bec1c20a0922277bef8940172218548de2e7b93a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 27,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1663027200000,
+        "lg": "Champions League",
+        "H": "Bayern München (GER)",
+        "A": "FC Barcelona",
+        "h": 2,
+        "a": 0,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "Phase": "Group C",
+          "HomeCountry": "INT",
+          "AwayCountry": "ESP",
+          "PublishedRound": "Group C",
+          "CsvSeason": 2022,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2022-23/cl.txt",
+              "sha256": "bf9cd05939b055f12ee9b095bec1c20a0922277bef8940172218548de2e7b93a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 28,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1664841600000,
+        "lg": "Champions League",
+        "H": "Bayern München (GER)",
+        "A": "Viktoria Plzeň",
+        "h": 5,
+        "a": 0,
+        "ht": 3,
+        "up": false,
+        "o": {
+          "Phase": "Group C",
+          "HomeCountry": "INT",
+          "AwayCountry": "CZE",
+          "PublishedRound": "Group C",
+          "CsvSeason": 2022,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2022-23/cl.txt",
+              "sha256": "bf9cd05939b055f12ee9b095bec1c20a0922277bef8940172218548de2e7b93a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 3,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 29,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1664841600000,
+        "lg": "Champions League",
+        "H": "Inter (ITA)",
+        "A": "FC Barcelona",
+        "h": 1,
+        "a": 0,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "Group C",
+          "HomeCountry": "INT",
+          "AwayCountry": "ESP",
+          "PublishedRound": "Group C",
+          "CsvSeason": 2022,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2022-23/cl.txt",
+              "sha256": "bf9cd05939b055f12ee9b095bec1c20a0922277bef8940172218548de2e7b93a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 30,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1665532800000,
+        "lg": "Champions League",
+        "H": "Viktoria Plzeň (CZE)",
+        "A": "Bayern München",
+        "h": 2,
+        "a": 4,
+        "ht": 4,
+        "up": false,
+        "o": {
+          "Phase": "Group C",
+          "HomeCountry": "INT",
+          "AwayCountry": "GER",
+          "PublishedRound": "Group C",
+          "CsvSeason": 2022,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2022-23/cl.txt",
+              "sha256": "bf9cd05939b055f12ee9b095bec1c20a0922277bef8940172218548de2e7b93a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 4,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 31,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1665532800000,
+        "lg": "Champions League",
+        "H": "FC Barcelona (ESP)",
+        "A": "Inter",
+        "h": 3,
+        "a": 3,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "Group C",
+          "HomeCountry": "INT",
+          "AwayCountry": "ITA",
+          "PublishedRound": "Group C",
+          "CsvSeason": 2022,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2022-23/cl.txt",
+              "sha256": "bf9cd05939b055f12ee9b095bec1c20a0922277bef8940172218548de2e7b93a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 32,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1666742400000,
+        "lg": "Champions League",
+        "H": "Inter (ITA)",
+        "A": "Viktoria Plzeň",
+        "h": 4,
+        "a": 0,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "Phase": "Group C",
+          "HomeCountry": "INT",
+          "AwayCountry": "CZE",
+          "PublishedRound": "Group C",
+          "CsvSeason": 2022,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2022-23/cl.txt",
+              "sha256": "bf9cd05939b055f12ee9b095bec1c20a0922277bef8940172218548de2e7b93a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 2,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 33,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1666742400000,
+        "lg": "Champions League",
+        "H": "FC Barcelona (ESP)",
+        "A": "Bayern München",
+        "h": 0,
+        "a": 3,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "Phase": "Group C",
+          "HomeCountry": "INT",
+          "AwayCountry": "GER",
+          "PublishedRound": "Group C",
+          "CsvSeason": 2022,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2022-23/cl.txt",
+              "sha256": "bf9cd05939b055f12ee9b095bec1c20a0922277bef8940172218548de2e7b93a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 2,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 34,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1667260800000,
+        "lg": "Champions League",
+        "H": "Bayern München (GER)",
+        "A": "Inter",
+        "h": 2,
+        "a": 0,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "Group C",
+          "HomeCountry": "INT",
+          "AwayCountry": "ITA",
+          "PublishedRound": "Group C",
+          "CsvSeason": 2022,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2022-23/cl.txt",
+              "sha256": "bf9cd05939b055f12ee9b095bec1c20a0922277bef8940172218548de2e7b93a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 35,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1667260800000,
+        "lg": "Champions League",
+        "H": "Viktoria Plzeň (CZE)",
+        "A": "FC Barcelona",
+        "h": 2,
+        "a": 4,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "Phase": "Group C",
+          "HomeCountry": "INT",
+          "AwayCountry": "ESP",
+          "PublishedRound": "Group C",
+          "CsvSeason": 2022,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2022-23/cl.txt",
+              "sha256": "bf9cd05939b055f12ee9b095bec1c20a0922277bef8940172218548de2e7b93a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 2,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 38,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1663027200000,
+        "lg": "Champions League",
+        "H": "Sporting CP (POR)",
+        "A": "Tottenham Hotspur",
+        "h": 2,
+        "a": 0,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "Phase": "Group D",
+          "HomeCountry": "INT",
+          "AwayCountry": "ENG",
+          "PublishedRound": "Group D",
+          "CsvSeason": 2022,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2022-23/cl.txt",
+              "sha256": "bf9cd05939b055f12ee9b095bec1c20a0922277bef8940172218548de2e7b93a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 43,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1665532800000,
+        "lg": "Champions League",
+        "H": "Sporting CP (POR)",
+        "A": "Olympique Marseille",
+        "h": 0,
+        "a": 2,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "Phase": "Group D",
+          "HomeCountry": "INT",
+          "AwayCountry": "FRA",
+          "PublishedRound": "Group D",
+          "CsvSeason": 2022,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2022-23/cl.txt",
+              "sha256": "bf9cd05939b055f12ee9b095bec1c20a0922277bef8940172218548de2e7b93a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 2,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 46,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1667260800000,
+        "lg": "Champions League",
+        "H": "Sporting CP (POR)",
+        "A": "Eintracht Frankfurt",
+        "h": 1,
+        "a": 2,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "Group D",
+          "HomeCountry": "INT",
+          "AwayCountry": "GER",
+          "PublishedRound": "Group D",
+          "CsvSeason": 2022,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2022-23/cl.txt",
+              "sha256": "bf9cd05939b055f12ee9b095bec1c20a0922277bef8940172218548de2e7b93a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 48,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1662422400000,
+        "lg": "Champions League",
+        "H": "Dinamo Zagreb (CRO)",
+        "A": "Chelsea FC",
+        "h": 1,
+        "a": 0,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "Group E",
+          "HomeCountry": "INT",
+          "AwayCountry": "ENG",
+          "PublishedRound": "Group E",
+          "CsvSeason": 2022,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2022-23/cl.txt",
+              "sha256": "bf9cd05939b055f12ee9b095bec1c20a0922277bef8940172218548de2e7b93a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 49,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1662422400000,
+        "lg": "Champions League",
+        "H": "RB Salzburg (AUT)",
+        "A": "AC Milan",
+        "h": 1,
+        "a": 1,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "Phase": "Group E",
+          "HomeCountry": "INT",
+          "AwayCountry": "ITA",
+          "PublishedRound": "Group E",
+          "CsvSeason": 2022,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2022-23/cl.txt",
+              "sha256": "bf9cd05939b055f12ee9b095bec1c20a0922277bef8940172218548de2e7b93a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 50,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1663113600000,
+        "lg": "Champions League",
+        "H": "AC Milan (ITA)",
+        "A": "Dinamo Zagreb",
+        "h": 3,
+        "a": 1,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "Group E",
+          "HomeCountry": "INT",
+          "AwayCountry": "HRV",
+          "PublishedRound": "Group E",
+          "CsvSeason": 2022,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2022-23/cl.txt",
+              "sha256": "bf9cd05939b055f12ee9b095bec1c20a0922277bef8940172218548de2e7b93a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 51,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1663113600000,
+        "lg": "Champions League",
+        "H": "Chelsea FC (ENG)",
+        "A": "RB Salzburg",
+        "h": 1,
+        "a": 1,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "Phase": "Group E",
+          "HomeCountry": "INT",
+          "AwayCountry": "AUT",
+          "PublishedRound": "Group E",
+          "CsvSeason": 2022,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2022-23/cl.txt",
+              "sha256": "bf9cd05939b055f12ee9b095bec1c20a0922277bef8940172218548de2e7b93a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 52,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1664928000000,
+        "lg": "Champions League",
+        "H": "RB Salzburg (AUT)",
+        "A": "Dinamo Zagreb",
+        "h": 1,
+        "a": 0,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "Phase": "Group E",
+          "HomeCountry": "INT",
+          "AwayCountry": "HRV",
+          "PublishedRound": "Group E",
+          "CsvSeason": 2022,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2022-23/cl.txt",
+              "sha256": "bf9cd05939b055f12ee9b095bec1c20a0922277bef8940172218548de2e7b93a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 53,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1664928000000,
+        "lg": "Champions League",
+        "H": "Chelsea FC (ENG)",
+        "A": "AC Milan",
+        "h": 3,
+        "a": 0,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "Group E",
+          "HomeCountry": "INT",
+          "AwayCountry": "ITA",
+          "PublishedRound": "Group E",
+          "CsvSeason": 2022,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2022-23/cl.txt",
+              "sha256": "bf9cd05939b055f12ee9b095bec1c20a0922277bef8940172218548de2e7b93a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 54,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1665446400000,
+        "lg": "Champions League",
+        "H": "AC Milan (ITA)",
+        "A": "Chelsea FC",
+        "h": 0,
+        "a": 2,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "Phase": "Group E",
+          "HomeCountry": "INT",
+          "AwayCountry": "ENG",
+          "PublishedRound": "Group E",
+          "CsvSeason": 2022,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2022-23/cl.txt",
+              "sha256": "bf9cd05939b055f12ee9b095bec1c20a0922277bef8940172218548de2e7b93a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 2,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 55,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1665446400000,
+        "lg": "Champions League",
+        "H": "Dinamo Zagreb (CRO)",
+        "A": "RB Salzburg",
+        "h": 1,
+        "a": 1,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "Phase": "Group E",
+          "HomeCountry": "INT",
+          "AwayCountry": "AUT",
+          "PublishedRound": "Group E",
+          "CsvSeason": 2022,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2022-23/cl.txt",
+              "sha256": "bf9cd05939b055f12ee9b095bec1c20a0922277bef8940172218548de2e7b93a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 56,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1666656000000,
+        "lg": "Champions League",
+        "H": "RB Salzburg (AUT)",
+        "A": "Chelsea FC",
+        "h": 1,
+        "a": 2,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "Group E",
+          "HomeCountry": "INT",
+          "AwayCountry": "ENG",
+          "PublishedRound": "Group E",
+          "CsvSeason": 2022,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2022-23/cl.txt",
+              "sha256": "bf9cd05939b055f12ee9b095bec1c20a0922277bef8940172218548de2e7b93a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 57,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1666656000000,
+        "lg": "Champions League",
+        "H": "Dinamo Zagreb (CRO)",
+        "A": "AC Milan",
+        "h": 0,
+        "a": 4,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "Group E",
+          "HomeCountry": "INT",
+          "AwayCountry": "ITA",
+          "PublishedRound": "Group E",
+          "CsvSeason": 2022,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2022-23/cl.txt",
+              "sha256": "bf9cd05939b055f12ee9b095bec1c20a0922277bef8940172218548de2e7b93a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 58,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1667347200000,
+        "lg": "Champions League",
+        "H": "AC Milan (ITA)",
+        "A": "RB Salzburg",
+        "h": 4,
+        "a": 0,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "Group E",
+          "HomeCountry": "INT",
+          "AwayCountry": "AUT",
+          "PublishedRound": "Group E",
+          "CsvSeason": 2022,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2022-23/cl.txt",
+              "sha256": "bf9cd05939b055f12ee9b095bec1c20a0922277bef8940172218548de2e7b93a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 59,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1667347200000,
+        "lg": "Champions League",
+        "H": "Chelsea FC (ENG)",
+        "A": "Dinamo Zagreb",
+        "h": 2,
+        "a": 1,
+        "ht": 3,
+        "up": false,
+        "o": {
+          "Phase": "Group E",
+          "HomeCountry": "INT",
+          "AwayCountry": "HRV",
+          "PublishedRound": "Group E",
+          "CsvSeason": 2022,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2022-23/cl.txt",
+              "sha256": "bf9cd05939b055f12ee9b095bec1c20a0922277bef8940172218548de2e7b93a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 2,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 60,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1662422400000,
+        "lg": "Champions League",
+        "H": "Celtic FC (SCO)",
+        "A": "Real Madrid",
+        "h": 0,
+        "a": 3,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "Phase": "Group F",
+          "HomeCountry": "INT",
+          "AwayCountry": "ESP",
+          "PublishedRound": "Group F",
+          "CsvSeason": 2022,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2022-23/cl.txt",
+              "sha256": "bf9cd05939b055f12ee9b095bec1c20a0922277bef8940172218548de2e7b93a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 61,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1662422400000,
+        "lg": "Champions League",
+        "H": "RB Leipzig (GER)",
+        "A": "Shakhtar Donetsk",
+        "h": 1,
+        "a": 4,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "Group F",
+          "HomeCountry": "INT",
+          "AwayCountry": "UKR",
+          "PublishedRound": "Group F",
+          "CsvSeason": 2022,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2022-23/cl.txt",
+              "sha256": "bf9cd05939b055f12ee9b095bec1c20a0922277bef8940172218548de2e7b93a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 62,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1663113600000,
+        "lg": "Champions League",
+        "H": "Shakhtar Donetsk (UKR)",
+        "A": "Celtic FC",
+        "h": 1,
+        "a": 1,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "Phase": "Group F",
+          "HomeCountry": "INT",
+          "AwayCountry": "SCO",
+          "PublishedRound": "Group F",
+          "CsvSeason": 2022,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2022-23/cl.txt",
+              "sha256": "bf9cd05939b055f12ee9b095bec1c20a0922277bef8940172218548de2e7b93a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 63,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1663113600000,
+        "lg": "Champions League",
+        "H": "Real Madrid (ESP)",
+        "A": "RB Leipzig",
+        "h": 2,
+        "a": 0,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "Phase": "Group F",
+          "HomeCountry": "INT",
+          "AwayCountry": "GER",
+          "PublishedRound": "Group F",
+          "CsvSeason": 2022,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2022-23/cl.txt",
+              "sha256": "bf9cd05939b055f12ee9b095bec1c20a0922277bef8940172218548de2e7b93a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 64,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1664928000000,
+        "lg": "Champions League",
+        "H": "RB Leipzig (GER)",
+        "A": "Celtic FC",
+        "h": 3,
+        "a": 1,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "Group F",
+          "HomeCountry": "INT",
+          "AwayCountry": "SCO",
+          "PublishedRound": "Group F",
+          "CsvSeason": 2022,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2022-23/cl.txt",
+              "sha256": "bf9cd05939b055f12ee9b095bec1c20a0922277bef8940172218548de2e7b93a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 65,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1664928000000,
+        "lg": "Champions League",
+        "H": "Real Madrid (ESP)",
+        "A": "Shakhtar Donetsk",
+        "h": 2,
+        "a": 1,
+        "ht": 3,
+        "up": false,
+        "o": {
+          "Phase": "Group F",
+          "HomeCountry": "INT",
+          "AwayCountry": "UKR",
+          "PublishedRound": "Group F",
+          "CsvSeason": 2022,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2022-23/cl.txt",
+              "sha256": "bf9cd05939b055f12ee9b095bec1c20a0922277bef8940172218548de2e7b93a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 2,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 66,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1665446400000,
+        "lg": "Champions League",
+        "H": "Celtic FC (SCO)",
+        "A": "RB Leipzig",
+        "h": 0,
+        "a": 2,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "Phase": "Group F",
+          "HomeCountry": "INT",
+          "AwayCountry": "GER",
+          "PublishedRound": "Group F",
+          "CsvSeason": 2022,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2022-23/cl.txt",
+              "sha256": "bf9cd05939b055f12ee9b095bec1c20a0922277bef8940172218548de2e7b93a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 67,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1665446400000,
+        "lg": "Champions League",
+        "H": "Shakhtar Donetsk (UKR)",
+        "A": "Real Madrid",
+        "h": 1,
+        "a": 1,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "Phase": "Group F",
+          "HomeCountry": "INT",
+          "AwayCountry": "ESP",
+          "PublishedRound": "Group F",
+          "CsvSeason": 2022,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2022-23/cl.txt",
+              "sha256": "bf9cd05939b055f12ee9b095bec1c20a0922277bef8940172218548de2e7b93a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 68,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1666656000000,
+        "lg": "Champions League",
+        "H": "Celtic FC (SCO)",
+        "A": "Shakhtar Donetsk",
+        "h": 1,
+        "a": 1,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "Group F",
+          "HomeCountry": "INT",
+          "AwayCountry": "UKR",
+          "PublishedRound": "Group F",
+          "CsvSeason": 2022,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2022-23/cl.txt",
+              "sha256": "bf9cd05939b055f12ee9b095bec1c20a0922277bef8940172218548de2e7b93a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 69,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1666656000000,
+        "lg": "Champions League",
+        "H": "RB Leipzig (GER)",
+        "A": "Real Madrid",
+        "h": 3,
+        "a": 2,
+        "ht": 3,
+        "up": false,
+        "o": {
+          "Phase": "Group F",
+          "HomeCountry": "INT",
+          "AwayCountry": "ESP",
+          "PublishedRound": "Group F",
+          "CsvSeason": 2022,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2022-23/cl.txt",
+              "sha256": "bf9cd05939b055f12ee9b095bec1c20a0922277bef8940172218548de2e7b93a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 2,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 70,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1667347200000,
+        "lg": "Champions League",
+        "H": "Real Madrid (ESP)",
+        "A": "Celtic FC",
+        "h": 5,
+        "a": 1,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "Phase": "Group F",
+          "HomeCountry": "INT",
+          "AwayCountry": "SCO",
+          "PublishedRound": "Group F",
+          "CsvSeason": 2022,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2022-23/cl.txt",
+              "sha256": "bf9cd05939b055f12ee9b095bec1c20a0922277bef8940172218548de2e7b93a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 2,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 71,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1667347200000,
+        "lg": "Champions League",
+        "H": "Shakhtar Donetsk (UKR)",
+        "A": "RB Leipzig",
+        "h": 0,
+        "a": 4,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "Group F",
+          "HomeCountry": "INT",
+          "AwayCountry": "GER",
+          "PublishedRound": "Group F",
+          "CsvSeason": 2022,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2022-23/cl.txt",
+              "sha256": "bf9cd05939b055f12ee9b095bec1c20a0922277bef8940172218548de2e7b93a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 73,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1662422400000,
+        "lg": "Champions League",
+        "H": "Sevilla FC (ESP)",
+        "A": "Manchester City",
+        "h": 0,
+        "a": 4,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "Gruppe G",
+          "HomeCountry": "INT",
+          "AwayCountry": "ENG",
+          "PublishedRound": "Gruppe G",
+          "CsvSeason": 2022,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2022-23/cl.txt",
+              "sha256": "bf9cd05939b055f12ee9b095bec1c20a0922277bef8940172218548de2e7b93a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 74,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1663113600000,
+        "lg": "Champions League",
+        "H": "Manchester City (ENG)",
+        "A": "Borussia Dortmund",
+        "h": 2,
+        "a": 1,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "Phase": "Gruppe G",
+          "HomeCountry": "INT",
+          "AwayCountry": "GER",
+          "PublishedRound": "Gruppe G",
+          "CsvSeason": 2022,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2022-23/cl.txt",
+              "sha256": "bf9cd05939b055f12ee9b095bec1c20a0922277bef8940172218548de2e7b93a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 75,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1663113600000,
+        "lg": "Champions League",
+        "H": "FC København (DEN)",
+        "A": "Sevilla FC",
+        "h": 0,
+        "a": 0,
+        "ht": null,
+        "up": false,
+        "o": {
+          "Phase": "Gruppe G",
+          "HomeCountry": "INT",
+          "AwayCountry": "ESP",
+          "PublishedRound": "Gruppe G",
+          "CsvSeason": 2022,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2022-23/cl.txt",
+              "sha256": "bf9cd05939b055f12ee9b095bec1c20a0922277bef8940172218548de2e7b93a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 76,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1664928000000,
+        "lg": "Champions League",
+        "H": "Sevilla FC (ESP)",
+        "A": "Borussia Dortmund",
+        "h": 1,
+        "a": 4,
+        "ht": 3,
+        "up": false,
+        "o": {
+          "Phase": "Gruppe G",
+          "HomeCountry": "INT",
+          "AwayCountry": "GER",
+          "PublishedRound": "Gruppe G",
+          "CsvSeason": 2022,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2022-23/cl.txt",
+              "sha256": "bf9cd05939b055f12ee9b095bec1c20a0922277bef8940172218548de2e7b93a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 3,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 77,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1664928000000,
+        "lg": "Champions League",
+        "H": "Manchester City (ENG)",
+        "A": "FC København",
+        "h": 5,
+        "a": 0,
+        "ht": 3,
+        "up": false,
+        "o": {
+          "Phase": "Gruppe G",
+          "HomeCountry": "INT",
+          "AwayCountry": "DNK",
+          "PublishedRound": "Gruppe G",
+          "CsvSeason": 2022,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2022-23/cl.txt",
+              "sha256": "bf9cd05939b055f12ee9b095bec1c20a0922277bef8940172218548de2e7b93a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 3,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 78,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1665446400000,
+        "lg": "Champions League",
+        "H": "FC København (DEN)",
+        "A": "Manchester City",
+        "h": 0,
+        "a": 0,
+        "ht": null,
+        "up": false,
+        "o": {
+          "Phase": "Gruppe G",
+          "HomeCountry": "INT",
+          "AwayCountry": "ENG",
+          "PublishedRound": "Gruppe G",
+          "CsvSeason": 2022,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2022-23/cl.txt",
+              "sha256": "bf9cd05939b055f12ee9b095bec1c20a0922277bef8940172218548de2e7b93a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 80,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1666656000000,
+        "lg": "Champions League",
+        "H": "Sevilla FC (ESP)",
+        "A": "FC København",
+        "h": 3,
+        "a": 0,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "Phase": "Gruppe G",
+          "HomeCountry": "INT",
+          "AwayCountry": "DNK",
+          "PublishedRound": "Gruppe G",
+          "CsvSeason": 2022,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2022-23/cl.txt",
+              "sha256": "bf9cd05939b055f12ee9b095bec1c20a0922277bef8940172218548de2e7b93a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 82,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1667347200000,
+        "lg": "Champions League",
+        "H": "FC København (DEN)",
+        "A": "Borussia Dortmund",
+        "h": 1,
+        "a": 1,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "Phase": "Gruppe G",
+          "HomeCountry": "INT",
+          "AwayCountry": "GER",
+          "PublishedRound": "Gruppe G",
+          "CsvSeason": 2022,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2022-23/cl.txt",
+              "sha256": "bf9cd05939b055f12ee9b095bec1c20a0922277bef8940172218548de2e7b93a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 83,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1667347200000,
+        "lg": "Champions League",
+        "H": "Manchester City (ENG)",
+        "A": "Sevilla FC",
+        "h": 3,
+        "a": 1,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "Gruppe G",
+          "HomeCountry": "INT",
+          "AwayCountry": "ESP",
+          "PublishedRound": "Gruppe G",
+          "CsvSeason": 2022,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2022-23/cl.txt",
+              "sha256": "bf9cd05939b055f12ee9b095bec1c20a0922277bef8940172218548de2e7b93a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 85,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1662422400000,
+        "lg": "Champions League",
+        "H": "SL Benfica (POR)",
+        "A": "Maccabi Haifa",
+        "h": 2,
+        "a": 0,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "Phase": "Gruppe H",
+          "HomeCountry": "INT",
+          "AwayCountry": "ISR",
+          "PublishedRound": "Gruppe H",
+          "CsvSeason": 2022,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2022-23/cl.txt",
+              "sha256": "bf9cd05939b055f12ee9b095bec1c20a0922277bef8940172218548de2e7b93a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 86,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1663113600000,
+        "lg": "Champions League",
+        "H": "Juventus (ITA)",
+        "A": "SL Benfica",
+        "h": 1,
+        "a": 2,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "Phase": "Gruppe H",
+          "HomeCountry": "INT",
+          "AwayCountry": "PRT",
+          "PublishedRound": "Gruppe H",
+          "CsvSeason": 2022,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2022-23/cl.txt",
+              "sha256": "bf9cd05939b055f12ee9b095bec1c20a0922277bef8940172218548de2e7b93a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 87,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1663113600000,
+        "lg": "Champions League",
+        "H": "Maccabi Haifa (ISR)",
+        "A": "Paris Saint-Germain",
+        "h": 1,
+        "a": 3,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "Phase": "Gruppe H",
+          "HomeCountry": "INT",
+          "AwayCountry": "FRA",
+          "PublishedRound": "Gruppe H",
+          "CsvSeason": 2022,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2022-23/cl.txt",
+              "sha256": "bf9cd05939b055f12ee9b095bec1c20a0922277bef8940172218548de2e7b93a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 88,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1664928000000,
+        "lg": "Champions League",
+        "H": "Juventus (ITA)",
+        "A": "Maccabi Haifa",
+        "h": 3,
+        "a": 1,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "Gruppe H",
+          "HomeCountry": "INT",
+          "AwayCountry": "ISR",
+          "PublishedRound": "Gruppe H",
+          "CsvSeason": 2022,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2022-23/cl.txt",
+              "sha256": "bf9cd05939b055f12ee9b095bec1c20a0922277bef8940172218548de2e7b93a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 89,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1664928000000,
+        "lg": "Champions League",
+        "H": "SL Benfica (POR)",
+        "A": "Paris Saint-Germain",
+        "h": 1,
+        "a": 1,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "Phase": "Gruppe H",
+          "HomeCountry": "INT",
+          "AwayCountry": "FRA",
+          "PublishedRound": "Gruppe H",
+          "CsvSeason": 2022,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2022-23/cl.txt",
+              "sha256": "bf9cd05939b055f12ee9b095bec1c20a0922277bef8940172218548de2e7b93a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 90,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1665446400000,
+        "lg": "Champions League",
+        "H": "Maccabi Haifa (ISR)",
+        "A": "Juventus",
+        "h": 2,
+        "a": 0,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "Phase": "Gruppe H",
+          "HomeCountry": "INT",
+          "AwayCountry": "ITA",
+          "PublishedRound": "Gruppe H",
+          "CsvSeason": 2022,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2022-23/cl.txt",
+              "sha256": "bf9cd05939b055f12ee9b095bec1c20a0922277bef8940172218548de2e7b93a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 2,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 92,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1666656000000,
+        "lg": "Champions League",
+        "H": "SL Benfica (POR)",
+        "A": "Juventus",
+        "h": 4,
+        "a": 3,
+        "ht": 3,
+        "up": false,
+        "o": {
+          "Phase": "Gruppe H",
+          "HomeCountry": "INT",
+          "AwayCountry": "ITA",
+          "PublishedRound": "Gruppe H",
+          "CsvSeason": 2022,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2022-23/cl.txt",
+              "sha256": "bf9cd05939b055f12ee9b095bec1c20a0922277bef8940172218548de2e7b93a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 2,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 93,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1666656000000,
+        "lg": "Champions League",
+        "H": "Paris Saint-Germain",
+        "A": "Maccabi Haifa",
+        "h": 7,
+        "a": 2,
+        "ht": 5,
+        "up": false,
+        "o": {
+          "Phase": "Gruppe H",
+          "HomeCountry": "FRA",
+          "AwayCountry": "ISR",
+          "PublishedRound": "Gruppe H",
+          "CsvSeason": 2022,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2022-23/cl.txt",
+              "sha256": "bf9cd05939b055f12ee9b095bec1c20a0922277bef8940172218548de2e7b93a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 4,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 94,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1667347200000,
+        "lg": "Champions League",
+        "H": "Juventus (ITA)",
+        "A": "Paris Saint-Germain",
+        "h": 1,
+        "a": 2,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "Phase": "Gruppe H",
+          "HomeCountry": "INT",
+          "AwayCountry": "FRA",
+          "PublishedRound": "Gruppe H",
+          "CsvSeason": 2022,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2022-23/cl.txt",
+              "sha256": "bf9cd05939b055f12ee9b095bec1c20a0922277bef8940172218548de2e7b93a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 95,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1667347200000,
+        "lg": "Champions League",
+        "H": "Maccabi Haifa (ISR)",
+        "A": "SL Benfica",
+        "h": 1,
+        "a": 6,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "Phase": "Gruppe H",
+          "HomeCountry": "INT",
+          "AwayCountry": "PRT",
+          "PublishedRound": "Gruppe H",
+          "CsvSeason": 2022,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2022-23/cl.txt",
+              "sha256": "bf9cd05939b055f12ee9b095bec1c20a0922277bef8940172218548de2e7b93a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 96,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1676332800000,
+        "lg": "Champions League",
+        "H": "AC Milan (ITA)",
+        "A": "Tottenham Hotspur",
+        "h": 1,
+        "a": 0,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "Round of 16",
+          "HomeCountry": "INT",
+          "AwayCountry": "ENG",
+          "PublishedRound": "Round of 16",
+          "CsvSeason": 2022,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2022-23/cl.txt",
+              "sha256": "bf9cd05939b055f12ee9b095bec1c20a0922277bef8940172218548de2e7b93a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 98,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1676419200000,
+        "lg": "Champions League",
+        "H": "Club Brugge KV (BEL)",
+        "A": "SL Benfica",
+        "h": 0,
+        "a": 2,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "Phase": "Round of 16",
+          "HomeCountry": "INT",
+          "AwayCountry": "PRT",
+          "PublishedRound": "Round of 16",
+          "CsvSeason": 2022,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2022-23/cl.txt",
+              "sha256": "bf9cd05939b055f12ee9b095bec1c20a0922277bef8940172218548de2e7b93a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 100,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1676937600000,
+        "lg": "Champions League",
+        "H": "Liverpool FC (ENG)",
+        "A": "Real Madrid",
+        "h": 2,
+        "a": 5,
+        "ht": 4,
+        "up": false,
+        "o": {
+          "Phase": "Round of 16",
+          "HomeCountry": "INT",
+          "AwayCountry": "ESP",
+          "PublishedRound": "Round of 16",
+          "CsvSeason": 2022,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2022-23/cl.txt",
+              "sha256": "bf9cd05939b055f12ee9b095bec1c20a0922277bef8940172218548de2e7b93a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 2,
+        "hta": 2,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 102,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1677024000000,
+        "lg": "Champions League",
+        "H": "RB Leipzig (GER)",
+        "A": "Manchester City",
+        "h": 1,
+        "a": 1,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "Round of 16",
+          "HomeCountry": "INT",
+          "AwayCountry": "ENG",
+          "PublishedRound": "Round of 16",
+          "CsvSeason": 2022,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2022-23/cl.txt",
+              "sha256": "bf9cd05939b055f12ee9b095bec1c20a0922277bef8940172218548de2e7b93a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 103,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1677024000000,
+        "lg": "Champions League",
+        "H": "Inter (ITA)",
+        "A": "FC Porto",
+        "h": 1,
+        "a": 0,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "Phase": "Round of 16",
+          "HomeCountry": "INT",
+          "AwayCountry": "PRT",
+          "PublishedRound": "Round of 16",
+          "CsvSeason": 2022,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2022-23/cl.txt",
+              "sha256": "bf9cd05939b055f12ee9b095bec1c20a0922277bef8940172218548de2e7b93a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 104,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1678147200000,
+        "lg": "Champions League",
+        "H": "SL Benfica (POR)",
+        "A": "Club Brugge KV",
+        "h": 5,
+        "a": 1,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "Phase": "Round of 16",
+          "HomeCountry": "INT",
+          "AwayCountry": "BEL",
+          "PublishedRound": "Round of 16",
+          "CsvSeason": 2022,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2022-23/cl.txt",
+              "sha256": "bf9cd05939b055f12ee9b095bec1c20a0922277bef8940172218548de2e7b93a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 2,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 105,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1678147200000,
+        "lg": "Champions League",
+        "H": "Chelsea FC (ENG)",
+        "A": "Borussia Dortmund",
+        "h": 2,
+        "a": 0,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "Round of 16",
+          "HomeCountry": "INT",
+          "AwayCountry": "GER",
+          "PublishedRound": "Round of 16",
+          "CsvSeason": 2022,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2022-23/cl.txt",
+              "sha256": "bf9cd05939b055f12ee9b095bec1c20a0922277bef8940172218548de2e7b93a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 106,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1678233600000,
+        "lg": "Champions League",
+        "H": "Bayern München (GER)",
+        "A": "Paris Saint-Germain",
+        "h": 2,
+        "a": 0,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "Phase": "Round of 16",
+          "HomeCountry": "INT",
+          "AwayCountry": "FRA",
+          "PublishedRound": "Round of 16",
+          "CsvSeason": 2022,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2022-23/cl.txt",
+              "sha256": "bf9cd05939b055f12ee9b095bec1c20a0922277bef8940172218548de2e7b93a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 108,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1678752000000,
+        "lg": "Champions League",
+        "H": "Manchester City (ENG)",
+        "A": "RB Leipzig",
+        "h": 7,
+        "a": 0,
+        "ht": 3,
+        "up": false,
+        "o": {
+          "Phase": "Round of 16",
+          "HomeCountry": "INT",
+          "AwayCountry": "GER",
+          "PublishedRound": "Round of 16",
+          "CsvSeason": 2022,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2022-23/cl.txt",
+              "sha256": "bf9cd05939b055f12ee9b095bec1c20a0922277bef8940172218548de2e7b93a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 3,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 109,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1678752000000,
+        "lg": "Champions League",
+        "H": "FC Porto (POR)",
+        "A": "Inter",
+        "h": 0,
+        "a": 0,
+        "ht": null,
+        "up": false,
+        "o": {
+          "Phase": "Round of 16",
+          "HomeCountry": "INT",
+          "AwayCountry": "ITA",
+          "PublishedRound": "Round of 16",
+          "CsvSeason": 2022,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2022-23/cl.txt",
+              "sha256": "bf9cd05939b055f12ee9b095bec1c20a0922277bef8940172218548de2e7b93a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 110,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1678838400000,
+        "lg": "Champions League",
+        "H": "Real Madrid (ESP)",
+        "A": "Liverpool FC",
+        "h": 1,
+        "a": 0,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "Phase": "Round of 16",
+          "HomeCountry": "INT",
+          "AwayCountry": "ENG",
+          "PublishedRound": "Round of 16",
+          "CsvSeason": 2022,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2022-23/cl.txt",
+              "sha256": "bf9cd05939b055f12ee9b095bec1c20a0922277bef8940172218548de2e7b93a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 111,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1678838400000,
+        "lg": "Champions League",
+        "H": "SSC Napoli (ITA)",
+        "A": "Eintracht Frankfurt",
+        "h": 3,
+        "a": 0,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "Round of 16",
+          "HomeCountry": "INT",
+          "AwayCountry": "GER",
+          "PublishedRound": "Round of 16",
+          "CsvSeason": 2022,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2022-23/cl.txt",
+              "sha256": "bf9cd05939b055f12ee9b095bec1c20a0922277bef8940172218548de2e7b93a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 112,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1681171200000,
+        "lg": "Champions League",
+        "H": "SL Benfica (POR)",
+        "A": "Inter",
+        "h": 0,
+        "a": 2,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "Phase": "Quarterfinals",
+          "HomeCountry": "INT",
+          "AwayCountry": "ITA",
+          "PublishedRound": "Quarterfinals",
+          "CsvSeason": 2022,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2022-23/cl.txt",
+              "sha256": "bf9cd05939b055f12ee9b095bec1c20a0922277bef8940172218548de2e7b93a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 113,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1681171200000,
+        "lg": "Champions League",
+        "H": "Manchester City (ENG)",
+        "A": "Bayern München",
+        "h": 3,
+        "a": 0,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "Quarterfinals",
+          "HomeCountry": "INT",
+          "AwayCountry": "GER",
+          "PublishedRound": "Quarterfinals",
+          "CsvSeason": 2022,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2022-23/cl.txt",
+              "sha256": "bf9cd05939b055f12ee9b095bec1c20a0922277bef8940172218548de2e7b93a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 114,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1681257600000,
+        "lg": "Champions League",
+        "H": "Real Madrid (ESP)",
+        "A": "Chelsea FC",
+        "h": 2,
+        "a": 0,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "Quarterfinals",
+          "HomeCountry": "INT",
+          "AwayCountry": "ENG",
+          "PublishedRound": "Quarterfinals",
+          "CsvSeason": 2022,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2022-23/cl.txt",
+              "sha256": "bf9cd05939b055f12ee9b095bec1c20a0922277bef8940172218548de2e7b93a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 115,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1681257600000,
+        "lg": "Champions League",
+        "H": "AC Milan (ITA)",
+        "A": "SSC Napoli",
+        "h": 1,
+        "a": 0,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "Quarterfinals",
+          "HomeCountry": "INT",
+          "AwayCountry": "ITA",
+          "PublishedRound": "Quarterfinals",
+          "CsvSeason": 2022,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2022-23/cl.txt",
+              "sha256": "bf9cd05939b055f12ee9b095bec1c20a0922277bef8940172218548de2e7b93a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 116,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1681776000000,
+        "lg": "Champions League",
+        "H": "Chelsea FC (ENG)",
+        "A": "Real Madrid",
+        "h": 0,
+        "a": 2,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "Phase": "Quarterfinals",
+          "HomeCountry": "INT",
+          "AwayCountry": "ESP",
+          "PublishedRound": "Quarterfinals",
+          "CsvSeason": 2022,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2022-23/cl.txt",
+              "sha256": "bf9cd05939b055f12ee9b095bec1c20a0922277bef8940172218548de2e7b93a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 117,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1681776000000,
+        "lg": "Champions League",
+        "H": "SSC Napoli (ITA)",
+        "A": "AC Milan",
+        "h": 1,
+        "a": 1,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "Quarterfinals",
+          "HomeCountry": "INT",
+          "AwayCountry": "ITA",
+          "PublishedRound": "Quarterfinals",
+          "CsvSeason": 2022,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2022-23/cl.txt",
+              "sha256": "bf9cd05939b055f12ee9b095bec1c20a0922277bef8940172218548de2e7b93a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 118,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1681862400000,
+        "lg": "Champions League",
+        "H": "Inter (ITA)",
+        "A": "SL Benfica",
+        "h": 3,
+        "a": 3,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "Phase": "Quarterfinals",
+          "HomeCountry": "INT",
+          "AwayCountry": "PRT",
+          "PublishedRound": "Quarterfinals",
+          "CsvSeason": 2022,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2022-23/cl.txt",
+              "sha256": "bf9cd05939b055f12ee9b095bec1c20a0922277bef8940172218548de2e7b93a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 119,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1681862400000,
+        "lg": "Champions League",
+        "H": "Bayern München (GER)",
+        "A": "Manchester City",
+        "h": 1,
+        "a": 1,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "Phase": "Quarterfinals",
+          "HomeCountry": "INT",
+          "AwayCountry": "ENG",
+          "PublishedRound": "Quarterfinals",
+          "CsvSeason": 2022,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2022-23/cl.txt",
+              "sha256": "bf9cd05939b055f12ee9b095bec1c20a0922277bef8940172218548de2e7b93a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 120,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1683590400000,
+        "lg": "Champions League",
+        "H": "Real Madrid (ESP)",
+        "A": "Manchester City",
+        "h": 1,
+        "a": 1,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "Semifinals",
+          "HomeCountry": "INT",
+          "AwayCountry": "ENG",
+          "PublishedRound": "Semifinals",
+          "CsvSeason": 2022,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2022-23/cl.txt",
+              "sha256": "bf9cd05939b055f12ee9b095bec1c20a0922277bef8940172218548de2e7b93a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 121,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1683676800000,
+        "lg": "Champions League",
+        "H": "AC Milan (ITA)",
+        "A": "Inter",
+        "h": 0,
+        "a": 2,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "Phase": "Semifinals",
+          "HomeCountry": "INT",
+          "AwayCountry": "ITA",
+          "PublishedRound": "Semifinals",
+          "CsvSeason": 2022,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2022-23/cl.txt",
+              "sha256": "bf9cd05939b055f12ee9b095bec1c20a0922277bef8940172218548de2e7b93a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 2,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 122,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1684195200000,
+        "lg": "Champions League",
+        "H": "Inter (ITA)",
+        "A": "AC Milan",
+        "h": 1,
+        "a": 0,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "Phase": "Semifinals",
+          "HomeCountry": "INT",
+          "AwayCountry": "ITA",
+          "PublishedRound": "Semifinals",
+          "CsvSeason": 2022,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2022-23/cl.txt",
+              "sha256": "bf9cd05939b055f12ee9b095bec1c20a0922277bef8940172218548de2e7b93a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 123,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1684281600000,
+        "lg": "Champions League",
+        "H": "Manchester City (ENG)",
+        "A": "Real Madrid",
+        "h": 4,
+        "a": 0,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "Phase": "Semifinals",
+          "HomeCountry": "INT",
+          "AwayCountry": "ESP",
+          "PublishedRound": "Semifinals",
+          "CsvSeason": 2022,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2022-23/cl.txt",
+              "sha256": "bf9cd05939b055f12ee9b095bec1c20a0922277bef8940172218548de2e7b93a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 2,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 124,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1686355200000,
+        "lg": "Champions League",
+        "H": "Manchester City (ENG)",
+        "A": "Inter",
+        "h": 1,
+        "a": 0,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "Phase": "Final",
+          "HomeCountry": "INT",
+          "AwayCountry": "ITA",
+          "PublishedRound": "Final",
+          "CsvSeason": 2022,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2022-23/cl.txt",
+              "sha256": "bf9cd05939b055f12ee9b095bec1c20a0922277bef8940172218548de2e7b93a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": null
+      }
+    }
+  ]
+}

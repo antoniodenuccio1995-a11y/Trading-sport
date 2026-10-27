@@ -1,0 +1,1518 @@
+{
+  "originalPacket": "histories/stab003/SP2_2023.json",
+  "originalSHA256": "5af491ab6cf22dcd7c69e2d38129a27962cbd836d1fa69c20d69644a97929d0e",
+  "review": [
+    {
+      "originalIndex": 8,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1691884800000,
+        "lg": "Segunda División",
+        "H": "Leganes",
+        "A": "Andorra",
+        "h": 0,
+        "a": 1,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2023,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2324/SP2.csv",
+          "HistSourceSHA256": "e09c2d18bd41c1f735aba730d31d0db778c0b7086973ae979a52dd814f1d345a",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2324/SP2.csv",
+              "sha256": "e09c2d18bd41c1f735aba730d31d0db778c0b7086973ae979a52dd814f1d345a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 1,
+        "shots": [
+          12,
+          13,
+          4,
+          3
+        ]
+      }
+    },
+    {
+      "originalIndex": 11,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1692316800000,
+        "lg": "Segunda División",
+        "H": "Andorra",
+        "A": "Cartagena",
+        "h": 3,
+        "a": 2,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2023,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2324/SP2.csv",
+          "HistSourceSHA256": "e09c2d18bd41c1f735aba730d31d0db778c0b7086973ae979a52dd814f1d345a",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2324/SP2.csv",
+              "sha256": "e09c2d18bd41c1f735aba730d31d0db778c0b7086973ae979a52dd814f1d345a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          17,
+          5,
+          5,
+          3
+        ]
+      }
+    },
+    {
+      "originalIndex": 28,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1693094400000,
+        "lg": "Segunda División",
+        "H": "Amorebieta",
+        "A": "Andorra",
+        "h": 3,
+        "a": 0,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2023,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2324/SP2.csv",
+          "HistSourceSHA256": "e09c2d18bd41c1f735aba730d31d0db778c0b7086973ae979a52dd814f1d345a",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2324/SP2.csv",
+              "sha256": "e09c2d18bd41c1f735aba730d31d0db778c0b7086973ae979a52dd814f1d345a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": [
+          9,
+          15,
+          4,
+          5
+        ]
+      }
+    },
+    {
+      "originalIndex": 39,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1693699200000,
+        "lg": "Segunda División",
+        "H": "Andorra",
+        "A": "Tenerife",
+        "h": 0,
+        "a": 1,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2023,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2324/SP2.csv",
+          "HistSourceSHA256": "e09c2d18bd41c1f735aba730d31d0db778c0b7086973ae979a52dd814f1d345a",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2324/SP2.csv",
+              "sha256": "e09c2d18bd41c1f735aba730d31d0db778c0b7086973ae979a52dd814f1d345a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          16,
+          10,
+          2,
+          4
+        ]
+      }
+    },
+    {
+      "originalIndex": 52,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1694304000000,
+        "lg": "Segunda División",
+        "H": "Mirandes",
+        "A": "Andorra",
+        "h": 4,
+        "a": 3,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "CsvSeason": 2023,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2324/SP2.csv",
+          "HistSourceSHA256": "e09c2d18bd41c1f735aba730d31d0db778c0b7086973ae979a52dd814f1d345a",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2324/SP2.csv",
+              "sha256": "e09c2d18bd41c1f735aba730d31d0db778c0b7086973ae979a52dd814f1d345a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 2,
+        "hta": 0,
+        "shots": [
+          17,
+          25,
+          6,
+          7
+        ]
+      }
+    },
+    {
+      "originalIndex": 65,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1694995200000,
+        "lg": "Segunda División",
+        "H": "Andorra",
+        "A": "Oviedo",
+        "h": 1,
+        "a": 0,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2023,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2324/SP2.csv",
+          "HistSourceSHA256": "e09c2d18bd41c1f735aba730d31d0db778c0b7086973ae979a52dd814f1d345a",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2324/SP2.csv",
+              "sha256": "e09c2d18bd41c1f735aba730d31d0db778c0b7086973ae979a52dd814f1d345a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          5,
+          6,
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "originalIndex": 67,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1695427200000,
+        "lg": "Segunda División",
+        "H": "Andorra",
+        "A": "Sp Gijon",
+        "h": 0,
+        "a": 0,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2023,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2324/SP2.csv",
+          "HistSourceSHA256": "e09c2d18bd41c1f735aba730d31d0db778c0b7086973ae979a52dd814f1d345a",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2324/SP2.csv",
+              "sha256": "e09c2d18bd41c1f735aba730d31d0db778c0b7086973ae979a52dd814f1d345a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          13,
+          6,
+          5,
+          2
+        ]
+      }
+    },
+    {
+      "originalIndex": 80,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1696032000000,
+        "lg": "Segunda División",
+        "H": "Albacete",
+        "A": "Andorra",
+        "h": 3,
+        "a": 1,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "CsvSeason": 2023,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2324/SP2.csv",
+          "HistSourceSHA256": "e09c2d18bd41c1f735aba730d31d0db778c0b7086973ae979a52dd814f1d345a",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2324/SP2.csv",
+              "sha256": "e09c2d18bd41c1f735aba730d31d0db778c0b7086973ae979a52dd814f1d345a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 2,
+        "hta": 0,
+        "shots": [
+          12,
+          11,
+          7,
+          2
+        ]
+      }
+    },
+    {
+      "originalIndex": 95,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1696464000000,
+        "lg": "Segunda División",
+        "H": "Andorra",
+        "A": "Zaragoza",
+        "h": 0,
+        "a": 1,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2023,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2324/SP2.csv",
+          "HistSourceSHA256": "e09c2d18bd41c1f735aba730d31d0db778c0b7086973ae979a52dd814f1d345a",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2324/SP2.csv",
+              "sha256": "e09c2d18bd41c1f735aba730d31d0db778c0b7086973ae979a52dd814f1d345a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 1,
+        "shots": [
+          5,
+          5,
+          0,
+          3
+        ]
+      }
+    },
+    {
+      "originalIndex": 108,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1696809600000,
+        "lg": "Segunda División",
+        "H": "Elche",
+        "A": "Andorra",
+        "h": 2,
+        "a": 1,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2023,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2324/SP2.csv",
+          "HistSourceSHA256": "e09c2d18bd41c1f735aba730d31d0db778c0b7086973ae979a52dd814f1d345a",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2324/SP2.csv",
+              "sha256": "e09c2d18bd41c1f735aba730d31d0db778c0b7086973ae979a52dd814f1d345a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": [
+          24,
+          4,
+          9,
+          1
+        ]
+      }
+    },
+    {
+      "originalIndex": 116,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1697328000000,
+        "lg": "Segunda División",
+        "H": "Andorra",
+        "A": "Alcorcon",
+        "h": 2,
+        "a": 0,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2023,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2324/SP2.csv",
+          "HistSourceSHA256": "e09c2d18bd41c1f735aba730d31d0db778c0b7086973ae979a52dd814f1d345a",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2324/SP2.csv",
+              "sha256": "e09c2d18bd41c1f735aba730d31d0db778c0b7086973ae979a52dd814f1d345a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          12,
+          12,
+          3,
+          3
+        ]
+      }
+    },
+    {
+      "originalIndex": 130,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1697932800000,
+        "lg": "Segunda División",
+        "H": "Valladolid",
+        "A": "Andorra",
+        "h": 2,
+        "a": 0,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "CsvSeason": 2023,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2324/SP2.csv",
+          "HistSourceSHA256": "e09c2d18bd41c1f735aba730d31d0db778c0b7086973ae979a52dd814f1d345a",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2324/SP2.csv",
+              "sha256": "e09c2d18bd41c1f735aba730d31d0db778c0b7086973ae979a52dd814f1d345a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 2,
+        "hta": 0,
+        "shots": [
+          10,
+          16,
+          4,
+          4
+        ]
+      }
+    },
+    {
+      "originalIndex": 134,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1698451200000,
+        "lg": "Segunda División",
+        "H": "Andorra",
+        "A": "Levante",
+        "h": 2,
+        "a": 0,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2023,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2324/SP2.csv",
+          "HistSourceSHA256": "e09c2d18bd41c1f735aba730d31d0db778c0b7086973ae979a52dd814f1d345a",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2324/SP2.csv",
+              "sha256": "e09c2d18bd41c1f735aba730d31d0db778c0b7086973ae979a52dd814f1d345a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          21,
+          7,
+          10,
+          1
+        ]
+      }
+    },
+    {
+      "originalIndex": 148,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1699142400000,
+        "lg": "Segunda División",
+        "H": "Ferrol",
+        "A": "Andorra",
+        "h": 1,
+        "a": 0,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2023,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2324/SP2.csv",
+          "HistSourceSHA256": "e09c2d18bd41c1f735aba730d31d0db778c0b7086973ae979a52dd814f1d345a",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2324/SP2.csv",
+              "sha256": "e09c2d18bd41c1f735aba730d31d0db778c0b7086973ae979a52dd814f1d345a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": [
+          11,
+          12,
+          4,
+          5
+        ]
+      }
+    },
+    {
+      "originalIndex": 160,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1699747200000,
+        "lg": "Segunda División",
+        "H": "Andorra",
+        "A": "Eldense",
+        "h": 1,
+        "a": 3,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "CsvSeason": 2023,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2324/SP2.csv",
+          "HistSourceSHA256": "e09c2d18bd41c1f735aba730d31d0db778c0b7086973ae979a52dd814f1d345a",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2324/SP2.csv",
+              "sha256": "e09c2d18bd41c1f735aba730d31d0db778c0b7086973ae979a52dd814f1d345a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 1,
+        "shots": [
+          23,
+          9,
+          6,
+          5
+        ]
+      }
+    },
+    {
+      "originalIndex": 174,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1700352000000,
+        "lg": "Segunda División",
+        "H": "Villarreal B",
+        "A": "Andorra",
+        "h": 0,
+        "a": 0,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2023,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2324/SP2.csv",
+          "HistSourceSHA256": "e09c2d18bd41c1f735aba730d31d0db778c0b7086973ae979a52dd814f1d345a",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2324/SP2.csv",
+              "sha256": "e09c2d18bd41c1f735aba730d31d0db778c0b7086973ae979a52dd814f1d345a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          12,
+          15,
+          2,
+          5
+        ]
+      }
+    },
+    {
+      "originalIndex": 177,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1700870400000,
+        "lg": "Segunda División",
+        "H": "Burgos",
+        "A": "Andorra",
+        "h": 0,
+        "a": 0,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2023,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2324/SP2.csv",
+          "HistSourceSHA256": "e09c2d18bd41c1f735aba730d31d0db778c0b7086973ae979a52dd814f1d345a",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2324/SP2.csv",
+              "sha256": "e09c2d18bd41c1f735aba730d31d0db778c0b7086973ae979a52dd814f1d345a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          11,
+          7,
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "originalIndex": 192,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1701561600000,
+        "lg": "Segunda División",
+        "H": "Andorra",
+        "A": "Huesca",
+        "h": 1,
+        "a": 0,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2023,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2324/SP2.csv",
+          "HistSourceSHA256": "e09c2d18bd41c1f735aba730d31d0db778c0b7086973ae979a52dd814f1d345a",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2324/SP2.csv",
+              "sha256": "e09c2d18bd41c1f735aba730d31d0db778c0b7086973ae979a52dd814f1d345a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          8,
+          8,
+          4,
+          1
+        ]
+      }
+    },
+    {
+      "originalIndex": 205,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1702166400000,
+        "lg": "Segunda División",
+        "H": "Eibar",
+        "A": "Andorra",
+        "h": 2,
+        "a": 2,
+        "ht": 3,
+        "up": false,
+        "o": {
+          "CsvSeason": 2023,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2324/SP2.csv",
+          "HistSourceSHA256": "e09c2d18bd41c1f735aba730d31d0db778c0b7086973ae979a52dd814f1d345a",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2324/SP2.csv",
+              "sha256": "e09c2d18bd41c1f735aba730d31d0db778c0b7086973ae979a52dd814f1d345a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 2,
+        "hta": 1,
+        "shots": [
+          15,
+          16,
+          4,
+          5
+        ]
+      }
+    },
+    {
+      "originalIndex": 211,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1702684800000,
+        "lg": "Segunda División",
+        "H": "Andorra",
+        "A": "Espanol",
+        "h": 1,
+        "a": 1,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2023,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2324/SP2.csv",
+          "HistSourceSHA256": "e09c2d18bd41c1f735aba730d31d0db778c0b7086973ae979a52dd814f1d345a",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2324/SP2.csv",
+              "sha256": "e09c2d18bd41c1f735aba730d31d0db778c0b7086973ae979a52dd814f1d345a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          14,
+          6,
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "originalIndex": 221,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1702944000000,
+        "lg": "Segunda División",
+        "H": "Santander",
+        "A": "Andorra",
+        "h": 2,
+        "a": 0,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2023,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2324/SP2.csv",
+          "HistSourceSHA256": "e09c2d18bd41c1f735aba730d31d0db778c0b7086973ae979a52dd814f1d345a",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2324/SP2.csv",
+              "sha256": "e09c2d18bd41c1f735aba730d31d0db778c0b7086973ae979a52dd814f1d345a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": [
+          17,
+          9,
+          12,
+          3
+        ]
+      }
+    },
+    {
+      "originalIndex": 238,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1705190400000,
+        "lg": "Segunda División",
+        "H": "Andorra",
+        "A": "Leganes",
+        "h": 2,
+        "a": 3,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2023,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2324/SP2.csv",
+          "HistSourceSHA256": "e09c2d18bd41c1f735aba730d31d0db778c0b7086973ae979a52dd814f1d345a",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2324/SP2.csv",
+              "sha256": "e09c2d18bd41c1f735aba730d31d0db778c0b7086973ae979a52dd814f1d345a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          18,
+          6,
+          6,
+          4
+        ]
+      }
+    },
+    {
+      "originalIndex": 244,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1705708800000,
+        "lg": "Segunda División",
+        "H": "Zaragoza",
+        "A": "Andorra",
+        "h": 2,
+        "a": 0,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2023,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2324/SP2.csv",
+          "HistSourceSHA256": "e09c2d18bd41c1f735aba730d31d0db778c0b7086973ae979a52dd814f1d345a",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2324/SP2.csv",
+              "sha256": "e09c2d18bd41c1f735aba730d31d0db778c0b7086973ae979a52dd814f1d345a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": [
+          11,
+          8,
+          6,
+          3
+        ]
+      }
+    },
+    {
+      "originalIndex": 259,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1706400000000,
+        "lg": "Segunda División",
+        "H": "Andorra",
+        "A": "Elche",
+        "h": 0,
+        "a": 1,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2023,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2324/SP2.csv",
+          "HistSourceSHA256": "e09c2d18bd41c1f735aba730d31d0db778c0b7086973ae979a52dd814f1d345a",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2324/SP2.csv",
+              "sha256": "e09c2d18bd41c1f735aba730d31d0db778c0b7086973ae979a52dd814f1d345a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          10,
+          14,
+          5,
+          6
+        ]
+      }
+    },
+    {
+      "originalIndex": 269,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1706918400000,
+        "lg": "Segunda División",
+        "H": "Tenerife",
+        "A": "Andorra",
+        "h": 0,
+        "a": 0,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2023,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2324/SP2.csv",
+          "HistSourceSHA256": "e09c2d18bd41c1f735aba730d31d0db778c0b7086973ae979a52dd814f1d345a",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2324/SP2.csv",
+              "sha256": "e09c2d18bd41c1f735aba730d31d0db778c0b7086973ae979a52dd814f1d345a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          12,
+          9,
+          1,
+          3
+        ]
+      }
+    },
+    {
+      "originalIndex": 281,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1707609600000,
+        "lg": "Segunda División",
+        "H": "Alcorcon",
+        "A": "Andorra",
+        "h": 1,
+        "a": 0,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2023,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2324/SP2.csv",
+          "HistSourceSHA256": "e09c2d18bd41c1f735aba730d31d0db778c0b7086973ae979a52dd814f1d345a",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2324/SP2.csv",
+              "sha256": "e09c2d18bd41c1f735aba730d31d0db778c0b7086973ae979a52dd814f1d345a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": [
+          7,
+          13,
+          1,
+          3
+        ]
+      }
+    },
+    {
+      "originalIndex": 287,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1708128000000,
+        "lg": "Segunda División",
+        "H": "Andorra",
+        "A": "Villarreal B",
+        "h": 1,
+        "a": 1,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2023,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2324/SP2.csv",
+          "HistSourceSHA256": "e09c2d18bd41c1f735aba730d31d0db778c0b7086973ae979a52dd814f1d345a",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2324/SP2.csv",
+              "sha256": "e09c2d18bd41c1f735aba730d31d0db778c0b7086973ae979a52dd814f1d345a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          10,
+          5,
+          4,
+          2
+        ]
+      }
+    },
+    {
+      "originalIndex": 313,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1709424000000,
+        "lg": "Segunda División",
+        "H": "Andorra",
+        "A": "Valladolid",
+        "h": 2,
+        "a": 1,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2023,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2324/SP2.csv",
+          "HistSourceSHA256": "e09c2d18bd41c1f735aba730d31d0db778c0b7086973ae979a52dd814f1d345a",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2324/SP2.csv",
+              "sha256": "e09c2d18bd41c1f735aba730d31d0db778c0b7086973ae979a52dd814f1d345a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 1,
+        "shots": [
+          15,
+          10,
+          6,
+          2
+        ]
+      }
+    },
+    {
+      "originalIndex": 318,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1709856000000,
+        "lg": "Segunda División",
+        "H": "Huesca",
+        "A": "Andorra",
+        "h": 2,
+        "a": 0,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2023,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2324/SP2.csv",
+          "HistSourceSHA256": "e09c2d18bd41c1f735aba730d31d0db778c0b7086973ae979a52dd814f1d345a",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2324/SP2.csv",
+              "sha256": "e09c2d18bd41c1f735aba730d31d0db778c0b7086973ae979a52dd814f1d345a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": [
+          18,
+          8,
+          9,
+          1
+        ]
+      }
+    },
+    {
+      "originalIndex": 329,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1710288000000,
+        "lg": "Segunda División",
+        "H": "Levante",
+        "A": "Andorra",
+        "h": 0,
+        "a": 0,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2023,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2324/SP2.csv",
+          "HistSourceSHA256": "e09c2d18bd41c1f735aba730d31d0db778c0b7086973ae979a52dd814f1d345a",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2324/SP2.csv",
+              "sha256": "e09c2d18bd41c1f735aba730d31d0db778c0b7086973ae979a52dd814f1d345a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          6,
+          11,
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "originalIndex": 340,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1710720000000,
+        "lg": "Segunda División",
+        "H": "Andorra",
+        "A": "Amorebieta",
+        "h": 0,
+        "a": 1,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2023,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2324/SP2.csv",
+          "HistSourceSHA256": "e09c2d18bd41c1f735aba730d31d0db778c0b7086973ae979a52dd814f1d345a",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2324/SP2.csv",
+              "sha256": "e09c2d18bd41c1f735aba730d31d0db778c0b7086973ae979a52dd814f1d345a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          21,
+          6,
+          5,
+          3
+        ]
+      }
+    },
+    {
+      "originalIndex": 342,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1711152000000,
+        "lg": "Segunda División",
+        "H": "Cartagena",
+        "A": "Andorra",
+        "h": 1,
+        "a": 0,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2023,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2324/SP2.csv",
+          "HistSourceSHA256": "e09c2d18bd41c1f735aba730d31d0db778c0b7086973ae979a52dd814f1d345a",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2324/SP2.csv",
+              "sha256": "e09c2d18bd41c1f735aba730d31d0db778c0b7086973ae979a52dd814f1d345a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": [
+          6,
+          20,
+          3,
+          2
+        ]
+      }
+    },
+    {
+      "originalIndex": 354,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1711756800000,
+        "lg": "Segunda División",
+        "H": "Andorra",
+        "A": "Mirandes",
+        "h": 1,
+        "a": 0,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2023,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2324/SP2.csv",
+          "HistSourceSHA256": "e09c2d18bd41c1f735aba730d31d0db778c0b7086973ae979a52dd814f1d345a",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2324/SP2.csv",
+              "sha256": "e09c2d18bd41c1f735aba730d31d0db778c0b7086973ae979a52dd814f1d345a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          9,
+          8,
+          2,
+          5
+        ]
+      }
+    },
+    {
+      "originalIndex": 365,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1712361600000,
+        "lg": "Segunda División",
+        "H": "Eldense",
+        "A": "Andorra",
+        "h": 0,
+        "a": 2,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2023,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2324/SP2.csv",
+          "HistSourceSHA256": "e09c2d18bd41c1f735aba730d31d0db778c0b7086973ae979a52dd814f1d345a",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2324/SP2.csv",
+              "sha256": "e09c2d18bd41c1f735aba730d31d0db778c0b7086973ae979a52dd814f1d345a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 1,
+        "shots": [
+          19,
+          11,
+          4,
+          3
+        ]
+      }
+    },
+    {
+      "originalIndex": 380,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1713052800000,
+        "lg": "Segunda División",
+        "H": "Andorra",
+        "A": "Eibar",
+        "h": 0,
+        "a": 2,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2023,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2324/SP2.csv",
+          "HistSourceSHA256": "e09c2d18bd41c1f735aba730d31d0db778c0b7086973ae979a52dd814f1d345a",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2324/SP2.csv",
+              "sha256": "e09c2d18bd41c1f735aba730d31d0db778c0b7086973ae979a52dd814f1d345a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          10,
+          9,
+          1,
+          4
+        ]
+      }
+    },
+    {
+      "originalIndex": 391,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1713657600000,
+        "lg": "Segunda División",
+        "H": "Espanol",
+        "A": "Andorra",
+        "h": 1,
+        "a": 1,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2023,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2324/SP2.csv",
+          "HistSourceSHA256": "e09c2d18bd41c1f735aba730d31d0db778c0b7086973ae979a52dd814f1d345a",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2324/SP2.csv",
+              "sha256": "e09c2d18bd41c1f735aba730d31d0db778c0b7086973ae979a52dd814f1d345a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 1,
+        "shots": [
+          12,
+          12,
+          4,
+          6
+        ]
+      }
+    },
+    {
+      "originalIndex": 396,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1714089600000,
+        "lg": "Segunda División",
+        "H": "Andorra",
+        "A": "Santander",
+        "h": 1,
+        "a": 1,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2023,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2324/SP2.csv",
+          "HistSourceSHA256": "e09c2d18bd41c1f735aba730d31d0db778c0b7086973ae979a52dd814f1d345a",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2324/SP2.csv",
+              "sha256": "e09c2d18bd41c1f735aba730d31d0db778c0b7086973ae979a52dd814f1d345a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": [
+          22,
+          17,
+          8,
+          4
+        ]
+      }
+    },
+    {
+      "originalIndex": 413,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1714867200000,
+        "lg": "Segunda División",
+        "H": "Andorra",
+        "A": "Albacete",
+        "h": 0,
+        "a": 1,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2023,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2324/SP2.csv",
+          "HistSourceSHA256": "e09c2d18bd41c1f735aba730d31d0db778c0b7086973ae979a52dd814f1d345a",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2324/SP2.csv",
+              "sha256": "e09c2d18bd41c1f735aba730d31d0db778c0b7086973ae979a52dd814f1d345a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          14,
+          4,
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "originalIndex": 421,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1715385600000,
+        "lg": "Segunda División",
+        "H": "Sp Gijon",
+        "A": "Andorra",
+        "h": 5,
+        "a": 2,
+        "ht": 3,
+        "up": false,
+        "o": {
+          "CsvSeason": 2023,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2324/SP2.csv",
+          "HistSourceSHA256": "e09c2d18bd41c1f735aba730d31d0db778c0b7086973ae979a52dd814f1d345a",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2324/SP2.csv",
+              "sha256": "e09c2d18bd41c1f735aba730d31d0db778c0b7086973ae979a52dd814f1d345a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 2,
+        "hta": 1,
+        "shots": [
+          14,
+          16,
+          9,
+          4
+        ]
+      }
+    },
+    {
+      "originalIndex": 430,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1715990400000,
+        "lg": "Segunda División",
+        "H": "Andorra",
+        "A": "Burgos",
+        "h": 1,
+        "a": 0,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2023,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2324/SP2.csv",
+          "HistSourceSHA256": "e09c2d18bd41c1f735aba730d31d0db778c0b7086973ae979a52dd814f1d345a",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2324/SP2.csv",
+              "sha256": "e09c2d18bd41c1f735aba730d31d0db778c0b7086973ae979a52dd814f1d345a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          19,
+          12,
+          4,
+          3
+        ]
+      }
+    },
+    {
+      "originalIndex": 447,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1716681600000,
+        "lg": "Segunda División",
+        "H": "Oviedo",
+        "A": "Andorra",
+        "h": 3,
+        "a": 0,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2023,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2324/SP2.csv",
+          "HistSourceSHA256": "e09c2d18bd41c1f735aba730d31d0db778c0b7086973ae979a52dd814f1d345a",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2324/SP2.csv",
+              "sha256": "e09c2d18bd41c1f735aba730d31d0db778c0b7086973ae979a52dd814f1d345a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          12,
+          14,
+          4,
+          1
+        ]
+      }
+    },
+    {
+      "originalIndex": 452,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1717286400000,
+        "lg": "Segunda División",
+        "H": "Andorra",
+        "A": "Ferrol",
+        "h": 1,
+        "a": 0,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2023,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2324/SP2.csv",
+          "HistSourceSHA256": "e09c2d18bd41c1f735aba730d31d0db778c0b7086973ae979a52dd814f1d345a",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2324/SP2.csv",
+              "sha256": "e09c2d18bd41c1f735aba730d31d0db778c0b7086973ae979a52dd814f1d345a"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          10,
+          10,
+          3,
+          2
+        ]
+      }
+    }
+  ]
+}

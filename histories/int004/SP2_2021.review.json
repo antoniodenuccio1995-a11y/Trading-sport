@@ -1,0 +1,1518 @@
+{
+  "originalPacket": "histories/stab003/SP2_2021.json",
+  "originalSHA256": "7470be21750fc0f0bf4ae96e1c3bb900196f6ac7a32a8e1add2fc2073377d1fb",
+  "review": [
+    {
+      "originalIndex": 2,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1628899200000,
+        "lg": "Segunda División",
+        "H": "Sociedad B",
+        "A": "Leganes",
+        "h": 1,
+        "a": 0,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2021,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2122/SP2.csv",
+          "HistSourceSHA256": "6f586b7d80dee6785ca248597cf2962145fdd72113588b807159b03baa5df831",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2122/SP2.csv",
+              "sha256": "6f586b7d80dee6785ca248597cf2962145fdd72113588b807159b03baa5df831"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          9,
+          10,
+          4,
+          3
+        ]
+      }
+    },
+    {
+      "originalIndex": 13,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1629504000000,
+        "lg": "Segunda División",
+        "H": "Lugo",
+        "A": "Sociedad B",
+        "h": 0,
+        "a": 0,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2021,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2122/SP2.csv",
+          "HistSourceSHA256": "6f586b7d80dee6785ca248597cf2962145fdd72113588b807159b03baa5df831",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2122/SP2.csv",
+              "sha256": "6f586b7d80dee6785ca248597cf2962145fdd72113588b807159b03baa5df831"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          9,
+          12,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "originalIndex": 30,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1630195200000,
+        "lg": "Segunda División",
+        "H": "Sociedad B",
+        "A": "Fuenlabrada",
+        "h": 0,
+        "a": 0,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2021,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2122/SP2.csv",
+          "HistSourceSHA256": "6f586b7d80dee6785ca248597cf2962145fdd72113588b807159b03baa5df831",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2122/SP2.csv",
+              "sha256": "6f586b7d80dee6785ca248597cf2962145fdd72113588b807159b03baa5df831"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          14,
+          5,
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "originalIndex": 35,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1630713600000,
+        "lg": "Segunda División",
+        "H": "Cartagena",
+        "A": "Sociedad B",
+        "h": 1,
+        "a": 0,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2021,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2122/SP2.csv",
+          "HistSourceSHA256": "6f586b7d80dee6785ca248597cf2962145fdd72113588b807159b03baa5df831",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2122/SP2.csv",
+              "sha256": "6f586b7d80dee6785ca248597cf2962145fdd72113588b807159b03baa5df831"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          11,
+          11,
+          4,
+          6
+        ]
+      }
+    },
+    {
+      "originalIndex": 46,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1631318400000,
+        "lg": "Segunda División",
+        "H": "Sociedad B",
+        "A": "Eibar",
+        "h": 2,
+        "a": 3,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2021,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2122/SP2.csv",
+          "HistSourceSHA256": "6f586b7d80dee6785ca248597cf2962145fdd72113588b807159b03baa5df831",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2122/SP2.csv",
+              "sha256": "6f586b7d80dee6785ca248597cf2962145fdd72113588b807159b03baa5df831"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 1,
+        "shots": [
+          10,
+          11,
+          7,
+          4
+        ]
+      }
+    },
+    {
+      "originalIndex": 58,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1631923200000,
+        "lg": "Segunda División",
+        "H": "Zaragoza",
+        "A": "Sociedad B",
+        "h": 1,
+        "a": 1,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "CsvSeason": 2021,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2122/SP2.csv",
+          "HistSourceSHA256": "6f586b7d80dee6785ca248597cf2962145fdd72113588b807159b03baa5df831",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2122/SP2.csv",
+              "sha256": "6f586b7d80dee6785ca248597cf2962145fdd72113588b807159b03baa5df831"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 1,
+        "shots": [
+          19,
+          3,
+          12,
+          1
+        ]
+      }
+    },
+    {
+      "originalIndex": 66,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1632441600000,
+        "lg": "Segunda División",
+        "H": "Sociedad B",
+        "A": "Huesca",
+        "h": 0,
+        "a": 2,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2021,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2122/SP2.csv",
+          "HistSourceSHA256": "6f586b7d80dee6785ca248597cf2962145fdd72113588b807159b03baa5df831",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2122/SP2.csv",
+              "sha256": "6f586b7d80dee6785ca248597cf2962145fdd72113588b807159b03baa5df831"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 1,
+        "shots": [
+          17,
+          12,
+          5,
+          4
+        ]
+      }
+    },
+    {
+      "originalIndex": 81,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1633132800000,
+        "lg": "Segunda División",
+        "H": "Alcorcon",
+        "A": "Sociedad B",
+        "h": 1,
+        "a": 4,
+        "ht": 3,
+        "up": false,
+        "o": {
+          "CsvSeason": 2021,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2122/SP2.csv",
+          "HistSourceSHA256": "6f586b7d80dee6785ca248597cf2962145fdd72113588b807159b03baa5df831",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2122/SP2.csv",
+              "sha256": "6f586b7d80dee6785ca248597cf2962145fdd72113588b807159b03baa5df831"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 2,
+        "shots": [
+          15,
+          10,
+          6,
+          7
+        ]
+      }
+    },
+    {
+      "originalIndex": 93,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1633824000000,
+        "lg": "Segunda División",
+        "H": "Sociedad B",
+        "A": "Ponferradina",
+        "h": 1,
+        "a": 1,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2021,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2122/SP2.csv",
+          "HistSourceSHA256": "6f586b7d80dee6785ca248597cf2962145fdd72113588b807159b03baa5df831",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2122/SP2.csv",
+              "sha256": "6f586b7d80dee6785ca248597cf2962145fdd72113588b807159b03baa5df831"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          8,
+          9,
+          3,
+          3
+        ]
+      }
+    },
+    {
+      "originalIndex": 108,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1634428800000,
+        "lg": "Segunda División",
+        "H": "Sociedad B",
+        "A": "Oviedo",
+        "h": 1,
+        "a": 1,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2021,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2122/SP2.csv",
+          "HistSourceSHA256": "6f586b7d80dee6785ca248597cf2962145fdd72113588b807159b03baa5df831",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2122/SP2.csv",
+              "sha256": "6f586b7d80dee6785ca248597cf2962145fdd72113588b807159b03baa5df831"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          9,
+          9,
+          3,
+          4
+        ]
+      }
+    },
+    {
+      "originalIndex": 117,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1634774400000,
+        "lg": "Segunda División",
+        "H": "Almeria",
+        "A": "Sociedad B",
+        "h": 3,
+        "a": 1,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "CsvSeason": 2021,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2122/SP2.csv",
+          "HistSourceSHA256": "6f586b7d80dee6785ca248597cf2962145fdd72113588b807159b03baa5df831",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2122/SP2.csv",
+              "sha256": "6f586b7d80dee6785ca248597cf2962145fdd72113588b807159b03baa5df831"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 1,
+        "shots": [
+          14,
+          11,
+          5,
+          4
+        ]
+      }
+    },
+    {
+      "originalIndex": 126,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1635033600000,
+        "lg": "Segunda División",
+        "H": "Amorebieta",
+        "A": "Sociedad B",
+        "h": 1,
+        "a": 2,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2021,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2122/SP2.csv",
+          "HistSourceSHA256": "6f586b7d80dee6785ca248597cf2962145fdd72113588b807159b03baa5df831",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2122/SP2.csv",
+              "sha256": "6f586b7d80dee6785ca248597cf2962145fdd72113588b807159b03baa5df831"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 1,
+        "shots": [
+          12,
+          11,
+          3,
+          4
+        ]
+      }
+    },
+    {
+      "originalIndex": 133,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1635465600000,
+        "lg": "Segunda División",
+        "H": "Sociedad B",
+        "A": "Las Palmas",
+        "h": 0,
+        "a": 1,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2021,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2122/SP2.csv",
+          "HistSourceSHA256": "6f586b7d80dee6785ca248597cf2962145fdd72113588b807159b03baa5df831",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2122/SP2.csv",
+              "sha256": "6f586b7d80dee6785ca248597cf2962145fdd72113588b807159b03baa5df831"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 1,
+        "shots": [
+          9,
+          6,
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "originalIndex": 153,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1635984000000,
+        "lg": "Segunda División",
+        "H": "Malaga",
+        "A": "Sociedad B",
+        "h": 2,
+        "a": 1,
+        "ht": 3,
+        "up": false,
+        "o": {
+          "CsvSeason": 2021,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2122/SP2.csv",
+          "HistSourceSHA256": "6f586b7d80dee6785ca248597cf2962145fdd72113588b807159b03baa5df831",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2122/SP2.csv",
+              "sha256": "6f586b7d80dee6785ca248597cf2962145fdd72113588b807159b03baa5df831"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 2,
+        "hta": 1,
+        "shots": [
+          8,
+          13,
+          4,
+          2
+        ]
+      }
+    },
+    {
+      "originalIndex": 163,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1636243200000,
+        "lg": "Segunda División",
+        "H": "Sociedad B",
+        "A": "Ibiza",
+        "h": 0,
+        "a": 1,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2021,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2122/SP2.csv",
+          "HistSourceSHA256": "6f586b7d80dee6785ca248597cf2962145fdd72113588b807159b03baa5df831",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2122/SP2.csv",
+              "sha256": "6f586b7d80dee6785ca248597cf2962145fdd72113588b807159b03baa5df831"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          6,
+          9,
+          1,
+          5
+        ]
+      }
+    },
+    {
+      "originalIndex": 165,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1636675200000,
+        "lg": "Segunda División",
+        "H": "Sp Gijon",
+        "A": "Sociedad B",
+        "h": 0,
+        "a": 1,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2021,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2122/SP2.csv",
+          "HistSourceSHA256": "6f586b7d80dee6785ca248597cf2962145fdd72113588b807159b03baa5df831",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2122/SP2.csv",
+              "sha256": "6f586b7d80dee6785ca248597cf2962145fdd72113588b807159b03baa5df831"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          6,
+          11,
+          2,
+          5
+        ]
+      }
+    },
+    {
+      "originalIndex": 185,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1637539200000,
+        "lg": "Segunda División",
+        "H": "Sociedad B",
+        "A": "Girona",
+        "h": 1,
+        "a": 2,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2021,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2122/SP2.csv",
+          "HistSourceSHA256": "6f586b7d80dee6785ca248597cf2962145fdd72113588b807159b03baa5df831",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2122/SP2.csv",
+              "sha256": "6f586b7d80dee6785ca248597cf2962145fdd72113588b807159b03baa5df831"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 1,
+        "shots": [
+          10,
+          9,
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "originalIndex": 196,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1638057600000,
+        "lg": "Segunda División",
+        "H": "Tenerife",
+        "A": "Sociedad B",
+        "h": 2,
+        "a": 0,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2021,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2122/SP2.csv",
+          "HistSourceSHA256": "6f586b7d80dee6785ca248597cf2962145fdd72113588b807159b03baa5df831",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2122/SP2.csv",
+              "sha256": "6f586b7d80dee6785ca248597cf2962145fdd72113588b807159b03baa5df831"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": [
+          8,
+          14,
+          5,
+          5
+        ]
+      }
+    },
+    {
+      "originalIndex": 204,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1638662400000,
+        "lg": "Segunda División",
+        "H": "Sociedad B",
+        "A": "Burgos",
+        "h": 0,
+        "a": 1,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2021,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2122/SP2.csv",
+          "HistSourceSHA256": "6f586b7d80dee6785ca248597cf2962145fdd72113588b807159b03baa5df831",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2122/SP2.csv",
+              "sha256": "6f586b7d80dee6785ca248597cf2962145fdd72113588b807159b03baa5df831"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 1,
+        "shots": [
+          12,
+          7,
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "originalIndex": 219,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1639353600000,
+        "lg": "Segunda División",
+        "H": "Mirandes",
+        "A": "Sociedad B",
+        "h": 2,
+        "a": 0,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2021,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2122/SP2.csv",
+          "HistSourceSHA256": "6f586b7d80dee6785ca248597cf2962145fdd72113588b807159b03baa5df831",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2122/SP2.csv",
+              "sha256": "6f586b7d80dee6785ca248597cf2962145fdd72113588b807159b03baa5df831"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          8,
+          10,
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "originalIndex": 229,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1639872000000,
+        "lg": "Segunda División",
+        "H": "Sociedad B",
+        "A": "Valladolid",
+        "h": 0,
+        "a": 2,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2021,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2122/SP2.csv",
+          "HistSourceSHA256": "6f586b7d80dee6785ca248597cf2962145fdd72113588b807159b03baa5df831",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2122/SP2.csv",
+              "sha256": "6f586b7d80dee6785ca248597cf2962145fdd72113588b807159b03baa5df831"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          11,
+          18,
+          6,
+          7
+        ]
+      }
+    },
+    {
+      "originalIndex": 232,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1640908800000,
+        "lg": "Segunda División",
+        "H": "Eibar",
+        "A": "Sociedad B",
+        "h": 3,
+        "a": 2,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "CsvSeason": 2021,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2122/SP2.csv",
+          "HistSourceSHA256": "6f586b7d80dee6785ca248597cf2962145fdd72113588b807159b03baa5df831",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2122/SP2.csv",
+              "sha256": "6f586b7d80dee6785ca248597cf2962145fdd72113588b807159b03baa5df831"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 2,
+        "hta": 0,
+        "shots": [
+          12,
+          11,
+          4,
+          4
+        ]
+      }
+    },
+    {
+      "originalIndex": 245,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1641600000000,
+        "lg": "Segunda División",
+        "H": "Leganes",
+        "A": "Sociedad B",
+        "h": 1,
+        "a": 1,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2021,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2122/SP2.csv",
+          "HistSourceSHA256": "6f586b7d80dee6785ca248597cf2962145fdd72113588b807159b03baa5df831",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2122/SP2.csv",
+              "sha256": "6f586b7d80dee6785ca248597cf2962145fdd72113588b807159b03baa5df831"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          17,
+          6,
+          6,
+          1
+        ]
+      }
+    },
+    {
+      "originalIndex": 263,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1642982400000,
+        "lg": "Segunda División",
+        "H": "Sociedad B",
+        "A": "Cartagena",
+        "h": 1,
+        "a": 2,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2021,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2122/SP2.csv",
+          "HistSourceSHA256": "6f586b7d80dee6785ca248597cf2962145fdd72113588b807159b03baa5df831",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2122/SP2.csv",
+              "sha256": "6f586b7d80dee6785ca248597cf2962145fdd72113588b807159b03baa5df831"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          11,
+          14,
+          4,
+          6
+        ]
+      }
+    },
+    {
+      "originalIndex": 271,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1643500800000,
+        "lg": "Segunda División",
+        "H": "Las Palmas",
+        "A": "Sociedad B",
+        "h": 0,
+        "a": 0,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2021,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2122/SP2.csv",
+          "HistSourceSHA256": "6f586b7d80dee6785ca248597cf2962145fdd72113588b807159b03baa5df831",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2122/SP2.csv",
+              "sha256": "6f586b7d80dee6785ca248597cf2962145fdd72113588b807159b03baa5df831"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          12,
+          12,
+          4,
+          5
+        ]
+      }
+    },
+    {
+      "originalIndex": 277,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1644019200000,
+        "lg": "Segunda División",
+        "H": "Sociedad B",
+        "A": "Lugo",
+        "h": 1,
+        "a": 1,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2021,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2122/SP2.csv",
+          "HistSourceSHA256": "6f586b7d80dee6785ca248597cf2962145fdd72113588b807159b03baa5df831",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2122/SP2.csv",
+              "sha256": "6f586b7d80dee6785ca248597cf2962145fdd72113588b807159b03baa5df831"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 1,
+        "shots": [
+          20,
+          10,
+          5,
+          2
+        ]
+      }
+    },
+    {
+      "originalIndex": 296,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1644796800000,
+        "lg": "Segunda División",
+        "H": "Ponferradina",
+        "A": "Sociedad B",
+        "h": 3,
+        "a": 2,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2021,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2122/SP2.csv",
+          "HistSourceSHA256": "6f586b7d80dee6785ca248597cf2962145fdd72113588b807159b03baa5df831",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2122/SP2.csv",
+              "sha256": "6f586b7d80dee6785ca248597cf2962145fdd72113588b807159b03baa5df831"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": [
+          8,
+          5,
+          4,
+          2
+        ]
+      }
+    },
+    {
+      "originalIndex": 301,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1645228800000,
+        "lg": "Segunda División",
+        "H": "Sociedad B",
+        "A": "Malaga",
+        "h": 2,
+        "a": 0,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2021,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2122/SP2.csv",
+          "HistSourceSHA256": "6f586b7d80dee6785ca248597cf2962145fdd72113588b807159b03baa5df831",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2122/SP2.csv",
+              "sha256": "6f586b7d80dee6785ca248597cf2962145fdd72113588b807159b03baa5df831"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": [
+          10,
+          6,
+          5,
+          3
+        ]
+      }
+    },
+    {
+      "originalIndex": 311,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1645833600000,
+        "lg": "Segunda División",
+        "H": "Oviedo",
+        "A": "Sociedad B",
+        "h": 0,
+        "a": 1,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2021,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2122/SP2.csv",
+          "HistSourceSHA256": "6f586b7d80dee6785ca248597cf2962145fdd72113588b807159b03baa5df831",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2122/SP2.csv",
+              "sha256": "6f586b7d80dee6785ca248597cf2962145fdd72113588b807159b03baa5df831"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          11,
+          9,
+          3,
+          2
+        ]
+      }
+    },
+    {
+      "originalIndex": 329,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1646611200000,
+        "lg": "Segunda División",
+        "H": "Sociedad B",
+        "A": "Sp Gijon",
+        "h": 2,
+        "a": 1,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2021,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2122/SP2.csv",
+          "HistSourceSHA256": "6f586b7d80dee6785ca248597cf2962145fdd72113588b807159b03baa5df831",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2122/SP2.csv",
+              "sha256": "6f586b7d80dee6785ca248597cf2962145fdd72113588b807159b03baa5df831"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": [
+          15,
+          12,
+          5,
+          2
+        ]
+      }
+    },
+    {
+      "originalIndex": 336,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1647129600000,
+        "lg": "Segunda División",
+        "H": "Burgos",
+        "A": "Sociedad B",
+        "h": 0,
+        "a": 0,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2021,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2122/SP2.csv",
+          "HistSourceSHA256": "6f586b7d80dee6785ca248597cf2962145fdd72113588b807159b03baa5df831",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2122/SP2.csv",
+              "sha256": "6f586b7d80dee6785ca248597cf2962145fdd72113588b807159b03baa5df831"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          8,
+          13,
+          1,
+          4
+        ]
+      }
+    },
+    {
+      "originalIndex": 342,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1647648000000,
+        "lg": "Segunda División",
+        "H": "Sociedad B",
+        "A": "Mirandes",
+        "h": 1,
+        "a": 3,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2021,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2122/SP2.csv",
+          "HistSourceSHA256": "6f586b7d80dee6785ca248597cf2962145fdd72113588b807159b03baa5df831",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2122/SP2.csv",
+              "sha256": "6f586b7d80dee6785ca248597cf2962145fdd72113588b807159b03baa5df831"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": [
+          11,
+          19,
+          4,
+          12
+        ]
+      }
+    },
+    {
+      "originalIndex": 353,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1648252800000,
+        "lg": "Segunda División",
+        "H": "Ibiza",
+        "A": "Sociedad B",
+        "h": 2,
+        "a": 2,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "CsvSeason": 2021,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2122/SP2.csv",
+          "HistSourceSHA256": "6f586b7d80dee6785ca248597cf2962145fdd72113588b807159b03baa5df831",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2122/SP2.csv",
+              "sha256": "6f586b7d80dee6785ca248597cf2962145fdd72113588b807159b03baa5df831"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 1,
+        "shots": [
+          10,
+          15,
+          3,
+          8
+        ]
+      }
+    },
+    {
+      "originalIndex": 364,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1648857600000,
+        "lg": "Segunda División",
+        "H": "Sociedad B",
+        "A": "Alcorcon",
+        "h": 2,
+        "a": 4,
+        "ht": 4,
+        "up": false,
+        "o": {
+          "CsvSeason": 2021,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2122/SP2.csv",
+          "HistSourceSHA256": "6f586b7d80dee6785ca248597cf2962145fdd72113588b807159b03baa5df831",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2122/SP2.csv",
+              "sha256": "6f586b7d80dee6785ca248597cf2962145fdd72113588b807159b03baa5df831"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 2,
+        "hta": 2,
+        "shots": [
+          10,
+          18,
+          5,
+          10
+        ]
+      }
+    },
+    {
+      "originalIndex": 375,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1649462400000,
+        "lg": "Segunda División",
+        "H": "Sociedad B",
+        "A": "Tenerife",
+        "h": 1,
+        "a": 2,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2021,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2122/SP2.csv",
+          "HistSourceSHA256": "6f586b7d80dee6785ca248597cf2962145fdd72113588b807159b03baa5df831",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2122/SP2.csv",
+              "sha256": "6f586b7d80dee6785ca248597cf2962145fdd72113588b807159b03baa5df831"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 1,
+        "shots": [
+          14,
+          10,
+          3,
+          4
+        ]
+      }
+    },
+    {
+      "originalIndex": 395,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1650240000000,
+        "lg": "Segunda División",
+        "H": "Girona",
+        "A": "Sociedad B",
+        "h": 2,
+        "a": 0,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2021,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2122/SP2.csv",
+          "HistSourceSHA256": "6f586b7d80dee6785ca248597cf2962145fdd72113588b807159b03baa5df831",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2122/SP2.csv",
+              "sha256": "6f586b7d80dee6785ca248597cf2962145fdd72113588b807159b03baa5df831"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          19,
+          6,
+          9,
+          1
+        ]
+      }
+    },
+    {
+      "originalIndex": 397,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1650672000000,
+        "lg": "Segunda División",
+        "H": "Sociedad B",
+        "A": "Amorebieta",
+        "h": 2,
+        "a": 1,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "CsvSeason": 2021,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2122/SP2.csv",
+          "HistSourceSHA256": "6f586b7d80dee6785ca248597cf2962145fdd72113588b807159b03baa5df831",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2122/SP2.csv",
+              "sha256": "6f586b7d80dee6785ca248597cf2962145fdd72113588b807159b03baa5df831"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 2,
+        "hta": 0,
+        "shots": [
+          9,
+          14,
+          4,
+          6
+        ]
+      }
+    },
+    {
+      "originalIndex": 417,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1651449600000,
+        "lg": "Segunda División",
+        "H": "Valladolid",
+        "A": "Sociedad B",
+        "h": 1,
+        "a": 2,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2021,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2122/SP2.csv",
+          "HistSourceSHA256": "6f586b7d80dee6785ca248597cf2962145fdd72113588b807159b03baa5df831",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2122/SP2.csv",
+              "sha256": "6f586b7d80dee6785ca248597cf2962145fdd72113588b807159b03baa5df831"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          16,
+          6,
+          4,
+          1
+        ]
+      }
+    },
+    {
+      "originalIndex": 419,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1651881600000,
+        "lg": "Segunda División",
+        "H": "Fuenlabrada",
+        "A": "Sociedad B",
+        "h": 1,
+        "a": 2,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2021,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2122/SP2.csv",
+          "HistSourceSHA256": "6f586b7d80dee6785ca248597cf2962145fdd72113588b807159b03baa5df831",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2122/SP2.csv",
+              "sha256": "6f586b7d80dee6785ca248597cf2962145fdd72113588b807159b03baa5df831"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": [
+          11,
+          18,
+          6,
+          5
+        ]
+      }
+    },
+    {
+      "originalIndex": 429,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1652400000000,
+        "lg": "Segunda División",
+        "H": "Sociedad B",
+        "A": "Almeria",
+        "h": 0,
+        "a": 2,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2021,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2122/SP2.csv",
+          "HistSourceSHA256": "6f586b7d80dee6785ca248597cf2962145fdd72113588b807159b03baa5df831",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2122/SP2.csv",
+              "sha256": "6f586b7d80dee6785ca248597cf2962145fdd72113588b807159b03baa5df831"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 1,
+        "shots": [
+          11,
+          10,
+          3,
+          7
+        ]
+      }
+    },
+    {
+      "originalIndex": 443,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1653091200000,
+        "lg": "Segunda División",
+        "H": "Huesca",
+        "A": "Sociedad B",
+        "h": 3,
+        "a": 2,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "CsvSeason": 2021,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2122/SP2.csv",
+          "HistSourceSHA256": "6f586b7d80dee6785ca248597cf2962145fdd72113588b807159b03baa5df831",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2122/SP2.csv",
+              "sha256": "6f586b7d80dee6785ca248597cf2962145fdd72113588b807159b03baa5df831"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 2,
+        "hta": 0,
+        "shots": [
+          11,
+          18,
+          8,
+          5
+        ]
+      }
+    },
+    {
+      "originalIndex": 452,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1653609600000,
+        "lg": "Segunda División",
+        "H": "Sociedad B",
+        "A": "Zaragoza",
+        "h": 1,
+        "a": 2,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "CsvSeason": 2021,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2122/SP2.csv",
+          "HistSourceSHA256": "6f586b7d80dee6785ca248597cf2962145fdd72113588b807159b03baa5df831",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2122/SP2.csv",
+              "sha256": "6f586b7d80dee6785ca248597cf2962145fdd72113588b807159b03baa5df831"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 2,
+        "shots": [
+          10,
+          15,
+          4,
+          6
+        ]
+      }
+    }
+  ]
+}

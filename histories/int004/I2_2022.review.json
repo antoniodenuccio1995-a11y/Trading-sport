@@ -1,0 +1,99 @@
+{
+  "originalPacket": "histories/stab003/I2_2022.json",
+  "originalSHA256": "e9b2316bfa08f2e1e210d00960cada876d655a1c740f383fb8347bf83973cf0a",
+  "review": [
+    {
+      "originalIndex": 381,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1685577600000,
+        "lg": "Serie B",
+        "H": "Brescia Calcio",
+        "A": "Cosenza Calcio           [awarded]",
+        "h": 0,
+        "a": 3,
+        "ht": null,
+        "up": false,
+        "o": {
+          "Phase": "Final",
+          "HomeCountry": "ITA",
+          "AwayCountry": "ITA",
+          "PublishedRound": "Final",
+          "CsvSeason": 2022,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/italy/master/2022-23/2-serieb.txt",
+              "sha256": "26997f9e9be1491219f209cde82ee70821c03c47ea5b8c799a0256302d9bda37"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 382,
+      "reason": "riferimento_secondario_regolare_non_riconciliato_per_data",
+      "record": {
+        "d": 1685059200000,
+        "lg": "Serie B",
+        "H": "FC Südtirol",
+        "A": "Reggina 1914",
+        "h": 1,
+        "a": 0,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "Phase": "Round 1",
+          "HomeCountry": "ITA",
+          "AwayCountry": "ITA",
+          "PublishedRound": "Round 1",
+          "CsvSeason": 2022,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/italy/master/2022-23/2-serieb.txt",
+              "sha256": "26997f9e9be1491219f209cde82ee70821c03c47ea5b8c799a0256302d9bda37"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 383,
+      "reason": "riferimento_secondario_regolare_non_riconciliato_per_data",
+      "record": {
+        "d": 1685145600000,
+        "lg": "Serie B",
+        "H": "Cagliari Calcio",
+        "A": "Venezia FC",
+        "h": 2,
+        "a": 1,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "Phase": "Round 1",
+          "HomeCountry": "ITA",
+          "AwayCountry": "ITA",
+          "PublishedRound": "Round 1",
+          "CsvSeason": 2022,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/italy/master/2022-23/2-serieb.txt",
+              "sha256": "26997f9e9be1491219f209cde82ee70821c03c47ea5b8c799a0256302d9bda37"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 2,
+        "hta": 0,
+        "shots": null
+      }
+    }
+  ]
+}

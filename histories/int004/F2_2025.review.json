@@ -1,0 +1,1230 @@
+{
+  "originalPacket": "histories/stab003/F2_2025.json",
+  "originalSHA256": "9552aec5526e3b118109b30cf68884401c39a2ae2eec7deb9c4dbfa0edfdf263",
+  "review": [
+    {
+      "originalIndex": 2,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1754697600000,
+        "lg": "Ligue 2",
+        "H": "Laval",
+        "A": "St Etienne",
+        "h": 3,
+        "a": 3,
+        "ht": 4,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/F2.csv",
+          "HistSourceSHA256": "dcedf4dd66f3e0ac8efb8ccd2e5489882068e5630c041702b15c1d0fe70c6017",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/F2.csv",
+              "sha256": "dcedf4dd66f3e0ac8efb8ccd2e5489882068e5630c041702b15c1d0fe70c6017"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 2,
+        "hta": 2,
+        "shots": [
+          10,
+          10,
+          4,
+          6
+        ]
+      }
+    },
+    {
+      "originalIndex": 15,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1755302400000,
+        "lg": "Ligue 2",
+        "H": "St Etienne",
+        "A": "Rodez",
+        "h": 4,
+        "a": 0,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/F2.csv",
+          "HistSourceSHA256": "dcedf4dd66f3e0ac8efb8ccd2e5489882068e5630c041702b15c1d0fe70c6017",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/F2.csv",
+              "sha256": "dcedf4dd66f3e0ac8efb8ccd2e5489882068e5630c041702b15c1d0fe70c6017"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": [
+          19,
+          5,
+          7,
+          1
+        ]
+      }
+    },
+    {
+      "originalIndex": 24,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1755907200000,
+        "lg": "Ligue 2",
+        "H": "Boulogne",
+        "A": "St Etienne",
+        "h": 0,
+        "a": 1,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/F2.csv",
+          "HistSourceSHA256": "dcedf4dd66f3e0ac8efb8ccd2e5489882068e5630c041702b15c1d0fe70c6017",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/F2.csv",
+              "sha256": "dcedf4dd66f3e0ac8efb8ccd2e5489882068e5630c041702b15c1d0fe70c6017"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          4,
+          11,
+          0,
+          3
+        ]
+      }
+    },
+    {
+      "originalIndex": 34,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1756512000000,
+        "lg": "Ligue 2",
+        "H": "St Etienne",
+        "A": "Grenoble",
+        "h": 1,
+        "a": 1,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/F2.csv",
+          "HistSourceSHA256": "dcedf4dd66f3e0ac8efb8ccd2e5489882068e5630c041702b15c1d0fe70c6017",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/F2.csv",
+              "sha256": "dcedf4dd66f3e0ac8efb8ccd2e5489882068e5630c041702b15c1d0fe70c6017"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": [
+          20,
+          7,
+          6,
+          2
+        ]
+      }
+    },
+    {
+      "originalIndex": 42,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1757721600000,
+        "lg": "Ligue 2",
+        "H": "Clermont",
+        "A": "St Etienne",
+        "h": 1,
+        "a": 2,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/F2.csv",
+          "HistSourceSHA256": "dcedf4dd66f3e0ac8efb8ccd2e5489882068e5630c041702b15c1d0fe70c6017",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/F2.csv",
+              "sha256": "dcedf4dd66f3e0ac8efb8ccd2e5489882068e5630c041702b15c1d0fe70c6017"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": [
+          12,
+          16,
+          2,
+          6
+        ]
+      }
+    },
+    {
+      "originalIndex": 53,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1758326400000,
+        "lg": "Ligue 2",
+        "H": "St Etienne",
+        "A": "Reims",
+        "h": 3,
+        "a": 2,
+        "ht": 3,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/F2.csv",
+          "HistSourceSHA256": "dcedf4dd66f3e0ac8efb8ccd2e5489882068e5630c041702b15c1d0fe70c6017",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/F2.csv",
+              "sha256": "dcedf4dd66f3e0ac8efb8ccd2e5489882068e5630c041702b15c1d0fe70c6017"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 2,
+        "hta": 1,
+        "shots": [
+          16,
+          17,
+          10,
+          7
+        ]
+      }
+    },
+    {
+      "originalIndex": 54,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1758585600000,
+        "lg": "Ligue 2",
+        "H": "Amiens",
+        "A": "St Etienne",
+        "h": 0,
+        "a": 1,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/F2.csv",
+          "HistSourceSHA256": "dcedf4dd66f3e0ac8efb8ccd2e5489882068e5630c041702b15c1d0fe70c6017",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/F2.csv",
+              "sha256": "dcedf4dd66f3e0ac8efb8ccd2e5489882068e5630c041702b15c1d0fe70c6017"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          10,
+          23,
+          2,
+          4
+        ]
+      }
+    },
+    {
+      "originalIndex": 70,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1758931200000,
+        "lg": "Ligue 2",
+        "H": "St Etienne",
+        "A": "Guingamp",
+        "h": 2,
+        "a": 3,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/F2.csv",
+          "HistSourceSHA256": "dcedf4dd66f3e0ac8efb8ccd2e5489882068e5630c041702b15c1d0fe70c6017",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/F2.csv",
+              "sha256": "dcedf4dd66f3e0ac8efb8ccd2e5489882068e5630c041702b15c1d0fe70c6017"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 1,
+        "shots": [
+          13,
+          12,
+          2,
+          7
+        ]
+      }
+    },
+    {
+      "originalIndex": 80,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1759536000000,
+        "lg": "Ligue 2",
+        "H": "Montpellier",
+        "A": "St Etienne",
+        "h": 0,
+        "a": 2,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/F2.csv",
+          "HistSourceSHA256": "dcedf4dd66f3e0ac8efb8ccd2e5489882068e5630c041702b15c1d0fe70c6017",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/F2.csv",
+              "sha256": "dcedf4dd66f3e0ac8efb8ccd2e5489882068e5630c041702b15c1d0fe70c6017"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 2,
+        "shots": [
+          18,
+          8,
+          4,
+          4
+        ]
+      }
+    },
+    {
+      "originalIndex": 88,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1760745600000,
+        "lg": "Ligue 2",
+        "H": "St Etienne",
+        "A": "Le Mans",
+        "h": 2,
+        "a": 3,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/F2.csv",
+          "HistSourceSHA256": "dcedf4dd66f3e0ac8efb8ccd2e5489882068e5630c041702b15c1d0fe70c6017",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/F2.csv",
+              "sha256": "dcedf4dd66f3e0ac8efb8ccd2e5489882068e5630c041702b15c1d0fe70c6017"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 1,
+        "shots": [
+          12,
+          14,
+          4,
+          7
+        ]
+      }
+    },
+    {
+      "originalIndex": 97,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1761350400000,
+        "lg": "Ligue 2",
+        "H": "Annecy",
+        "A": "St Etienne",
+        "h": 4,
+        "a": 0,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/F2.csv",
+          "HistSourceSHA256": "dcedf4dd66f3e0ac8efb8ccd2e5489882068e5630c041702b15c1d0fe70c6017",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/F2.csv",
+              "sha256": "dcedf4dd66f3e0ac8efb8ccd2e5489882068e5630c041702b15c1d0fe70c6017"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": [
+          13,
+          6,
+          8,
+          2
+        ]
+      }
+    },
+    {
+      "originalIndex": 105,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1761609600000,
+        "lg": "Ligue 2",
+        "H": "St Etienne",
+        "A": "Pau FC",
+        "h": 6,
+        "a": 0,
+        "ht": 4,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/F2.csv",
+          "HistSourceSHA256": "dcedf4dd66f3e0ac8efb8ccd2e5489882068e5630c041702b15c1d0fe70c6017",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/F2.csv",
+              "sha256": "dcedf4dd66f3e0ac8efb8ccd2e5489882068e5630c041702b15c1d0fe70c6017"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 4,
+        "hta": 0,
+        "shots": [
+          16,
+          11,
+          8,
+          4
+        ]
+      }
+    },
+    {
+      "originalIndex": 114,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1761955200000,
+        "lg": "Ligue 2",
+        "H": "Red Star",
+        "A": "St Etienne",
+        "h": 2,
+        "a": 1,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/F2.csv",
+          "HistSourceSHA256": "dcedf4dd66f3e0ac8efb8ccd2e5489882068e5630c041702b15c1d0fe70c6017",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/F2.csv",
+              "sha256": "dcedf4dd66f3e0ac8efb8ccd2e5489882068e5630c041702b15c1d0fe70c6017"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 2,
+        "hta": 0,
+        "shots": [
+          11,
+          15,
+          3,
+          6
+        ]
+      }
+    },
+    {
+      "originalIndex": 124,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1762560000000,
+        "lg": "Ligue 2",
+        "H": "Troyes",
+        "A": "St Etienne",
+        "h": 2,
+        "a": 3,
+        "ht": 3,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/F2.csv",
+          "HistSourceSHA256": "dcedf4dd66f3e0ac8efb8ccd2e5489882068e5630c041702b15c1d0fe70c6017",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/F2.csv",
+              "sha256": "dcedf4dd66f3e0ac8efb8ccd2e5489882068e5630c041702b15c1d0fe70c6017"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 3,
+        "shots": [
+          21,
+          7,
+          8,
+          5
+        ]
+      }
+    },
+    {
+      "originalIndex": 132,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1763769600000,
+        "lg": "Ligue 2",
+        "H": "St Etienne",
+        "A": "Nancy",
+        "h": 2,
+        "a": 1,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/F2.csv",
+          "HistSourceSHA256": "dcedf4dd66f3e0ac8efb8ccd2e5489882068e5630c041702b15c1d0fe70c6017",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/F2.csv",
+              "sha256": "dcedf4dd66f3e0ac8efb8ccd2e5489882068e5630c041702b15c1d0fe70c6017"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": [
+          9,
+          11,
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "originalIndex": 142,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1764979200000,
+        "lg": "Ligue 2",
+        "H": "Dunkerque",
+        "A": "St Etienne",
+        "h": 1,
+        "a": 0,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/F2.csv",
+          "HistSourceSHA256": "dcedf4dd66f3e0ac8efb8ccd2e5489882068e5630c041702b15c1d0fe70c6017",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/F2.csv",
+              "sha256": "dcedf4dd66f3e0ac8efb8ccd2e5489882068e5630c041702b15c1d0fe70c6017"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          6,
+          13,
+          2,
+          5
+        ]
+      }
+    },
+    {
+      "originalIndex": 151,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1765584000000,
+        "lg": "Ligue 2",
+        "H": "St Etienne",
+        "A": "Bastia",
+        "h": 2,
+        "a": 2,
+        "ht": 3,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/F2.csv",
+          "HistSourceSHA256": "dcedf4dd66f3e0ac8efb8ccd2e5489882068e5630c041702b15c1d0fe70c6017",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/F2.csv",
+              "sha256": "dcedf4dd66f3e0ac8efb8ccd2e5489882068e5630c041702b15c1d0fe70c6017"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 2,
+        "shots": [
+          16,
+          6,
+          10,
+          2
+        ]
+      }
+    },
+    {
+      "originalIndex": 158,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1767398400000,
+        "lg": "Ligue 2",
+        "H": "Le Mans",
+        "A": "St Etienne",
+        "h": 0,
+        "a": 0,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/F2.csv",
+          "HistSourceSHA256": "dcedf4dd66f3e0ac8efb8ccd2e5489882068e5630c041702b15c1d0fe70c6017",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/F2.csv",
+              "sha256": "dcedf4dd66f3e0ac8efb8ccd2e5489882068e5630c041702b15c1d0fe70c6017"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          10,
+          13,
+          4,
+          3
+        ]
+      }
+    },
+    {
+      "originalIndex": 169,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1768608000000,
+        "lg": "Ligue 2",
+        "H": "St Etienne",
+        "A": "Clermont",
+        "h": 1,
+        "a": 0,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/F2.csv",
+          "HistSourceSHA256": "dcedf4dd66f3e0ac8efb8ccd2e5489882068e5630c041702b15c1d0fe70c6017",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/F2.csv",
+              "sha256": "dcedf4dd66f3e0ac8efb8ccd2e5489882068e5630c041702b15c1d0fe70c6017"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          17,
+          12,
+          6,
+          5
+        ]
+      }
+    },
+    {
+      "originalIndex": 178,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1769212800000,
+        "lg": "Ligue 2",
+        "H": "Reims",
+        "A": "St Etienne",
+        "h": 1,
+        "a": 0,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/F2.csv",
+          "HistSourceSHA256": "dcedf4dd66f3e0ac8efb8ccd2e5489882068e5630c041702b15c1d0fe70c6017",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/F2.csv",
+              "sha256": "dcedf4dd66f3e0ac8efb8ccd2e5489882068e5630c041702b15c1d0fe70c6017"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          12,
+          15,
+          3,
+          5
+        ]
+      }
+    },
+    {
+      "originalIndex": 188,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1769817600000,
+        "lg": "Ligue 2",
+        "H": "St Etienne",
+        "A": "Boulogne",
+        "h": 0,
+        "a": 1,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/F2.csv",
+          "HistSourceSHA256": "dcedf4dd66f3e0ac8efb8ccd2e5489882068e5630c041702b15c1d0fe70c6017",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/F2.csv",
+              "sha256": "dcedf4dd66f3e0ac8efb8ccd2e5489882068e5630c041702b15c1d0fe70c6017"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 1,
+        "shots": [
+          4,
+          18,
+          0,
+          6
+        ]
+      }
+    },
+    {
+      "originalIndex": 196,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1770422400000,
+        "lg": "Ligue 2",
+        "H": "St Etienne",
+        "A": "Montpellier",
+        "h": 1,
+        "a": 0,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/F2.csv",
+          "HistSourceSHA256": "dcedf4dd66f3e0ac8efb8ccd2e5489882068e5630c041702b15c1d0fe70c6017",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/F2.csv",
+              "sha256": "dcedf4dd66f3e0ac8efb8ccd2e5489882068e5630c041702b15c1d0fe70c6017"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          10,
+          5,
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "originalIndex": 205,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1771027200000,
+        "lg": "Ligue 2",
+        "H": "Guingamp",
+        "A": "St Etienne",
+        "h": 1,
+        "a": 2,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/F2.csv",
+          "HistSourceSHA256": "dcedf4dd66f3e0ac8efb8ccd2e5489882068e5630c041702b15c1d0fe70c6017",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/F2.csv",
+              "sha256": "dcedf4dd66f3e0ac8efb8ccd2e5489882068e5630c041702b15c1d0fe70c6017"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 2,
+        "shots": [
+          12,
+          12,
+          4,
+          6
+        ]
+      }
+    },
+    {
+      "originalIndex": 214,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1771632000000,
+        "lg": "Ligue 2",
+        "H": "St Etienne",
+        "A": "Laval",
+        "h": 2,
+        "a": 1,
+        "ht": 3,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/F2.csv",
+          "HistSourceSHA256": "dcedf4dd66f3e0ac8efb8ccd2e5489882068e5630c041702b15c1d0fe70c6017",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/F2.csv",
+              "sha256": "dcedf4dd66f3e0ac8efb8ccd2e5489882068e5630c041702b15c1d0fe70c6017"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 2,
+        "hta": 1,
+        "shots": [
+          19,
+          6,
+          4,
+          2
+        ]
+      }
+    },
+    {
+      "originalIndex": 223,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1772236800000,
+        "lg": "Ligue 2",
+        "H": "Pau FC",
+        "A": "St Etienne",
+        "h": 0,
+        "a": 3,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/F2.csv",
+          "HistSourceSHA256": "dcedf4dd66f3e0ac8efb8ccd2e5489882068e5630c041702b15c1d0fe70c6017",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/F2.csv",
+              "sha256": "dcedf4dd66f3e0ac8efb8ccd2e5489882068e5630c041702b15c1d0fe70c6017"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 1,
+        "shots": [
+          9,
+          10,
+          4,
+          6
+        ]
+      }
+    },
+    {
+      "originalIndex": 232,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1772841600000,
+        "lg": "Ligue 2",
+        "H": "St Etienne",
+        "A": "Red Star",
+        "h": 2,
+        "a": 0,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/F2.csv",
+          "HistSourceSHA256": "dcedf4dd66f3e0ac8efb8ccd2e5489882068e5630c041702b15c1d0fe70c6017",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/F2.csv",
+              "sha256": "dcedf4dd66f3e0ac8efb8ccd2e5489882068e5630c041702b15c1d0fe70c6017"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          12,
+          8,
+          4,
+          2
+        ]
+      }
+    },
+    {
+      "originalIndex": 241,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1773446400000,
+        "lg": "Ligue 2",
+        "H": "Grenoble",
+        "A": "St Etienne",
+        "h": 0,
+        "a": 0,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/F2.csv",
+          "HistSourceSHA256": "dcedf4dd66f3e0ac8efb8ccd2e5489882068e5630c041702b15c1d0fe70c6017",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/F2.csv",
+              "sha256": "dcedf4dd66f3e0ac8efb8ccd2e5489882068e5630c041702b15c1d0fe70c6017"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          15,
+          6,
+          4,
+          2
+        ]
+      }
+    },
+    {
+      "originalIndex": 251,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1774051200000,
+        "lg": "Ligue 2",
+        "H": "St Etienne",
+        "A": "Annecy",
+        "h": 4,
+        "a": 0,
+        "ht": 3,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/F2.csv",
+          "HistSourceSHA256": "dcedf4dd66f3e0ac8efb8ccd2e5489882068e5630c041702b15c1d0fe70c6017",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/F2.csv",
+              "sha256": "dcedf4dd66f3e0ac8efb8ccd2e5489882068e5630c041702b15c1d0fe70c6017"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 3,
+        "hta": 0,
+        "shots": [
+          16,
+          3,
+          6,
+          2
+        ]
+      }
+    },
+    {
+      "originalIndex": 259,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1775260800000,
+        "lg": "Ligue 2",
+        "H": "Nancy",
+        "A": "St Etienne",
+        "h": 1,
+        "a": 1,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/F2.csv",
+          "HistSourceSHA256": "dcedf4dd66f3e0ac8efb8ccd2e5489882068e5630c041702b15c1d0fe70c6017",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/F2.csv",
+              "sha256": "dcedf4dd66f3e0ac8efb8ccd2e5489882068e5630c041702b15c1d0fe70c6017"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": [
+          6,
+          14,
+          2,
+          5
+        ]
+      }
+    },
+    {
+      "originalIndex": 268,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1775865600000,
+        "lg": "Ligue 2",
+        "H": "St Etienne",
+        "A": "Dunkerque",
+        "h": 2,
+        "a": 1,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/F2.csv",
+          "HistSourceSHA256": "dcedf4dd66f3e0ac8efb8ccd2e5489882068e5630c041702b15c1d0fe70c6017",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/F2.csv",
+              "sha256": "dcedf4dd66f3e0ac8efb8ccd2e5489882068e5630c041702b15c1d0fe70c6017"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 1,
+        "shots": [
+          20,
+          6,
+          7,
+          2
+        ]
+      }
+    },
+    {
+      "originalIndex": 277,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1776470400000,
+        "lg": "Ligue 2",
+        "H": "Bastia",
+        "A": "St Etienne",
+        "h": 2,
+        "a": 0,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/F2.csv",
+          "HistSourceSHA256": "dcedf4dd66f3e0ac8efb8ccd2e5489882068e5630c041702b15c1d0fe70c6017",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/F2.csv",
+              "sha256": "dcedf4dd66f3e0ac8efb8ccd2e5489882068e5630c041702b15c1d0fe70c6017"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": [
+          10,
+          10,
+          4,
+          2
+        ]
+      }
+    },
+    {
+      "originalIndex": 286,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1777075200000,
+        "lg": "Ligue 2",
+        "H": "St Etienne",
+        "A": "Troyes",
+        "h": 0,
+        "a": 3,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/F2.csv",
+          "HistSourceSHA256": "dcedf4dd66f3e0ac8efb8ccd2e5489882068e5630c041702b15c1d0fe70c6017",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/F2.csv",
+              "sha256": "dcedf4dd66f3e0ac8efb8ccd2e5489882068e5630c041702b15c1d0fe70c6017"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          13,
+          16,
+          3,
+          4
+        ]
+      }
+    },
+    {
+      "originalIndex": 295,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1777680000000,
+        "lg": "Ligue 2",
+        "H": "Rodez",
+        "A": "St Etienne",
+        "h": 2,
+        "a": 1,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/F2.csv",
+          "HistSourceSHA256": "dcedf4dd66f3e0ac8efb8ccd2e5489882068e5630c041702b15c1d0fe70c6017",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/F2.csv",
+              "sha256": "dcedf4dd66f3e0ac8efb8ccd2e5489882068e5630c041702b15c1d0fe70c6017"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": [
+          17,
+          11,
+          5,
+          6
+        ]
+      }
+    },
+    {
+      "originalIndex": 305,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1778284800000,
+        "lg": "Ligue 2",
+        "H": "St Etienne",
+        "A": "Amiens",
+        "h": 5,
+        "a": 0,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/F2.csv",
+          "HistSourceSHA256": "dcedf4dd66f3e0ac8efb8ccd2e5489882068e5630c041702b15c1d0fe70c6017",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/F2.csv",
+              "sha256": "dcedf4dd66f3e0ac8efb8ccd2e5489882068e5630c041702b15c1d0fe70c6017"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 2,
+        "hta": 0,
+        "shots": [
+          19,
+          14,
+          9,
+          1
+        ]
+      }
+    }
+  ]
+}

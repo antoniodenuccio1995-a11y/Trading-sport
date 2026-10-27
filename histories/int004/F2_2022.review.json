@@ -1,0 +1,1374 @@
+{
+  "originalPacket": "histories/stab003/F2_2022.json",
+  "originalSHA256": "325f12739116027a30144f805b5f0ed2e787eac2d0b7e7bda26ee30a3d8fdac6",
+  "review": [
+    {
+      "originalIndex": 0,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1659139200000,
+        "lg": "Ligue 2",
+        "H": "Dijon",
+        "A": "St Etienne",
+        "h": 2,
+        "a": 1,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "CsvSeason": 2022,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2223/F2.csv",
+          "HistSourceSHA256": "14915d41e6e31375f4ea082eb1be888d209b91166e277a157acf15d5d1b29d19",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2223/F2.csv",
+              "sha256": "14915d41e6e31375f4ea082eb1be888d209b91166e277a157acf15d5d1b29d19"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 2,
+        "hta": 0,
+        "shots": [
+          12,
+          15,
+          5,
+          3
+        ]
+      }
+    },
+    {
+      "originalIndex": 10,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1659744000000,
+        "lg": "Ligue 2",
+        "H": "St Etienne",
+        "A": "Nimes",
+        "h": 1,
+        "a": 1,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "CsvSeason": 2022,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2223/F2.csv",
+          "HistSourceSHA256": "14915d41e6e31375f4ea082eb1be888d209b91166e277a157acf15d5d1b29d19",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2223/F2.csv",
+              "sha256": "14915d41e6e31375f4ea082eb1be888d209b91166e277a157acf15d5d1b29d19"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 1,
+        "shots": [
+          13,
+          6,
+          6,
+          1
+        ]
+      }
+    },
+    {
+      "originalIndex": 29,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1660521600000,
+        "lg": "Ligue 2",
+        "H": "Quevilly Rouen",
+        "A": "St Etienne",
+        "h": 2,
+        "a": 2,
+        "ht": 4,
+        "up": false,
+        "o": {
+          "CsvSeason": 2022,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2223/F2.csv",
+          "HistSourceSHA256": "14915d41e6e31375f4ea082eb1be888d209b91166e277a157acf15d5d1b29d19",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2223/F2.csv",
+              "sha256": "14915d41e6e31375f4ea082eb1be888d209b91166e277a157acf15d5d1b29d19"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 2,
+        "hta": 2,
+        "shots": [
+          9,
+          11,
+          6,
+          6
+        ]
+      }
+    },
+    {
+      "originalIndex": 30,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1660953600000,
+        "lg": "Ligue 2",
+        "H": "St Etienne",
+        "A": "Le Havre",
+        "h": 0,
+        "a": 6,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2022,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2223/F2.csv",
+          "HistSourceSHA256": "14915d41e6e31375f4ea082eb1be888d209b91166e277a157acf15d5d1b29d19",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2223/F2.csv",
+              "sha256": "14915d41e6e31375f4ea082eb1be888d209b91166e277a157acf15d5d1b29d19"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          6,
+          16,
+          1,
+          8
+        ]
+      }
+    },
+    {
+      "originalIndex": 49,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1661558400000,
+        "lg": "Ligue 2",
+        "H": "Valenciennes",
+        "A": "St Etienne",
+        "h": 2,
+        "a": 2,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "CsvSeason": 2022,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2223/F2.csv",
+          "HistSourceSHA256": "14915d41e6e31375f4ea082eb1be888d209b91166e277a157acf15d5d1b29d19",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2223/F2.csv",
+              "sha256": "14915d41e6e31375f4ea082eb1be888d209b91166e277a157acf15d5d1b29d19"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 1,
+        "shots": [
+          13,
+          14,
+          3,
+          7
+        ]
+      }
+    },
+    {
+      "originalIndex": 59,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1661817600000,
+        "lg": "Ligue 2",
+        "H": "St Etienne",
+        "A": "Bastia",
+        "h": 5,
+        "a": 0,
+        "ht": 4,
+        "up": false,
+        "o": {
+          "CsvSeason": 2022,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2223/F2.csv",
+          "HistSourceSHA256": "14915d41e6e31375f4ea082eb1be888d209b91166e277a157acf15d5d1b29d19",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2223/F2.csv",
+              "sha256": "14915d41e6e31375f4ea082eb1be888d209b91166e277a157acf15d5d1b29d19"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 4,
+        "hta": 0,
+        "shots": [
+          9,
+          7,
+          6,
+          1
+        ]
+      }
+    },
+    {
+      "originalIndex": 68,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1662336000000,
+        "lg": "Ligue 2",
+        "H": "Pau FC",
+        "A": "St Etienne",
+        "h": 2,
+        "a": 2,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2022,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2223/F2.csv",
+          "HistSourceSHA256": "14915d41e6e31375f4ea082eb1be888d209b91166e277a157acf15d5d1b29d19",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2223/F2.csv",
+              "sha256": "14915d41e6e31375f4ea082eb1be888d209b91166e277a157acf15d5d1b29d19"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 1,
+        "shots": [
+          8,
+          5,
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "originalIndex": 69,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1662768000000,
+        "lg": "Ligue 2",
+        "H": "St Etienne",
+        "A": "Bordeaux",
+        "h": 2,
+        "a": 0,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2022,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2223/F2.csv",
+          "HistSourceSHA256": "14915d41e6e31375f4ea082eb1be888d209b91166e277a157acf15d5d1b29d19",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2223/F2.csv",
+              "sha256": "14915d41e6e31375f4ea082eb1be888d209b91166e277a157acf15d5d1b29d19"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": [
+          16,
+          9,
+          7,
+          4
+        ]
+      }
+    },
+    {
+      "originalIndex": 80,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1663372800000,
+        "lg": "Ligue 2",
+        "H": "Guingamp",
+        "A": "St Etienne",
+        "h": 2,
+        "a": 1,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2022,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2223/F2.csv",
+          "HistSourceSHA256": "14915d41e6e31375f4ea082eb1be888d209b91166e277a157acf15d5d1b29d19",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2223/F2.csv",
+              "sha256": "14915d41e6e31375f4ea082eb1be888d209b91166e277a157acf15d5d1b29d19"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": [
+          15,
+          14,
+          7,
+          3
+        ]
+      }
+    },
+    {
+      "originalIndex": 89,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1664582400000,
+        "lg": "Ligue 2",
+        "H": "St Etienne",
+        "A": "Grenoble",
+        "h": 2,
+        "a": 2,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2022,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2223/F2.csv",
+          "HistSourceSHA256": "14915d41e6e31375f4ea082eb1be888d209b91166e277a157acf15d5d1b29d19",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2223/F2.csv",
+              "sha256": "14915d41e6e31375f4ea082eb1be888d209b91166e277a157acf15d5d1b29d19"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 1,
+        "shots": [
+          26,
+          4,
+          9,
+          2
+        ]
+      }
+    },
+    {
+      "originalIndex": 109,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1665360000000,
+        "lg": "Ligue 2",
+        "H": "Sochaux",
+        "A": "St Etienne",
+        "h": 2,
+        "a": 1,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2022,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2223/F2.csv",
+          "HistSourceSHA256": "14915d41e6e31375f4ea082eb1be888d209b91166e277a157acf15d5d1b29d19",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2223/F2.csv",
+              "sha256": "14915d41e6e31375f4ea082eb1be888d209b91166e277a157acf15d5d1b29d19"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": [
+          7,
+          16,
+          5,
+          5
+        ]
+      }
+    },
+    {
+      "originalIndex": 110,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1665792000000,
+        "lg": "Ligue 2",
+        "H": "St Etienne",
+        "A": "Paris FC",
+        "h": 0,
+        "a": 2,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2022,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2223/F2.csv",
+          "HistSourceSHA256": "14915d41e6e31375f4ea082eb1be888d209b91166e277a157acf15d5d1b29d19",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2223/F2.csv",
+              "sha256": "14915d41e6e31375f4ea082eb1be888d209b91166e277a157acf15d5d1b29d19"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          12,
+          8,
+          4,
+          2
+        ]
+      }
+    },
+    {
+      "originalIndex": 120,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1666396800000,
+        "lg": "Ligue 2",
+        "H": "Amiens",
+        "A": "St Etienne",
+        "h": 0,
+        "a": 1,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2022,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2223/F2.csv",
+          "HistSourceSHA256": "14915d41e6e31375f4ea082eb1be888d209b91166e277a157acf15d5d1b29d19",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2223/F2.csv",
+              "sha256": "14915d41e6e31375f4ea082eb1be888d209b91166e277a157acf15d5d1b29d19"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          13,
+          11,
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "originalIndex": 139,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1667779200000,
+        "lg": "Ligue 2",
+        "H": "Metz",
+        "A": "St Etienne",
+        "h": 3,
+        "a": 2,
+        "ht": 3,
+        "up": false,
+        "o": {
+          "CsvSeason": 2022,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2223/F2.csv",
+          "HistSourceSHA256": "14915d41e6e31375f4ea082eb1be888d209b91166e277a157acf15d5d1b29d19",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2223/F2.csv",
+              "sha256": "14915d41e6e31375f4ea082eb1be888d209b91166e277a157acf15d5d1b29d19"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 2,
+        "hta": 1,
+        "shots": [
+          14,
+          19,
+          6,
+          4
+        ]
+      }
+    },
+    {
+      "originalIndex": 140,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1668211200000,
+        "lg": "Ligue 2",
+        "H": "St Etienne",
+        "A": "Rodez",
+        "h": 0,
+        "a": 2,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2022,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2223/F2.csv",
+          "HistSourceSHA256": "14915d41e6e31375f4ea082eb1be888d209b91166e277a157acf15d5d1b29d19",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2223/F2.csv",
+              "sha256": "14915d41e6e31375f4ea082eb1be888d209b91166e277a157acf15d5d1b29d19"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          12,
+          14,
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "originalIndex": 150,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1672012800000,
+        "lg": "Ligue 2",
+        "H": "Annecy",
+        "A": "St Etienne",
+        "h": 2,
+        "a": 1,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2022,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2223/F2.csv",
+          "HistSourceSHA256": "14915d41e6e31375f4ea082eb1be888d209b91166e277a157acf15d5d1b29d19",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2223/F2.csv",
+              "sha256": "14915d41e6e31375f4ea082eb1be888d209b91166e277a157acf15d5d1b29d19"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": [
+          10,
+          17,
+          5,
+          6
+        ]
+      }
+    },
+    {
+      "originalIndex": 161,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1672358400000,
+        "lg": "Ligue 2",
+        "H": "St Etienne",
+        "A": "Caen",
+        "h": 1,
+        "a": 1,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2022,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2223/F2.csv",
+          "HistSourceSHA256": "14915d41e6e31375f4ea082eb1be888d209b91166e277a157acf15d5d1b29d19",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2223/F2.csv",
+              "sha256": "14915d41e6e31375f4ea082eb1be888d209b91166e277a157acf15d5d1b29d19"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 1,
+        "shots": [
+          15,
+          8,
+          4,
+          2
+        ]
+      }
+    },
+    {
+      "originalIndex": 178,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1673308800000,
+        "lg": "Ligue 2",
+        "H": "St Etienne",
+        "A": "Laval",
+        "h": 1,
+        "a": 0,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2022,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2223/F2.csv",
+          "HistSourceSHA256": "14915d41e6e31375f4ea082eb1be888d209b91166e277a157acf15d5d1b29d19",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2223/F2.csv",
+              "sha256": "14915d41e6e31375f4ea082eb1be888d209b91166e277a157acf15d5d1b29d19"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          13,
+          4,
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "originalIndex": 188,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1673827200000,
+        "lg": "Ligue 2",
+        "H": "Niort",
+        "A": "St Etienne",
+        "h": 0,
+        "a": 1,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2022,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2223/F2.csv",
+          "HistSourceSHA256": "14915d41e6e31375f4ea082eb1be888d209b91166e277a157acf15d5d1b29d19",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2223/F2.csv",
+              "sha256": "14915d41e6e31375f4ea082eb1be888d209b91166e277a157acf15d5d1b29d19"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          11,
+          15,
+          7,
+          7
+        ]
+      }
+    },
+    {
+      "originalIndex": 190,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1674864000000,
+        "lg": "Ligue 2",
+        "H": "St Etienne",
+        "A": "Sochaux",
+        "h": 2,
+        "a": 3,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2022,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2223/F2.csv",
+          "HistSourceSHA256": "14915d41e6e31375f4ea082eb1be888d209b91166e277a157acf15d5d1b29d19",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2223/F2.csv",
+              "sha256": "14915d41e6e31375f4ea082eb1be888d209b91166e277a157acf15d5d1b29d19"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 1,
+        "shots": [
+          14,
+          12,
+          5,
+          6
+        ]
+      }
+    },
+    {
+      "originalIndex": 201,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1675123200000,
+        "lg": "Ligue 2",
+        "H": "Bastia",
+        "A": "St Etienne",
+        "h": 2,
+        "a": 0,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2022,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2223/F2.csv",
+          "HistSourceSHA256": "14915d41e6e31375f4ea082eb1be888d209b91166e277a157acf15d5d1b29d19",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2223/F2.csv",
+              "sha256": "14915d41e6e31375f4ea082eb1be888d209b91166e277a157acf15d5d1b29d19"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          13,
+          11,
+          4,
+          3
+        ]
+      }
+    },
+    {
+      "originalIndex": 218,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1675468800000,
+        "lg": "Ligue 2",
+        "H": "St Etienne",
+        "A": "Annecy",
+        "h": 3,
+        "a": 2,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "CsvSeason": 2022,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2223/F2.csv",
+          "HistSourceSHA256": "14915d41e6e31375f4ea082eb1be888d209b91166e277a157acf15d5d1b29d19",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2223/F2.csv",
+              "sha256": "14915d41e6e31375f4ea082eb1be888d209b91166e277a157acf15d5d1b29d19"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 1,
+        "shots": [
+          15,
+          11,
+          6,
+          6
+        ]
+      }
+    },
+    {
+      "originalIndex": 220,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1676073600000,
+        "lg": "Ligue 2",
+        "H": "St Etienne",
+        "A": "Dijon",
+        "h": 2,
+        "a": 0,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "CsvSeason": 2022,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2223/F2.csv",
+          "HistSourceSHA256": "14915d41e6e31375f4ea082eb1be888d209b91166e277a157acf15d5d1b29d19",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2223/F2.csv",
+              "sha256": "14915d41e6e31375f4ea082eb1be888d209b91166e277a157acf15d5d1b29d19"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 2,
+        "hta": 0,
+        "shots": [
+          8,
+          9,
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "originalIndex": 238,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1676851200000,
+        "lg": "Ligue 2",
+        "H": "Nimes",
+        "A": "St Etienne",
+        "h": 1,
+        "a": 2,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2022,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2223/F2.csv",
+          "HistSourceSHA256": "14915d41e6e31375f4ea082eb1be888d209b91166e277a157acf15d5d1b29d19",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2223/F2.csv",
+              "sha256": "14915d41e6e31375f4ea082eb1be888d209b91166e277a157acf15d5d1b29d19"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 1,
+        "shots": [
+          13,
+          14,
+          5,
+          5
+        ]
+      }
+    },
+    {
+      "originalIndex": 246,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1677283200000,
+        "lg": "Ligue 2",
+        "H": "St Etienne",
+        "A": "Pau FC",
+        "h": 2,
+        "a": 0,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2022,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2223/F2.csv",
+          "HistSourceSHA256": "14915d41e6e31375f4ea082eb1be888d209b91166e277a157acf15d5d1b29d19",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2223/F2.csv",
+              "sha256": "14915d41e6e31375f4ea082eb1be888d209b91166e277a157acf15d5d1b29d19"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": [
+          19,
+          7,
+          8,
+          1
+        ]
+      }
+    },
+    {
+      "originalIndex": 249,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1677888000000,
+        "lg": "Ligue 2",
+        "H": "Bordeaux",
+        "A": "St Etienne",
+        "h": 1,
+        "a": 1,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2022,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2223/F2.csv",
+          "HistSourceSHA256": "14915d41e6e31375f4ea082eb1be888d209b91166e277a157acf15d5d1b29d19",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2223/F2.csv",
+              "sha256": "14915d41e6e31375f4ea082eb1be888d209b91166e277a157acf15d5d1b29d19"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          8,
+          9,
+          7,
+          1
+        ]
+      }
+    },
+    {
+      "originalIndex": 266,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1678492800000,
+        "lg": "Ligue 2",
+        "H": "St Etienne",
+        "A": "Amiens",
+        "h": 1,
+        "a": 1,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2022,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2223/F2.csv",
+          "HistSourceSHA256": "14915d41e6e31375f4ea082eb1be888d209b91166e277a157acf15d5d1b29d19",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2223/F2.csv",
+              "sha256": "14915d41e6e31375f4ea082eb1be888d209b91166e277a157acf15d5d1b29d19"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          17,
+          11,
+          3,
+          6
+        ]
+      }
+    },
+    {
+      "originalIndex": 270,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1679097600000,
+        "lg": "Ligue 2",
+        "H": "Le Havre",
+        "A": "St Etienne",
+        "h": 2,
+        "a": 2,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2022,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2223/F2.csv",
+          "HistSourceSHA256": "14915d41e6e31375f4ea082eb1be888d209b91166e277a157acf15d5d1b29d19",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2223/F2.csv",
+              "sha256": "14915d41e6e31375f4ea082eb1be888d209b91166e277a157acf15d5d1b29d19"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          9,
+          14,
+          2,
+          5
+        ]
+      }
+    },
+    {
+      "originalIndex": 280,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1680307200000,
+        "lg": "Ligue 2",
+        "H": "St Etienne",
+        "A": "Niort",
+        "h": 2,
+        "a": 0,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2022,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2223/F2.csv",
+          "HistSourceSHA256": "14915d41e6e31375f4ea082eb1be888d209b91166e277a157acf15d5d1b29d19",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2223/F2.csv",
+              "sha256": "14915d41e6e31375f4ea082eb1be888d209b91166e277a157acf15d5d1b29d19"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          22,
+          8,
+          8,
+          1
+        ]
+      }
+    },
+    {
+      "originalIndex": 296,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1680912000000,
+        "lg": "Ligue 2",
+        "H": "Paris FC",
+        "A": "St Etienne",
+        "h": 2,
+        "a": 4,
+        "ht": 4,
+        "up": false,
+        "o": {
+          "CsvSeason": 2022,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2223/F2.csv",
+          "HistSourceSHA256": "14915d41e6e31375f4ea082eb1be888d209b91166e277a157acf15d5d1b29d19",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2223/F2.csv",
+              "sha256": "14915d41e6e31375f4ea082eb1be888d209b91166e277a157acf15d5d1b29d19"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 2,
+        "hta": 2,
+        "shots": [
+          13,
+          17,
+          6,
+          9
+        ]
+      }
+    },
+    {
+      "originalIndex": 309,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1681689600000,
+        "lg": "Ligue 2",
+        "H": "Grenoble",
+        "A": "St Etienne",
+        "h": 0,
+        "a": 2,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2022,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2223/F2.csv",
+          "HistSourceSHA256": "14915d41e6e31375f4ea082eb1be888d209b91166e277a157acf15d5d1b29d19",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2223/F2.csv",
+              "sha256": "14915d41e6e31375f4ea082eb1be888d209b91166e277a157acf15d5d1b29d19"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          8,
+          17,
+          4,
+          6
+        ]
+      }
+    },
+    {
+      "originalIndex": 310,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1682121600000,
+        "lg": "Ligue 2",
+        "H": "St Etienne",
+        "A": "Metz",
+        "h": 1,
+        "a": 3,
+        "ht": 4,
+        "up": false,
+        "o": {
+          "CsvSeason": 2022,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2223/F2.csv",
+          "HistSourceSHA256": "14915d41e6e31375f4ea082eb1be888d209b91166e277a157acf15d5d1b29d19",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2223/F2.csv",
+              "sha256": "14915d41e6e31375f4ea082eb1be888d209b91166e277a157acf15d5d1b29d19"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 3,
+        "shots": [
+          21,
+          10,
+          5,
+          6
+        ]
+      }
+    },
+    {
+      "originalIndex": 327,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1682726400000,
+        "lg": "Ligue 2",
+        "H": "Rodez",
+        "A": "St Etienne",
+        "h": 1,
+        "a": 1,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2022,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2223/F2.csv",
+          "HistSourceSHA256": "14915d41e6e31375f4ea082eb1be888d209b91166e277a157acf15d5d1b29d19",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2223/F2.csv",
+              "sha256": "14915d41e6e31375f4ea082eb1be888d209b91166e277a157acf15d5d1b29d19"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          21,
+          14,
+          5,
+          4
+        ]
+      }
+    },
+    {
+      "originalIndex": 338,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1683331200000,
+        "lg": "Ligue 2",
+        "H": "St Etienne",
+        "A": "Guingamp",
+        "h": 3,
+        "a": 2,
+        "ht": 3,
+        "up": false,
+        "o": {
+          "CsvSeason": 2022,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2223/F2.csv",
+          "HistSourceSHA256": "14915d41e6e31375f4ea082eb1be888d209b91166e277a157acf15d5d1b29d19",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2223/F2.csv",
+              "sha256": "14915d41e6e31375f4ea082eb1be888d209b91166e277a157acf15d5d1b29d19"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 2,
+        "shots": [
+          14,
+          15,
+          9,
+          4
+        ]
+      }
+    },
+    {
+      "originalIndex": 344,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1683936000000,
+        "lg": "Ligue 2",
+        "H": "Laval",
+        "A": "St Etienne",
+        "h": 2,
+        "a": 1,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "CsvSeason": 2022,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2223/F2.csv",
+          "HistSourceSHA256": "14915d41e6e31375f4ea082eb1be888d209b91166e277a157acf15d5d1b29d19",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2223/F2.csv",
+              "sha256": "14915d41e6e31375f4ea082eb1be888d209b91166e277a157acf15d5d1b29d19"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 1,
+        "shots": [
+          17,
+          18,
+          9,
+          4
+        ]
+      }
+    },
+    {
+      "originalIndex": 358,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1684540800000,
+        "lg": "Ligue 2",
+        "H": "St Etienne",
+        "A": "Quevilly Rouen",
+        "h": 4,
+        "a": 2,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "CsvSeason": 2022,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2223/F2.csv",
+          "HistSourceSHA256": "14915d41e6e31375f4ea082eb1be888d209b91166e277a157acf15d5d1b29d19",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2223/F2.csv",
+              "sha256": "14915d41e6e31375f4ea082eb1be888d209b91166e277a157acf15d5d1b29d19"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 1,
+        "shots": [
+          18,
+          15,
+          8,
+          7
+        ]
+      }
+    },
+    {
+      "originalIndex": 362,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1685059200000,
+        "lg": "Ligue 2",
+        "H": "Caen",
+        "A": "St Etienne",
+        "h": 2,
+        "a": 2,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "CsvSeason": 2022,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2223/F2.csv",
+          "HistSourceSHA256": "14915d41e6e31375f4ea082eb1be888d209b91166e277a157acf15d5d1b29d19",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2223/F2.csv",
+              "sha256": "14915d41e6e31375f4ea082eb1be888d209b91166e277a157acf15d5d1b29d19"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 2,
+        "shots": [
+          14,
+          13,
+          3,
+          6
+        ]
+      }
+    },
+    {
+      "originalIndex": 379,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1685664000000,
+        "lg": "Ligue 2",
+        "H": "St Etienne",
+        "A": "Valenciennes",
+        "h": 2,
+        "a": 0,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2022,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2223/F2.csv",
+          "HistSourceSHA256": "14915d41e6e31375f4ea082eb1be888d209b91166e277a157acf15d5d1b29d19",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2223/F2.csv",
+              "sha256": "14915d41e6e31375f4ea082eb1be888d209b91166e277a157acf15d5d1b29d19"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          13,
+          6,
+          6,
+          2
+        ]
+      }
+    }
+  ]
+}

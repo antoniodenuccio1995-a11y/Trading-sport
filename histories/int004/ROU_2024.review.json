@@ -1,0 +1,1215 @@
+{
+  "originalPacket": "histories/stab003/ROU_2024.json",
+  "originalSHA256": "293c7e7a0711e11b9cac4d1bb6b6ff5b23beb532f748c0bf70987ead61be301c",
+  "review": [
+    {
+      "originalIndex": 7,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1721001600000,
+        "lg": "SuperLiga Romania",
+        "H": "Petrolul",
+        "A": "Gloria Buzau",
+        "h": 0,
+        "a": 0,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2024,
+          "HistSourceURL": "https://www.football-data.co.uk/new/ROU.csv",
+          "HistSourceSHA256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/ROU.csv",
+              "sha256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 14,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1721606400000,
+        "lg": "SuperLiga Romania",
+        "H": "Gloria Buzau",
+        "A": "Sepsi Sf. Gheorghe",
+        "h": 1,
+        "a": 2,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2024,
+          "HistSourceURL": "https://www.football-data.co.uk/new/ROU.csv",
+          "HistSourceSHA256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/ROU.csv",
+              "sha256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 18,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1722038400000,
+        "lg": "SuperLiga Romania",
+        "H": "Poli Iasi",
+        "A": "Gloria Buzau",
+        "h": 1,
+        "a": 2,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2024,
+          "HistSourceURL": "https://www.football-data.co.uk/new/ROU.csv",
+          "HistSourceSHA256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/ROU.csv",
+              "sha256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 25,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1722556800000,
+        "lg": "SuperLiga Romania",
+        "H": "Din. Bucuresti",
+        "A": "Gloria Buzau",
+        "h": 4,
+        "a": 1,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2024,
+          "HistSourceURL": "https://www.football-data.co.uk/new/ROU.csv",
+          "HistSourceSHA256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/ROU.csv",
+              "sha256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 34,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1723248000000,
+        "lg": "SuperLiga Romania",
+        "H": "Gloria Buzau",
+        "A": "FC Rapid Bucuresti",
+        "h": 1,
+        "a": 1,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2024,
+          "HistSourceURL": "https://www.football-data.co.uk/new/ROU.csv",
+          "HistSourceSHA256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/ROU.csv",
+              "sha256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 40,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1723766400000,
+        "lg": "SuperLiga Romania",
+        "H": "Univ. Craiova",
+        "A": "Gloria Buzau",
+        "h": 5,
+        "a": 1,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2024,
+          "HistSourceURL": "https://www.football-data.co.uk/new/ROU.csv",
+          "HistSourceSHA256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/ROU.csv",
+              "sha256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 52,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1724630400000,
+        "lg": "SuperLiga Romania",
+        "H": "Gloria Buzau",
+        "A": "U. Cluj",
+        "h": 0,
+        "a": 2,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2024,
+          "HistSourceURL": "https://www.football-data.co.uk/new/ROU.csv",
+          "HistSourceSHA256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/ROU.csv",
+              "sha256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 60,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1725235200000,
+        "lg": "SuperLiga Romania",
+        "H": "Unirea Slobozia",
+        "A": "Gloria Buzau",
+        "h": 2,
+        "a": 1,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2024,
+          "HistSourceURL": "https://www.football-data.co.uk/new/ROU.csv",
+          "HistSourceSHA256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/ROU.csv",
+              "sha256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 64,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1726272000000,
+        "lg": "SuperLiga Romania",
+        "H": "Gloria Buzau",
+        "A": "Otelul",
+        "h": 0,
+        "a": 0,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2024,
+          "HistSourceURL": "https://www.football-data.co.uk/new/ROU.csv",
+          "HistSourceSHA256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/ROU.csv",
+              "sha256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 70,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1726790400000,
+        "lg": "SuperLiga Romania",
+        "H": "FC Botosani",
+        "A": "Gloria Buzau",
+        "h": 3,
+        "a": 3,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2024,
+          "HistSourceURL": "https://www.football-data.co.uk/new/ROU.csv",
+          "HistSourceSHA256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/ROU.csv",
+              "sha256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 83,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1727568000000,
+        "lg": "SuperLiga Romania",
+        "H": "Gloria Buzau",
+        "A": "Farul Constanta",
+        "h": 1,
+        "a": 0,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2024,
+          "HistSourceURL": "https://www.football-data.co.uk/new/ROU.csv",
+          "HistSourceSHA256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/ROU.csv",
+              "sha256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 93,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1728172800000,
+        "lg": "SuperLiga Romania",
+        "H": "FCSB",
+        "A": "Gloria Buzau",
+        "h": 3,
+        "a": 2,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2024,
+          "HistSourceURL": "https://www.football-data.co.uk/new/ROU.csv",
+          "HistSourceSHA256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/ROU.csv",
+              "sha256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 94,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1729209600000,
+        "lg": "SuperLiga Romania",
+        "H": "Gloria Buzau",
+        "A": "FC Hermannstadt",
+        "h": 3,
+        "a": 0,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2024,
+          "HistSourceURL": "https://www.football-data.co.uk/new/ROU.csv",
+          "HistSourceSHA256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/ROU.csv",
+              "sha256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 103,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1729900800000,
+        "lg": "SuperLiga Romania",
+        "H": "UTA Arad",
+        "A": "Gloria Buzau",
+        "h": 1,
+        "a": 0,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2024,
+          "HistSourceURL": "https://www.football-data.co.uk/new/ROU.csv",
+          "HistSourceSHA256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/ROU.csv",
+              "sha256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 110,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1730419200000,
+        "lg": "SuperLiga Romania",
+        "H": "Gloria Buzau",
+        "A": "CFR Cluj",
+        "h": 0,
+        "a": 1,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2024,
+          "HistSourceURL": "https://www.football-data.co.uk/new/ROU.csv",
+          "HistSourceSHA256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/ROU.csv",
+              "sha256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 125,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1731283200000,
+        "lg": "SuperLiga Romania",
+        "H": "Gloria Buzau",
+        "A": "Petrolul",
+        "h": 0,
+        "a": 1,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2024,
+          "HistSourceURL": "https://www.football-data.co.uk/new/ROU.csv",
+          "HistSourceSHA256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/ROU.csv",
+              "sha256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 128,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1732233600000,
+        "lg": "SuperLiga Romania",
+        "H": "Sepsi Sf. Gheorghe",
+        "A": "Gloria Buzau",
+        "h": 2,
+        "a": 0,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2024,
+          "HistSourceURL": "https://www.football-data.co.uk/new/ROU.csv",
+          "HistSourceSHA256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/ROU.csv",
+              "sha256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 139,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1732924800000,
+        "lg": "SuperLiga Romania",
+        "H": "Gloria Buzau",
+        "A": "Poli Iasi",
+        "h": 2,
+        "a": 0,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2024,
+          "HistSourceURL": "https://www.football-data.co.uk/new/ROU.csv",
+          "HistSourceSHA256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/ROU.csv",
+              "sha256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 145,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1733529600000,
+        "lg": "SuperLiga Romania",
+        "H": "Gloria Buzau",
+        "A": "Din. Bucuresti",
+        "h": 0,
+        "a": 1,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2024,
+          "HistSourceURL": "https://www.football-data.co.uk/new/ROU.csv",
+          "HistSourceSHA256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/ROU.csv",
+              "sha256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 159,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1734307200000,
+        "lg": "SuperLiga Romania",
+        "H": "FC Rapid Bucuresti",
+        "A": "Gloria Buzau",
+        "h": 2,
+        "a": 0,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2024,
+          "HistSourceURL": "https://www.football-data.co.uk/new/ROU.csv",
+          "HistSourceSHA256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/ROU.csv",
+              "sha256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 162,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1734739200000,
+        "lg": "SuperLiga Romania",
+        "H": "Gloria Buzau",
+        "A": "Univ. Craiova",
+        "h": 0,
+        "a": 2,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2024,
+          "HistSourceURL": "https://www.football-data.co.uk/new/ROU.csv",
+          "HistSourceSHA256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/ROU.csv",
+              "sha256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 170,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1737158400000,
+        "lg": "SuperLiga Romania",
+        "H": "U. Cluj",
+        "A": "Gloria Buzau",
+        "h": 2,
+        "a": 1,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2024,
+          "HistSourceURL": "https://www.football-data.co.uk/new/ROU.csv",
+          "HistSourceSHA256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/ROU.csv",
+              "sha256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 176,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1737676800000,
+        "lg": "SuperLiga Romania",
+        "H": "Gloria Buzau",
+        "A": "Unirea Slobozia",
+        "h": 3,
+        "a": 0,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2024,
+          "HistSourceURL": "https://www.football-data.co.uk/new/ROU.csv",
+          "HistSourceSHA256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/ROU.csv",
+              "sha256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 187,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1738368000000,
+        "lg": "SuperLiga Romania",
+        "H": "Otelul",
+        "A": "Gloria Buzau",
+        "h": 2,
+        "a": 1,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2024,
+          "HistSourceURL": "https://www.football-data.co.uk/new/ROU.csv",
+          "HistSourceSHA256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/ROU.csv",
+              "sha256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 192,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1738627200000,
+        "lg": "SuperLiga Romania",
+        "H": "Gloria Buzau",
+        "A": "FC Botosani",
+        "h": 0,
+        "a": 2,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2024,
+          "HistSourceURL": "https://www.football-data.co.uk/new/ROU.csv",
+          "HistSourceSHA256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/ROU.csv",
+              "sha256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 206,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1739145600000,
+        "lg": "SuperLiga Romania",
+        "H": "Farul Constanta",
+        "A": "Gloria Buzau",
+        "h": 1,
+        "a": 0,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2024,
+          "HistSourceURL": "https://www.football-data.co.uk/new/ROU.csv",
+          "HistSourceSHA256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/ROU.csv",
+              "sha256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 213,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1739664000000,
+        "lg": "SuperLiga Romania",
+        "H": "Gloria Buzau",
+        "A": "FCSB",
+        "h": 0,
+        "a": 2,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2024,
+          "HistSourceURL": "https://www.football-data.co.uk/new/ROU.csv",
+          "HistSourceSHA256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/ROU.csv",
+              "sha256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 216,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1740096000000,
+        "lg": "SuperLiga Romania",
+        "H": "FC Hermannstadt",
+        "A": "Gloria Buzau",
+        "h": 2,
+        "a": 1,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2024,
+          "HistSourceURL": "https://www.football-data.co.uk/new/ROU.csv",
+          "HistSourceSHA256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/ROU.csv",
+              "sha256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 230,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1740960000000,
+        "lg": "SuperLiga Romania",
+        "H": "Gloria Buzau",
+        "A": "UTA Arad",
+        "h": 1,
+        "a": 1,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2024,
+          "HistSourceURL": "https://www.football-data.co.uk/new/ROU.csv",
+          "HistSourceSHA256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/ROU.csv",
+              "sha256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 236,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1741478400000,
+        "lg": "SuperLiga Romania",
+        "H": "CFR Cluj",
+        "A": "Gloria Buzau",
+        "h": 6,
+        "a": 0,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2024,
+          "HistSourceURL": "https://www.football-data.co.uk/new/ROU.csv",
+          "HistSourceSHA256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/ROU.csv",
+              "sha256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 247,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1742169600000,
+        "lg": "SuperLiga Romania",
+        "H": "Sepsi Sf. Gheorghe",
+        "A": "Gloria Buzau",
+        "h": 1,
+        "a": 2,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2024,
+          "HistSourceURL": "https://www.football-data.co.uk/new/ROU.csv",
+          "HistSourceSHA256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/ROU.csv",
+              "sha256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 254,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1743379200000,
+        "lg": "SuperLiga Romania",
+        "H": "Gloria Buzau",
+        "A": "Otelul",
+        "h": 0,
+        "a": 2,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2024,
+          "HistSourceURL": "https://www.football-data.co.uk/new/ROU.csv",
+          "HistSourceSHA256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/ROU.csv",
+              "sha256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 260,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1743897600000,
+        "lg": "SuperLiga Romania",
+        "H": "FC Hermannstadt",
+        "A": "Gloria Buzau",
+        "h": 0,
+        "a": 2,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2024,
+          "HistSourceURL": "https://www.football-data.co.uk/new/ROU.csv",
+          "HistSourceSHA256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/ROU.csv",
+              "sha256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 264,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1744329600000,
+        "lg": "SuperLiga Romania",
+        "H": "Gloria Buzau",
+        "A": "Poli Iasi",
+        "h": 0,
+        "a": 1,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2024,
+          "HistSourceURL": "https://www.football-data.co.uk/new/ROU.csv",
+          "HistSourceSHA256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/ROU.csv",
+              "sha256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 278,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1745193600000,
+        "lg": "SuperLiga Romania",
+        "H": "Petrolul",
+        "A": "Gloria Buzau",
+        "h": 4,
+        "a": 0,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2024,
+          "HistSourceURL": "https://www.football-data.co.uk/new/ROU.csv",
+          "HistSourceSHA256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/ROU.csv",
+              "sha256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 284,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1745712000000,
+        "lg": "SuperLiga Romania",
+        "H": "Gloria Buzau",
+        "A": "FC Botosani",
+        "h": 0,
+        "a": 2,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2024,
+          "HistSourceURL": "https://www.football-data.co.uk/new/ROU.csv",
+          "HistSourceSHA256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/ROU.csv",
+              "sha256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 291,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1746230400000,
+        "lg": "SuperLiga Romania",
+        "H": "Farul Constanta",
+        "A": "Gloria Buzau",
+        "h": 1,
+        "a": 0,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2024,
+          "HistSourceURL": "https://www.football-data.co.uk/new/ROU.csv",
+          "HistSourceSHA256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/ROU.csv",
+              "sha256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 296,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1746748800000,
+        "lg": "SuperLiga Romania",
+        "H": "Gloria Buzau",
+        "A": "Unirea Slobozia",
+        "h": 0,
+        "a": 3,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2024,
+          "HistSourceURL": "https://www.football-data.co.uk/new/ROU.csv",
+          "HistSourceSHA256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/ROU.csv",
+              "sha256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 306,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1747440000000,
+        "lg": "SuperLiga Romania",
+        "H": "UTA Arad",
+        "A": "Gloria Buzau",
+        "h": 0,
+        "a": 0,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2024,
+          "HistSourceURL": "https://www.football-data.co.uk/new/ROU.csv",
+          "HistSourceSHA256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/ROU.csv",
+              "sha256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    }
+  ]
+}

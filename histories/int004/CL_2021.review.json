@@ -1,0 +1,3573 @@
+{
+  "originalPacket": "histories/stab003/CL_2021.json",
+  "originalSHA256": "4142abe9b8685095aa56d1d849292e77398b000bdee71817b33fd67246cc60d4",
+  "review": [
+    {
+      "originalIndex": 0,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1631664000000,
+        "lg": "Champions League",
+        "H": "Manchester City (ENG)",
+        "A": "RB Leipzig",
+        "h": 6,
+        "a": 3,
+        "ht": 4,
+        "up": false,
+        "o": {
+          "Phase": "Group A",
+          "HomeCountry": "INT",
+          "AwayCountry": "GER",
+          "PublishedRound": "Group A",
+          "CsvSeason": 2021,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2021-22/cl.txt",
+              "sha256": "36241f4479aa9efda62c62318366bbf36f84cc8719f6387c5747cb5dea7ec519"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 3,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 1,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1631664000000,
+        "lg": "Champions League",
+        "H": "Club Brugge KV (BEL)",
+        "A": "Paris Saint-Germain",
+        "h": 1,
+        "a": 1,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "Phase": "Group A",
+          "HomeCountry": "INT",
+          "AwayCountry": "FRA",
+          "PublishedRound": "Group A",
+          "CsvSeason": 2021,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2021-22/cl.txt",
+              "sha256": "36241f4479aa9efda62c62318366bbf36f84cc8719f6387c5747cb5dea7ec519"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 3,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1632787200000,
+        "lg": "Champions League",
+        "H": "RB Leipzig (GER)",
+        "A": "Club Brugge KV",
+        "h": 1,
+        "a": 2,
+        "ht": 3,
+        "up": false,
+        "o": {
+          "Phase": "Group A",
+          "HomeCountry": "INT",
+          "AwayCountry": "BEL",
+          "PublishedRound": "Group A",
+          "CsvSeason": 2021,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2021-22/cl.txt",
+              "sha256": "36241f4479aa9efda62c62318366bbf36f84cc8719f6387c5747cb5dea7ec519"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 2,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 4,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1634601600000,
+        "lg": "Champions League",
+        "H": "Club Brugge KV (BEL)",
+        "A": "Manchester City",
+        "h": 1,
+        "a": 5,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "Phase": "Group A",
+          "HomeCountry": "INT",
+          "AwayCountry": "ENG",
+          "PublishedRound": "Group A",
+          "CsvSeason": 2021,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2021-22/cl.txt",
+              "sha256": "36241f4479aa9efda62c62318366bbf36f84cc8719f6387c5747cb5dea7ec519"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 2,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 6,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1635897600000,
+        "lg": "Champions League",
+        "H": "RB Leipzig (GER)",
+        "A": "Paris Saint-Germain",
+        "h": 2,
+        "a": 2,
+        "ht": 3,
+        "up": false,
+        "o": {
+          "Phase": "Group A",
+          "HomeCountry": "INT",
+          "AwayCountry": "FRA",
+          "PublishedRound": "Group A",
+          "CsvSeason": 2021,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2021-22/cl.txt",
+              "sha256": "36241f4479aa9efda62c62318366bbf36f84cc8719f6387c5747cb5dea7ec519"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 2,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 7,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1635897600000,
+        "lg": "Champions League",
+        "H": "Manchester City (ENG)",
+        "A": "Club Brugge KV",
+        "h": 4,
+        "a": 1,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "Phase": "Group A",
+          "HomeCountry": "INT",
+          "AwayCountry": "BEL",
+          "PublishedRound": "Group A",
+          "CsvSeason": 2021,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2021-22/cl.txt",
+              "sha256": "36241f4479aa9efda62c62318366bbf36f84cc8719f6387c5747cb5dea7ec519"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 8,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1637712000000,
+        "lg": "Champions League",
+        "H": "Manchester City (ENG)",
+        "A": "Paris Saint-Germain",
+        "h": 2,
+        "a": 1,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "Phase": "Group A",
+          "HomeCountry": "INT",
+          "AwayCountry": "FRA",
+          "PublishedRound": "Group A",
+          "CsvSeason": 2021,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2021-22/cl.txt",
+              "sha256": "36241f4479aa9efda62c62318366bbf36f84cc8719f6387c5747cb5dea7ec519"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 9,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1637712000000,
+        "lg": "Champions League",
+        "H": "Club Brugge KV (BEL)",
+        "A": "RB Leipzig",
+        "h": 0,
+        "a": 5,
+        "ht": 4,
+        "up": false,
+        "o": {
+          "Phase": "Group A",
+          "HomeCountry": "INT",
+          "AwayCountry": "GER",
+          "PublishedRound": "Group A",
+          "CsvSeason": 2021,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2021-22/cl.txt",
+              "sha256": "36241f4479aa9efda62c62318366bbf36f84cc8719f6387c5747cb5dea7ec519"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 4,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 10,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1638835200000,
+        "lg": "Champions League",
+        "H": "RB Leipzig (GER)",
+        "A": "Manchester City",
+        "h": 2,
+        "a": 1,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "Group A",
+          "HomeCountry": "INT",
+          "AwayCountry": "ENG",
+          "PublishedRound": "Group A",
+          "CsvSeason": 2021,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2021-22/cl.txt",
+              "sha256": "36241f4479aa9efda62c62318366bbf36f84cc8719f6387c5747cb5dea7ec519"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 12,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1631664000000,
+        "lg": "Champions League",
+        "H": "Atlético Madrid (ESP)",
+        "A": "FC Porto",
+        "h": 0,
+        "a": 0,
+        "ht": null,
+        "up": false,
+        "o": {
+          "Phase": "Group B",
+          "HomeCountry": "INT",
+          "AwayCountry": "PRT",
+          "PublishedRound": "Group B",
+          "CsvSeason": 2021,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2021-22/cl.txt",
+              "sha256": "36241f4479aa9efda62c62318366bbf36f84cc8719f6387c5747cb5dea7ec519"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 13,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1631664000000,
+        "lg": "Champions League",
+        "H": "Liverpool FC (ENG)",
+        "A": "AC Milan",
+        "h": 3,
+        "a": 2,
+        "ht": 3,
+        "up": false,
+        "o": {
+          "Phase": "Group B",
+          "HomeCountry": "INT",
+          "AwayCountry": "ITA",
+          "PublishedRound": "Group B",
+          "CsvSeason": 2021,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2021-22/cl.txt",
+              "sha256": "36241f4479aa9efda62c62318366bbf36f84cc8719f6387c5747cb5dea7ec519"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 2,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 14,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1632787200000,
+        "lg": "Champions League",
+        "H": "FC Porto (POR)",
+        "A": "Liverpool FC",
+        "h": 1,
+        "a": 5,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "Phase": "Group B",
+          "HomeCountry": "INT",
+          "AwayCountry": "ENG",
+          "PublishedRound": "Group B",
+          "CsvSeason": 2021,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2021-22/cl.txt",
+              "sha256": "36241f4479aa9efda62c62318366bbf36f84cc8719f6387c5747cb5dea7ec519"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 2,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 15,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1632787200000,
+        "lg": "Champions League",
+        "H": "AC Milan (ITA)",
+        "A": "Atlético Madrid",
+        "h": 1,
+        "a": 2,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "Group B",
+          "HomeCountry": "INT",
+          "AwayCountry": "ESP",
+          "PublishedRound": "Group B",
+          "CsvSeason": 2021,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2021-22/cl.txt",
+              "sha256": "36241f4479aa9efda62c62318366bbf36f84cc8719f6387c5747cb5dea7ec519"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 16,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1634601600000,
+        "lg": "Champions League",
+        "H": "Atlético Madrid (ESP)",
+        "A": "Liverpool FC",
+        "h": 2,
+        "a": 3,
+        "ht": 4,
+        "up": false,
+        "o": {
+          "Phase": "Group B",
+          "HomeCountry": "INT",
+          "AwayCountry": "ENG",
+          "PublishedRound": "Group B",
+          "CsvSeason": 2021,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2021-22/cl.txt",
+              "sha256": "36241f4479aa9efda62c62318366bbf36f84cc8719f6387c5747cb5dea7ec519"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 2,
+        "hta": 2,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 17,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1634601600000,
+        "lg": "Champions League",
+        "H": "FC Porto (POR)",
+        "A": "AC Milan",
+        "h": 1,
+        "a": 0,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "Phase": "Group B",
+          "HomeCountry": "INT",
+          "AwayCountry": "ITA",
+          "PublishedRound": "Group B",
+          "CsvSeason": 2021,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2021-22/cl.txt",
+              "sha256": "36241f4479aa9efda62c62318366bbf36f84cc8719f6387c5747cb5dea7ec519"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 18,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1635897600000,
+        "lg": "Champions League",
+        "H": "AC Milan (ITA)",
+        "A": "FC Porto",
+        "h": 1,
+        "a": 1,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "Group B",
+          "HomeCountry": "INT",
+          "AwayCountry": "PRT",
+          "PublishedRound": "Group B",
+          "CsvSeason": 2021,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2021-22/cl.txt",
+              "sha256": "36241f4479aa9efda62c62318366bbf36f84cc8719f6387c5747cb5dea7ec519"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 19,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1635897600000,
+        "lg": "Champions League",
+        "H": "Liverpool FC (ENG)",
+        "A": "Atlético Madrid",
+        "h": 2,
+        "a": 0,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "Phase": "Group B",
+          "HomeCountry": "INT",
+          "AwayCountry": "ESP",
+          "PublishedRound": "Group B",
+          "CsvSeason": 2021,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2021-22/cl.txt",
+              "sha256": "36241f4479aa9efda62c62318366bbf36f84cc8719f6387c5747cb5dea7ec519"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 2,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 20,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1637712000000,
+        "lg": "Champions League",
+        "H": "Liverpool FC (ENG)",
+        "A": "FC Porto",
+        "h": 2,
+        "a": 0,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "Phase": "Group B",
+          "HomeCountry": "INT",
+          "AwayCountry": "PRT",
+          "PublishedRound": "Group B",
+          "CsvSeason": 2021,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2021-22/cl.txt",
+              "sha256": "36241f4479aa9efda62c62318366bbf36f84cc8719f6387c5747cb5dea7ec519"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 21,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1637712000000,
+        "lg": "Champions League",
+        "H": "Atlético Madrid (ESP)",
+        "A": "AC Milan",
+        "h": 0,
+        "a": 1,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "Phase": "Group B",
+          "HomeCountry": "INT",
+          "AwayCountry": "ITA",
+          "PublishedRound": "Group B",
+          "CsvSeason": 2021,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2021-22/cl.txt",
+              "sha256": "36241f4479aa9efda62c62318366bbf36f84cc8719f6387c5747cb5dea7ec519"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 22,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1638835200000,
+        "lg": "Champions League",
+        "H": "FC Porto (POR)",
+        "A": "Atlético Madrid",
+        "h": 1,
+        "a": 3,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "Phase": "Group B",
+          "HomeCountry": "INT",
+          "AwayCountry": "ESP",
+          "PublishedRound": "Group B",
+          "CsvSeason": 2021,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2021-22/cl.txt",
+              "sha256": "36241f4479aa9efda62c62318366bbf36f84cc8719f6387c5747cb5dea7ec519"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 23,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1638835200000,
+        "lg": "Champions League",
+        "H": "AC Milan (ITA)",
+        "A": "Liverpool FC",
+        "h": 1,
+        "a": 2,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "Phase": "Group B",
+          "HomeCountry": "INT",
+          "AwayCountry": "ENG",
+          "PublishedRound": "Group B",
+          "CsvSeason": 2021,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2021-22/cl.txt",
+              "sha256": "36241f4479aa9efda62c62318366bbf36f84cc8719f6387c5747cb5dea7ec519"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 24,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1631664000000,
+        "lg": "Champions League",
+        "H": "Beşiktaş (TUR)",
+        "A": "Borussia Dortmund",
+        "h": 1,
+        "a": 2,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "Phase": "Group C",
+          "HomeCountry": "INT",
+          "AwayCountry": "GER",
+          "PublishedRound": "Group C",
+          "CsvSeason": 2021,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2021-22/cl.txt",
+              "sha256": "36241f4479aa9efda62c62318366bbf36f84cc8719f6387c5747cb5dea7ec519"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 2,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 25,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1631664000000,
+        "lg": "Champions League",
+        "H": "Sporting CP (POR)",
+        "A": "AFC Ajax",
+        "h": 1,
+        "a": 5,
+        "ht": 4,
+        "up": false,
+        "o": {
+          "Phase": "Group C",
+          "HomeCountry": "INT",
+          "AwayCountry": "NED",
+          "PublishedRound": "Group C",
+          "CsvSeason": 2021,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2021-22/cl.txt",
+              "sha256": "36241f4479aa9efda62c62318366bbf36f84cc8719f6387c5747cb5dea7ec519"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 3,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 26,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1632787200000,
+        "lg": "Champions League",
+        "H": "AFC Ajax (NED)",
+        "A": "Beşiktaş",
+        "h": 2,
+        "a": 0,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "Phase": "Group C",
+          "HomeCountry": "INT",
+          "AwayCountry": "TUR",
+          "PublishedRound": "Group C",
+          "CsvSeason": 2021,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2021-22/cl.txt",
+              "sha256": "36241f4479aa9efda62c62318366bbf36f84cc8719f6387c5747cb5dea7ec519"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 2,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 28,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1634601600000,
+        "lg": "Champions League",
+        "H": "Beşiktaş (TUR)",
+        "A": "Sporting CP",
+        "h": 1,
+        "a": 4,
+        "ht": 4,
+        "up": false,
+        "o": {
+          "Phase": "Group C",
+          "HomeCountry": "INT",
+          "AwayCountry": "PRT",
+          "PublishedRound": "Group C",
+          "CsvSeason": 2021,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2021-22/cl.txt",
+              "sha256": "36241f4479aa9efda62c62318366bbf36f84cc8719f6387c5747cb5dea7ec519"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 3,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 29,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1634601600000,
+        "lg": "Champions League",
+        "H": "AFC Ajax (NED)",
+        "A": "Borussia Dortmund",
+        "h": 4,
+        "a": 0,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "Phase": "Group C",
+          "HomeCountry": "INT",
+          "AwayCountry": "GER",
+          "PublishedRound": "Group C",
+          "CsvSeason": 2021,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2021-22/cl.txt",
+              "sha256": "36241f4479aa9efda62c62318366bbf36f84cc8719f6387c5747cb5dea7ec519"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 2,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 31,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1635897600000,
+        "lg": "Champions League",
+        "H": "Sporting CP (POR)",
+        "A": "Beşiktaş",
+        "h": 4,
+        "a": 0,
+        "ht": 3,
+        "up": false,
+        "o": {
+          "Phase": "Group C",
+          "HomeCountry": "INT",
+          "AwayCountry": "TUR",
+          "PublishedRound": "Group C",
+          "CsvSeason": 2021,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2021-22/cl.txt",
+              "sha256": "36241f4479aa9efda62c62318366bbf36f84cc8719f6387c5747cb5dea7ec519"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 3,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 32,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1637712000000,
+        "lg": "Champions League",
+        "H": "Beşiktaş (TUR)",
+        "A": "AFC Ajax",
+        "h": 1,
+        "a": 2,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "Group C",
+          "HomeCountry": "INT",
+          "AwayCountry": "NED",
+          "PublishedRound": "Group C",
+          "CsvSeason": 2021,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2021-22/cl.txt",
+              "sha256": "36241f4479aa9efda62c62318366bbf36f84cc8719f6387c5747cb5dea7ec519"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 33,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1637712000000,
+        "lg": "Champions League",
+        "H": "Sporting CP (POR)",
+        "A": "Borussia Dortmund",
+        "h": 3,
+        "a": 1,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "Phase": "Group C",
+          "HomeCountry": "INT",
+          "AwayCountry": "GER",
+          "PublishedRound": "Group C",
+          "CsvSeason": 2021,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2021-22/cl.txt",
+              "sha256": "36241f4479aa9efda62c62318366bbf36f84cc8719f6387c5747cb5dea7ec519"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 2,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 34,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1638835200000,
+        "lg": "Champions League",
+        "H": "AFC Ajax (NED)",
+        "A": "Sporting CP",
+        "h": 4,
+        "a": 2,
+        "ht": 3,
+        "up": false,
+        "o": {
+          "Phase": "Group C",
+          "HomeCountry": "INT",
+          "AwayCountry": "PRT",
+          "PublishedRound": "Group C",
+          "CsvSeason": 2021,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2021-22/cl.txt",
+              "sha256": "36241f4479aa9efda62c62318366bbf36f84cc8719f6387c5747cb5dea7ec519"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 2,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 36,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1631664000000,
+        "lg": "Champions League",
+        "H": "FC Sheriff (MDA)",
+        "A": "Shakhtar Donetsk",
+        "h": 2,
+        "a": 0,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "Group D",
+          "HomeCountry": "INT",
+          "AwayCountry": "UKR",
+          "PublishedRound": "Group D",
+          "CsvSeason": 2021,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2021-22/cl.txt",
+              "sha256": "36241f4479aa9efda62c62318366bbf36f84cc8719f6387c5747cb5dea7ec519"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 37,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1631664000000,
+        "lg": "Champions League",
+        "H": "Inter (ITA)",
+        "A": "Real Madrid",
+        "h": 0,
+        "a": 1,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "Phase": "Group D",
+          "HomeCountry": "INT",
+          "AwayCountry": "ESP",
+          "PublishedRound": "Group D",
+          "CsvSeason": 2021,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2021-22/cl.txt",
+              "sha256": "36241f4479aa9efda62c62318366bbf36f84cc8719f6387c5747cb5dea7ec519"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 38,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1632787200000,
+        "lg": "Champions League",
+        "H": "Shakhtar Donetsk (UKR)",
+        "A": "Inter",
+        "h": 0,
+        "a": 0,
+        "ht": null,
+        "up": false,
+        "o": {
+          "Phase": "Group D",
+          "HomeCountry": "INT",
+          "AwayCountry": "ITA",
+          "PublishedRound": "Group D",
+          "CsvSeason": 2021,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2021-22/cl.txt",
+              "sha256": "36241f4479aa9efda62c62318366bbf36f84cc8719f6387c5747cb5dea7ec519"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 39,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1632787200000,
+        "lg": "Champions League",
+        "H": "Real Madrid (ESP)",
+        "A": "FC Sheriff",
+        "h": 1,
+        "a": 2,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "Group D",
+          "HomeCountry": "INT",
+          "AwayCountry": "MDA",
+          "PublishedRound": "Group D",
+          "CsvSeason": 2021,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2021-22/cl.txt",
+              "sha256": "36241f4479aa9efda62c62318366bbf36f84cc8719f6387c5747cb5dea7ec519"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 40,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1634601600000,
+        "lg": "Champions League",
+        "H": "Shakhtar Donetsk (UKR)",
+        "A": "Real Madrid",
+        "h": 0,
+        "a": 5,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "Group D",
+          "HomeCountry": "INT",
+          "AwayCountry": "ESP",
+          "PublishedRound": "Group D",
+          "CsvSeason": 2021,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2021-22/cl.txt",
+              "sha256": "36241f4479aa9efda62c62318366bbf36f84cc8719f6387c5747cb5dea7ec519"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 41,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1634601600000,
+        "lg": "Champions League",
+        "H": "Inter (ITA)",
+        "A": "FC Sheriff",
+        "h": 3,
+        "a": 1,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "Group D",
+          "HomeCountry": "INT",
+          "AwayCountry": "MDA",
+          "PublishedRound": "Group D",
+          "CsvSeason": 2021,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2021-22/cl.txt",
+              "sha256": "36241f4479aa9efda62c62318366bbf36f84cc8719f6387c5747cb5dea7ec519"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 42,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1635897600000,
+        "lg": "Champions League",
+        "H": "Real Madrid (ESP)",
+        "A": "Shakhtar Donetsk",
+        "h": 2,
+        "a": 1,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "Phase": "Group D",
+          "HomeCountry": "INT",
+          "AwayCountry": "UKR",
+          "PublishedRound": "Group D",
+          "CsvSeason": 2021,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2021-22/cl.txt",
+              "sha256": "36241f4479aa9efda62c62318366bbf36f84cc8719f6387c5747cb5dea7ec519"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 43,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1635897600000,
+        "lg": "Champions League",
+        "H": "FC Sheriff (MDA)",
+        "A": "Inter",
+        "h": 1,
+        "a": 3,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "Phase": "Group D",
+          "HomeCountry": "INT",
+          "AwayCountry": "ITA",
+          "PublishedRound": "Group D",
+          "CsvSeason": 2021,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2021-22/cl.txt",
+              "sha256": "36241f4479aa9efda62c62318366bbf36f84cc8719f6387c5747cb5dea7ec519"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 44,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1637712000000,
+        "lg": "Champions League",
+        "H": "Inter (ITA)",
+        "A": "Shakhtar Donetsk",
+        "h": 2,
+        "a": 0,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "Phase": "Group D",
+          "HomeCountry": "INT",
+          "AwayCountry": "UKR",
+          "PublishedRound": "Group D",
+          "CsvSeason": 2021,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2021-22/cl.txt",
+              "sha256": "36241f4479aa9efda62c62318366bbf36f84cc8719f6387c5747cb5dea7ec519"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 45,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1637712000000,
+        "lg": "Champions League",
+        "H": "FC Sheriff (MDA)",
+        "A": "Real Madrid",
+        "h": 0,
+        "a": 3,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "Phase": "Group D",
+          "HomeCountry": "INT",
+          "AwayCountry": "ESP",
+          "PublishedRound": "Group D",
+          "CsvSeason": 2021,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2021-22/cl.txt",
+              "sha256": "36241f4479aa9efda62c62318366bbf36f84cc8719f6387c5747cb5dea7ec519"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 2,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 46,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1638835200000,
+        "lg": "Champions League",
+        "H": "Real Madrid (ESP)",
+        "A": "Inter",
+        "h": 2,
+        "a": 0,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "Group D",
+          "HomeCountry": "INT",
+          "AwayCountry": "ITA",
+          "PublishedRound": "Group D",
+          "CsvSeason": 2021,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2021-22/cl.txt",
+              "sha256": "36241f4479aa9efda62c62318366bbf36f84cc8719f6387c5747cb5dea7ec519"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 47,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1638835200000,
+        "lg": "Champions League",
+        "H": "Shakhtar Donetsk (UKR)",
+        "A": "FC Sheriff",
+        "h": 1,
+        "a": 1,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "Group D",
+          "HomeCountry": "INT",
+          "AwayCountry": "MDA",
+          "PublishedRound": "Group D",
+          "CsvSeason": 2021,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2021-22/cl.txt",
+              "sha256": "36241f4479aa9efda62c62318366bbf36f84cc8719f6387c5747cb5dea7ec519"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 48,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1631577600000,
+        "lg": "Champions League",
+        "H": "FC Barcelona (ESP)",
+        "A": "Bayern München",
+        "h": 0,
+        "a": 3,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "Group E",
+          "HomeCountry": "INT",
+          "AwayCountry": "GER",
+          "PublishedRound": "Group E",
+          "CsvSeason": 2021,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2021-22/cl.txt",
+              "sha256": "36241f4479aa9efda62c62318366bbf36f84cc8719f6387c5747cb5dea7ec519"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 49,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1631577600000,
+        "lg": "Champions League",
+        "H": "Dinamo Kiev (UKR)",
+        "A": "SL Benfica",
+        "h": 0,
+        "a": 0,
+        "ht": null,
+        "up": false,
+        "o": {
+          "Phase": "Group E",
+          "HomeCountry": "INT",
+          "AwayCountry": "PRT",
+          "PublishedRound": "Group E",
+          "CsvSeason": 2021,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2021-22/cl.txt",
+              "sha256": "36241f4479aa9efda62c62318366bbf36f84cc8719f6387c5747cb5dea7ec519"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 50,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1632873600000,
+        "lg": "Champions League",
+        "H": "SL Benfica (POR)",
+        "A": "FC Barcelona",
+        "h": 3,
+        "a": 0,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "Group E",
+          "HomeCountry": "INT",
+          "AwayCountry": "ESP",
+          "PublishedRound": "Group E",
+          "CsvSeason": 2021,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2021-22/cl.txt",
+              "sha256": "36241f4479aa9efda62c62318366bbf36f84cc8719f6387c5747cb5dea7ec519"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 51,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1632873600000,
+        "lg": "Champions League",
+        "H": "Bayern München (GER)",
+        "A": "Dinamo Kiev",
+        "h": 5,
+        "a": 0,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "Phase": "Group E",
+          "HomeCountry": "INT",
+          "AwayCountry": "UKR",
+          "PublishedRound": "Group E",
+          "CsvSeason": 2021,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2021-22/cl.txt",
+              "sha256": "36241f4479aa9efda62c62318366bbf36f84cc8719f6387c5747cb5dea7ec519"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 2,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 52,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1634688000000,
+        "lg": "Champions League",
+        "H": "FC Barcelona (ESP)",
+        "A": "Dinamo Kiev",
+        "h": 1,
+        "a": 0,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "Group E",
+          "HomeCountry": "INT",
+          "AwayCountry": "UKR",
+          "PublishedRound": "Group E",
+          "CsvSeason": 2021,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2021-22/cl.txt",
+              "sha256": "36241f4479aa9efda62c62318366bbf36f84cc8719f6387c5747cb5dea7ec519"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 53,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1634688000000,
+        "lg": "Champions League",
+        "H": "SL Benfica (POR)",
+        "A": "Bayern München",
+        "h": 0,
+        "a": 4,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "Phase": "Group E",
+          "HomeCountry": "INT",
+          "AwayCountry": "GER",
+          "PublishedRound": "Group E",
+          "CsvSeason": 2021,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2021-22/cl.txt",
+              "sha256": "36241f4479aa9efda62c62318366bbf36f84cc8719f6387c5747cb5dea7ec519"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 54,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1635811200000,
+        "lg": "Champions League",
+        "H": "Bayern München (GER)",
+        "A": "SL Benfica",
+        "h": 5,
+        "a": 2,
+        "ht": 3,
+        "up": false,
+        "o": {
+          "Phase": "Group E",
+          "HomeCountry": "INT",
+          "AwayCountry": "PRT",
+          "PublishedRound": "Group E",
+          "CsvSeason": 2021,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2021-22/cl.txt",
+              "sha256": "36241f4479aa9efda62c62318366bbf36f84cc8719f6387c5747cb5dea7ec519"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 2,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 55,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1635811200000,
+        "lg": "Champions League",
+        "H": "Dinamo Kiev (UKR)",
+        "A": "FC Barcelona",
+        "h": 0,
+        "a": 1,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "Phase": "Group E",
+          "HomeCountry": "INT",
+          "AwayCountry": "ESP",
+          "PublishedRound": "Group E",
+          "CsvSeason": 2021,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2021-22/cl.txt",
+              "sha256": "36241f4479aa9efda62c62318366bbf36f84cc8719f6387c5747cb5dea7ec519"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 56,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1637625600000,
+        "lg": "Champions League",
+        "H": "Dinamo Kiev (UKR)",
+        "A": "Bayern München",
+        "h": 1,
+        "a": 2,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "Phase": "Group E",
+          "HomeCountry": "INT",
+          "AwayCountry": "GER",
+          "PublishedRound": "Group E",
+          "CsvSeason": 2021,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2021-22/cl.txt",
+              "sha256": "36241f4479aa9efda62c62318366bbf36f84cc8719f6387c5747cb5dea7ec519"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 2,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 57,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1637625600000,
+        "lg": "Champions League",
+        "H": "FC Barcelona (ESP)",
+        "A": "SL Benfica",
+        "h": 0,
+        "a": 0,
+        "ht": null,
+        "up": false,
+        "o": {
+          "Phase": "Group E",
+          "HomeCountry": "INT",
+          "AwayCountry": "PRT",
+          "PublishedRound": "Group E",
+          "CsvSeason": 2021,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2021-22/cl.txt",
+              "sha256": "36241f4479aa9efda62c62318366bbf36f84cc8719f6387c5747cb5dea7ec519"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 58,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1638921600000,
+        "lg": "Champions League",
+        "H": "Bayern München (GER)",
+        "A": "FC Barcelona",
+        "h": 3,
+        "a": 0,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "Phase": "Group E",
+          "HomeCountry": "INT",
+          "AwayCountry": "ESP",
+          "PublishedRound": "Group E",
+          "CsvSeason": 2021,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2021-22/cl.txt",
+              "sha256": "36241f4479aa9efda62c62318366bbf36f84cc8719f6387c5747cb5dea7ec519"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 2,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 59,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1638921600000,
+        "lg": "Champions League",
+        "H": "SL Benfica (POR)",
+        "A": "Dinamo Kiev",
+        "h": 2,
+        "a": 0,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "Phase": "Group E",
+          "HomeCountry": "INT",
+          "AwayCountry": "UKR",
+          "PublishedRound": "Group E",
+          "CsvSeason": 2021,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2021-22/cl.txt",
+              "sha256": "36241f4479aa9efda62c62318366bbf36f84cc8719f6387c5747cb5dea7ec519"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 2,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 60,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1631577600000,
+        "lg": "Champions League",
+        "H": "BSC Young Boys (SUI)",
+        "A": "Manchester United",
+        "h": 2,
+        "a": 1,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "Group F",
+          "HomeCountry": "INT",
+          "AwayCountry": "ENG",
+          "PublishedRound": "Group F",
+          "CsvSeason": 2021,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2021-22/cl.txt",
+              "sha256": "36241f4479aa9efda62c62318366bbf36f84cc8719f6387c5747cb5dea7ec519"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 61,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1631577600000,
+        "lg": "Champions League",
+        "H": "Villarreal CF (ESP)",
+        "A": "Atalanta",
+        "h": 2,
+        "a": 2,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "Phase": "Group F",
+          "HomeCountry": "INT",
+          "AwayCountry": "ITA",
+          "PublishedRound": "Group F",
+          "CsvSeason": 2021,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2021-22/cl.txt",
+              "sha256": "36241f4479aa9efda62c62318366bbf36f84cc8719f6387c5747cb5dea7ec519"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 62,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1632873600000,
+        "lg": "Champions League",
+        "H": "Atalanta (ITA)",
+        "A": "BSC Young Boys",
+        "h": 1,
+        "a": 0,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "Phase": "Group F",
+          "HomeCountry": "INT",
+          "AwayCountry": "CHE",
+          "PublishedRound": "Group F",
+          "CsvSeason": 2021,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2021-22/cl.txt",
+              "sha256": "36241f4479aa9efda62c62318366bbf36f84cc8719f6387c5747cb5dea7ec519"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 65,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1634688000000,
+        "lg": "Champions League",
+        "H": "BSC Young Boys (SUI)",
+        "A": "Villarreal CF",
+        "h": 1,
+        "a": 4,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "Phase": "Group F",
+          "HomeCountry": "INT",
+          "AwayCountry": "ESP",
+          "PublishedRound": "Group F",
+          "CsvSeason": 2021,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2021-22/cl.txt",
+              "sha256": "36241f4479aa9efda62c62318366bbf36f84cc8719f6387c5747cb5dea7ec519"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 2,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 66,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1635811200000,
+        "lg": "Champions League",
+        "H": "Atalanta (ITA)",
+        "A": "Manchester United",
+        "h": 2,
+        "a": 2,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "Phase": "Group F",
+          "HomeCountry": "INT",
+          "AwayCountry": "ENG",
+          "PublishedRound": "Group F",
+          "CsvSeason": 2021,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2021-22/cl.txt",
+              "sha256": "36241f4479aa9efda62c62318366bbf36f84cc8719f6387c5747cb5dea7ec519"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 67,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1635811200000,
+        "lg": "Champions League",
+        "H": "Villarreal CF (ESP)",
+        "A": "BSC Young Boys",
+        "h": 2,
+        "a": 0,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "Group F",
+          "HomeCountry": "INT",
+          "AwayCountry": "CHE",
+          "PublishedRound": "Group F",
+          "CsvSeason": 2021,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2021-22/cl.txt",
+              "sha256": "36241f4479aa9efda62c62318366bbf36f84cc8719f6387c5747cb5dea7ec519"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 68,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1637625600000,
+        "lg": "Champions League",
+        "H": "Villarreal CF (ESP)",
+        "A": "Manchester United",
+        "h": 0,
+        "a": 2,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "Phase": "Group F",
+          "HomeCountry": "INT",
+          "AwayCountry": "ENG",
+          "PublishedRound": "Group F",
+          "CsvSeason": 2021,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2021-22/cl.txt",
+              "sha256": "36241f4479aa9efda62c62318366bbf36f84cc8719f6387c5747cb5dea7ec519"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 69,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1637625600000,
+        "lg": "Champions League",
+        "H": "BSC Young Boys (SUI)",
+        "A": "Atalanta",
+        "h": 3,
+        "a": 3,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "Phase": "Group F",
+          "HomeCountry": "INT",
+          "AwayCountry": "ITA",
+          "PublishedRound": "Group F",
+          "CsvSeason": 2021,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2021-22/cl.txt",
+              "sha256": "36241f4479aa9efda62c62318366bbf36f84cc8719f6387c5747cb5dea7ec519"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 70,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1638921600000,
+        "lg": "Champions League",
+        "H": "Manchester United",
+        "A": "BSC Young Boys",
+        "h": 1,
+        "a": 1,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "Phase": "Group F",
+          "HomeCountry": "ENG",
+          "AwayCountry": "CHE",
+          "PublishedRound": "Group F",
+          "CsvSeason": 2021,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2021-22/cl.txt",
+              "sha256": "36241f4479aa9efda62c62318366bbf36f84cc8719f6387c5747cb5dea7ec519"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 71,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1639008000000,
+        "lg": "Champions League",
+        "H": "Atalanta (ITA)",
+        "A": "Villarreal CF",
+        "h": 2,
+        "a": 3,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "Phase": "Group F",
+          "HomeCountry": "INT",
+          "AwayCountry": "ESP",
+          "PublishedRound": "Group F",
+          "CsvSeason": 2021,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2021-22/cl.txt",
+              "sha256": "36241f4479aa9efda62c62318366bbf36f84cc8719f6387c5747cb5dea7ec519"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 2,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 72,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1631577600000,
+        "lg": "Champions League",
+        "H": "Sevilla FC (ESP)",
+        "A": "RB Salzburg",
+        "h": 1,
+        "a": 1,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "Phase": "Gruppe G",
+          "HomeCountry": "INT",
+          "AwayCountry": "AUT",
+          "PublishedRound": "Gruppe G",
+          "CsvSeason": 2021,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2021-22/cl.txt",
+              "sha256": "36241f4479aa9efda62c62318366bbf36f84cc8719f6387c5747cb5dea7ec519"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 73,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1631577600000,
+        "lg": "Champions League",
+        "H": "Lille OSC (FRA)",
+        "A": "VfL Wolfsburg",
+        "h": 0,
+        "a": 0,
+        "ht": null,
+        "up": false,
+        "o": {
+          "Phase": "Gruppe G",
+          "HomeCountry": "INT",
+          "AwayCountry": "GER",
+          "PublishedRound": "Gruppe G",
+          "CsvSeason": 2021,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2021-22/cl.txt",
+              "sha256": "36241f4479aa9efda62c62318366bbf36f84cc8719f6387c5747cb5dea7ec519"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 74,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1632873600000,
+        "lg": "Champions League",
+        "H": "RB Salzburg (AUT)",
+        "A": "Lille OSC",
+        "h": 2,
+        "a": 1,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "Gruppe G",
+          "HomeCountry": "INT",
+          "AwayCountry": "FRA",
+          "PublishedRound": "Gruppe G",
+          "CsvSeason": 2021,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2021-22/cl.txt",
+              "sha256": "36241f4479aa9efda62c62318366bbf36f84cc8719f6387c5747cb5dea7ec519"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 75,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1632873600000,
+        "lg": "Champions League",
+        "H": "VfL Wolfsburg (GER)",
+        "A": "Sevilla FC",
+        "h": 1,
+        "a": 1,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "Phase": "Gruppe G",
+          "HomeCountry": "INT",
+          "AwayCountry": "ESP",
+          "PublishedRound": "Gruppe G",
+          "CsvSeason": 2021,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2021-22/cl.txt",
+              "sha256": "36241f4479aa9efda62c62318366bbf36f84cc8719f6387c5747cb5dea7ec519"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 76,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1634688000000,
+        "lg": "Champions League",
+        "H": "RB Salzburg (AUT)",
+        "A": "VfL Wolfsburg",
+        "h": 3,
+        "a": 1,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "Phase": "Gruppe G",
+          "HomeCountry": "INT",
+          "AwayCountry": "GER",
+          "PublishedRound": "Gruppe G",
+          "CsvSeason": 2021,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2021-22/cl.txt",
+              "sha256": "36241f4479aa9efda62c62318366bbf36f84cc8719f6387c5747cb5dea7ec519"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 77,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1634688000000,
+        "lg": "Champions League",
+        "H": "Lille OSC (FRA)",
+        "A": "Sevilla FC",
+        "h": 0,
+        "a": 0,
+        "ht": null,
+        "up": false,
+        "o": {
+          "Phase": "Gruppe G",
+          "HomeCountry": "INT",
+          "AwayCountry": "ESP",
+          "PublishedRound": "Gruppe G",
+          "CsvSeason": 2021,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2021-22/cl.txt",
+              "sha256": "36241f4479aa9efda62c62318366bbf36f84cc8719f6387c5747cb5dea7ec519"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 78,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1635811200000,
+        "lg": "Champions League",
+        "H": "VfL Wolfsburg (GER)",
+        "A": "RB Salzburg",
+        "h": 2,
+        "a": 1,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "Phase": "Gruppe G",
+          "HomeCountry": "INT",
+          "AwayCountry": "AUT",
+          "PublishedRound": "Gruppe G",
+          "CsvSeason": 2021,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2021-22/cl.txt",
+              "sha256": "36241f4479aa9efda62c62318366bbf36f84cc8719f6387c5747cb5dea7ec519"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 79,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1635811200000,
+        "lg": "Champions League",
+        "H": "Sevilla FC (ESP)",
+        "A": "Lille OSC",
+        "h": 1,
+        "a": 2,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "Phase": "Gruppe G",
+          "HomeCountry": "INT",
+          "AwayCountry": "FRA",
+          "PublishedRound": "Gruppe G",
+          "CsvSeason": 2021,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2021-22/cl.txt",
+              "sha256": "36241f4479aa9efda62c62318366bbf36f84cc8719f6387c5747cb5dea7ec519"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 80,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1637625600000,
+        "lg": "Champions League",
+        "H": "Lille OSC (FRA)",
+        "A": "RB Salzburg",
+        "h": 1,
+        "a": 0,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "Gruppe G",
+          "HomeCountry": "INT",
+          "AwayCountry": "AUT",
+          "PublishedRound": "Gruppe G",
+          "CsvSeason": 2021,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2021-22/cl.txt",
+              "sha256": "36241f4479aa9efda62c62318366bbf36f84cc8719f6387c5747cb5dea7ec519"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 81,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1637625600000,
+        "lg": "Champions League",
+        "H": "Sevilla FC (ESP)",
+        "A": "VfL Wolfsburg",
+        "h": 2,
+        "a": 0,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "Gruppe G",
+          "HomeCountry": "INT",
+          "AwayCountry": "GER",
+          "PublishedRound": "Gruppe G",
+          "CsvSeason": 2021,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2021-22/cl.txt",
+              "sha256": "36241f4479aa9efda62c62318366bbf36f84cc8719f6387c5747cb5dea7ec519"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 82,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1638921600000,
+        "lg": "Champions League",
+        "H": "RB Salzburg (AUT)",
+        "A": "Sevilla FC",
+        "h": 1,
+        "a": 0,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "Phase": "Gruppe G",
+          "HomeCountry": "INT",
+          "AwayCountry": "ESP",
+          "PublishedRound": "Gruppe G",
+          "CsvSeason": 2021,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2021-22/cl.txt",
+              "sha256": "36241f4479aa9efda62c62318366bbf36f84cc8719f6387c5747cb5dea7ec519"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 83,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1638921600000,
+        "lg": "Champions League",
+        "H": "VfL Wolfsburg (GER)",
+        "A": "Lille OSC",
+        "h": 1,
+        "a": 3,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "Gruppe G",
+          "HomeCountry": "INT",
+          "AwayCountry": "FRA",
+          "PublishedRound": "Gruppe G",
+          "CsvSeason": 2021,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2021-22/cl.txt",
+              "sha256": "36241f4479aa9efda62c62318366bbf36f84cc8719f6387c5747cb5dea7ec519"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 84,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1631577600000,
+        "lg": "Champions League",
+        "H": "Chelsea FC (ENG)",
+        "A": "Zenit St. Petersburg",
+        "h": 1,
+        "a": 0,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "Phase": "Gruppe H",
+          "HomeCountry": "INT",
+          "AwayCountry": "RUS",
+          "PublishedRound": "Gruppe H",
+          "CsvSeason": 2021,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2021-22/cl.txt",
+              "sha256": "36241f4479aa9efda62c62318366bbf36f84cc8719f6387c5747cb5dea7ec519"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 85,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1631577600000,
+        "lg": "Champions League",
+        "H": "Malmö FF (SWE)",
+        "A": "Juventus",
+        "h": 0,
+        "a": 3,
+        "ht": 3,
+        "up": false,
+        "o": {
+          "Phase": "Gruppe H",
+          "HomeCountry": "INT",
+          "AwayCountry": "ITA",
+          "PublishedRound": "Gruppe H",
+          "CsvSeason": 2021,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2021-22/cl.txt",
+              "sha256": "36241f4479aa9efda62c62318366bbf36f84cc8719f6387c5747cb5dea7ec519"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 3,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 86,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1632873600000,
+        "lg": "Champions League",
+        "H": "Zenit St. Petersburg",
+        "A": "Malmö FF",
+        "h": 4,
+        "a": 0,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "Gruppe H",
+          "HomeCountry": "RUS",
+          "AwayCountry": "SWE",
+          "PublishedRound": "Gruppe H",
+          "CsvSeason": 2021,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2021-22/cl.txt",
+              "sha256": "36241f4479aa9efda62c62318366bbf36f84cc8719f6387c5747cb5dea7ec519"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 87,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1632873600000,
+        "lg": "Champions League",
+        "H": "Juventus (ITA)",
+        "A": "Chelsea FC",
+        "h": 1,
+        "a": 0,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "Phase": "Gruppe H",
+          "HomeCountry": "INT",
+          "AwayCountry": "ENG",
+          "PublishedRound": "Gruppe H",
+          "CsvSeason": 2021,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2021-22/cl.txt",
+              "sha256": "36241f4479aa9efda62c62318366bbf36f84cc8719f6387c5747cb5dea7ec519"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 88,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1634688000000,
+        "lg": "Champions League",
+        "H": "Zenit St. Petersburg",
+        "A": "Juventus",
+        "h": 0,
+        "a": 1,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "Phase": "Gruppe H",
+          "HomeCountry": "RUS",
+          "AwayCountry": "ITA",
+          "PublishedRound": "Gruppe H",
+          "CsvSeason": 2021,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2021-22/cl.txt",
+              "sha256": "36241f4479aa9efda62c62318366bbf36f84cc8719f6387c5747cb5dea7ec519"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 89,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1634688000000,
+        "lg": "Champions League",
+        "H": "Chelsea FC (ENG)",
+        "A": "Malmö FF",
+        "h": 4,
+        "a": 0,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "Phase": "Gruppe H",
+          "HomeCountry": "INT",
+          "AwayCountry": "SWE",
+          "PublishedRound": "Gruppe H",
+          "CsvSeason": 2021,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2021-22/cl.txt",
+              "sha256": "36241f4479aa9efda62c62318366bbf36f84cc8719f6387c5747cb5dea7ec519"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 2,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 90,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1635811200000,
+        "lg": "Champions League",
+        "H": "Malmö FF (SWE)",
+        "A": "Chelsea FC",
+        "h": 0,
+        "a": 1,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "Phase": "Gruppe H",
+          "HomeCountry": "INT",
+          "AwayCountry": "ENG",
+          "PublishedRound": "Gruppe H",
+          "CsvSeason": 2021,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2021-22/cl.txt",
+              "sha256": "36241f4479aa9efda62c62318366bbf36f84cc8719f6387c5747cb5dea7ec519"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 91,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1635811200000,
+        "lg": "Champions League",
+        "H": "Juventus (ITA)",
+        "A": "Zenit St. Petersburg",
+        "h": 4,
+        "a": 2,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "Phase": "Gruppe H",
+          "HomeCountry": "INT",
+          "AwayCountry": "RUS",
+          "PublishedRound": "Gruppe H",
+          "CsvSeason": 2021,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2021-22/cl.txt",
+              "sha256": "36241f4479aa9efda62c62318366bbf36f84cc8719f6387c5747cb5dea7ec519"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 92,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1637625600000,
+        "lg": "Champions League",
+        "H": "Chelsea FC (ENG)",
+        "A": "Juventus",
+        "h": 4,
+        "a": 0,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "Gruppe H",
+          "HomeCountry": "INT",
+          "AwayCountry": "ITA",
+          "PublishedRound": "Gruppe H",
+          "CsvSeason": 2021,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2021-22/cl.txt",
+              "sha256": "36241f4479aa9efda62c62318366bbf36f84cc8719f6387c5747cb5dea7ec519"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 93,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1637625600000,
+        "lg": "Champions League",
+        "H": "Malmö FF (SWE)",
+        "A": "Zenit St. Petersburg",
+        "h": 1,
+        "a": 1,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "Gruppe H",
+          "HomeCountry": "INT",
+          "AwayCountry": "RUS",
+          "PublishedRound": "Gruppe H",
+          "CsvSeason": 2021,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2021-22/cl.txt",
+              "sha256": "36241f4479aa9efda62c62318366bbf36f84cc8719f6387c5747cb5dea7ec519"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 94,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1638921600000,
+        "lg": "Champions League",
+        "H": "Zenit St. Petersburg",
+        "A": "Chelsea FC",
+        "h": 3,
+        "a": 3,
+        "ht": 3,
+        "up": false,
+        "o": {
+          "Phase": "Gruppe H",
+          "HomeCountry": "RUS",
+          "AwayCountry": "ENG",
+          "PublishedRound": "Gruppe H",
+          "CsvSeason": 2021,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2021-22/cl.txt",
+              "sha256": "36241f4479aa9efda62c62318366bbf36f84cc8719f6387c5747cb5dea7ec519"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 2,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 95,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1638921600000,
+        "lg": "Champions League",
+        "H": "Juventus (ITA)",
+        "A": "Malmö FF",
+        "h": 1,
+        "a": 0,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "Gruppe H",
+          "HomeCountry": "INT",
+          "AwayCountry": "SWE",
+          "PublishedRound": "Gruppe H",
+          "CsvSeason": 2021,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2021-22/cl.txt",
+              "sha256": "36241f4479aa9efda62c62318366bbf36f84cc8719f6387c5747cb5dea7ec519"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 96,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1644883200000,
+        "lg": "Champions League",
+        "H": "Sporting CP (POR)",
+        "A": "Manchester City",
+        "h": 0,
+        "a": 5,
+        "ht": 4,
+        "up": false,
+        "o": {
+          "Phase": "Round of 16",
+          "HomeCountry": "INT",
+          "AwayCountry": "ENG",
+          "PublishedRound": "Round of 16",
+          "CsvSeason": 2021,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2021-22/cl.txt",
+              "sha256": "36241f4479aa9efda62c62318366bbf36f84cc8719f6387c5747cb5dea7ec519"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 4,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 98,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1644969600000,
+        "lg": "Champions League",
+        "H": "RB Salzburg (AUT)",
+        "A": "Bayern München",
+        "h": 1,
+        "a": 1,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "Round of 16",
+          "HomeCountry": "INT",
+          "AwayCountry": "GER",
+          "PublishedRound": "Round of 16",
+          "CsvSeason": 2021,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2021-22/cl.txt",
+              "sha256": "36241f4479aa9efda62c62318366bbf36f84cc8719f6387c5747cb5dea7ec519"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 99,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1644969600000,
+        "lg": "Champions League",
+        "H": "Inter (ITA)",
+        "A": "Liverpool FC",
+        "h": 0,
+        "a": 2,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "Phase": "Round of 16",
+          "HomeCountry": "INT",
+          "AwayCountry": "ENG",
+          "PublishedRound": "Round of 16",
+          "CsvSeason": 2021,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2021-22/cl.txt",
+              "sha256": "36241f4479aa9efda62c62318366bbf36f84cc8719f6387c5747cb5dea7ec519"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 100,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1645488000000,
+        "lg": "Champions League",
+        "H": "Chelsea FC (ENG)",
+        "A": "Lille OSC",
+        "h": 2,
+        "a": 0,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "Round of 16",
+          "HomeCountry": "INT",
+          "AwayCountry": "FRA",
+          "PublishedRound": "Round of 16",
+          "CsvSeason": 2021,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2021-22/cl.txt",
+              "sha256": "36241f4479aa9efda62c62318366bbf36f84cc8719f6387c5747cb5dea7ec519"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 101,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1645488000000,
+        "lg": "Champions League",
+        "H": "Villarreal CF (ESP)",
+        "A": "Juventus",
+        "h": 1,
+        "a": 1,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "Round of 16",
+          "HomeCountry": "INT",
+          "AwayCountry": "ITA",
+          "PublishedRound": "Round of 16",
+          "CsvSeason": 2021,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2021-22/cl.txt",
+              "sha256": "36241f4479aa9efda62c62318366bbf36f84cc8719f6387c5747cb5dea7ec519"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 102,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1645574400000,
+        "lg": "Champions League",
+        "H": "SL Benfica (POR)",
+        "A": "AFC Ajax",
+        "h": 2,
+        "a": 2,
+        "ht": 3,
+        "up": false,
+        "o": {
+          "Phase": "Round of 16",
+          "HomeCountry": "INT",
+          "AwayCountry": "NED",
+          "PublishedRound": "Round of 16",
+          "CsvSeason": 2021,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2021-22/cl.txt",
+              "sha256": "36241f4479aa9efda62c62318366bbf36f84cc8719f6387c5747cb5dea7ec519"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 2,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 103,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1645574400000,
+        "lg": "Champions League",
+        "H": "Atlético Madrid (ESP)",
+        "A": "Manchester United",
+        "h": 1,
+        "a": 1,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "Round of 16",
+          "HomeCountry": "INT",
+          "AwayCountry": "ENG",
+          "PublishedRound": "Round of 16",
+          "CsvSeason": 2021,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2021-22/cl.txt",
+              "sha256": "36241f4479aa9efda62c62318366bbf36f84cc8719f6387c5747cb5dea7ec519"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 104,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1646697600000,
+        "lg": "Champions League",
+        "H": "Bayern München (GER)",
+        "A": "RB Salzburg",
+        "h": 7,
+        "a": 1,
+        "ht": 4,
+        "up": false,
+        "o": {
+          "Phase": "Round of 16",
+          "HomeCountry": "INT",
+          "AwayCountry": "AUT",
+          "PublishedRound": "Round of 16",
+          "CsvSeason": 2021,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2021-22/cl.txt",
+              "sha256": "36241f4479aa9efda62c62318366bbf36f84cc8719f6387c5747cb5dea7ec519"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 4,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 105,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1646697600000,
+        "lg": "Champions League",
+        "H": "Liverpool FC (ENG)",
+        "A": "Inter",
+        "h": 0,
+        "a": 1,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "Phase": "Round of 16",
+          "HomeCountry": "INT",
+          "AwayCountry": "ITA",
+          "PublishedRound": "Round of 16",
+          "CsvSeason": 2021,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2021-22/cl.txt",
+              "sha256": "36241f4479aa9efda62c62318366bbf36f84cc8719f6387c5747cb5dea7ec519"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 106,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1646784000000,
+        "lg": "Champions League",
+        "H": "Manchester City (ENG)",
+        "A": "Sporting CP",
+        "h": 0,
+        "a": 0,
+        "ht": null,
+        "up": false,
+        "o": {
+          "Phase": "Round of 16",
+          "HomeCountry": "INT",
+          "AwayCountry": "PRT",
+          "PublishedRound": "Round of 16",
+          "CsvSeason": 2021,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2021-22/cl.txt",
+              "sha256": "36241f4479aa9efda62c62318366bbf36f84cc8719f6387c5747cb5dea7ec519"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 107,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1646784000000,
+        "lg": "Champions League",
+        "H": "Real Madrid (ESP)",
+        "A": "Paris Saint-Germain",
+        "h": 3,
+        "a": 1,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "Round of 16",
+          "HomeCountry": "INT",
+          "AwayCountry": "FRA",
+          "PublishedRound": "Round of 16",
+          "CsvSeason": 2021,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2021-22/cl.txt",
+              "sha256": "36241f4479aa9efda62c62318366bbf36f84cc8719f6387c5747cb5dea7ec519"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 108,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1647302400000,
+        "lg": "Champions League",
+        "H": "AFC Ajax (NED)",
+        "A": "SL Benfica",
+        "h": 0,
+        "a": 1,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "Phase": "Round of 16",
+          "HomeCountry": "INT",
+          "AwayCountry": "PRT",
+          "PublishedRound": "Round of 16",
+          "CsvSeason": 2021,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2021-22/cl.txt",
+              "sha256": "36241f4479aa9efda62c62318366bbf36f84cc8719f6387c5747cb5dea7ec519"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 110,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1647388800000,
+        "lg": "Champions League",
+        "H": "Lille OSC (FRA)",
+        "A": "Chelsea FC",
+        "h": 1,
+        "a": 2,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "Phase": "Round of 16",
+          "HomeCountry": "INT",
+          "AwayCountry": "ENG",
+          "PublishedRound": "Round of 16",
+          "CsvSeason": 2021,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2021-22/cl.txt",
+              "sha256": "36241f4479aa9efda62c62318366bbf36f84cc8719f6387c5747cb5dea7ec519"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 111,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1647388800000,
+        "lg": "Champions League",
+        "H": "Juventus (ITA)",
+        "A": "Villarreal CF",
+        "h": 0,
+        "a": 3,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "Phase": "Round of 16",
+          "HomeCountry": "INT",
+          "AwayCountry": "ESP",
+          "PublishedRound": "Round of 16",
+          "CsvSeason": 2021,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2021-22/cl.txt",
+              "sha256": "36241f4479aa9efda62c62318366bbf36f84cc8719f6387c5747cb5dea7ec519"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 112,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1649116800000,
+        "lg": "Champions League",
+        "H": "Manchester City (ENG)",
+        "A": "Atlético Madrid",
+        "h": 1,
+        "a": 0,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "Phase": "Quarterfinals",
+          "HomeCountry": "INT",
+          "AwayCountry": "ESP",
+          "PublishedRound": "Quarterfinals",
+          "CsvSeason": 2021,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2021-22/cl.txt",
+              "sha256": "36241f4479aa9efda62c62318366bbf36f84cc8719f6387c5747cb5dea7ec519"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 113,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1649116800000,
+        "lg": "Champions League",
+        "H": "SL Benfica (POR)",
+        "A": "Liverpool FC",
+        "h": 1,
+        "a": 3,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "Phase": "Quarterfinals",
+          "HomeCountry": "INT",
+          "AwayCountry": "ENG",
+          "PublishedRound": "Quarterfinals",
+          "CsvSeason": 2021,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2021-22/cl.txt",
+              "sha256": "36241f4479aa9efda62c62318366bbf36f84cc8719f6387c5747cb5dea7ec519"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 2,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 114,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1649203200000,
+        "lg": "Champions League",
+        "H": "Chelsea FC (ENG)",
+        "A": "Real Madrid",
+        "h": 1,
+        "a": 3,
+        "ht": 3,
+        "up": false,
+        "o": {
+          "Phase": "Quarterfinals",
+          "HomeCountry": "INT",
+          "AwayCountry": "ESP",
+          "PublishedRound": "Quarterfinals",
+          "CsvSeason": 2021,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2021-22/cl.txt",
+              "sha256": "36241f4479aa9efda62c62318366bbf36f84cc8719f6387c5747cb5dea7ec519"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 2,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 115,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1649203200000,
+        "lg": "Champions League",
+        "H": "Villarreal CF (ESP)",
+        "A": "Bayern München",
+        "h": 1,
+        "a": 0,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "Quarterfinals",
+          "HomeCountry": "INT",
+          "AwayCountry": "GER",
+          "PublishedRound": "Quarterfinals",
+          "CsvSeason": 2021,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2021-22/cl.txt",
+              "sha256": "36241f4479aa9efda62c62318366bbf36f84cc8719f6387c5747cb5dea7ec519"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 116,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1649721600000,
+        "lg": "Champions League",
+        "H": "Real Madrid (ESP)",
+        "A": "Chelsea FC",
+        "h": 1,
+        "a": 3,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "Quarterfinals",
+          "HomeCountry": "INT",
+          "AwayCountry": "ENG",
+          "PublishedRound": "Quarterfinals",
+          "CupScoreEvidence": "2-3 a.e.t. (1-3, 0-1)",
+          "CsvSeason": 2021,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2021-22/cl.txt",
+              "sha256": "36241f4479aa9efda62c62318366bbf36f84cc8719f6387c5747cb5dea7ec519"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 117,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1649721600000,
+        "lg": "Champions League",
+        "H": "Bayern München (GER)",
+        "A": "Villarreal CF",
+        "h": 1,
+        "a": 1,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "Phase": "Quarterfinals",
+          "HomeCountry": "INT",
+          "AwayCountry": "ESP",
+          "PublishedRound": "Quarterfinals",
+          "CsvSeason": 2021,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2021-22/cl.txt",
+              "sha256": "36241f4479aa9efda62c62318366bbf36f84cc8719f6387c5747cb5dea7ec519"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 118,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1649808000000,
+        "lg": "Champions League",
+        "H": "Atlético Madrid (ESP)",
+        "A": "Manchester City",
+        "h": 0,
+        "a": 0,
+        "ht": null,
+        "up": false,
+        "o": {
+          "Phase": "Quarterfinals",
+          "HomeCountry": "INT",
+          "AwayCountry": "ENG",
+          "PublishedRound": "Quarterfinals",
+          "CsvSeason": 2021,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2021-22/cl.txt",
+              "sha256": "36241f4479aa9efda62c62318366bbf36f84cc8719f6387c5747cb5dea7ec519"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 119,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1649808000000,
+        "lg": "Champions League",
+        "H": "Liverpool FC (ENG)",
+        "A": "SL Benfica",
+        "h": 3,
+        "a": 3,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "Phase": "Quarterfinals",
+          "HomeCountry": "INT",
+          "AwayCountry": "PRT",
+          "PublishedRound": "Quarterfinals",
+          "CsvSeason": 2021,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2021-22/cl.txt",
+              "sha256": "36241f4479aa9efda62c62318366bbf36f84cc8719f6387c5747cb5dea7ec519"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 120,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1650931200000,
+        "lg": "Champions League",
+        "H": "Manchester City (ENG)",
+        "A": "Real Madrid",
+        "h": 4,
+        "a": 3,
+        "ht": 3,
+        "up": false,
+        "o": {
+          "Phase": "Semifinals",
+          "HomeCountry": "INT",
+          "AwayCountry": "ESP",
+          "PublishedRound": "Semifinals",
+          "CsvSeason": 2021,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2021-22/cl.txt",
+              "sha256": "36241f4479aa9efda62c62318366bbf36f84cc8719f6387c5747cb5dea7ec519"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 2,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 121,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1651017600000,
+        "lg": "Champions League",
+        "H": "Liverpool FC (ENG)",
+        "A": "Villarreal CF",
+        "h": 2,
+        "a": 0,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "Phase": "Semifinals",
+          "HomeCountry": "INT",
+          "AwayCountry": "ESP",
+          "PublishedRound": "Semifinals",
+          "CsvSeason": 2021,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2021-22/cl.txt",
+              "sha256": "36241f4479aa9efda62c62318366bbf36f84cc8719f6387c5747cb5dea7ec519"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 122,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1651536000000,
+        "lg": "Champions League",
+        "H": "Villarreal CF (ESP)",
+        "A": "Liverpool FC",
+        "h": 2,
+        "a": 3,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "Phase": "Semifinals",
+          "HomeCountry": "INT",
+          "AwayCountry": "ENG",
+          "PublishedRound": "Semifinals",
+          "CsvSeason": 2021,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2021-22/cl.txt",
+              "sha256": "36241f4479aa9efda62c62318366bbf36f84cc8719f6387c5747cb5dea7ec519"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 2,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 123,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1651622400000,
+        "lg": "Champions League",
+        "H": "Real Madrid (ESP)",
+        "A": "Manchester City",
+        "h": 2,
+        "a": 1,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "Phase": "Semifinals",
+          "HomeCountry": "INT",
+          "AwayCountry": "ENG",
+          "PublishedRound": "Semifinals",
+          "CupScoreEvidence": "3-1 a.e.t. (2-1, 0-0)",
+          "CsvSeason": 2021,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2021-22/cl.txt",
+              "sha256": "36241f4479aa9efda62c62318366bbf36f84cc8719f6387c5747cb5dea7ec519"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 124,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1653696000000,
+        "lg": "Champions League",
+        "H": "Liverpool FC (ENG)",
+        "A": "Real Madrid",
+        "h": 0,
+        "a": 1,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "Phase": "Final",
+          "HomeCountry": "INT",
+          "AwayCountry": "ESP",
+          "PublishedRound": "Final",
+          "CsvSeason": 2021,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2021-22/cl.txt",
+              "sha256": "36241f4479aa9efda62c62318366bbf36f84cc8719f6387c5747cb5dea7ec519"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": null
+      }
+    }
+  ]
+}

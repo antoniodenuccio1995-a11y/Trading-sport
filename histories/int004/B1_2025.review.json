@@ -1,0 +1,3858 @@
+{
+  "originalPacket": "histories/stab003/B1_2025.json",
+  "originalSHA256": "2116dc3adc6f095e2596cd0c7aacf2d3ca774960b74290cc6bd9a1a81512cdfd",
+  "review": [
+    {
+      "originalIndex": 0,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1753401600000,
+        "lg": "Jupiler Pro League",
+        "H": "Antwerp",
+        "A": "St. Gilloise",
+        "h": 1,
+        "a": 1,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+          "HistSourceSHA256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+              "sha256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": [
+          8,
+          17,
+          4,
+          8
+        ]
+      }
+    },
+    {
+      "originalIndex": 3,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1753488000000,
+        "lg": "Jupiler Pro League",
+        "H": "RAAL La Louviere",
+        "A": "Standard",
+        "h": 0,
+        "a": 2,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+          "HistSourceSHA256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+              "sha256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 2,
+        "shots": [
+          14,
+          9,
+          2,
+          4
+        ]
+      }
+    },
+    {
+      "originalIndex": 7,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1753574400000,
+        "lg": "Jupiler Pro League",
+        "H": "St Truiden",
+        "A": "Gent",
+        "h": 3,
+        "a": 1,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+          "HistSourceSHA256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+              "sha256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          14,
+          12,
+          5,
+          2
+        ]
+      }
+    },
+    {
+      "originalIndex": 11,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1754092800000,
+        "lg": "Jupiler Pro League",
+        "H": "Gent",
+        "A": "RAAL La Louviere",
+        "h": 1,
+        "a": 0,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+          "HistSourceSHA256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+              "sha256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          11,
+          5,
+          6,
+          1
+        ]
+      }
+    },
+    {
+      "originalIndex": 14,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1754179200000,
+        "lg": "Jupiler Pro League",
+        "H": "St. Gilloise",
+        "A": "Oud-Heverlee Leuven",
+        "h": 5,
+        "a": 0,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+          "HistSourceSHA256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+              "sha256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 2,
+        "hta": 0,
+        "shots": [
+          19,
+          6,
+          10,
+          0
+        ]
+      }
+    },
+    {
+      "originalIndex": 15,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1754179200000,
+        "lg": "Jupiler Pro League",
+        "H": "Charleroi",
+        "A": "St Truiden",
+        "h": 1,
+        "a": 1,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+          "HistSourceSHA256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+              "sha256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 1,
+        "shots": [
+          4,
+          14,
+          2,
+          4
+        ]
+      }
+    },
+    {
+      "originalIndex": 16,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1754611200000,
+        "lg": "Jupiler Pro League",
+        "H": "St Truiden",
+        "A": "Dender",
+        "h": 2,
+        "a": 0,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+          "HistSourceSHA256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+              "sha256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": [
+          14,
+          6,
+          3,
+          2
+        ]
+      }
+    },
+    {
+      "originalIndex": 19,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1754697600000,
+        "lg": "Jupiler Pro League",
+        "H": "Gent",
+        "A": "St. Gilloise",
+        "h": 2,
+        "a": 3,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+          "HistSourceSHA256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+              "sha256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 1,
+        "shots": [
+          20,
+          12,
+          6,
+          8
+        ]
+      }
+    },
+    {
+      "originalIndex": 20,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1754784000000,
+        "lg": "Jupiler Pro League",
+        "H": "RAAL La Louviere",
+        "A": "Charleroi",
+        "h": 1,
+        "a": 0,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+          "HistSourceSHA256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+              "sha256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": [
+          11,
+          15,
+          2,
+          4
+        ]
+      }
+    },
+    {
+      "originalIndex": 27,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1755302400000,
+        "lg": "Jupiler Pro League",
+        "H": "St. Gilloise",
+        "A": "Standard",
+        "h": 3,
+        "a": 0,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+          "HistSourceSHA256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+              "sha256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": [
+          24,
+          4,
+          11,
+          1
+        ]
+      }
+    },
+    {
+      "originalIndex": 29,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1755388800000,
+        "lg": "Jupiler Pro League",
+        "H": "St Truiden",
+        "A": "RAAL La Louviere",
+        "h": 2,
+        "a": 1,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+          "HistSourceSHA256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+              "sha256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": [
+          13,
+          11,
+          7,
+          5
+        ]
+      }
+    },
+    {
+      "originalIndex": 33,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1755907200000,
+        "lg": "Jupiler Pro League",
+        "H": "Waregem",
+        "A": "St Truiden",
+        "h": 0,
+        "a": 2,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+          "HistSourceSHA256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+              "sha256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          6,
+          18,
+          2,
+          4
+        ]
+      }
+    },
+    {
+      "originalIndex": 35,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1755993600000,
+        "lg": "Jupiler Pro League",
+        "H": "RAAL La Louviere",
+        "A": "St. Gilloise",
+        "h": 0,
+        "a": 0,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+          "HistSourceSHA256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+              "sha256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          5,
+          10,
+          1,
+          5
+        ]
+      }
+    },
+    {
+      "originalIndex": 37,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1756425600000,
+        "lg": "Jupiler Pro League",
+        "H": "Cercle Brugge",
+        "A": "St Truiden",
+        "h": 1,
+        "a": 1,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+          "HistSourceSHA256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+              "sha256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 1,
+        "shots": [
+          13,
+          17,
+          4,
+          5
+        ]
+      }
+    },
+    {
+      "originalIndex": 38,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1756512000000,
+        "lg": "Jupiler Pro League",
+        "H": "Mechelen",
+        "A": "RAAL La Louviere",
+        "h": 3,
+        "a": 2,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+          "HistSourceSHA256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+              "sha256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": [
+          13,
+          12,
+          8,
+          3
+        ]
+      }
+    },
+    {
+      "originalIndex": 43,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1756598400000,
+        "lg": "Jupiler Pro League",
+        "H": "St. Gilloise",
+        "A": "Anderlecht",
+        "h": 2,
+        "a": 0,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+          "HistSourceSHA256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+              "sha256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": [
+          16,
+          9,
+          5,
+          4
+        ]
+      }
+    },
+    {
+      "originalIndex": 47,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1757721600000,
+        "lg": "Jupiler Pro League",
+        "H": "Dender",
+        "A": "St. Gilloise",
+        "h": 0,
+        "a": 1,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+          "HistSourceSHA256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+              "sha256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          5,
+          18,
+          2,
+          4
+        ]
+      }
+    },
+    {
+      "originalIndex": 48,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1757721600000,
+        "lg": "Jupiler Pro League",
+        "H": "RAAL La Louviere",
+        "A": "Club Brugge",
+        "h": 1,
+        "a": 0,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+          "HistSourceSHA256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+              "sha256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": [
+          13,
+          21,
+          4,
+          6
+        ]
+      }
+    },
+    {
+      "originalIndex": 52,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1757808000000,
+        "lg": "Jupiler Pro League",
+        "H": "St Truiden",
+        "A": "Westerlo",
+        "h": 0,
+        "a": 3,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+          "HistSourceSHA256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+              "sha256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 1,
+        "shots": [
+          17,
+          12,
+          3,
+          6
+        ]
+      }
+    },
+    {
+      "originalIndex": 55,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1758326400000,
+        "lg": "Jupiler Pro League",
+        "H": "Oud-Heverlee Leuven",
+        "A": "RAAL La Louviere",
+        "h": 1,
+        "a": 2,
+        "ht": 3,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+          "HistSourceSHA256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+              "sha256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 2,
+        "shots": [
+          8,
+          5,
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "originalIndex": 58,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1758412800000,
+        "lg": "Jupiler Pro League",
+        "H": "Genk",
+        "A": "St. Gilloise",
+        "h": 1,
+        "a": 2,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+          "HistSourceSHA256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+              "sha256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 1,
+        "shots": [
+          15,
+          11,
+          7,
+          6
+        ]
+      }
+    },
+    {
+      "originalIndex": 60,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1758412800000,
+        "lg": "Jupiler Pro League",
+        "H": "Club Brugge",
+        "A": "St Truiden",
+        "h": 2,
+        "a": 0,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+          "HistSourceSHA256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+              "sha256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": [
+          20,
+          7,
+          9,
+          3
+        ]
+      }
+    },
+    {
+      "originalIndex": 67,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1758931200000,
+        "lg": "Jupiler Pro League",
+        "H": "St. Gilloise",
+        "A": "Westerlo",
+        "h": 2,
+        "a": 0,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+          "HistSourceSHA256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+              "sha256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          19,
+          7,
+          6,
+          2
+        ]
+      }
+    },
+    {
+      "originalIndex": 68,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1759017600000,
+        "lg": "Jupiler Pro League",
+        "H": "St Truiden",
+        "A": "Genk",
+        "h": 1,
+        "a": 2,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+          "HistSourceSHA256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+              "sha256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": [
+          15,
+          15,
+          4,
+          7
+        ]
+      }
+    },
+    {
+      "originalIndex": 71,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1759017600000,
+        "lg": "Jupiler Pro League",
+        "H": "Dender",
+        "A": "RAAL La Louviere",
+        "h": 0,
+        "a": 0,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+          "HistSourceSHA256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+              "sha256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          10,
+          10,
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "originalIndex": 73,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1759536000000,
+        "lg": "Jupiler Pro League",
+        "H": "Mechelen",
+        "A": "St Truiden",
+        "h": 1,
+        "a": 3,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+          "HistSourceSHA256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+              "sha256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": [
+          10,
+          19,
+          3,
+          9
+        ]
+      }
+    },
+    {
+      "originalIndex": 74,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1759536000000,
+        "lg": "Jupiler Pro League",
+        "H": "RAAL La Louviere",
+        "A": "Waregem",
+        "h": 0,
+        "a": 0,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+          "HistSourceSHA256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+              "sha256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          11,
+          6,
+          4,
+          4
+        ]
+      }
+    },
+    {
+      "originalIndex": 78,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1759622400000,
+        "lg": "Jupiler Pro League",
+        "H": "Club Brugge",
+        "A": "St. Gilloise",
+        "h": 1,
+        "a": 0,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+          "HistSourceSHA256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+              "sha256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          10,
+          7,
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "originalIndex": 80,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1760745600000,
+        "lg": "Jupiler Pro League",
+        "H": "RAAL La Louviere",
+        "A": "Westerlo",
+        "h": 0,
+        "a": 0,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+          "HistSourceSHA256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+              "sha256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          8,
+          7,
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "originalIndex": 82,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1760745600000,
+        "lg": "Jupiler Pro League",
+        "H": "St. Gilloise",
+        "A": "Charleroi",
+        "h": 3,
+        "a": 1,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+          "HistSourceSHA256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+              "sha256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 1,
+        "shots": [
+          15,
+          9,
+          3,
+          3
+        ]
+      }
+    },
+    {
+      "originalIndex": 85,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1760832000000,
+        "lg": "Jupiler Pro League",
+        "H": "St Truiden",
+        "A": "Anderlecht",
+        "h": 2,
+        "a": 2,
+        "ht": 3,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+          "HistSourceSHA256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+              "sha256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 2,
+        "shots": [
+          15,
+          11,
+          3,
+          4
+        ]
+      }
+    },
+    {
+      "originalIndex": 94,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1761436800000,
+        "lg": "Jupiler Pro League",
+        "H": "Genk",
+        "A": "RAAL La Louviere",
+        "h": 1,
+        "a": 1,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+          "HistSourceSHA256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+              "sha256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 1,
+        "shots": [
+          17,
+          10,
+          7,
+          2
+        ]
+      }
+    },
+    {
+      "originalIndex": 95,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1761436800000,
+        "lg": "Jupiler Pro League",
+        "H": "St. Gilloise",
+        "A": "St Truiden",
+        "h": 2,
+        "a": 0,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+          "HistSourceSHA256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+              "sha256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          17,
+          11,
+          6,
+          2
+        ]
+      }
+    },
+    {
+      "originalIndex": 97,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1761955200000,
+        "lg": "Jupiler Pro League",
+        "H": "Waregem",
+        "A": "St. Gilloise",
+        "h": 1,
+        "a": 4,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+          "HistSourceSHA256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+              "sha256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 2,
+        "shots": [
+          10,
+          20,
+          3,
+          9
+        ]
+      }
+    },
+    {
+      "originalIndex": 102,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1762041600000,
+        "lg": "Jupiler Pro League",
+        "H": "St Truiden",
+        "A": "Antwerp",
+        "h": 1,
+        "a": 0,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+          "HistSourceSHA256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+              "sha256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": [
+          22,
+          5,
+          9,
+          1
+        ]
+      }
+    },
+    {
+      "originalIndex": 103,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1762041600000,
+        "lg": "Jupiler Pro League",
+        "H": "RAAL La Louviere",
+        "A": "Cercle Brugge",
+        "h": 2,
+        "a": 1,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+          "HistSourceSHA256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+              "sha256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": [
+          8,
+          14,
+          3,
+          4
+        ]
+      }
+    },
+    {
+      "originalIndex": 107,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1762560000000,
+        "lg": "Jupiler Pro League",
+        "H": "Antwerp",
+        "A": "RAAL La Louviere",
+        "h": 3,
+        "a": 1,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+          "HistSourceSHA256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+              "sha256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          11,
+          6,
+          5,
+          1
+        ]
+      }
+    },
+    {
+      "originalIndex": 109,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1762646400000,
+        "lg": "Jupiler Pro League",
+        "H": "St Truiden",
+        "A": "Standard",
+        "h": 1,
+        "a": 0,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+          "HistSourceSHA256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+              "sha256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          16,
+          4,
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "originalIndex": 111,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1762646400000,
+        "lg": "Jupiler Pro League",
+        "H": "Mechelen",
+        "A": "St. Gilloise",
+        "h": 1,
+        "a": 1,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+          "HistSourceSHA256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+              "sha256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          7,
+          19,
+          1,
+          4
+        ]
+      }
+    },
+    {
+      "originalIndex": 113,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1763769600000,
+        "lg": "Jupiler Pro League",
+        "H": "St. Gilloise",
+        "A": "Cercle Brugge",
+        "h": 2,
+        "a": 0,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+          "HistSourceSHA256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+              "sha256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": [
+          17,
+          8,
+          6,
+          1
+        ]
+      }
+    },
+    {
+      "originalIndex": 118,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1763856000000,
+        "lg": "Jupiler Pro League",
+        "H": "RAAL La Louviere",
+        "A": "Anderlecht",
+        "h": 0,
+        "a": 1,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+          "HistSourceSHA256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+              "sha256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          10,
+          20,
+          4,
+          7
+        ]
+      }
+    },
+    {
+      "originalIndex": 119,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1763856000000,
+        "lg": "Jupiler Pro League",
+        "H": "Oud-Heverlee Leuven",
+        "A": "St Truiden",
+        "h": 1,
+        "a": 2,
+        "ht": 3,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+          "HistSourceSHA256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+              "sha256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 2,
+        "shots": [
+          19,
+          8,
+          6,
+          4
+        ]
+      }
+    },
+    {
+      "originalIndex": 123,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1764374400000,
+        "lg": "Jupiler Pro League",
+        "H": "Charleroi",
+        "A": "RAAL La Louviere",
+        "h": 0,
+        "a": 0,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+          "HistSourceSHA256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+              "sha256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          17,
+          6,
+          5,
+          0
+        ]
+      }
+    },
+    {
+      "originalIndex": 126,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1764460800000,
+        "lg": "Jupiler Pro League",
+        "H": "Anderlecht",
+        "A": "St. Gilloise",
+        "h": 1,
+        "a": 0,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+          "HistSourceSHA256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+              "sha256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": [
+          6,
+          10,
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "originalIndex": 127,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1764460800000,
+        "lg": "Jupiler Pro League",
+        "H": "Gent",
+        "A": "St Truiden",
+        "h": 1,
+        "a": 2,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+          "HistSourceSHA256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+              "sha256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": [
+          19,
+          14,
+          4,
+          4
+        ]
+      }
+    },
+    {
+      "originalIndex": 128,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1764892800000,
+        "lg": "Jupiler Pro League",
+        "H": "RAAL La Louviere",
+        "A": "Dender",
+        "h": 1,
+        "a": 2,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+          "HistSourceSHA256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+              "sha256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 1,
+        "shots": [
+          15,
+          14,
+          4,
+          6
+        ]
+      }
+    },
+    {
+      "originalIndex": 130,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1764979200000,
+        "lg": "Jupiler Pro League",
+        "H": "St. Gilloise",
+        "A": "Gent",
+        "h": 1,
+        "a": 1,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+          "HistSourceSHA256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+              "sha256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 1,
+        "shots": [
+          20,
+          6,
+          10,
+          4
+        ]
+      }
+    },
+    {
+      "originalIndex": 131,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1764979200000,
+        "lg": "Jupiler Pro League",
+        "H": "St Truiden",
+        "A": "Club Brugge",
+        "h": 3,
+        "a": 2,
+        "ht": 3,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+          "HistSourceSHA256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+              "sha256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 2,
+        "hta": 1,
+        "shots": [
+          14,
+          19,
+          6,
+          8
+        ]
+      }
+    },
+    {
+      "originalIndex": 138,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1765584000000,
+        "lg": "Jupiler Pro League",
+        "H": "Waregem",
+        "A": "RAAL La Louviere",
+        "h": 2,
+        "a": 2,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+          "HistSourceSHA256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+              "sha256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 1,
+        "shots": [
+          9,
+          8,
+          4,
+          4
+        ]
+      }
+    },
+    {
+      "originalIndex": 139,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1765584000000,
+        "lg": "Jupiler Pro League",
+        "H": "Anderlecht",
+        "A": "St Truiden",
+        "h": 2,
+        "a": 1,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+          "HistSourceSHA256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+              "sha256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          22,
+          8,
+          9,
+          2
+        ]
+      }
+    },
+    {
+      "originalIndex": 142,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1765670400000,
+        "lg": "Jupiler Pro League",
+        "H": "Charleroi",
+        "A": "St. Gilloise",
+        "h": 1,
+        "a": 1,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+          "HistSourceSHA256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+              "sha256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 1,
+        "shots": [
+          10,
+          13,
+          5,
+          1
+        ]
+      }
+    },
+    {
+      "originalIndex": 146,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1766188800000,
+        "lg": "Jupiler Pro League",
+        "H": "Westerlo",
+        "A": "RAAL La Louviere",
+        "h": 2,
+        "a": 1,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+          "HistSourceSHA256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+              "sha256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": [
+          14,
+          14,
+          4,
+          3
+        ]
+      }
+    },
+    {
+      "originalIndex": 147,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1766188800000,
+        "lg": "Jupiler Pro League",
+        "H": "St. Gilloise",
+        "A": "Waregem",
+        "h": 2,
+        "a": 0,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+          "HistSourceSHA256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+              "sha256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": [
+          8,
+          9,
+          5,
+          0
+        ]
+      }
+    },
+    {
+      "originalIndex": 149,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1766275200000,
+        "lg": "Jupiler Pro League",
+        "H": "St Truiden",
+        "A": "Mechelen",
+        "h": 1,
+        "a": 0,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+          "HistSourceSHA256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+              "sha256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": [
+          9,
+          10,
+          5,
+          2
+        ]
+      }
+    },
+    {
+      "originalIndex": 153,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1766707200000,
+        "lg": "Jupiler Pro League",
+        "H": "Cercle Brugge",
+        "A": "St. Gilloise",
+        "h": 1,
+        "a": 1,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+          "HistSourceSHA256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+              "sha256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 1,
+        "shots": [
+          9,
+          21,
+          5,
+          8
+        ]
+      }
+    },
+    {
+      "originalIndex": 154,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1766707200000,
+        "lg": "Jupiler Pro League",
+        "H": "Standard",
+        "A": "St Truiden",
+        "h": 1,
+        "a": 2,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+          "HistSourceSHA256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+              "sha256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 1,
+        "shots": [
+          5,
+          16,
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "originalIndex": 157,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1766793600000,
+        "lg": "Jupiler Pro League",
+        "H": "RAAL La Louviere",
+        "A": "Oud-Heverlee Leuven",
+        "h": 0,
+        "a": 0,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+          "HistSourceSHA256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+              "sha256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          15,
+          11,
+          7,
+          3
+        ]
+      }
+    },
+    {
+      "originalIndex": 160,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1768521600000,
+        "lg": "Jupiler Pro League",
+        "H": "Club Brugge",
+        "A": "RAAL La Louviere",
+        "h": 2,
+        "a": 3,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+          "HistSourceSHA256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+              "sha256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 2,
+        "hta": 0,
+        "shots": [
+          11,
+          14,
+          6,
+          5
+        ]
+      }
+    },
+    {
+      "originalIndex": 163,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1768608000000,
+        "lg": "Jupiler Pro League",
+        "H": "St. Gilloise",
+        "A": "Mechelen",
+        "h": 1,
+        "a": 0,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+          "HistSourceSHA256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+              "sha256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": [
+          15,
+          4,
+          6,
+          1
+        ]
+      }
+    },
+    {
+      "originalIndex": 167,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1768694400000,
+        "lg": "Jupiler Pro League",
+        "H": "St Truiden",
+        "A": "Oud-Heverlee Leuven",
+        "h": 1,
+        "a": 0,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+          "HistSourceSHA256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+              "sha256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": [
+          21,
+          20,
+          7,
+          3
+        ]
+      }
+    },
+    {
+      "originalIndex": 169,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1769212800000,
+        "lg": "Jupiler Pro League",
+        "H": "RAAL La Louviere",
+        "A": "St Truiden",
+        "h": 1,
+        "a": 2,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+          "HistSourceSHA256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+              "sha256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          6,
+          15,
+          1,
+          6
+        ]
+      }
+    },
+    {
+      "originalIndex": 171,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1769212800000,
+        "lg": "Jupiler Pro League",
+        "H": "Oud-Heverlee Leuven",
+        "A": "St. Gilloise",
+        "h": 0,
+        "a": 0,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+          "HistSourceSHA256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+              "sha256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          17,
+          13,
+          5,
+          2
+        ]
+      }
+    },
+    {
+      "originalIndex": 176,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1769731200000,
+        "lg": "Jupiler Pro League",
+        "H": "RAAL La Louviere",
+        "A": "Gent",
+        "h": 1,
+        "a": 1,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+          "HistSourceSHA256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+              "sha256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          6,
+          8,
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "originalIndex": 179,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1769817600000,
+        "lg": "Jupiler Pro League",
+        "H": "St Truiden",
+        "A": "Charleroi",
+        "h": 0,
+        "a": 2,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+          "HistSourceSHA256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+              "sha256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          13,
+          15,
+          2,
+          5
+        ]
+      }
+    },
+    {
+      "originalIndex": 182,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1769904000000,
+        "lg": "Jupiler Pro League",
+        "H": "St. Gilloise",
+        "A": "Club Brugge",
+        "h": 1,
+        "a": 0,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+          "HistSourceSHA256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+              "sha256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": [
+          13,
+          8,
+          5,
+          2
+        ]
+      }
+    },
+    {
+      "originalIndex": 184,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1770336000000,
+        "lg": "Jupiler Pro League",
+        "H": "Westerlo",
+        "A": "St Truiden",
+        "h": 0,
+        "a": 4,
+        "ht": 3,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+          "HistSourceSHA256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+              "sha256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 3,
+        "shots": [
+          8,
+          17,
+          1,
+          6
+        ]
+      }
+    },
+    {
+      "originalIndex": 189,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1770508800000,
+        "lg": "Jupiler Pro League",
+        "H": "St. Gilloise",
+        "A": "RAAL La Louviere",
+        "h": 2,
+        "a": 1,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+          "HistSourceSHA256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+              "sha256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 1,
+        "shots": [
+          16,
+          6,
+          8,
+          1
+        ]
+      }
+    },
+    {
+      "originalIndex": 195,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1771027200000,
+        "lg": "Jupiler Pro League",
+        "H": "Standard",
+        "A": "St. Gilloise",
+        "h": 1,
+        "a": 1,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+          "HistSourceSHA256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+              "sha256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": [
+          7,
+          16,
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "originalIndex": 198,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1771113600000,
+        "lg": "Jupiler Pro League",
+        "H": "Anderlecht",
+        "A": "RAAL La Louviere",
+        "h": 0,
+        "a": 0,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+          "HistSourceSHA256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+              "sha256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          19,
+          6,
+          5,
+          0
+        ]
+      }
+    },
+    {
+      "originalIndex": 199,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1771113600000,
+        "lg": "Jupiler Pro League",
+        "H": "St Truiden",
+        "A": "Waregem",
+        "h": 3,
+        "a": 2,
+        "ht": 4,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+          "HistSourceSHA256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+              "sha256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 2,
+        "hta": 2,
+        "shots": [
+          17,
+          12,
+          7,
+          3
+        ]
+      }
+    },
+    {
+      "originalIndex": 201,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1771632000000,
+        "lg": "Jupiler Pro League",
+        "H": "Dender",
+        "A": "St Truiden",
+        "h": 1,
+        "a": 4,
+        "ht": 3,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+          "HistSourceSHA256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+              "sha256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 2,
+        "shots": [
+          11,
+          14,
+          4,
+          4
+        ]
+      }
+    },
+    {
+      "originalIndex": 203,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1771632000000,
+        "lg": "Jupiler Pro League",
+        "H": "St. Gilloise",
+        "A": "Antwerp",
+        "h": 2,
+        "a": 1,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+          "HistSourceSHA256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+              "sha256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": [
+          21,
+          4,
+          6,
+          2
+        ]
+      }
+    },
+    {
+      "originalIndex": 205,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1771718400000,
+        "lg": "Jupiler Pro League",
+        "H": "RAAL La Louviere",
+        "A": "Mechelen",
+        "h": 0,
+        "a": 2,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+          "HistSourceSHA256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+              "sha256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 1,
+        "shots": [
+          7,
+          6,
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "originalIndex": 208,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1772150400000,
+        "lg": "Jupiler Pro League",
+        "H": "Standard",
+        "A": "RAAL La Louviere",
+        "h": 1,
+        "a": 1,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+          "HistSourceSHA256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+              "sha256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 1,
+        "shots": [
+          9,
+          12,
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "originalIndex": 210,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1772236800000,
+        "lg": "Jupiler Pro League",
+        "H": "Antwerp",
+        "A": "St Truiden",
+        "h": 1,
+        "a": 0,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+          "HistSourceSHA256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+              "sha256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          12,
+          10,
+          6,
+          3
+        ]
+      }
+    },
+    {
+      "originalIndex": 213,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1772323200000,
+        "lg": "Jupiler Pro League",
+        "H": "Westerlo",
+        "A": "St. Gilloise",
+        "h": 0,
+        "a": 0,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+          "HistSourceSHA256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+              "sha256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          8,
+          7,
+          4,
+          1
+        ]
+      }
+    },
+    {
+      "originalIndex": 216,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1772755200000,
+        "lg": "Jupiler Pro League",
+        "H": "RAAL La Louviere",
+        "A": "Antwerp",
+        "h": 0,
+        "a": 0,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+          "HistSourceSHA256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+              "sha256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          21,
+          5,
+          10,
+          5
+        ]
+      }
+    },
+    {
+      "originalIndex": 219,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1772841600000,
+        "lg": "Jupiler Pro League",
+        "H": "St. Gilloise",
+        "A": "Genk",
+        "h": 2,
+        "a": 1,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+          "HistSourceSHA256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+              "sha256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": [
+          12,
+          5,
+          4,
+          3
+        ]
+      }
+    },
+    {
+      "originalIndex": 223,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1772928000000,
+        "lg": "Jupiler Pro League",
+        "H": "St Truiden",
+        "A": "Cercle Brugge",
+        "h": 2,
+        "a": 1,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+          "HistSourceSHA256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+              "sha256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": [
+          15,
+          18,
+          7,
+          6
+        ]
+      }
+    },
+    {
+      "originalIndex": 226,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1773446400000,
+        "lg": "Jupiler Pro League",
+        "H": "St. Gilloise",
+        "A": "Dender",
+        "h": 2,
+        "a": 0,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+          "HistSourceSHA256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+              "sha256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          9,
+          5,
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "originalIndex": 228,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1773532800000,
+        "lg": "Jupiler Pro League",
+        "H": "Genk",
+        "A": "St Truiden",
+        "h": 1,
+        "a": 0,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+          "HistSourceSHA256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+              "sha256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": [
+          13,
+          8,
+          4,
+          1
+        ]
+      }
+    },
+    {
+      "originalIndex": 231,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1773532800000,
+        "lg": "Jupiler Pro League",
+        "H": "Cercle Brugge",
+        "A": "RAAL La Louviere",
+        "h": 1,
+        "a": 3,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+          "HistSourceSHA256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+              "sha256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 1,
+        "shots": [
+          25,
+          15,
+          10,
+          5
+        ]
+      }
+    },
+    {
+      "originalIndex": 236,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1774137600000,
+        "lg": "Jupiler Pro League",
+        "H": "RAAL La Louviere",
+        "A": "Genk",
+        "h": 5,
+        "a": 5,
+        "ht": 5,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+          "HistSourceSHA256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+              "sha256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 2,
+        "hta": 3,
+        "shots": [
+          18,
+          14,
+          8,
+          7
+        ]
+      }
+    },
+    {
+      "originalIndex": 237,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1774137600000,
+        "lg": "Jupiler Pro League",
+        "H": "St Truiden",
+        "A": "St. Gilloise",
+        "h": 1,
+        "a": 3,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+          "HistSourceSHA256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+              "sha256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 2,
+        "shots": [
+          9,
+          18,
+          2,
+          8
+        ]
+      }
+    },
+    {
+      "originalIndex": 243,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1775260800000,
+        "lg": "Jupiler Pro League",
+        "H": "St. Gilloise",
+        "A": "St Truiden",
+        "h": 1,
+        "a": 0,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+          "HistSourceSHA256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+              "sha256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          16,
+          6,
+          4,
+          0
+        ]
+      }
+    },
+    {
+      "originalIndex": 246,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1775433600000,
+        "lg": "Jupiler Pro League",
+        "H": "RAAL La Louviere",
+        "A": "Dender",
+        "h": 0,
+        "a": 1,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+          "HistSourceSHA256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+              "sha256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          22,
+          7,
+          4,
+          3
+        ]
+      }
+    },
+    {
+      "originalIndex": 249,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1775865600000,
+        "lg": "Jupiler Pro League",
+        "H": "Cercle Brugge",
+        "A": "RAAL La Louviere",
+        "h": 3,
+        "a": 0,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+          "HistSourceSHA256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+              "sha256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 2,
+        "hta": 0,
+        "shots": [
+          20,
+          10,
+          6,
+          4
+        ]
+      }
+    },
+    {
+      "originalIndex": 251,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1775865600000,
+        "lg": "Jupiler Pro League",
+        "H": "St Truiden",
+        "A": "Club Brugge",
+        "h": 1,
+        "a": 2,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+          "HistSourceSHA256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+              "sha256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": [
+          19,
+          16,
+          5,
+          2
+        ]
+      }
+    },
+    {
+      "originalIndex": 252,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1775952000000,
+        "lg": "Jupiler Pro League",
+        "H": "Mechelen",
+        "A": "St. Gilloise",
+        "h": 0,
+        "a": 1,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+          "HistSourceSHA256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+              "sha256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 1,
+        "shots": [
+          4,
+          18,
+          0,
+          8
+        ]
+      }
+    },
+    {
+      "originalIndex": 260,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1776556800000,
+        "lg": "Jupiler Pro League",
+        "H": "Gent",
+        "A": "St Truiden",
+        "h": 0,
+        "a": 0,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+          "HistSourceSHA256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+              "sha256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          13,
+          12,
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "originalIndex": 262,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1776556800000,
+        "lg": "Jupiler Pro League",
+        "H": "St. Gilloise",
+        "A": "Club Brugge",
+        "h": 2,
+        "a": 1,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+          "HistSourceSHA256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+              "sha256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 1,
+        "shots": [
+          15,
+          11,
+          6,
+          5
+        ]
+      }
+    },
+    {
+      "originalIndex": 263,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1776556800000,
+        "lg": "Jupiler Pro League",
+        "H": "RAAL La Louviere",
+        "A": "Waregem",
+        "h": 0,
+        "a": 2,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+          "HistSourceSHA256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+              "sha256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 1,
+        "shots": [
+          10,
+          7,
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "originalIndex": 268,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1776816000000,
+        "lg": "Jupiler Pro League",
+        "H": "St. Gilloise",
+        "A": "Gent",
+        "h": 0,
+        "a": 0,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+          "HistSourceSHA256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+              "sha256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          18,
+          3,
+          5,
+          0
+        ]
+      }
+    },
+    {
+      "originalIndex": 269,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1776902400000,
+        "lg": "Jupiler Pro League",
+        "H": "St Truiden",
+        "A": "Anderlecht",
+        "h": 2,
+        "a": 0,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+          "HistSourceSHA256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+              "sha256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          16,
+          19,
+          7,
+          5
+        ]
+      }
+    },
+    {
+      "originalIndex": 275,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1777161600000,
+        "lg": "Jupiler Pro League",
+        "H": "Mechelen",
+        "A": "St Truiden",
+        "h": 1,
+        "a": 4,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+          "HistSourceSHA256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+              "sha256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 1,
+        "shots": [
+          8,
+          16,
+          2,
+          10
+        ]
+      }
+    },
+    {
+      "originalIndex": 276,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1777161600000,
+        "lg": "Jupiler Pro League",
+        "H": "Anderlecht",
+        "A": "St. Gilloise",
+        "h": 1,
+        "a": 3,
+        "ht": 3,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+          "HistSourceSHA256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+              "sha256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 2,
+        "shots": [
+          13,
+          12,
+          3,
+          4
+        ]
+      }
+    },
+    {
+      "originalIndex": 277,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1777161600000,
+        "lg": "Jupiler Pro League",
+        "H": "Waregem",
+        "A": "RAAL La Louviere",
+        "h": 4,
+        "a": 0,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+          "HistSourceSHA256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+              "sha256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 2,
+        "hta": 0,
+        "shots": [
+          12,
+          10,
+          5,
+          1
+        ]
+      }
+    },
+    {
+      "originalIndex": 281,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1777680000000,
+        "lg": "Jupiler Pro League",
+        "H": "St Truiden",
+        "A": "St. Gilloise",
+        "h": 2,
+        "a": 1,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+          "HistSourceSHA256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+              "sha256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          14,
+          3,
+          5,
+          1
+        ]
+      }
+    },
+    {
+      "originalIndex": 286,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1778284800000,
+        "lg": "Jupiler Pro League",
+        "H": "RAAL La Louviere",
+        "A": "Cercle Brugge",
+        "h": 4,
+        "a": 1,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+          "HistSourceSHA256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+              "sha256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 1,
+        "shots": [
+          13,
+          13,
+          6,
+          6
+        ]
+      }
+    },
+    {
+      "originalIndex": 288,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1778284800000,
+        "lg": "Jupiler Pro League",
+        "H": "Club Brugge",
+        "A": "St Truiden",
+        "h": 2,
+        "a": 0,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+          "HistSourceSHA256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+              "sha256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": [
+          24,
+          7,
+          11,
+          2
+        ]
+      }
+    },
+    {
+      "originalIndex": 291,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1778371200000,
+        "lg": "Jupiler Pro League",
+        "H": "St. Gilloise",
+        "A": "Mechelen",
+        "h": 3,
+        "a": 0,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+          "HistSourceSHA256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+              "sha256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": [
+          14,
+          5,
+          6,
+          1
+        ]
+      }
+    },
+    {
+      "originalIndex": 296,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1778889600000,
+        "lg": "Jupiler Pro League",
+        "H": "St Truiden",
+        "A": "Gent",
+        "h": 1,
+        "a": 1,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+          "HistSourceSHA256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+              "sha256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 1,
+        "shots": [
+          16,
+          12,
+          4,
+          1
+        ]
+      }
+    },
+    {
+      "originalIndex": 298,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1778976000000,
+        "lg": "Jupiler Pro League",
+        "H": "Club Brugge",
+        "A": "St. Gilloise",
+        "h": 5,
+        "a": 0,
+        "ht": 3,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+          "HistSourceSHA256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+              "sha256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 3,
+        "hta": 0,
+        "shots": [
+          17,
+          22,
+          6,
+          4
+        ]
+      }
+    },
+    {
+      "originalIndex": 302,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1779321600000,
+        "lg": "Jupiler Pro League",
+        "H": "Anderlecht",
+        "A": "St Truiden",
+        "h": 3,
+        "a": 1,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+          "HistSourceSHA256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+              "sha256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 2,
+        "hta": 0,
+        "shots": [
+          20,
+          12,
+          7,
+          3
+        ]
+      }
+    },
+    {
+      "originalIndex": 303,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1779321600000,
+        "lg": "Jupiler Pro League",
+        "H": "Gent",
+        "A": "St. Gilloise",
+        "h": 0,
+        "a": 0,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+          "HistSourceSHA256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+              "sha256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          9,
+          15,
+          1,
+          8
+        ]
+      }
+    },
+    {
+      "originalIndex": 309,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1779580800000,
+        "lg": "Jupiler Pro League",
+        "H": "St Truiden",
+        "A": "Mechelen",
+        "h": 3,
+        "a": 0,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+          "HistSourceSHA256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+              "sha256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 2,
+        "hta": 0,
+        "shots": [
+          11,
+          7,
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "originalIndex": 310,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1779580800000,
+        "lg": "Jupiler Pro League",
+        "H": "St. Gilloise",
+        "A": "Anderlecht",
+        "h": 5,
+        "a": 1,
+        "ht": 4,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+          "HistSourceSHA256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+              "sha256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 4,
+        "hta": 0,
+        "shots": [
+          22,
+          9,
+          9,
+          3
+        ]
+      }
+    }
+  ]
+}

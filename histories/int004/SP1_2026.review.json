@@ -1,0 +1,1626 @@
+{
+  "originalPacket": "histories/stab003/SP1_2026.json",
+  "originalSHA256": "d3bce2fec7bd245e48e205823a3c59afcb02f850253a2de8ea3e60c25ca5f73f",
+  "review": [
+    {
+      "originalIndex": 105,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1793491200000,
+        "lg": "La Liga",
+        "H": "R. Racing Club",
+        "A": "Real Madrid",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_1_la-liga/fixtures_2627.csv",
+              "sha256": "d637cd77900ea72ce5d09266e408afce61ca434d1b852d67cf85abd61c185915"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 108,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1793577600000,
+        "lg": "La Liga",
+        "H": "RC Deportivo",
+        "A": "CA Osasuna",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_1_la-liga/fixtures_2627.csv",
+              "sha256": "d637cd77900ea72ce5d09266e408afce61ca434d1b852d67cf85abd61c185915"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 110,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1794009600000,
+        "lg": "La Liga",
+        "H": "Málaga CF",
+        "A": "R. Racing Club",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_1_la-liga/fixtures_2627.csv",
+              "sha256": "d637cd77900ea72ce5d09266e408afce61ca434d1b852d67cf85abd61c185915"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 111,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1794009600000,
+        "lg": "La Liga",
+        "H": "RCD Espanyol de Barcelona",
+        "A": "RC Deportivo",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_1_la-liga/fixtures_2627.csv",
+              "sha256": "d637cd77900ea72ce5d09266e408afce61ca434d1b852d67cf85abd61c185915"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 120,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1795219200000,
+        "lg": "La Liga",
+        "H": "Deportivo Alavés",
+        "A": "RC Deportivo",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_1_la-liga/fixtures_2627.csv",
+              "sha256": "d637cd77900ea72ce5d09266e408afce61ca434d1b852d67cf85abd61c185915"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 125,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1795305600000,
+        "lg": "La Liga",
+        "H": "R. Racing Club",
+        "A": "Real Sociedad",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_1_la-liga/fixtures_2627.csv",
+              "sha256": "d637cd77900ea72ce5d09266e408afce61ca434d1b852d67cf85abd61c185915"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 131,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1795910400000,
+        "lg": "La Liga",
+        "H": "Levante UD",
+        "A": "R. Racing Club",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_1_la-liga/fixtures_2627.csv",
+              "sha256": "d637cd77900ea72ce5d09266e408afce61ca434d1b852d67cf85abd61c185915"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 133,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1795910400000,
+        "lg": "La Liga",
+        "H": "RC Deportivo",
+        "A": "FC Barcelona",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_1_la-liga/fixtures_2627.csv",
+              "sha256": "d637cd77900ea72ce5d09266e408afce61ca434d1b852d67cf85abd61c185915"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 145,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1796515200000,
+        "lg": "La Liga",
+        "H": "R. Racing Club",
+        "A": "RC Deportivo",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_1_la-liga/fixtures_2627.csv",
+              "sha256": "d637cd77900ea72ce5d09266e408afce61ca434d1b852d67cf85abd61c185915"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 153,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1797120000000,
+        "lg": "La Liga",
+        "H": "RC Deportivo",
+        "A": "Athletic Club",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_1_la-liga/fixtures_2627.csv",
+              "sha256": "d637cd77900ea72ce5d09266e408afce61ca434d1b852d67cf85abd61c185915"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 155,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1797120000000,
+        "lg": "La Liga",
+        "H": "Real Betis",
+        "A": "R. Racing Club",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_1_la-liga/fixtures_2627.csv",
+              "sha256": "d637cd77900ea72ce5d09266e408afce61ca434d1b852d67cf85abd61c185915"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 165,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1797724800000,
+        "lg": "La Liga",
+        "H": "RC Deportivo",
+        "A": "Real Madrid",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_1_la-liga/fixtures_2627.csv",
+              "sha256": "d637cd77900ea72ce5d09266e408afce61ca434d1b852d67cf85abd61c185915"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 167,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1797724800000,
+        "lg": "La Liga",
+        "H": "Sevilla FC",
+        "A": "R. Racing Club",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_1_la-liga/fixtures_2627.csv",
+              "sha256": "d637cd77900ea72ce5d09266e408afce61ca434d1b852d67cf85abd61c185915"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 169,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1798934400000,
+        "lg": "La Liga",
+        "H": "Celta",
+        "A": "RC Deportivo",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_1_la-liga/fixtures_2627.csv",
+              "sha256": "d637cd77900ea72ce5d09266e408afce61ca434d1b852d67cf85abd61c185915"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 172,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1798934400000,
+        "lg": "La Liga",
+        "H": "R. Racing Club",
+        "A": "Athletic Club",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_1_la-liga/fixtures_2627.csv",
+              "sha256": "d637cd77900ea72ce5d09266e408afce61ca434d1b852d67cf85abd61c185915"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 180,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1799539200000,
+        "lg": "La Liga",
+        "H": "Atlético de Madrid",
+        "A": "R. Racing Club",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_1_la-liga/fixtures_2627.csv",
+              "sha256": "d637cd77900ea72ce5d09266e408afce61ca434d1b852d67cf85abd61c185915"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 184,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1799539200000,
+        "lg": "La Liga",
+        "H": "RC Deportivo",
+        "A": "Rayo Vallecano",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_1_la-liga/fixtures_2627.csv",
+              "sha256": "d637cd77900ea72ce5d09266e408afce61ca434d1b852d67cf85abd61c185915"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 195,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1800144000000,
+        "lg": "La Liga",
+        "H": "R. Racing Club",
+        "A": "CA Osasuna",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_1_la-liga/fixtures_2627.csv",
+              "sha256": "d637cd77900ea72ce5d09266e408afce61ca434d1b852d67cf85abd61c185915"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 197,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1800144000000,
+        "lg": "La Liga",
+        "H": "Real Betis",
+        "A": "RC Deportivo",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_1_la-liga/fixtures_2627.csv",
+              "sha256": "d637cd77900ea72ce5d09266e408afce61ca434d1b852d67cf85abd61c185915"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 203,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1800748800000,
+        "lg": "La Liga",
+        "H": "R. Racing Club",
+        "A": "Celta",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_1_la-liga/fixtures_2627.csv",
+              "sha256": "d637cd77900ea72ce5d09266e408afce61ca434d1b852d67cf85abd61c185915"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 204,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1800748800000,
+        "lg": "La Liga",
+        "H": "RC Deportivo",
+        "A": "Atlético de Madrid",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_1_la-liga/fixtures_2627.csv",
+              "sha256": "d637cd77900ea72ce5d09266e408afce61ca434d1b852d67cf85abd61c185915"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 210,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1801353600000,
+        "lg": "La Liga",
+        "H": "CA Osasuna",
+        "A": "RC Deportivo",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_1_la-liga/fixtures_2627.csv",
+              "sha256": "d637cd77900ea72ce5d09266e408afce61ca434d1b852d67cf85abd61c185915"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 218,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1801353600000,
+        "lg": "La Liga",
+        "H": "Villarreal CF",
+        "A": "R. Racing Club",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_1_la-liga/fixtures_2627.csv",
+              "sha256": "d637cd77900ea72ce5d09266e408afce61ca434d1b852d67cf85abd61c185915"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 224,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1801958400000,
+        "lg": "La Liga",
+        "H": "RC Deportivo",
+        "A": "Málaga CF",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_1_la-liga/fixtures_2627.csv",
+              "sha256": "d637cd77900ea72ce5d09266e408afce61ca434d1b852d67cf85abd61c185915"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 228,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1801958400000,
+        "lg": "La Liga",
+        "H": "Valencia CF",
+        "A": "R. Racing Club",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_1_la-liga/fixtures_2627.csv",
+              "sha256": "d637cd77900ea72ce5d09266e408afce61ca434d1b852d67cf85abd61c185915"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 231,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1802563200000,
+        "lg": "La Liga",
+        "H": "Elche CF",
+        "A": "RC Deportivo",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_1_la-liga/fixtures_2627.csv",
+              "sha256": "d637cd77900ea72ce5d09266e408afce61ca434d1b852d67cf85abd61c185915"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 233,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1802563200000,
+        "lg": "La Liga",
+        "H": "R. Racing Club",
+        "A": "Getafe CF",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_1_la-liga/fixtures_2627.csv",
+              "sha256": "d637cd77900ea72ce5d09266e408afce61ca434d1b852d67cf85abd61c185915"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 241,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1803168000000,
+        "lg": "La Liga",
+        "H": "Deportivo Alavés",
+        "A": "R. Racing Club",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_1_la-liga/fixtures_2627.csv",
+              "sha256": "d637cd77900ea72ce5d09266e408afce61ca434d1b852d67cf85abd61c185915"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 244,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1803168000000,
+        "lg": "La Liga",
+        "H": "RC Deportivo",
+        "A": "Real Sociedad",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_1_la-liga/fixtures_2627.csv",
+              "sha256": "d637cd77900ea72ce5d09266e408afce61ca434d1b852d67cf85abd61c185915"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 253,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1803772800000,
+        "lg": "La Liga",
+        "H": "Levante UD",
+        "A": "RC Deportivo",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_1_la-liga/fixtures_2627.csv",
+              "sha256": "d637cd77900ea72ce5d09266e408afce61ca434d1b852d67cf85abd61c185915"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 255,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1803772800000,
+        "lg": "La Liga",
+        "H": "R. Racing Club",
+        "A": "Rayo Vallecano",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_1_la-liga/fixtures_2627.csv",
+              "sha256": "d637cd77900ea72ce5d09266e408afce61ca434d1b852d67cf85abd61c185915"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 263,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1804377600000,
+        "lg": "La Liga",
+        "H": "RC Deportivo",
+        "A": "Getafe CF",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_1_la-liga/fixtures_2627.csv",
+              "sha256": "d637cd77900ea72ce5d09266e408afce61ca434d1b852d67cf85abd61c185915"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 264,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1804377600000,
+        "lg": "La Liga",
+        "H": "RCD Espanyol de Barcelona",
+        "A": "R. Racing Club",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_1_la-liga/fixtures_2627.csv",
+              "sha256": "d637cd77900ea72ce5d09266e408afce61ca434d1b852d67cf85abd61c185915"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 273,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1804982400000,
+        "lg": "La Liga",
+        "H": "FC Barcelona",
+        "A": "RC Deportivo",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_1_la-liga/fixtures_2627.csv",
+              "sha256": "d637cd77900ea72ce5d09266e408afce61ca434d1b852d67cf85abd61c185915"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 276,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1804982400000,
+        "lg": "La Liga",
+        "H": "R. Racing Club",
+        "A": "Atlético de Madrid",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_1_la-liga/fixtures_2627.csv",
+              "sha256": "d637cd77900ea72ce5d09266e408afce61ca434d1b852d67cf85abd61c185915"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 282,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1805587200000,
+        "lg": "La Liga",
+        "H": "R. Racing Club",
+        "A": "Real Betis",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_1_la-liga/fixtures_2627.csv",
+              "sha256": "d637cd77900ea72ce5d09266e408afce61ca434d1b852d67cf85abd61c185915"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 287,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1805587200000,
+        "lg": "La Liga",
+        "H": "Valencia CF",
+        "A": "RC Deportivo",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_1_la-liga/fixtures_2627.csv",
+              "sha256": "d637cd77900ea72ce5d09266e408afce61ca434d1b852d67cf85abd61c185915"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 289,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1806796800000,
+        "lg": "La Liga",
+        "H": "Athletic Club",
+        "A": "R. Racing Club",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_1_la-liga/fixtures_2627.csv",
+              "sha256": "d637cd77900ea72ce5d09266e408afce61ca434d1b852d67cf85abd61c185915"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 295,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1806796800000,
+        "lg": "La Liga",
+        "H": "RC Deportivo",
+        "A": "Villarreal CF",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_1_la-liga/fixtures_2627.csv",
+              "sha256": "d637cd77900ea72ce5d09266e408afce61ca434d1b852d67cf85abd61c185915"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 303,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1807401600000,
+        "lg": "La Liga",
+        "H": "R. Racing Club",
+        "A": "FC Barcelona",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_1_la-liga/fixtures_2627.csv",
+              "sha256": "d637cd77900ea72ce5d09266e408afce61ca434d1b852d67cf85abd61c185915"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 306,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1807401600000,
+        "lg": "La Liga",
+        "H": "Sevilla FC",
+        "A": "RC Deportivo",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_1_la-liga/fixtures_2627.csv",
+              "sha256": "d637cd77900ea72ce5d09266e408afce61ca434d1b852d67cf85abd61c185915"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 316,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1808006400000,
+        "lg": "La Liga",
+        "H": "RC Deportivo",
+        "A": "Celta",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_1_la-liga/fixtures_2627.csv",
+              "sha256": "d637cd77900ea72ce5d09266e408afce61ca434d1b852d67cf85abd61c185915"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 318,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1808006400000,
+        "lg": "La Liga",
+        "H": "Real Sociedad",
+        "A": "R. Racing Club",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_1_la-liga/fixtures_2627.csv",
+              "sha256": "d637cd77900ea72ce5d09266e408afce61ca434d1b852d67cf85abd61c185915"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 319,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1808265600000,
+        "lg": "La Liga",
+        "H": "Athletic Club",
+        "A": "RC Deportivo",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_1_la-liga/fixtures_2627.csv",
+              "sha256": "d637cd77900ea72ce5d09266e408afce61ca434d1b852d67cf85abd61c185915"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 323,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1808265600000,
+        "lg": "La Liga",
+        "H": "R. Racing Club",
+        "A": "Málaga CF",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_1_la-liga/fixtures_2627.csv",
+              "sha256": "d637cd77900ea72ce5d09266e408afce61ca434d1b852d67cf85abd61c185915"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 335,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1809216000000,
+        "lg": "La Liga",
+        "H": "RC Deportivo",
+        "A": "R. Racing Club",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_1_la-liga/fixtures_2627.csv",
+              "sha256": "d637cd77900ea72ce5d09266e408afce61ca434d1b852d67cf85abd61c185915"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 343,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1809820800000,
+        "lg": "La Liga",
+        "H": "R. Racing Club",
+        "A": "Sevilla FC",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_1_la-liga/fixtures_2627.csv",
+              "sha256": "d637cd77900ea72ce5d09266e408afce61ca434d1b852d67cf85abd61c185915"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 344,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1809820800000,
+        "lg": "La Liga",
+        "H": "Rayo Vallecano",
+        "A": "RC Deportivo",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_1_la-liga/fixtures_2627.csv",
+              "sha256": "d637cd77900ea72ce5d09266e408afce61ca434d1b852d67cf85abd61c185915"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 354,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1810425600000,
+        "lg": "La Liga",
+        "H": "RC Deportivo",
+        "A": "Deportivo Alavés",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_1_la-liga/fixtures_2627.csv",
+              "sha256": "d637cd77900ea72ce5d09266e408afce61ca434d1b852d67cf85abd61c185915"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 356,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1810425600000,
+        "lg": "La Liga",
+        "H": "Real Madrid",
+        "A": "R. Racing Club",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_1_la-liga/fixtures_2627.csv",
+              "sha256": "d637cd77900ea72ce5d09266e408afce61ca434d1b852d67cf85abd61c185915"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 363,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1811030400000,
+        "lg": "La Liga",
+        "H": "R. Racing Club",
+        "A": "Levante UD",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_1_la-liga/fixtures_2627.csv",
+              "sha256": "d637cd77900ea72ce5d09266e408afce61ca434d1b852d67cf85abd61c185915"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 364,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1811030400000,
+        "lg": "La Liga",
+        "H": "RC Deportivo",
+        "A": "RCD Espanyol de Barcelona",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_1_la-liga/fixtures_2627.csv",
+              "sha256": "d637cd77900ea72ce5d09266e408afce61ca434d1b852d67cf85abd61c185915"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 371,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1811635200000,
+        "lg": "La Liga",
+        "H": "Elche CF",
+        "A": "R. Racing Club",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_1_la-liga/fixtures_2627.csv",
+              "sha256": "d637cd77900ea72ce5d09266e408afce61ca434d1b852d67cf85abd61c185915"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 377,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1811635200000,
+        "lg": "La Liga",
+        "H": "Real Madrid",
+        "A": "RC Deportivo",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_1_la-liga/fixtures_2627.csv",
+              "sha256": "d637cd77900ea72ce5d09266e408afce61ca434d1b852d67cf85abd61c185915"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    }
+  ]
+}

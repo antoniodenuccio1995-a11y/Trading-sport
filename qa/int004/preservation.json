@@ -1,0 +1,16 @@
+{
+  "outcome": "PASS",
+  "baseline": "242a15efae0ab64fd851335354c40c750d2d2e95",
+  "frozenFiles": 314,
+  "formulaSHA256": {
+    "gradeMarket": "966f33227b20d4699a0ae020eb507bb8097d5eed83c5302ef0c0a0677f552e40",
+    "scoreFromPrice": "deeb1c68b3c2563befad97f998fbac3532e7f3b1d214d4084f078e130b54940a",
+    "fraction": "005df76825c9819932cccf13ece125029ea5aef46deb733781d1851e0820a652",
+    "emptyScore": "69e7a9c53027af34cb6dd337f5fd2c569c9a3e31b5f072c0c176894f3194569d",
+    "weightedHistorical": "1c99f415601cd26d3e4ca0cd1690687e12e875c5bfa3f368576bb2a5106edb77",
+    "blendedRelative": "051c5c17598326b4371632777287e7eb05d6b924c0e2870a9e9ee50137708ebf",
+    "standingsZoneRules": "1fcc9c00f3c28983a4363680d2cfcbfb0d65d2149b38fcb52740a4fa905388ad"
+  },
+  "journalUnchanged": true,
+  "syntaxChecked": true
+}

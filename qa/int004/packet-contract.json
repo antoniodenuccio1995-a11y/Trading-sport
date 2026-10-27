@@ -1,0 +1,952 @@
+{
+  "outcome": "PASS",
+  "combinations": 138,
+  "packetsTested": 109,
+  "emptyPacketsNotImported": 29,
+  "recordsChecked": 35974,
+  "checks": [
+    "SHA256",
+    "safe first import",
+    "no internal duplicate fixture count",
+    "second import preserves count and all record fields"
+  ],
+  "packets": [
+    {
+      "code": "I1",
+      "season": 2021,
+      "status": "PASS",
+      "records": 380,
+      "review": 0
+    },
+    {
+      "code": "I1",
+      "season": 2022,
+      "status": "PASS",
+      "records": 381,
+      "review": 0
+    },
+    {
+      "code": "I1",
+      "season": 2023,
+      "status": "PASS",
+      "records": 380,
+      "review": 0
+    },
+    {
+      "code": "I1",
+      "season": 2024,
+      "status": "PASS",
+      "records": 380,
+      "review": 0
+    },
+    {
+      "code": "I1",
+      "season": 2025,
+      "status": "PASS",
+      "records": 380,
+      "review": 0
+    },
+    {
+      "code": "I1",
+      "season": 2026,
+      "status": "PASS",
+      "records": 380,
+      "review": 0
+    },
+    {
+      "code": "I2",
+      "season": 2021,
+      "status": "PASS",
+      "records": 386,
+      "review": 4
+    },
+    {
+      "code": "I2",
+      "season": 2022,
+      "status": "PASS",
+      "records": 387,
+      "review": 3
+    },
+    {
+      "code": "I2",
+      "season": 2023,
+      "status": "PASS",
+      "records": 388,
+      "review": 2
+    },
+    {
+      "code": "I2",
+      "season": 2024,
+      "status": "PASS",
+      "records": 390,
+      "review": 0
+    },
+    {
+      "code": "I2",
+      "season": 2025,
+      "status": "PASS",
+      "records": 380,
+      "review": 76
+    },
+    {
+      "code": "I2",
+      "season": 2026,
+      "status": "PASS",
+      "records": 380,
+      "review": 0
+    },
+    {
+      "code": "E0",
+      "season": 2021,
+      "status": "PASS",
+      "records": 380,
+      "review": 0
+    },
+    {
+      "code": "E0",
+      "season": 2022,
+      "status": "PASS",
+      "records": 380,
+      "review": 0
+    },
+    {
+      "code": "E0",
+      "season": 2023,
+      "status": "PASS",
+      "records": 380,
+      "review": 0
+    },
+    {
+      "code": "E0",
+      "season": 2024,
+      "status": "PASS",
+      "records": 380,
+      "review": 0
+    },
+    {
+      "code": "E0",
+      "season": 2025,
+      "status": "PASS",
+      "records": 380,
+      "review": 0
+    },
+    {
+      "code": "E0",
+      "season": 2026,
+      "status": "PASS",
+      "records": 380,
+      "review": 0
+    },
+    {
+      "code": "E1",
+      "season": 2021,
+      "status": "PASS",
+      "records": 556,
+      "review": 1
+    },
+    {
+      "code": "E1",
+      "season": 2022,
+      "status": "PASS",
+      "records": 556,
+      "review": 1
+    },
+    {
+      "code": "E1",
+      "season": 2023,
+      "status": "PASS",
+      "records": 557,
+      "review": 0
+    },
+    {
+      "code": "E1",
+      "season": 2024,
+      "status": "PASS",
+      "records": 557,
+      "review": 0
+    },
+    {
+      "code": "E1",
+      "season": 2025,
+      "status": "PASS",
+      "records": 557,
+      "review": 0
+    },
+    {
+      "code": "E1",
+      "season": 2026,
+      "status": "PASS",
+      "records": 552,
+      "review": 0
+    },
+    {
+      "code": "E2",
+      "season": 2021,
+      "status": "PASS",
+      "records": 552,
+      "review": 0
+    },
+    {
+      "code": "E2",
+      "season": 2022,
+      "status": "PASS",
+      "records": 552,
+      "review": 0
+    },
+    {
+      "code": "E2",
+      "season": 2023,
+      "status": "PASS",
+      "records": 552,
+      "review": 0
+    },
+    {
+      "code": "E2",
+      "season": 2024,
+      "status": "PASS",
+      "records": 552,
+      "review": 0
+    },
+    {
+      "code": "E2",
+      "season": 2025,
+      "status": "PASS",
+      "records": 459,
+      "review": 211
+    },
+    {
+      "code": "E2",
+      "season": 2026,
+      "status": "PASS",
+      "records": 547,
+      "review": 0
+    },
+    {
+      "code": "E3",
+      "season": 2021,
+      "status": "PASS",
+      "records": 552,
+      "review": 0
+    },
+    {
+      "code": "E3",
+      "season": 2022,
+      "status": "PASS",
+      "records": 552,
+      "review": 0
+    },
+    {
+      "code": "E3",
+      "season": 2023,
+      "status": "PASS",
+      "records": 552,
+      "review": 0
+    },
+    {
+      "code": "E3",
+      "season": 2024,
+      "status": "PASS",
+      "records": 552,
+      "review": 0
+    },
+    {
+      "code": "E3",
+      "season": 2025,
+      "status": "PASS",
+      "records": 453,
+      "review": 223
+    },
+    {
+      "code": "E3",
+      "season": 2026,
+      "status": "PASS",
+      "records": 551,
+      "review": 0
+    },
+    {
+      "code": "D1",
+      "season": 2021,
+      "status": "PASS",
+      "records": 306,
+      "review": 0
+    },
+    {
+      "code": "D1",
+      "season": 2022,
+      "status": "PASS",
+      "records": 306,
+      "review": 0
+    },
+    {
+      "code": "D1",
+      "season": 2023,
+      "status": "PASS",
+      "records": 306,
+      "review": 0
+    },
+    {
+      "code": "D1",
+      "season": 2024,
+      "status": "PASS",
+      "records": 306,
+      "review": 0
+    },
+    {
+      "code": "D1",
+      "season": 2025,
+      "status": "PASS",
+      "records": 306,
+      "review": 0
+    },
+    {
+      "code": "D1",
+      "season": 2026,
+      "status": "PASS",
+      "records": 306,
+      "review": 0
+    },
+    {
+      "code": "F1",
+      "season": 2021,
+      "status": "PASS",
+      "records": 342,
+      "review": 38
+    },
+    {
+      "code": "F1",
+      "season": 2022,
+      "status": "PASS",
+      "records": 380,
+      "review": 0
+    },
+    {
+      "code": "F1",
+      "season": 2023,
+      "status": "PASS",
+      "records": 306,
+      "review": 0
+    },
+    {
+      "code": "F1",
+      "season": 2024,
+      "status": "PASS",
+      "records": 272,
+      "review": 34
+    },
+    {
+      "code": "F1",
+      "season": 2025,
+      "status": "PASS",
+      "records": 306,
+      "review": 0
+    },
+    {
+      "code": "F1",
+      "season": 2026,
+      "status": "PASS",
+      "records": 280,
+      "review": 26
+    },
+    {
+      "code": "F2",
+      "season": 2021,
+      "status": "PASS",
+      "records": 380,
+      "review": 0
+    },
+    {
+      "code": "F2",
+      "season": 2022,
+      "status": "PASS",
+      "records": 342,
+      "review": 38
+    },
+    {
+      "code": "F2",
+      "season": 2023,
+      "status": "PASS",
+      "records": 341,
+      "review": 38
+    },
+    {
+      "code": "F2",
+      "season": 2024,
+      "status": "PASS",
+      "records": 306,
+      "review": 0
+    },
+    {
+      "code": "F2",
+      "season": 2025,
+      "status": "PASS",
+      "records": 272,
+      "review": 34
+    },
+    {
+      "code": "F2",
+      "season": 2026,
+      "status": "PASS",
+      "records": 250,
+      "review": 56
+    },
+    {
+      "code": "SP1",
+      "season": 2021,
+      "status": "PASS",
+      "records": 380,
+      "review": 0
+    },
+    {
+      "code": "SP1",
+      "season": 2022,
+      "status": "PASS",
+      "records": 380,
+      "review": 0
+    },
+    {
+      "code": "SP1",
+      "season": 2023,
+      "status": "PASS",
+      "records": 380,
+      "review": 0
+    },
+    {
+      "code": "SP1",
+      "season": 2024,
+      "status": "PASS",
+      "records": 380,
+      "review": 0
+    },
+    {
+      "code": "SP1",
+      "season": 2025,
+      "status": "PASS",
+      "records": 380,
+      "review": 0
+    },
+    {
+      "code": "SP1",
+      "season": 2026,
+      "status": "PASS",
+      "records": 325,
+      "review": 54
+    },
+    {
+      "code": "SP2",
+      "season": 2021,
+      "status": "PASS",
+      "records": 420,
+      "review": 42
+    },
+    {
+      "code": "SP2",
+      "season": 2022,
+      "status": "PASS",
+      "records": 420,
+      "review": 42
+    },
+    {
+      "code": "SP2",
+      "season": 2023,
+      "status": "PASS",
+      "records": 420,
+      "review": 42
+    },
+    {
+      "code": "SP2",
+      "season": 2024,
+      "status": "PASS",
+      "records": 462,
+      "review": 0
+    },
+    {
+      "code": "SP2",
+      "season": 2025,
+      "status": "PASS",
+      "records": 342,
+      "review": 120
+    },
+    {
+      "code": "SP2",
+      "season": 2026,
+      "status": "PASS",
+      "records": 274,
+      "review": 177
+    },
+    {
+      "code": "N1",
+      "season": 2021,
+      "status": "PASS",
+      "records": 306,
+      "review": 0
+    },
+    {
+      "code": "N1",
+      "season": 2022,
+      "status": "PASS",
+      "records": 306,
+      "review": 0
+    },
+    {
+      "code": "N1",
+      "season": 2023,
+      "status": "PASS",
+      "records": 306,
+      "review": 0
+    },
+    {
+      "code": "N1",
+      "season": 2024,
+      "status": "PASS",
+      "records": 306,
+      "review": 0
+    },
+    {
+      "code": "N1",
+      "season": 2025,
+      "status": "PASS",
+      "records": 306,
+      "review": 0
+    },
+    {
+      "code": "N1",
+      "season": 2026,
+      "status": "PASS",
+      "records": 282,
+      "review": 24
+    },
+    {
+      "code": "P1",
+      "season": 2021,
+      "status": "PASS",
+      "records": 306,
+      "review": 0
+    },
+    {
+      "code": "P1",
+      "season": 2022,
+      "status": "PASS",
+      "records": 306,
+      "review": 0
+    },
+    {
+      "code": "P1",
+      "season": 2023,
+      "status": "PASS",
+      "records": 306,
+      "review": 0
+    },
+    {
+      "code": "P1",
+      "season": 2024,
+      "status": "PASS",
+      "records": 306,
+      "review": 0
+    },
+    {
+      "code": "P1",
+      "season": 2025,
+      "status": "PASS",
+      "records": 304,
+      "review": 2
+    },
+    {
+      "code": "P1",
+      "season": 2026,
+      "status": "PASS",
+      "records": 281,
+      "review": 25
+    },
+    {
+      "code": "T1",
+      "season": 2021,
+      "status": "PASS",
+      "records": 342,
+      "review": 38
+    },
+    {
+      "code": "T1",
+      "season": 2022,
+      "status": "PASS",
+      "records": 306,
+      "review": 36
+    },
+    {
+      "code": "T1",
+      "season": 2023,
+      "status": "PASS",
+      "records": 342,
+      "review": 38
+    },
+    {
+      "code": "T1",
+      "season": 2024,
+      "status": "PASS",
+      "records": 306,
+      "review": 36
+    },
+    {
+      "code": "T1",
+      "season": 2025,
+      "status": "PASS",
+      "records": 272,
+      "review": 34
+    },
+    {
+      "code": "T1",
+      "season": 2026,
+      "status": "PASS",
+      "records": 64,
+      "review": 17
+    },
+    {
+      "code": "B1",
+      "season": 2021,
+      "status": "PASS",
+      "records": 240,
+      "review": 66
+    },
+    {
+      "code": "B1",
+      "season": 2022,
+      "status": "PASS",
+      "records": 240,
+      "review": 66
+    },
+    {
+      "code": "B1",
+      "season": 2023,
+      "status": "PASS",
+      "records": 234,
+      "review": 78
+    },
+    {
+      "code": "B1",
+      "season": 2024,
+      "status": "PASS",
+      "records": 238,
+      "review": 74
+    },
+    {
+      "code": "B1",
+      "season": 2025,
+      "status": "PASS",
+      "records": 204,
+      "review": 107
+    },
+    {
+      "code": "B1",
+      "season": 2026,
+      "status": "PASS",
+      "records": 55,
+      "review": 25
+    },
+    {
+      "code": "DNK",
+      "season": 2021,
+      "status": "PASS",
+      "records": 131,
+      "review": 62
+    },
+    {
+      "code": "DNK",
+      "season": 2022,
+      "status": "PASS",
+      "records": 161,
+      "review": 32
+    },
+    {
+      "code": "DNK",
+      "season": 2023,
+      "status": "PASS",
+      "records": 161,
+      "review": 32
+    },
+    {
+      "code": "DNK",
+      "season": 2024,
+      "status": "PASS",
+      "records": 130,
+      "review": 62
+    },
+    {
+      "code": "DNK",
+      "season": 2025,
+      "status": "PASS",
+      "records": 104,
+      "review": 88
+    },
+    {
+      "code": "DNK",
+      "season": 2026,
+      "status": "PASS",
+      "records": 86,
+      "review": 40
+    },
+    {
+      "code": "ROU",
+      "season": 2021,
+      "status": "PASS",
+      "records": 281,
+      "review": 39
+    },
+    {
+      "code": "ROU",
+      "season": 2022,
+      "status": "PASS",
+      "records": 278,
+      "review": 43
+    },
+    {
+      "code": "ROU",
+      "season": 2023,
+      "status": "PASS",
+      "records": 280,
+      "review": 41
+    },
+    {
+      "code": "ROU",
+      "season": 2024,
+      "status": "PASS",
+      "records": 276,
+      "review": 39
+    },
+    {
+      "code": "ROU",
+      "season": 2025,
+      "status": "PASS",
+      "records": 246,
+      "review": 75
+    },
+    {
+      "code": "ROU",
+      "season": 2026,
+      "status": "PASS",
+      "records": 182,
+      "review": 26
+    },
+    {
+      "code": "P2",
+      "season": 2021,
+      "status": "NO_IMPORTABLE_ROWS",
+      "review": 0
+    },
+    {
+      "code": "P2",
+      "season": 2022,
+      "status": "NO_IMPORTABLE_ROWS",
+      "review": 0
+    },
+    {
+      "code": "P2",
+      "season": 2023,
+      "status": "NO_IMPORTABLE_ROWS",
+      "review": 0
+    },
+    {
+      "code": "P2",
+      "season": 2024,
+      "status": "NO_IMPORTABLE_ROWS",
+      "review": 0
+    },
+    {
+      "code": "P2",
+      "season": 2025,
+      "status": "NO_IMPORTABLE_ROWS",
+      "review": 0
+    },
+    {
+      "code": "P2",
+      "season": 2026,
+      "status": "NO_IMPORTABLE_ROWS",
+      "review": 0
+    },
+    {
+      "code": "DK2",
+      "season": 2021,
+      "status": "NO_IMPORTABLE_ROWS",
+      "review": 0
+    },
+    {
+      "code": "DK2",
+      "season": 2022,
+      "status": "NO_IMPORTABLE_ROWS",
+      "review": 0
+    },
+    {
+      "code": "DK2",
+      "season": 2023,
+      "status": "NO_IMPORTABLE_ROWS",
+      "review": 0
+    },
+    {
+      "code": "DK2",
+      "season": 2024,
+      "status": "NO_IMPORTABLE_ROWS",
+      "review": 0
+    },
+    {
+      "code": "DK2",
+      "season": 2025,
+      "status": "NO_IMPORTABLE_ROWS",
+      "review": 0
+    },
+    {
+      "code": "DK2",
+      "season": 2026,
+      "status": "NO_IMPORTABLE_ROWS",
+      "review": 0
+    },
+    {
+      "code": "HR1",
+      "season": 2021,
+      "status": "NO_IMPORTABLE_ROWS",
+      "review": 0
+    },
+    {
+      "code": "HR1",
+      "season": 2022,
+      "status": "NO_IMPORTABLE_ROWS",
+      "review": 0
+    },
+    {
+      "code": "HR1",
+      "season": 2023,
+      "status": "NO_IMPORTABLE_ROWS",
+      "review": 0
+    },
+    {
+      "code": "HR1",
+      "season": 2024,
+      "status": "NO_IMPORTABLE_ROWS",
+      "review": 0
+    },
+    {
+      "code": "HR1",
+      "season": 2025,
+      "status": "NO_IMPORTABLE_ROWS",
+      "review": 0
+    },
+    {
+      "code": "HR1",
+      "season": 2026,
+      "status": "PASS",
+      "records": 100,
+      "review": 60
+    },
+    {
+      "code": "HR2",
+      "season": 2021,
+      "status": "NO_IMPORTABLE_ROWS",
+      "review": 0
+    },
+    {
+      "code": "HR2",
+      "season": 2022,
+      "status": "NO_IMPORTABLE_ROWS",
+      "review": 0
+    },
+    {
+      "code": "HR2",
+      "season": 2023,
+      "status": "NO_IMPORTABLE_ROWS",
+      "review": 0
+    },
+    {
+      "code": "HR2",
+      "season": 2024,
+      "status": "NO_IMPORTABLE_ROWS",
+      "review": 0
+    },
+    {
+      "code": "HR2",
+      "season": 2025,
+      "status": "NO_IMPORTABLE_ROWS",
+      "review": 0
+    },
+    {
+      "code": "HR2",
+      "season": 2026,
+      "status": "NO_IMPORTABLE_ROWS",
+      "review": 0
+    },
+    {
+      "code": "RO2",
+      "season": 2021,
+      "status": "NO_IMPORTABLE_ROWS",
+      "review": 0
+    },
+    {
+      "code": "RO2",
+      "season": 2022,
+      "status": "NO_IMPORTABLE_ROWS",
+      "review": 0
+    },
+    {
+      "code": "RO2",
+      "season": 2023,
+      "status": "NO_IMPORTABLE_ROWS",
+      "review": 0
+    },
+    {
+      "code": "RO2",
+      "season": 2024,
+      "status": "NO_IMPORTABLE_ROWS",
+      "review": 0
+    },
+    {
+      "code": "RO2",
+      "season": 2025,
+      "status": "NO_IMPORTABLE_ROWS",
+      "review": 0
+    },
+    {
+      "code": "RO2",
+      "season": 2026,
+      "status": "NO_IMPORTABLE_ROWS",
+      "review": 0
+    },
+    {
+      "code": "CL",
+      "season": 2021,
+      "status": "PASS",
+      "records": 10,
+      "review": 115
+    },
+    {
+      "code": "CL",
+      "season": 2022,
+      "status": "PASS",
+      "records": 18,
+      "review": 107
+    },
+    {
+      "code": "CL",
+      "season": 2023,
+      "status": "PASS",
+      "records": 51,
+      "review": 74
+    },
+    {
+      "code": "CL",
+      "season": 2024,
+      "status": "PASS",
+      "records": 57,
+      "review": 222
+    },
+    {
+      "code": "CL",
+      "season": 2025,
+      "status": "PASS",
+      "records": 68,
+      "review": 213
+    },
+    {
+      "code": "CL",
+      "season": 2026,
+      "status": "PASS",
+      "records": 81,
+      "review": 63
+    }
+  ]
+}

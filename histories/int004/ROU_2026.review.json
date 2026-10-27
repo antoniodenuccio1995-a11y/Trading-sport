@@ -1,0 +1,846 @@
+{
+  "originalPacket": "histories/stab003/ROU_2026.json",
+  "originalSHA256": "b5bc504d3e16a283b4b0334d680ba24d28cdfd3b1d4d49aeceab6bdcf474e70b",
+  "review": [
+    {
+      "originalIndex": 6,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1784505600000,
+        "lg": "SuperLiga Romania",
+        "H": "Corvinul",
+        "A": "Csikszereda M. Ciuc",
+        "h": 3,
+        "a": 0,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2026,
+          "HistSourceURL": "https://www.football-data.co.uk/new/ROU.csv",
+          "HistSourceSHA256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/ROU.csv",
+              "sha256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e"
+            },
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ROU_1_liga-1/results_2627.csv",
+              "sha256": "3844879adf544114b863165854dcb53c9f950025d6a1d416b0b57fee6283ca82"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 13,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1785024000000,
+        "lg": "SuperLiga Romania",
+        "H": "Csikszereda M. Ciuc",
+        "A": "FCSB",
+        "h": 0,
+        "a": 2,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2026,
+          "HistSourceURL": "https://www.football-data.co.uk/new/ROU.csv",
+          "HistSourceSHA256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/ROU.csv",
+              "sha256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e"
+            },
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ROU_1_liga-1/results_2627.csv",
+              "sha256": "3844879adf544114b863165854dcb53c9f950025d6a1d416b0b57fee6283ca82"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 16,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1785456000000,
+        "lg": "SuperLiga Romania",
+        "H": "FC Arges",
+        "A": "Csikszereda M. Ciuc",
+        "h": 1,
+        "a": 0,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2026,
+          "HistSourceURL": "https://www.football-data.co.uk/new/ROU.csv",
+          "HistSourceSHA256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/ROU.csv",
+              "sha256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e"
+            },
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ROU_1_liga-1/results_2627.csv",
+              "sha256": "3844879adf544114b863165854dcb53c9f950025d6a1d416b0b57fee6283ca82"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 25,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1786147200000,
+        "lg": "SuperLiga Romania",
+        "H": "Farul Constanta",
+        "A": "Csikszereda M. Ciuc",
+        "h": 3,
+        "a": 2,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2026,
+          "HistSourceURL": "https://www.football-data.co.uk/new/ROU.csv",
+          "HistSourceSHA256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/ROU.csv",
+              "sha256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e"
+            },
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ROU_1_liga-1/results_2627.csv",
+              "sha256": "3844879adf544114b863165854dcb53c9f950025d6a1d416b0b57fee6283ca82"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 33,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1786752000000,
+        "lg": "SuperLiga Romania",
+        "H": "Csikszereda M. Ciuc",
+        "A": "Sepsi Sf. Gheorghe",
+        "h": 0,
+        "a": 0,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2026,
+          "HistSourceURL": "https://www.football-data.co.uk/new/ROU.csv",
+          "HistSourceSHA256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/ROU.csv",
+              "sha256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e"
+            },
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ROU_1_liga-1/results_2627.csv",
+              "sha256": "3844879adf544114b863165854dcb53c9f950025d6a1d416b0b57fee6283ca82"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 45,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1787529600000,
+        "lg": "SuperLiga Romania",
+        "H": "FC Botosani",
+        "A": "Csikszereda M. Ciuc",
+        "h": 1,
+        "a": 0,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2026,
+          "HistSourceURL": "https://www.football-data.co.uk/new/ROU.csv",
+          "HistSourceSHA256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/ROU.csv",
+              "sha256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e"
+            },
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ROU_1_liga-1/results_2627.csv",
+              "sha256": "3844879adf544114b863165854dcb53c9f950025d6a1d416b0b57fee6283ca82"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 49,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1787961600000,
+        "lg": "SuperLiga Romania",
+        "H": "Csikszereda M. Ciuc",
+        "A": "CFR Cluj",
+        "h": 2,
+        "a": 3,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2026,
+          "HistSourceURL": "https://www.football-data.co.uk/new/ROU.csv",
+          "HistSourceSHA256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/ROU.csv",
+              "sha256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e"
+            },
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ROU_1_liga-1/results_2627.csv",
+              "sha256": "3844879adf544114b863165854dcb53c9f950025d6a1d416b0b57fee6283ca82"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 57,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1788566400000,
+        "lg": "SuperLiga Romania",
+        "H": "UTA Arad",
+        "A": "Csikszereda M. Ciuc",
+        "h": 5,
+        "a": 1,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2026,
+          "HistSourceURL": "https://www.football-data.co.uk/new/ROU.csv",
+          "HistSourceSHA256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/ROU.csv",
+              "sha256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e"
+            },
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ROU_1_liga-1/results_2627.csv",
+              "sha256": "3844879adf544114b863165854dcb53c9f950025d6a1d416b0b57fee6283ca82"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 64,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1789084800000,
+        "lg": "SuperLiga Romania",
+        "H": "Csikszereda M. Ciuc",
+        "A": "Dinamo Bucuresti",
+        "h": 1,
+        "a": 3,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2026,
+          "HistSourceURL": "https://www.football-data.co.uk/new/ROU.csv",
+          "HistSourceSHA256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/ROU.csv",
+              "sha256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e"
+            },
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ROU_1_liga-1/results_2627.csv",
+              "sha256": "3844879adf544114b863165854dcb53c9f950025d6a1d416b0b57fee6283ca82"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 78,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1789948800000,
+        "lg": "SuperLiga Romania",
+        "H": "Petrolul",
+        "A": "Csikszereda M. Ciuc",
+        "h": 2,
+        "a": 0,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2026,
+          "HistSourceURL": "https://www.football-data.co.uk/new/ROU.csv",
+          "HistSourceSHA256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/ROU.csv",
+              "sha256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e"
+            },
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ROU_1_liga-1/results_2627.csv",
+              "sha256": "3844879adf544114b863165854dcb53c9f950025d6a1d416b0b57fee6283ca82"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 84,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1791676800000,
+        "lg": "SuperLiga Romania",
+        "H": "Csikszereda M. Ciuc",
+        "A": "Univ. Craiova",
+        "h": 0,
+        "a": 1,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2026,
+          "HistSourceURL": "https://www.football-data.co.uk/new/ROU.csv",
+          "HistSourceSHA256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/ROU.csv",
+              "sha256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e"
+            },
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ROU_1_liga-1/results_2627.csv",
+              "sha256": "3844879adf544114b863165854dcb53c9f950025d6a1d416b0b57fee6283ca82"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 88,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1792108800000,
+        "lg": "SuperLiga Romania",
+        "H": "Otelul",
+        "A": "Csikszereda M. Ciuc",
+        "h": 1,
+        "a": 1,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2026,
+          "HistSourceURL": "https://www.football-data.co.uk/new/ROU.csv",
+          "HistSourceSHA256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/ROU.csv",
+              "sha256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e"
+            },
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ROU_1_liga-1/results_2627.csv",
+              "sha256": "3844879adf544114b863165854dcb53c9f950025d6a1d416b0b57fee6283ca82"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 96,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1793318400000,
+        "lg": "SuperLiga Romania",
+        "H": "FC Rapid Bucuresti",
+        "A": "Csikszereda M. Ciuc",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ROU",
+          "AwayCountry": "ROU",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ROU_1_liga-1/fixtures_2627.csv",
+              "sha256": "f9383821d7630d87a79ecdcd5e27efd73e5be11991479227902c5715573d4471"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 106,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1794009600000,
+        "lg": "SuperLiga Romania",
+        "H": "Csikszereda M. Ciuc",
+        "A": "U. Cluj",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ROU",
+          "AwayCountry": "ROU",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ROU_1_liga-1/fixtures_2627.csv",
+              "sha256": "f9383821d7630d87a79ecdcd5e27efd73e5be11991479227902c5715573d4471"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 113,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1795219200000,
+        "lg": "SuperLiga Romania",
+        "H": "Csikszereda M. Ciuc",
+        "A": "Corvinul",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ROU",
+          "AwayCountry": "ROU",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ROU_1_liga-1/fixtures_2627.csv",
+              "sha256": "f9383821d7630d87a79ecdcd5e27efd73e5be11991479227902c5715573d4471"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 123,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1795824000000,
+        "lg": "SuperLiga Romania",
+        "H": "FCSB",
+        "A": "Csikszereda M. Ciuc",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ROU",
+          "AwayCountry": "ROU",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ROU_1_liga-1/fixtures_2627.csv",
+              "sha256": "f9383821d7630d87a79ecdcd5e27efd73e5be11991479227902c5715573d4471"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 129,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1796428800000,
+        "lg": "SuperLiga Romania",
+        "H": "Csikszereda M. Ciuc",
+        "A": "FC Arges",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ROU",
+          "AwayCountry": "ROU",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ROU_1_liga-1/fixtures_2627.csv",
+              "sha256": "f9383821d7630d87a79ecdcd5e27efd73e5be11991479227902c5715573d4471"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 137,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1797033600000,
+        "lg": "SuperLiga Romania",
+        "H": "Csikszereda M. Ciuc",
+        "A": "Farul Constanta",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ROU",
+          "AwayCountry": "ROU",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ROU_1_liga-1/fixtures_2627.csv",
+              "sha256": "f9383821d7630d87a79ecdcd5e27efd73e5be11991479227902c5715573d4471"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 149,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1797638400000,
+        "lg": "SuperLiga Romania",
+        "H": "Sepsi Sf. Gheorghe",
+        "A": "Csikszereda M. Ciuc",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ROU",
+          "AwayCountry": "ROU",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ROU_1_liga-1/fixtures_2627.csv",
+              "sha256": "f9383821d7630d87a79ecdcd5e27efd73e5be11991479227902c5715573d4471"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 153,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1800057600000,
+        "lg": "SuperLiga Romania",
+        "H": "Csikszereda M. Ciuc",
+        "A": "FC Botosani",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ROU",
+          "AwayCountry": "ROU",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ROU_1_liga-1/fixtures_2627.csv",
+              "sha256": "f9383821d7630d87a79ecdcd5e27efd73e5be11991479227902c5715573d4471"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 160,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1800662400000,
+        "lg": "SuperLiga Romania",
+        "H": "CFR Cluj",
+        "A": "Csikszereda M. Ciuc",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ROU",
+          "AwayCountry": "ROU",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ROU_1_liga-1/fixtures_2627.csv",
+              "sha256": "f9383821d7630d87a79ecdcd5e27efd73e5be11991479227902c5715573d4471"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 169,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1801267200000,
+        "lg": "SuperLiga Romania",
+        "H": "Csikszereda M. Ciuc",
+        "A": "UTA Arad",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ROU",
+          "AwayCountry": "ROU",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ROU_1_liga-1/fixtures_2627.csv",
+              "sha256": "f9383821d7630d87a79ecdcd5e27efd73e5be11991479227902c5715573d4471"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 177,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1801872000000,
+        "lg": "SuperLiga Romania",
+        "H": "Dinamo Bucuresti",
+        "A": "Csikszereda M. Ciuc",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ROU",
+          "AwayCountry": "ROU",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ROU_1_liga-1/fixtures_2627.csv",
+              "sha256": "f9383821d7630d87a79ecdcd5e27efd73e5be11991479227902c5715573d4471"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 185,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1802217600000,
+        "lg": "SuperLiga Romania",
+        "H": "Csikszereda M. Ciuc",
+        "A": "Petrolul",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ROU",
+          "AwayCountry": "ROU",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ROU_1_liga-1/fixtures_2627.csv",
+              "sha256": "f9383821d7630d87a79ecdcd5e27efd73e5be11991479227902c5715573d4471"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 199,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1802476800000,
+        "lg": "SuperLiga Romania",
+        "H": "Univ. Craiova",
+        "A": "Csikszereda M. Ciuc",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ROU",
+          "AwayCountry": "ROU",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ROU_1_liga-1/fixtures_2627.csv",
+              "sha256": "f9383821d7630d87a79ecdcd5e27efd73e5be11991479227902c5715573d4471"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 202,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1803081600000,
+        "lg": "SuperLiga Romania",
+        "H": "Csikszereda M. Ciuc",
+        "A": "Otelul",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ROU",
+          "AwayCountry": "ROU",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ROU_1_liga-1/fixtures_2627.csv",
+              "sha256": "f9383821d7630d87a79ecdcd5e27efd73e5be11991479227902c5715573d4471"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    }
+  ]
+}

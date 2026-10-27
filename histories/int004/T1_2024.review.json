@@ -1,0 +1,1302 @@
+{
+  "originalPacket": "histories/stab003/T1_2024.json",
+  "originalSHA256": "14eff2b73024221a6bf00a074e5e0ab9cc86b2c68faa1673c76d169e457dee1e",
+  "review": [
+    {
+      "originalIndex": 1,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1723248000000,
+        "lg": "Süper Lig",
+        "H": "Kasimpasa",
+        "A": "Konyaspor",
+        "h": 2,
+        "a": 3,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2024,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2425/T1.csv",
+          "HistSourceSHA256": "fd91680cc815f356c94fdd733078431ca771707305994ec49c5f1270cf9c9f5c",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2425/T1.csv",
+              "sha256": "fd91680cc815f356c94fdd733078431ca771707305994ec49c5f1270cf9c9f5c"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 1,
+        "shots": [
+          4,
+          6,
+          3,
+          3
+        ]
+      }
+    },
+    {
+      "originalIndex": 17,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1724025600000,
+        "lg": "Süper Lig",
+        "H": "Hatayspor",
+        "A": "Kasimpasa",
+        "h": 1,
+        "a": 1,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2024,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2425/T1.csv",
+          "HistSourceSHA256": "fd91680cc815f356c94fdd733078431ca771707305994ec49c5f1270cf9c9f5c",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2425/T1.csv",
+              "sha256": "fd91680cc815f356c94fdd733078431ca771707305994ec49c5f1270cf9c9f5c"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": [
+          9,
+          14,
+          1,
+          6
+        ]
+      }
+    },
+    {
+      "originalIndex": 21,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1724544000000,
+        "lg": "Süper Lig",
+        "H": "Kasimpasa",
+        "A": "Ad. Demirspor",
+        "h": 2,
+        "a": 2,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2024,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2425/T1.csv",
+          "HistSourceSHA256": "fd91680cc815f356c94fdd733078431ca771707305994ec49c5f1270cf9c9f5c",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2425/T1.csv",
+              "sha256": "fd91680cc815f356c94fdd733078431ca771707305994ec49c5f1270cf9c9f5c"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": [
+          15,
+          10,
+          6,
+          3
+        ]
+      }
+    },
+    {
+      "originalIndex": 26,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1725062400000,
+        "lg": "Süper Lig",
+        "H": "Rizespor",
+        "A": "Kasimpasa",
+        "h": 0,
+        "a": 1,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2024,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2425/T1.csv",
+          "HistSourceSHA256": "fd91680cc815f356c94fdd733078431ca771707305994ec49c5f1270cf9c9f5c",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2425/T1.csv",
+              "sha256": "fd91680cc815f356c94fdd733078431ca771707305994ec49c5f1270cf9c9f5c"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 1,
+        "shots": [
+          13,
+          6,
+          4,
+          3
+        ]
+      }
+    },
+    {
+      "originalIndex": 37,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1726358400000,
+        "lg": "Süper Lig",
+        "H": "Kasimpasa",
+        "A": "Fenerbahce",
+        "h": 0,
+        "a": 2,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "CsvSeason": 2024,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2425/T1.csv",
+          "HistSourceSHA256": "fd91680cc815f356c94fdd733078431ca771707305994ec49c5f1270cf9c9f5c",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2425/T1.csv",
+              "sha256": "fd91680cc815f356c94fdd733078431ca771707305994ec49c5f1270cf9c9f5c"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 2,
+        "shots": [
+          13,
+          6,
+          3,
+          2
+        ]
+      }
+    },
+    {
+      "originalIndex": 48,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1726963200000,
+        "lg": "Süper Lig",
+        "H": "Kasimpasa",
+        "A": "Antalyaspor",
+        "h": 0,
+        "a": 0,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2024,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2425/T1.csv",
+          "HistSourceSHA256": "fd91680cc815f356c94fdd733078431ca771707305994ec49c5f1270cf9c9f5c",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2425/T1.csv",
+              "sha256": "fd91680cc815f356c94fdd733078431ca771707305994ec49c5f1270cf9c9f5c"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          13,
+          4,
+          3,
+          2
+        ]
+      }
+    },
+    {
+      "originalIndex": 57,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1727481600000,
+        "lg": "Süper Lig",
+        "H": "Galatasaray",
+        "A": "Kasimpasa",
+        "h": 3,
+        "a": 3,
+        "ht": 4,
+        "up": false,
+        "o": {
+          "CsvSeason": 2024,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2425/T1.csv",
+          "HistSourceSHA256": "fd91680cc815f356c94fdd733078431ca771707305994ec49c5f1270cf9c9f5c",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2425/T1.csv",
+              "sha256": "fd91680cc815f356c94fdd733078431ca771707305994ec49c5f1270cf9c9f5c"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 3,
+        "hta": 1,
+        "shots": [
+          5,
+          10,
+          3,
+          6
+        ]
+      }
+    },
+    {
+      "originalIndex": 64,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1728086400000,
+        "lg": "Süper Lig",
+        "H": "Kasimpasa",
+        "A": "Bodrumspor",
+        "h": 0,
+        "a": 0,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2024,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2425/T1.csv",
+          "HistSourceSHA256": "fd91680cc815f356c94fdd733078431ca771707305994ec49c5f1270cf9c9f5c",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2425/T1.csv",
+              "sha256": "fd91680cc815f356c94fdd733078431ca771707305994ec49c5f1270cf9c9f5c"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          20,
+          4,
+          5,
+          1
+        ]
+      }
+    },
+    {
+      "originalIndex": 78,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1729382400000,
+        "lg": "Süper Lig",
+        "H": "Alanyaspor",
+        "A": "Kasimpasa",
+        "h": 1,
+        "a": 2,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "CsvSeason": 2024,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2425/T1.csv",
+          "HistSourceSHA256": "fd91680cc815f356c94fdd733078431ca771707305994ec49c5f1270cf9c9f5c",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2425/T1.csv",
+              "sha256": "fd91680cc815f356c94fdd733078431ca771707305994ec49c5f1270cf9c9f5c"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 2,
+        "shots": [
+          13,
+          10,
+          4,
+          3
+        ]
+      }
+    },
+    {
+      "originalIndex": 83,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1729900800000,
+        "lg": "Süper Lig",
+        "H": "Kasimpasa",
+        "A": "Samsunspor",
+        "h": 1,
+        "a": 4,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2024,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2425/T1.csv",
+          "HistSourceSHA256": "fd91680cc815f356c94fdd733078431ca771707305994ec49c5f1270cf9c9f5c",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2425/T1.csv",
+              "sha256": "fd91680cc815f356c94fdd733078431ca771707305994ec49c5f1270cf9c9f5c"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": [
+          10,
+          15,
+          3,
+          5
+        ]
+      }
+    },
+    {
+      "originalIndex": 93,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1730505600000,
+        "lg": "Süper Lig",
+        "H": "Besiktas",
+        "A": "Kasimpasa",
+        "h": 1,
+        "a": 3,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2024,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2425/T1.csv",
+          "HistSourceSHA256": "fd91680cc815f356c94fdd733078431ca771707305994ec49c5f1270cf9c9f5c",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2425/T1.csv",
+              "sha256": "fd91680cc815f356c94fdd733078431ca771707305994ec49c5f1270cf9c9f5c"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": [
+          11,
+          14,
+          3,
+          4
+        ]
+      }
+    },
+    {
+      "originalIndex": 99,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1731024000000,
+        "lg": "Süper Lig",
+        "H": "Kasimpasa",
+        "A": "Kayserispor",
+        "h": 1,
+        "a": 2,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2024,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2425/T1.csv",
+          "HistSourceSHA256": "fd91680cc815f356c94fdd733078431ca771707305994ec49c5f1270cf9c9f5c",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2425/T1.csv",
+              "sha256": "fd91680cc815f356c94fdd733078431ca771707305994ec49c5f1270cf9c9f5c"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 1,
+        "shots": [
+          16,
+          10,
+          2,
+          4
+        ]
+      }
+    },
+    {
+      "originalIndex": 112,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1732406400000,
+        "lg": "Süper Lig",
+        "H": "Sivasspor",
+        "A": "Kasimpasa",
+        "h": 0,
+        "a": 0,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2024,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2425/T1.csv",
+          "HistSourceSHA256": "fd91680cc815f356c94fdd733078431ca771707305994ec49c5f1270cf9c9f5c",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2425/T1.csv",
+              "sha256": "fd91680cc815f356c94fdd733078431ca771707305994ec49c5f1270cf9c9f5c"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          11,
+          19,
+          5,
+          2
+        ]
+      }
+    },
+    {
+      "originalIndex": 126,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1733443200000,
+        "lg": "Süper Lig",
+        "H": "Trabzonspor",
+        "A": "Kasimpasa",
+        "h": 2,
+        "a": 2,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2024,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2425/T1.csv",
+          "HistSourceSHA256": "fd91680cc815f356c94fdd733078431ca771707305994ec49c5f1270cf9c9f5c",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2425/T1.csv",
+              "sha256": "fd91680cc815f356c94fdd733078431ca771707305994ec49c5f1270cf9c9f5c"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 1,
+        "shots": [
+          20,
+          9,
+          7,
+          3
+        ]
+      }
+    },
+    {
+      "originalIndex": 136,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1734048000000,
+        "lg": "Süper Lig",
+        "H": "Kasimpasa",
+        "A": "Eyupspor",
+        "h": 2,
+        "a": 0,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2024,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2425/T1.csv",
+          "HistSourceSHA256": "fd91680cc815f356c94fdd733078431ca771707305994ec49c5f1270cf9c9f5c",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2425/T1.csv",
+              "sha256": "fd91680cc815f356c94fdd733078431ca771707305994ec49c5f1270cf9c9f5c"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          17,
+          9,
+          4,
+          3
+        ]
+      }
+    },
+    {
+      "originalIndex": 151,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1734912000000,
+        "lg": "Süper Lig",
+        "H": "Buyuksehyr",
+        "A": "Kasimpasa",
+        "h": 2,
+        "a": 2,
+        "ht": 3,
+        "up": false,
+        "o": {
+          "CsvSeason": 2024,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2425/T1.csv",
+          "HistSourceSHA256": "fd91680cc815f356c94fdd733078431ca771707305994ec49c5f1270cf9c9f5c",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2425/T1.csv",
+              "sha256": "fd91680cc815f356c94fdd733078431ca771707305994ec49c5f1270cf9c9f5c"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 2,
+        "hta": 1,
+        "shots": [
+          19,
+          13,
+          8,
+          4
+        ]
+      }
+    },
+    {
+      "originalIndex": 159,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1736035200000,
+        "lg": "Süper Lig",
+        "H": "Kasimpasa",
+        "A": "Gaziantep",
+        "h": 2,
+        "a": 2,
+        "ht": 3,
+        "up": false,
+        "o": {
+          "CsvSeason": 2024,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2425/T1.csv",
+          "HistSourceSHA256": "fd91680cc815f356c94fdd733078431ca771707305994ec49c5f1270cf9c9f5c",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2425/T1.csv",
+              "sha256": "fd91680cc815f356c94fdd733078431ca771707305994ec49c5f1270cf9c9f5c"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 2,
+        "hta": 1,
+        "shots": [
+          17,
+          9,
+          4,
+          5
+        ]
+      }
+    },
+    {
+      "originalIndex": 169,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1736726400000,
+        "lg": "Süper Lig",
+        "H": "Goztep",
+        "A": "Kasimpasa",
+        "h": 5,
+        "a": 0,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2024,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2425/T1.csv",
+          "HistSourceSHA256": "fd91680cc815f356c94fdd733078431ca771707305994ec49c5f1270cf9c9f5c",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2425/T1.csv",
+              "sha256": "fd91680cc815f356c94fdd733078431ca771707305994ec49c5f1270cf9c9f5c"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": [
+          18,
+          10,
+          10,
+          0
+        ]
+      }
+    },
+    {
+      "originalIndex": 176,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1737244800000,
+        "lg": "Süper Lig",
+        "H": "Konyaspor",
+        "A": "Kasimpasa",
+        "h": 3,
+        "a": 3,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2024,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2425/T1.csv",
+          "HistSourceSHA256": "fd91680cc815f356c94fdd733078431ca771707305994ec49c5f1270cf9c9f5c",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2425/T1.csv",
+              "sha256": "fd91680cc815f356c94fdd733078431ca771707305994ec49c5f1270cf9c9f5c"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": [
+          16,
+          14,
+          7,
+          7
+        ]
+      }
+    },
+    {
+      "originalIndex": 188,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1737936000000,
+        "lg": "Süper Lig",
+        "H": "Kasimpasa",
+        "A": "Hatayspor",
+        "h": 5,
+        "a": 4,
+        "ht": 5,
+        "up": false,
+        "o": {
+          "CsvSeason": 2024,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2425/T1.csv",
+          "HistSourceSHA256": "fd91680cc815f356c94fdd733078431ca771707305994ec49c5f1270cf9c9f5c",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2425/T1.csv",
+              "sha256": "fd91680cc815f356c94fdd733078431ca771707305994ec49c5f1270cf9c9f5c"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 2,
+        "hta": 3,
+        "shots": [
+          31,
+          10,
+          10,
+          8
+        ]
+      }
+    },
+    {
+      "originalIndex": 194,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1738454400000,
+        "lg": "Süper Lig",
+        "H": "Ad. Demirspor",
+        "A": "Kasimpasa",
+        "h": 3,
+        "a": 5,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "CsvSeason": 2024,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2425/T1.csv",
+          "HistSourceSHA256": "fd91680cc815f356c94fdd733078431ca771707305994ec49c5f1270cf9c9f5c",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2425/T1.csv",
+              "sha256": "fd91680cc815f356c94fdd733078431ca771707305994ec49c5f1270cf9c9f5c"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 1,
+        "shots": [
+          11,
+          14,
+          7,
+          7
+        ]
+      }
+    },
+    {
+      "originalIndex": 201,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1739059200000,
+        "lg": "Süper Lig",
+        "H": "Kasimpasa",
+        "A": "Rizespor",
+        "h": 3,
+        "a": 2,
+        "ht": 3,
+        "up": false,
+        "o": {
+          "CsvSeason": 2024,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2425/T1.csv",
+          "HistSourceSHA256": "fd91680cc815f356c94fdd733078431ca771707305994ec49c5f1270cf9c9f5c",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2425/T1.csv",
+              "sha256": "fd91680cc815f356c94fdd733078431ca771707305994ec49c5f1270cf9c9f5c"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 2,
+        "hta": 1,
+        "shots": [
+          12,
+          10,
+          5,
+          2
+        ]
+      }
+    },
+    {
+      "originalIndex": 214,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1739664000000,
+        "lg": "Süper Lig",
+        "H": "Fenerbahce",
+        "A": "Kasimpasa",
+        "h": 3,
+        "a": 1,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2024,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2425/T1.csv",
+          "HistSourceSHA256": "fd91680cc815f356c94fdd733078431ca771707305994ec49c5f1270cf9c9f5c",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2425/T1.csv",
+              "sha256": "fd91680cc815f356c94fdd733078431ca771707305994ec49c5f1270cf9c9f5c"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": [
+          13,
+          13,
+          6,
+          5
+        ]
+      }
+    },
+    {
+      "originalIndex": 219,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1740182400000,
+        "lg": "Süper Lig",
+        "H": "Antalyaspor",
+        "A": "Kasimpasa",
+        "h": 2,
+        "a": 1,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "CsvSeason": 2024,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2425/T1.csv",
+          "HistSourceSHA256": "fd91680cc815f356c94fdd733078431ca771707305994ec49c5f1270cf9c9f5c",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2425/T1.csv",
+              "sha256": "fd91680cc815f356c94fdd733078431ca771707305994ec49c5f1270cf9c9f5c"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 2,
+        "hta": 0,
+        "shots": [
+          9,
+          11,
+          5,
+          5
+        ]
+      }
+    },
+    {
+      "originalIndex": 228,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1740873600000,
+        "lg": "Süper Lig",
+        "H": "Kasimpasa",
+        "A": "Galatasaray",
+        "h": 3,
+        "a": 3,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2024,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2425/T1.csv",
+          "HistSourceSHA256": "fd91680cc815f356c94fdd733078431ca771707305994ec49c5f1270cf9c9f5c",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2425/T1.csv",
+              "sha256": "fd91680cc815f356c94fdd733078431ca771707305994ec49c5f1270cf9c9f5c"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 1,
+        "shots": [
+          14,
+          18,
+          8,
+          6
+        ]
+      }
+    },
+    {
+      "originalIndex": 234,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1741305600000,
+        "lg": "Süper Lig",
+        "H": "Bodrumspor",
+        "A": "Kasimpasa",
+        "h": 1,
+        "a": 0,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2024,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2425/T1.csv",
+          "HistSourceSHA256": "fd91680cc815f356c94fdd733078431ca771707305994ec49c5f1270cf9c9f5c",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2425/T1.csv",
+              "sha256": "fd91680cc815f356c94fdd733078431ca771707305994ec49c5f1270cf9c9f5c"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          15,
+          14,
+          5,
+          5
+        ]
+      }
+    },
+    {
+      "originalIndex": 245,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1741996800000,
+        "lg": "Süper Lig",
+        "H": "Kasimpasa",
+        "A": "Alanyaspor",
+        "h": 2,
+        "a": 1,
+        "ht": 3,
+        "up": false,
+        "o": {
+          "CsvSeason": 2024,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2425/T1.csv",
+          "HistSourceSHA256": "fd91680cc815f356c94fdd733078431ca771707305994ec49c5f1270cf9c9f5c",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2425/T1.csv",
+              "sha256": "fd91680cc815f356c94fdd733078431ca771707305994ec49c5f1270cf9c9f5c"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 2,
+        "hta": 1,
+        "shots": [
+          11,
+          15,
+          5,
+          2
+        ]
+      }
+    },
+    {
+      "originalIndex": 257,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1743206400000,
+        "lg": "Süper Lig",
+        "H": "Samsunspor",
+        "A": "Kasimpasa",
+        "h": 0,
+        "a": 2,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2024,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2425/T1.csv",
+          "HistSourceSHA256": "fd91680cc815f356c94fdd733078431ca771707305994ec49c5f1270cf9c9f5c",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2425/T1.csv",
+              "sha256": "fd91680cc815f356c94fdd733078431ca771707305994ec49c5f1270cf9c9f5c"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          13,
+          9,
+          5,
+          5
+        ]
+      }
+    },
+    {
+      "originalIndex": 269,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1743984000000,
+        "lg": "Süper Lig",
+        "H": "Kasimpasa",
+        "A": "Besiktas",
+        "h": 1,
+        "a": 1,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2024,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2425/T1.csv",
+          "HistSourceSHA256": "fd91680cc815f356c94fdd733078431ca771707305994ec49c5f1270cf9c9f5c",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2425/T1.csv",
+              "sha256": "fd91680cc815f356c94fdd733078431ca771707305994ec49c5f1270cf9c9f5c"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": [
+          18,
+          8,
+          4,
+          2
+        ]
+      }
+    },
+    {
+      "originalIndex": 275,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1744502400000,
+        "lg": "Süper Lig",
+        "H": "Kayserispor",
+        "A": "Kasimpasa",
+        "h": 1,
+        "a": 0,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2024,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2425/T1.csv",
+          "HistSourceSHA256": "fd91680cc815f356c94fdd733078431ca771707305994ec49c5f1270cf9c9f5c",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2425/T1.csv",
+              "sha256": "fd91680cc815f356c94fdd733078431ca771707305994ec49c5f1270cf9c9f5c"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          7,
+          10,
+          1,
+          4
+        ]
+      }
+    },
+    {
+      "originalIndex": 281,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1745020800000,
+        "lg": "Süper Lig",
+        "H": "Kasimpasa",
+        "A": "Sivasspor",
+        "h": 3,
+        "a": 1,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "CsvSeason": 2024,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2425/T1.csv",
+          "HistSourceSHA256": "fd91680cc815f356c94fdd733078431ca771707305994ec49c5f1270cf9c9f5c",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2425/T1.csv",
+              "sha256": "fd91680cc815f356c94fdd733078431ca771707305994ec49c5f1270cf9c9f5c"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 2,
+        "hta": 0,
+        "shots": [
+          22,
+          6,
+          10,
+          4
+        ]
+      }
+    },
+    {
+      "originalIndex": 305,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1746403200000,
+        "lg": "Süper Lig",
+        "H": "Kasimpasa",
+        "A": "Trabzonspor",
+        "h": 1,
+        "a": 1,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2024,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2425/T1.csv",
+          "HistSourceSHA256": "fd91680cc815f356c94fdd733078431ca771707305994ec49c5f1270cf9c9f5c",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2425/T1.csv",
+              "sha256": "fd91680cc815f356c94fdd733078431ca771707305994ec49c5f1270cf9c9f5c"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": [
+          14,
+          9,
+          6,
+          2
+        ]
+      }
+    },
+    {
+      "originalIndex": 308,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1746835200000,
+        "lg": "Süper Lig",
+        "H": "Eyupspor",
+        "A": "Kasimpasa",
+        "h": 0,
+        "a": 3,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2024,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2425/T1.csv",
+          "HistSourceSHA256": "fd91680cc815f356c94fdd733078431ca771707305994ec49c5f1270cf9c9f5c",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2425/T1.csv",
+              "sha256": "fd91680cc815f356c94fdd733078431ca771707305994ec49c5f1270cf9c9f5c"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 1,
+        "shots": [
+          7,
+          9,
+          2,
+          4
+        ]
+      }
+    },
+    {
+      "originalIndex": 321,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1747526400000,
+        "lg": "Süper Lig",
+        "H": "Kasimpasa",
+        "A": "Buyuksehyr",
+        "h": 2,
+        "a": 3,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "CsvSeason": 2024,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2425/T1.csv",
+          "HistSourceSHA256": "fd91680cc815f356c94fdd733078431ca771707305994ec49c5f1270cf9c9f5c",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2425/T1.csv",
+              "sha256": "fd91680cc815f356c94fdd733078431ca771707305994ec49c5f1270cf9c9f5c"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 1,
+        "shots": [
+          19,
+          10,
+          7,
+          7
+        ]
+      }
+    },
+    {
+      "originalIndex": 325,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1748044800000,
+        "lg": "Süper Lig",
+        "H": "Gaziantep",
+        "A": "Kasimpasa",
+        "h": 2,
+        "a": 2,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "CsvSeason": 2024,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2425/T1.csv",
+          "HistSourceSHA256": "fd91680cc815f356c94fdd733078431ca771707305994ec49c5f1270cf9c9f5c",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2425/T1.csv",
+              "sha256": "fd91680cc815f356c94fdd733078431ca771707305994ec49c5f1270cf9c9f5c"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 2,
+        "hta": 0,
+        "shots": [
+          10,
+          14,
+          3,
+          4
+        ]
+      }
+    },
+    {
+      "originalIndex": 335,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1748563200000,
+        "lg": "Süper Lig",
+        "H": "Kasimpasa",
+        "A": "Goztep",
+        "h": 1,
+        "a": 2,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2024,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2425/T1.csv",
+          "HistSourceSHA256": "fd91680cc815f356c94fdd733078431ca771707305994ec49c5f1270cf9c9f5c",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2425/T1.csv",
+              "sha256": "fd91680cc815f356c94fdd733078431ca771707305994ec49c5f1270cf9c9f5c"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 1,
+        "shots": [
+          18,
+          14,
+          5,
+          5
+        ]
+      }
+    }
+  ]
+}

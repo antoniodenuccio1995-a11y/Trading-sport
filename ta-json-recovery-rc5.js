@@ -1,0 +1,219 @@
+/* TA-DATA-002B: pure recovery planning. No storage, no implicit fuzzy matches. */
+(function(root,factory){if(typeof module==='object'&&module.exports)module.exports=factory(require('./ta-clubs-v4.js'),()=>require('./ta-history-coverage-rc5.js'),require('./ta-fixture-identity.js'));else root.TARecovery=factory(root.TAClubs,()=>root.TAHistory,root.TAFixtures)})(globalThis,function(clubs,history,fixtures){
+ 'use strict';
+ const clone=x=>JSON.parse(JSON.stringify(x));
+ const put=(object,key,value)=>Object.defineProperty(object,key,{value,writable:true,enumerable:true,configurable:true});
+ const empty=x=>x===null||x===undefined||x==='';
+ const stable=x=>JSON.stringify(x&&typeof x==='object'&&!Array.isArray(x)?Object.fromEntries(Object.keys(x).sort().map(k=>[k,JSON.parse(stable(x[k])??'null')])):Array.isArray(x)?x.map(v=>JSON.parse(stable(v)??'null')):x);
+ const equal=(a,b)=>stable(a)===stable(b);
+ const union=(a,b)=>[...new Map([...a,...b].map(v=>[stable(v),v])).values()];
+ function migrateManual(items,records){return clubs.isolated(()=>{
+  const assigned=[],pending=[],details=[];
+  for(const [index,input] of items.entries()){
+   if(!input||!Number.isFinite(input.d)||typeof input.H!=='string'||!input.H.trim()||typeof input.A!=='string'||!input.A.trim())throw Error('Partita manuale precedente non valida: data o nomi mancanti.');
+   if(input.lg){const row={...input,up:input.up===undefined?true:!!input.up,o:input.o||{}};validate(row);assigned.push(row);continue;}
+   // Only an exact dated fixture can supply a missing division. Historical membership
+   // across different seasons cannot certify the division of a manual future game.
+   const candidates=new Set(records.filter(r=>r&&r.d===input.d&&r.lg&&clubs.resolve(r.H,r.lg).id===clubs.resolve(input.H,r.lg).id&&clubs.resolve(r.A,r.lg).id===clubs.resolve(input.A,r.lg).id).map(r=>r.lg));
+   if(candidates.size===1){const lg=[...candidates][0];assigned.push({...input,lg,up:true,o:{...(input.o||{}),LegacyManualOriginal:clone(input),LegacyManualResolution:'exact-dated-fixture'}});details.push({index,status:'assegnata',league:lg});}
+   else{pending.push(clone(input));details.push({index,status:'da assegnare',reason:candidates.size?'Più competizioni possibili':'Il vecchio formato non dichiara il campionato'});}
+  }
+  return {assigned,pending,summary:{input:items.length,assigned:assigned.length,pending:pending.length,details}};
+ });}
+ function parse(content){
+  let doc;try{doc=typeof content==='string'?JSON.parse(content):clone(content)}catch(ex){throw Error('Il file non è un JSON valido. Scegli il backup originale senza modificarlo. Dettaglio: '+ex.message);}
+  if(doc&&typeof doc==='object'&&!Array.isArray(doc)&&!Array.isArray(doc.records)&&!Array.isArray(doc.rows)){
+   if(Array.isArray(doc.clubs))throw Error('Questo file è un rapporto anagrafico, non il backup delle partite. Esporta il backup JSON dalla vecchia versione.');
+   if(doc.collisions||doc.status)throw Error('Questo file è un rapporto di integrità, non contiene le partite da recuperare. Esporta il backup JSON dalla vecchia versione.');
+  }
+  let source,format,version=null;
+  if(Array.isArray(doc)){source=doc;format='Elenco partite precedente';}
+  else if(doc&&Array.isArray(doc.records)&&(!doc.format||['TradingAnalyticsBackup','TradingAnalyticsLegacyTransfer'].includes(doc.format))){
+   if(doc.version!=null&&![1,2].includes(doc.version))throw Error('Versione del backup non supportata: '+doc.version);
+   source=doc.records;format=doc.format||'Archivio precedente';version=doc.version??null;
+  }else if(doc&&Array.isArray(doc.rows)&&!doc.format){source=doc.rows;format='Archivio rows precedente';}
+  else throw Error('Formato JSON non riconosciuto: scegli il backup delle partite.');
+  const auxiliaryOnly=doc&&!Array.isArray(doc)&&['manual','manualUnassigned','memberships','goalEvents','strategies'].some(k=>Array.isArray(doc[k])&&doc[k].length);
+  if(!source.length&&!auxiliaryOnly)throw Error('Il file contiene zero partite. Nessuna importazione necessaria.');
+  if(source.length>250000)throw Error('Il file supera 250.000 partite: dividerlo con assistenza tecnica.');
+  const records=source.map(r=>Array.isArray(r)?(r.length>=8?clubs.expandCompact([r])[0]:null):(r&&typeof r==='object'?{...r,up:!!r.up,o:r.o??{}}:null));
+  const metadata=Array.isArray(doc)?{}:doc;
+  for(const k of ['memberships','manual','manualUnassigned','strategies','goalEvents','clubRules'])if(metadata[k]!==undefined&&!Array.isArray(metadata[k]))throw Error('Sezione '+k+' non valida: deve essere un elenco.');
+  // Validate each section before any write. Journal fields are never consumed.
+  for(const m of metadata.memberships||[])if(!m||!Number.isInteger(m.year)||!m.league||!m.team)throw Error('Associazione squadra/campionato non valida nel backup.');
+  const manualMigration=migrateManual(metadata.manual||[],records);metadata.manual=manualMigration.assigned;metadata.manualUnassigned=[...(metadata.manualUnassigned||[]),...manualMigration.pending];metadata.manualMigration=manualMigration.summary;
+  for(const g of metadata.goalEvents||[])validateGoal(g);
+  for(const s of metadata.strategies||[])if(!s||typeof s.name!=='string'||!['o15','o25','u25','btts','ht','draw','home','away'].includes(s.m)||!Array.isArray(s.conds))throw Error('Strategia salvata non compatibile: sono richiesti nome, mercato e condizioni. Nessuna sezione verrà sovrascritta.');
+  if(metadata.clubRules)clubs.isolated(()=>{const saved=clubs.rules();try{clubs.configure(metadata.clubRules)}finally{clubs.configure(saved)}});
+  return {records,metadata,format,version};
+ }
+ function validateGoal(g){
+  if(!g||typeof g.key!=='string'||!Number.isFinite(g.d)||g.d<=0||typeof g.H!=='string'||!g.H.trim()||typeof g.A!=='string'||!g.A.trim()||typeof g.lg!=='string'||!g.lg||!Array.isArray(g.goals))throw Error('Eventi gol non compatibili: mancano incontro, campionato o reti.');
+  for(const goal of g.goals){const m=/^(\d{1,2})(?:\+(\d{1,2}))?$/.exec(String(goal?.min??''));if(!['H','A'].includes(goal?.side)||!m||+m[1]<1||+m[1]>90||+(m[2]||0)>30||(m[2]&&!['45','90'].includes(m[1])))throw Error('Eventi gol non compatibili: minuto o lato non valido.');}
+ }
+ function validate(r){
+  if(!r||!Number.isFinite(r.d)||r.d<=0||r.d>8640000000000000||typeof r.lg!=='string'||!r.lg.trim()||!clubs.clean(r.H)||!clubs.clean(r.A))throw Error('Data, campionato o squadre mancanti/non validi');
+  if(typeof r.H!=='string'||typeof r.A!=='string')throw Error('Nome squadra non testuale');
+  if(!r.up&&(!Number.isInteger(r.h)||!Number.isInteger(r.a)||r.h<0||r.a<0))throw Error('Risultato finale mancante o non valido');
+  if(r.o===null||typeof r.o!=='object'||Array.isArray(r.o))throw Error('Metadati non validi');
+  if(r.o.HistSources?.length&&fixtures.phase(r).stage==='unresolved')throw Error('Fase sportiva non classificata: '+String(r.o.Phase));
+  if(r.o.HistSourceConflict)throw Error('Fonti pubbliche discordanti: verificare i risultati prima di integrare questo incontro.');
+  if(r.o.HistIdentityAmbiguity)throw Error('Storico da verificare: '+r.o.HistIdentityAmbiguity);
+  for(const side of ['Home','Away']){
+   if(r.o['Club'+side+'Id']!=null&&typeof r.o['Club'+side+'Id']!=='string')throw Error('Identificativo squadra non valido');
+   if(r.o['Club'+side+'Sources']!=null&&!Array.isArray(r.o['Club'+side+'Sources']))throw Error('Provenienze squadra non valide');
+  }
+  for(const k of ['FixtureSourceContexts','FixtureTimeObservations','FixtureEventSources'])if(r.o[k]!=null&&!Array.isArray(r.o[k]))throw Error('Metadati '+k+' non validi: deve essere un elenco.');
+  if(r.o.RecoveryEvidence!=null&&!Array.isArray(r.o.RecoveryEvidence))throw Error('Provenienze di recupero non valide');
+  if(r.o.CsvSeason!==undefined&&(!Number.isInteger(r.o.CsvSeason)||r.o.CsvSeason<1900||r.o.CsvSeason>2099))throw Error('Stagione non valida');
+  for(const k of ['ht','hth','hta'])if(!empty(r[k])&&(!Number.isInteger(r[k])||r[k]<0))throw Error('Risultato primo tempo non valido');
+  if(!empty(r.hth)&&!empty(r.hta)&&!empty(r.ht)&&r.ht!==r.hth+r.hta)throw Error('Primo tempo incoerente');
+  if(!empty(r.shots)&&(!Array.isArray(r.shots)||r.shots.length!==4||r.shots.some(v=>!empty(v)&&(!Number.isFinite(v)||v<0))))throw Error('Tiri non validi');
+ }
+ function describe(r,index,origin){return {index,origin,date:r&&Number.isFinite(r.d)&&Math.abs(r.d)<=8640000000000000?new Date(r.d).toISOString().slice(0,10):null,season:r&&Number.isFinite(r.d)?fixtures.season(r):null,league:r?.lg??null,home:r?.H??null,away:r?.A??null,result:r?.up?'in programma':r?String(r.h)+'–'+String(r.a):'non disponibile',homeId:r?.o?.ClubHomeId??null,awayId:r?.o?.ClubAwayId??null,record:r?clone(r):null};}
+ function merge(a,b){
+  const identity=fixtures.relation(a,b);if(identity.kind!=='same')return {conflict:'contesto_incontro_discordante',fields:[identity.reason]};
+  const fields=[];let changed=false;
+  if(!a.up&&!b.up&&(a.h!==b.h||a.a!==b.a))return {conflict:'risultati_discordanti',fields:['h','a']};
+  const out=clone(a),mixed=!!a.up!==!!b.up,played=a.up?b:a,fixture=a.up?a:b,scoreFields=new Set(['h','a','ht','hth','hta','shots']);
+  const statMeta=new Set(['FTHG','FTAG','HTHG','HTAG','FTR','HTR','HS','AS','HST','AST','HF','AF','HC','AC','HY','AY','HR','AR']);
+  const aMeta=clone(a.o||{}),bMeta=clone(b.o||{});let fixtureEvidence=null;
+  if(mixed){const meta=a.up?aMeta:bMeta;fixtureEvidence={kind:'unplayed-fixture-values',values:Object.fromEntries([...scoreFields].filter(k=>!empty(fixture[k])).map(k=>[k,fixture[k]])),metadata:Object.fromEntries(Object.entries(meta).filter(([k])=>statMeta.has(k)))};for(const k of statMeta)delete meta[k];}
+  for(const k of new Set([...Object.keys(a),...Object.keys(b)])){
+   if(['H','A','o','up'].includes(k))continue;
+   if(mixed&&scoreFields.has(k)){out[k]=played[k]??null;continue;}
+   if(['h','a'].includes(k)&&(a.up||b.up))continue;
+   if(empty(a[k])){if(!empty(b[k])){put(out,k,clone(b[k]));changed=true;}}
+   else if(!empty(b[k])&&!equal(a[k],b[k]))fields.push(k);
+  }
+  if(a.up&&!b.up){out.up=false;out.h=b.h;out.a=b.a;changed=true;}
+  out.o=aMeta;
+  const sourceFields=new Set(['HistOriginalHome','HistOriginalAway','HomeTeam','AwayTeam','Date','Time','Source','SourceTime','CsvSourceFile','Provider','HomeProvider','AwayProvider','HomeTeamID','AwayTeamID','HomeID','AwayID','RecoveryEvidence','PublishedRound','MatchID','MatchId','EventID','EventId','FixtureID','FixtureId','FixtureProvider','TimeZone','KickoffUTC','KickoffISO','kickoffISO','startTimeUTC']);
+  for(const [k,v] of Object.entries(bMeta)){
+   if(['FixtureSourceContexts','FixtureEventSources','FixtureTimeObservations'].includes(k)){out.o[k]=union(out.o[k]||[],v||[]);continue;}
+   if(k==='Phase'&&['unknown','unclassified',undefined,null,''].includes(out.o[k])&&!empty(v)){out.o[k]=v;changed=true;continue;}
+   if(k==='Phase'&&['unknown','unclassified',undefined,null,''].includes(v))continue;
+   if(k==='RecoveryFixtureEvidence'){out.o[k]=union(out.o[k]||[],v||[]);continue;}
+   if(k==='HistSources'){out.o[k]=union(out.o[k]||[],v||[]);continue;}
+   if(k==='RecoveryEvidence'){out.o[k]=union(out.o[k]||[],v||[]);continue;}
+   if(k.startsWith('Club')){
+    if(k.endsWith('Sources')||k.endsWith('LegacyIds'))out.o[k]=union(out.o[k]||[],v||[]);
+    else if(empty(out.o[k]))out.o[k]=clone(v);
+    continue;
+   }
+   if(empty(out.o[k])){if(!empty(v)){put(out.o,k,clone(v));changed=true;}}
+   else if(!empty(v)&&!equal(out.o[k],v)){
+    const numericField=['FTHG','FTAG','HTHG','HTAG','HS','AS','HST','AST','HF','AF','HC','AC','HY','AY','HR','AR'].includes(k)||/^(B365|Avg|Max|Min|PS|P|BW|BF|BMGM|BV|CL|LB|AH)/.test(k);
+    const numeric=x=>(typeof x==='number'&&Number.isFinite(x))||(typeof x==='string'&&/^[+-]?\d+(?:\.\d+)?$/.test(x));
+    if(sourceFields.has(k)||(numericField&&numeric(out.o[k])&&numeric(v)&&Number(out.o[k])===Number(v)))out.o.RecoveryEvidence=union(out.o.RecoveryEvidence||[],[{field:k,values:[out.o[k],v]}]);
+    else fields.push('o.'+k);
+   }
+  }
+  // Preserve original source names even when two aliases collapse to one fixture.
+  for(const side of ['Home','Away'])out.o['Club'+side+'Sources']=union(a.o?.['Club'+side+'Sources']||[],b.o?.['Club'+side+'Sources']||[]);
+  if(fixtureEvidence&&(Object.keys(fixtureEvidence.values).length||Object.keys(fixtureEvidence.metadata).length))out.o.RecoveryFixtureEvidence=union(out.o.RecoveryFixtureEvidence||[],[fixtureEvidence]);
+  if(fields.length)return {conflict:'dati_incompatibili',fields};
+  return {record:out,kind:changed?'integrabili':'identici'};
+ }
+ function plan(content,existing=[]){return clubs.isolated(()=>{
+  const report={version:'TA-RECOVERY-1',createdAt:new Date().toISOString(),status:'simulazione',format:null,sourceVersion:null,inputCount:0,existingCount:existing.length,outputCount:existing.length,importable:0,problematic:0,identical:0,compatible:0,added:0,changedNames:0,changes:[],collisions:[],errors:[],leagues:[],seasons:[],safe:false,canPartial:false,excluded:[],coverage:[],protectedFieldsUnchanged:true};
+  let parsed;
+  try{parsed=parse(content);report.format=parsed.format;report.sourceVersion=parsed.version;report.inputCount=parsed.records.length;}
+  catch(ex){report.status='bloccata';report.errors.push({error:ex.message});return {report,records:clone(existing),metadata:{}};}
+  report.manualMigration=parsed.metadata.manualMigration;
+  const groups=new Map(),bases=new Map(),eventGroups=new Map(),invalid=[],normalized=[];
+  function add(r,index,origin){
+   try{validate(r);const next=clubs.canonicalMatch(r),base=fixtures.base(next,clubs.resolve),choices=(bases.get(base)||[]).filter(k=>groups.get(k).some(v=>fixtures.base(v.row,clubs.resolve)===base&&fixtures.relation(v.row,next).kind!=='different'));
+    if(choices.length>1)throw Error('Contesto incontro ambiguo: più eventi affidabili compatibili con la riga priva di identificativo.');
+    const ctx=fixtures.context(next),eventKeys=ctx.events.map(e=>JSON.stringify([ctx.league,ctx.season,e.provider,e.id])),knownGroups=[...new Set(eventKeys.flatMap(k=>[...(eventGroups.get(k)||[])]))].filter(k=>{const c=fixtures.context(groups.get(k)[0].row);return !(c.instance!==ctx.instance&&(c.instance||ctx.instance))&&!(c.leg&&ctx.leg&&c.leg!==ctx.leg)});
+    if(knownGroups.length>1)throw Error('Identificativi di fonte collegano più eventi già distinti: verifica necessaria.');
+    const priorEvent=knownGroups[0],crossContext=priorEvent&&fixtures.base(groups.get(priorEvent)[0].row,clubs.resolve)!==base;
+    const id=crossContext?priorEvent:choices.length===1?choices[0]:clubs.matchId(next),contextConflict=crossContext?'trusted-event-context-disagreement':choices.length===1&&fixtures.relation(groups.get(id)[0].row,next).kind==='conflict'?fixtures.relation(groups.get(id)[0].row,next).reason:null;
+    for(const ek of eventKeys){if(!eventGroups.has(ek))eventGroups.set(ek,new Set());eventGroups.get(ek).add(id);}
+    if(!groups.has(id))groups.set(id,[]);if(!bases.has(base))bases.set(base,[]);if(!bases.get(base).includes(id))bases.get(base).push(id);
+    groups.get(id).push({row:next,index,origin,contextConflict});normalized.push({row:next,index,origin});
+    if(origin==='file'&&(r.H!==next.H||r.A!==next.A)){report.changedNames++;report.changes.push({index,before:[r.H,r.A],after:[next.H,next.A]});}
+   }catch(ex){const detail={...describe(r,index,origin),error:ex.message};report.errors.push(detail);invalid.push(detail);}
+  }
+  existing.forEach((r,i)=>add(r,i,'archivio'));parsed.records.forEach((r,i)=>add(r,i,'file'));
+  report.leagues=[...new Set(parsed.records.filter(Boolean).map(r=>r.lg).filter(Boolean))].sort();
+  report.seasons=[...new Set(parsed.records.filter(r=>r&&Number.isFinite(r.d)).map(r=>Number.isInteger(r.o?.CsvSeason)?r.o.CsvSeason:(new Date(r.d).getUTCFullYear()-(new Date(r.d).getUTCMonth()<6?1:0))))].sort();
+  const records=[];let existingProblem=invalid.some(v=>v.origin==='archivio');
+  for(const [id,entries] of groups){
+   const incoming=entries.filter(v=>v.origin==='file'),base=entries.filter(v=>v.origin==='archivio');
+   // A new import is not permission to repair pre-existing archive groups.
+   // Preserve them exactly and quarantine only incoming rows that touch them.
+   if(base.length>1){
+    for(const v of base){records.push(clone(existing[v.index]));report.coverage.push({outputIndex:records.length-1,inputs:[{index:v.index,origin:'archivio'}],retainedForReview:true});}
+    report.archiveNeedsReconciliation=(report.archiveNeedsReconciliation||0)+base.length;
+    if(incoming.length){report.problematic+=incoming.length;report.excluded.push(...incoming.map(v=>describe(v.row,v.index,v.origin)));report.collisions.push({id,kind:'archivio_da_riconciliare',fields:['gruppo preesistente'],records:entries.map(v=>describe(v.row,v.index,v.origin)),treatment:'Archivio preesistente conservato integralmente; simulare la riconciliazione prima di integrare questo gruppo.'});}
+    continue;
+   }
+
+   if(!incoming.length&&base.length===1){records.push(clone(existing[base[0].index]));report.coverage.push({outputIndex:records.length-1,inputs:[{index:base[0].index,origin:'archivio'}]});continue;}
+   let combined=clone(entries[0].row),kind='identici',cause=null,fields=[];
+   if(entries.some(v=>v.contextConflict)){cause='contesto_incontro_discordante';fields=entries.filter(v=>v.contextConflict).map(v=>v.contextConflict);}
+   if(entries.some(v=>['Home','Away'].some(s=>v.row.o?.['Club'+s+'Status']==='ambigua'))){cause='identita_ambigua';fields=['identità club'];}
+   for(let i=1;i<entries.length&&!cause;i++){
+    const result=merge(combined,entries[i].row);
+    if(result.conflict){cause=result.conflict;fields=result.fields;break;}
+    combined=result.record;if(result.kind==='integrabili')kind='integrabili';
+   }
+   if(cause){
+    if(!incoming.length||base.length>1||base.some(v=>['Home','Away'].some(s=>v.row.o?.['Club'+s+'Status']==='ambigua')))existingProblem=true;
+    const diagnostic={id,kind:cause,fields,records:entries.map(v=>describe(v.row,v.index,v.origin)),treatment:'Bloccato. Nessun risultato sovrascritto. Risolvere l’identità o verificare la fonte; in alternativa escludere esplicitamente le sole righe del file.'};
+    report.collisions.push(diagnostic);report.problematic+=incoming.length;report.excluded.push(...incoming.map(v=>describe(v.row,v.index,v.origin)));
+    // Keep the existing archive EXACTLY as it was for excluded groups.
+    records.push(...base.map(v=>clone(existing[v.index])));
+    continue;
+   }
+   records.push(combined);report.importable+=incoming.length;
+   if(!base.length&&incoming.length)report.added++;
+   if(entries.length>1){const duplicateCount=base.length?incoming.length:incoming.length-1;report[kind==='integrabili'?'compatible':'identical']+=duplicateCount;
+    report.collisions.push({id,kind,fields:[],records:entries.map(v=>{const detail=describe(v.row,v.index,v.origin);delete detail.record;return detail;}),treatment:kind==='identici'?'Consolidamento delle copie identiche; provenienze conservate.':'Integrazione dei campi mancanti; nessun valore discordante sovrascritto.'});}
+   report.coverage.push({outputIndex:records.length-1,inputs:entries.map(v=>({index:v.index,origin:v.origin}))});
+  }
+  for(const d of invalid){if(d.origin==='file'){report.problematic++;report.excluded.push(d);}else records.push(clone(existing[d.index]));}
+  // Keep the durable order identical to startup's chronological archive order.
+  // Coverage indices are remapped, so duplicate provenance remains inspectable.
+  const ordered=records.map((row,index)=>({row,index})).sort((a,b)=>a.row.d-b.row.d),positions=new Map(ordered.map((v,i)=>[v.index,i]));
+  for(const c of report.coverage)c.outputIndex=positions.get(c.outputIndex);
+  records.splice(0,records.length,...ordered.map(v=>v.row));
+  report.outputCount=records.length;report.safe=!existingProblem&&!report.problematic&&!report.errors.length;
+  report.canPartial=!existingProblem&&report.problematic>0&&report.importable>0;
+  report.status=report.safe?'pronta':report.canPartial?'parziale_disponibile':'bloccata';
+  report.protectedFieldsUnchanged=!existingProblem;
+  return {report,records,metadata:parsed.metadata};
+ });}
+ function reconcile(existing){
+  if(!existing.length)return {records:[],usableRecords:[],report:{safe:true,inputCount:0,outputCount:0,preservedUnresolved:0,identical:0,compatible:0,coverage:[],errors:[],collisions:[],status:'riconciliazione_pronta'}};
+  const proposal=plan(existing),excluded=new Set(proposal.report.excluded.filter(v=>v.origin==='file').map(v=>v.index));
+  const indexed=proposal.records.map((row,index)=>({row,index,review:false}));
+  for(const index of excluded)indexed.push({row:clone(existing[index]),index:null,review:true,input:index});
+  indexed.sort((a,b)=>(a.row?.d||0)-(b.row?.d||0));const positions=new Map();indexed.forEach((v,i)=>{if(v.index!=null)positions.set(v.index,i)});
+  const coverage=proposal.report.coverage.map(c=>({...c,outputIndex:positions.get(c.outputIndex)}));
+  indexed.forEach((v,i)=>{if(v.review)coverage.push({outputIndex:i,inputs:[{index:v.input,origin:'file'}],retainedForReview:true})});
+  const accounted=new Set(coverage.flatMap(c=>c.inputs.map(v=>v.index)));
+  if(accounted.size!==existing.length)throw Error('Riconciliazione interrotta: copertura dei record originali non integrale.');
+  return {records:indexed.map(v=>v.row),usableRecords:indexed.filter(v=>!v.review&&fixtures.usable(v.row)).map(v=>v.row),report:{...proposal.report,safe:true,canPartial:false,status:'riconciliazione_pronta',outputCount:indexed.length,preservedUnresolved:excluded.size,coverage,allOriginalRecordsAccountedFor:true,reviewRequired:proposal.report.problematic>0||proposal.report.errors.length>0}};
+ }
+ function suggestions(diagnostics){
+  const all=diagnostics.clubs||[],suggestions=[];
+  for(const c of all){
+   const candidates=all.filter(x=>x.id!==c.id&&((c.country==='UNSPECIFIED'&&x.country!=='UNSPECIFIED'&&clubs.key(c.identityName||c.name)===clubs.key(x.identityName||x.name))||(c.provider&&c.sourceId!=null&&c.provider===x.provider&&String(c.sourceId)===String(x.sourceId))));
+   for(const s of clubs.seeds)if(s.id!==c.id&&(c.country===s.country||c.country==='UNSPECIFIED'||c.country==='INT')&&s.aliases.some(a=>clubs.key(a)===clubs.key(c.identityName||c.name)))candidates.push(s);
+   const unique=[...new Map(candidates.map(x=>[x.id,x])).values()];
+   if(unique.length)suggestions.push({fromId:c.id,alias:c.identityName||c.name,country:c.country,provider:c.provider||null,sourceId:c.sourceId??null,candidates:unique.map(x=>({id:x.id,name:x.name,country:x.country})),reason:c.country==='UNSPECIFIED'?'Stesso nome, contesto del Paese disponibile: conferma necessaria':'Alias documentato o identificativo della stessa fonte',requiresConfirmation:true});
+  }
+  return suggestions;
+ }
+ function impact(before,after){
+  function summarize(rows){const map=new Map();for(const r of rows)for(const [side,name,goals,against] of [['Home',r.H,r.h,r.a],['Away',r.A,r.a,r.h]]){
+   const id=r.o?.['Club'+side+'Id']||clubs.resolve(name,r.lg).id,k=JSON.stringify([r.lg,id]);
+   if(!map.has(k))map.set(k,{league:r.lg,id,name,played:0,fixtures:0,gf:0,ga:0,wins:0,draws:0,losses:0});
+   const s=map.get(k);if(r.up){s.fixtures++;continue;}s.played++;s.gf+=goals;s.ga+=against;if(goals>against)s.wins++;else if(goals===against)s.draws++;else s.losses++;
+  }return map;}
+  return clubs.isolated(()=>{const a=summarize(before),b=summarize(after);return [...new Set([...a.keys(),...b.keys()])].filter(k=>!equal(a.get(k),b.get(k))).map(k=>({before:a.get(k)||null,after:b.get(k)||null}));});
+ }
+ return {parse,migrateManual,validate,validateGoal,merge,plan,reconcile,suggestions,impact,equal,stable,clone,describe};
+});

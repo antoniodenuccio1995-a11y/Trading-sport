@@ -1,0 +1,38 @@
+{
+  "originalPacket": "histories/stab003/E1_2022.json",
+  "originalSHA256": "068d879d10a7d68cc85c5aa7ace5c1ea2672639bba5b0478d97af1f43d44f390",
+  "review": [
+    {
+      "originalIndex": 556,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1685145600000,
+        "lg": "Championship",
+        "H": "Coventry City FC",
+        "A": "1-1 a.e.t. (1-1, 0-1)  Luton Town FC",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "Playoffs",
+          "HomeCountry": "ENG",
+          "AwayCountry": "ENG",
+          "PublishedRound": "Playoffs",
+          "CupScoreEvidence": "5-6 pen.",
+          "CsvSeason": 2022,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/england/master/2022-23/2-championship.txt",
+              "sha256": "043b06a923ac5c049ae9c03bcef858a3836979d29807d078f0aee551cc3e06ec"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    }
+  ]
+}
