@@ -1,0 +1,117 @@
+{
+  "personalArchiveIncluded": false,
+  "files": [
+    {
+      "fileName": "I1 (2).csv",
+      "sha256": "343a89db026fe4204ebeabd663cdfee8d02a45457828fc1cb63fa630ca170723",
+      "records": 380,
+      "unique": 380,
+      "duplicates": 0,
+      "ft": 380,
+      "ht": 380,
+      "shots": 380,
+      "fixtures": 0,
+      "seasons": [
+        2023
+      ],
+      "invalid": 0,
+      "incomplete": 0
+    },
+    {
+      "fileName": "Serie_A_risultati_2627.csv",
+      "sha256": "1a8631a00babdebf77fde64be925c1b0e3a56828d8ca50c3143aa045a4ad0ad5",
+      "records": 71,
+      "unique": 71,
+      "duplicates": 0,
+      "ft": 71,
+      "ht": 70,
+      "shots": 70,
+      "fixtures": 0,
+      "seasons": [
+        2026
+      ],
+      "invalid": 0,
+      "incomplete": 0
+    },
+    {
+      "fileName": "I1 (1).csv",
+      "sha256": "79d87a5b18771e066ac7419b7876bfd9771a68ca117a9712375d6bc9685abee3",
+      "records": 380,
+      "unique": 380,
+      "duplicates": 0,
+      "ft": 380,
+      "ht": 380,
+      "shots": 380,
+      "fixtures": 0,
+      "seasons": [
+        2024
+      ],
+      "invalid": 0,
+      "incomplete": 0
+    },
+    {
+      "fileName": "I1 (3).csv",
+      "sha256": "9960837f37a97ae700f876c87b85a8b7a2f5a5d05a53077830c21b9db8880c45",
+      "records": 380,
+      "unique": 380,
+      "duplicates": 0,
+      "ft": 380,
+      "ht": 380,
+      "shots": 380,
+      "fixtures": 0,
+      "seasons": [
+        2022
+      ],
+      "invalid": 0,
+      "incomplete": 0
+    },
+    {
+      "fileName": "I1 (4).csv",
+      "sha256": "6a9555d5a90e652a883fd2862a52545c06e264016cd770347c067a6d7c993170",
+      "records": 380,
+      "unique": 380,
+      "duplicates": 0,
+      "ft": 380,
+      "ht": 380,
+      "shots": 380,
+      "fixtures": 0,
+      "seasons": [
+        2021
+      ],
+      "invalid": 0,
+      "incomplete": 0
+    },
+    {
+      "fileName": "I1.csv",
+      "sha256": "709ae279617d16af226312bcceac941e71241745ddaf950bdac2b83afad4fcbb",
+      "records": 380,
+      "unique": 380,
+      "duplicates": 0,
+      "ft": 380,
+      "ht": 380,
+      "shots": 380,
+      "fixtures": 0,
+      "seasons": [
+        2025
+      ],
+      "invalid": 0,
+      "incomplete": 0
+    },
+    {
+      "fileName": "Serie_A_calendario_2627.csv",
+      "sha256": "58e59f76a19ed25d3873d634c1e6f96b384780e2b2e129a6ae01b4ff707501d5",
+      "records": 309,
+      "unique": 309,
+      "duplicates": 0,
+      "ft": 0,
+      "ht": 0,
+      "shots": 0,
+      "fixtures": 309,
+      "seasons": [
+        2026
+      ],
+      "invalid": 0,
+      "incomplete": 0
+    }
+  ]
+}

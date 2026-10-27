@@ -1,3 +1,9 @@
+# Trading Analytics — TA-STAB-003
+
+Nuova candidata **v0.2U-rc4**, su ramo separato dalla rc3, disponibile per revisione. Aprire il [dossier TA-STAB-003](TA-STAB-003.md) per recupero del backup originale, copertura degli storici, QA e collaudo. Il recupero JSON e la completezza delle stagioni sono valutati separatamente. Nessun merge su main o deploy stabile.
+
+Le informazioni seguenti descrivono le consegne precedenti, conservate come documentazione storica.
+
 # Trading Analytics — TA-DATA-002B
 
 Ultima candidata: **v0.2U-rc3**, disponibile per revisione indipendente, senza approvazione stabile. Aprire il [dossier correttivo TA-DATA-002B](TA-DATA-002B.md) per file, istruzioni, QA e limiti residui. Il backup reale delle partite non era tra gli allegati: il criterio relativo alle 40 collisioni personali non è attestato come completato.

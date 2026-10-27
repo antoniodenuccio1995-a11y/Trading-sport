@@ -1,0 +1,12 @@
+{
+  "outcome": "PASS",
+  "originalSHA256": "809d7ecce6bcf8bbc39812107e29052689520a075304bf7c743f17bc1dd31f2a",
+  "originalRecords": 28544,
+  "recoveredRecords": 35022,
+  "originalRecordsAccountedFor": 28544,
+  "sourceDenominationsPreserved": 57088,
+  "nonemptyQuoteValuesChecked": 172964,
+  "originalManualPayloadsPreserved": 2,
+  "errorCount": 0,
+  "personalRecordsPublished": false
+}

@@ -1,0 +1,46 @@
+[
+  {
+    "code": "por.2",
+    "error": "HTTP Error 400: Bad Request",
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/por.2/scoreboard?dates=2025&limit=1000"
+  },
+  {
+    "code": "den.2",
+    "events": 0,
+    "league": [
+      [
+        "Danish  1. Division",
+        "den.2"
+      ]
+    ],
+    "range": [],
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/den.2/scoreboard?dates=2025&limit=1000"
+  },
+  {
+    "code": "cro.2",
+    "error": "HTTP Error 400: Bad Request",
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/cro.2/scoreboard?dates=2025&limit=1000"
+  },
+  {
+    "code": "rou.2",
+    "error": "HTTP Error 400: Bad Request",
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/rou.2/scoreboard?dates=2025&limit=1000"
+  },
+  {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/den.2/scoreboard?dates=20240801-20250630&limit=1000",
+    "error": "HTTP Error 400: Bad Request"
+  },
+  {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/den.2/scoreboard?dates=20250801&limit=1000",
+    "events": 0,
+    "range": []
+  },
+  {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/ita.1/scoreboard?dates=2025&limit=1000",
+    "events": 368,
+    "range": [
+      "2025-01-04T14:00Z",
+      "2025-12-29T19:45Z"
+    ]
+  }
+]

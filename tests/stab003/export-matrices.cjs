@@ -1,0 +1,14 @@
+/* Publish aggregates only. Never export personal fixture details into the repository. */
+const fs=require('fs'),path=require('path'),C=require('../../ta-clubs-v3'),H=require('../../ta-history-coverage');
+const [backupPath,privateDir]=process.argv.slice(2);if(!privateDir)throw Error('Provide original and private QA directory');
+const root=path.resolve(__dirname,'../..'),dir=path.resolve(privateDir);if(dir===root||dir.startsWith(root+path.sep))throw Error('Private files must remain outside the repository');
+const asOf=Date.UTC(2026,9,28),q=x=>'"'+String(x??'').replaceAll('"','""')+'"';
+const cols=['code','league','season','runtime','status','present','inputRows','expectedRegular','expectedFull','ft','ht','htExact','missingHT','fixtures','missingResults','unreconciledReference','missingFromReference','duplicates','conflicts','differentFT','unmatchedArchive','referenceFT','referenceCount','sourceConflicts','sourceWarnings','scope','reliability','sources'];
+function write(name,rows){fs.writeFileSync(path.join(root,'docs/stab003',name),[cols.join(','),...rows.map(r=>cols.map(c=>q(c==='sources'?r.sources.map(s=>s.url).join(' | '):r[c])).join(','))].join('\n')+'\n');}
+const original=JSON.parse(fs.readFileSync(backupPath)),restored=JSON.parse(fs.readFileSync(path.join(dir,'restored-backup.json'))),integrated=JSON.parse(fs.readFileSync(path.join(dir,'coverage-after-integration.json')));
+write('MATRICE_ARCHIVIO_ORIGINALE.csv',H.compare(C.expandCompact(original.records).map(C.canonicalMatch),asOf));
+write('MATRICE_ARCHIVIO_RECUPERATO.csv',H.compare(C.expandCompact(restored.records),asOf));write('MATRICE_PROPOSTA_INTEGRATA.csv',integrated);
+const publicRows=H.manifest.rows.flatMap(r=>C.expandCompact(JSON.parse(fs.readFileSync(path.join(root,r.path))).records));write('MATRICE_FONTI.csv',H.compare(publicRows,asOf));
+const mark={'completo verificato':'C','parziale':'P','non verificabile':'N'},rows=H.manifest.rows.filter(r=>r.season===2021).map(ref=>'| '+ref.league+(ref.runtime?'':' (CSV aggiuntivo)')+' | '+[2021,2022,2023,2024,2025,2026].map(y=>mark[integrated.find(r=>r.code===ref.code&&r.season===y).status]).join(' | ')+' |');
+fs.writeFileSync(path.join(root,'docs/stab003/MATRICE_SINTESI.md'),'# Stato della proposta integrata\n\nFotografia al 27/10/2026; C = completo verificato rispetto alle fonti e allo scopo dichiarati, P = parziale, N = non verificabile con le fonti acquisite. Questa tabella riguarda la copia di prova integrata, non modifica il browser dell’utente. I conteggi FT/HT, gli attesi e le fonti sono in [MATRICE_PROPOSTA_INTEGRATA.csv](MATRICE_PROPOSTA_INTEGRATA.csv).\n\n| Campionato | 2021/22 | 2022/23 | 2023/24 | 2024/25 | 2025/26 | 2026/27 |\n|---|---|---|---|---|---|---|\n'+rows.join('\n')+'\n');
+console.log(JSON.stringify({matrices:4,combinations:integrated.length,personalFixtureRowsPublished:0}));
