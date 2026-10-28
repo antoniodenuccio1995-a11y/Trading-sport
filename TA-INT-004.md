@@ -1,5 +1,7 @@
 # TA-INT-004 — v0.2U-rc5, candidata per revisione indipendente
 
+**Correzione urgente successiva a `b379d6f`:** risolto `safeKickoffFuture is not defined` nel Backtest con partite di oggi. La funzione degli orari è condivisa con lo Scanner, senza duplicazioni. [Diagnosi, prove prima/dopo e limiti](docs/int004/CORREZIONE_ORARI_RC5.md). Il precedente collaudo non copriva questo percorso: è aggiunto un test del pulsante effettivo con gare di oggi e domani.
+
 **Stato: sviluppo integrato e collaudato; approvazione indipendente e rilascio stabile ancora aperti.** Backtest, Mercato e alias operativi sono integrati con il nuovo motore di identità. Nessun merge su `main`, deploy o aggiornamento automatico dell'archivio personale.
 
 Il pacchetto operativo è stato acquisito dagli allegati del 28 ottobre 2026. Il suo SHA-256 `559e6504d5fe3d45ce4378ca91c47865f036c4ab6c3c09d708ec5960e53cb1ca` coincide con quello del rapporto indipendente. I 314 file rc4 conservati nel pacchetto coincidono con la baseline Git. Il precedente impedimento di acquisizione è risolto; le modifiche sono state integrate selettivamente senza sostituire i file precedenti.

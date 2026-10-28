@@ -1,5 +1,7 @@
 # Rapporto QA — candidata v0.2U-rc5 TA-INT-004
 
+**Addendum urgente successivo a b379d6f:** il collaudo Windows ha individuato un percorso non coperto dai test precedenti: Backtest con partite di oggi chiamava una funzione locale allo Scanner. Il FAIL è riprodotto, la definizione è ora condivisa e il nuovo test del pulsante copre orari futuri, passati, assenti, senza fuso e manuali. Evidenze prima/dopo, prova di sola rilocazione e limiti sono in [CORREZIONE_ORARI_RC5.md](CORREZIONE_ORARI_RC5.md). I PASS precedenti non costituivano prova di questo scenario.
+
 **Esito: collaudo dell’autore PASS nel perimetro documentato; candidata disponibile per nuovo AUDIT indipendente.** Il pacchetto operativo e i riscontri sono stati acquisiti e verificati. Il precedente blocco di acquisizione è risolto e i cinque casi Backtest prima FAIL ora sono PASS. Nessun merge, deploy stabile o approvazione indipendente viene dichiarato.
 
 ## Prove realmente eseguite

@@ -1,5 +1,14 @@
 # TA-INT-004 — Changelog candidata v0.2U-rc5
 
+## Correzione urgente degli orari dopo b379d6f
+
+- Risolto il riferimento non visibile a `safeKickoffFuture` dal Backtest; una sola funzione, invariata, ora condivisa con lo Scanner.
+- Conservata l'esclusione prudenziale delle partite di oggi con orari assenti, non verificabili, già trascorsi o uguali all'istante corrente.
+- Riprodotto il FAIL precedente e aggiunta prova browser del pulsante con gare di oggi/domani, manuali, tutti i preset, Scanner, ricerca ed export; operazioni storiche confrontate campo per campo.
+- Ogni altro byte dell'HTML rispetto a b379d6f rimane invariato; nessuna modifica a JSON personali originali, classifiche, formule o registro trade. Nuovo AUDIT richiesto.
+
+## Integrazione precedente
+
 Stato: **candidata collaudata per revisione indipendente, non stabile**, baseline rc4 `242a15efae0ab64fd851335354c40c750d2d2e95`.
 
 - Motore condiviso di identità di club e incontri; competizione, stagione, giorno, fonte qualificata, contesto sportivo, ripetizioni e osservazioni dell'orario.

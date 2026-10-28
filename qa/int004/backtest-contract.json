@@ -1569,7 +1569,7 @@
   "pageerrors": [],
   "marketOptionCount": 8,
   "testedSourceSHA256": {
-    "Trading_Analytics_v0.2U-rc5_TA-INT-004.html": "bc18319f497762c32f46d0b2aa77804a954664c9d43392146de4ebc7876a7a24",
+    "Trading_Analytics_v0.2U-rc5_TA-INT-004.html": "0f094350700750026e5e303cafbf9384ff494738c56cd9a56c92eff5bf2d4a4a",
     "ta-club-aliases-int004.js": "105b36aecfa02a502daf63ca6d14ca3cdf3da88f894092a5729039e6bd572f93",
     "ta-clubs-v4.js": "142d243fe45b2cb346f36469814862bcfc740fce87cfeb31bd09f4155fe184e6",
     "ta-fixture-identity.js": "85736b03e1148dcb73f907db1cb17b4b15a260bce0ddd6b76bd2b64339c4f880",

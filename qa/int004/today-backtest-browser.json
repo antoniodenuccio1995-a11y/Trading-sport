@@ -1,0 +1,34 @@
+{
+  "checks": [
+    "Actual Backtest click accepts verified future clocks today and tomorrow, excludes elapsed/equal/missing/unzoned/malformed clocks today, and leaves every historical operation exact",
+    "Backtest and Scanner resolve the single shared clock function without duplicate implementations",
+    "Actual Scanner refresh applies the same conservative clock policy to the same four eligible fixtures",
+    "All six presets execute through the actual Backtest button with current-day fixtures present",
+    "Search and complete CSV download work after current-day Backtest execution"
+  ],
+  "pageerrors": [],
+  "personalDataUsed": false,
+  "browser": "Chromium Linux HTTP",
+  "fixedTimeUTC": "2026-10-28T10:00:00Z",
+  "observedClickPrefix": "Backtest eseguito. Serie A \u00b7 Tutte le stagioni \u00b7 691 incontri selezionati.\n\n691\noperazioni\n46.3%\nfrequenza dell\u2019evento\n50.0%\nprobabilit\u00e0 implicita nella quota\n-",
+  "expectedFuture": [
+    "QA Today Manual Future",
+    "QA Today Offset Future",
+    "QA Today UTC Future",
+    "QA Tomorrow No Clock"
+  ],
+  "actualFuture": [
+    "QA Today Manual Future",
+    "QA Today Offset Future",
+    "QA Today UTC Future",
+    "QA Tomorrow No Clock"
+  ],
+  "scannerStatus": "4 gare future verificabili in archivio, 0 con dati sufficienti per il filtro scelto. Oggi vengono escluse gare con orario non verificabile. Gli orari delle fonti possono cambiare.",
+  "outcome": "PASS",
+  "testedSourceSHA256": {
+    "Trading_Analytics_v0.2U-rc5_TA-INT-004.html": "0f094350700750026e5e303cafbf9384ff494738c56cd9a56c92eff5bf2d4a4a",
+    "ta-fixture-identity.js": "85736b03e1148dcb73f907db1cb17b4b15a260bce0ddd6b76bd2b64339c4f880",
+    "ta-clubs-v4.js": "142d243fe45b2cb346f36469814862bcfc740fce87cfeb31bd09f4155fe184e6",
+    "ta-json-recovery-rc5.js": "bbd61954a47bbcf9693912abc77673bcdcfcdba3de2386d714c308cc7e3cac13"
+  }
+}

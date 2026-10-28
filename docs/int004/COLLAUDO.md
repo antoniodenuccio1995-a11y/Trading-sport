@@ -52,6 +52,7 @@ python tests/int004/public-browser.py
 python tests/int004/consultation-browser.py
 node tests/int004/packet-contract.cjs
 python tests/int004/backtest-contract.py
+python tests/int004/today-backtest-browser.py
 python tests/int004/operational-browser.py
 python tests/int004/preservation.py
 node tests/int004/check-readiness.cjs
@@ -69,6 +70,8 @@ node tests/int004/verify-private.cjs /percorso/privato/backup.json /percorso/pri
 I conteggi attesi di T8 sono specifici del backup fornito. Il verificatore controlla ogni riga tramite la lineage e ogni valore originario; non si limita al numero finale.
 
 ## Backtest operativo e alias rapidi
+
+Per la correzione urgente degli orari, caricare anche un calendario di prova con partite di oggi: un orario UTC verificabile futuro deve essere ammesso; orario trascorso, assente o privo di fuso verificabile deve restare escluso. Provare anche una gara di domani senza orario. Premere realmente **Esegui backtest** e **Aggiorna ricerca locale** nello Scanner. Consultare `CORREZIONE_ORARI_RC5.md` per la matrice sintetica riproducibile. Queste prove sono aggiuntive rispetto alla rc5 b379d6f.
 
 1. Aprire **Strategie e backtesting** e scegliere **Campionato del backtest**. Verificare le otto voci di Mercato e tutti i preset. Provare condizioni solo casa, solo trasferta e su entrambi i lati.
 2. Eseguire il Backtest con un campione pubblico importato. Verificare diagnostica, totale, pagine da 50, ricerca squadra ed export CSV: il file deve includere tutte le selezioni, anche quando è attiva una ricerca. Le quote sostitutive rimangono indicate come ipotetiche.

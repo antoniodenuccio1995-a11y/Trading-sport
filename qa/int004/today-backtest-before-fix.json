@@ -1,0 +1,10 @@
+{
+  "checks": [],
+  "pageerrors": [],
+  "personalDataUsed": false,
+  "browser": "Chromium Linux HTTP",
+  "fixedTimeUTC": "2026-10-28T10:00:00Z",
+  "observedClickPrefix": "Il backtest non \u00e8 riuscito: safeKickoffFuture is not defined. I dati non sono stati modificati.",
+  "outcome": "FAIL",
+  "baselineCommit": "b379d6f60b7bdc559b56516a15a38af6d2368041"
+}

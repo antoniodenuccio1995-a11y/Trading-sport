@@ -1152,6 +1152,10 @@ function canonicalTeamName(name,league=''){return TAClubs.resolve(name,league).n
 function canonicalMatch(r){return TAClubs.canonicalMatch(r)}
 let taProjectionRows=null,taProjectionRules='',taProjectionCache=[];
 function taStatRows(){const rules=JSON.stringify(TAClubs.rules());if(taProjectionRows!==rows||taProjectionRules!==rules){const projected=TARecovery.reconcile(rows);taProjectionCache=projected.usableRecords;for(const observed of projected.usableRecords)TAClubs.canonicalMatch(observed);window.taProjectionReport=projected.report;const note=document.getElementById('taIntegrityNotice');if(note){note.hidden=!projected.report.preservedUnresolved&&!projected.report.compatible&&!projected.report.identical;note.textContent=`Campioni: ${projected.usableRecords.length} incontri distinti. ${projected.report.compatible+projected.report.identical} copie consolidate nel conteggio; ${projected.report.preservedUnresolved} righe da verificare escluse dalle statistiche. La riconciliazione dei dati salvati si simula nell’Area tecnica.`;}taProjectionRows=rows;taProjectionRules=rules;}return taProjectionCache;}
+function safeKickoffFuture(r){
+ const time=TAFixtures.context(r).kickoffInstant;
+ return Number.isFinite(time)&&time>Date.now();
+}
 function taUpcomingRows(){const p=TARecovery.reconcile([...rows.filter(r=>r.up),...man.map(r=>({...r,up:true,o:r.o||{},manual:true}))]);window.taUpcomingIdentityReport=p.report;return p.usableRecords;}
 function canonicalManualMatch(r){
  const o={Source:'Inserimento manuale da anagrafica',ManualInputHome:r.H,ManualInputAway:r.A};
@@ -4018,11 +4022,6 @@ function addModules(){
 function eligibleFixtures(){
  const today=localTodayUtc(),hi=today+8*864e5,lg=$ta('#taScanLeague').value;
  return taUpcomingRows().filter(r=>r.d>=today&&r.d<hi&&(!lg||r.lg===lg)&&(r.d>today||safeKickoffFuture(r))).sort((a,b)=>a.d-b.d||a.lg.localeCompare(b.lg));
-}
-
-function safeKickoffFuture(r){
- const time=TAFixtures.context(r).kickoffInstant;
- return Number.isFinite(time)&&time>Date.now();
 }
 
 let scannerRows=[];

@@ -1,5 +1,7 @@
 # Trading Analytics v0.2U-rc5 — candidata TA-INT-004
 
+**Correzione urgente dopo b379d6f:** risolto l'errore `safeKickoffFuture is not defined` del Backtest quando sono presenti gare di oggi. Estrarre il nuovo ZIP in una cartella separata per conservare la candidata precedente. L'HTML mantiene lo stesso nome; i moduli applicativi adiacenti sono invariati. Il nuovo AUDIT resta necessario. [Dettagli e test](docs/int004/CORREZIONE_ORARI_RC5.md).
+
 Questa è una candidata per collaudo indipendente. Non è una versione stabile e non aggiorna automaticamente la copia che stai usando.
 
 ## Avvio su Windows
