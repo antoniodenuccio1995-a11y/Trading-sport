@@ -9,7 +9,7 @@ Due cause si combinano:
 1. Il registro non comprendeva queste equivalenze esplicite. Il ponte tra nomi del confronto di copertura dipendeva dall'archivio esistente e non costituiva un'identità comune per importazione in archivio vuoto, calendario e statistiche.
 2. Il parser dei pacchetti conservava `1. Round`, `2. Round` come valori di fase. Il builder considerava secondarie soltanto le gare con fase esattamente `regular`: le righe con un numero di giornata superavano il controllo e venivano aggiunte come presunte gare ulteriori.
 
-Una terza criticità riguardava gli archivi esistenti: l'avvio usava un indice `Map` e poteva riscrivere il database dopo il consolidamento. Il nuovo prototipo mantiene le righe salvate inalterate finché non viene confermata una riconciliazione.
+Una terza criticità riguardava gli archivi esistenti: l'avvio usava un indice `Map` e poteva riscrivere il database dopo il consolidamento. La candidata mantiene le righe salvate inalterate finché non viene confermata una riconciliazione.
 
 ## Nuovo contratto d'identità
 
@@ -37,4 +37,16 @@ La memoria conserva i record grezzi. Le viste analitiche usano una proiezione ca
 
 La procedura di riconciliazione mostra prima/dopo e gli incontri interessati, mantiene integralmente le righe non risolvibili, richiede backup e conferma e usa la transazione atomica con Undo. I risultati annullati o abbandonati esplicitamente etichettati non alimentano le statistiche.
 
-Le formule di valutazione, i voti 0–100 e le regole del registro trade restano invariati. Correggere il campione può cambiare i valori osservati; non equivale a modificare il modello. L'integrazione del Backtest operativo e degli alias semplificati resta aperta fino all'acquisizione della versione indicata dalla DIREZIONE.
+Le formule di valutazione, i voti 0–100 e le regole del registro trade restano invariati. Correggere il campione può cambiare i valori osservati; non equivale a modificare il modello. Backtest e alias rapidi sono integrati selettivamente dal pacchetto acquisito il 28 ottobre. Confronto e prove sono in `INTEGRAZIONE_OPERATIVA.md`.
+
+## Casi rappresentativi, riga per riga
+
+| Osservazione sorgente | Contesto letto | Trattamento verificato |
+|---|---|---|
+| 22/08/2025, Pescara–Cesena 1–3, `regular` | Serie B 2025/26, club documentati, stagione regolare | Incontro canonico unico |
+| 22/08/2025, Delfino Pescara–Cesena FC 1–3, `1. Round` | Gli stessi club; giornata 1, stagione regolare | Integrata nello stesso incontro; denominazioni e fonti conservate |
+| Stessa fixture sintetica, FT discordante | Identità compatibile, risultato incompatibile | Conflitto, senza sovrascrittura |
+| Due fixture sintetiche, codici diversi dello stesso provider | Eventi distinti affidabili | Due incontri anche in calendario/scanner |
+| Vera gara Championship 2024/25, `Finals, Final` | Playoff della competizione | Fra le 557 gare archiviate, fuori dalle 552 regolari |
+
+I primi due casi sono riprodotti sia sull’HTML operativo originale sia sul nuovo importatore browser. `packet-lineage.json` riporta ciascun indice dei pacchetti pubblici; nessuna riga personale viene pubblicata.

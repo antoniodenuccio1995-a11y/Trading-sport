@@ -232,7 +232,7 @@ function renderClubDiagnostics(){
  document.getElementById('taClubReadReport').onchange=async ev=>{const f=ev.target.files?.[0];ev.target.value='';if(!f)return;try{const x=JSON.parse(await f.text());if(!Array.isArray(x.clubs)||x.clubs.some(c=>!c.id||!c.name||!c.country||!Array.isArray(c.aliases)))throw Error('Rapporto anagrafico non valido');taExternalClubs=x.clubs;taRenderClubs();taStatus('Elenco squadre caricato per revisione. Nessuna partita o associazione modificata.')}catch(ex){taStatus(ex.message,true)}};
  const ruleKey=r=>TARecovery.stable([TAClubs.key(r.alias),r.country,r.provider||'',r.sourceId??null,r.scope||'alias',r.scope==='identity'?r.fromId:'']);
  async function simulateRules(additions){
-  if(!archiveReady||archiveBackupBusy||archiveTransferBusy||smartImportBusy||archiveMergePending)return;
+  if(!archiveReady||archiveBackupBusy||archiveTransferBusy||smartImportBusy||archiveMergePending)throw Error('Attendi la fine dell’operazione in corso prima di simulare.');
   if(!archiveDb||archiveMode!=='indexeddb')throw Error('Per salvare associazioni in sicurezza serve la memoria estesa IndexedDB. La copia locale precedente resta disponibile.');
   archiveBackupBusy=true;try{
   const map=new Map(TAClubs.rules().map(r=>[ruleKey(r),r]));for(const r of additions)map.set(ruleKey(r),r);const rules=[...map.values()];
@@ -243,9 +243,66 @@ function renderClubDiagnostics(){
    const report={status:'pronta',operation:'identità',inputCount:0,outputCount:0,importable:0,problematic:0,errors:[],collisions:[],changes:[],safe:true,rulesAdded:additions};
    taPending={records:[],rules,aux:taAux(),fingerprint:taFingerprint(),diskToken:TARecovery.stable(disk),report,sourceRecords:[],kind:'identità'};await taPersistReport(report);
   }else{await taPrepare(content,taSourceText?taSourceName:'Associazioni club',rules,'identità');taPending.report.rulesAdded=additions;await taPersistReport(taPending.report);}
-  taStatus('Conseguenze simulate. Esamina incontri e nomi prima/dopo nel recupero guidato, poi usa «Conferma e salva».');host.scrollIntoView({behavior:'smooth'});
+  taStatus('Conseguenze simulate. Esamina incontri e nomi prima/dopo nel recupero guidato, poi usa «Conferma e salva».');host.scrollIntoView({behavior:'smooth'});return taPending;
   }finally{archiveBackupBusy=false;renderClubDiagnostics()}
  }
+ // Flusso rapido: due nomi -> stesso club, sempre con simulazione e conferma esplicita.
+ const quick=document.createElement('div');quick.className='ta-quick-alias';quick.innerHTML=`<div class="ta-quick-head"><h4>Correggi un nome in 3 passaggi</h4><p>Scegli il nome presente negli incontri e il club corretto. Non devi conoscere codici o modificare JSON.</p></div>
+ <div class="ta-quick-grid"><label>1 · Nome da correggere<input id="taQuickFrom" list="taQuickFromOptions" autocomplete="off" placeholder="Cerca nome attuale…"><datalist id="taQuickFromOptions"></datalist></label>
+ <label>2 · È la stessa squadra di…<input id="taQuickTo" list="taQuickToOptions" autocomplete="off" placeholder="Cerca il club corretto…"><datalist id="taQuickToOptions"></datalist></label></div>
+ <p class="hint" id="taQuickExplain">Seleziona una voce completa dall’elenco. Le squadre omonime di Paesi diversi restano distinte.</p>
+ <label class="ta-quick-check"><input type="checkbox" id="taQuickConsent"> Ho verificato che entrambi i nomi indicano lo stesso club.</label>
+ <button class="p" type="button" id="taQuickSimulate">3 · Verifica e simula la correzione</button> <button type="button" id="taQuickApply" disabled>4 · Conferma e salva</button>
+ <p class="hint" id="taQuickStatus" role="status"></p><p class="hint">Dopo la simulazione, vai in <b>Recupero guidato JSON → Conferma e salva</b>. Per creare un nuovo club o separare due società, usa le opzioni avanzate più sotto.</p>`;
+ const header=clubs.querySelector('h3');header.insertAdjacentElement('afterend',quick);
+ const advanced=document.createElement('details');advanced.className='ta-quick-advanced';advanced.innerHTML='<summary>Gestione avanzata · Paese, identità, separazione di club e dati delle fonti</summary><div class="ta-quick-advanced-body"></div>';
+ const counts=document.getElementById('taClubCounts');clubs.insertBefore(advanced,counts);
+ const infoNodes=[counts,document.getElementById('taClubSearch'),document.getElementById('taClubTable'),document.getElementById('taClubEdit')];
+ // Le etichette e i comandi già presenti restano nel pannello avanzato.
+ for(const node of [...clubs.children])if(node!==header&&node!==quick&&node!==advanced&&node.nodeType===1)advanced.querySelector('div').appendChild(node);
+ function taQuickChoices(){
+  const clubs=taClubOptions();const labels=new Map();
+  const counts=new Map();for(const c of clubs){const k=c.name+' · '+c.country;counts.set(k,(counts.get(k)||0)+1)}
+  const used=new Map();for(const c of clubs){const k=c.name+' · '+c.country;const n=(used.get(k)||0)+1;used.set(k,n);const label=k+(counts.get(k)>1?' · voce '+n:'');labels.set(label,c)}
+  return labels;
+ }
+ let quickChoices=new Map(),quickPending=null;
+ function taQuickRefresh(){
+  quickChoices=taQuickChoices();
+  const options=[...quickChoices].sort(([a],[b])=>a.localeCompare(b,'it'));
+  const html=options.map(([label])=>'<option value="'+e(label)+'"></option>').join('');
+  document.getElementById('taQuickFromOptions').innerHTML=html;
+  document.getElementById('taQuickToOptions').innerHTML=html;
+ }
+ const quickStatus=text=>{document.getElementById('taQuickStatus').textContent=text;};
+ const quickDisplay=()=>{
+  const from=quickChoices.get(document.getElementById('taQuickFrom').value),to=quickChoices.get(document.getElementById('taQuickTo').value);
+  document.getElementById('taQuickExplain').textContent=from&&to?from.name+' ('+from.country+') → '+to.name+' ('+to.country+'). La simulazione confronterà gli incontri prima e dopo.':'Scegli entrambi i nomi dall’elenco che compare mentre scrivi, compreso il Paese.';
+ };
+ for(const id of ['taQuickFrom','taQuickTo'])document.getElementById(id).addEventListener('input',()=>{quickPending=null;document.getElementById('taQuickApply').disabled=true;quickDisplay()});
+ document.getElementById('taQuickConsent').addEventListener('change',()=>{quickPending=null;document.getElementById('taQuickApply').disabled=true});
+ document.getElementById('taQuickSimulate').onclick=async()=>{
+  try{
+   const from=quickChoices.get(document.getElementById('taQuickFrom').value),to=quickChoices.get(document.getElementById('taQuickTo').value);
+   if(!from||!to)throw Error('Seleziona entrambi i nomi dalle opzioni proposte, non solo digitando il testo.');
+   if(from.id===to.id)throw Error('I nomi selezionati hanno già la stessa identità: non serve unirli.');
+   if(!document.getElementById('taQuickConsent').checked)throw Error('Devi verificare e confermare che i due nomi indicano la stessa società.');
+   if(['UNSPECIFIED','INT'].includes(from.country)||['UNSPECIFIED','INT'].includes(to.country))throw Error('Paese non definito o competizione internazionale: apri Gestione avanzata e specifica il contesto prima di unire.');
+   if(from.country!==to.country)throw Error('I due club hanno Paesi diversi. Usa Gestione avanzata per verificare il contesto; nessuna fusione è stata eseguita.');
+   const alias=from.identityName||from.name;
+   const rule={alias,country:from.country,fromId:from.id,scope:'alias',provider:from.provider||null,sourceId:from.sourceId??null,targetId:to.id,targetName:to.name,targetCountry:to.country,evidence:'Conferma esplicita nell’interfaccia rapida: '+from.name+' = '+to.name,confirmedAt:new Date().toISOString()};
+   if(rule.sourceId!=null&&!rule.provider)throw Error('Questo nome contiene un ID senza provider: usa Gestione avanzata.');
+   quickStatus('Simulazione in corso…');document.getElementById('taQuickApply').disabled=true;quickPending=await simulateRules([rule]);
+   document.getElementById('taQuickApply').disabled=document.getElementById('taRecoveryConfirm').disabled;
+   quickStatus('Simulazione pronta: verifica nomi, risultati e collisioni nel pannello Backup e recupero JSON. Solo il pulsante «Conferma e salva» applica le modifiche.');
+  }catch(ex){quickStatus(ex.message||String(ex));}
+ };
+ // Popola le scelte una volta per ogni aggiornamento dell’anagrafica; non interrompere gli altri gestori.
+ document.getElementById('taQuickApply').onclick=()=>{const safe=document.getElementById('taRecoveryConfirm');if(!safe||safe.disabled||!quickPending||quickPending!==taPending){quickStatus('La simulazione non è ancora approvabile: consulta i conflitti nel Recupero guidato JSON.');return}safe.click()};
+ const oldRender=taRenderClubs;
+ taRenderClubs=function(...args){const r=oldRender(...args);taQuickRefresh();return r;};
+ taQuickRefresh();
+ const quickStyle=document.createElement('style');quickStyle.textContent='.ta-quick-alias{border:1px solid var(--ln);border-radius:12px;padding:16px;margin:12px 0;background:var(--in)} .ta-quick-head h4{margin:0 0 6px;font-size:17px} .ta-quick-head p{margin:3px 0 10px;font-size:13px;color:var(--mu)} .ta-quick-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px} .ta-quick-grid input{width:100%;min-width:0} .ta-quick-check{display:flex!important;align-items:center;gap:8px} .ta-quick-advanced{margin:16px 0;border:1px solid var(--ln);border-radius:9px;padding:10px} .ta-quick-advanced-body{padding-top:12px} @media(max-width:720px){.ta-quick-grid{grid-template-columns:1fr}}';document.head.append(quickStyle);
  document.getElementById('taClubPreview').onclick=async()=>{
   try{const alias=document.getElementById('taClubAlias').value.trim(),country=document.getElementById('taClubCountry').value.trim().toUpperCase(),evidence=document.getElementById('taClubEvidence').value.trim(),distinct=document.getElementById('taClubAction').value==='distinct';
    const target=distinct?null:taClubOptions().find(c=>c.id===document.getElementById('taClubTarget').value);if(!distinct&&!target)throw Error('Scegli il club corretto dall’elenco.');

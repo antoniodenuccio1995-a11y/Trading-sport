@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="it"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Trading Analytics v0.2U-rc5 · TA-INT-004 · Provvisoria, integrazione Backtest in attesa</title>
+<title>Trading Analytics v0.2U-rc5 · TA-INT-004 · Candidata per revisione</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&display=swap">
 <style>
@@ -901,7 +901,7 @@ body.workspace-ready #appSidebar .side-action{display:none}
 </aside>
 <main>
 <h1>Trading Analytics <small style="font-size:14px;color:var(--mu);font-weight:600">v0.2U-rc5 · TA-INT-004 · CANDIDATA</small></h1>
-<p class="note">Versione provvisoria TA-INT-004: la versione operativa del Backtest non è ancora stata integrata. Usare questo ramo soltanto per i test di identità e recupero; non sostituire la versione Windows operativa.</p>
+<p class="note">Candidata TA-INT-004 per collaudo indipendente. Conserva i backup originali e prova la candidata in un profilo separato. Rilascio stabile non approvato.</p>
 <p class="sub">Analisi dei campionati · dati separati per lega, valutazioni critiche dei mercati e calendario delle partite.</p>
 <div class="league-hero"><div><small>CONTESTO DI ANALISI</small><h2 id="currentLeagueTitle">Serie A</h2><p id="currentLeagueDesc">Seleziona una competizione nel menu laterale.</p></div><div class="league-hero-actions"><button id="heroUpdate" type="button">↻ Aggiorna risultati</button><button type="button" id="heroArchive" data-open-workspace="dati">Gestisci i file →</button><a id="heroCsvLink" href="https://www.football-data.co.uk/mmz4281/2627/I1.csv" target="_blank" rel="noopener">Apri CSV originale ↗</a></div></div>
 <p id="heroFeedback" role="status" aria-live="polite">Scegli la lega e importa i dati. L'aggiornamento diretto può essere bloccato dal browser: in quel caso usa il collegamento al CSV originale.</p>
@@ -1062,11 +1062,11 @@ body.workspace-ready #appSidebar .side-action{display:none}
 
 <div class="row"><label>Campionato<select id="lg"><option value="">Tutti</option></select></label></div></div></details></section>
 <section id="strategie"><h2>06 · Strategie e backtesting</h2><details class="workspace-drawer"><summary>Apri la configurazione della strategia</summary><div class="drawer-body">
-<div class="row"><label>Parti da una strategia pronta<select id="pr"></select></label></div>
+<div class="row"><label>Parti da una strategia pronta<select id="pr"></select></label><label>Campionato del backtest<select id="taBtLeague"><option value="">Tutte le leghe</option></select></label></div>
 <h3 class="g">Mercato e operazione</h3>
 <div class="row">
 <label>Nome<input type="text" id="nm" placeholder="Es. Over 2.5 attacchi forti"></label>
-<label>Mercato<select id="m"></select></label>
+<label>Mercato<select id="m" aria-label="Mercato della strategia"><option value="o15">Over 1.5</option><option value="o25" selected>Over 2.5</option><option value="u25">Under 2.5</option><option value="btts">Entrambe segnano (BTTS)</option><option value="ht">Over 0.5 primo tempo</option><option value="draw">Pareggio</option><option value="home">Vittoria casa</option><option value="away">Vittoria trasferta</option></select></label>
 <label>Operazione<select id="t"><option value="B">Punta (back)</option><option value="L">Banca (lay)</option></select></label>
 <label>Ultime partite<input type="number" id="n" value="10" min="3" max="40"></label>
 </div>
@@ -1378,6 +1378,7 @@ function refreshSidebar(){
  }).join('');
 }
 function onLeagueSelectionChanged(silent=false){
+ taBtLeagueSync();
  const lg=selectedLeague();saveLeaguePreference(lg);
  $('#heroFeedback').textContent=lg?'Fonte e aggiornamenti relativi a '+lg+'. Il pulsante può richiedere l’importazione manuale se il browser blocca CORS.':'Scegli una lega nel menu laterale per ottenere link e risultati specifici.';
  comparisonOptions();teams();today();
@@ -1423,50 +1424,114 @@ conds:[...document.querySelectorAll("#cd .cr")].map(d=>({s:d.querySelector(".s")
 function setState(S){$("#nm").value=S.name||"";$("#m").value=S.m;$("#t").value=S.t;$("#n").value=S.n;$("#q").value=S.q;$("#c").value=S.c;$("#h").checked=S.h;$("#cd").innerHTML="";S.conds.forEach(addC)}
 let mem=[];const gs=()=>{try{return JSON.parse(archiveReadAux("gp_strats")||"[]")}catch(x){return mem}};
 const ss=a=>{try{archiveAuxSet("gp_strats",JSON.stringify(a));mem=a;return true}catch(x){archiveUpdateStatus("Strategie non salvate: "+x.message,true);return false}};
-function drawS(){const a=gs();$("#sl").innerHTML=a.length?"<h2 style='margin-top:18px;font-size:16px'>Strategie salvate</h2>"+a.map((s,i)=>`<div class="sv"><span>${e(s.name||"Senza nome")} <small class="hint">(${MK[s.m][0]}, ${s.t=="B"?"punta":"banca"})</small></span><button data-l="${i}">Carica</button><button data-d="${i}" aria-label="Elimina">×</button></div>`).join(""):""}
+function drawS(){const a=gs();$("#sl").innerHTML=a.length?"<h2 style='margin-top:18px;font-size:16px'>Strategie salvate</h2>"+a.map((s,i)=>`<div class="sv"><span>${e(s.name||"Senza nome")} <small class="hint">(${MK[s.m]?.[0]||"Mercato non supportato"}, ${s.t=="B"?"punta":"banca"})</small></span><button data-l="${i}">Carica</button><button data-d="${i}" aria-label="Elimina">×</button></div>`).join(""):""}
 $("#sl").onclick=ev=>{const a=gs(),l=ev.target.dataset.l,d=ev.target.dataset.d;if(l!==undefined)setState(a[l]);if(d!==undefined){a.splice(d,1);if(ss(a))drawS()}};
-$("#sv").onclick=()=>{const S=state();if(!S.name){$("#nm").focus();$("#nm").placeholder="Dai un nome alla strategia";return}const a=gs().filter(x=>x.name!==S.name);a.push(S);if(!ss(a)){$("#out").textContent="Strategia non salvata: memoria non disponibile. Dati precedenti conservati.";return}drawS()};
-function odds(r,S){if(S.h&&MK[S.m][2])for(const k of MK[S.m][2]){const v=parseFloat(r.o[k]);if(v>1)return[v,true]}return[S.q,false]}
+$("#sv").onclick=()=>{const S=state();if(!MK[S.m]){$("#out").textContent="Seleziona un mercato valido prima di salvare la strategia.";$("#m").focus();return}if(!S.name){$("#nm").focus();$("#nm").placeholder="Dai un nome alla strategia";return}const a=gs().filter(x=>x.name!==S.name);a.push(S);if(!ss(a)){$("#out").textContent="Strategia non salvata: memoria non disponibile. Dati precedenti conservati.";return}drawS()};
+function odds(r,S){if(S.h&&MK[S.m][2])for(const k of MK[S.m][2]){const v=parseFloat((r.o||{})[k]);if(v>1)return[v,true]}return[S.q,false]}
 function run(S){
- const R=D().filter(r=>!r.up).sort((a,b)=>a.d-b.d),U=D().filter(r=>r.up&&r.d>=Date.now()-864e5).sort((a,b)=>a.d-b.d);
- const hist=new Map(),key=(r,home)=>[r.lg,home?r.H:r.A,home?'H':'A'].join('|');
+ // Analisi cronologica: le partite dello stesso giorno si valutano prima di inserirle nello storico.
+ const R=D().filter(r=>!r.up).sort((a,b)=>a.d-b.d);
+ const selected=$('#lg').value, period=$('#se').value, today=Math.floor(Date.now()/864e5)*864e5, day=r=>Math.floor(r.d/864e5)*864e5;
+ // Same identity/provenance/conflict rules as imports, calendars and statistics.
+ const U=taUpcomingRows().filter(r=>(!selected||r.lg===selected)&&(!period||se(r)===+period)&&r.d>=today&&(day(r)>today||safeKickoffFuture(r))).sort((a,b)=>a.d-b.d);
+ const seenHistorical=new Set();let duplicateHistorical=0;for(const r of R){const id=TAClubs.matchId(r);if(seenHistorical.has(id))duplicateHistorical++;else seenHistorical.add(id)}
+ const hist=new Map(),key=(r,home)=>[r.lg,home?r.o?.ClubHomeId||r.H:r.o?.ClubAwayId||r.A,home?'H':'A'].join('|');
  const push=(k,r)=>{if(!hist.has(k))hist.set(k,[]);hist.get(k).push(r)};
- const qual=r=>{const hh=(hist.get(key(r,true))||[]).slice(-S.n),aa=(hist.get(key(r,false))||[]).slice(-S.n);
-  if(hh.length<S.n||aa.length<S.n)return false;
-  return S.conds.every(c=>{const H=c.s==='H',g=H?hh:aa,valid=g.filter(x=>c.k!=='ht'||x.ht!==null);if(valid.length<S.n)return false;
-   const p=100*valid.filter(x=>TM[c.k][1](x,H)).length/valid.length;return c.op==='>='?p>=c.v:p<=c.v});
+ const count={historiche:R.length,periodo:0,esaminate:0,storicoInsufficiente:0,condizioni:0,datiMercato:0,qualificate:0,future:U.length,duplicatiPotenziali:duplicateHistorical};
+ const qual=r=>{
+  // Verifica solo le condizioni effettivamente richieste: una condizione casa non deve imporre storico ospite.
+  const hh=(hist.get(key(r,true))||[]).slice(-S.n),aa=(hist.get(key(r,false))||[]).slice(-S.n);
+  for(const c of S.conds){
+   const home=c.s==='H',sample=home?hh:aa;
+   if(sample.length<S.n||c.k==='ht'&&sample.some(x=>x.ht===null||x.ht===undefined))return 'storicoInsufficiente';
+   const p=100*sample.filter(x=>TM[c.k][1](x,home)).length/sample.length;
+   if(!(c.op==='>='?p>=c.v:p<=c.v))return 'condizioni';
+  }
+  return '';
  };
  const cm=1-S.c/100,bets=[];let i=0;
+ let ui=0;const next=[];
+ const evaluateFuture=limit=>{while(ui<U.length&&day(U[ui])<=limit){const f=U[ui++],reason=qual(f);if(!reason)next.push(f)}};
  while(i<R.length){
-  const date=R[i].d,group=[];while(i<R.length&&R[i].d===date)group.push(R[i++]);
-  // Nessun risultato dello stesso giorno può alimentare la selezione di un'altra gara del gruppo.
-  for(const r of group){if(qual(r)&&(!$('#se').value||se(r)===+$('#se').value)&&!(S.m==='ht'&&r.ht===null)){
+  const date=day(R[i]),group=[];while(i<R.length&&day(R[i])===date)group.push(R[i++]);
+  // Le gare programmate sono valutate usando solo i risultati anteriori alla data.
+  evaluateFuture(date);
+  for(const r of group){
+   if($('#se').value&&se(r)!==+$('#se').value){count.periodo++;continue}
+   count.esaminate++;
+   const reason=qual(r);if(reason){count[reason]++;continue}
+   if(S.m==='ht'&&(r.ht===null||r.ht===undefined)){count.datiMercato++;continue}
    const ev=MK[S.m][1](r),[q,real]=odds(r,S);let p,risk;
    if(S.t==='B'){p=ev?(q-1)*cm:-1;risk=1}else{p=ev?-(q-1):cm;risk=q-1}
-   bets.push({r,ev,q,p,risk,real});
-  }}
+   bets.push({r,ev,q,p,risk,real});count.qualificate++;
+  }
   for(const r of group){push(key(r,true),r);push(key(r,false),r)}
  }
- return {bets,next:U.filter(qual)};
+ evaluateFuture(Infinity);
+ return {bets,next,diagnostica:count};
 }
 function eq(a){const W=600,Hh=170;if(a.length<2)return"";const mn=Math.min(0,...a),mx=Math.max(0,...a),sx=i=>i*W/(a.length-1),sy=v=>Hh-8-(v-mn)/((mx-mn)||1)*(Hh-16);
 return`<svg viewBox="0 0 ${W} ${Hh}" role="img" aria-label="Andamento del profitto"><line x1="0" x2="${W}" y1="${sy(0)}" y2="${sy(0)}" stroke="var(--ln)" stroke-width="1.5" stroke-dasharray="5 4"/><polyline fill="none" stroke="var(--ac)" stroke-width="2.5" stroke-linejoin="round" points="${a.map((v,i)=>sx(i).toFixed(1)+","+sy(v).toFixed(1)).join(" ")}"/></svg>`}
 const fd=t=>new Date(t).toLocaleDateString("it-IT",{day:"2-digit",month:"2-digit",year:"2-digit",timeZone:"UTC"});
-$("#go").onclick=()=>{const S=state(),o=$("#out");
-if(!rows.length){o.innerHTML='<p class="note">Carica prima almeno un file CSV nella sezione 1.</p>';return}
-if(!S.conds.length){o.innerHTML='<p class="note">Aggiungi almeno una condizione.</p>';return}
-const{bets,next}=run(S),n=bets.length;let h="";
-if(!n)h='<p class="note">Nessuna partita storica rispetta questa strategia. Prova a rendere le condizioni meno severe o a caricare più stagioni.</p>';
-else{const hits=bets.filter(b=>b.ev).length,profit=bets.reduce((s,b)=>s+b.p,0),risk=bets.reduce((s,b)=>s+b.risk,0),roi=profit/risk*100,imp=bets.reduce((s,b)=>s+1/b.q,0)/n*100;
-let cu=0,pk=0,dd=0;const curve=[0];bets.forEach(b=>{cu+=b.p;curve.push(cu);pk=Math.max(pk,cu);dd=Math.max(dd,pk-cu)});
-const fx=bets.filter(b=>!b.real).length,cl=v=>v>=0?"pos":"neg";
-h=`<div class="st"><div><b>${n}</b><span>operazioni</span></div><div><b>${(hits/n*100).toFixed(1)}%</b><span>frequenza dell’evento</span></div><div><b>${imp.toFixed(1)}%</b><span>probabilità implicita nella quota</span></div><div><b class="${cl(profit)}">${profit>=0?"+":""}${profit.toFixed(1)}</b><span>profitto in unità di stake</span></div><div><b class="${cl(roi)}">${roi.toFixed(1)}%</b><span>ROI sul rischio</span></div><div><b>${dd.toFixed(1)}</b><span>massimo calo (drawdown)</span></div></div>`+eq(curve)+
-`<p class="hint">Stake fissa di 1 unità per operazione, commissione ipotizzata ${S.c}%.${fx?` In ${fx} operazioni è stata usata la quota fissa ${S.q.toFixed(2)}.`:""} La probabilità implicita non include commissioni né margini; un backtest storico non dimostra da solo valore atteso positivo.</p>
-<h2 style="margin-top:20px;font-size:16px">Ultime operazioni</h2><div class="w"><table><tr><th>Data</th><th>Partita</th><th>Esito</th><th>Quota</th><th>Risultato</th></tr>`+
-bets.slice(-12).reverse().map(b=>`<tr><td>${fd(b.r.d)}</td><td>${e(b.r.H)} - ${e(b.r.A)}</td><td>${b.r.h}-${b.r.a}</td><td>${b.q.toFixed(2)}</td><td class="${cl(b.p)}">${b.p>=0?"+":""}${b.p.toFixed(2)}</td></tr>`).join("")+"</table></div>"}
-h+='<h2 style="margin-top:24px;font-size:16px">Partite in programma che rispettano la strategia</h2>';
-h+=next.length?'<div class="w"><table><tr><th>Data</th><th>Campionato</th><th>Partita</th><th>Quota</th></tr>'+next.map(r=>{const[q,real]=odds(r,S);return`<tr><td>${fd(r.d)}</td><td>${e(r.lg)}</td><td>${e(r.H)} - ${e(r.A)}</td><td>${q.toFixed(2)}${real?"":" (fissa)"}</td></tr>`}).join("")+"</table></div>":'<p class="hint">Nessuna partita trovata tra gli incontri importati: il CSV fixtures di Football-Data non copre tutta la stagione. Importa il calendario aggiornato e ricontrolla.</p>';
-o.innerHTML=h};
+// Backtest consultabile: stato immediato, diagnostica, risultati completi e ricerca partita.
+let taBtLast=null,taBtPage=0;
+const taBtSize=50;
+function taBtRenderTable(){
+ const root=$('#taBtRows');if(!root||!taBtLast)return;
+ const q=($('#taBtSearch')?.value||'').trim().toLowerCase(),all=taBtLast.bets;
+ const selected=q?all.filter(b=>[b.r.lg,b.r.H,b.r.A,String(se(b.r))].some(x=>String(x).toLowerCase().includes(q))):all;
+ const max=Math.max(0,Math.ceil(selected.length/taBtSize)-1);taBtPage=Math.max(0,Math.min(max,taBtPage));
+ const subset=selected.slice(taBtPage*taBtSize,(taBtPage+1)*taBtSize);
+ root.innerHTML=subset.map(b=>`<tr><td>${fd(b.r.d)}</td><td>${e(b.r.lg)}</td><td>${se(b.r)}/${String((se(b.r)+1)%100).padStart(2,'0')}</td><td>${e(b.r.H)} – ${e(b.r.A)}</td><td>${b.r.ht===null||b.r.ht===undefined?'n.d.':e(b.r.ht)}</td><td>${b.r.h}-${b.r.a}</td><td>${b.q.toFixed(2)}${b.real?'':' *'}</td><td class="${b.p>=0?'pos':'neg'}">${b.p>=0?'+':''}${b.p.toFixed(2)}</td></tr>`).join('');
+ $('#taBtPageStatus').textContent=`${selected.length} incontri · pagina ${taBtPage+1}/${max+1}`;
+ $('#taBtPrev').disabled=taBtPage===0;$('#taBtNext').disabled=taBtPage===max;
+}
+function taBtExport(){if(!taBtLast)return;
+ const esc=x=>'"'+String(x??'').replace(/"/g,'""')+'"';
+ const cells=[['Data','Campionato','Stagione','Casa','Trasferta','HT','FT','Mercato','Quota','Quota storica','Profitto unità']];
+ for(const b of taBtLast.bets)cells.push([new Date(b.r.d).toISOString().slice(0,10),b.r.lg,se(b.r),b.r.H,b.r.A,b.r.ht??'',b.r.h+'-'+b.r.a,taBtLast.S.m,b.q,b.real?'sì':'no',b.p.toFixed(3)]);
+ const blob=new Blob(['\uFEFF'+cells.map(r=>r.map(esc).join(',')).join('\r\n')],{type:'text/csv;charset=utf-8'}),url=URL.createObjectURL(blob),a=document.createElement('a');
+ a.href=url;a.download='backtest_incontri_'+new Date().toISOString().slice(0,10)+'.csv';document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),30000);
+}
+$('#out').addEventListener('click',ev=>{if(ev.target.closest('#taBtPrev')){taBtPage--;taBtRenderTable()};if(ev.target.closest('#taBtNext')){taBtPage++;taBtRenderTable()};if(ev.target.closest('#taBtExport'))taBtExport()});
+$('#out').addEventListener('input',ev=>{if(ev.target.id==='taBtSearch'){taBtPage=0;taBtRenderTable()}});
+const btLeague=$('#taBtLeague');
+function taBtLeagueSync(){const lg=$('#lg'),selected=lg.value;btLeague.innerHTML=[...lg.options].map(o=>`<option value="${e(o.value)}">${e(o.textContent)}</option>`).join('');btLeague.value=selected;}
+btLeague.addEventListener('focus',taBtLeagueSync);
+btLeague.addEventListener('change',()=>{$('#lg').value=btLeague.value;onLeagueSelectionChanged(true)});
+$('#go').setAttribute('type','button');
+$('#go').onclick=()=>{
+ const S=state(),o=$('#out'),btn=$('#go');
+ // Mostra sempre qualcosa, anche se il calcolo non è eseguibile.
+ o.innerHTML='<p class="note" role="status">Backtest in esecuzione…</p>';o.scrollIntoView({behavior:'smooth',block:'start'});
+ btn.disabled=true;btn.textContent='Calcolo in corso…';
+ requestAnimationFrame(()=>setTimeout(()=>{
+ try{
+  if(!rows.some(r=>!r.up)){o.innerHTML='<p class="note">Non ci sono risultati storici nell’archivio. Importa prima gli incontri giocati nell’Area tecnica.</p>';return}
+  if(!S.conds.length){o.innerHTML='<p class="note">La strategia non contiene condizioni: premi «Aggiungi condizione» e riprova.</p>';return}
+  if(!Number.isFinite(S.n)||S.n<1||!Number.isFinite(S.q)||S.q<=1){o.innerHTML='<p class="note">Verifica il numero di precedenti e la quota impostata.</p>';return}
+  if(!MK[S.m])throw Error('Mercato della strategia non riconosciuto');
+  const {bets,next,diagnostica:d}=run(S),n=bets.length;
+  taBtLast={bets,S};taBtPage=0;
+  let h=`<p class="hint"><b>Backtest eseguito.</b> ${e($('#lg').value||'Tutti i campionati')} · ${e($('#se').selectedOptions[0]?.textContent||'Tutte le stagioni')} · ${n} incontri selezionati.</p>`;
+  if(d.duplicatiPotenziali)h+=`<p class="note" role="alert"><b>Attenzione ai dati:</b> ${d.duplicatiPotenziali} righe storiche condividono la stessa identità di partita con un’altra riga. I conteggi e i risultati simulati potrebbero includere duplicati. Prima di usarli per decisioni, verifica l’archivio: il backtest non cancella e non fonde incontri.</p>`;
+  if(!n)h+='<p class="note">Nessun incontro storico soddisfa tutte le condizioni. Consulta i motivi qui sotto o riduci la soglia.</p>';
+  else{
+   const hits=bets.filter(b=>b.ev).length,profit=bets.reduce((s,b)=>s+b.p,0),risk=bets.reduce((s,b)=>s+b.risk,0),roi=risk?profit/risk*100:0,imp=bets.reduce((s,b)=>s+1/b.q,0)/n*100;
+   let cu=0,pk=0,dd=0;const curve=[0];bets.forEach(b=>{cu+=b.p;curve.push(cu);pk=Math.max(pk,cu);dd=Math.max(dd,pk-cu)});
+   const fx=bets.filter(b=>!b.real).length,cl=v=>v>=0?'pos':'neg';
+   h+=`<div class="st"><div><b>${n}</b><span>operazioni</span></div><div><b>${(hits/n*100).toFixed(1)}%</b><span>frequenza dell’evento</span></div><div><b>${imp.toFixed(1)}%</b><span>probabilità implicita nella quota</span></div><div><b class="${cl(profit)}">${profit>=0?'+':''}${profit.toFixed(1)}</b><span>profitto in unità di stake</span></div><div><b class="${cl(roi)}">${roi.toFixed(1)}%</b><span>ROI sul rischio</span></div><div><b>${dd.toFixed(1)}</b><span>massimo calo (drawdown)</span></div></div>`+eq(curve)+
+   `<p class="hint">Stake fissa di 1 unità per operazione, commissione ipotizzata ${S.c}%.${fx?` In ${fx} operazioni è stata usata una quota fissa ipotetica di ${S.q.toFixed(2)}.`:''} Il profitto simulato non prova la redditività futura.</p>`;
+   h+=`<h3>Tutte le partite selezionate (${n})</h3><p class="hint">Puoi cercare una squadra o una stagione, cambiare pagina ed esportare tutte le operazioni. Le quote con * sono ipotetiche.</p><div class="row"><label>Cerca squadra, campionato o stagione<input id="taBtSearch" type="search" placeholder="Es. Monza, Serie A, 2025"></label><button type="button" id="taBtExport">↓ Esporta tutte le partite CSV</button></div><div class="w"><table><thead><tr><th>Data</th><th>Campionato</th><th>Stagione</th><th>Partita</th><th>HT</th><th>FT</th><th>Quota</th><th>Profitto</th></tr></thead><tbody id="taBtRows"></tbody></table></div><p class="row"><button type="button" id="taBtPrev">← Precedenti</button> <span id="taBtPageStatus"></span> <button type="button" id="taBtNext">Successive →</button></p>`;
+  }
+  h+=`<details open><summary>Perché alcune partite non sono state selezionate?</summary><p class="hint">Statistiche di esclusione calcolate sulle partite storiche del campionato selezionato.</p><table><tr><th>Controllo</th><th>Incontri</th></tr><tr><td>Risultati storici disponibili</td><td>${d.historiche}</td></tr><tr><td>Fuori dal periodo scelto</td><td>${d.periodo}</td></tr><tr><td>Con meno di ${S.n} precedenti utili nelle condizioni richieste (inclusi HT mancanti)</td><td>${d.storicoInsufficiente}</td></tr><tr><td>Non raggiungono le percentuali della strategia</td><td>${d.condizioni}</td></tr><tr><td>Dato necessario per il mercato mancante</td><td>${d.datiMercato}</td></tr><tr><td>Partite storiche selezionate</td><td><b>${d.qualificate}</b></td></tr></table></details>`;
+  h+='<h3 style="margin-top:24px">Partite in programma che rispettano la strategia</h3>';
+  h+=next.length?'<div class="w"><table><tr><th>Data</th><th>Campionato</th><th>Partita</th><th>Fonte</th><th>Quota</th></tr>'+next.map(r=>{const[q,real]=odds(r,S);return`<tr><td>${fd(r.d)}</td><td>${e(r.lg)}</td><td>${e(r.H)} - ${e(r.A)}</td><td>${r.manual?'Calendario manuale':'Calendario importato'}</td><td>${q.toFixed(2)}${real?'':' (ipotetica)'}</td></tr>`}).join('')+'</table></div>':`<p class="hint">Nessuna partita futura trovata fra ${d.future} incontri in calendario (compresi quelli manuali). Controlla il calendario e i precedenti richiesti.</p>`;
+  o.innerHTML=h;if(n)taBtRenderTable();
+ }catch(err){o.innerHTML='<p class="note" role="alert">Il backtest non è riuscito: '+e(err.message||String(err))+'. I dati non sono stati modificati.</p>';}
+ finally{btn.disabled=false;btn.textContent='Esegui backtest';}
+ },0));
+};
 let sortK="o25";
 function teams(){const R=D().filter(r=>!r.up).sort((a,b)=>a.d-b.d),o=$("#tt");if(!R.length){o.innerHTML='<p class="hint">Carica i dati per vedere le squadre.</p>';return}
 const last=R[R.length-1].d,v=$("#tv").value,N=+$("#tn").value||10,g={};
@@ -1489,6 +1554,7 @@ function fill(){const lg=$("#lg"),old=lg.value;
  lg.innerHTML='<option value="">Tutte le leghe</option>'+L.map(l=>`<option value="${e(l)}">${e(l)}</option>`).join("");
  const stored=readLeaguePreference();const wanted=old||stored||(taStatRows().some(r=>r.lg==='Serie A')?'Serie A':'');
  if(L.includes(wanted))lg.value=wanted;
+ taBtLeagueSync();
  $("#se").innerHTML='<option value="">Tutte le stagioni</option>'+Y.map(y=>`<option value="${y}">${y}/${String((y+1)%100).padStart(2,"0")}</option>`).join("");}
 $("#lg").onchange=()=>{onLeagueSelectionChanged()};
 const two=(k,op,v)=>[{s:"H",k,op,v},{s:"A",k,op,v}];

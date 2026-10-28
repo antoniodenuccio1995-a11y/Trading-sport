@@ -2,199 +2,199 @@ TAP version 13
 # Subtest: T1: audit pair has one match, two clubs, original names and phase evidence
 ok 1 - T1: audit pair has one match, two clubs, original names and phase evidence
   ---
-  duration_ms: 10.944627
+  duration_ms: 7.203476
   type: 'test'
   ...
 # Subtest: T2: repeated imports are idempotent
 ok 2 - T2: repeated imports are idempotent
   ---
-  duration_ms: 4.50369
+  duration_ms: 2.519855
   type: 'test'
   ...
 # Subtest: T3: conflicting FT cannot overwrite the previous record
 ok 3 - T3: conflicting FT cannot overwrite the previous record
   ---
-  duration_ms: 2.079665
+  duration_ms: 1.27842
   type: 'test'
   ...
 # Subtest: statistics and odds disagreements are conflicts; missing observations integrate
 ok 4 - statistics and odds disagreements are conflicts; missing observations integrate
   ---
-  duration_ms: 5.815888
+  duration_ms: 2.750152
   type: 'test'
   ...
 # Subtest: T4: genuinely additional playoff, playout and replay games survive
 ok 5 - T4: genuinely additional playoff, playout and replay games survive
   ---
-  duration_ms: 2.689514
+  duration_ms: 1.673234
   type: 'test'
   ...
 # Subtest: round numbers are independent of phases and multiphase rounds remain uncertain
 ok 6 - round numbers are independent of phases and multiphase rounds remain uncertain
   ---
-  duration_ms: 2.222333
+  duration_ms: 0.547252
   type: 'test'
   ...
 # Subtest: different competitions and explicit seasons never join
 ok 7 - different competitions and explicit seasons never join
   ---
-  duration_ms: 0.955018
+  duration_ms: 1.975442
   type: 'test'
   ...
 # Subtest: explicit competition codes share the canonical fixture identity
 ok 8 - explicit competition codes share the canonical fixture identity
   ---
-  duration_ms: 0.667026
+  duration_ms: 0.710066
   type: 'test'
   ...
 # Subtest: two distinct trusted events survive; an unqualified third row is ambiguous
 ok 9 - two distinct trusted events survive; an unqualified third row is ambiguous
   ---
-  duration_ms: 1.705249
+  duration_ms: 1.09824
   type: 'test'
   ...
 # Subtest: inconsistent kickoff or sporting context is reviewable rather than a second counted fixture
 ok 10 - inconsistent kickoff or sporting context is reviewable rather than a second counted fixture
   ---
-  duration_ms: 1.2696
+  duration_ms: 1.038379
   type: 'test'
   ...
 # Subtest: same trusted event with different clock observations remains identifiable and preserves both
 ok 11 - same trusted event with different clock observations remains identifiable and preserves both
   ---
-  duration_ms: 1.69486
+  duration_ms: 1.07853
   type: 'test'
   ...
 # Subtest: closed AC Cesena is not automatically the modern Cesena FC identity
 ok 12 - closed AC Cesena is not automatically the modern Cesena FC identity
   ---
-  duration_ms: 0.658129
+  duration_ms: 0.729446
   type: 'test'
   ...
 # Subtest: explicit generated alias IDs migrate with old identifiers retained, provider IDs are protected
 ok 13 - explicit generated alias IDs migrate with old identifiers retained, provider IDs are protected
   ---
-  duration_ms: 0.758435
+  duration_ms: 0.381233
   type: 'test'
   ...
 # Subtest: normalisation is stable after repeated serialization and retains FT/HT/quote values
 ok 14 - normalisation is stable after repeated serialization and retains FT/HT/quote values
   ---
-  duration_ms: 0.813973
+  duration_ms: 0.314653
   type: 'test'
   ...
 # Subtest: E: archive reconciliation retains every unresolved record unchanged and conserves coverage
 ok 15 - E: archive reconciliation retains every unresolved record unchanged and conserves coverage
   ---
-  duration_ms: 2.392935
+  duration_ms: 1.407815
   type: 'test'
   ...
 # Subtest: T5: the analysis projection excludes cancelled games and unresolved conflicts without editing raw data
 ok 16 - T5: the analysis projection excludes cancelled games and unresolved conflicts without editing raw data
   ---
-  duration_ms: 1.758415
+  duration_ms: 1.013803
   type: 'test'
   ...
 # Subtest: historical VfB Leipzig is not mapped to RB Leipzig through a shared city alias
 ok 17 - historical VfB Leipzig is not mapped to RB Leipzig through a shared city alias
   ---
-  duration_ms: 0.285331
+  duration_ms: 0.145759
   type: 'test'
   ...
 # Subtest: a prior unplayed schedule can become a played result despite a revised clock, retaining both observations
 ok 18 - a prior unplayed schedule can become a played result despite a revised clock, retaining both observations
   ---
-  duration_ms: 1.668731
+  duration_ms: 0.822706
   type: 'test'
   ...
 # Subtest: new unrelated imports do not silently consolidate or remove existing duplicate archive rows
 ok 19 - new unrelated imports do not silently consolidate or remove existing duplicate archive rows
   ---
-  duration_ms: 1.368999
+  duration_ms: 0.67885
   type: 'test'
   ...
 # Subtest: unrelated imports preserve all original fields and IDs of existing singleton records
 ok 20 - unrelated imports preserve all original fields and IDs of existing singleton records
   ---
-  duration_ms: 0.768752
+  duration_ms: 0.47944
   type: 'test'
   ...
 # Subtest: country contradictions are blocked while documented Welsh association membership remains valid
 ok 21 - country contradictions are blocked while documented Welsh association membership remains valid
   ---
-  duration_ms: 0.814871
+  duration_ms: 0.601554
   type: 'test'
   ...
 # Subtest: reused trusted event IDs with incompatible dates are reviewed instead of becoming two counted fixtures
 ok 22 - reused trusted event IDs with incompatible dates are reviewed instead of becoming two counted fixtures
   ---
-  duration_ms: 1.958791
+  duration_ms: 0.970428
   type: 'test'
   ...
 # Subtest: inconsistent club IDs from one provider are not fused by the shared display alias
 ok 23 - inconsistent club IDs from one provider are not fused by the shared display alias
   ---
-  duration_ms: 1.289256
+  duration_ms: 0.573952
   type: 'test'
   ...
 # Subtest: documented English and Italian final-stage headings stay playoffs rather than being treated as regular rounds
 ok 24 - documented English and Italian final-stage headings stay playoffs rather than being treated as regular rounds
   ---
-  duration_ms: 0.319559
+  duration_ms: 0.229755
   type: 'test'
   ...
 # Subtest: legacy generated IDs for another documented alias migrate without losing the original ID
 ok 25 - legacy generated IDs for another documented alias migrate without losing the original ID
   ---
-  duration_ms: 0.654794
+  duration_ms: 0.237948
   type: 'test'
   ...
 # Subtest: one provider ID cannot silently overwrite the documented identity of a different real club
 ok 26 - one provider ID cannot silently overwrite the documented identity of a different real club
   ---
-  duration_ms: 0.385759
+  duration_ms: 0.295293
   type: 'test'
   ...
 # Subtest: CSV source identifiers, round headers and replay context reach the shared identity engine
 ok 27 - CSV source identifiers, round headers and replay context reach the shared identity engine
   ---
-  duration_ms: 8.967908
+  duration_ms: 5.976858
   type: 'test'
   ...
 # Subtest: explicit UTC offsets identify equivalent kickoff instants while preserving both source clocks
 ok 28 - explicit UTC offsets identify equivalent kickoff instants while preserving both source clocks
   ---
-  duration_ms: 0.986716
+  duration_ms: 0.745289
   type: 'test'
   ...
 # Subtest: different known UTC instants remain a conflict even if clock text is the same
 ok 29 - different known UTC instants remain a conflict even if clock text is the same
   ---
-  duration_ms: 0.483387
+  duration_ms: 0.47303
   type: 'test'
   ...
 # Subtest: unknown competition text and malformed derived metadata do not become object-prototype identities
 ok 30 - unknown competition text and malformed derived metadata do not become object-prototype identities
   ---
-  duration_ms: 0.293263
+  duration_ms: 0.269896
   type: 'test'
   ...
 # Subtest: qualified identifiers from every original source survive merging and remain usable for future identity checks
 ok 31 - qualified identifiers from every original source survive merging and remain usable for future identity checks
   ---
-  duration_ms: 1.920696
+  duration_ms: 1.313984
   type: 'test'
   ...
 # Subtest: explicit replays or different legs are preserved when a provider qualifies its event code with that context
 ok 32 - explicit replays or different legs are preserved when a provider qualifies its event code with that context
   ---
-  duration_ms: 1.328165
+  duration_ms: 1.149267
   type: 'test'
   ...
 # Subtest: explicitly suspended or nonfinal games cannot become played statistical observations
 ok 33 - explicitly suspended or nonfinal games cannot become played statistical observations
   ---
-  duration_ms: 0.922202
+  duration_ms: 0.837187
   type: 'test'
   ...
 1..33
@@ -205,4 +205,4 @@ ok 33 - explicitly suspended or nonfinal games cannot become played statistical 
 # cancelled 0
 # skipped 0
 # todo 0
-# duration_ms 227.491216
+# duration_ms 148.434819

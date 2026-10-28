@@ -1,0 +1,58 @@
+{
+  "outcome": "PASS",
+  "operationalBaselineAcquired": true,
+  "independentAuditReportAcquired": true,
+  "operationalZipSHA256": "559e6504d5fe3d45ce4378ca91c47865f036c4ab6c3c09d708ec5960e53cb1ca",
+  "matchesIndependentlyAuditedZip": true,
+  "auditReportSHA256": "cc403b4ba681745973469ef884dddf38753ab0e91c889447a14340c4825a85b3",
+  "packageEntries": [
+    {
+      "name": "01_MANDATO/MANDATO_TA-INT-004_CODEX_2026-10-27.md",
+      "bytes": 7335,
+      "sha256": "0aecb1e34daf9ba70dd9e4152d1099fcc58603307456a6d10af7d9cb440d23e9"
+    },
+    {
+      "name": "02_AUDIT/NOTA_VERIFICA_PRELIMINARE_TA_STAB_003_RC4.md",
+      "bytes": 3890,
+      "sha256": "48d8b491b9c2cce876bce3fdcdfdb0ce17c7308e1dd5e7643feaa58bc3ca0922"
+    },
+    {
+      "name": "02_AUDIT/RISCONTRO_NUOVO_ZIP_RC4.md",
+      "bytes": 4003,
+      "sha256": "cc403b4ba681745973469ef884dddf38753ab0e91c889447a14340c4825a85b3"
+    },
+    {
+      "name": "02_AUDIT/VERIFICA_BACKTEST_RC4_2026-10-27.md",
+      "bytes": 7334,
+      "sha256": "a66ebf9893d06ef63def921df7299a31e9651add4ba5238792e7fc797d677f64"
+    },
+    {
+      "name": "03_CANDIDATE/Trading-sport-fix-ta-stab-003-recupero-copertura.zip",
+      "bytes": 3326312,
+      "sha256": "e7f404063d40a99bb568286361b298f006285deea2364e811422bdd159bcd6a2"
+    },
+    {
+      "name": "03_CANDIDATE/Trading_Analytics_rc4_BACKTEST_MERCATO_CORRETTO.zip",
+      "bytes": 3466824,
+      "sha256": "559e6504d5fe3d45ce4378ca91c47865f036c4ab6c3c09d708ec5960e53cb1ca"
+    },
+    {
+      "name": "LEGGIMI_INDICE.md",
+      "bytes": 1255,
+      "sha256": "cf28452e8d0117e62a14f54128c22a9738cf403e9a44d93883e3317de1efbfdc"
+    }
+  ],
+  "selectivePort": {
+    "Mercato": "eight original option values and preset wiring",
+    "Backtest": "single-side conditions, exclusions, pagination/search/export, click progress, league selector, original payout/commission arithmetic",
+    "Alias": "quick UI from ta-stab003-ui-FIX.js, preview and atomic confirmation, country checks and advanced options"
+  },
+  "additionalIdentityIntegration": [
+    "shared reconciled statistical projection",
+    "shared manual/imported future identities",
+    "same-day cutoff before inserting any daily result",
+    "season filter applied to future calendar",
+    "quick-alias confirmation bound to its own preview"
+  ],
+  "privateFilesCopied": false
+}

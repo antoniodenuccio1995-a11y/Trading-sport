@@ -2,181 +2,181 @@ TAP version 13
 # Subtest: ROU 2024/2025: league, season, scores
 ok 1 - ROU 2024/2025: league, season, scores
   ---
-  duration_ms: 7.841243
+  duration_ms: 4.916335
   type: 'test'
   ...
 # Subtest: ROU 2025/2026: league, season, scores
 ok 2 - ROU 2025/2026: league, season, scores
   ---
-  duration_ms: 2.011382
+  duration_ms: 0.861965
   type: 'test'
   ...
 # Subtest: DNK 2024/2025: league, season, scores
 ok 3 - DNK 2024/2025: league, season, scores
   ---
-  duration_ms: 0.82151
+  duration_ms: 0.367563
   type: 'test'
   ...
 # Subtest: DNK 2025/2026: league, season, scores
 ok 4 - DNK 2025/2026: league, season, scores
   ---
-  duration_ms: 0.897584
+  duration_ms: 0.499771
   type: 'test'
   ...
 # Subtest: P1 2024/2025: league, season, scores
 ok 5 - P1 2024/2025: league, season, scores
   ---
-  duration_ms: 1.102573
+  duration_ms: 0.413071
   type: 'test'
   ...
 # Subtest: P1 2025/2026: league, season, scores
 ok 6 - P1 2025/2026: league, season, scores
   ---
-  duration_ms: 0.892898
+  duration_ms: 0.541042
   type: 'test'
   ...
 # Subtest: SP1 2024/2025: league, season, scores
 ok 7 - SP1 2024/2025: league, season, scores
   ---
-  duration_ms: 0.686464
+  duration_ms: 0.297728
   type: 'test'
   ...
 # Subtest: SP1 2025/2026: league, season, scores
 ok 8 - SP1 2025/2026: league, season, scores
   ---
-  duration_ms: 0.90642
+  duration_ms: 0.436696
   type: 'test'
   ...
 # Subtest: SP2 2024/2025: league, season, scores
 ok 9 - SP2 2024/2025: league, season, scores
   ---
-  duration_ms: 1.049389
+  duration_ms: 0.589215
   type: 'test'
   ...
 # Subtest: SP2 2025/2026: league, season, scores
 ok 10 - SP2 2025/2026: league, season, scores
   ---
-  duration_ms: 1.236457
+  duration_ms: 0.807453
   type: 'test'
   ...
 # Subtest: F1 2024/2025: league, season, scores
 ok 11 - F1 2024/2025: league, season, scores
   ---
-  duration_ms: 1.001628
+  duration_ms: 0.318348
   type: 'test'
   ...
 # Subtest: F1 2025/2026: league, season, scores
 ok 12 - F1 2025/2026: league, season, scores
   ---
-  duration_ms: 0.702023
+  duration_ms: 0.301593
   type: 'test'
   ...
 # Subtest: F2 2024/2025: league, season, scores
 ok 13 - F2 2024/2025: league, season, scores
   ---
-  duration_ms: 0.616518
+  duration_ms: 0.204137
   type: 'test'
   ...
 # Subtest: F2 2025/2026: league, season, scores
 ok 14 - F2 2025/2026: league, season, scores
   ---
-  duration_ms: 0.537521
+  duration_ms: 0.261473
   type: 'test'
   ...
 # Subtest: N1 2024/2025: league, season, scores
 ok 15 - N1 2024/2025: league, season, scores
   ---
-  duration_ms: 0.487435
+  duration_ms: 0.363135
   type: 'test'
   ...
 # Subtest: N1 2025/2026: league, season, scores
 ok 16 - N1 2025/2026: league, season, scores
   ---
-  duration_ms: 0.579395
+  duration_ms: 0.197056
   type: 'test'
   ...
 # Subtest: normalized UTF-8 BOM, semicolon, case/aliases, quote escaping and Unicode
 ok 17 - normalized UTF-8 BOM, semicolon, case/aliases, quote escaping and Unicode
   ---
-  duration_ms: 0.841824
+  duration_ms: 0.50588
   type: 'test'
   ...
 # Subtest: manual league required when both filename and metadata are absent
 ok 18 - manual league required when both filename and metadata are absent
   ---
-  duration_ms: 1.680462
+  duration_ms: 0.633492
   type: 'test'
   ...
 # Subtest: unrecognized code is recoverable through explicit selection
 ok 19 - unrecognized code is recoverable through explicit selection
   ---
-  duration_ms: 1.723885
+  duration_ms: 1.155666
   type: 'test'
   ...
 # Subtest: recognized metadata cannot be relabelled by manual selection
 ok 20 - recognized metadata cannot be relabelled by manual selection
   ---
-  duration_ms: 2.423902
+  duration_ms: 1.368195
   type: 'test'
   ...
 # Subtest: Country disambiguates Superliga and survives cumulative season filter
 ok 21 - Country disambiguates Superliga and survives cumulative season filter
   ---
-  duration_ms: 0.537459
+  duration_ms: 0.389955
   type: 'test'
   ...
 # Subtest: invalid dates rejected without Date.UTC rollover; EU and leap dates supported
 ok 22 - invalid dates rejected without Date.UTC rollover; EU and leap dates supported
   ---
-  duration_ms: 0.448013
+  duration_ms: 0.298469
   type: 'test'
   ...
 # Subtest: partial, negative, fractional and non numeric scores never become zero
 ok 23 - partial, negative, fractional and non numeric scores never become zero
   ---
-  duration_ms: 0.560622
+  duration_ms: 0.413941
   type: 'test'
   ...
 # Subtest: missing/impossible HT is null, actual 0-0 is evidence
 ok 24 - missing/impossible HT is null, actual 0-0 is evidence
   ---
-  duration_ms: 0.601586
+  duration_ms: 0.529996
   type: 'test'
   ...
 # Subtest: date/metadata disagreement rejected; explicit season cannot invent games
 ok 25 - date/metadata disagreement rejected; explicit season cannot invent games
   ---
-  duration_ms: 1.079681
+  duration_ms: 0.994404
   type: 'test'
   ...
 # Subtest: cache and community schema remain supported
 ok 26 - cache and community schema remain supported
   ---
-  duration_ms: 1.04344
+  duration_ms: 0.677989
   type: 'test'
   ...
 # Subtest: malformed quoting, duplicate aliases and shifted columns blocked
 ok 27 - malformed quoting, duplicate aliases and shifted columns blocked
   ---
-  duration_ms: 0.748619
+  duration_ms: 0.408414
   type: 'test'
   ...
 # Subtest: filename mapping covers new leagues without guessing active sidebar
 ok 28 - filename mapping covers new leagues without guessing active sidebar
   ---
-  duration_ms: 0.192898
+  duration_ms: 0.201703
   type: 'test'
   ...
 # Subtest: exact 131-column utility header preserves scores, odds and explicit unknown-code recovery
 ok 29 - exact 131-column utility header preserves scores, odds and explicit unknown-code recovery
   ---
-  duration_ms: 3.204827
+  duration_ms: 1.741857
   type: 'test'
   ...
 # Subtest: candidate script syntax and protected baseline byte identity
 ok 30 - candidate script syntax and protected baseline byte identity
   ---
-  duration_ms: 232.748977
+  duration_ms: 165.130484
   type: 'test'
   ...
 1..30
@@ -187,4 +187,4 @@ ok 30 - candidate script syntax and protected baseline byte identity
 # cancelled 0
 # skipped 0
 # todo 0
-# duration_ms 433.720182
+# duration_ms 308.444401

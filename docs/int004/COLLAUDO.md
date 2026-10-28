@@ -1,6 +1,6 @@
-# Collaudo provvisorio TA-INT-004
+# Collaudo candidata v0.2U-rc5 TA-INT-004
 
-**Non sostituire la versione Windows operativa.** Questo ramo consente per ora di collaudare identità e archivi; l'integrazione del Backtest e degli alias semplificati è bloccata dall'assenza dei file operativi.
+**Candidata per revisione indipendente, non stabile.** Integra selettivamente la versione operativa Windows e corregge l’identità degli incontri. Conservare i vecchi file e i backup; non aggiornare automaticamente un profilo personale senza simulazione.
 
 ## Avvio isolato
 
@@ -45,13 +45,16 @@ Controllare I2_2025 (380 gare regolari), E2_2025 ed E3_2025 (conflitti aperti e 
 ## Test automatici riproducibili
 
 ```sh
-node --test tests/int004/identity.test.cjs
-node -r ./tests/int004/load-rc5.cjs --test tests/csv-import.test.cjs
+node --test --test-reporter=tap tests/int004/identity.test.cjs
+node -r ./tests/int004/load-rc5.cjs --test --test-reporter=tap tests/csv-import.test.cjs
 python tests/int004/browser.py
 python tests/int004/public-browser.py
 python tests/int004/consultation-browser.py
 node tests/int004/packet-contract.cjs
 python tests/int004/backtest-contract.py
+python tests/int004/operational-browser.py
+python tests/int004/preservation.py
+node tests/int004/check-readiness.cjs
 ```
 
 L'ultimo comando registra attualmente **FAIL**, poiché manca l'integrazione operativa. Non rimuovere quelle asserzioni per rendere verde il collaudo.
@@ -64,3 +67,13 @@ node tests/int004/verify-private.cjs /percorso/privato/backup.json /percorso/pri
 ```
 
 I conteggi attesi di T8 sono specifici del backup fornito. Il verificatore controlla ogni riga tramite la lineage e ogni valore originario; non si limita al numero finale.
+
+## Backtest operativo e alias rapidi
+
+1. Aprire **Strategie e backtesting** e scegliere **Campionato del backtest**. Verificare le otto voci di Mercato e tutti i preset. Provare condizioni solo casa, solo trasferta e su entrambi i lati.
+2. Eseguire il Backtest con un campione pubblico importato. Verificare diagnostica, totale, pagine da 50, ricerca squadra ed export CSV: il file deve includere tutte le selezioni, anche quando è attiva una ricerca. Le quote sostitutive rimangono indicate come ipotetiche.
+3. Aggiungere una partita manuale futura verificando lega e stagione. Deve entrare nella ricerca quando soddisfa la strategia, una sola volta se esiste già un calendario ufficiale compatibile. Nessun risultato dello stesso giorno o successivo deve qualificare la partita.
+4. Aprire **Gestione squadre e alias → Correggi un nome in 3 passaggi**. Su soli nomi sintetici di prova selezionare nome errato e club corretto, attestare che siano la stessa società e simulare. Prima della conferma i dati devono restare identici. Chiudere e riaprire il pannello non deve cancellare i campi.
+5. Confermare soltanto dopo aver esaminato il confronto, esportare, riaprire e provare Undo. Le associazioni fra Paesi diversi restano bloccate nel percorso rapido; le opzioni avanzate rimangono disponibili.
+
+L’AUDIT deve esaminare anche il nuovo conteggio del backup e i conflitti degli storici, separatamente dalla regressione della UI. Il file `inputs/RISCONTRO_NUOVO_ZIP_RC4.md` riguarda la vecchia candidata: non è l’approvazione di questa consegna.

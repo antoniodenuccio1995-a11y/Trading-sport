@@ -1,0 +1,1403 @@
+{
+  "checks": [
+    "Mercato exposes eight supported markets and every preset selects its original market",
+    "An obsolete saved market does not prevent rendering other strategies",
+    "Serie A: 72 independent comparisons of all markets, home/away/both conditions and two season filters",
+    "La Liga: 72 independent comparisons of all markets, home/away/both conditions and two season filters",
+    "All six actual presets match independent public oracles; original audit counts 158 HT / 98 Over 1.5 / 51 Over 2.5 retained",
+    "Contextual league selector works; original back/lay payout, commission and hypothetical-quote arithmetic are preserved",
+    "Actual Backtest click renders the complete paginated list, search, graph, exclusion diagnostics and unfiltered full CSV export",
+    "A compatible alias duplicate changes neither the public backtest selection nor its chronology",
+    "A future manual fixture excludes both later and same-day results from qualification",
+    "Simplified alias flow requires consent, previews without writes, survives panel closing, commits atomically, persists and undoes",
+    "Simplified aliases preserve the cross-country guard and advanced options"
+  ],
+  "pageerrors": [],
+  "personalDataUsed": false,
+  "publicComparisons": [
+    {
+      "league": "Serie A",
+      "sides": [
+        "H"
+      ],
+      "market": "o15",
+      "season": null,
+      "selected": 311
+    },
+    {
+      "league": "Serie A",
+      "sides": [
+        "H"
+      ],
+      "market": "o15",
+      "season": 2024,
+      "selected": 145
+    },
+    {
+      "league": "Serie A",
+      "sides": [
+        "H"
+      ],
+      "market": "o15",
+      "season": 2025,
+      "selected": 166
+    },
+    {
+      "league": "Serie A",
+      "sides": [
+        "H"
+      ],
+      "market": "o25",
+      "season": null,
+      "selected": 311
+    },
+    {
+      "league": "Serie A",
+      "sides": [
+        "H"
+      ],
+      "market": "o25",
+      "season": 2024,
+      "selected": 145
+    },
+    {
+      "league": "Serie A",
+      "sides": [
+        "H"
+      ],
+      "market": "o25",
+      "season": 2025,
+      "selected": 166
+    },
+    {
+      "league": "Serie A",
+      "sides": [
+        "H"
+      ],
+      "market": "u25",
+      "season": null,
+      "selected": 311
+    },
+    {
+      "league": "Serie A",
+      "sides": [
+        "H"
+      ],
+      "market": "u25",
+      "season": 2024,
+      "selected": 145
+    },
+    {
+      "league": "Serie A",
+      "sides": [
+        "H"
+      ],
+      "market": "u25",
+      "season": 2025,
+      "selected": 166
+    },
+    {
+      "league": "Serie A",
+      "sides": [
+        "H"
+      ],
+      "market": "btts",
+      "season": null,
+      "selected": 311
+    },
+    {
+      "league": "Serie A",
+      "sides": [
+        "H"
+      ],
+      "market": "btts",
+      "season": 2024,
+      "selected": 145
+    },
+    {
+      "league": "Serie A",
+      "sides": [
+        "H"
+      ],
+      "market": "btts",
+      "season": 2025,
+      "selected": 166
+    },
+    {
+      "league": "Serie A",
+      "sides": [
+        "H"
+      ],
+      "market": "ht",
+      "season": null,
+      "selected": 311
+    },
+    {
+      "league": "Serie A",
+      "sides": [
+        "H"
+      ],
+      "market": "ht",
+      "season": 2024,
+      "selected": 145
+    },
+    {
+      "league": "Serie A",
+      "sides": [
+        "H"
+      ],
+      "market": "ht",
+      "season": 2025,
+      "selected": 166
+    },
+    {
+      "league": "Serie A",
+      "sides": [
+        "H"
+      ],
+      "market": "draw",
+      "season": null,
+      "selected": 311
+    },
+    {
+      "league": "Serie A",
+      "sides": [
+        "H"
+      ],
+      "market": "draw",
+      "season": 2024,
+      "selected": 145
+    },
+    {
+      "league": "Serie A",
+      "sides": [
+        "H"
+      ],
+      "market": "draw",
+      "season": 2025,
+      "selected": 166
+    },
+    {
+      "league": "Serie A",
+      "sides": [
+        "H"
+      ],
+      "market": "home",
+      "season": null,
+      "selected": 311
+    },
+    {
+      "league": "Serie A",
+      "sides": [
+        "H"
+      ],
+      "market": "home",
+      "season": 2024,
+      "selected": 145
+    },
+    {
+      "league": "Serie A",
+      "sides": [
+        "H"
+      ],
+      "market": "home",
+      "season": 2025,
+      "selected": 166
+    },
+    {
+      "league": "Serie A",
+      "sides": [
+        "H"
+      ],
+      "market": "away",
+      "season": null,
+      "selected": 311
+    },
+    {
+      "league": "Serie A",
+      "sides": [
+        "H"
+      ],
+      "market": "away",
+      "season": 2024,
+      "selected": 145
+    },
+    {
+      "league": "Serie A",
+      "sides": [
+        "H"
+      ],
+      "market": "away",
+      "season": 2025,
+      "selected": 166
+    },
+    {
+      "league": "Serie A",
+      "sides": [
+        "A"
+      ],
+      "market": "o15",
+      "season": null,
+      "selected": 310
+    },
+    {
+      "league": "Serie A",
+      "sides": [
+        "A"
+      ],
+      "market": "o15",
+      "season": 2024,
+      "selected": 153
+    },
+    {
+      "league": "Serie A",
+      "sides": [
+        "A"
+      ],
+      "market": "o15",
+      "season": 2025,
+      "selected": 157
+    },
+    {
+      "league": "Serie A",
+      "sides": [
+        "A"
+      ],
+      "market": "o25",
+      "season": null,
+      "selected": 310
+    },
+    {
+      "league": "Serie A",
+      "sides": [
+        "A"
+      ],
+      "market": "o25",
+      "season": 2024,
+      "selected": 153
+    },
+    {
+      "league": "Serie A",
+      "sides": [
+        "A"
+      ],
+      "market": "o25",
+      "season": 2025,
+      "selected": 157
+    },
+    {
+      "league": "Serie A",
+      "sides": [
+        "A"
+      ],
+      "market": "u25",
+      "season": null,
+      "selected": 310
+    },
+    {
+      "league": "Serie A",
+      "sides": [
+        "A"
+      ],
+      "market": "u25",
+      "season": 2024,
+      "selected": 153
+    },
+    {
+      "league": "Serie A",
+      "sides": [
+        "A"
+      ],
+      "market": "u25",
+      "season": 2025,
+      "selected": 157
+    },
+    {
+      "league": "Serie A",
+      "sides": [
+        "A"
+      ],
+      "market": "btts",
+      "season": null,
+      "selected": 310
+    },
+    {
+      "league": "Serie A",
+      "sides": [
+        "A"
+      ],
+      "market": "btts",
+      "season": 2024,
+      "selected": 153
+    },
+    {
+      "league": "Serie A",
+      "sides": [
+        "A"
+      ],
+      "market": "btts",
+      "season": 2025,
+      "selected": 157
+    },
+    {
+      "league": "Serie A",
+      "sides": [
+        "A"
+      ],
+      "market": "ht",
+      "season": null,
+      "selected": 310
+    },
+    {
+      "league": "Serie A",
+      "sides": [
+        "A"
+      ],
+      "market": "ht",
+      "season": 2024,
+      "selected": 153
+    },
+    {
+      "league": "Serie A",
+      "sides": [
+        "A"
+      ],
+      "market": "ht",
+      "season": 2025,
+      "selected": 157
+    },
+    {
+      "league": "Serie A",
+      "sides": [
+        "A"
+      ],
+      "market": "draw",
+      "season": null,
+      "selected": 310
+    },
+    {
+      "league": "Serie A",
+      "sides": [
+        "A"
+      ],
+      "market": "draw",
+      "season": 2024,
+      "selected": 153
+    },
+    {
+      "league": "Serie A",
+      "sides": [
+        "A"
+      ],
+      "market": "draw",
+      "season": 2025,
+      "selected": 157
+    },
+    {
+      "league": "Serie A",
+      "sides": [
+        "A"
+      ],
+      "market": "home",
+      "season": null,
+      "selected": 310
+    },
+    {
+      "league": "Serie A",
+      "sides": [
+        "A"
+      ],
+      "market": "home",
+      "season": 2024,
+      "selected": 153
+    },
+    {
+      "league": "Serie A",
+      "sides": [
+        "A"
+      ],
+      "market": "home",
+      "season": 2025,
+      "selected": 157
+    },
+    {
+      "league": "Serie A",
+      "sides": [
+        "A"
+      ],
+      "market": "away",
+      "season": null,
+      "selected": 310
+    },
+    {
+      "league": "Serie A",
+      "sides": [
+        "A"
+      ],
+      "market": "away",
+      "season": 2024,
+      "selected": 153
+    },
+    {
+      "league": "Serie A",
+      "sides": [
+        "A"
+      ],
+      "market": "away",
+      "season": 2025,
+      "selected": 157
+    },
+    {
+      "league": "Serie A",
+      "sides": [
+        "H",
+        "A"
+      ],
+      "market": "o15",
+      "season": null,
+      "selected": 141
+    },
+    {
+      "league": "Serie A",
+      "sides": [
+        "H",
+        "A"
+      ],
+      "market": "o15",
+      "season": 2024,
+      "selected": 75
+    },
+    {
+      "league": "Serie A",
+      "sides": [
+        "H",
+        "A"
+      ],
+      "market": "o15",
+      "season": 2025,
+      "selected": 66
+    },
+    {
+      "league": "Serie A",
+      "sides": [
+        "H",
+        "A"
+      ],
+      "market": "o25",
+      "season": null,
+      "selected": 141
+    },
+    {
+      "league": "Serie A",
+      "sides": [
+        "H",
+        "A"
+      ],
+      "market": "o25",
+      "season": 2024,
+      "selected": 75
+    },
+    {
+      "league": "Serie A",
+      "sides": [
+        "H",
+        "A"
+      ],
+      "market": "o25",
+      "season": 2025,
+      "selected": 66
+    },
+    {
+      "league": "Serie A",
+      "sides": [
+        "H",
+        "A"
+      ],
+      "market": "u25",
+      "season": null,
+      "selected": 141
+    },
+    {
+      "league": "Serie A",
+      "sides": [
+        "H",
+        "A"
+      ],
+      "market": "u25",
+      "season": 2024,
+      "selected": 75
+    },
+    {
+      "league": "Serie A",
+      "sides": [
+        "H",
+        "A"
+      ],
+      "market": "u25",
+      "season": 2025,
+      "selected": 66
+    },
+    {
+      "league": "Serie A",
+      "sides": [
+        "H",
+        "A"
+      ],
+      "market": "btts",
+      "season": null,
+      "selected": 141
+    },
+    {
+      "league": "Serie A",
+      "sides": [
+        "H",
+        "A"
+      ],
+      "market": "btts",
+      "season": 2024,
+      "selected": 75
+    },
+    {
+      "league": "Serie A",
+      "sides": [
+        "H",
+        "A"
+      ],
+      "market": "btts",
+      "season": 2025,
+      "selected": 66
+    },
+    {
+      "league": "Serie A",
+      "sides": [
+        "H",
+        "A"
+      ],
+      "market": "ht",
+      "season": null,
+      "selected": 141
+    },
+    {
+      "league": "Serie A",
+      "sides": [
+        "H",
+        "A"
+      ],
+      "market": "ht",
+      "season": 2024,
+      "selected": 75
+    },
+    {
+      "league": "Serie A",
+      "sides": [
+        "H",
+        "A"
+      ],
+      "market": "ht",
+      "season": 2025,
+      "selected": 66
+    },
+    {
+      "league": "Serie A",
+      "sides": [
+        "H",
+        "A"
+      ],
+      "market": "draw",
+      "season": null,
+      "selected": 141
+    },
+    {
+      "league": "Serie A",
+      "sides": [
+        "H",
+        "A"
+      ],
+      "market": "draw",
+      "season": 2024,
+      "selected": 75
+    },
+    {
+      "league": "Serie A",
+      "sides": [
+        "H",
+        "A"
+      ],
+      "market": "draw",
+      "season": 2025,
+      "selected": 66
+    },
+    {
+      "league": "Serie A",
+      "sides": [
+        "H",
+        "A"
+      ],
+      "market": "home",
+      "season": null,
+      "selected": 141
+    },
+    {
+      "league": "Serie A",
+      "sides": [
+        "H",
+        "A"
+      ],
+      "market": "home",
+      "season": 2024,
+      "selected": 75
+    },
+    {
+      "league": "Serie A",
+      "sides": [
+        "H",
+        "A"
+      ],
+      "market": "home",
+      "season": 2025,
+      "selected": 66
+    },
+    {
+      "league": "Serie A",
+      "sides": [
+        "H",
+        "A"
+      ],
+      "market": "away",
+      "season": null,
+      "selected": 141
+    },
+    {
+      "league": "Serie A",
+      "sides": [
+        "H",
+        "A"
+      ],
+      "market": "away",
+      "season": 2024,
+      "selected": 75
+    },
+    {
+      "league": "Serie A",
+      "sides": [
+        "H",
+        "A"
+      ],
+      "market": "away",
+      "season": 2025,
+      "selected": 66
+    },
+    {
+      "league": "La Liga",
+      "sides": [
+        "H"
+      ],
+      "market": "o15",
+      "season": null,
+      "selected": 347
+    },
+    {
+      "league": "La Liga",
+      "sides": [
+        "H"
+      ],
+      "market": "o15",
+      "season": 2024,
+      "selected": 162
+    },
+    {
+      "league": "La Liga",
+      "sides": [
+        "H"
+      ],
+      "market": "o15",
+      "season": 2025,
+      "selected": 185
+    },
+    {
+      "league": "La Liga",
+      "sides": [
+        "H"
+      ],
+      "market": "o25",
+      "season": null,
+      "selected": 347
+    },
+    {
+      "league": "La Liga",
+      "sides": [
+        "H"
+      ],
+      "market": "o25",
+      "season": 2024,
+      "selected": 162
+    },
+    {
+      "league": "La Liga",
+      "sides": [
+        "H"
+      ],
+      "market": "o25",
+      "season": 2025,
+      "selected": 185
+    },
+    {
+      "league": "La Liga",
+      "sides": [
+        "H"
+      ],
+      "market": "u25",
+      "season": null,
+      "selected": 347
+    },
+    {
+      "league": "La Liga",
+      "sides": [
+        "H"
+      ],
+      "market": "u25",
+      "season": 2024,
+      "selected": 162
+    },
+    {
+      "league": "La Liga",
+      "sides": [
+        "H"
+      ],
+      "market": "u25",
+      "season": 2025,
+      "selected": 185
+    },
+    {
+      "league": "La Liga",
+      "sides": [
+        "H"
+      ],
+      "market": "btts",
+      "season": null,
+      "selected": 347
+    },
+    {
+      "league": "La Liga",
+      "sides": [
+        "H"
+      ],
+      "market": "btts",
+      "season": 2024,
+      "selected": 162
+    },
+    {
+      "league": "La Liga",
+      "sides": [
+        "H"
+      ],
+      "market": "btts",
+      "season": 2025,
+      "selected": 185
+    },
+    {
+      "league": "La Liga",
+      "sides": [
+        "H"
+      ],
+      "market": "ht",
+      "season": null,
+      "selected": 347
+    },
+    {
+      "league": "La Liga",
+      "sides": [
+        "H"
+      ],
+      "market": "ht",
+      "season": 2024,
+      "selected": 162
+    },
+    {
+      "league": "La Liga",
+      "sides": [
+        "H"
+      ],
+      "market": "ht",
+      "season": 2025,
+      "selected": 185
+    },
+    {
+      "league": "La Liga",
+      "sides": [
+        "H"
+      ],
+      "market": "draw",
+      "season": null,
+      "selected": 347
+    },
+    {
+      "league": "La Liga",
+      "sides": [
+        "H"
+      ],
+      "market": "draw",
+      "season": 2024,
+      "selected": 162
+    },
+    {
+      "league": "La Liga",
+      "sides": [
+        "H"
+      ],
+      "market": "draw",
+      "season": 2025,
+      "selected": 185
+    },
+    {
+      "league": "La Liga",
+      "sides": [
+        "H"
+      ],
+      "market": "home",
+      "season": null,
+      "selected": 347
+    },
+    {
+      "league": "La Liga",
+      "sides": [
+        "H"
+      ],
+      "market": "home",
+      "season": 2024,
+      "selected": 162
+    },
+    {
+      "league": "La Liga",
+      "sides": [
+        "H"
+      ],
+      "market": "home",
+      "season": 2025,
+      "selected": 185
+    },
+    {
+      "league": "La Liga",
+      "sides": [
+        "H"
+      ],
+      "market": "away",
+      "season": null,
+      "selected": 347
+    },
+    {
+      "league": "La Liga",
+      "sides": [
+        "H"
+      ],
+      "market": "away",
+      "season": 2024,
+      "selected": 162
+    },
+    {
+      "league": "La Liga",
+      "sides": [
+        "H"
+      ],
+      "market": "away",
+      "season": 2025,
+      "selected": 185
+    },
+    {
+      "league": "La Liga",
+      "sides": [
+        "A"
+      ],
+      "market": "o15",
+      "season": null,
+      "selected": 348
+    },
+    {
+      "league": "La Liga",
+      "sides": [
+        "A"
+      ],
+      "market": "o15",
+      "season": 2024,
+      "selected": 157
+    },
+    {
+      "league": "La Liga",
+      "sides": [
+        "A"
+      ],
+      "market": "o15",
+      "season": 2025,
+      "selected": 191
+    },
+    {
+      "league": "La Liga",
+      "sides": [
+        "A"
+      ],
+      "market": "o25",
+      "season": null,
+      "selected": 348
+    },
+    {
+      "league": "La Liga",
+      "sides": [
+        "A"
+      ],
+      "market": "o25",
+      "season": 2024,
+      "selected": 157
+    },
+    {
+      "league": "La Liga",
+      "sides": [
+        "A"
+      ],
+      "market": "o25",
+      "season": 2025,
+      "selected": 191
+    },
+    {
+      "league": "La Liga",
+      "sides": [
+        "A"
+      ],
+      "market": "u25",
+      "season": null,
+      "selected": 348
+    },
+    {
+      "league": "La Liga",
+      "sides": [
+        "A"
+      ],
+      "market": "u25",
+      "season": 2024,
+      "selected": 157
+    },
+    {
+      "league": "La Liga",
+      "sides": [
+        "A"
+      ],
+      "market": "u25",
+      "season": 2025,
+      "selected": 191
+    },
+    {
+      "league": "La Liga",
+      "sides": [
+        "A"
+      ],
+      "market": "btts",
+      "season": null,
+      "selected": 348
+    },
+    {
+      "league": "La Liga",
+      "sides": [
+        "A"
+      ],
+      "market": "btts",
+      "season": 2024,
+      "selected": 157
+    },
+    {
+      "league": "La Liga",
+      "sides": [
+        "A"
+      ],
+      "market": "btts",
+      "season": 2025,
+      "selected": 191
+    },
+    {
+      "league": "La Liga",
+      "sides": [
+        "A"
+      ],
+      "market": "ht",
+      "season": null,
+      "selected": 348
+    },
+    {
+      "league": "La Liga",
+      "sides": [
+        "A"
+      ],
+      "market": "ht",
+      "season": 2024,
+      "selected": 157
+    },
+    {
+      "league": "La Liga",
+      "sides": [
+        "A"
+      ],
+      "market": "ht",
+      "season": 2025,
+      "selected": 191
+    },
+    {
+      "league": "La Liga",
+      "sides": [
+        "A"
+      ],
+      "market": "draw",
+      "season": null,
+      "selected": 348
+    },
+    {
+      "league": "La Liga",
+      "sides": [
+        "A"
+      ],
+      "market": "draw",
+      "season": 2024,
+      "selected": 157
+    },
+    {
+      "league": "La Liga",
+      "sides": [
+        "A"
+      ],
+      "market": "draw",
+      "season": 2025,
+      "selected": 191
+    },
+    {
+      "league": "La Liga",
+      "sides": [
+        "A"
+      ],
+      "market": "home",
+      "season": null,
+      "selected": 348
+    },
+    {
+      "league": "La Liga",
+      "sides": [
+        "A"
+      ],
+      "market": "home",
+      "season": 2024,
+      "selected": 157
+    },
+    {
+      "league": "La Liga",
+      "sides": [
+        "A"
+      ],
+      "market": "home",
+      "season": 2025,
+      "selected": 191
+    },
+    {
+      "league": "La Liga",
+      "sides": [
+        "A"
+      ],
+      "market": "away",
+      "season": null,
+      "selected": 348
+    },
+    {
+      "league": "La Liga",
+      "sides": [
+        "A"
+      ],
+      "market": "away",
+      "season": 2024,
+      "selected": 157
+    },
+    {
+      "league": "La Liga",
+      "sides": [
+        "A"
+      ],
+      "market": "away",
+      "season": 2025,
+      "selected": 191
+    },
+    {
+      "league": "La Liga",
+      "sides": [
+        "H",
+        "A"
+      ],
+      "market": "o15",
+      "season": null,
+      "selected": 164
+    },
+    {
+      "league": "La Liga",
+      "sides": [
+        "H",
+        "A"
+      ],
+      "market": "o15",
+      "season": 2024,
+      "selected": 74
+    },
+    {
+      "league": "La Liga",
+      "sides": [
+        "H",
+        "A"
+      ],
+      "market": "o15",
+      "season": 2025,
+      "selected": 90
+    },
+    {
+      "league": "La Liga",
+      "sides": [
+        "H",
+        "A"
+      ],
+      "market": "o25",
+      "season": null,
+      "selected": 164
+    },
+    {
+      "league": "La Liga",
+      "sides": [
+        "H",
+        "A"
+      ],
+      "market": "o25",
+      "season": 2024,
+      "selected": 74
+    },
+    {
+      "league": "La Liga",
+      "sides": [
+        "H",
+        "A"
+      ],
+      "market": "o25",
+      "season": 2025,
+      "selected": 90
+    },
+    {
+      "league": "La Liga",
+      "sides": [
+        "H",
+        "A"
+      ],
+      "market": "u25",
+      "season": null,
+      "selected": 164
+    },
+    {
+      "league": "La Liga",
+      "sides": [
+        "H",
+        "A"
+      ],
+      "market": "u25",
+      "season": 2024,
+      "selected": 74
+    },
+    {
+      "league": "La Liga",
+      "sides": [
+        "H",
+        "A"
+      ],
+      "market": "u25",
+      "season": 2025,
+      "selected": 90
+    },
+    {
+      "league": "La Liga",
+      "sides": [
+        "H",
+        "A"
+      ],
+      "market": "btts",
+      "season": null,
+      "selected": 164
+    },
+    {
+      "league": "La Liga",
+      "sides": [
+        "H",
+        "A"
+      ],
+      "market": "btts",
+      "season": 2024,
+      "selected": 74
+    },
+    {
+      "league": "La Liga",
+      "sides": [
+        "H",
+        "A"
+      ],
+      "market": "btts",
+      "season": 2025,
+      "selected": 90
+    },
+    {
+      "league": "La Liga",
+      "sides": [
+        "H",
+        "A"
+      ],
+      "market": "ht",
+      "season": null,
+      "selected": 164
+    },
+    {
+      "league": "La Liga",
+      "sides": [
+        "H",
+        "A"
+      ],
+      "market": "ht",
+      "season": 2024,
+      "selected": 74
+    },
+    {
+      "league": "La Liga",
+      "sides": [
+        "H",
+        "A"
+      ],
+      "market": "ht",
+      "season": 2025,
+      "selected": 90
+    },
+    {
+      "league": "La Liga",
+      "sides": [
+        "H",
+        "A"
+      ],
+      "market": "draw",
+      "season": null,
+      "selected": 164
+    },
+    {
+      "league": "La Liga",
+      "sides": [
+        "H",
+        "A"
+      ],
+      "market": "draw",
+      "season": 2024,
+      "selected": 74
+    },
+    {
+      "league": "La Liga",
+      "sides": [
+        "H",
+        "A"
+      ],
+      "market": "draw",
+      "season": 2025,
+      "selected": 90
+    },
+    {
+      "league": "La Liga",
+      "sides": [
+        "H",
+        "A"
+      ],
+      "market": "home",
+      "season": null,
+      "selected": 164
+    },
+    {
+      "league": "La Liga",
+      "sides": [
+        "H",
+        "A"
+      ],
+      "market": "home",
+      "season": 2024,
+      "selected": 74
+    },
+    {
+      "league": "La Liga",
+      "sides": [
+        "H",
+        "A"
+      ],
+      "market": "home",
+      "season": 2025,
+      "selected": 90
+    },
+    {
+      "league": "La Liga",
+      "sides": [
+        "H",
+        "A"
+      ],
+      "market": "away",
+      "season": null,
+      "selected": 164
+    },
+    {
+      "league": "La Liga",
+      "sides": [
+        "H",
+        "A"
+      ],
+      "market": "away",
+      "season": 2024,
+      "selected": 74
+    },
+    {
+      "league": "La Liga",
+      "sides": [
+        "H",
+        "A"
+      ],
+      "market": "away",
+      "season": 2025,
+      "selected": 90
+    }
+  ],
+  "presetComparisons": [
+    {
+      "name": "Over 0.5 primo tempo, entrambe \u2265 70%",
+      "selected": 158
+    },
+    {
+      "name": "Over 1.5, entrambe \u2265 75%",
+      "selected": 98
+    },
+    {
+      "name": "Over 2.5, entrambe \u2265 60%",
+      "selected": 51
+    },
+    {
+      "name": "Entrambe segnano, entrambe \u2265 65%",
+      "selected": 15
+    },
+    {
+      "name": "Under 2.5, Over 2.5 \u2264 35%",
+      "selected": 29
+    },
+    {
+      "name": "Lay the draw, pareggi \u2264 22%",
+      "selected": 101
+    }
+  ],
+  "outcome": "PASS",
+  "testedSourceSHA256": {
+    "Trading_Analytics_v0.2U-rc5_TA-INT-004.html": "bc18319f497762c32f46d0b2aa77804a954664c9d43392146de4ebc7876a7a24",
+    "ta-club-aliases-int004.js": "105b36aecfa02a502daf63ca6d14ca3cdf3da88f894092a5729039e6bd572f93",
+    "ta-clubs-v4.js": "142d243fe45b2cb346f36469814862bcfc740fce87cfeb31bd09f4155fe184e6",
+    "ta-fixture-identity.js": "85736b03e1148dcb73f907db1cb17b4b15a260bce0ddd6b76bd2b64339c4f880",
+    "ta-json-recovery-rc5.js": "bbd61954a47bbcf9693912abc77673bcdcfcdba3de2386d714c308cc7e3cac13",
+    "ta-csv-import-v02U-rc5.js": "1ca10996342701032416f6edc55e41bb2bffd490fb6b2500aa2fa621ee6bd51c",
+    "ta-history-coverage-rc5.js": "d63661147d2860b80bc98257a15e605b72d2516d5555fecfd1ab4c76fb62f023",
+    "ta-history-manifest-rc5.js": "5ce65d2c5f76fb5340fa39f35ea7b5d619248625d49e873edbfa6966230eaf1c",
+    "ta-int004-ui.js": "4af380a6e856b81b4ebc2309eb92c21cf538a9fdda0a2c1897424a8365ea1223",
+    "ta-int004-area.js": "3051dce94bb8b304eec68f5b9e9c3477bfb0f178e66bc80a6424f80f99538d2f",
+    "ta-int004-app.js": "34fd5b9ef4392e85e3c7ea6ac3d765ba438ab961ce871cc527defcd1e9440697"
+  }
+}

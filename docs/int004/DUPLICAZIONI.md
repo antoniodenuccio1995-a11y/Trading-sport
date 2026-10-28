@@ -1,6 +1,6 @@
 # Duplicazioni e matrici rivalutate
 
-Tutti i 138 pacchetti rc4 sono stati letti e verificati contro i rispettivi checksum. Gli originali in `histories/stab003` sono conservati. I pacchetti provvisori stanno in `histories/int004`; ciascuno dichiara lo SHA-256 originale e affianca un file `.review.json` con le righe non importabili automaticamente.
+Tutti i 138 pacchetti rc4 sono stati letti e verificati contro i rispettivi checksum. Gli originali in `histories/stab003` sono conservati. I pacchetti riconciliati stanno in `histories/int004`; ciascuno dichiara lo SHA-256 originale e affianca un file `.review.json` con le righe non importabili automaticamente.
 
 ## Esame completo dei pacchetti
 
