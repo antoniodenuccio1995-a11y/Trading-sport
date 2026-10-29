@@ -1,0 +1,20 @@
+{
+  "checks": [
+    "A: two genuinely distinct trusted events remain two in daily calendar, upcoming board and scanner",
+    "A/B: one official fixture and a manual alias copy appear once across future consultations",
+    "A/F: scanner uses the shared explicit UTC kickoff for a verified future fixture today",
+    "F: halftime frequency uses two known observations, not a missing HT as a third negative result",
+    "F: absent halftime observations display unavailable instead of an invented 0%"
+  ],
+  "pageerrors": [],
+  "personalDataUsed": false,
+  "consoleErrors": [],
+  "networkMode": "isolated: optional font CSS empty; automatic live refresh postponed via existing cache timestamps in test profiles only",
+  "outcome": "PASS",
+  "testedSourceSHA256": {
+    "Trading_Analytics_v0.2U-rc5_TA-INT-004.html": "0f094350700750026e5e303cafbf9384ff494738c56cd9a56c92eff5bf2d4a4a",
+    "ta-fixture-identity.js": "b5c0130a4ce59ed11f5b135cf7e8119527e61d37e5860ad53bd7bba70ddf9cf7",
+    "ta-clubs-v4.js": "142d243fe45b2cb346f36469814862bcfc740fce87cfeb31bd09f4155fe184e6",
+    "ta-json-recovery-rc5.js": "0152204d53df15307c59647bb8f4671ee5ac9d503700b8d79d93498d005e1384"
+  }
+}

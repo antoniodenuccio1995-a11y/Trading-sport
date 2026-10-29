@@ -1,0 +1,2362 @@
+{
+  "originalPacket": "histories/stab003/I2_2025.json",
+  "originalSHA256": "136107a935ef889461a43db8319eecd1cddbcf1d017d8da04eb55f46d607f32c",
+  "review": [
+    {
+      "originalIndex": 474,
+      "reason": "riferimento_secondario_regolare_non_riconciliato_per_data",
+      "record": {
+        "d": 1761696000000,
+        "lg": "Serie B",
+        "H": "Juve Stabia",
+        "A": "SSC Bari",
+        "h": 0,
+        "a": 0,
+        "ht": null,
+        "up": false,
+        "o": {
+          "Phase": "10. Round",
+          "HomeCountry": "ITA",
+          "AwayCountry": "ITA",
+          "PublishedRound": "10. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/italy/master/2025-26/2-serieb.txt",
+              "sha256": "252e858b3e1745b6d149db73f6e6cb98c7576e41ea6e7111ad706ddf92e881fb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 563,
+      "reason": "riferimento_secondario_regolare_non_riconciliato_per_data",
+      "record": {
+        "d": 1768003200000,
+        "lg": "Serie B",
+        "H": "Mantova 1911 SSD",
+        "A": "Palermo FC",
+        "h": 1,
+        "a": 1,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "19. Round",
+          "HomeCountry": "ITA",
+          "AwayCountry": "ITA",
+          "PublishedRound": "19. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/italy/master/2025-26/2-serieb.txt",
+              "sha256": "252e858b3e1745b6d149db73f6e6cb98c7576e41ea6e7111ad706ddf92e881fb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 564,
+      "reason": "riferimento_secondario_regolare_non_riconciliato_per_data",
+      "record": {
+        "d": 1768003200000,
+        "lg": "Serie B",
+        "H": "Calcio Padova",
+        "A": "Modena FC",
+        "h": 2,
+        "a": 0,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "19. Round",
+          "HomeCountry": "ITA",
+          "AwayCountry": "ITA",
+          "PublishedRound": "19. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/italy/master/2025-26/2-serieb.txt",
+              "sha256": "252e858b3e1745b6d149db73f6e6cb98c7576e41ea6e7111ad706ddf92e881fb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 572,
+      "reason": "riferimento_secondario_regolare_non_riconciliato_per_data",
+      "record": {
+        "d": 1768608000000,
+        "lg": "Serie B",
+        "H": "Palermo FC",
+        "A": "Spezia Calcio",
+        "h": 1,
+        "a": 0,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "20. Round",
+          "HomeCountry": "ITA",
+          "AwayCountry": "ITA",
+          "PublishedRound": "20. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/italy/master/2025-26/2-serieb.txt",
+              "sha256": "252e858b3e1745b6d149db73f6e6cb98c7576e41ea6e7111ad706ddf92e881fb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 573,
+      "reason": "riferimento_secondario_regolare_non_riconciliato_per_data",
+      "record": {
+        "d": 1768608000000,
+        "lg": "Serie B",
+        "H": "Delfino Pescara",
+        "A": "Modena FC",
+        "h": 0,
+        "a": 2,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "Phase": "20. Round",
+          "HomeCountry": "ITA",
+          "AwayCountry": "ITA",
+          "PublishedRound": "20. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/italy/master/2025-26/2-serieb.txt",
+              "sha256": "252e858b3e1745b6d149db73f6e6cb98c7576e41ea6e7111ad706ddf92e881fb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 2,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 575,
+      "reason": "riferimento_secondario_regolare_non_riconciliato_per_data",
+      "record": {
+        "d": 1768608000000,
+        "lg": "Serie B",
+        "H": "Sampdoria",
+        "A": "Virtus Entella",
+        "h": 1,
+        "a": 1,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "20. Round",
+          "HomeCountry": "ITA",
+          "AwayCountry": "ITA",
+          "PublishedRound": "20. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/italy/master/2025-26/2-serieb.txt",
+              "sha256": "252e858b3e1745b6d149db73f6e6cb98c7576e41ea6e7111ad706ddf92e881fb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 577,
+      "reason": "riferimento_secondario_regolare_non_riconciliato_per_data",
+      "record": {
+        "d": 1769212800000,
+        "lg": "Serie B",
+        "H": "Carrarese Calcio",
+        "A": "Empoli FC",
+        "h": 3,
+        "a": 0,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "21. Round",
+          "HomeCountry": "ITA",
+          "AwayCountry": "ITA",
+          "PublishedRound": "21. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/italy/master/2025-26/2-serieb.txt",
+              "sha256": "252e858b3e1745b6d149db73f6e6cb98c7576e41ea6e7111ad706ddf92e881fb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 578,
+      "reason": "riferimento_secondario_regolare_non_riconciliato_per_data",
+      "record": {
+        "d": 1769212800000,
+        "lg": "Serie B",
+        "H": "US Catanzaro",
+        "A": "Sampdoria",
+        "h": 0,
+        "a": 0,
+        "ht": null,
+        "up": false,
+        "o": {
+          "Phase": "21. Round",
+          "HomeCountry": "ITA",
+          "AwayCountry": "ITA",
+          "PublishedRound": "21. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/italy/master/2025-26/2-serieb.txt",
+              "sha256": "252e858b3e1745b6d149db73f6e6cb98c7576e41ea6e7111ad706ddf92e881fb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 585,
+      "reason": "riferimento_secondario_regolare_non_riconciliato_per_data",
+      "record": {
+        "d": 1769212800000,
+        "lg": "Serie B",
+        "H": "FC Südtirol",
+        "A": "Calcio Padova",
+        "h": 3,
+        "a": 0,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "Phase": "21. Round",
+          "HomeCountry": "ITA",
+          "AwayCountry": "ITA",
+          "PublishedRound": "21. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/italy/master/2025-26/2-serieb.txt",
+              "sha256": "252e858b3e1745b6d149db73f6e6cb98c7576e41ea6e7111ad706ddf92e881fb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 2,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 587,
+      "reason": "riferimento_secondario_regolare_non_riconciliato_per_data",
+      "record": {
+        "d": 1769817600000,
+        "lg": "Serie B",
+        "H": "SSC Bari",
+        "A": "Palermo FC",
+        "h": 0,
+        "a": 3,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "Phase": "22. Round",
+          "HomeCountry": "ITA",
+          "AwayCountry": "ITA",
+          "PublishedRound": "22. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/italy/master/2025-26/2-serieb.txt",
+              "sha256": "252e858b3e1745b6d149db73f6e6cb98c7576e41ea6e7111ad706ddf92e881fb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 590,
+      "reason": "riferimento_secondario_regolare_non_riconciliato_per_data",
+      "record": {
+        "d": 1769817600000,
+        "lg": "Serie B",
+        "H": "Calcio Padova",
+        "A": "AC Monza",
+        "h": 1,
+        "a": 2,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "Phase": "22. Round",
+          "HomeCountry": "ITA",
+          "AwayCountry": "ITA",
+          "PublishedRound": "22. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/italy/master/2025-26/2-serieb.txt",
+              "sha256": "252e858b3e1745b6d149db73f6e6cb98c7576e41ea6e7111ad706ddf92e881fb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 592,
+      "reason": "riferimento_secondario_regolare_non_riconciliato_per_data",
+      "record": {
+        "d": 1769817600000,
+        "lg": "Serie B",
+        "H": "AC Reggiana 1919",
+        "A": "Juve Stabia",
+        "h": 1,
+        "a": 1,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "Phase": "22. Round",
+          "HomeCountry": "ITA",
+          "AwayCountry": "ITA",
+          "PublishedRound": "22. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/italy/master/2025-26/2-serieb.txt",
+              "sha256": "252e858b3e1745b6d149db73f6e6cb98c7576e41ea6e7111ad706ddf92e881fb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 598,
+      "reason": "riferimento_secondario_regolare_non_riconciliato_per_data",
+      "record": {
+        "d": 1770422400000,
+        "lg": "Serie B",
+        "H": "Cesena FC",
+        "A": "Delfino Pescara",
+        "h": 2,
+        "a": 0,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "23. Round",
+          "HomeCountry": "ITA",
+          "AwayCountry": "ITA",
+          "PublishedRound": "23. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/italy/master/2025-26/2-serieb.txt",
+              "sha256": "252e858b3e1745b6d149db73f6e6cb98c7576e41ea6e7111ad706ddf92e881fb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 603,
+      "reason": "riferimento_secondario_regolare_non_riconciliato_per_data",
+      "record": {
+        "d": 1770422400000,
+        "lg": "Serie B",
+        "H": "AC Monza",
+        "A": "US Avellino",
+        "h": 2,
+        "a": 1,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "Phase": "23. Round",
+          "HomeCountry": "ITA",
+          "AwayCountry": "ITA",
+          "PublishedRound": "23. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/italy/master/2025-26/2-serieb.txt",
+              "sha256": "252e858b3e1745b6d149db73f6e6cb98c7576e41ea6e7111ad706ddf92e881fb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 606,
+      "reason": "riferimento_secondario_regolare_non_riconciliato_per_data",
+      "record": {
+        "d": 1770681600000,
+        "lg": "Serie B",
+        "H": "US Avellino",
+        "A": "Frosinone Calcio",
+        "h": 1,
+        "a": 3,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "Phase": "24. Round",
+          "HomeCountry": "ITA",
+          "AwayCountry": "ITA",
+          "PublishedRound": "24. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/italy/master/2025-26/2-serieb.txt",
+              "sha256": "252e858b3e1745b6d149db73f6e6cb98c7576e41ea6e7111ad706ddf92e881fb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 2,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 607,
+      "reason": "riferimento_secondario_regolare_non_riconciliato_per_data",
+      "record": {
+        "d": 1770681600000,
+        "lg": "Serie B",
+        "H": "SSC Bari",
+        "A": "Spezia Calcio",
+        "h": 0,
+        "a": 0,
+        "ht": null,
+        "up": false,
+        "o": {
+          "Phase": "24. Round",
+          "HomeCountry": "ITA",
+          "AwayCountry": "ITA",
+          "PublishedRound": "24. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/italy/master/2025-26/2-serieb.txt",
+              "sha256": "252e858b3e1745b6d149db73f6e6cb98c7576e41ea6e7111ad706ddf92e881fb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 608,
+      "reason": "riferimento_secondario_regolare_non_riconciliato_per_data",
+      "record": {
+        "d": 1770681600000,
+        "lg": "Serie B",
+        "H": "Empoli FC",
+        "A": "Juve Stabia",
+        "h": 1,
+        "a": 2,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "24. Round",
+          "HomeCountry": "ITA",
+          "AwayCountry": "ITA",
+          "PublishedRound": "24. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/italy/master/2025-26/2-serieb.txt",
+              "sha256": "252e858b3e1745b6d149db73f6e6cb98c7576e41ea6e7111ad706ddf92e881fb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 614,
+      "reason": "riferimento_secondario_regolare_non_riconciliato_per_data",
+      "record": {
+        "d": 1770681600000,
+        "lg": "Serie B",
+        "H": "FC Südtirol",
+        "A": "AC Monza",
+        "h": 0,
+        "a": 0,
+        "ht": null,
+        "up": false,
+        "o": {
+          "Phase": "24. Round",
+          "HomeCountry": "ITA",
+          "AwayCountry": "ITA",
+          "PublishedRound": "24. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/italy/master/2025-26/2-serieb.txt",
+              "sha256": "252e858b3e1745b6d149db73f6e6cb98c7576e41ea6e7111ad706ddf92e881fb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 616,
+      "reason": "riferimento_secondario_regolare_non_riconciliato_per_data",
+      "record": {
+        "d": 1771027200000,
+        "lg": "Serie B",
+        "H": "US Avellino",
+        "A": "Delfino Pescara",
+        "h": 0,
+        "a": 1,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "Phase": "25. Round",
+          "HomeCountry": "ITA",
+          "AwayCountry": "ITA",
+          "PublishedRound": "25. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/italy/master/2025-26/2-serieb.txt",
+              "sha256": "252e858b3e1745b6d149db73f6e6cb98c7576e41ea6e7111ad706ddf92e881fb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 617,
+      "reason": "riferimento_secondario_regolare_non_riconciliato_per_data",
+      "record": {
+        "d": 1771027200000,
+        "lg": "Serie B",
+        "H": "SSC Bari",
+        "A": "FC Südtirol",
+        "h": 1,
+        "a": 2,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "Phase": "25. Round",
+          "HomeCountry": "ITA",
+          "AwayCountry": "ITA",
+          "PublishedRound": "25. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/italy/master/2025-26/2-serieb.txt",
+              "sha256": "252e858b3e1745b6d149db73f6e6cb98c7576e41ea6e7111ad706ddf92e881fb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 620,
+      "reason": "riferimento_secondario_regolare_non_riconciliato_per_data",
+      "record": {
+        "d": 1771027200000,
+        "lg": "Serie B",
+        "H": "Empoli FC",
+        "A": "AC Reggiana 1919",
+        "h": 1,
+        "a": 1,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "25. Round",
+          "HomeCountry": "ITA",
+          "AwayCountry": "ITA",
+          "PublishedRound": "25. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/italy/master/2025-26/2-serieb.txt",
+              "sha256": "252e858b3e1745b6d149db73f6e6cb98c7576e41ea6e7111ad706ddf92e881fb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 622,
+      "reason": "riferimento_secondario_regolare_non_riconciliato_per_data",
+      "record": {
+        "d": 1771027200000,
+        "lg": "Serie B",
+        "H": "AC Monza",
+        "A": "Juve Stabia",
+        "h": 2,
+        "a": 1,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "25. Round",
+          "HomeCountry": "ITA",
+          "AwayCountry": "ITA",
+          "PublishedRound": "25. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/italy/master/2025-26/2-serieb.txt",
+              "sha256": "252e858b3e1745b6d149db73f6e6cb98c7576e41ea6e7111ad706ddf92e881fb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 625,
+      "reason": "riferimento_secondario_regolare_non_riconciliato_per_data",
+      "record": {
+        "d": 1771027200000,
+        "lg": "Serie B",
+        "H": "Spezia Calcio",
+        "A": "Frosinone Calcio",
+        "h": 0,
+        "a": 2,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "25. Round",
+          "HomeCountry": "ITA",
+          "AwayCountry": "ITA",
+          "PublishedRound": "25. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/italy/master/2025-26/2-serieb.txt",
+              "sha256": "252e858b3e1745b6d149db73f6e6cb98c7576e41ea6e7111ad706ddf92e881fb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 629,
+      "reason": "riferimento_secondario_regolare_non_riconciliato_per_data",
+      "record": {
+        "d": 1771632000000,
+        "lg": "Serie B",
+        "H": "Frosinone Calcio",
+        "A": "Empoli FC",
+        "h": 2,
+        "a": 2,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "Phase": "26. Round",
+          "HomeCountry": "ITA",
+          "AwayCountry": "ITA",
+          "PublishedRound": "26. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/italy/master/2025-26/2-serieb.txt",
+              "sha256": "252e858b3e1745b6d149db73f6e6cb98c7576e41ea6e7111ad706ddf92e881fb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 630,
+      "reason": "riferimento_secondario_regolare_non_riconciliato_per_data",
+      "record": {
+        "d": 1771632000000,
+        "lg": "Serie B",
+        "H": "Juve Stabia",
+        "A": "Modena FC",
+        "h": 1,
+        "a": 2,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "Phase": "26. Round",
+          "HomeCountry": "ITA",
+          "AwayCountry": "ITA",
+          "PublishedRound": "26. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/italy/master/2025-26/2-serieb.txt",
+              "sha256": "252e858b3e1745b6d149db73f6e6cb98c7576e41ea6e7111ad706ddf92e881fb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 2,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 634,
+      "reason": "riferimento_secondario_regolare_non_riconciliato_per_data",
+      "record": {
+        "d": 1771632000000,
+        "lg": "Serie B",
+        "H": "AC Reggiana 1919",
+        "A": "US Avellino",
+        "h": 1,
+        "a": 1,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "Phase": "26. Round",
+          "HomeCountry": "ITA",
+          "AwayCountry": "ITA",
+          "PublishedRound": "26. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/italy/master/2025-26/2-serieb.txt",
+              "sha256": "252e858b3e1745b6d149db73f6e6cb98c7576e41ea6e7111ad706ddf92e881fb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 637,
+      "reason": "riferimento_secondario_regolare_non_riconciliato_per_data",
+      "record": {
+        "d": 1772236800000,
+        "lg": "Serie B",
+        "H": "US Catanzaro",
+        "A": "Frosinone Calcio",
+        "h": 2,
+        "a": 2,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "27. Round",
+          "HomeCountry": "ITA",
+          "AwayCountry": "ITA",
+          "PublishedRound": "27. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/italy/master/2025-26/2-serieb.txt",
+              "sha256": "252e858b3e1745b6d149db73f6e6cb98c7576e41ea6e7111ad706ddf92e881fb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 639,
+      "reason": "riferimento_secondario_regolare_non_riconciliato_per_data",
+      "record": {
+        "d": 1772236800000,
+        "lg": "Serie B",
+        "H": "Mantova 1911 SSD",
+        "A": "Carrarese Calcio",
+        "h": 1,
+        "a": 1,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "27. Round",
+          "HomeCountry": "ITA",
+          "AwayCountry": "ITA",
+          "PublishedRound": "27. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/italy/master/2025-26/2-serieb.txt",
+              "sha256": "252e858b3e1745b6d149db73f6e6cb98c7576e41ea6e7111ad706ddf92e881fb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 641,
+      "reason": "riferimento_secondario_regolare_non_riconciliato_per_data",
+      "record": {
+        "d": 1772236800000,
+        "lg": "Serie B",
+        "H": "AC Monza",
+        "A": "Virtus Entella",
+        "h": 2,
+        "a": 0,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "Phase": "27. Round",
+          "HomeCountry": "ITA",
+          "AwayCountry": "ITA",
+          "PublishedRound": "27. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/italy/master/2025-26/2-serieb.txt",
+              "sha256": "252e858b3e1745b6d149db73f6e6cb98c7576e41ea6e7111ad706ddf92e881fb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 642,
+      "reason": "riferimento_secondario_regolare_non_riconciliato_per_data",
+      "record": {
+        "d": 1772236800000,
+        "lg": "Serie B",
+        "H": "Delfino Pescara",
+        "A": "Palermo FC",
+        "h": 2,
+        "a": 1,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "Phase": "27. Round",
+          "HomeCountry": "ITA",
+          "AwayCountry": "ITA",
+          "PublishedRound": "27. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/italy/master/2025-26/2-serieb.txt",
+              "sha256": "252e858b3e1745b6d149db73f6e6cb98c7576e41ea6e7111ad706ddf92e881fb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 643,
+      "reason": "riferimento_secondario_regolare_non_riconciliato_per_data",
+      "record": {
+        "d": 1772236800000,
+        "lg": "Serie B",
+        "H": "Sampdoria",
+        "A": "SSC Bari",
+        "h": 0,
+        "a": 2,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "27. Round",
+          "HomeCountry": "ITA",
+          "AwayCountry": "ITA",
+          "PublishedRound": "27. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/italy/master/2025-26/2-serieb.txt",
+              "sha256": "252e858b3e1745b6d149db73f6e6cb98c7576e41ea6e7111ad706ddf92e881fb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 646,
+      "reason": "riferimento_secondario_regolare_non_riconciliato_per_data",
+      "record": {
+        "d": 1772496000000,
+        "lg": "Serie B",
+        "H": "SSC Bari",
+        "A": "Empoli FC",
+        "h": 2,
+        "a": 1,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "Phase": "28. Round",
+          "HomeCountry": "ITA",
+          "AwayCountry": "ITA",
+          "PublishedRound": "28. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/italy/master/2025-26/2-serieb.txt",
+              "sha256": "252e858b3e1745b6d149db73f6e6cb98c7576e41ea6e7111ad706ddf92e881fb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 647,
+      "reason": "riferimento_secondario_regolare_non_riconciliato_per_data",
+      "record": {
+        "d": 1772496000000,
+        "lg": "Serie B",
+        "H": "Carrarese Calcio",
+        "A": "US Catanzaro",
+        "h": 3,
+        "a": 3,
+        "ht": 3,
+        "up": false,
+        "o": {
+          "Phase": "28. Round",
+          "HomeCountry": "ITA",
+          "AwayCountry": "ITA",
+          "PublishedRound": "28. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/italy/master/2025-26/2-serieb.txt",
+              "sha256": "252e858b3e1745b6d149db73f6e6cb98c7576e41ea6e7111ad706ddf92e881fb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 2,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 650,
+      "reason": "riferimento_secondario_regolare_non_riconciliato_per_data",
+      "record": {
+        "d": 1772496000000,
+        "lg": "Serie B",
+        "H": "Frosinone Calcio",
+        "A": "Delfino Pescara",
+        "h": 2,
+        "a": 2,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "Phase": "28. Round",
+          "HomeCountry": "ITA",
+          "AwayCountry": "ITA",
+          "PublishedRound": "28. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/italy/master/2025-26/2-serieb.txt",
+              "sha256": "252e858b3e1745b6d149db73f6e6cb98c7576e41ea6e7111ad706ddf92e881fb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 2,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 651,
+      "reason": "riferimento_secondario_regolare_non_riconciliato_per_data",
+      "record": {
+        "d": 1772496000000,
+        "lg": "Serie B",
+        "H": "Juve Stabia",
+        "A": "Sampdoria",
+        "h": 1,
+        "a": 1,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "Phase": "28. Round",
+          "HomeCountry": "ITA",
+          "AwayCountry": "ITA",
+          "PublishedRound": "28. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/italy/master/2025-26/2-serieb.txt",
+              "sha256": "252e858b3e1745b6d149db73f6e6cb98c7576e41ea6e7111ad706ddf92e881fb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 653,
+      "reason": "riferimento_secondario_regolare_non_riconciliato_per_data",
+      "record": {
+        "d": 1772496000000,
+        "lg": "Serie B",
+        "H": "Palermo FC",
+        "A": "Mantova 1911 SSD",
+        "h": 2,
+        "a": 1,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "Phase": "28. Round",
+          "HomeCountry": "ITA",
+          "AwayCountry": "ITA",
+          "PublishedRound": "28. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/italy/master/2025-26/2-serieb.txt",
+              "sha256": "252e858b3e1745b6d149db73f6e6cb98c7576e41ea6e7111ad706ddf92e881fb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 2,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 657,
+      "reason": "riferimento_secondario_regolare_non_riconciliato_per_data",
+      "record": {
+        "d": 1772841600000,
+        "lg": "Serie B",
+        "H": "Carrarese Calcio",
+        "A": "Palermo FC",
+        "h": 0,
+        "a": 1,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "29. Round",
+          "HomeCountry": "ITA",
+          "AwayCountry": "ITA",
+          "PublishedRound": "29. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/italy/master/2025-26/2-serieb.txt",
+              "sha256": "252e858b3e1745b6d149db73f6e6cb98c7576e41ea6e7111ad706ddf92e881fb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 658,
+      "reason": "riferimento_secondario_regolare_non_riconciliato_per_data",
+      "record": {
+        "d": 1772841600000,
+        "lg": "Serie B",
+        "H": "US Catanzaro",
+        "A": "Empoli FC",
+        "h": 3,
+        "a": 2,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "Phase": "29. Round",
+          "HomeCountry": "ITA",
+          "AwayCountry": "ITA",
+          "PublishedRound": "29. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/italy/master/2025-26/2-serieb.txt",
+              "sha256": "252e858b3e1745b6d149db73f6e6cb98c7576e41ea6e7111ad706ddf92e881fb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 2,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 659,
+      "reason": "riferimento_secondario_regolare_non_riconciliato_per_data",
+      "record": {
+        "d": 1772841600000,
+        "lg": "Serie B",
+        "H": "Frosinone Calcio",
+        "A": "Sampdoria",
+        "h": 3,
+        "a": 0,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "29. Round",
+          "HomeCountry": "ITA",
+          "AwayCountry": "ITA",
+          "PublishedRound": "29. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/italy/master/2025-26/2-serieb.txt",
+              "sha256": "252e858b3e1745b6d149db73f6e6cb98c7576e41ea6e7111ad706ddf92e881fb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 660,
+      "reason": "riferimento_secondario_regolare_non_riconciliato_per_data",
+      "record": {
+        "d": 1772841600000,
+        "lg": "Serie B",
+        "H": "Mantova 1911 SSD",
+        "A": "Juve Stabia",
+        "h": 2,
+        "a": 0,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "Phase": "29. Round",
+          "HomeCountry": "ITA",
+          "AwayCountry": "ITA",
+          "PublishedRound": "29. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/italy/master/2025-26/2-serieb.txt",
+              "sha256": "252e858b3e1745b6d149db73f6e6cb98c7576e41ea6e7111ad706ddf92e881fb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 2,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 662,
+      "reason": "riferimento_secondario_regolare_non_riconciliato_per_data",
+      "record": {
+        "d": 1772841600000,
+        "lg": "Serie B",
+        "H": "Delfino Pescara",
+        "A": "SSC Bari",
+        "h": 4,
+        "a": 0,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "Phase": "29. Round",
+          "HomeCountry": "ITA",
+          "AwayCountry": "ITA",
+          "PublishedRound": "29. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/italy/master/2025-26/2-serieb.txt",
+              "sha256": "252e858b3e1745b6d149db73f6e6cb98c7576e41ea6e7111ad706ddf92e881fb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 2,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 669,
+      "reason": "riferimento_secondario_regolare_non_riconciliato_per_data",
+      "record": {
+        "d": 1773446400000,
+        "lg": "Serie B",
+        "H": "Virtus Entella",
+        "A": "US Avellino",
+        "h": 1,
+        "a": 2,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "Phase": "30. Round",
+          "HomeCountry": "ITA",
+          "AwayCountry": "ITA",
+          "PublishedRound": "30. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/italy/master/2025-26/2-serieb.txt",
+              "sha256": "252e858b3e1745b6d149db73f6e6cb98c7576e41ea6e7111ad706ddf92e881fb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 2,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 671,
+      "reason": "riferimento_secondario_regolare_non_riconciliato_per_data",
+      "record": {
+        "d": 1773446400000,
+        "lg": "Serie B",
+        "H": "Modena FC",
+        "A": "Spezia Calcio",
+        "h": 3,
+        "a": 0,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "30. Round",
+          "HomeCountry": "ITA",
+          "AwayCountry": "ITA",
+          "PublishedRound": "30. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/italy/master/2025-26/2-serieb.txt",
+              "sha256": "252e858b3e1745b6d149db73f6e6cb98c7576e41ea6e7111ad706ddf92e881fb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 675,
+      "reason": "riferimento_secondario_regolare_non_riconciliato_per_data",
+      "record": {
+        "d": 1773446400000,
+        "lg": "Serie B",
+        "H": "FC Südtirol",
+        "A": "Delfino Pescara",
+        "h": 0,
+        "a": 0,
+        "ht": null,
+        "up": false,
+        "o": {
+          "Phase": "30. Round",
+          "HomeCountry": "ITA",
+          "AwayCountry": "ITA",
+          "PublishedRound": "30. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/italy/master/2025-26/2-serieb.txt",
+              "sha256": "252e858b3e1745b6d149db73f6e6cb98c7576e41ea6e7111ad706ddf92e881fb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 676,
+      "reason": "riferimento_secondario_regolare_non_riconciliato_per_data",
+      "record": {
+        "d": 1773705600000,
+        "lg": "Serie B",
+        "H": "US Avellino",
+        "A": "FC Südtirol",
+        "h": 3,
+        "a": 2,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "31. Round",
+          "HomeCountry": "ITA",
+          "AwayCountry": "ITA",
+          "PublishedRound": "31. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/italy/master/2025-26/2-serieb.txt",
+              "sha256": "252e858b3e1745b6d149db73f6e6cb98c7576e41ea6e7111ad706ddf92e881fb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 677,
+      "reason": "riferimento_secondario_regolare_non_riconciliato_per_data",
+      "record": {
+        "d": 1773705600000,
+        "lg": "Serie B",
+        "H": "Carrarese Calcio",
+        "A": "Sampdoria",
+        "h": 2,
+        "a": 0,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "Phase": "31. Round",
+          "HomeCountry": "ITA",
+          "AwayCountry": "ITA",
+          "PublishedRound": "31. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/italy/master/2025-26/2-serieb.txt",
+              "sha256": "252e858b3e1745b6d149db73f6e6cb98c7576e41ea6e7111ad706ddf92e881fb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 678,
+      "reason": "riferimento_secondario_regolare_non_riconciliato_per_data",
+      "record": {
+        "d": 1773705600000,
+        "lg": "Serie B",
+        "H": "US Catanzaro",
+        "A": "Modena FC",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "31. Round",
+          "HomeCountry": "ITA",
+          "AwayCountry": "ITA",
+          "PublishedRound": "31. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/italy/master/2025-26/2-serieb.txt",
+              "sha256": "252e858b3e1745b6d149db73f6e6cb98c7576e41ea6e7111ad706ddf92e881fb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 679,
+      "reason": "riferimento_secondario_regolare_non_riconciliato_per_data",
+      "record": {
+        "d": 1773705600000,
+        "lg": "Serie B",
+        "H": "Frosinone Calcio",
+        "A": "SSC Bari",
+        "h": 2,
+        "a": 1,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "Phase": "31. Round",
+          "HomeCountry": "ITA",
+          "AwayCountry": "ITA",
+          "PublishedRound": "31. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/italy/master/2025-26/2-serieb.txt",
+              "sha256": "252e858b3e1745b6d149db73f6e6cb98c7576e41ea6e7111ad706ddf92e881fb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 682,
+      "reason": "riferimento_secondario_regolare_non_riconciliato_per_data",
+      "record": {
+        "d": 1773705600000,
+        "lg": "Serie B",
+        "H": "Delfino Pescara",
+        "A": "Virtus Entella",
+        "h": 3,
+        "a": 0,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "Phase": "31. Round",
+          "HomeCountry": "ITA",
+          "AwayCountry": "ITA",
+          "PublishedRound": "31. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/italy/master/2025-26/2-serieb.txt",
+              "sha256": "252e858b3e1745b6d149db73f6e6cb98c7576e41ea6e7111ad706ddf92e881fb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 2,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 686,
+      "reason": "riferimento_secondario_regolare_non_riconciliato_per_data",
+      "record": {
+        "d": 1774051200000,
+        "lg": "Serie B",
+        "H": "SSC Bari",
+        "A": "Carrarese Calcio",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "32. Round",
+          "HomeCountry": "ITA",
+          "AwayCountry": "ITA",
+          "PublishedRound": "32. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/italy/master/2025-26/2-serieb.txt",
+              "sha256": "252e858b3e1745b6d149db73f6e6cb98c7576e41ea6e7111ad706ddf92e881fb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 688,
+      "reason": "riferimento_secondario_regolare_non_riconciliato_per_data",
+      "record": {
+        "d": 1774051200000,
+        "lg": "Serie B",
+        "H": "Empoli FC",
+        "A": "Delfino Pescara",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "32. Round",
+          "HomeCountry": "ITA",
+          "AwayCountry": "ITA",
+          "PublishedRound": "32. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/italy/master/2025-26/2-serieb.txt",
+              "sha256": "252e858b3e1745b6d149db73f6e6cb98c7576e41ea6e7111ad706ddf92e881fb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 689,
+      "reason": "riferimento_secondario_regolare_non_riconciliato_per_data",
+      "record": {
+        "d": 1774051200000,
+        "lg": "Serie B",
+        "H": "Virtus Entella",
+        "A": "AC Reggiana 1919",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "32. Round",
+          "HomeCountry": "ITA",
+          "AwayCountry": "ITA",
+          "PublishedRound": "32. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/italy/master/2025-26/2-serieb.txt",
+              "sha256": "252e858b3e1745b6d149db73f6e6cb98c7576e41ea6e7111ad706ddf92e881fb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 694,
+      "reason": "riferimento_secondario_regolare_non_riconciliato_per_data",
+      "record": {
+        "d": 1774051200000,
+        "lg": "Serie B",
+        "H": "Sampdoria",
+        "A": "US Avellino",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "32. Round",
+          "HomeCountry": "ITA",
+          "AwayCountry": "ITA",
+          "PublishedRound": "32. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/italy/master/2025-26/2-serieb.txt",
+              "sha256": "252e858b3e1745b6d149db73f6e6cb98c7576e41ea6e7111ad706ddf92e881fb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 695,
+      "reason": "riferimento_secondario_regolare_non_riconciliato_per_data",
+      "record": {
+        "d": 1774051200000,
+        "lg": "Serie B",
+        "H": "FC Südtirol",
+        "A": "Frosinone Calcio",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "32. Round",
+          "HomeCountry": "ITA",
+          "AwayCountry": "ITA",
+          "PublishedRound": "32. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/italy/master/2025-26/2-serieb.txt",
+              "sha256": "252e858b3e1745b6d149db73f6e6cb98c7576e41ea6e7111ad706ddf92e881fb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 700,
+      "reason": "riferimento_secondario_regolare_non_riconciliato_per_data",
+      "record": {
+        "d": 1775433600000,
+        "lg": "Serie B",
+        "H": "Frosinone Calcio",
+        "A": "Calcio Padova",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "33. Round",
+          "HomeCountry": "ITA",
+          "AwayCountry": "ITA",
+          "PublishedRound": "33. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/italy/master/2025-26/2-serieb.txt",
+              "sha256": "252e858b3e1745b6d149db73f6e6cb98c7576e41ea6e7111ad706ddf92e881fb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 702,
+      "reason": "riferimento_secondario_regolare_non_riconciliato_per_data",
+      "record": {
+        "d": 1775433600000,
+        "lg": "Serie B",
+        "H": "Palermo FC",
+        "A": "US Avellino",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "33. Round",
+          "HomeCountry": "ITA",
+          "AwayCountry": "ITA",
+          "PublishedRound": "33. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/italy/master/2025-26/2-serieb.txt",
+              "sha256": "252e858b3e1745b6d149db73f6e6cb98c7576e41ea6e7111ad706ddf92e881fb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 708,
+      "reason": "riferimento_secondario_regolare_non_riconciliato_per_data",
+      "record": {
+        "d": 1775865600000,
+        "lg": "Serie B",
+        "H": "Frosinone Calcio",
+        "A": "Palermo FC",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "34. Round",
+          "HomeCountry": "ITA",
+          "AwayCountry": "ITA",
+          "PublishedRound": "34. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/italy/master/2025-26/2-serieb.txt",
+              "sha256": "252e858b3e1745b6d149db73f6e6cb98c7576e41ea6e7111ad706ddf92e881fb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 711,
+      "reason": "riferimento_secondario_regolare_non_riconciliato_per_data",
+      "record": {
+        "d": 1775865600000,
+        "lg": "Serie B",
+        "H": "Calcio Padova",
+        "A": "Empoli FC",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "34. Round",
+          "HomeCountry": "ITA",
+          "AwayCountry": "ITA",
+          "PublishedRound": "34. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/italy/master/2025-26/2-serieb.txt",
+              "sha256": "252e858b3e1745b6d149db73f6e6cb98c7576e41ea6e7111ad706ddf92e881fb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 713,
+      "reason": "riferimento_secondario_regolare_non_riconciliato_per_data",
+      "record": {
+        "d": 1775865600000,
+        "lg": "Serie B",
+        "H": "AC Reggiana 1919",
+        "A": "Carrarese Calcio",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "34. Round",
+          "HomeCountry": "ITA",
+          "AwayCountry": "ITA",
+          "PublishedRound": "34. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/italy/master/2025-26/2-serieb.txt",
+              "sha256": "252e858b3e1745b6d149db73f6e6cb98c7576e41ea6e7111ad706ddf92e881fb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 714,
+      "reason": "riferimento_secondario_regolare_non_riconciliato_per_data",
+      "record": {
+        "d": 1775865600000,
+        "lg": "Serie B",
+        "H": "Spezia Calcio",
+        "A": "Mantova 1911 SSD",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "34. Round",
+          "HomeCountry": "ITA",
+          "AwayCountry": "ITA",
+          "PublishedRound": "34. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/italy/master/2025-26/2-serieb.txt",
+              "sha256": "252e858b3e1745b6d149db73f6e6cb98c7576e41ea6e7111ad706ddf92e881fb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 717,
+      "reason": "riferimento_secondario_regolare_non_riconciliato_per_data",
+      "record": {
+        "d": 1776470400000,
+        "lg": "Serie B",
+        "H": "Carrarese Calcio",
+        "A": "Delfino Pescara",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "35. Round",
+          "HomeCountry": "ITA",
+          "AwayCountry": "ITA",
+          "PublishedRound": "35. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/italy/master/2025-26/2-serieb.txt",
+              "sha256": "252e858b3e1745b6d149db73f6e6cb98c7576e41ea6e7111ad706ddf92e881fb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 718,
+      "reason": "riferimento_secondario_regolare_non_riconciliato_per_data",
+      "record": {
+        "d": 1776470400000,
+        "lg": "Serie B",
+        "H": "Empoli FC",
+        "A": "Virtus Entella",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "35. Round",
+          "HomeCountry": "ITA",
+          "AwayCountry": "ITA",
+          "PublishedRound": "35. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/italy/master/2025-26/2-serieb.txt",
+              "sha256": "252e858b3e1745b6d149db73f6e6cb98c7576e41ea6e7111ad706ddf92e881fb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 722,
+      "reason": "riferimento_secondario_regolare_non_riconciliato_per_data",
+      "record": {
+        "d": 1776470400000,
+        "lg": "Serie B",
+        "H": "Calcio Padova",
+        "A": "AC Reggiana 1919",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "35. Round",
+          "HomeCountry": "ITA",
+          "AwayCountry": "ITA",
+          "PublishedRound": "35. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/italy/master/2025-26/2-serieb.txt",
+              "sha256": "252e858b3e1745b6d149db73f6e6cb98c7576e41ea6e7111ad706ddf92e881fb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 724,
+      "reason": "riferimento_secondario_regolare_non_riconciliato_per_data",
+      "record": {
+        "d": 1776470400000,
+        "lg": "Serie B",
+        "H": "Sampdoria",
+        "A": "AC Monza",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "35. Round",
+          "HomeCountry": "ITA",
+          "AwayCountry": "ITA",
+          "PublishedRound": "35. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/italy/master/2025-26/2-serieb.txt",
+              "sha256": "252e858b3e1745b6d149db73f6e6cb98c7576e41ea6e7111ad706ddf92e881fb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 726,
+      "reason": "riferimento_secondario_regolare_non_riconciliato_per_data",
+      "record": {
+        "d": 1777075200000,
+        "lg": "Serie B",
+        "H": "US Avellino",
+        "A": "SSC Bari",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "36. Round",
+          "HomeCountry": "ITA",
+          "AwayCountry": "ITA",
+          "PublishedRound": "36. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/italy/master/2025-26/2-serieb.txt",
+              "sha256": "252e858b3e1745b6d149db73f6e6cb98c7576e41ea6e7111ad706ddf92e881fb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 731,
+      "reason": "riferimento_secondario_regolare_non_riconciliato_per_data",
+      "record": {
+        "d": 1777075200000,
+        "lg": "Serie B",
+        "H": "AC Monza",
+        "A": "Modena FC",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "36. Round",
+          "HomeCountry": "ITA",
+          "AwayCountry": "ITA",
+          "PublishedRound": "36. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/italy/master/2025-26/2-serieb.txt",
+              "sha256": "252e858b3e1745b6d149db73f6e6cb98c7576e41ea6e7111ad706ddf92e881fb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 746,
+      "reason": "riferimento_secondario_regolare_non_riconciliato_per_data",
+      "record": {
+        "d": 1778284800000,
+        "lg": "Serie B",
+        "H": "US Avellino",
+        "A": "Modena FC",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "38. Round",
+          "HomeCountry": "ITA",
+          "AwayCountry": "ITA",
+          "PublishedRound": "38. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/italy/master/2025-26/2-serieb.txt",
+              "sha256": "252e858b3e1745b6d149db73f6e6cb98c7576e41ea6e7111ad706ddf92e881fb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 747,
+      "reason": "riferimento_secondario_regolare_non_riconciliato_per_data",
+      "record": {
+        "d": 1778284800000,
+        "lg": "Serie B",
+        "H": "US Catanzaro",
+        "A": "SSC Bari",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "38. Round",
+          "HomeCountry": "ITA",
+          "AwayCountry": "ITA",
+          "PublishedRound": "38. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/italy/master/2025-26/2-serieb.txt",
+              "sha256": "252e858b3e1745b6d149db73f6e6cb98c7576e41ea6e7111ad706ddf92e881fb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 748,
+      "reason": "riferimento_secondario_regolare_non_riconciliato_per_data",
+      "record": {
+        "d": 1778284800000,
+        "lg": "Serie B",
+        "H": "Cesena FC",
+        "A": "Calcio Padova",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "38. Round",
+          "HomeCountry": "ITA",
+          "AwayCountry": "ITA",
+          "PublishedRound": "38. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/italy/master/2025-26/2-serieb.txt",
+              "sha256": "252e858b3e1745b6d149db73f6e6cb98c7576e41ea6e7111ad706ddf92e881fb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 749,
+      "reason": "riferimento_secondario_regolare_non_riconciliato_per_data",
+      "record": {
+        "d": 1778284800000,
+        "lg": "Serie B",
+        "H": "Virtus Entella",
+        "A": "Carrarese Calcio",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "38. Round",
+          "HomeCountry": "ITA",
+          "AwayCountry": "ITA",
+          "PublishedRound": "38. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/italy/master/2025-26/2-serieb.txt",
+              "sha256": "252e858b3e1745b6d149db73f6e6cb98c7576e41ea6e7111ad706ddf92e881fb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 750,
+      "reason": "riferimento_secondario_regolare_non_riconciliato_per_data",
+      "record": {
+        "d": 1778284800000,
+        "lg": "Serie B",
+        "H": "Frosinone Calcio",
+        "A": "Mantova 1911 SSD",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "38. Round",
+          "HomeCountry": "ITA",
+          "AwayCountry": "ITA",
+          "PublishedRound": "38. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/italy/master/2025-26/2-serieb.txt",
+              "sha256": "252e858b3e1745b6d149db73f6e6cb98c7576e41ea6e7111ad706ddf92e881fb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 751,
+      "reason": "riferimento_secondario_regolare_non_riconciliato_per_data",
+      "record": {
+        "d": 1778284800000,
+        "lg": "Serie B",
+        "H": "AC Monza",
+        "A": "Empoli FC",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "38. Round",
+          "HomeCountry": "ITA",
+          "AwayCountry": "ITA",
+          "PublishedRound": "38. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/italy/master/2025-26/2-serieb.txt",
+              "sha256": "252e858b3e1745b6d149db73f6e6cb98c7576e41ea6e7111ad706ddf92e881fb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 752,
+      "reason": "riferimento_secondario_regolare_non_riconciliato_per_data",
+      "record": {
+        "d": 1778284800000,
+        "lg": "Serie B",
+        "H": "Delfino Pescara",
+        "A": "Spezia Calcio",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "38. Round",
+          "HomeCountry": "ITA",
+          "AwayCountry": "ITA",
+          "PublishedRound": "38. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/italy/master/2025-26/2-serieb.txt",
+              "sha256": "252e858b3e1745b6d149db73f6e6cb98c7576e41ea6e7111ad706ddf92e881fb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 753,
+      "reason": "riferimento_secondario_regolare_non_riconciliato_per_data",
+      "record": {
+        "d": 1778284800000,
+        "lg": "Serie B",
+        "H": "AC Reggiana 1919",
+        "A": "Sampdoria",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "38. Round",
+          "HomeCountry": "ITA",
+          "AwayCountry": "ITA",
+          "PublishedRound": "38. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/italy/master/2025-26/2-serieb.txt",
+              "sha256": "252e858b3e1745b6d149db73f6e6cb98c7576e41ea6e7111ad706ddf92e881fb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 754,
+      "reason": "riferimento_secondario_regolare_non_riconciliato_per_data",
+      "record": {
+        "d": 1778284800000,
+        "lg": "Serie B",
+        "H": "FC Südtirol",
+        "A": "Juve Stabia",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "38. Round",
+          "HomeCountry": "ITA",
+          "AwayCountry": "ITA",
+          "PublishedRound": "38. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/italy/master/2025-26/2-serieb.txt",
+              "sha256": "252e858b3e1745b6d149db73f6e6cb98c7576e41ea6e7111ad706ddf92e881fb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 755,
+      "reason": "riferimento_secondario_regolare_non_riconciliato_per_data",
+      "record": {
+        "d": 1778284800000,
+        "lg": "Serie B",
+        "H": "Venezia FC",
+        "A": "Palermo FC",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "38. Round",
+          "HomeCountry": "ITA",
+          "AwayCountry": "ITA",
+          "PublishedRound": "38. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/italy/master/2025-26/2-serieb.txt",
+              "sha256": "252e858b3e1745b6d149db73f6e6cb98c7576e41ea6e7111ad706ddf92e881fb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    }
+  ]
+}

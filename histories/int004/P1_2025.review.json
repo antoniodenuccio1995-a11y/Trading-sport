@@ -1,0 +1,80 @@
+{
+  "originalPacket": "histories/stab003/P1_2025.json",
+  "originalSHA256": "2cf0f3b6e4e6eef7c94d1e9ffbb5ff718a7e08b28d64c7e90158f0b28569e884",
+  "review": [
+    {
+      "originalIndex": 297,
+      "reason": "disaccordo_fonti_gia_documentato",
+      "record": {
+        "d": 1778889600000,
+        "lg": "Primeira Liga",
+        "H": "Moreirense",
+        "A": "AVS",
+        "h": 0,
+        "a": 0,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/P1.csv",
+          "HistSourceSHA256": "f1353dc7404bfa0d27daa3ca6c164bb450ec20558ee02fffb7160fae182213dc",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/P1.csv",
+              "sha256": "f1353dc7404bfa0d27daa3ca6c164bb450ec20558ee02fffb7160fae182213dc"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003",
+          "HistSourceConflict": true
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          13,
+          8,
+          4,
+          0
+        ]
+      }
+    },
+    {
+      "originalIndex": 300,
+      "reason": "disaccordo_fonti_gia_documentato",
+      "record": {
+        "d": 1778889600000,
+        "lg": "Primeira Liga",
+        "H": "Casa Pia",
+        "A": "Rio Ave",
+        "h": 1,
+        "a": 1,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/P1.csv",
+          "HistSourceSHA256": "f1353dc7404bfa0d27daa3ca6c164bb450ec20558ee02fffb7160fae182213dc",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/P1.csv",
+              "sha256": "f1353dc7404bfa0d27daa3ca6c164bb450ec20558ee02fffb7160fae182213dc"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003",
+          "HistSourceConflict": true
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": [
+          20,
+          6,
+          5,
+          3
+        ]
+      }
+    }
+  ]
+}

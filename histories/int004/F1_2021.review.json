@@ -1,0 +1,1374 @@
+{
+  "originalPacket": "histories/stab003/F1_2021.json",
+  "originalSHA256": "fceb23d0c2a682a32db203aba028e00b5ff52bc5d6df1fd1c023c72cf5f5dde4",
+  "review": [
+    {
+      "originalIndex": 6,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1628380800000,
+        "lg": "Ligue 1",
+        "H": "St Etienne",
+        "A": "Lorient",
+        "h": 1,
+        "a": 1,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2021,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2122/F1.csv",
+          "HistSourceSHA256": "9e9eaefb8704264f8d55a718a119d940de4af7d7b4217ac4097b957406e16213",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2122/F1.csv",
+              "sha256": "9e9eaefb8704264f8d55a718a119d940de4af7d7b4217ac4097b957406e16213"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          20,
+          12,
+          3,
+          3
+        ]
+      }
+    },
+    {
+      "originalIndex": 18,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1628985600000,
+        "lg": "Ligue 1",
+        "H": "Lens",
+        "A": "St Etienne",
+        "h": 2,
+        "a": 2,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "CsvSeason": 2021,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2122/F1.csv",
+          "HistSourceSHA256": "9e9eaefb8704264f8d55a718a119d940de4af7d7b4217ac4097b957406e16213",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2122/F1.csv",
+              "sha256": "9e9eaefb8704264f8d55a718a119d940de4af7d7b4217ac4097b957406e16213"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 1,
+        "shots": [
+          22,
+          12,
+          7,
+          7
+        ]
+      }
+    },
+    {
+      "originalIndex": 22,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1629504000000,
+        "lg": "Ligue 1",
+        "H": "St Etienne",
+        "A": "Lille",
+        "h": 1,
+        "a": 1,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2021,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2122/F1.csv",
+          "HistSourceSHA256": "9e9eaefb8704264f8d55a718a119d940de4af7d7b4217ac4097b957406e16213",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2122/F1.csv",
+              "sha256": "9e9eaefb8704264f8d55a718a119d940de4af7d7b4217ac4097b957406e16213"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 1,
+        "shots": [
+          10,
+          8,
+          2,
+          6
+        ]
+      }
+    },
+    {
+      "originalIndex": 31,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1630108800000,
+        "lg": "Ligue 1",
+        "H": "Marseille",
+        "A": "St Etienne",
+        "h": 3,
+        "a": 1,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "CsvSeason": 2021,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2122/F1.csv",
+          "HistSourceSHA256": "9e9eaefb8704264f8d55a718a119d940de4af7d7b4217ac4097b957406e16213",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2122/F1.csv",
+              "sha256": "9e9eaefb8704264f8d55a718a119d940de4af7d7b4217ac4097b957406e16213"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 1,
+        "shots": [
+          19,
+          11,
+          5,
+          7
+        ]
+      }
+    },
+    {
+      "originalIndex": 42,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1631404800000,
+        "lg": "Ligue 1",
+        "H": "Montpellier",
+        "A": "St Etienne",
+        "h": 2,
+        "a": 0,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2021,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2122/F1.csv",
+          "HistSourceSHA256": "9e9eaefb8704264f8d55a718a119d940de4af7d7b4217ac4097b957406e16213",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2122/F1.csv",
+              "sha256": "9e9eaefb8704264f8d55a718a119d940de4af7d7b4217ac4097b957406e16213"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": [
+          11,
+          14,
+          4,
+          2
+        ]
+      }
+    },
+    {
+      "originalIndex": 51,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1631923200000,
+        "lg": "Ligue 1",
+        "H": "St Etienne",
+        "A": "Bordeaux",
+        "h": 1,
+        "a": 2,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2021,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2122/F1.csv",
+          "HistSourceSHA256": "9e9eaefb8704264f8d55a718a119d940de4af7d7b4217ac4097b957406e16213",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2122/F1.csv",
+              "sha256": "9e9eaefb8704264f8d55a718a119d940de4af7d7b4217ac4097b957406e16213"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 1,
+        "shots": [
+          12,
+          13,
+          5,
+          3
+        ]
+      }
+    },
+    {
+      "originalIndex": 60,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1632268800000,
+        "lg": "Ligue 1",
+        "H": "Monaco",
+        "A": "St Etienne",
+        "h": 3,
+        "a": 1,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "CsvSeason": 2021,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2122/F1.csv",
+          "HistSourceSHA256": "9e9eaefb8704264f8d55a718a119d940de4af7d7b4217ac4097b957406e16213",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2122/F1.csv",
+              "sha256": "9e9eaefb8704264f8d55a718a119d940de4af7d7b4217ac4097b957406e16213"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 1,
+        "shots": [
+          14,
+          9,
+          6,
+          3
+        ]
+      }
+    },
+    {
+      "originalIndex": 69,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1632528000000,
+        "lg": "Ligue 1",
+        "H": "St Etienne",
+        "A": "Nice",
+        "h": 0,
+        "a": 3,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2021,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2122/F1.csv",
+          "HistSourceSHA256": "9e9eaefb8704264f8d55a718a119d940de4af7d7b4217ac4097b957406e16213",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2122/F1.csv",
+              "sha256": "9e9eaefb8704264f8d55a718a119d940de4af7d7b4217ac4097b957406e16213"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 1,
+        "shots": [
+          11,
+          14,
+          6,
+          9
+        ]
+      }
+    },
+    {
+      "originalIndex": 88,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1633219200000,
+        "lg": "Ligue 1",
+        "H": "St Etienne",
+        "A": "Lyon",
+        "h": 1,
+        "a": 1,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2021,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2122/F1.csv",
+          "HistSourceSHA256": "9e9eaefb8704264f8d55a718a119d940de4af7d7b4217ac4097b957406e16213",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2122/F1.csv",
+              "sha256": "9e9eaefb8704264f8d55a718a119d940de4af7d7b4217ac4097b957406e16213"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 1,
+        "shots": [
+          18,
+          15,
+          6,
+          5
+        ]
+      }
+    },
+    {
+      "originalIndex": 96,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1634428800000,
+        "lg": "Ligue 1",
+        "H": "Strasbourg",
+        "A": "St Etienne",
+        "h": 5,
+        "a": 1,
+        "ht": 3,
+        "up": false,
+        "o": {
+          "CsvSeason": 2021,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2122/F1.csv",
+          "HistSourceSHA256": "9e9eaefb8704264f8d55a718a119d940de4af7d7b4217ac4097b957406e16213",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2122/F1.csv",
+              "sha256": "9e9eaefb8704264f8d55a718a119d940de4af7d7b4217ac4097b957406e16213"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 2,
+        "hta": 1,
+        "shots": [
+          12,
+          4,
+          6,
+          2
+        ]
+      }
+    },
+    {
+      "originalIndex": 99,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1634860800000,
+        "lg": "Ligue 1",
+        "H": "St Etienne",
+        "A": "Angers",
+        "h": 2,
+        "a": 2,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2021,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2122/F1.csv",
+          "HistSourceSHA256": "9e9eaefb8704264f8d55a718a119d940de4af7d7b4217ac4097b957406e16213",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2122/F1.csv",
+              "sha256": "9e9eaefb8704264f8d55a718a119d940de4af7d7b4217ac4097b957406e16213"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 1,
+        "shots": [
+          17,
+          4,
+          6,
+          2
+        ]
+      }
+    },
+    {
+      "originalIndex": 111,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1635552000000,
+        "lg": "Ligue 1",
+        "H": "Metz",
+        "A": "St Etienne",
+        "h": 1,
+        "a": 1,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "CsvSeason": 2021,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2122/F1.csv",
+          "HistSourceSHA256": "9e9eaefb8704264f8d55a718a119d940de4af7d7b4217ac4097b957406e16213",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2122/F1.csv",
+              "sha256": "9e9eaefb8704264f8d55a718a119d940de4af7d7b4217ac4097b957406e16213"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 1,
+        "shots": [
+          9,
+          10,
+          4,
+          3
+        ]
+      }
+    },
+    {
+      "originalIndex": 127,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1636243200000,
+        "lg": "Ligue 1",
+        "H": "St Etienne",
+        "A": "Clermont",
+        "h": 3,
+        "a": 2,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2021,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2122/F1.csv",
+          "HistSourceSHA256": "9e9eaefb8704264f8d55a718a119d940de4af7d7b4217ac4097b957406e16213",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2122/F1.csv",
+              "sha256": "9e9eaefb8704264f8d55a718a119d940de4af7d7b4217ac4097b957406e16213"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          18,
+          9,
+          4,
+          4
+        ]
+      }
+    },
+    {
+      "originalIndex": 137,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1637452800000,
+        "lg": "Ligue 1",
+        "H": "Troyes",
+        "A": "St Etienne",
+        "h": 0,
+        "a": 1,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2021,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2122/F1.csv",
+          "HistSourceSHA256": "9e9eaefb8704264f8d55a718a119d940de4af7d7b4217ac4097b957406e16213",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2122/F1.csv",
+              "sha256": "9e9eaefb8704264f8d55a718a119d940de4af7d7b4217ac4097b957406e16213"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          15,
+          14,
+          3,
+          4
+        ]
+      }
+    },
+    {
+      "originalIndex": 142,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1638057600000,
+        "lg": "Ligue 1",
+        "H": "St Etienne",
+        "A": "Paris SG",
+        "h": 1,
+        "a": 3,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "CsvSeason": 2021,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2122/F1.csv",
+          "HistSourceSHA256": "9e9eaefb8704264f8d55a718a119d940de4af7d7b4217ac4097b957406e16213",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2122/F1.csv",
+              "sha256": "9e9eaefb8704264f8d55a718a119d940de4af7d7b4217ac4097b957406e16213"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 1,
+        "shots": [
+          8,
+          15,
+          4,
+          8
+        ]
+      }
+    },
+    {
+      "originalIndex": 150,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1638316800000,
+        "lg": "Ligue 1",
+        "H": "Brest",
+        "A": "St Etienne",
+        "h": 1,
+        "a": 0,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2021,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2122/F1.csv",
+          "HistSourceSHA256": "9e9eaefb8704264f8d55a718a119d940de4af7d7b4217ac4097b957406e16213",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2122/F1.csv",
+              "sha256": "9e9eaefb8704264f8d55a718a119d940de4af7d7b4217ac4097b957406e16213"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          8,
+          13,
+          3,
+          3
+        ]
+      }
+    },
+    {
+      "originalIndex": 162,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1638662400000,
+        "lg": "Ligue 1",
+        "H": "St Etienne",
+        "A": "Rennes",
+        "h": 0,
+        "a": 5,
+        "ht": 3,
+        "up": false,
+        "o": {
+          "CsvSeason": 2021,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2122/F1.csv",
+          "HistSourceSHA256": "9e9eaefb8704264f8d55a718a119d940de4af7d7b4217ac4097b957406e16213",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2122/F1.csv",
+              "sha256": "9e9eaefb8704264f8d55a718a119d940de4af7d7b4217ac4097b957406e16213"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 3,
+        "shots": [
+          12,
+          18,
+          2,
+          10
+        ]
+      }
+    },
+    {
+      "originalIndex": 171,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1639180800000,
+        "lg": "Ligue 1",
+        "H": "Reims",
+        "A": "St Etienne",
+        "h": 2,
+        "a": 0,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2021,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2122/F1.csv",
+          "HistSourceSHA256": "9e9eaefb8704264f8d55a718a119d940de4af7d7b4217ac4097b957406e16213",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2122/F1.csv",
+              "sha256": "9e9eaefb8704264f8d55a718a119d940de4af7d7b4217ac4097b957406e16213"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": [
+          17,
+          4,
+          6,
+          0
+        ]
+      }
+    },
+    {
+      "originalIndex": 186,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1640131200000,
+        "lg": "Ligue 1",
+        "H": "St Etienne",
+        "A": "Nantes",
+        "h": 0,
+        "a": 1,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2021,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2122/F1.csv",
+          "HistSourceSHA256": "9e9eaefb8704264f8d55a718a119d940de4af7d7b4217ac4097b957406e16213",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2122/F1.csv",
+              "sha256": "9e9eaefb8704264f8d55a718a119d940de4af7d7b4217ac4097b957406e16213"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          13,
+          8,
+          6,
+          3
+        ]
+      }
+    },
+    {
+      "originalIndex": 196,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1642204800000,
+        "lg": "Ligue 1",
+        "H": "St Etienne",
+        "A": "Lens",
+        "h": 1,
+        "a": 2,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2021,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2122/F1.csv",
+          "HistSourceSHA256": "9e9eaefb8704264f8d55a718a119d940de4af7d7b4217ac4097b957406e16213",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2122/F1.csv",
+              "sha256": "9e9eaefb8704264f8d55a718a119d940de4af7d7b4217ac4097b957406e16213"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": [
+          13,
+          14,
+          4,
+          4
+        ]
+      }
+    },
+    {
+      "originalIndex": 208,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1642723200000,
+        "lg": "Ligue 1",
+        "H": "Lyon",
+        "A": "St Etienne",
+        "h": 1,
+        "a": 0,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2021,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2122/F1.csv",
+          "HistSourceSHA256": "9e9eaefb8704264f8d55a718a119d940de4af7d7b4217ac4097b957406e16213",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2122/F1.csv",
+              "sha256": "9e9eaefb8704264f8d55a718a119d940de4af7d7b4217ac4097b957406e16213"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": [
+          11,
+          4,
+          4,
+          1
+        ]
+      }
+    },
+    {
+      "originalIndex": 218,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1643155200000,
+        "lg": "Ligue 1",
+        "H": "Angers",
+        "A": "St Etienne",
+        "h": 0,
+        "a": 1,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2021,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2122/F1.csv",
+          "HistSourceSHA256": "9e9eaefb8704264f8d55a718a119d940de4af7d7b4217ac4097b957406e16213",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2122/F1.csv",
+              "sha256": "9e9eaefb8704264f8d55a718a119d940de4af7d7b4217ac4097b957406e16213"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 1,
+        "shots": [
+          7,
+          8,
+          4,
+          5
+        ]
+      }
+    },
+    {
+      "originalIndex": 221,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1644019200000,
+        "lg": "Ligue 1",
+        "H": "St Etienne",
+        "A": "Montpellier",
+        "h": 3,
+        "a": 1,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2021,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2122/F1.csv",
+          "HistSourceSHA256": "9e9eaefb8704264f8d55a718a119d940de4af7d7b4217ac4097b957406e16213",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2122/F1.csv",
+              "sha256": "9e9eaefb8704264f8d55a718a119d940de4af7d7b4217ac4097b957406e16213"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 1,
+        "shots": [
+          27,
+          3,
+          8,
+          2
+        ]
+      }
+    },
+    {
+      "originalIndex": 236,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1644710400000,
+        "lg": "Ligue 1",
+        "H": "Clermont",
+        "A": "St Etienne",
+        "h": 1,
+        "a": 2,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2021,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2122/F1.csv",
+          "HistSourceSHA256": "9e9eaefb8704264f8d55a718a119d940de4af7d7b4217ac4097b957406e16213",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2122/F1.csv",
+              "sha256": "9e9eaefb8704264f8d55a718a119d940de4af7d7b4217ac4097b957406e16213"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": [
+          9,
+          6,
+          3,
+          3
+        ]
+      }
+    },
+    {
+      "originalIndex": 247,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1645315200000,
+        "lg": "Ligue 1",
+        "H": "St Etienne",
+        "A": "Strasbourg",
+        "h": 2,
+        "a": 2,
+        "ht": 4,
+        "up": false,
+        "o": {
+          "CsvSeason": 2021,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2122/F1.csv",
+          "HistSourceSHA256": "9e9eaefb8704264f8d55a718a119d940de4af7d7b4217ac4097b957406e16213",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2122/F1.csv",
+              "sha256": "9e9eaefb8704264f8d55a718a119d940de4af7d7b4217ac4097b957406e16213"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 2,
+        "hta": 2,
+        "shots": [
+          9,
+          8,
+          4,
+          4
+        ]
+      }
+    },
+    {
+      "originalIndex": 252,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1645833600000,
+        "lg": "Ligue 1",
+        "H": "Paris SG",
+        "A": "St Etienne",
+        "h": 3,
+        "a": 1,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "CsvSeason": 2021,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2122/F1.csv",
+          "HistSourceSHA256": "9e9eaefb8704264f8d55a718a119d940de4af7d7b4217ac4097b957406e16213",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2122/F1.csv",
+              "sha256": "9e9eaefb8704264f8d55a718a119d940de4af7d7b4217ac4097b957406e16213"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 1,
+        "shots": [
+          21,
+          13,
+          8,
+          6
+        ]
+      }
+    },
+    {
+      "originalIndex": 263,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1646524800000,
+        "lg": "Ligue 1",
+        "H": "St Etienne",
+        "A": "Metz",
+        "h": 1,
+        "a": 0,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2021,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2122/F1.csv",
+          "HistSourceSHA256": "9e9eaefb8704264f8d55a718a119d940de4af7d7b4217ac4097b957406e16213",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2122/F1.csv",
+              "sha256": "9e9eaefb8704264f8d55a718a119d940de4af7d7b4217ac4097b957406e16213"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          13,
+          5,
+          5,
+          2
+        ]
+      }
+    },
+    {
+      "originalIndex": 270,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1646956800000,
+        "lg": "Ligue 1",
+        "H": "Lille",
+        "A": "St Etienne",
+        "h": 0,
+        "a": 0,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2021,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2122/F1.csv",
+          "HistSourceSHA256": "9e9eaefb8704264f8d55a718a119d940de4af7d7b4217ac4097b957406e16213",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2122/F1.csv",
+              "sha256": "9e9eaefb8704264f8d55a718a119d940de4af7d7b4217ac4097b957406e16213"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          10,
+          11,
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "originalIndex": 280,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1647561600000,
+        "lg": "Ligue 1",
+        "H": "St Etienne",
+        "A": "Troyes",
+        "h": 1,
+        "a": 1,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2021,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2122/F1.csv",
+          "HistSourceSHA256": "9e9eaefb8704264f8d55a718a119d940de4af7d7b4217ac4097b957406e16213",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2122/F1.csv",
+              "sha256": "9e9eaefb8704264f8d55a718a119d940de4af7d7b4217ac4097b957406e16213"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 1,
+        "shots": [
+          10,
+          8,
+          3,
+          4
+        ]
+      }
+    },
+    {
+      "originalIndex": 296,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1648944000000,
+        "lg": "Ligue 1",
+        "H": "St Etienne",
+        "A": "Marseille",
+        "h": 2,
+        "a": 4,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "CsvSeason": 2021,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2122/F1.csv",
+          "HistSourceSHA256": "9e9eaefb8704264f8d55a718a119d940de4af7d7b4217ac4097b957406e16213",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2122/F1.csv",
+              "sha256": "9e9eaefb8704264f8d55a718a119d940de4af7d7b4217ac4097b957406e16213"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 1,
+        "shots": [
+          5,
+          15,
+          2,
+          9
+        ]
+      }
+    },
+    {
+      "originalIndex": 300,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1649376000000,
+        "lg": "Ligue 1",
+        "H": "Lorient",
+        "A": "St Etienne",
+        "h": 6,
+        "a": 2,
+        "ht": 4,
+        "up": false,
+        "o": {
+          "CsvSeason": 2021,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2122/F1.csv",
+          "HistSourceSHA256": "9e9eaefb8704264f8d55a718a119d940de4af7d7b4217ac4097b957406e16213",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2122/F1.csv",
+              "sha256": "9e9eaefb8704264f8d55a718a119d940de4af7d7b4217ac4097b957406e16213"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 2,
+        "hta": 2,
+        "shots": [
+          18,
+          13,
+          12,
+          4
+        ]
+      }
+    },
+    {
+      "originalIndex": 311,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1650067200000,
+        "lg": "Ligue 1",
+        "H": "St Etienne",
+        "A": "Brest",
+        "h": 2,
+        "a": 1,
+        "ht": 3,
+        "up": false,
+        "o": {
+          "CsvSeason": 2021,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2122/F1.csv",
+          "HistSourceSHA256": "9e9eaefb8704264f8d55a718a119d940de4af7d7b4217ac4097b957406e16213",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2122/F1.csv",
+              "sha256": "9e9eaefb8704264f8d55a718a119d940de4af7d7b4217ac4097b957406e16213"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 2,
+        "hta": 1,
+        "shots": [
+          11,
+          7,
+          4,
+          3
+        ]
+      }
+    },
+    {
+      "originalIndex": 320,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1650412800000,
+        "lg": "Ligue 1",
+        "H": "Bordeaux",
+        "A": "St Etienne",
+        "h": 2,
+        "a": 2,
+        "ht": 3,
+        "up": false,
+        "o": {
+          "CsvSeason": 2021,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2122/F1.csv",
+          "HistSourceSHA256": "9e9eaefb8704264f8d55a718a119d940de4af7d7b4217ac4097b957406e16213",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2122/F1.csv",
+              "sha256": "9e9eaefb8704264f8d55a718a119d940de4af7d7b4217ac4097b957406e16213"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 2,
+        "hta": 1,
+        "shots": [
+          11,
+          9,
+          7,
+          2
+        ]
+      }
+    },
+    {
+      "originalIndex": 331,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1650672000000,
+        "lg": "Ligue 1",
+        "H": "St Etienne",
+        "A": "Monaco",
+        "h": 1,
+        "a": 4,
+        "ht": 3,
+        "up": false,
+        "o": {
+          "CsvSeason": 2021,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2122/F1.csv",
+          "HistSourceSHA256": "9e9eaefb8704264f8d55a718a119d940de4af7d7b4217ac4097b957406e16213",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2122/F1.csv",
+              "sha256": "9e9eaefb8704264f8d55a718a119d940de4af7d7b4217ac4097b957406e16213"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 2,
+        "shots": [
+          8,
+          12,
+          4,
+          6
+        ]
+      }
+    },
+    {
+      "originalIndex": 342,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1651276800000,
+        "lg": "Ligue 1",
+        "H": "Rennes",
+        "A": "St Etienne",
+        "h": 2,
+        "a": 0,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2021,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2122/F1.csv",
+          "HistSourceSHA256": "9e9eaefb8704264f8d55a718a119d940de4af7d7b4217ac4097b957406e16213",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2122/F1.csv",
+              "sha256": "9e9eaefb8704264f8d55a718a119d940de4af7d7b4217ac4097b957406e16213"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": [
+          13,
+          8,
+          3,
+          3
+        ]
+      }
+    },
+    {
+      "originalIndex": 358,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1652227200000,
+        "lg": "Ligue 1",
+        "H": "Nice",
+        "A": "St Etienne",
+        "h": 4,
+        "a": 2,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "CsvSeason": 2021,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2122/F1.csv",
+          "HistSourceSHA256": "9e9eaefb8704264f8d55a718a119d940de4af7d7b4217ac4097b957406e16213",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2122/F1.csv",
+              "sha256": "9e9eaefb8704264f8d55a718a119d940de4af7d7b4217ac4097b957406e16213"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 2,
+        "shots": [
+          14,
+          12,
+          7,
+          6
+        ]
+      }
+    },
+    {
+      "originalIndex": 367,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1652486400000,
+        "lg": "Ligue 1",
+        "H": "St Etienne",
+        "A": "Reims",
+        "h": 1,
+        "a": 2,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "CsvSeason": 2021,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2122/F1.csv",
+          "HistSourceSHA256": "9e9eaefb8704264f8d55a718a119d940de4af7d7b4217ac4097b957406e16213",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2122/F1.csv",
+              "sha256": "9e9eaefb8704264f8d55a718a119d940de4af7d7b4217ac4097b957406e16213"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 1,
+        "shots": [
+          16,
+          17,
+          7,
+          7
+        ]
+      }
+    },
+    {
+      "originalIndex": 377,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1653091200000,
+        "lg": "Ligue 1",
+        "H": "Nantes",
+        "A": "St Etienne",
+        "h": 1,
+        "a": 1,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2021,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2122/F1.csv",
+          "HistSourceSHA256": "9e9eaefb8704264f8d55a718a119d940de4af7d7b4217ac4097b957406e16213",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2122/F1.csv",
+              "sha256": "9e9eaefb8704264f8d55a718a119d940de4af7d7b4217ac4097b957406e16213"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": [
+          12,
+          13,
+          5,
+          3
+        ]
+      }
+    }
+  ]
+}

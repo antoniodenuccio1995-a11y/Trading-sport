@@ -1,0 +1,5110 @@
+[
+  {
+    "code": "I1",
+    "league": "Serie A",
+    "season": 2021,
+    "originalRows": 380,
+    "verifiedDistinct": 380,
+    "consolidatedCopies": 0,
+    "reviewRows": 0,
+    "ft": 380,
+    "ht": 380,
+    "htExact": 380,
+    "expectedRegular": 380,
+    "expectedFull": 380,
+    "missingResults": 0,
+    "missingRegularMatches": 0,
+    "missingFinalPhaseMatches": 0,
+    "resultsHeldForReview": 0,
+    "regularFT": 380,
+    "roundRobinVerified": true,
+    "phaseCounts": {
+      "regular": 380
+    },
+    "status": "completo verificato",
+    "reasons": {},
+    "sources": [
+      {
+        "url": "https://www.football-data.co.uk/mmz4281/2122/I1.csv",
+        "sha256": "6a9555d5a90e652a883fd2862a52545c06e264016cd770347c067a6d7c993170",
+        "kind": "fd"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/openfootball/italy/master/2021-22/1-seriea.txt",
+        "sha256": "5102980f4c6b04189c57358da2243c8d8f2d0f27f53581c45363c7879d28c1ef",
+        "kind": "footballtxt"
+      }
+    ],
+    "originalSHA256": "2b93e1b6bfe6ca57747fdcf36a7cc8b976d4a5e00ba6d53505a0b4ec82d81de5",
+    "packetSHA256": "10a9413e95649b38802bca280f8ee49418e52c5b5c1cfe7996850c8053f7c567"
+  },
+  {
+    "code": "I1",
+    "league": "Serie A",
+    "season": 2022,
+    "originalRows": 381,
+    "verifiedDistinct": 381,
+    "consolidatedCopies": 0,
+    "reviewRows": 0,
+    "ft": 381,
+    "ht": 380,
+    "htExact": 380,
+    "expectedRegular": 380,
+    "expectedFull": 381,
+    "missingResults": 0,
+    "missingRegularMatches": 0,
+    "missingFinalPhaseMatches": 0,
+    "resultsHeldForReview": 0,
+    "regularFT": 380,
+    "roundRobinVerified": true,
+    "phaseCounts": {
+      "regular": 380,
+      "playout": 1
+    },
+    "status": "completo verificato",
+    "reasons": {},
+    "sources": [
+      {
+        "url": "https://www.football-data.co.uk/mmz4281/2223/I1.csv",
+        "sha256": "9960837f37a97ae700f876c87b85a8b7a2f5a5d05a53077830c21b9db8880c45",
+        "kind": "fd"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/openfootball/italy/master/2022-23/1-seriea.txt",
+        "sha256": "a62e782eeff447946ad0f9c48ed4f32eafb240f5a0a96b6fec03df67a84529d5",
+        "kind": "footballtxt"
+      },
+      {
+        "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/ita.1/scoreboard?dates=20230611",
+        "sha256": "052770d8b9a6f780acb5f6a0f736ccd45e507a1b40e8682bd555c8030d39f792",
+        "kind": "espn"
+      }
+    ],
+    "originalSHA256": "fc5459f71dbe05b6b4d27779a98c8565924365837756ee789680595801860c8a",
+    "packetSHA256": "6e2ab21a797e3fae11ae1cd6af8503bc08344abb3511ad0ac78ea926b326c514"
+  },
+  {
+    "code": "I1",
+    "league": "Serie A",
+    "season": 2023,
+    "originalRows": 380,
+    "verifiedDistinct": 380,
+    "consolidatedCopies": 0,
+    "reviewRows": 0,
+    "ft": 380,
+    "ht": 380,
+    "htExact": 380,
+    "expectedRegular": 380,
+    "expectedFull": 380,
+    "missingResults": 0,
+    "missingRegularMatches": 0,
+    "missingFinalPhaseMatches": 0,
+    "resultsHeldForReview": 0,
+    "regularFT": 380,
+    "roundRobinVerified": true,
+    "phaseCounts": {
+      "regular": 380
+    },
+    "status": "completo verificato",
+    "reasons": {},
+    "sources": [
+      {
+        "url": "https://www.football-data.co.uk/mmz4281/2324/I1.csv",
+        "sha256": "343a89db026fe4204ebeabd663cdfee8d02a45457828fc1cb63fa630ca170723",
+        "kind": "fd"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/openfootball/italy/master/2023-24/1-seriea.txt",
+        "sha256": "c638a06f138285d65ce9ba8ac5cc1e89a32caa1912e68811ea9e592d61485227",
+        "kind": "footballtxt"
+      }
+    ],
+    "originalSHA256": "7cbce434b0fe63153ee8f5f21009587002cc8bb1f3561c43aab63c1936b5dcda",
+    "packetSHA256": "84fdb5d2cb03d4005e048c4372d7d5ce02b6cf3a16b71260ec7e4589cfae8a17"
+  },
+  {
+    "code": "I1",
+    "league": "Serie A",
+    "season": 2024,
+    "originalRows": 380,
+    "verifiedDistinct": 380,
+    "consolidatedCopies": 0,
+    "reviewRows": 0,
+    "ft": 380,
+    "ht": 380,
+    "htExact": 380,
+    "expectedRegular": 380,
+    "expectedFull": 380,
+    "missingResults": 0,
+    "missingRegularMatches": 0,
+    "missingFinalPhaseMatches": 0,
+    "resultsHeldForReview": 0,
+    "regularFT": 380,
+    "roundRobinVerified": true,
+    "phaseCounts": {
+      "regular": 380
+    },
+    "status": "completo verificato",
+    "reasons": {},
+    "sources": [
+      {
+        "url": "https://www.football-data.co.uk/mmz4281/2425/I1.csv",
+        "sha256": "79d87a5b18771e066ac7419b7876bfd9771a68ca117a9712375d6bc9685abee3",
+        "kind": "fd"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/openfootball/italy/master/2024-25/1-seriea.txt",
+        "sha256": "e8eaa0bfed869b661ee86df792c0d53b336ca4c9f2a9c27306fb6b4897b0fc0e",
+        "kind": "footballtxt"
+      }
+    ],
+    "originalSHA256": "642d5aa408f20ebafa13fe51374a22cbe2e6967495d26b2149bc928d3ea5bac3",
+    "packetSHA256": "699b6531d99ff05d01029a80d72d249efbe52f30afb445043bc8a1756c703f19"
+  },
+  {
+    "code": "I1",
+    "league": "Serie A",
+    "season": 2025,
+    "originalRows": 380,
+    "verifiedDistinct": 380,
+    "consolidatedCopies": 0,
+    "reviewRows": 0,
+    "ft": 380,
+    "ht": 380,
+    "htExact": 380,
+    "expectedRegular": 380,
+    "expectedFull": 380,
+    "missingResults": 0,
+    "missingRegularMatches": 0,
+    "missingFinalPhaseMatches": 0,
+    "resultsHeldForReview": 0,
+    "regularFT": 380,
+    "roundRobinVerified": true,
+    "phaseCounts": {
+      "regular": 380
+    },
+    "status": "completo verificato",
+    "reasons": {},
+    "sources": [
+      {
+        "url": "https://www.football-data.co.uk/mmz4281/2526/I1.csv",
+        "sha256": "709ae279617d16af226312bcceac941e71241745ddaf950bdac2b83afad4fcbb",
+        "kind": "fd"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/openfootball/italy/master/2025-26/1-seriea.txt",
+        "sha256": "a746c3bb7c1c3a90fa54c50d52b7dd3b5ad5f5c440ebcadb044bbc8554c93a82",
+        "kind": "footballtxt"
+      }
+    ],
+    "originalSHA256": "7ab334f3485ff9025fada307fabf9851cb706b5a0b25629e563ce629f79a0444",
+    "packetSHA256": "7dac13da6e40d6853c0dbd6874ff5635768969340d7a454a7f0cea2ba7885213"
+  },
+  {
+    "code": "I1",
+    "league": "Serie A",
+    "season": 2026,
+    "originalRows": 380,
+    "verifiedDistinct": 380,
+    "consolidatedCopies": 0,
+    "reviewRows": 0,
+    "ft": 80,
+    "ht": 80,
+    "htExact": 80,
+    "expectedRegular": 380,
+    "expectedFull": 380,
+    "missingResults": null,
+    "missingRegularMatches": 300,
+    "missingFinalPhaseMatches": null,
+    "resultsHeldForReview": 0,
+    "regularFT": 80,
+    "roundRobinVerified": false,
+    "phaseCounts": {
+      "regular": 380
+    },
+    "status": "parziale",
+    "reasons": {},
+    "sources": [
+      {
+        "url": "https://www.football-data.co.uk/mmz4281/2627/I1.csv",
+        "sha256": "6cf59ded608d3d23da083b1f8510d2ca22b219f0927f64addeaadfde1b495e11",
+        "kind": "fd"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/openfootball/italy/master/2026-27/1-seriea.txt",
+        "sha256": "a4e67afdee7bbda2b1b920d3f8cead73ed792f024b1bcc50141acae551202710",
+        "kind": "footballtxt"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ITA_1_serie-a/results_2627.csv",
+        "sha256": "34a146507087186e97857e6e617a5b8f63ae38f52a762e300bf32b1354df4ca7",
+        "kind": "community"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ITA_1_serie-a/fixtures_2627.csv",
+        "sha256": "a5b64aeae07ff53d2237eb703d567af52bbd160c3cc4fd3a5281f223efd2af1d",
+        "kind": "community"
+      }
+    ],
+    "originalSHA256": "561d694608316637e1ac2f90867363fe3b161d24b850e67c6c944d0ba837fe8a",
+    "packetSHA256": "04e2ef51e8a1da94d8cb742b7f83acfa7c4727dfe47f288b56e36c199df6049d"
+  },
+  {
+    "code": "I2",
+    "league": "Serie B",
+    "season": 2021,
+    "originalRows": 390,
+    "verifiedDistinct": 386,
+    "consolidatedCopies": 0,
+    "reviewRows": 4,
+    "ft": 386,
+    "ht": 386,
+    "htExact": 386,
+    "expectedRegular": 380,
+    "expectedFull": 390,
+    "missingResults": 2,
+    "missingRegularMatches": 0,
+    "missingFinalPhaseMatches": 2,
+    "resultsHeldForReview": 0,
+    "regularFT": 380,
+    "roundRobinVerified": true,
+    "phaseCounts": {
+      "regular": 380,
+      "playoff": 6
+    },
+    "status": "parziale",
+    "reasons": {
+      "identita_non_documentata": 2,
+      "riferimento_secondario_regolare_non_riconciliato_per_data": 2
+    },
+    "sources": [
+      {
+        "url": "https://www.football-data.co.uk/mmz4281/2122/I2.csv",
+        "sha256": "ec660d62521407d28954db8a136d59a2fd54a036e082b0d82341df6bbb7189ac",
+        "kind": "fd"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/openfootball/italy/master/2021-22/2-serieb.txt",
+        "sha256": "e82c50c484dbc45f67d1d436240e26703785cf993984eb2892e0ddb38afe86d7",
+        "kind": "footballtxt"
+      }
+    ],
+    "originalSHA256": "4faadacdeb61d0dda489b3465d72731346ef96b96f76124facd6928101894ada",
+    "packetSHA256": "4c22b414f2b919d101e4baefccf0012eb5228305d9dbb3f8c48c56f3c4894fbc"
+  },
+  {
+    "code": "I2",
+    "league": "Serie B",
+    "season": 2022,
+    "originalRows": 390,
+    "verifiedDistinct": 387,
+    "consolidatedCopies": 0,
+    "reviewRows": 3,
+    "ft": 387,
+    "ht": 386,
+    "htExact": 386,
+    "expectedRegular": 380,
+    "expectedFull": 390,
+    "missingResults": 2,
+    "missingRegularMatches": 0,
+    "missingFinalPhaseMatches": 2,
+    "resultsHeldForReview": 0,
+    "regularFT": 380,
+    "roundRobinVerified": true,
+    "phaseCounts": {
+      "regular": 380,
+      "playoff": 7
+    },
+    "status": "parziale",
+    "reasons": {
+      "identita_non_documentata": 1,
+      "riferimento_secondario_regolare_non_riconciliato_per_data": 2
+    },
+    "sources": [
+      {
+        "url": "https://www.football-data.co.uk/mmz4281/2223/I2.csv",
+        "sha256": "00a504d72d16705e8e22e0647138ff185119d1cf0ca12be20ee6e1220857ef70",
+        "kind": "fd"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/openfootball/italy/master/2022-23/2-serieb.txt",
+        "sha256": "26997f9e9be1491219f209cde82ee70821c03c47ea5b8c799a0256302d9bda37",
+        "kind": "footballtxt"
+      }
+    ],
+    "originalSHA256": "e9b2316bfa08f2e1e210d00960cada876d655a1c740f383fb8347bf83973cf0a",
+    "packetSHA256": "366acef8ae9b4f29ca1f4cffb3eae259b964b1978fac463d0c3f2c2de5e7c87c"
+  },
+  {
+    "code": "I2",
+    "league": "Serie B",
+    "season": 2023,
+    "originalRows": 390,
+    "verifiedDistinct": 388,
+    "consolidatedCopies": 0,
+    "reviewRows": 2,
+    "ft": 388,
+    "ht": 387,
+    "htExact": 387,
+    "expectedRegular": 380,
+    "expectedFull": 390,
+    "missingResults": 2,
+    "missingRegularMatches": 0,
+    "missingFinalPhaseMatches": 2,
+    "resultsHeldForReview": 0,
+    "regularFT": 380,
+    "roundRobinVerified": true,
+    "phaseCounts": {
+      "regular": 380,
+      "playoff": 8
+    },
+    "status": "parziale",
+    "reasons": {
+      "riferimento_secondario_regolare_non_riconciliato_per_data": 2
+    },
+    "sources": [
+      {
+        "url": "https://www.football-data.co.uk/mmz4281/2324/I2.csv",
+        "sha256": "b51d65f34c5a7949af3ec030f2fa587f8145ced9bffa1e64291a228f1bdad80b",
+        "kind": "fd"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/openfootball/italy/master/2023-24/2-serieb.txt",
+        "sha256": "3be0dd5060db797931912dc0b37b3ddf583407e12f2eb79ed69f09b269a18e15",
+        "kind": "footballtxt"
+      }
+    ],
+    "originalSHA256": "082a01943227a85c1c802a05a2ec5eeb463af1ac2f98c5fbd03d03be161db508",
+    "packetSHA256": "057afca712ceebc7d623d394216df6098960f79721f889ead3859892c996fc03"
+  },
+  {
+    "code": "I2",
+    "league": "Serie B",
+    "season": 2024,
+    "originalRows": 390,
+    "verifiedDistinct": 390,
+    "consolidatedCopies": 0,
+    "reviewRows": 0,
+    "ft": 387,
+    "ht": 386,
+    "htExact": 386,
+    "expectedRegular": 380,
+    "expectedFull": 390,
+    "missingResults": 0,
+    "missingRegularMatches": 0,
+    "missingFinalPhaseMatches": 0,
+    "resultsHeldForReview": 0,
+    "regularFT": 380,
+    "roundRobinVerified": true,
+    "phaseCounts": {
+      "regular": 380,
+      "playoff": 8,
+      "playout": 2
+    },
+    "status": "parziale",
+    "reasons": {},
+    "sources": [
+      {
+        "url": "https://www.football-data.co.uk/mmz4281/2425/I2.csv",
+        "sha256": "ec5aa4ff25da520a1c03a4f6cf7bc87d318acd25b22270fa9e0080d95ac81b7d",
+        "kind": "fd"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/openfootball/italy/master/2024-25/2-serieb.txt",
+        "sha256": "312af0edceeb40d0c38cb3ac53b942e0c66595b00ed7ad4f75a2d5f9c46a82d1",
+        "kind": "footballtxt"
+      }
+    ],
+    "originalSHA256": "b643d82ffdc016483749e4872039de17c07da7fa4a758dd6d7cf48c29f0f8282",
+    "packetSHA256": "a3cf89329b238334546a50e6fb7427ece785f01223993cf8fbaf2d5c8bafac59"
+  },
+  {
+    "code": "I2",
+    "league": "Serie B",
+    "season": 2025,
+    "originalRows": 756,
+    "verifiedDistinct": 380,
+    "consolidatedCopies": 300,
+    "reviewRows": 76,
+    "ft": 380,
+    "ht": 380,
+    "htExact": 380,
+    "expectedRegular": 380,
+    "expectedFull": null,
+    "missingResults": null,
+    "missingRegularMatches": 0,
+    "missingFinalPhaseMatches": null,
+    "resultsHeldForReview": 0,
+    "regularFT": 380,
+    "roundRobinVerified": true,
+    "phaseCounts": {
+      "regular": 380
+    },
+    "status": "parziale",
+    "reasons": {
+      "riferimento_secondario_regolare_non_riconciliato_per_data": 76
+    },
+    "sources": [
+      {
+        "url": "https://www.football-data.co.uk/mmz4281/2526/I2.csv",
+        "sha256": "ed4bcece92bb8b09aa94768bc77d3529fa29339ec70fa7867a9fbc3ca0954731",
+        "kind": "fd"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/openfootball/italy/master/2025-26/2-serieb.txt",
+        "sha256": "252e858b3e1745b6d149db73f6e6cb98c7576e41ea6e7111ad706ddf92e881fb",
+        "kind": "footballtxt"
+      }
+    ],
+    "originalSHA256": "136107a935ef889461a43db8319eecd1cddbcf1d017d8da04eb55f46d607f32c",
+    "packetSHA256": "4bbbb50997f9d30036b5677e5dff050aeb10301368d565912ef9c41e6fcc1151"
+  },
+  {
+    "code": "I2",
+    "league": "Serie B",
+    "season": 2026,
+    "originalRows": 380,
+    "verifiedDistinct": 380,
+    "consolidatedCopies": 0,
+    "reviewRows": 0,
+    "ft": 80,
+    "ht": 80,
+    "htExact": 80,
+    "expectedRegular": 380,
+    "expectedFull": null,
+    "missingResults": null,
+    "missingRegularMatches": 300,
+    "missingFinalPhaseMatches": null,
+    "resultsHeldForReview": 0,
+    "regularFT": 80,
+    "roundRobinVerified": false,
+    "phaseCounts": {
+      "regular": 380
+    },
+    "status": "parziale",
+    "reasons": {},
+    "sources": [
+      {
+        "url": "https://www.football-data.co.uk/mmz4281/2627/I2.csv",
+        "sha256": "452bf8a08f5732cbeecac3869fea4e45b90027c54cd4c9360e64ff39a3d4c1bf",
+        "kind": "fd"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ITA_2_serie-b/results_2627.csv",
+        "sha256": "d627e2b5aeb99d98a773404a5523356450346998744343b800f9f6f0a4d4024e",
+        "kind": "community"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ITA_2_serie-b/fixtures_2627.csv",
+        "sha256": "b0400c2c82fc2dd5367cd96ed01e4af9c33a07cea279d1711df34b509753bad1",
+        "kind": "community"
+      }
+    ],
+    "originalSHA256": "c2dc8acf6340584803eb77fb54362bb3b5a4113e0ce796f7398ef11268b83b08",
+    "packetSHA256": "120e68140d6f89a81da7c1351b038f4f48660160e3b120e1ea3ba97ccd839a4f"
+  },
+  {
+    "code": "E0",
+    "league": "Premier League",
+    "season": 2021,
+    "originalRows": 380,
+    "verifiedDistinct": 380,
+    "consolidatedCopies": 0,
+    "reviewRows": 0,
+    "ft": 380,
+    "ht": 380,
+    "htExact": 380,
+    "expectedRegular": 380,
+    "expectedFull": 380,
+    "missingResults": 0,
+    "missingRegularMatches": 0,
+    "missingFinalPhaseMatches": 0,
+    "resultsHeldForReview": 0,
+    "regularFT": 380,
+    "roundRobinVerified": true,
+    "phaseCounts": {
+      "regular": 380
+    },
+    "status": "completo verificato",
+    "reasons": {},
+    "sources": [
+      {
+        "url": "https://www.football-data.co.uk/mmz4281/2122/E0.csv",
+        "sha256": "335afcbabeb2939fa10ab39ba3e8215072d0b577cb8d0705c1e44c56e934e703",
+        "kind": "fd"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/openfootball/england/master/2021-22/1-premierleague.txt",
+        "sha256": "592df232fbc7c2f36ec3e643eef608f77fcbf7d8da0706c94c99248d60b932b3",
+        "kind": "footballtxt"
+      }
+    ],
+    "originalSHA256": "22f7a5c994ca9eac53e7bf64df9231dc80d897533e0cc661f17f0cfa228b58f8",
+    "packetSHA256": "aa9a63b9a5ae9773e30a17d3e410af3dec7c6ed45af2560a09a21ba500414527"
+  },
+  {
+    "code": "E0",
+    "league": "Premier League",
+    "season": 2022,
+    "originalRows": 380,
+    "verifiedDistinct": 380,
+    "consolidatedCopies": 0,
+    "reviewRows": 0,
+    "ft": 380,
+    "ht": 380,
+    "htExact": 380,
+    "expectedRegular": 380,
+    "expectedFull": 380,
+    "missingResults": 0,
+    "missingRegularMatches": 0,
+    "missingFinalPhaseMatches": 0,
+    "resultsHeldForReview": 0,
+    "regularFT": 380,
+    "roundRobinVerified": true,
+    "phaseCounts": {
+      "regular": 380
+    },
+    "status": "completo verificato",
+    "reasons": {},
+    "sources": [
+      {
+        "url": "https://www.football-data.co.uk/mmz4281/2223/E0.csv",
+        "sha256": "8442792d3b614c94ea3cf381bd2736805889cc1713169035368fff19c3d02380",
+        "kind": "fd"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/openfootball/england/master/2022-23/1-premierleague.txt",
+        "sha256": "c85a2f8ac64975435b8359eb923eaa09e48f33d47672c8b32d2c6e99a8cec5f0",
+        "kind": "footballtxt"
+      }
+    ],
+    "originalSHA256": "2c9923ac2582ff0824c26b90caf2692e340f67e97ab43d2bc2d404d1322b3cc0",
+    "packetSHA256": "db0496a08c94e85a3b685107c87715d9fd146d6871a07cbd95e38aebff120d85"
+  },
+  {
+    "code": "E0",
+    "league": "Premier League",
+    "season": 2023,
+    "originalRows": 380,
+    "verifiedDistinct": 380,
+    "consolidatedCopies": 0,
+    "reviewRows": 0,
+    "ft": 380,
+    "ht": 380,
+    "htExact": 380,
+    "expectedRegular": 380,
+    "expectedFull": 380,
+    "missingResults": 0,
+    "missingRegularMatches": 0,
+    "missingFinalPhaseMatches": 0,
+    "resultsHeldForReview": 0,
+    "regularFT": 380,
+    "roundRobinVerified": true,
+    "phaseCounts": {
+      "regular": 380
+    },
+    "status": "completo verificato",
+    "reasons": {},
+    "sources": [
+      {
+        "url": "https://www.football-data.co.uk/mmz4281/2324/E0.csv",
+        "sha256": "b2e057b0ed959f198b0f63d2391c01239f3608e6de5db68edab3f88e04d07ff3",
+        "kind": "fd"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/openfootball/england/master/2023-24/1-premierleague.txt",
+        "sha256": "0bfb4a7fffe0b1bf7318955686eafeb28fc9676346ae433259e7409d69551450",
+        "kind": "footballtxt"
+      }
+    ],
+    "originalSHA256": "841f3128960260388a6f58eea13517096212440a29978247b219e38752174346",
+    "packetSHA256": "36a6d0c7b737677b779cbf2d610d3d64fb0e92f2e3c33edc5c563a14840c9b33"
+  },
+  {
+    "code": "E0",
+    "league": "Premier League",
+    "season": 2024,
+    "originalRows": 380,
+    "verifiedDistinct": 380,
+    "consolidatedCopies": 0,
+    "reviewRows": 0,
+    "ft": 380,
+    "ht": 380,
+    "htExact": 380,
+    "expectedRegular": 380,
+    "expectedFull": 380,
+    "missingResults": 0,
+    "missingRegularMatches": 0,
+    "missingFinalPhaseMatches": 0,
+    "resultsHeldForReview": 0,
+    "regularFT": 380,
+    "roundRobinVerified": true,
+    "phaseCounts": {
+      "regular": 380
+    },
+    "status": "completo verificato",
+    "reasons": {},
+    "sources": [
+      {
+        "url": "https://www.football-data.co.uk/mmz4281/2425/E0.csv",
+        "sha256": "d0c8ce4a96d886cf60cf101f570f4a3893844226f91c7bd769eb568c49edbfa4",
+        "kind": "fd"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/openfootball/england/master/2024-25/1-premierleague.txt",
+        "sha256": "e39716b01af0c8654a9fae7b5555e6b02f506ea05239e0d0eef41936ba80e1e3",
+        "kind": "footballtxt"
+      }
+    ],
+    "originalSHA256": "8db35c7771797c7164908f9d655d0f2be0f84bdd51d85e6f2d83b511c7aef5b9",
+    "packetSHA256": "da063e94af8b8347b496930574338265647a7d790cfae88c26293cd1549f1ebb"
+  },
+  {
+    "code": "E0",
+    "league": "Premier League",
+    "season": 2025,
+    "originalRows": 380,
+    "verifiedDistinct": 380,
+    "consolidatedCopies": 0,
+    "reviewRows": 0,
+    "ft": 380,
+    "ht": 380,
+    "htExact": 380,
+    "expectedRegular": 380,
+    "expectedFull": 380,
+    "missingResults": 0,
+    "missingRegularMatches": 0,
+    "missingFinalPhaseMatches": 0,
+    "resultsHeldForReview": 0,
+    "regularFT": 380,
+    "roundRobinVerified": true,
+    "phaseCounts": {
+      "regular": 380
+    },
+    "status": "completo verificato",
+    "reasons": {},
+    "sources": [
+      {
+        "url": "https://www.football-data.co.uk/mmz4281/2526/E0.csv",
+        "sha256": "3e3a8352f9ada6789c508d6ca184424421fed56a30400904a4a327c583407e62",
+        "kind": "fd"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/openfootball/england/master/2025-26/1-premierleague.txt",
+        "sha256": "38c1de56c9e9b6662c7efc1420b7e1fe00dddbb502fe72d8f759e773ba3c093b",
+        "kind": "footballtxt"
+      }
+    ],
+    "originalSHA256": "861427bffb47d19d6b767cdaeeafbd1bea67b624098726fa9d429a799ecef473",
+    "packetSHA256": "c81c5c7e337ccf90deca118160dac50b01018c7990bf3c2c19139a75de28715b"
+  },
+  {
+    "code": "E0",
+    "league": "Premier League",
+    "season": 2026,
+    "originalRows": 380,
+    "verifiedDistinct": 380,
+    "consolidatedCopies": 0,
+    "reviewRows": 0,
+    "ft": 80,
+    "ht": 80,
+    "htExact": 80,
+    "expectedRegular": 380,
+    "expectedFull": 380,
+    "missingResults": null,
+    "missingRegularMatches": 300,
+    "missingFinalPhaseMatches": null,
+    "resultsHeldForReview": 0,
+    "regularFT": 80,
+    "roundRobinVerified": false,
+    "phaseCounts": {
+      "regular": 380
+    },
+    "status": "parziale",
+    "reasons": {},
+    "sources": [
+      {
+        "url": "https://www.football-data.co.uk/mmz4281/2627/E0.csv",
+        "sha256": "4cd9d41c75bdaafce0657cb97ce76438f8016605957af80896b60a0f21955ab2",
+        "kind": "fd"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/openfootball/england/master/2026-27/1-premierleague.txt",
+        "sha256": "a2366ea9f7f55b8afd666e455666ba9019f9c62da8864f6bcf3adff65300b445",
+        "kind": "footballtxt"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ENG_1_premier-league/results_2627.csv",
+        "sha256": "44a7d95020e95c01248ecabd715c309071a8a2bc61460ccb02a337261ad2c290",
+        "kind": "community"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ENG_1_premier-league/fixtures_2627.csv",
+        "sha256": "984acaa316557ab37ab5dcf4289a628e99db24f7c5173fe06063a623a430f30c",
+        "kind": "community"
+      }
+    ],
+    "originalSHA256": "5d5ce6294eee839e639544b3d2f363db13ee8d3a136e3c01b918ee77cf77f661",
+    "packetSHA256": "fee9ecb2a68c7a1bc398cf56013d9810b925fac3bd47c795e60a4d419fe46ba5"
+  },
+  {
+    "code": "E1",
+    "league": "Championship",
+    "season": 2021,
+    "originalRows": 557,
+    "verifiedDistinct": 556,
+    "consolidatedCopies": 0,
+    "reviewRows": 1,
+    "ft": 556,
+    "ht": 556,
+    "htExact": 556,
+    "expectedRegular": 552,
+    "expectedFull": 557,
+    "missingResults": 0,
+    "missingRegularMatches": 0,
+    "missingFinalPhaseMatches": 0,
+    "resultsHeldForReview": 0,
+    "regularFT": 552,
+    "roundRobinVerified": true,
+    "phaseCounts": {
+      "regular": 552,
+      "playoff": 4
+    },
+    "status": "parziale",
+    "reasons": {
+      "identita_non_documentata": 1
+    },
+    "sources": [
+      {
+        "url": "https://www.football-data.co.uk/mmz4281/2122/E1.csv",
+        "sha256": "a181451be4801b9f838daf5f6aaf21e9f09d36042be9e6c15388e71001e772ea",
+        "kind": "fd"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/openfootball/england/master/2021-22/2-championship.txt",
+        "sha256": "cfad00fd132faba713a1c2928670b8df790adafe838989d437d40f716a4c0beb",
+        "kind": "footballtxt"
+      }
+    ],
+    "originalSHA256": "c94fe7910c78e2f3f8cf1e4663a5c29e2e2e5fa5bc6b500036cadf4a2fa6af78",
+    "packetSHA256": "cf7f4f82f817ca6180a727acc5cfe8a89c41472b70966d3b302a6690b9bd2d44"
+  },
+  {
+    "code": "E1",
+    "league": "Championship",
+    "season": 2022,
+    "originalRows": 557,
+    "verifiedDistinct": 556,
+    "consolidatedCopies": 0,
+    "reviewRows": 1,
+    "ft": 556,
+    "ht": 555,
+    "htExact": 555,
+    "expectedRegular": 552,
+    "expectedFull": 557,
+    "missingResults": 0,
+    "missingRegularMatches": 0,
+    "missingFinalPhaseMatches": 0,
+    "resultsHeldForReview": 0,
+    "regularFT": 552,
+    "roundRobinVerified": true,
+    "phaseCounts": {
+      "regular": 552,
+      "playoff": 4
+    },
+    "status": "parziale",
+    "reasons": {
+      "identita_non_documentata": 1
+    },
+    "sources": [
+      {
+        "url": "https://www.football-data.co.uk/mmz4281/2223/E1.csv",
+        "sha256": "cd38ab0586ea8cb4d573c363ff70749117f116da5b2741e5b0ea37da05860b1b",
+        "kind": "fd"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/openfootball/england/master/2022-23/2-championship.txt",
+        "sha256": "043b06a923ac5c049ae9c03bcef858a3836979d29807d078f0aee551cc3e06ec",
+        "kind": "footballtxt"
+      }
+    ],
+    "originalSHA256": "068d879d10a7d68cc85c5aa7ace5c1ea2672639bba5b0478d97af1f43d44f390",
+    "packetSHA256": "6996c2cb511d4d92370f819c671dbcff04f9515ce9190675f88f386de125812d"
+  },
+  {
+    "code": "E1",
+    "league": "Championship",
+    "season": 2023,
+    "originalRows": 557,
+    "verifiedDistinct": 557,
+    "consolidatedCopies": 0,
+    "reviewRows": 0,
+    "ft": 557,
+    "ht": 555,
+    "htExact": 555,
+    "expectedRegular": 552,
+    "expectedFull": 557,
+    "missingResults": 0,
+    "missingRegularMatches": 0,
+    "missingFinalPhaseMatches": 0,
+    "resultsHeldForReview": 0,
+    "regularFT": 552,
+    "roundRobinVerified": true,
+    "phaseCounts": {
+      "regular": 552,
+      "playoff": 5
+    },
+    "status": "completo verificato",
+    "reasons": {},
+    "sources": [
+      {
+        "url": "https://www.football-data.co.uk/mmz4281/2324/E1.csv",
+        "sha256": "5737f6cc95c95092b28317f41d3123e2fb09345434efc1c84bbdf15830849ab3",
+        "kind": "fd"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/openfootball/england/master/2023-24/2-championship.txt",
+        "sha256": "21465cd995e0037ae1ff076b6c8b135708146f09d46974bb96850afc9f94c9d8",
+        "kind": "footballtxt"
+      }
+    ],
+    "originalSHA256": "9521f288cf094851ef22a7851fc05c1683c9ee52086d2b708d2b1690bc2289d3",
+    "packetSHA256": "1104e81c153bcd5519fd869322bb03223a363e80d5b34df456f0b91b631d4413"
+  },
+  {
+    "code": "E1",
+    "league": "Championship",
+    "season": 2024,
+    "originalRows": 557,
+    "verifiedDistinct": 557,
+    "consolidatedCopies": 0,
+    "reviewRows": 0,
+    "ft": 557,
+    "ht": 557,
+    "htExact": 557,
+    "expectedRegular": 552,
+    "expectedFull": 557,
+    "missingResults": 0,
+    "missingRegularMatches": 0,
+    "missingFinalPhaseMatches": 0,
+    "resultsHeldForReview": 0,
+    "regularFT": 552,
+    "roundRobinVerified": true,
+    "phaseCounts": {
+      "regular": 552,
+      "playoff": 5
+    },
+    "status": "completo verificato",
+    "reasons": {},
+    "sources": [
+      {
+        "url": "https://www.football-data.co.uk/mmz4281/2425/E1.csv",
+        "sha256": "f34c340446c916374be66bdc2fb25b87ee7f2662712ca009653d03ac705535f9",
+        "kind": "fd"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/openfootball/england/master/2024-25/2-championship.txt",
+        "sha256": "190a37922f1b261226f63bc86ae8fe07d1d1ac40784ab570ea346e1faf4ceb94",
+        "kind": "footballtxt"
+      }
+    ],
+    "originalSHA256": "c862adf0a8ad21c1091097edd0eb122fe4b032a241ff25d2ad5d52bb022ef52d",
+    "packetSHA256": "b82aeafafdef9fdc5207fa4047b52b03c00b8b8d8e8a92c7ce4a318b9e39c982"
+  },
+  {
+    "code": "E1",
+    "league": "Championship",
+    "season": 2025,
+    "originalRows": 557,
+    "verifiedDistinct": 557,
+    "consolidatedCopies": 0,
+    "reviewRows": 0,
+    "ft": 556,
+    "ht": 554,
+    "htExact": 554,
+    "expectedRegular": 552,
+    "expectedFull": 557,
+    "missingResults": 0,
+    "missingRegularMatches": 0,
+    "missingFinalPhaseMatches": 0,
+    "resultsHeldForReview": 0,
+    "regularFT": 552,
+    "roundRobinVerified": true,
+    "phaseCounts": {
+      "regular": 552,
+      "playoff": 5
+    },
+    "status": "parziale",
+    "reasons": {},
+    "sources": [
+      {
+        "url": "https://www.football-data.co.uk/mmz4281/2526/E1.csv",
+        "sha256": "98954c319950f19158624b17a154ef1c56eb7b8d169ef317f28f06d11d0b9a74",
+        "kind": "fd"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/openfootball/england/master/2025-26/2-championship.txt",
+        "sha256": "c782c023638ec960ee58ef65e5c3ddb0ff9b6ef1ee72f972caa7327670baa97d",
+        "kind": "footballtxt"
+      }
+    ],
+    "originalSHA256": "4cc91f098a28d5a1f31abd2de52fbe218cf94dc88b9a3c7127661f520712b21d",
+    "packetSHA256": "436a88699bba5b6b181d7df8b55615d5bd7ca45fb261a7533e2d32a7eb007407"
+  },
+  {
+    "code": "E1",
+    "league": "Championship",
+    "season": 2026,
+    "originalRows": 552,
+    "verifiedDistinct": 552,
+    "consolidatedCopies": 0,
+    "reviewRows": 0,
+    "ft": 144,
+    "ht": 144,
+    "htExact": 144,
+    "expectedRegular": 552,
+    "expectedFull": null,
+    "missingResults": null,
+    "missingRegularMatches": 408,
+    "missingFinalPhaseMatches": null,
+    "resultsHeldForReview": 0,
+    "regularFT": 144,
+    "roundRobinVerified": false,
+    "phaseCounts": {
+      "regular": 552
+    },
+    "status": "parziale",
+    "reasons": {},
+    "sources": [
+      {
+        "url": "https://www.football-data.co.uk/mmz4281/2627/E1.csv",
+        "sha256": "0a69f4397c23f53a68cecacfb1f195b1513a5742d44665fa30aa6dea31256155",
+        "kind": "fd"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/openfootball/england/master/2026-27/2-championship.txt",
+        "sha256": "9602fda115c7e60740120850801c13e41884c7c29e788d5989cfc0394418eb34",
+        "kind": "footballtxt"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ENG_2_championship/results_2627.csv",
+        "sha256": "f9d5ba0985e5336307e565e480ef69a56f1e68a64209e63efbe38d4fcd5fb406",
+        "kind": "community"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ENG_2_championship/fixtures_2627.csv",
+        "sha256": "cc6f495db1ae7438a48092f20b15aed7bf830247f03241678433bf22dbbd99ac",
+        "kind": "community"
+      }
+    ],
+    "originalSHA256": "a48abb749e1dcfbec4ff474963e18068f8ec471ad58471670263e3a23536728b",
+    "packetSHA256": "0cf50507df947095eb08ff5c8629f1956eb9127782b25076cdffd41dc5fe8ca0"
+  },
+  {
+    "code": "E2",
+    "league": "League One",
+    "season": 2021,
+    "originalRows": 552,
+    "verifiedDistinct": 552,
+    "consolidatedCopies": 0,
+    "reviewRows": 0,
+    "ft": 552,
+    "ht": 552,
+    "htExact": 552,
+    "expectedRegular": 552,
+    "expectedFull": 557,
+    "missingResults": 5,
+    "missingRegularMatches": 0,
+    "missingFinalPhaseMatches": 5,
+    "resultsHeldForReview": 0,
+    "regularFT": 552,
+    "roundRobinVerified": true,
+    "phaseCounts": {
+      "regular": 552
+    },
+    "status": "parziale",
+    "reasons": {},
+    "sources": [
+      {
+        "url": "https://www.football-data.co.uk/mmz4281/2122/E2.csv",
+        "sha256": "bc3cb4de64d290f682be5941e7512f46216b0758e274ad205547a634d9d70270",
+        "kind": "fd"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/openfootball/england/master/2021-22/3-league1.txt",
+        "sha256": "7870eddb95dc8f1e1ced3b73089f057d00e683c590ad7a84d4baec41cb07ecd4",
+        "kind": "footballtxt"
+      }
+    ],
+    "originalSHA256": "95194d6d7a5db813f4bb834c77078555dd2914cd483f12dec3b0faec362f3e5b",
+    "packetSHA256": "4cb5a583c44a7a2e11621bd5bf794de91668170213fdcfb58dfe1cdc8061484f"
+  },
+  {
+    "code": "E2",
+    "league": "League One",
+    "season": 2022,
+    "originalRows": 552,
+    "verifiedDistinct": 552,
+    "consolidatedCopies": 0,
+    "reviewRows": 0,
+    "ft": 552,
+    "ht": 552,
+    "htExact": 552,
+    "expectedRegular": 552,
+    "expectedFull": 557,
+    "missingResults": 5,
+    "missingRegularMatches": 0,
+    "missingFinalPhaseMatches": 5,
+    "resultsHeldForReview": 0,
+    "regularFT": 552,
+    "roundRobinVerified": true,
+    "phaseCounts": {
+      "regular": 552
+    },
+    "status": "parziale",
+    "reasons": {},
+    "sources": [
+      {
+        "url": "https://www.football-data.co.uk/mmz4281/2223/E2.csv",
+        "sha256": "c6c1b7366815c4888e62d7f14443f8052291b4ec8702674c1c0caf04ddf9ace5",
+        "kind": "fd"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/openfootball/england/master/2022-23/3-league1.txt",
+        "sha256": "8a30a60071f8ad5c7e7b49b6d6d2ee2242b16ef44ca225c28f146b3634152428",
+        "kind": "footballtxt"
+      }
+    ],
+    "originalSHA256": "1675779daef39f8f0545d28c95e9c5e7c2b285efb34335b12e230b4e80cb84a5",
+    "packetSHA256": "d2f1da26ca266be276e45a1e4333461a609d37ce3fabdd8f85095e257c719cb5"
+  },
+  {
+    "code": "E2",
+    "league": "League One",
+    "season": 2023,
+    "originalRows": 552,
+    "verifiedDistinct": 552,
+    "consolidatedCopies": 0,
+    "reviewRows": 0,
+    "ft": 552,
+    "ht": 552,
+    "htExact": 552,
+    "expectedRegular": 552,
+    "expectedFull": 557,
+    "missingResults": 5,
+    "missingRegularMatches": 0,
+    "missingFinalPhaseMatches": 5,
+    "resultsHeldForReview": 0,
+    "regularFT": 552,
+    "roundRobinVerified": true,
+    "phaseCounts": {
+      "regular": 552
+    },
+    "status": "parziale",
+    "reasons": {},
+    "sources": [
+      {
+        "url": "https://www.football-data.co.uk/mmz4281/2324/E2.csv",
+        "sha256": "48e5c8d7f3fbb2a0d3ac956f066b129743789b34fe3db41dbcb31363c22fc303",
+        "kind": "fd"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/openfootball/england/master/2023-24/3-league1.txt",
+        "sha256": "b743ddad2ade465d1459d784026d2ecdc28b5d1100d3359c46a7f01b14ca93e6",
+        "kind": "footballtxt"
+      }
+    ],
+    "originalSHA256": "ef5c01e64ba7f932ec786c23577cd8352c5c07c5eecbb6841923f5a2394f5621",
+    "packetSHA256": "dbf82ebe2b398006fd0b34904b293fc588cd12815cafd2a2e48216fd84bbeca4"
+  },
+  {
+    "code": "E2",
+    "league": "League One",
+    "season": 2024,
+    "originalRows": 552,
+    "verifiedDistinct": 552,
+    "consolidatedCopies": 0,
+    "reviewRows": 0,
+    "ft": 552,
+    "ht": 552,
+    "htExact": 552,
+    "expectedRegular": 552,
+    "expectedFull": 557,
+    "missingResults": 5,
+    "missingRegularMatches": 0,
+    "missingFinalPhaseMatches": 5,
+    "resultsHeldForReview": 0,
+    "regularFT": 552,
+    "roundRobinVerified": true,
+    "phaseCounts": {
+      "regular": 552
+    },
+    "status": "parziale",
+    "reasons": {},
+    "sources": [
+      {
+        "url": "https://www.football-data.co.uk/mmz4281/2425/E2.csv",
+        "sha256": "d4c0ebde3806714fe01a43935409e803ca35118d746d635480eaf9574d561c49",
+        "kind": "fd"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/openfootball/england/master/2024-25/3-league1.txt",
+        "sha256": "e2a877bcbf31be920dc2d62f41ce073b8b1fa8b220ae6cff3afda011a26ea27a",
+        "kind": "footballtxt"
+      }
+    ],
+    "originalSHA256": "2117fd2354e694c29ac25c3a1480a327ed6dc23dbd167735e1cedb6da846b1f2",
+    "packetSHA256": "54bdadd016cd34a39d0f0ea3944ea1b303b8cccaecff01d441cba686f9634999"
+  },
+  {
+    "code": "E2",
+    "league": "League One",
+    "season": 2025,
+    "originalRows": 958,
+    "verifiedDistinct": 459,
+    "consolidatedCopies": 288,
+    "reviewRows": 211,
+    "ft": 459,
+    "ht": 459,
+    "htExact": 459,
+    "expectedRegular": 552,
+    "expectedFull": 557,
+    "missingResults": 5,
+    "missingRegularMatches": 0,
+    "missingFinalPhaseMatches": 5,
+    "resultsHeldForReview": 93,
+    "regularFT": 459,
+    "roundRobinVerified": false,
+    "phaseCounts": {
+      "regular": 459
+    },
+    "status": "parziale",
+    "reasons": {
+      "disaccordo_fonti_gia_documentato": 25,
+      "riferimento_secondario_regolare_non_riconciliato_per_data": 50,
+      "risultati_discordanti": 120,
+      "dati_incompatibili": 16
+    },
+    "sources": [
+      {
+        "url": "https://www.football-data.co.uk/mmz4281/2526/E2.csv",
+        "sha256": "4c96eff8a2f20c5e26015af8609c4f90478ff055f58ab6e137cc3445bf4c67ee",
+        "kind": "fd"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/openfootball/england/master/2025-26/3-league1.txt",
+        "sha256": "09325b4013747410774f504539532a31db2fb87c1555c5c01276ce091214ef82",
+        "kind": "footballtxt"
+      }
+    ],
+    "originalSHA256": "7f2aaa5beb3a9755d4f8575915efce021b681d2f755a3e4329ac19a9c1780186",
+    "packetSHA256": "01583c4e10eaa733369ad898f4a8f0fd8d0ce8d6f1c846489aa53b75c2219afa"
+  },
+  {
+    "code": "E2",
+    "league": "League One",
+    "season": 2026,
+    "originalRows": 547,
+    "verifiedDistinct": 547,
+    "consolidatedCopies": 0,
+    "reviewRows": 0,
+    "ft": 138,
+    "ht": 138,
+    "htExact": 138,
+    "expectedRegular": 552,
+    "expectedFull": null,
+    "missingResults": null,
+    "missingRegularMatches": 414,
+    "missingFinalPhaseMatches": null,
+    "resultsHeldForReview": 0,
+    "regularFT": 138,
+    "roundRobinVerified": false,
+    "phaseCounts": {
+      "regular": 547
+    },
+    "status": "parziale",
+    "reasons": {},
+    "sources": [
+      {
+        "url": "https://www.football-data.co.uk/mmz4281/2627/E2.csv",
+        "sha256": "7eb7d6eb78dfaec190994e0bff00782457e29f9aa83d94d77df96994c8b33114",
+        "kind": "fd"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ENG_3_league-one/results_2627.csv",
+        "sha256": "ae66c4ca783a75dcb21f912196e3d4f70b0a1ddbe8be0c9c3661d5aba8e39f64",
+        "kind": "community"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ENG_3_league-one/fixtures_2627.csv",
+        "sha256": "ff254558040135aa0dc4469df6837aa32a9cd67276e99aac2c62b1742a074842",
+        "kind": "community"
+      }
+    ],
+    "originalSHA256": "0335dc5babff624a740a073b57712d10ad784a10745acdc717b07a1c5234ea12",
+    "packetSHA256": "bc6d1997e3d721843af33341b76744b17fc1f727e8cd244e2adbe47ae307a6d1"
+  },
+  {
+    "code": "E3",
+    "league": "League Two",
+    "season": 2021,
+    "originalRows": 552,
+    "verifiedDistinct": 552,
+    "consolidatedCopies": 0,
+    "reviewRows": 0,
+    "ft": 552,
+    "ht": 552,
+    "htExact": 552,
+    "expectedRegular": 552,
+    "expectedFull": 557,
+    "missingResults": 5,
+    "missingRegularMatches": 0,
+    "missingFinalPhaseMatches": 5,
+    "resultsHeldForReview": 0,
+    "regularFT": 552,
+    "roundRobinVerified": true,
+    "phaseCounts": {
+      "regular": 552
+    },
+    "status": "parziale",
+    "reasons": {},
+    "sources": [
+      {
+        "url": "https://www.football-data.co.uk/mmz4281/2122/E3.csv",
+        "sha256": "dff7be2d8803eca6f5d0d0f5d3c5e96272c450407388150961920cbd85920bf0",
+        "kind": "fd"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/openfootball/england/master/2021-22/4-league2.txt",
+        "sha256": "1ee55cda995e33d0900b8aa7b56be60a126bc03202c6a9a2c82fdce5b1a32b09",
+        "kind": "footballtxt"
+      }
+    ],
+    "originalSHA256": "3a1e50bb7fb00c03a0b5df9739c878a48d3992fa4805b42e29d0696a9e7e8ea1",
+    "packetSHA256": "0572796a1bae960a845c192231b8b86cc2cc4c1146a238ceb92af2d84a628d5f"
+  },
+  {
+    "code": "E3",
+    "league": "League Two",
+    "season": 2022,
+    "originalRows": 552,
+    "verifiedDistinct": 552,
+    "consolidatedCopies": 0,
+    "reviewRows": 0,
+    "ft": 552,
+    "ht": 552,
+    "htExact": 552,
+    "expectedRegular": 552,
+    "expectedFull": 557,
+    "missingResults": 5,
+    "missingRegularMatches": 0,
+    "missingFinalPhaseMatches": 5,
+    "resultsHeldForReview": 0,
+    "regularFT": 552,
+    "roundRobinVerified": true,
+    "phaseCounts": {
+      "regular": 552
+    },
+    "status": "parziale",
+    "reasons": {},
+    "sources": [
+      {
+        "url": "https://www.football-data.co.uk/mmz4281/2223/E3.csv",
+        "sha256": "96778f4c63843634b4690e34d740eb58bd474a0f08c6be48c1987ce92093fa5a",
+        "kind": "fd"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/openfootball/england/master/2022-23/4-league2.txt",
+        "sha256": "f44dca0baa9adf6f4b64c5df0f7753568f1dfaf285063e41c71550d441e5862b",
+        "kind": "footballtxt"
+      }
+    ],
+    "originalSHA256": "d3c10b6008258be83413e534d3159285f856eff5d30914cb3eda95e0e9550661",
+    "packetSHA256": "95a9db1166925659b7e103ee230e09d045f3e55470d009c179233168a0376335"
+  },
+  {
+    "code": "E3",
+    "league": "League Two",
+    "season": 2023,
+    "originalRows": 552,
+    "verifiedDistinct": 552,
+    "consolidatedCopies": 0,
+    "reviewRows": 0,
+    "ft": 552,
+    "ht": 552,
+    "htExact": 552,
+    "expectedRegular": 552,
+    "expectedFull": 557,
+    "missingResults": 5,
+    "missingRegularMatches": 0,
+    "missingFinalPhaseMatches": 5,
+    "resultsHeldForReview": 0,
+    "regularFT": 552,
+    "roundRobinVerified": true,
+    "phaseCounts": {
+      "regular": 552
+    },
+    "status": "parziale",
+    "reasons": {},
+    "sources": [
+      {
+        "url": "https://www.football-data.co.uk/mmz4281/2324/E3.csv",
+        "sha256": "10da9da5badeb696d163154b26fa43875bfc9fd96d2ed81c5e4d5958e7d231ef",
+        "kind": "fd"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/openfootball/england/master/2023-24/4-league2.txt",
+        "sha256": "8db60f9939a72bc1fea6ce22931030621bbbb59dcecfec63437d963b032ef0a8",
+        "kind": "footballtxt"
+      }
+    ],
+    "originalSHA256": "e188010af0f09065313f8c9acef83232d0df702fc5ccbf28456deea090503f70",
+    "packetSHA256": "0f158b9213cdd372155bec4db706ed890c9308096a698a57e0532697cf51a455"
+  },
+  {
+    "code": "E3",
+    "league": "League Two",
+    "season": 2024,
+    "originalRows": 552,
+    "verifiedDistinct": 552,
+    "consolidatedCopies": 0,
+    "reviewRows": 0,
+    "ft": 552,
+    "ht": 552,
+    "htExact": 552,
+    "expectedRegular": 552,
+    "expectedFull": 557,
+    "missingResults": 5,
+    "missingRegularMatches": 0,
+    "missingFinalPhaseMatches": 5,
+    "resultsHeldForReview": 0,
+    "regularFT": 552,
+    "roundRobinVerified": true,
+    "phaseCounts": {
+      "regular": 552
+    },
+    "status": "parziale",
+    "reasons": {},
+    "sources": [
+      {
+        "url": "https://www.football-data.co.uk/mmz4281/2425/E3.csv",
+        "sha256": "fd8e1e2483478b14ce7d0cc0317ab4b8fc0abf6e44e76613d855212f8acd760d",
+        "kind": "fd"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/openfootball/england/master/2024-25/4-league2.txt",
+        "sha256": "01028c16116b90129aadba05ef4d84a9985eeb165c11535a87b7ec5dc50d0f19",
+        "kind": "footballtxt"
+      }
+    ],
+    "originalSHA256": "b57fe9a79786e3a724fa5243e34eea4f13d053fbcee357cd82d2dfa5b89923f4",
+    "packetSHA256": "f97e5189c270b29d052fc3b5fef21e2934993b9fd132af2b2e7f58bd5574255e"
+  },
+  {
+    "code": "E3",
+    "league": "League Two",
+    "season": 2025,
+    "originalRows": 1001,
+    "verifiedDistinct": 453,
+    "consolidatedCopies": 325,
+    "reviewRows": 223,
+    "ft": 453,
+    "ht": 453,
+    "htExact": 453,
+    "expectedRegular": 552,
+    "expectedFull": 557,
+    "missingResults": 5,
+    "missingRegularMatches": 0,
+    "missingFinalPhaseMatches": 5,
+    "resultsHeldForReview": 99,
+    "regularFT": 453,
+    "roundRobinVerified": false,
+    "phaseCounts": {
+      "regular": 453
+    },
+    "status": "parziale",
+    "reasons": {
+      "disaccordo_fonti_gia_documentato": 20,
+      "riferimento_secondario_regolare_non_riconciliato_per_data": 45,
+      "risultati_discordanti": 148,
+      "dati_incompatibili": 10
+    },
+    "sources": [
+      {
+        "url": "https://www.football-data.co.uk/mmz4281/2526/E3.csv",
+        "sha256": "eff4fa15cb18857091d1f0666d0b8a6c61eda7a8374feef8f2d8a38244e0e45d",
+        "kind": "fd"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/openfootball/england/master/2025-26/4-league2.txt",
+        "sha256": "66c7bb9c71c925ad9023975541214fd9e8b50e25a784948499b29b39c6d1925d",
+        "kind": "footballtxt"
+      }
+    ],
+    "originalSHA256": "d252d18803b7969f4ef260e3c8de9d034c57d5177c392d1466da13a63eef11d5",
+    "packetSHA256": "a1c2650d84211bb3bc5a3ca21bbee33b9847db7e6530a25240c31abbb3a755f2"
+  },
+  {
+    "code": "E3",
+    "league": "League Two",
+    "season": 2026,
+    "originalRows": 551,
+    "verifiedDistinct": 551,
+    "consolidatedCopies": 0,
+    "reviewRows": 0,
+    "ft": 150,
+    "ht": 150,
+    "htExact": 150,
+    "expectedRegular": 552,
+    "expectedFull": null,
+    "missingResults": null,
+    "missingRegularMatches": 402,
+    "missingFinalPhaseMatches": null,
+    "resultsHeldForReview": 0,
+    "regularFT": 150,
+    "roundRobinVerified": false,
+    "phaseCounts": {
+      "regular": 551
+    },
+    "status": "parziale",
+    "reasons": {},
+    "sources": [
+      {
+        "url": "https://www.football-data.co.uk/mmz4281/2627/E3.csv",
+        "sha256": "ca2d7c66aa6f9e53374be009c1b56b529f89871a1842540ea4dbc30e41799a59",
+        "kind": "fd"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ENG_4_league-two/results_2627.csv",
+        "sha256": "fb84dc4807f05df96fb8251defd1104df63bdc0f0e4aee4fc88691cb013c70c6",
+        "kind": "community"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ENG_4_league-two/fixtures_2627.csv",
+        "sha256": "c75fc2945337ca00cfa2b64eebb8e9a7e4c18752ce5c666822bfda2734b0ef4f",
+        "kind": "community"
+      }
+    ],
+    "originalSHA256": "b18d4a439554bae9ce36c4ccd63f1bdb58dabe2f69015824104f016b82fa6f91",
+    "packetSHA256": "ccb8d6c359e675d1abfc0d5fb233835fa03262017a717feff7753aa16378647e"
+  },
+  {
+    "code": "D1",
+    "league": "Bundesliga",
+    "season": 2021,
+    "originalRows": 306,
+    "verifiedDistinct": 306,
+    "consolidatedCopies": 0,
+    "reviewRows": 0,
+    "ft": 306,
+    "ht": 306,
+    "htExact": 306,
+    "expectedRegular": 306,
+    "expectedFull": null,
+    "missingResults": null,
+    "missingRegularMatches": 0,
+    "missingFinalPhaseMatches": null,
+    "resultsHeldForReview": 0,
+    "regularFT": 306,
+    "roundRobinVerified": true,
+    "phaseCounts": {
+      "regular": 306
+    },
+    "status": "parziale",
+    "reasons": {},
+    "sources": [
+      {
+        "url": "https://www.football-data.co.uk/mmz4281/2122/D1.csv",
+        "sha256": "034d0e1296e944dddf25e3c91b85ef5bd1ad25661b89d73878f5c73bfea4b9fc",
+        "kind": "fd"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/openfootball/football.json/master/2021-22/de.1.json",
+        "sha256": "f1b9901cffb6b073f389e730213b5f8efe6a9a73b2f86058794f2d0f1dcc54dc",
+        "kind": "footballjson"
+      }
+    ],
+    "originalSHA256": "deb6b959a4ab915a363e52f46360422e987cd066fa725ce2b5187a7149d6a486",
+    "packetSHA256": "4a102ef4f8aa9d3fb9cc88ae7f02e5c57fb539ef6e3e79fef52fb6a5d79cb643"
+  },
+  {
+    "code": "D1",
+    "league": "Bundesliga",
+    "season": 2022,
+    "originalRows": 306,
+    "verifiedDistinct": 306,
+    "consolidatedCopies": 0,
+    "reviewRows": 0,
+    "ft": 306,
+    "ht": 306,
+    "htExact": 306,
+    "expectedRegular": 306,
+    "expectedFull": null,
+    "missingResults": null,
+    "missingRegularMatches": 0,
+    "missingFinalPhaseMatches": null,
+    "resultsHeldForReview": 0,
+    "regularFT": 306,
+    "roundRobinVerified": true,
+    "phaseCounts": {
+      "regular": 306
+    },
+    "status": "parziale",
+    "reasons": {},
+    "sources": [
+      {
+        "url": "https://www.football-data.co.uk/mmz4281/2223/D1.csv",
+        "sha256": "b716517b25033ce8e0243e967aa961876425a4c41e97c8aa8fa59f2aca061341",
+        "kind": "fd"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/openfootball/football.json/master/2022-23/de.1.json",
+        "sha256": "b0c052dc75836dfc6b0d3781d35b828851db7377c9f6ccb39643dbbe1964f3bd",
+        "kind": "footballjson"
+      }
+    ],
+    "originalSHA256": "a33f5b6528cb3fe293a86b16befafa5131da494248d0a4d41dfaa45a79cf34ca",
+    "packetSHA256": "f7b1eb6574ce2fb04de92d9b1c69b998a29083852515952ecf51f076ca92be6a"
+  },
+  {
+    "code": "D1",
+    "league": "Bundesliga",
+    "season": 2023,
+    "originalRows": 306,
+    "verifiedDistinct": 306,
+    "consolidatedCopies": 0,
+    "reviewRows": 0,
+    "ft": 306,
+    "ht": 306,
+    "htExact": 306,
+    "expectedRegular": 306,
+    "expectedFull": null,
+    "missingResults": null,
+    "missingRegularMatches": 0,
+    "missingFinalPhaseMatches": null,
+    "resultsHeldForReview": 0,
+    "regularFT": 306,
+    "roundRobinVerified": true,
+    "phaseCounts": {
+      "regular": 306
+    },
+    "status": "parziale",
+    "reasons": {},
+    "sources": [
+      {
+        "url": "https://www.football-data.co.uk/mmz4281/2324/D1.csv",
+        "sha256": "1de8bc12a133dbbf71bc6ffda62082642f087f61b1b7c15ae9f2d320876fb07e",
+        "kind": "fd"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/openfootball/football.json/master/2023-24/de.1.json",
+        "sha256": "d104edde48a5e254545eac3d3ed379a09801e1ebcef5c6480e28bc36fcfa202d",
+        "kind": "footballjson"
+      }
+    ],
+    "originalSHA256": "e8a415134534713efe65bdf1f56eec729cd8730b4afcae7c0fc06960f2c7ed40",
+    "packetSHA256": "66d1699352fc526e0610fcc0fe2d68fe7695b27ad5f8b2e2f4dd51db65d51127"
+  },
+  {
+    "code": "D1",
+    "league": "Bundesliga",
+    "season": 2024,
+    "originalRows": 306,
+    "verifiedDistinct": 306,
+    "consolidatedCopies": 0,
+    "reviewRows": 0,
+    "ft": 306,
+    "ht": 305,
+    "htExact": 305,
+    "expectedRegular": 306,
+    "expectedFull": null,
+    "missingResults": null,
+    "missingRegularMatches": 0,
+    "missingFinalPhaseMatches": null,
+    "resultsHeldForReview": 0,
+    "regularFT": 306,
+    "roundRobinVerified": true,
+    "phaseCounts": {
+      "regular": 306
+    },
+    "status": "parziale",
+    "reasons": {},
+    "sources": [
+      {
+        "url": "https://www.football-data.co.uk/mmz4281/2425/D1.csv",
+        "sha256": "a295c58033cfe6393cbbc28f7db85671839b960c5f1153fd3678e20ad2adb92e",
+        "kind": "fd"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/openfootball/football.json/master/2024-25/de.1.json",
+        "sha256": "f473d6595e6c29ebedc08b09177aed6a6b2ff0fa8378b82f51dea469139f44c3",
+        "kind": "footballjson"
+      }
+    ],
+    "originalSHA256": "6f1c3a001f46276dd92b4d3fde2c619f6bc514baacbaa526fb1ea5d30b259b03",
+    "packetSHA256": "f2622eb615773450d244c606fc0701ca1437c4656d06b902a46064182c47442f"
+  },
+  {
+    "code": "D1",
+    "league": "Bundesliga",
+    "season": 2025,
+    "originalRows": 306,
+    "verifiedDistinct": 306,
+    "consolidatedCopies": 0,
+    "reviewRows": 0,
+    "ft": 306,
+    "ht": 306,
+    "htExact": 306,
+    "expectedRegular": 306,
+    "expectedFull": null,
+    "missingResults": null,
+    "missingRegularMatches": 0,
+    "missingFinalPhaseMatches": null,
+    "resultsHeldForReview": 0,
+    "regularFT": 306,
+    "roundRobinVerified": true,
+    "phaseCounts": {
+      "regular": 306
+    },
+    "status": "parziale",
+    "reasons": {},
+    "sources": [
+      {
+        "url": "https://www.football-data.co.uk/mmz4281/2526/D1.csv",
+        "sha256": "618301a4b39918225a8ccc57f0f839d675e1abd92fa3a3ccd9a67acd7c79dd7f",
+        "kind": "fd"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/openfootball/football.json/master/2025-26/de.1.json",
+        "sha256": "17d0999db6281e6365823acdbce41a4f01dd469eac63e1f897e4e47c02906672",
+        "kind": "footballjson"
+      }
+    ],
+    "originalSHA256": "d5c1c18033021a9e440bb2d3a1c3c15acfb2e49e3f576795cd5450bf92c03211",
+    "packetSHA256": "0c1a080bbde9e03f889fa93499a0aecbc1332614b6e693729fed4f35e541a177"
+  },
+  {
+    "code": "D1",
+    "league": "Bundesliga",
+    "season": 2026,
+    "originalRows": 306,
+    "verifiedDistinct": 306,
+    "consolidatedCopies": 0,
+    "reviewRows": 0,
+    "ft": 63,
+    "ht": 63,
+    "htExact": 63,
+    "expectedRegular": 306,
+    "expectedFull": null,
+    "missingResults": null,
+    "missingRegularMatches": 243,
+    "missingFinalPhaseMatches": null,
+    "resultsHeldForReview": 0,
+    "regularFT": 63,
+    "roundRobinVerified": false,
+    "phaseCounts": {
+      "regular": 306
+    },
+    "status": "parziale",
+    "reasons": {},
+    "sources": [
+      {
+        "url": "https://www.football-data.co.uk/mmz4281/2627/D1.csv",
+        "sha256": "313040382632ccf3b564eaba6e2ad680850ca91e78e2d799c0708dec973b1506",
+        "kind": "fd"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/openfootball/football.json/master/2026-27/de.1.json",
+        "sha256": "07fab65d4a1de8ce4c8472da9ccf4d1d2b145ecd5abdc5b6d4250a5c119d7681",
+        "kind": "footballjson"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/GER_1_bundesliga/results_2627.csv",
+        "sha256": "4da731fa0b339b523a46907527e3ba76ef779cc420153449c8dfe2c88c4c4f05",
+        "kind": "community"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/GER_1_bundesliga/fixtures_2627.csv",
+        "sha256": "c88112e47344c595fe3fb8a990d546022a5200bc1b38f34453c704f742306785",
+        "kind": "community"
+      }
+    ],
+    "originalSHA256": "6b1ed80a176dff94f2f366b28b7930e2d8b3a25632c691c15ca742a44342178b",
+    "packetSHA256": "8aaea71b1d1bb567b6831eede8ad5e553a7fc159ef3fc793b9b6f080658ac845"
+  },
+  {
+    "code": "F1",
+    "league": "Ligue 1",
+    "season": 2021,
+    "originalRows": 380,
+    "verifiedDistinct": 342,
+    "consolidatedCopies": 0,
+    "reviewRows": 38,
+    "ft": 342,
+    "ht": 342,
+    "htExact": 342,
+    "expectedRegular": 380,
+    "expectedFull": null,
+    "missingResults": null,
+    "missingRegularMatches": 0,
+    "missingFinalPhaseMatches": null,
+    "resultsHeldForReview": 38,
+    "regularFT": 342,
+    "roundRobinVerified": false,
+    "phaseCounts": {
+      "regular": 342
+    },
+    "status": "parziale",
+    "reasons": {
+      "identita_non_documentata": 38
+    },
+    "sources": [
+      {
+        "url": "https://www.football-data.co.uk/mmz4281/2122/F1.csv",
+        "sha256": "9e9eaefb8704264f8d55a718a119d940de4af7d7b4217ac4097b957406e16213",
+        "kind": "fd"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/openfootball/football.json/master/2021-22/fr.1.json",
+        "sha256": "8abb493061d32faaf413c403b440c043723d9743a9e69d6472bf5410e2d4e039",
+        "kind": "footballjson"
+      }
+    ],
+    "originalSHA256": "fceb23d0c2a682a32db203aba028e00b5ff52bc5d6df1fd1c023c72cf5f5dde4",
+    "packetSHA256": "327bb85ef05d5264a0dbc793ef48cd4bf60115ca8c5ec19af24ed7f313614fd0"
+  },
+  {
+    "code": "F1",
+    "league": "Ligue 1",
+    "season": 2022,
+    "originalRows": 380,
+    "verifiedDistinct": 380,
+    "consolidatedCopies": 0,
+    "reviewRows": 0,
+    "ft": 380,
+    "ht": 380,
+    "htExact": 380,
+    "expectedRegular": 380,
+    "expectedFull": null,
+    "missingResults": null,
+    "missingRegularMatches": 0,
+    "missingFinalPhaseMatches": null,
+    "resultsHeldForReview": 0,
+    "regularFT": 380,
+    "roundRobinVerified": true,
+    "phaseCounts": {
+      "regular": 380
+    },
+    "status": "parziale",
+    "reasons": {},
+    "sources": [
+      {
+        "url": "https://www.football-data.co.uk/mmz4281/2223/F1.csv",
+        "sha256": "18ea07d922e8b6360b81189637efd5aaf44779765db856bff208d5b1acf69b2f",
+        "kind": "fd"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/openfootball/football.json/master/2022-23/fr.1.json",
+        "sha256": "6301ac1ba1fa0f5b72345759711beac3b3be3c989725cc1c6ef9307ffef692c7",
+        "kind": "footballjson"
+      }
+    ],
+    "originalSHA256": "b57ae9bba8bf43f11514fe8de979df81d503f0432f44f172f7138fe0e088bd74",
+    "packetSHA256": "4eece9689da5df2aa1f26c4bc19764e0e08435f134c5c1b119f5b874c852498c"
+  },
+  {
+    "code": "F1",
+    "league": "Ligue 1",
+    "season": 2023,
+    "originalRows": 306,
+    "verifiedDistinct": 306,
+    "consolidatedCopies": 0,
+    "reviewRows": 0,
+    "ft": 306,
+    "ht": 306,
+    "htExact": 306,
+    "expectedRegular": 306,
+    "expectedFull": null,
+    "missingResults": null,
+    "missingRegularMatches": 0,
+    "missingFinalPhaseMatches": null,
+    "resultsHeldForReview": 0,
+    "regularFT": 306,
+    "roundRobinVerified": true,
+    "phaseCounts": {
+      "regular": 306
+    },
+    "status": "parziale",
+    "reasons": {},
+    "sources": [
+      {
+        "url": "https://www.football-data.co.uk/mmz4281/2324/F1.csv",
+        "sha256": "ca0a4bf51d5b1ccfd0e1558ea41de6bb829df6c96c759888a87248d296d5adb7",
+        "kind": "fd"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/openfootball/football.json/master/2023-24/fr.1.json",
+        "sha256": "fa328cecf4c12232ac77a5d477059eebe16b68b3712ec87800b89efda8ddfb70",
+        "kind": "footballjson"
+      }
+    ],
+    "originalSHA256": "d632ecfea20805b090565ed18e4fb0b076fd46761aa278b815366d1d839b28b7",
+    "packetSHA256": "c07d08c4831178b62d2694badb059b678a4dd098fe47025ad66bb09144cfa2e0"
+  },
+  {
+    "code": "F1",
+    "league": "Ligue 1",
+    "season": 2024,
+    "originalRows": 306,
+    "verifiedDistinct": 272,
+    "consolidatedCopies": 0,
+    "reviewRows": 34,
+    "ft": 272,
+    "ht": 272,
+    "htExact": 272,
+    "expectedRegular": 306,
+    "expectedFull": null,
+    "missingResults": null,
+    "missingRegularMatches": 0,
+    "missingFinalPhaseMatches": null,
+    "resultsHeldForReview": 34,
+    "regularFT": 272,
+    "roundRobinVerified": false,
+    "phaseCounts": {
+      "regular": 272
+    },
+    "status": "parziale",
+    "reasons": {
+      "identita_non_documentata": 34
+    },
+    "sources": [
+      {
+        "url": "https://www.football-data.co.uk/mmz4281/2425/F1.csv",
+        "sha256": "fe6ae6a0c30d05f0ac88e0fc4a31452c7203e2b444703dfa941e22f38f20ab63",
+        "kind": "fd"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/openfootball/football.json/master/2024-25/fr.1.json",
+        "sha256": "90e9974afe6597452622387ad218f6b0011a5f91f1b426f05152f5b9c105e355",
+        "kind": "footballjson"
+      }
+    ],
+    "originalSHA256": "a627f7946fe20f3cbe982ba7c77fb8e9f2888489cad2f45aabd0d92f1dfffa55",
+    "packetSHA256": "d6e53074a2375a4b81c2f5ccce73b2a2c017ab03ba37b6fc7858421ed8735d2f"
+  },
+  {
+    "code": "F1",
+    "league": "Ligue 1",
+    "season": 2025,
+    "originalRows": 306,
+    "verifiedDistinct": 306,
+    "consolidatedCopies": 0,
+    "reviewRows": 0,
+    "ft": 306,
+    "ht": 306,
+    "htExact": 306,
+    "expectedRegular": 306,
+    "expectedFull": null,
+    "missingResults": null,
+    "missingRegularMatches": 0,
+    "missingFinalPhaseMatches": null,
+    "resultsHeldForReview": 0,
+    "regularFT": 306,
+    "roundRobinVerified": true,
+    "phaseCounts": {
+      "regular": 306
+    },
+    "status": "parziale",
+    "reasons": {},
+    "sources": [
+      {
+        "url": "https://www.football-data.co.uk/mmz4281/2526/F1.csv",
+        "sha256": "898b7ddcd373cfe955ae353b1a98cf7f1c8757ca10b69d53039f4e098e88f192",
+        "kind": "fd"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/openfootball/football.json/master/2025-26/fr.1.json",
+        "sha256": "3e9403445dd96f4bb7f740de22d4ea7e3ea7d640777a12eab621ae4d4dbf3bc7",
+        "kind": "footballjson"
+      }
+    ],
+    "originalSHA256": "45af6eea959b2e922d67e809dc22d013143937d0a3b6dcda12fa401f36b9d272",
+    "packetSHA256": "24e97ed847fa76a81e433bbebb1ce31e84751bfacdc6b45df2e08e570ee36750"
+  },
+  {
+    "code": "F1",
+    "league": "Ligue 1",
+    "season": 2026,
+    "originalRows": 306,
+    "verifiedDistinct": 280,
+    "consolidatedCopies": 0,
+    "reviewRows": 26,
+    "ft": 72,
+    "ht": 72,
+    "htExact": 72,
+    "expectedRegular": 306,
+    "expectedFull": null,
+    "missingResults": null,
+    "missingRegularMatches": 234,
+    "missingFinalPhaseMatches": null,
+    "resultsHeldForReview": 0,
+    "regularFT": 72,
+    "roundRobinVerified": false,
+    "phaseCounts": {
+      "regular": 280
+    },
+    "status": "parziale",
+    "reasons": {
+      "identita_non_documentata": 26
+    },
+    "sources": [
+      {
+        "url": "https://www.football-data.co.uk/mmz4281/2627/F1.csv",
+        "sha256": "46efdba17c47176f58cc65bd40d178944b5f985eb753c61f997fed31de4c7642",
+        "kind": "fd"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/openfootball/football.json/master/2026-27/fr.1.json",
+        "sha256": "f875275f835e378fc8c4e7d48c7a2f327e7d426237bd057fe652fd47f30b5a4f",
+        "kind": "footballjson"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/FRA_1_ligue-1/results_2627.csv",
+        "sha256": "7ec37a184ca209c3e75e4694a250a2db99c7052ba4a48b21b2329355b0de056d",
+        "kind": "community"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/FRA_1_ligue-1/fixtures_2627.csv",
+        "sha256": "df28fedb4327f4a1d8ae03b752d6a83c385b83ebaf437c3f89591c10d11156e5",
+        "kind": "community"
+      }
+    ],
+    "originalSHA256": "784afd2d0cc89fc59402593143d56712e00ee0a0086785e148487c4f7c55a075",
+    "packetSHA256": "3c8561dacfa825d5e01142b7df8a1ec5b183fb18ae35f1be7bb7137254dde483"
+  },
+  {
+    "code": "F2",
+    "league": "Ligue 2",
+    "season": 2021,
+    "originalRows": 380,
+    "verifiedDistinct": 380,
+    "consolidatedCopies": 0,
+    "reviewRows": 0,
+    "ft": 380,
+    "ht": 379,
+    "htExact": 379,
+    "expectedRegular": 380,
+    "expectedFull": null,
+    "missingResults": null,
+    "missingRegularMatches": 0,
+    "missingFinalPhaseMatches": null,
+    "resultsHeldForReview": 0,
+    "regularFT": 380,
+    "roundRobinVerified": true,
+    "phaseCounts": {
+      "regular": 380
+    },
+    "status": "parziale",
+    "reasons": {},
+    "sources": [
+      {
+        "url": "https://www.football-data.co.uk/mmz4281/2122/F2.csv",
+        "sha256": "bc8bdef7a2c73f97e78726bd7a550c851a02b9848f4825230bbec803ab77b41b",
+        "kind": "fd"
+      }
+    ],
+    "originalSHA256": "5b4ff173192682f1783a0ed7b281b5a342ba99dd3322c77718fc3a232db5fcd1",
+    "packetSHA256": "92a2dfaf44b13ff565d7be40469f0f380961b3460852a281ddde1fffbe7782fd"
+  },
+  {
+    "code": "F2",
+    "league": "Ligue 2",
+    "season": 2022,
+    "originalRows": 380,
+    "verifiedDistinct": 342,
+    "consolidatedCopies": 0,
+    "reviewRows": 38,
+    "ft": 342,
+    "ht": 341,
+    "htExact": 341,
+    "expectedRegular": 380,
+    "expectedFull": null,
+    "missingResults": null,
+    "missingRegularMatches": 0,
+    "missingFinalPhaseMatches": null,
+    "resultsHeldForReview": 38,
+    "regularFT": 342,
+    "roundRobinVerified": false,
+    "phaseCounts": {
+      "regular": 342
+    },
+    "status": "parziale",
+    "reasons": {
+      "identita_non_documentata": 38
+    },
+    "sources": [
+      {
+        "url": "https://www.football-data.co.uk/mmz4281/2223/F2.csv",
+        "sha256": "14915d41e6e31375f4ea082eb1be888d209b91166e277a157acf15d5d1b29d19",
+        "kind": "fd"
+      }
+    ],
+    "originalSHA256": "325f12739116027a30144f805b5f0ed2e787eac2d0b7e7bda26ee30a3d8fdac6",
+    "packetSHA256": "87bb670a677a0133eb44777c11ed687a042bd6c1a627e4b7f684329a468258d9"
+  },
+  {
+    "code": "F2",
+    "league": "Ligue 2",
+    "season": 2023,
+    "originalRows": 379,
+    "verifiedDistinct": 341,
+    "consolidatedCopies": 0,
+    "reviewRows": 38,
+    "ft": 341,
+    "ht": 341,
+    "htExact": 341,
+    "expectedRegular": 380,
+    "expectedFull": null,
+    "missingResults": null,
+    "missingRegularMatches": 1,
+    "missingFinalPhaseMatches": null,
+    "resultsHeldForReview": 38,
+    "regularFT": 341,
+    "roundRobinVerified": false,
+    "phaseCounts": {
+      "regular": 341
+    },
+    "status": "parziale",
+    "reasons": {
+      "identita_non_documentata": 38
+    },
+    "sources": [
+      {
+        "url": "https://www.football-data.co.uk/mmz4281/2324/F2.csv",
+        "sha256": "1a8f4ac24e6c345b67b6837bc8ca3c853fe2d18c0aad933175286b6e219bb0a4",
+        "kind": "fd"
+      }
+    ],
+    "originalSHA256": "10bfb5df497379d642bbc12a202d666e0ccf13177e17526095b4d4cfbbb367ae",
+    "packetSHA256": "8766df0bfae9b862acb483c52d60cdd95aef987099e7f64784e1d15e80b2d205"
+  },
+  {
+    "code": "F2",
+    "league": "Ligue 2",
+    "season": 2024,
+    "originalRows": 306,
+    "verifiedDistinct": 306,
+    "consolidatedCopies": 0,
+    "reviewRows": 0,
+    "ft": 306,
+    "ht": 306,
+    "htExact": 306,
+    "expectedRegular": 306,
+    "expectedFull": null,
+    "missingResults": null,
+    "missingRegularMatches": 0,
+    "missingFinalPhaseMatches": null,
+    "resultsHeldForReview": 0,
+    "regularFT": 306,
+    "roundRobinVerified": true,
+    "phaseCounts": {
+      "regular": 306
+    },
+    "status": "parziale",
+    "reasons": {},
+    "sources": [
+      {
+        "url": "https://www.football-data.co.uk/mmz4281/2425/F2.csv",
+        "sha256": "0cb8c06cb611e63cd3f393c2a61e4e224efc8bac3d7f6f5532e498e0cb5a3f37",
+        "kind": "fd"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/openfootball/football.json/master/2024-25/fr.2.json",
+        "sha256": "9504e1e26bb8c74042134869f4adfce874b692a1e668c68eca0244bb23ecdbe5",
+        "kind": "footballjson"
+      }
+    ],
+    "originalSHA256": "5f76ad554fcdba7739ffeaf990a19e03f9abd17e900d2091b184c084a41ce8f7",
+    "packetSHA256": "6f676cf1926597e407d3e9d74978ac10cc7bae70fb49b5a7b4cb6bf372023f7d"
+  },
+  {
+    "code": "F2",
+    "league": "Ligue 2",
+    "season": 2025,
+    "originalRows": 306,
+    "verifiedDistinct": 272,
+    "consolidatedCopies": 0,
+    "reviewRows": 34,
+    "ft": 271,
+    "ht": 271,
+    "htExact": 271,
+    "expectedRegular": 306,
+    "expectedFull": null,
+    "missingResults": null,
+    "missingRegularMatches": 0,
+    "missingFinalPhaseMatches": null,
+    "resultsHeldForReview": 35,
+    "regularFT": 271,
+    "roundRobinVerified": false,
+    "phaseCounts": {
+      "regular": 272
+    },
+    "status": "parziale",
+    "reasons": {
+      "identita_non_documentata": 34
+    },
+    "sources": [
+      {
+        "url": "https://www.football-data.co.uk/mmz4281/2526/F2.csv",
+        "sha256": "dcedf4dd66f3e0ac8efb8ccd2e5489882068e5630c041702b15c1d0fe70c6017",
+        "kind": "fd"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/openfootball/football.json/master/2025-26/fr.2.json",
+        "sha256": "bf9a5d2a3caee58d71dd0f9b399829c9e7878aa4cb65ae5563b484269fbf5cb0",
+        "kind": "footballjson"
+      }
+    ],
+    "originalSHA256": "9552aec5526e3b118109b30cf68884401c39a2ae2eec7deb9c4dbfa0edfdf263",
+    "packetSHA256": "81e1fc52e10a4f0a280b07feb24381e7281b4fd3726577322ec91b2c64e54532"
+  },
+  {
+    "code": "F2",
+    "league": "Ligue 2",
+    "season": 2026,
+    "originalRows": 306,
+    "verifiedDistinct": 250,
+    "consolidatedCopies": 0,
+    "reviewRows": 56,
+    "ft": 80,
+    "ht": 80,
+    "htExact": 80,
+    "expectedRegular": 306,
+    "expectedFull": null,
+    "missingResults": null,
+    "missingRegularMatches": 216,
+    "missingFinalPhaseMatches": null,
+    "resultsHeldForReview": 10,
+    "regularFT": 80,
+    "roundRobinVerified": false,
+    "phaseCounts": {
+      "regular": 250
+    },
+    "status": "parziale",
+    "reasons": {
+      "identita_non_documentata": 56
+    },
+    "sources": [
+      {
+        "url": "https://www.football-data.co.uk/mmz4281/2627/F2.csv",
+        "sha256": "94b620e6460d53c4ebf3a6d0247e67ade6cc79a5c5ada8e8dd77b366cff6367b",
+        "kind": "fd"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/FRA_2_ligue-2/results_2627.csv",
+        "sha256": "201850cea2d1d03cb5339d048467954d95c235e3e170b938350c1a059a94a292",
+        "kind": "community"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/FRA_2_ligue-2/fixtures_2627.csv",
+        "sha256": "9f8f4e5819e48f43e387d4268dbf0c973cdf412f65fb3bfeb0043794e4e070f2",
+        "kind": "community"
+      }
+    ],
+    "originalSHA256": "376187fd8006ce1938e05e36767ca3c24f194c096ad2131e32a57e78ea6e1589",
+    "packetSHA256": "69602803d70fa2f2c3050ca2c1ed47c207bddf566af67bd2684135c7ff0aab65"
+  },
+  {
+    "code": "SP1",
+    "league": "La Liga",
+    "season": 2021,
+    "originalRows": 380,
+    "verifiedDistinct": 380,
+    "consolidatedCopies": 0,
+    "reviewRows": 0,
+    "ft": 380,
+    "ht": 380,
+    "htExact": 380,
+    "expectedRegular": 380,
+    "expectedFull": 380,
+    "missingResults": 0,
+    "missingRegularMatches": 0,
+    "missingFinalPhaseMatches": 0,
+    "resultsHeldForReview": 0,
+    "regularFT": 380,
+    "roundRobinVerified": true,
+    "phaseCounts": {
+      "regular": 380
+    },
+    "status": "completo verificato",
+    "reasons": {},
+    "sources": [
+      {
+        "url": "https://www.football-data.co.uk/mmz4281/2122/SP1.csv",
+        "sha256": "2d9e619700712823d15716c07715133f8c3b1a09046930dcfc785a38633dee2e",
+        "kind": "fd"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/openfootball/football.json/master/2021-22/es.1.json",
+        "sha256": "7beb67dd49d7132bf9f7baea540342439b97ed4a7b21ffb90d3231a402c54d02",
+        "kind": "footballjson"
+      }
+    ],
+    "originalSHA256": "ee4a91dbaf58c85d96e614a1e7fe7251ac473558846778385df569dec653985d",
+    "packetSHA256": "b411d988cfc82fe078cfc2124f7655b096cec2d557be056975a8bbd7d702cc5e"
+  },
+  {
+    "code": "SP1",
+    "league": "La Liga",
+    "season": 2022,
+    "originalRows": 380,
+    "verifiedDistinct": 380,
+    "consolidatedCopies": 0,
+    "reviewRows": 0,
+    "ft": 380,
+    "ht": 380,
+    "htExact": 380,
+    "expectedRegular": 380,
+    "expectedFull": 380,
+    "missingResults": 0,
+    "missingRegularMatches": 0,
+    "missingFinalPhaseMatches": 0,
+    "resultsHeldForReview": 0,
+    "regularFT": 380,
+    "roundRobinVerified": true,
+    "phaseCounts": {
+      "regular": 380
+    },
+    "status": "completo verificato",
+    "reasons": {},
+    "sources": [
+      {
+        "url": "https://www.football-data.co.uk/mmz4281/2223/SP1.csv",
+        "sha256": "53348112526b5165539df240be350083989bb258f30c0ff7cacbc0165ca7e4b3",
+        "kind": "fd"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/openfootball/football.json/master/2022-23/es.1.json",
+        "sha256": "0204c66c919c2cd5cc3d1ba26be4f68592e4e173843162a9e6755182ccf83778",
+        "kind": "footballjson"
+      }
+    ],
+    "originalSHA256": "4e299651c13ac569ee8c43477e33dd0185c84bc97eab6239e2db1bbce57bd388",
+    "packetSHA256": "6dca2b3b74ec1d278941b635cd5c6e65e95615aa87a0d2a8c7d525ba1df9754f"
+  },
+  {
+    "code": "SP1",
+    "league": "La Liga",
+    "season": 2023,
+    "originalRows": 380,
+    "verifiedDistinct": 380,
+    "consolidatedCopies": 0,
+    "reviewRows": 0,
+    "ft": 380,
+    "ht": 380,
+    "htExact": 380,
+    "expectedRegular": 380,
+    "expectedFull": 380,
+    "missingResults": 0,
+    "missingRegularMatches": 0,
+    "missingFinalPhaseMatches": 0,
+    "resultsHeldForReview": 0,
+    "regularFT": 380,
+    "roundRobinVerified": true,
+    "phaseCounts": {
+      "regular": 380
+    },
+    "status": "completo verificato",
+    "reasons": {},
+    "sources": [
+      {
+        "url": "https://www.football-data.co.uk/mmz4281/2324/SP1.csv",
+        "sha256": "5323f596c7ed318e4bce95557a369d809d98501fa499ea5f41350cd45cf3c7d9",
+        "kind": "fd"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/openfootball/football.json/master/2023-24/es.1.json",
+        "sha256": "e4c1e1a958f224ba3c815c898982ab495b9577315cc58ee7a5e7b532960f738b",
+        "kind": "footballjson"
+      }
+    ],
+    "originalSHA256": "fdfd058c0d4bcaedc922dc1daea829a3487ebf5a553896d752cb07312bccef7d",
+    "packetSHA256": "4a5d0a79758bd88a1546ccb20a940321e509d5ccb561d301187690adc0adacb9"
+  },
+  {
+    "code": "SP1",
+    "league": "La Liga",
+    "season": 2024,
+    "originalRows": 380,
+    "verifiedDistinct": 380,
+    "consolidatedCopies": 0,
+    "reviewRows": 0,
+    "ft": 380,
+    "ht": 380,
+    "htExact": 380,
+    "expectedRegular": 380,
+    "expectedFull": 380,
+    "missingResults": 0,
+    "missingRegularMatches": 0,
+    "missingFinalPhaseMatches": 0,
+    "resultsHeldForReview": 0,
+    "regularFT": 380,
+    "roundRobinVerified": true,
+    "phaseCounts": {
+      "regular": 380
+    },
+    "status": "completo verificato",
+    "reasons": {},
+    "sources": [
+      {
+        "url": "https://www.football-data.co.uk/mmz4281/2425/SP1.csv",
+        "sha256": "c086e96d6a53f6e6c0fce4e35db0d1728c773b4362323da0161a34769e315a36",
+        "kind": "fd"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/openfootball/football.json/master/2024-25/es.1.json",
+        "sha256": "da5bfa1b3634e1039d9e71aec50bdc847f8761189e3de235a4e730e0dc64ca38",
+        "kind": "footballjson"
+      }
+    ],
+    "originalSHA256": "cfaa05525d0bb8d52eaef7adb1c874ceb12a239cf722e094aeb6d78d44ee2a74",
+    "packetSHA256": "5ec3b2942aefebcc13f1f86ab47360ef6e0c911112ee3627f253a059c9f3966f"
+  },
+  {
+    "code": "SP1",
+    "league": "La Liga",
+    "season": 2025,
+    "originalRows": 380,
+    "verifiedDistinct": 380,
+    "consolidatedCopies": 0,
+    "reviewRows": 0,
+    "ft": 380,
+    "ht": 380,
+    "htExact": 380,
+    "expectedRegular": 380,
+    "expectedFull": 380,
+    "missingResults": 0,
+    "missingRegularMatches": 0,
+    "missingFinalPhaseMatches": 0,
+    "resultsHeldForReview": 0,
+    "regularFT": 380,
+    "roundRobinVerified": true,
+    "phaseCounts": {
+      "regular": 380
+    },
+    "status": "completo verificato",
+    "reasons": {},
+    "sources": [
+      {
+        "url": "https://www.football-data.co.uk/mmz4281/2526/SP1.csv",
+        "sha256": "4ca2e285f3ee0702f6bc55fcaa4f5a15cb3aef6220735a1d15398131e21d63f5",
+        "kind": "fd"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/openfootball/football.json/master/2025-26/es.1.json",
+        "sha256": "b40397d8e62c640138548d57a1a9f76150549213d2a07fcbbb90ed0eabc6ccea",
+        "kind": "footballjson"
+      }
+    ],
+    "originalSHA256": "3c8dcc8c7b31a56e5a0cef3751c5fd38c40f9806f83953075fd6c026f7c9d849",
+    "packetSHA256": "a31597afd7559f893f4262984c8ad2fb36dfe40173af92671206fbee44510ec2"
+  },
+  {
+    "code": "SP1",
+    "league": "La Liga",
+    "season": 2026,
+    "originalRows": 379,
+    "verifiedDistinct": 325,
+    "consolidatedCopies": 0,
+    "reviewRows": 54,
+    "ft": 99,
+    "ht": 99,
+    "htExact": 99,
+    "expectedRegular": 380,
+    "expectedFull": 380,
+    "missingResults": null,
+    "missingRegularMatches": 281,
+    "missingFinalPhaseMatches": null,
+    "resultsHeldForReview": 0,
+    "regularFT": 99,
+    "roundRobinVerified": false,
+    "phaseCounts": {
+      "regular": 325
+    },
+    "status": "parziale",
+    "reasons": {
+      "identita_non_documentata": 54
+    },
+    "sources": [
+      {
+        "url": "https://www.football-data.co.uk/mmz4281/2627/SP1.csv",
+        "sha256": "f5643d70ef824713fba42de3687c072e26934c6bbbbc903652b75a4767e2d8f8",
+        "kind": "fd"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/openfootball/football.json/master/2026-27/es.1.json",
+        "sha256": "4b1a9906e3f2b279a1f25497a38f2f58e21ec19ea726b882fa646da7c07bc0e0",
+        "kind": "footballjson"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_1_la-liga/results_2627.csv",
+        "sha256": "f9442eb0b07250f03da40a04e86fafc2c1b37b9724a2097c8010671058575ccd",
+        "kind": "community"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_1_la-liga/fixtures_2627.csv",
+        "sha256": "d637cd77900ea72ce5d09266e408afce61ca434d1b852d67cf85abd61c185915",
+        "kind": "community"
+      }
+    ],
+    "originalSHA256": "d3bce2fec7bd245e48e205823a3c59afcb02f850253a2de8ea3e60c25ca5f73f",
+    "packetSHA256": "a96f9aba7071e174dd9fbf736d783c21f05ab4c6a2af4cae067530ba527243d3"
+  },
+  {
+    "code": "SP2",
+    "league": "Segunda División",
+    "season": 2021,
+    "originalRows": 462,
+    "verifiedDistinct": 420,
+    "consolidatedCopies": 0,
+    "reviewRows": 42,
+    "ft": 420,
+    "ht": 420,
+    "htExact": 420,
+    "expectedRegular": 462,
+    "expectedFull": 468,
+    "missingResults": 6,
+    "missingRegularMatches": 0,
+    "missingFinalPhaseMatches": 6,
+    "resultsHeldForReview": 42,
+    "regularFT": 420,
+    "roundRobinVerified": false,
+    "phaseCounts": {
+      "regular": 420
+    },
+    "status": "parziale",
+    "reasons": {
+      "identita_non_documentata": 42
+    },
+    "sources": [
+      {
+        "url": "https://www.football-data.co.uk/mmz4281/2122/SP2.csv",
+        "sha256": "6f586b7d80dee6785ca248597cf2962145fdd72113588b807159b03baa5df831",
+        "kind": "fd"
+      }
+    ],
+    "originalSHA256": "7470be21750fc0f0bf4ae96e1c3bb900196f6ac7a32a8e1add2fc2073377d1fb",
+    "packetSHA256": "dd999fa92a20a61d6e731017194eb610a2a75fc45c5c50c7913190244e5bc351"
+  },
+  {
+    "code": "SP2",
+    "league": "Segunda División",
+    "season": 2022,
+    "originalRows": 462,
+    "verifiedDistinct": 420,
+    "consolidatedCopies": 0,
+    "reviewRows": 42,
+    "ft": 420,
+    "ht": 420,
+    "htExact": 420,
+    "expectedRegular": 462,
+    "expectedFull": 468,
+    "missingResults": 6,
+    "missingRegularMatches": 0,
+    "missingFinalPhaseMatches": 6,
+    "resultsHeldForReview": 42,
+    "regularFT": 420,
+    "roundRobinVerified": false,
+    "phaseCounts": {
+      "regular": 420
+    },
+    "status": "parziale",
+    "reasons": {
+      "identita_non_documentata": 42
+    },
+    "sources": [
+      {
+        "url": "https://www.football-data.co.uk/mmz4281/2223/SP2.csv",
+        "sha256": "1b233ea48be17ae413b05fd132f8a26ac7f1bc69a4bc9ee2a3470b9909b410a8",
+        "kind": "fd"
+      }
+    ],
+    "originalSHA256": "a6baea316eff741c242c429a5e4b5fed3ebc0bde2413135fca808d3272dc7593",
+    "packetSHA256": "db3befc7b2c4f291215ce9ddfb31b863d19ac60ccd521e5a4ec9fc8cc97b1e71"
+  },
+  {
+    "code": "SP2",
+    "league": "Segunda División",
+    "season": 2023,
+    "originalRows": 462,
+    "verifiedDistinct": 420,
+    "consolidatedCopies": 0,
+    "reviewRows": 42,
+    "ft": 420,
+    "ht": 420,
+    "htExact": 420,
+    "expectedRegular": 462,
+    "expectedFull": 468,
+    "missingResults": 6,
+    "missingRegularMatches": 0,
+    "missingFinalPhaseMatches": 6,
+    "resultsHeldForReview": 42,
+    "regularFT": 420,
+    "roundRobinVerified": false,
+    "phaseCounts": {
+      "regular": 420
+    },
+    "status": "parziale",
+    "reasons": {
+      "identita_non_documentata": 42
+    },
+    "sources": [
+      {
+        "url": "https://www.football-data.co.uk/mmz4281/2324/SP2.csv",
+        "sha256": "e09c2d18bd41c1f735aba730d31d0db778c0b7086973ae979a52dd814f1d345a",
+        "kind": "fd"
+      }
+    ],
+    "originalSHA256": "5af491ab6cf22dcd7c69e2d38129a27962cbd836d1fa69c20d69644a97929d0e",
+    "packetSHA256": "e435cca6ef5054e1836da6b877c5a8407d8760b7f347a68b46c25f0e844f9cad"
+  },
+  {
+    "code": "SP2",
+    "league": "Segunda División",
+    "season": 2024,
+    "originalRows": 462,
+    "verifiedDistinct": 462,
+    "consolidatedCopies": 0,
+    "reviewRows": 0,
+    "ft": 462,
+    "ht": 462,
+    "htExact": 462,
+    "expectedRegular": 462,
+    "expectedFull": 468,
+    "missingResults": 6,
+    "missingRegularMatches": 0,
+    "missingFinalPhaseMatches": 6,
+    "resultsHeldForReview": 0,
+    "regularFT": 462,
+    "roundRobinVerified": true,
+    "phaseCounts": {
+      "regular": 462
+    },
+    "status": "parziale",
+    "reasons": {},
+    "sources": [
+      {
+        "url": "https://www.football-data.co.uk/mmz4281/2425/SP2.csv",
+        "sha256": "60a8a03e5a477a10bcea5e31379df089d1927b6e388e333e115274dba78b79a3",
+        "kind": "fd"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/openfootball/football.json/master/2024-25/es.2.json",
+        "sha256": "c496e8e77adda92350ba6c0900b161fa1f87e2dd9d25af71e0c8de1421367962",
+        "kind": "footballjson"
+      }
+    ],
+    "originalSHA256": "bb5614139e667e86ccc5acf83cafe15f5f7b36fc0b8a092997fe7d884c05cb07",
+    "packetSHA256": "40def89d7537e6648cf95fa6785aaf2c7e746c6fdf49a9a5c2c967628d9c2e90"
+  },
+  {
+    "code": "SP2",
+    "league": "Segunda División",
+    "season": 2025,
+    "originalRows": 462,
+    "verifiedDistinct": 342,
+    "consolidatedCopies": 0,
+    "reviewRows": 120,
+    "ft": 342,
+    "ht": 342,
+    "htExact": 342,
+    "expectedRegular": 462,
+    "expectedFull": 468,
+    "missingResults": 6,
+    "missingRegularMatches": 0,
+    "missingFinalPhaseMatches": 6,
+    "resultsHeldForReview": 120,
+    "regularFT": 342,
+    "roundRobinVerified": false,
+    "phaseCounts": {
+      "regular": 342
+    },
+    "status": "parziale",
+    "reasons": {
+      "identita_non_documentata": 120
+    },
+    "sources": [
+      {
+        "url": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+        "sha256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de",
+        "kind": "fd"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/openfootball/football.json/master/2025-26/es.2.json",
+        "sha256": "1778a3813cddd6d20d1a9cd2c73c1c22ec007b550a2a559f91bfaf0b5734c648",
+        "kind": "footballjson"
+      }
+    ],
+    "originalSHA256": "f74862415e3dc72660e607eedd1372118debdbda855c2b62905280f537d6da1d",
+    "packetSHA256": "2e29ba2eadbea365291f5c4b06f13afb4d976709b2c8d935bfea3ba114a3fc7b"
+  },
+  {
+    "code": "SP2",
+    "league": "Segunda División",
+    "season": 2026,
+    "originalRows": 451,
+    "verifiedDistinct": 274,
+    "consolidatedCopies": 0,
+    "reviewRows": 177,
+    "ft": 83,
+    "ht": 83,
+    "htExact": 83,
+    "expectedRegular": 462,
+    "expectedFull": 468,
+    "missingResults": null,
+    "missingRegularMatches": 341,
+    "missingFinalPhaseMatches": null,
+    "resultsHeldForReview": 38,
+    "regularFT": 83,
+    "roundRobinVerified": false,
+    "phaseCounts": {
+      "regular": 274
+    },
+    "status": "parziale",
+    "reasons": {
+      "identita_non_documentata": 177
+    },
+    "sources": [
+      {
+        "url": "https://www.football-data.co.uk/mmz4281/2627/SP2.csv",
+        "sha256": "e83471ff5b45472aaa551625073db4a06606e803306341a2549e76c18a08e37f",
+        "kind": "fd"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_2_segunda-division/results_2627.csv",
+        "sha256": "cfe283ce19783bf767977bbaea9e96d4490a3616afcba9948c06ff567404cecc",
+        "kind": "community"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_2_segunda-division/fixtures_2627.csv",
+        "sha256": "e5872a096e421dc2c3d4cdd7f2e1e60e3448569cb633ab5248594901952aa2db",
+        "kind": "community"
+      }
+    ],
+    "originalSHA256": "f4c57cf5d22592592f476d7ceadc42f74ec26234a3c6add0235eb46ebff6e042",
+    "packetSHA256": "2b042096cbbc6a2dcea0c35cea48363b8be4531db5461936b5eda4b740d279c7"
+  },
+  {
+    "code": "N1",
+    "league": "Eredivisie",
+    "season": 2021,
+    "originalRows": 306,
+    "verifiedDistinct": 306,
+    "consolidatedCopies": 0,
+    "reviewRows": 0,
+    "ft": 306,
+    "ht": 306,
+    "htExact": 306,
+    "expectedRegular": 306,
+    "expectedFull": null,
+    "missingResults": null,
+    "missingRegularMatches": 0,
+    "missingFinalPhaseMatches": null,
+    "resultsHeldForReview": 0,
+    "regularFT": 306,
+    "roundRobinVerified": true,
+    "phaseCounts": {
+      "regular": 306
+    },
+    "status": "parziale",
+    "reasons": {},
+    "sources": [
+      {
+        "url": "https://www.football-data.co.uk/mmz4281/2122/N1.csv",
+        "sha256": "1798f02c9e2d55d399503bce4adf82d9cb31969caab01de8a4ac0632947b692a",
+        "kind": "fd"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/openfootball/football.json/master/2021-22/nl.1.json",
+        "sha256": "6918998992aae77f498a1f39622f17032dde29649f0827822b9017699ee8212a",
+        "kind": "footballjson"
+      }
+    ],
+    "originalSHA256": "4161f70bd01dffc9e095c34b1a67511eb6988cb9319a03854af1171e1f7075e5",
+    "packetSHA256": "865ac87177c60ebab4329bcc990a7b97a8ebda33aa31be3e38a1d4ea8c616d21"
+  },
+  {
+    "code": "N1",
+    "league": "Eredivisie",
+    "season": 2022,
+    "originalRows": 306,
+    "verifiedDistinct": 306,
+    "consolidatedCopies": 0,
+    "reviewRows": 0,
+    "ft": 306,
+    "ht": 306,
+    "htExact": 306,
+    "expectedRegular": 306,
+    "expectedFull": null,
+    "missingResults": null,
+    "missingRegularMatches": 0,
+    "missingFinalPhaseMatches": null,
+    "resultsHeldForReview": 0,
+    "regularFT": 306,
+    "roundRobinVerified": true,
+    "phaseCounts": {
+      "regular": 306
+    },
+    "status": "parziale",
+    "reasons": {},
+    "sources": [
+      {
+        "url": "https://www.football-data.co.uk/mmz4281/2223/N1.csv",
+        "sha256": "a52a916c302ab414705fdcbba2077c301f9f0baefd3d519ea5434a2a5f5c4e8f",
+        "kind": "fd"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/openfootball/football.json/master/2022-23/nl.1.json",
+        "sha256": "4c033f836ad98581c5055456d363a57d80d612a0e6605cf63c053ada1bfa19c1",
+        "kind": "footballjson"
+      }
+    ],
+    "originalSHA256": "0c2948c225cc6ca44fd2d71d7c9aa78c52f00484d2b248e6c91e2c6c71a918fe",
+    "packetSHA256": "b3f21d97c24de52031a2bbe42f8cae8461635b7dce5b84e58971a353859c5426"
+  },
+  {
+    "code": "N1",
+    "league": "Eredivisie",
+    "season": 2023,
+    "originalRows": 306,
+    "verifiedDistinct": 306,
+    "consolidatedCopies": 0,
+    "reviewRows": 0,
+    "ft": 306,
+    "ht": 306,
+    "htExact": 306,
+    "expectedRegular": 306,
+    "expectedFull": null,
+    "missingResults": null,
+    "missingRegularMatches": 0,
+    "missingFinalPhaseMatches": null,
+    "resultsHeldForReview": 0,
+    "regularFT": 306,
+    "roundRobinVerified": true,
+    "phaseCounts": {
+      "regular": 306
+    },
+    "status": "parziale",
+    "reasons": {},
+    "sources": [
+      {
+        "url": "https://www.football-data.co.uk/mmz4281/2324/N1.csv",
+        "sha256": "bbef260d01917668069697c60e5179571600ddca6f3cc353b81d46143697dad4",
+        "kind": "fd"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/openfootball/football.json/master/2023-24/nl.1.json",
+        "sha256": "7fca2acdd40027c59890e68cc5b8cba667eebed353c2e4870315ae02f3ef5380",
+        "kind": "footballjson"
+      }
+    ],
+    "originalSHA256": "0ffc109c56113bad1371ed6893136a61410f45138b3ce9ad4204f7e8c025fd51",
+    "packetSHA256": "a9519103d7dfb0c08857c289a42ca3f4ce65a7dee74fbe9b8988c0c4e8a44ce1"
+  },
+  {
+    "code": "N1",
+    "league": "Eredivisie",
+    "season": 2024,
+    "originalRows": 306,
+    "verifiedDistinct": 306,
+    "consolidatedCopies": 0,
+    "reviewRows": 0,
+    "ft": 306,
+    "ht": 306,
+    "htExact": 306,
+    "expectedRegular": 306,
+    "expectedFull": null,
+    "missingResults": null,
+    "missingRegularMatches": 0,
+    "missingFinalPhaseMatches": null,
+    "resultsHeldForReview": 0,
+    "regularFT": 306,
+    "roundRobinVerified": true,
+    "phaseCounts": {
+      "regular": 306
+    },
+    "status": "parziale",
+    "reasons": {},
+    "sources": [
+      {
+        "url": "https://www.football-data.co.uk/mmz4281/2425/N1.csv",
+        "sha256": "7f97f0a7fd1f9b2cff6ac09588cdc14fd07f19950cb75e821fa58ab41e541d0a",
+        "kind": "fd"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/openfootball/football.json/master/2024-25/nl.1.json",
+        "sha256": "e6398379f3d68eb2863cc7dcac12c60219ab186614366bb86560039638b2f6c5",
+        "kind": "footballjson"
+      }
+    ],
+    "originalSHA256": "7d86f604389c58ed4073d28e414a3aef0a07caa0b86298e8ef736a62fbe3e7f3",
+    "packetSHA256": "47209004206e166bb59fdb5f5d7ce51387956e1f0a81f7316298069b6b8818da"
+  },
+  {
+    "code": "N1",
+    "league": "Eredivisie",
+    "season": 2025,
+    "originalRows": 306,
+    "verifiedDistinct": 306,
+    "consolidatedCopies": 0,
+    "reviewRows": 0,
+    "ft": 306,
+    "ht": 306,
+    "htExact": 306,
+    "expectedRegular": 306,
+    "expectedFull": null,
+    "missingResults": null,
+    "missingRegularMatches": 0,
+    "missingFinalPhaseMatches": null,
+    "resultsHeldForReview": 0,
+    "regularFT": 306,
+    "roundRobinVerified": true,
+    "phaseCounts": {
+      "regular": 306
+    },
+    "status": "parziale",
+    "reasons": {},
+    "sources": [
+      {
+        "url": "https://www.football-data.co.uk/mmz4281/2526/N1.csv",
+        "sha256": "dfb092a866e0df4b4c8fde7778d47f41a4307f5c5ac5a6f55d2276e45c80e604",
+        "kind": "fd"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/openfootball/football.json/master/2025-26/nl.1.json",
+        "sha256": "67b38b62062641055946f99f0f393e44ac22a7df3021d4fc7ba1bb6adf94df30",
+        "kind": "footballjson"
+      }
+    ],
+    "originalSHA256": "c3f78c0a0f6dd6a08f9fd3874e7075c328b756ed042d28d8cd7dcaf473141f4a",
+    "packetSHA256": "76f87b19c87ea74cf664508a6bee9a52be1dec5f27681bbc7d1e09a4095e1f34"
+  },
+  {
+    "code": "N1",
+    "league": "Eredivisie",
+    "season": 2026,
+    "originalRows": 306,
+    "verifiedDistinct": 282,
+    "consolidatedCopies": 0,
+    "reviewRows": 24,
+    "ft": 90,
+    "ht": 90,
+    "htExact": 90,
+    "expectedRegular": 306,
+    "expectedFull": null,
+    "missingResults": null,
+    "missingRegularMatches": 216,
+    "missingFinalPhaseMatches": null,
+    "resultsHeldForReview": 0,
+    "regularFT": 90,
+    "roundRobinVerified": false,
+    "phaseCounts": {
+      "regular": 282
+    },
+    "status": "parziale",
+    "reasons": {
+      "identita_non_documentata": 24
+    },
+    "sources": [
+      {
+        "url": "https://www.football-data.co.uk/mmz4281/2627/N1.csv",
+        "sha256": "0a0df1a00c9779d635b22a2419cc63502939307b0f12ec8f9483d5b5679acf64",
+        "kind": "fd"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/openfootball/football.json/master/2026-27/nl.1.json",
+        "sha256": "970507a228aa4ccd2968d52a9862b0d2844148bc548bc7ffe5e83d1c0d8f0517",
+        "kind": "footballjson"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/NED_1_eredivisie/results_2627.csv",
+        "sha256": "b71ea561ee147a161ba21bca6458a6fda1aa1342c2b9e3b329c22f7ae5c8b1c7",
+        "kind": "community"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/NED_1_eredivisie/fixtures_2627.csv",
+        "sha256": "bab3c04d1649d564be3606f692cfaa25d6b8467707abf819ee49a3e5a88d7fad",
+        "kind": "community"
+      }
+    ],
+    "originalSHA256": "ec1a75d2e823aa8b8cee35d83334267b1a97c68fc4650a4f7b03499cde76cc08",
+    "packetSHA256": "cceb0eea93aca6fb06285027db0dde04a7d90e05c9074b77d1fa05aee77cc489"
+  },
+  {
+    "code": "P1",
+    "league": "Primeira Liga",
+    "season": 2021,
+    "originalRows": 306,
+    "verifiedDistinct": 306,
+    "consolidatedCopies": 0,
+    "reviewRows": 0,
+    "ft": 306,
+    "ht": 306,
+    "htExact": 306,
+    "expectedRegular": 306,
+    "expectedFull": null,
+    "missingResults": null,
+    "missingRegularMatches": 0,
+    "missingFinalPhaseMatches": null,
+    "resultsHeldForReview": 0,
+    "regularFT": 306,
+    "roundRobinVerified": true,
+    "phaseCounts": {
+      "regular": 306
+    },
+    "status": "parziale",
+    "reasons": {},
+    "sources": [
+      {
+        "url": "https://www.football-data.co.uk/mmz4281/2122/P1.csv",
+        "sha256": "c4477c4f40da93fbba978fa52b76dc962df3a998a464f9c5ae5462d1b36e3a63",
+        "kind": "fd"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/openfootball/football.json/master/2021-22/pt.1.json",
+        "sha256": "053899d21effad8bc15aa74852631324276819673ad29ea9c3ed74ac02af2a51",
+        "kind": "footballjson"
+      }
+    ],
+    "originalSHA256": "7ad6cfde2a32d765a27dc6aa5ab6effc705d3e2fd90c050e9d5f1ac71742f7be",
+    "packetSHA256": "886eecec3868dcc1196aef50c028defbc1579be1da67a55b277244b597ffd28b"
+  },
+  {
+    "code": "P1",
+    "league": "Primeira Liga",
+    "season": 2022,
+    "originalRows": 306,
+    "verifiedDistinct": 306,
+    "consolidatedCopies": 0,
+    "reviewRows": 0,
+    "ft": 306,
+    "ht": 306,
+    "htExact": 306,
+    "expectedRegular": 306,
+    "expectedFull": null,
+    "missingResults": null,
+    "missingRegularMatches": 0,
+    "missingFinalPhaseMatches": null,
+    "resultsHeldForReview": 0,
+    "regularFT": 306,
+    "roundRobinVerified": true,
+    "phaseCounts": {
+      "regular": 306
+    },
+    "status": "parziale",
+    "reasons": {},
+    "sources": [
+      {
+        "url": "https://www.football-data.co.uk/mmz4281/2223/P1.csv",
+        "sha256": "acb35c152f1198de9d02cdea622bc815e1438bae00d1822e0fe48a787405a84a",
+        "kind": "fd"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/openfootball/football.json/master/2022-23/pt.1.json",
+        "sha256": "fdec06d71d3fe491d8fac75a7680c1ea8dc0e952f5d071e4722cd1fa77f76a06",
+        "kind": "footballjson"
+      }
+    ],
+    "originalSHA256": "e97ffff2e248460c647ec4e4384453db83e94b340b8e6552729813e4d28c0eb6",
+    "packetSHA256": "f10cf2f1ad372a6613982402bb8e62ec836072d6f68fbcfa46aca7d88fb06af0"
+  },
+  {
+    "code": "P1",
+    "league": "Primeira Liga",
+    "season": 2023,
+    "originalRows": 306,
+    "verifiedDistinct": 306,
+    "consolidatedCopies": 0,
+    "reviewRows": 0,
+    "ft": 306,
+    "ht": 306,
+    "htExact": 306,
+    "expectedRegular": 306,
+    "expectedFull": null,
+    "missingResults": null,
+    "missingRegularMatches": 0,
+    "missingFinalPhaseMatches": null,
+    "resultsHeldForReview": 0,
+    "regularFT": 306,
+    "roundRobinVerified": true,
+    "phaseCounts": {
+      "regular": 306
+    },
+    "status": "parziale",
+    "reasons": {},
+    "sources": [
+      {
+        "url": "https://www.football-data.co.uk/mmz4281/2324/P1.csv",
+        "sha256": "681e132bee3948b432436e907a935ea8fc4a8ccace86dad67d61be0159035758",
+        "kind": "fd"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/openfootball/football.json/master/2023-24/pt.1.json",
+        "sha256": "70ae548487e9c3afb38d4af97f5896f90ec268b6aea9cb95e0da4765af0cee75",
+        "kind": "footballjson"
+      }
+    ],
+    "originalSHA256": "c10eed9844c36b561f7c228877503411c9d523d7b957e6c8d83870aee8a66bde",
+    "packetSHA256": "c45c8f1a308c3830473c0e5f3363f983f9d4ed710e5fe3bfe9b92cd5572f6f50"
+  },
+  {
+    "code": "P1",
+    "league": "Primeira Liga",
+    "season": 2024,
+    "originalRows": 306,
+    "verifiedDistinct": 306,
+    "consolidatedCopies": 0,
+    "reviewRows": 0,
+    "ft": 306,
+    "ht": 306,
+    "htExact": 306,
+    "expectedRegular": 306,
+    "expectedFull": null,
+    "missingResults": null,
+    "missingRegularMatches": 0,
+    "missingFinalPhaseMatches": null,
+    "resultsHeldForReview": 0,
+    "regularFT": 306,
+    "roundRobinVerified": true,
+    "phaseCounts": {
+      "regular": 306
+    },
+    "status": "parziale",
+    "reasons": {},
+    "sources": [
+      {
+        "url": "https://www.football-data.co.uk/mmz4281/2425/P1.csv",
+        "sha256": "e3cceff81e471c59e72c1f60f81b2e62df21d1a58af167062d4915484da00255",
+        "kind": "fd"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/openfootball/football.json/master/2024-25/pt.1.json",
+        "sha256": "204a047e80abae556e9aed6afede82335d93866a49b479f585313ae5e7a9ecff",
+        "kind": "footballjson"
+      }
+    ],
+    "originalSHA256": "b328cc3db276650de6728edeed27e9ff091a6fe392214ee8ad02d820c397372a",
+    "packetSHA256": "c926654ed9cc8a623deac42176e032d018f9ac4a305e95b25b38f00928df4642"
+  },
+  {
+    "code": "P1",
+    "league": "Primeira Liga",
+    "season": 2025,
+    "originalRows": 306,
+    "verifiedDistinct": 304,
+    "consolidatedCopies": 0,
+    "reviewRows": 2,
+    "ft": 304,
+    "ht": 304,
+    "htExact": 304,
+    "expectedRegular": 306,
+    "expectedFull": null,
+    "missingResults": null,
+    "missingRegularMatches": 0,
+    "missingFinalPhaseMatches": null,
+    "resultsHeldForReview": 2,
+    "regularFT": 304,
+    "roundRobinVerified": false,
+    "phaseCounts": {
+      "regular": 304
+    },
+    "status": "parziale",
+    "reasons": {
+      "disaccordo_fonti_gia_documentato": 2
+    },
+    "sources": [
+      {
+        "url": "https://www.football-data.co.uk/mmz4281/2526/P1.csv",
+        "sha256": "f1353dc7404bfa0d27daa3ca6c164bb450ec20558ee02fffb7160fae182213dc",
+        "kind": "fd"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/openfootball/football.json/master/2025-26/pt.1.json",
+        "sha256": "c35c7b249ce7f3eb21c543d89ca32a3654cb218ed79c22ce6a9765fead5334da",
+        "kind": "footballjson"
+      }
+    ],
+    "originalSHA256": "2cf0f3b6e4e6eef7c94d1e9ffbb5ff718a7e08b28d64c7e90158f0b28569e884",
+    "packetSHA256": "630e0b8071e7a6762213d1e53d340098e62985ab2f87c299a1326408e29539f2"
+  },
+  {
+    "code": "P1",
+    "league": "Primeira Liga",
+    "season": 2026,
+    "originalRows": 306,
+    "verifiedDistinct": 281,
+    "consolidatedCopies": 0,
+    "reviewRows": 25,
+    "ft": 81,
+    "ht": 81,
+    "htExact": 81,
+    "expectedRegular": 306,
+    "expectedFull": null,
+    "missingResults": null,
+    "missingRegularMatches": 225,
+    "missingFinalPhaseMatches": null,
+    "resultsHeldForReview": 0,
+    "regularFT": 81,
+    "roundRobinVerified": false,
+    "phaseCounts": {
+      "regular": 281
+    },
+    "status": "parziale",
+    "reasons": {
+      "identita_non_documentata": 25
+    },
+    "sources": [
+      {
+        "url": "https://www.football-data.co.uk/mmz4281/2627/P1.csv",
+        "sha256": "77ddf50cca9f3944af36982eb7e8d251cc611e4c1553d034438790b105b088df",
+        "kind": "fd"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/openfootball/football.json/master/2026-27/pt.1.json",
+        "sha256": "57cac2d6caab5a303d0b846ce523462b4571da10766a128ac0a5102bd0182e7e",
+        "kind": "footballjson"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/POR_1_primeira-liga/results_2627.csv",
+        "sha256": "c80ce7db72cbb6759eef97f6da50732d0e0c09270e4487b7964dd9a2a22489c0",
+        "kind": "community"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/POR_1_primeira-liga/fixtures_2627.csv",
+        "sha256": "c27bd9fc6eb1ddc36a6a78da34caac16cf3f8338e859d2fb01d386808f1048f8",
+        "kind": "community"
+      }
+    ],
+    "originalSHA256": "6b9ee05aed0ee93fe2667c9ac7dec89876fd96c237d14bb3dd8901555aa5674e",
+    "packetSHA256": "9839381f0d95ddb488808a35b6d2d29875753c5cb316645451a044d4134b40f1"
+  },
+  {
+    "code": "T1",
+    "league": "Süper Lig",
+    "season": 2021,
+    "originalRows": 380,
+    "verifiedDistinct": 342,
+    "consolidatedCopies": 0,
+    "reviewRows": 38,
+    "ft": 342,
+    "ht": 342,
+    "htExact": 342,
+    "expectedRegular": 380,
+    "expectedFull": null,
+    "missingResults": null,
+    "missingRegularMatches": 0,
+    "missingFinalPhaseMatches": null,
+    "resultsHeldForReview": 38,
+    "regularFT": 342,
+    "roundRobinVerified": false,
+    "phaseCounts": {
+      "regular": 342
+    },
+    "status": "parziale",
+    "reasons": {
+      "identita_non_documentata": 38
+    },
+    "sources": [
+      {
+        "url": "https://www.football-data.co.uk/mmz4281/2122/T1.csv",
+        "sha256": "d945315d283f2c3b48e8ff67d9ac460ccc2c817ad719e0448000db995b5ab9ce",
+        "kind": "fd"
+      }
+    ],
+    "originalSHA256": "0b3bafe689d8174fb5cdbe878ebdadf98aabcd2bb5f464607a301dd30405c8f5",
+    "packetSHA256": "136e4f5d4d026d39280fa62017aae67844e97d98e0a1e41c87e94863780511fa"
+  },
+  {
+    "code": "T1",
+    "league": "Süper Lig",
+    "season": 2022,
+    "originalRows": 342,
+    "verifiedDistinct": 306,
+    "consolidatedCopies": 0,
+    "reviewRows": 36,
+    "ft": 306,
+    "ht": 278,
+    "htExact": 278,
+    "expectedRegular": 342,
+    "expectedFull": null,
+    "missingResults": null,
+    "missingRegularMatches": 0,
+    "missingFinalPhaseMatches": null,
+    "resultsHeldForReview": 36,
+    "regularFT": 306,
+    "roundRobinVerified": false,
+    "phaseCounts": {
+      "regular": 306
+    },
+    "status": "parziale",
+    "reasons": {
+      "identita_non_documentata": 36
+    },
+    "sources": [
+      {
+        "url": "https://www.football-data.co.uk/mmz4281/2223/T1.csv",
+        "sha256": "129aacfe9576679cd287a63c401823b7df4ecd8bddb7eeb1ed0fcd22c867e0e3",
+        "kind": "fd"
+      }
+    ],
+    "originalSHA256": "796a4f3dbd4def503f7fa2a639ca3c305c585190618a10e292e49c644eac667b",
+    "packetSHA256": "59c9d06fe06486a77fb67b4308744dd13daffcd0b9454b49136740bccb2d37e2"
+  },
+  {
+    "code": "T1",
+    "league": "Süper Lig",
+    "season": 2023,
+    "originalRows": 380,
+    "verifiedDistinct": 342,
+    "consolidatedCopies": 0,
+    "reviewRows": 38,
+    "ft": 342,
+    "ht": 341,
+    "htExact": 341,
+    "expectedRegular": 380,
+    "expectedFull": null,
+    "missingResults": null,
+    "missingRegularMatches": 0,
+    "missingFinalPhaseMatches": null,
+    "resultsHeldForReview": 38,
+    "regularFT": 342,
+    "roundRobinVerified": false,
+    "phaseCounts": {
+      "regular": 342
+    },
+    "status": "parziale",
+    "reasons": {
+      "identita_non_documentata": 38
+    },
+    "sources": [
+      {
+        "url": "https://www.football-data.co.uk/mmz4281/2324/T1.csv",
+        "sha256": "17097f7d31bad40f830dc6f0f85090e9f76876e6812ec14997bc80423a05924b",
+        "kind": "fd"
+      }
+    ],
+    "originalSHA256": "b627cdb0369e91a54c0c4e005ff04bb7117bf69e099f1afbf5ff10c78284255c",
+    "packetSHA256": "0493a7f2288b9fdc9b9315e3c3ff08497d8620bcea7be944231c1e446ebd10cb"
+  },
+  {
+    "code": "T1",
+    "league": "Süper Lig",
+    "season": 2024,
+    "originalRows": 342,
+    "verifiedDistinct": 306,
+    "consolidatedCopies": 0,
+    "reviewRows": 36,
+    "ft": 306,
+    "ht": 305,
+    "htExact": 305,
+    "expectedRegular": 342,
+    "expectedFull": null,
+    "missingResults": null,
+    "missingRegularMatches": 0,
+    "missingFinalPhaseMatches": null,
+    "resultsHeldForReview": 36,
+    "regularFT": 306,
+    "roundRobinVerified": false,
+    "phaseCounts": {
+      "regular": 306
+    },
+    "status": "parziale",
+    "reasons": {
+      "identita_non_documentata": 36
+    },
+    "sources": [
+      {
+        "url": "https://www.football-data.co.uk/mmz4281/2425/T1.csv",
+        "sha256": "fd91680cc815f356c94fdd733078431ca771707305994ec49c5f1270cf9c9f5c",
+        "kind": "fd"
+      }
+    ],
+    "originalSHA256": "14eff2b73024221a6bf00a074e5e0ab9cc86b2c68faa1673c76d169e457dee1e",
+    "packetSHA256": "7c01eaa165c12377e8c39917880c0e030887d2f90d5b4e643246eeb9411fd430"
+  },
+  {
+    "code": "T1",
+    "league": "Süper Lig",
+    "season": 2025,
+    "originalRows": 306,
+    "verifiedDistinct": 272,
+    "consolidatedCopies": 0,
+    "reviewRows": 34,
+    "ft": 272,
+    "ht": 272,
+    "htExact": 272,
+    "expectedRegular": 306,
+    "expectedFull": null,
+    "missingResults": null,
+    "missingRegularMatches": 0,
+    "missingFinalPhaseMatches": null,
+    "resultsHeldForReview": 34,
+    "regularFT": 272,
+    "roundRobinVerified": false,
+    "phaseCounts": {
+      "regular": 272
+    },
+    "status": "parziale",
+    "reasons": {
+      "identita_non_documentata": 34
+    },
+    "sources": [
+      {
+        "url": "https://www.football-data.co.uk/mmz4281/2526/T1.csv",
+        "sha256": "d35e97d42b53ca870b13683da3998aa2758eeb43280fbe71d5d935bae47cdd23",
+        "kind": "fd"
+      }
+    ],
+    "originalSHA256": "dd39f63783d0f8d38609db498c26517961f8f6ed59f17f6f11dec973d0491bca",
+    "packetSHA256": "fc0e8483f84a7c98830b3bd5bffe135035d6567ff2babcbdb57c612b657418ae"
+  },
+  {
+    "code": "T1",
+    "league": "Süper Lig",
+    "season": 2026,
+    "originalRows": 81,
+    "verifiedDistinct": 64,
+    "consolidatedCopies": 0,
+    "reviewRows": 17,
+    "ft": 64,
+    "ht": 64,
+    "htExact": 64,
+    "expectedRegular": 306,
+    "expectedFull": null,
+    "missingResults": null,
+    "missingRegularMatches": 225,
+    "missingFinalPhaseMatches": null,
+    "resultsHeldForReview": 17,
+    "regularFT": 64,
+    "roundRobinVerified": false,
+    "phaseCounts": {
+      "regular": 64
+    },
+    "status": "parziale",
+    "reasons": {
+      "identita_non_documentata": 17
+    },
+    "sources": [
+      {
+        "url": "https://www.football-data.co.uk/mmz4281/2627/T1.csv",
+        "sha256": "c307b0cc913901a1821d8f8e6fa0f628e50113561a5a3d0ec6bbdb6834a1cdae",
+        "kind": "fd"
+      }
+    ],
+    "originalSHA256": "cecb7e8ffcee5a2ed0ced05f2da6d696375dcd8af1adf120e928bed8986a9147",
+    "packetSHA256": "6b896ae93dcc2858208d8e6e6d1e0cd8df778ac43914c02be97e0968f57d26f6"
+  },
+  {
+    "code": "B1",
+    "league": "Jupiler Pro League",
+    "season": 2021,
+    "originalRows": 306,
+    "verifiedDistinct": 240,
+    "consolidatedCopies": 0,
+    "reviewRows": 66,
+    "ft": 240,
+    "ht": 239,
+    "htExact": 239,
+    "expectedRegular": 306,
+    "expectedFull": null,
+    "missingResults": null,
+    "missingRegularMatches": 306,
+    "missingFinalPhaseMatches": null,
+    "resultsHeldForReview": 0,
+    "regularFT": 0,
+    "roundRobinVerified": false,
+    "phaseCounts": {
+      "unknown": 240
+    },
+    "status": "parziale",
+    "reasons": {
+      "identita_non_documentata": 66
+    },
+    "sources": [
+      {
+        "url": "https://www.football-data.co.uk/mmz4281/2122/B1.csv",
+        "sha256": "1fbc0221c0c017c34ff480268b153959576b0c707dffbeaf3141819a7d8d4363",
+        "kind": "fd"
+      }
+    ],
+    "originalSHA256": "614ac1c8d83093436641bac84cc05f5ccc94ec86100c83e434b517e06d3673aa",
+    "packetSHA256": "4d8f7315dc252d40233882ae74ab9b1b4ef11be71558ab7e2d6a2ef03ec6abe5"
+  },
+  {
+    "code": "B1",
+    "league": "Jupiler Pro League",
+    "season": 2022,
+    "originalRows": 306,
+    "verifiedDistinct": 240,
+    "consolidatedCopies": 0,
+    "reviewRows": 66,
+    "ft": 240,
+    "ht": 238,
+    "htExact": 238,
+    "expectedRegular": 306,
+    "expectedFull": null,
+    "missingResults": null,
+    "missingRegularMatches": 306,
+    "missingFinalPhaseMatches": null,
+    "resultsHeldForReview": 0,
+    "regularFT": 0,
+    "roundRobinVerified": false,
+    "phaseCounts": {
+      "unknown": 240
+    },
+    "status": "parziale",
+    "reasons": {
+      "identita_non_documentata": 66
+    },
+    "sources": [
+      {
+        "url": "https://www.football-data.co.uk/mmz4281/2223/B1.csv",
+        "sha256": "46737ea78b45a1fa6827b733a884c78f2610f37961781336ea7aa6dbfd64dcb4",
+        "kind": "fd"
+      }
+    ],
+    "originalSHA256": "589d569ad7ea1ba77f45fa745a0b28de3aa7482deb7c109c5d61b69c89069975",
+    "packetSHA256": "1d97efa26ad5916fcc7704e303034768ead1f179572295c8b64cb1b4c1fa5894"
+  },
+  {
+    "code": "B1",
+    "league": "Jupiler Pro League",
+    "season": 2023,
+    "originalRows": 312,
+    "verifiedDistinct": 234,
+    "consolidatedCopies": 0,
+    "reviewRows": 78,
+    "ft": 234,
+    "ht": 234,
+    "htExact": 234,
+    "expectedRegular": 240,
+    "expectedFull": null,
+    "missingResults": null,
+    "missingRegularMatches": 240,
+    "missingFinalPhaseMatches": null,
+    "resultsHeldForReview": 0,
+    "regularFT": 0,
+    "roundRobinVerified": false,
+    "phaseCounts": {
+      "unknown": 234
+    },
+    "status": "parziale",
+    "reasons": {
+      "identita_non_documentata": 78
+    },
+    "sources": [
+      {
+        "url": "https://www.football-data.co.uk/mmz4281/2324/B1.csv",
+        "sha256": "379d10bd92cecba6349f043f0661e3548e16d8053b234a7cace7493acfb72144",
+        "kind": "fd"
+      }
+    ],
+    "originalSHA256": "61371bec6f2f6239d3c70e78d5307b8beec4919ee3198e1fdb3202b9158e0e0c",
+    "packetSHA256": "3ca62247ce221e6267cad0d5225a6c98d0d74e1912d96332315661ba7ba07c16"
+  },
+  {
+    "code": "B1",
+    "league": "Jupiler Pro League",
+    "season": 2024,
+    "originalRows": 312,
+    "verifiedDistinct": 238,
+    "consolidatedCopies": 0,
+    "reviewRows": 74,
+    "ft": 238,
+    "ht": 237,
+    "htExact": 237,
+    "expectedRegular": 240,
+    "expectedFull": null,
+    "missingResults": null,
+    "missingRegularMatches": 240,
+    "missingFinalPhaseMatches": null,
+    "resultsHeldForReview": 0,
+    "regularFT": 0,
+    "roundRobinVerified": false,
+    "phaseCounts": {
+      "unknown": 238
+    },
+    "status": "parziale",
+    "reasons": {
+      "identita_non_documentata": 74
+    },
+    "sources": [
+      {
+        "url": "https://www.football-data.co.uk/mmz4281/2425/B1.csv",
+        "sha256": "fcc3ec3a7bdd57ec42df76bb03aa1858ee18be88886a379f42b4c7b2e7f5d0eb",
+        "kind": "fd"
+      }
+    ],
+    "originalSHA256": "37f05bac70830879b57e22c04b6846997ca732c4f265d72caf783485571016f3",
+    "packetSHA256": "8d150ae5268f9aa6736caca7a6c94b3f49287eb506586b200bb6f220c40beff0"
+  },
+  {
+    "code": "B1",
+    "league": "Jupiler Pro League",
+    "season": 2025,
+    "originalRows": 311,
+    "verifiedDistinct": 204,
+    "consolidatedCopies": 0,
+    "reviewRows": 107,
+    "ft": 204,
+    "ht": 204,
+    "htExact": 204,
+    "expectedRegular": 240,
+    "expectedFull": null,
+    "missingResults": null,
+    "missingRegularMatches": 240,
+    "missingFinalPhaseMatches": null,
+    "resultsHeldForReview": 0,
+    "regularFT": 0,
+    "roundRobinVerified": false,
+    "phaseCounts": {
+      "unknown": 204
+    },
+    "status": "parziale",
+    "reasons": {
+      "identita_non_documentata": 107
+    },
+    "sources": [
+      {
+        "url": "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+        "sha256": "7ba1d75b2f23ab6bf36952fa61b62e80905e2d38fa059ad389106772aebaf481",
+        "kind": "fd"
+      }
+    ],
+    "originalSHA256": "2116dc3adc6f095e2596cd0c7aacf2d3ca774960b74290cc6bd9a1a81512cdfd",
+    "packetSHA256": "32127c73ec2641b6c407384992bdfda924058a5be6f26cd308f6a597a41d3bb4"
+  },
+  {
+    "code": "B1",
+    "league": "Jupiler Pro League",
+    "season": 2026,
+    "originalRows": 80,
+    "verifiedDistinct": 55,
+    "consolidatedCopies": 0,
+    "reviewRows": 25,
+    "ft": 55,
+    "ht": 55,
+    "htExact": 55,
+    "expectedRegular": 240,
+    "expectedFull": null,
+    "missingResults": null,
+    "missingRegularMatches": 240,
+    "missingFinalPhaseMatches": null,
+    "resultsHeldForReview": 0,
+    "regularFT": 0,
+    "roundRobinVerified": false,
+    "phaseCounts": {
+      "unknown": 55
+    },
+    "status": "parziale",
+    "reasons": {
+      "identita_non_documentata": 25
+    },
+    "sources": [
+      {
+        "url": "https://www.football-data.co.uk/mmz4281/2627/B1.csv",
+        "sha256": "c663c5f34c981b8bf6a982446028916d7ca7b6cac07f39bcc0bf1163c451de50",
+        "kind": "fd"
+      }
+    ],
+    "originalSHA256": "e57d67875e8faaa0b48c117733fe6282adf63e3cd6f8ed1f460382f5e19af0dc",
+    "packetSHA256": "e9a8aea6e2571e5eb15d195f8b39b36c63b5a72ee132098c7f23ae5f39d6a322"
+  },
+  {
+    "code": "DNK",
+    "league": "Superliga Danimarca",
+    "season": 2021,
+    "originalRows": 193,
+    "verifiedDistinct": 131,
+    "consolidatedCopies": 0,
+    "reviewRows": 62,
+    "ft": 131,
+    "ht": 0,
+    "htExact": 0,
+    "expectedRegular": 132,
+    "expectedFull": null,
+    "missingResults": null,
+    "missingRegularMatches": 132,
+    "missingFinalPhaseMatches": null,
+    "resultsHeldForReview": 0,
+    "regularFT": 0,
+    "roundRobinVerified": false,
+    "phaseCounts": {
+      "unknown": 131
+    },
+    "status": "parziale",
+    "reasons": {
+      "identita_non_documentata": 62
+    },
+    "sources": [
+      {
+        "url": "https://www.football-data.co.uk/new/DNK.csv",
+        "sha256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4",
+        "kind": "extra"
+      }
+    ],
+    "originalSHA256": "17e6886910102aad47a90953781f6eab716f4c2f71051a09a32249ec6b1ef10a",
+    "packetSHA256": "43f34a7ca25ef34e5d0e99433ea1f8347e909ccfac1cff939a85b0f9f6020192"
+  },
+  {
+    "code": "DNK",
+    "league": "Superliga Danimarca",
+    "season": 2022,
+    "originalRows": 193,
+    "verifiedDistinct": 161,
+    "consolidatedCopies": 0,
+    "reviewRows": 32,
+    "ft": 161,
+    "ht": 0,
+    "htExact": 0,
+    "expectedRegular": 132,
+    "expectedFull": null,
+    "missingResults": null,
+    "missingRegularMatches": 132,
+    "missingFinalPhaseMatches": null,
+    "resultsHeldForReview": 0,
+    "regularFT": 0,
+    "roundRobinVerified": false,
+    "phaseCounts": {
+      "unknown": 161
+    },
+    "status": "parziale",
+    "reasons": {
+      "identita_non_documentata": 32
+    },
+    "sources": [
+      {
+        "url": "https://www.football-data.co.uk/new/DNK.csv",
+        "sha256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4",
+        "kind": "extra"
+      }
+    ],
+    "originalSHA256": "22417f02e50b7e90737a97fa505fa0e9caef56c792dececfe15ae41dc48b4db1",
+    "packetSHA256": "ec4fe3a645599ede8967a60a88ca0426daf27d5b82599accec6cf07ff81b2a34"
+  },
+  {
+    "code": "DNK",
+    "league": "Superliga Danimarca",
+    "season": 2023,
+    "originalRows": 193,
+    "verifiedDistinct": 161,
+    "consolidatedCopies": 0,
+    "reviewRows": 32,
+    "ft": 161,
+    "ht": 0,
+    "htExact": 0,
+    "expectedRegular": 132,
+    "expectedFull": null,
+    "missingResults": null,
+    "missingRegularMatches": 132,
+    "missingFinalPhaseMatches": null,
+    "resultsHeldForReview": 0,
+    "regularFT": 0,
+    "roundRobinVerified": false,
+    "phaseCounts": {
+      "unknown": 161
+    },
+    "status": "parziale",
+    "reasons": {
+      "identita_non_documentata": 32
+    },
+    "sources": [
+      {
+        "url": "https://www.football-data.co.uk/new/DNK.csv",
+        "sha256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4",
+        "kind": "extra"
+      }
+    ],
+    "originalSHA256": "384534ff5edbd7555a2d9a466f42c497d05dd1369b9cf5552143b21a34db2fb6",
+    "packetSHA256": "9a9969c0c5e97d03bd68414df63f1d6ebc901f8671aa60f22cebf60612ea07de"
+  },
+  {
+    "code": "DNK",
+    "league": "Superliga Danimarca",
+    "season": 2024,
+    "originalRows": 192,
+    "verifiedDistinct": 130,
+    "consolidatedCopies": 0,
+    "reviewRows": 62,
+    "ft": 130,
+    "ht": 0,
+    "htExact": 0,
+    "expectedRegular": 132,
+    "expectedFull": null,
+    "missingResults": null,
+    "missingRegularMatches": 132,
+    "missingFinalPhaseMatches": null,
+    "resultsHeldForReview": 0,
+    "regularFT": 0,
+    "roundRobinVerified": false,
+    "phaseCounts": {
+      "unknown": 130
+    },
+    "status": "parziale",
+    "reasons": {
+      "identita_non_documentata": 62
+    },
+    "sources": [
+      {
+        "url": "https://www.football-data.co.uk/new/DNK.csv",
+        "sha256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4",
+        "kind": "extra"
+      }
+    ],
+    "originalSHA256": "8410ec1a88f57ca4d85275d80c1e6f1f933ac3b65bf725bbb09c1fa8915697eb",
+    "packetSHA256": "adb59281bfd9391a5744e5405dc6f2292ef82ee30a3e818415758c64fae4e903"
+  },
+  {
+    "code": "DNK",
+    "league": "Superliga Danimarca",
+    "season": 2025,
+    "originalRows": 192,
+    "verifiedDistinct": 104,
+    "consolidatedCopies": 0,
+    "reviewRows": 88,
+    "ft": 104,
+    "ht": 0,
+    "htExact": 0,
+    "expectedRegular": 132,
+    "expectedFull": null,
+    "missingResults": null,
+    "missingRegularMatches": 132,
+    "missingFinalPhaseMatches": null,
+    "resultsHeldForReview": 0,
+    "regularFT": 0,
+    "roundRobinVerified": false,
+    "phaseCounts": {
+      "unknown": 104
+    },
+    "status": "parziale",
+    "reasons": {
+      "identita_non_documentata": 88
+    },
+    "sources": [
+      {
+        "url": "https://www.football-data.co.uk/new/DNK.csv",
+        "sha256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4",
+        "kind": "extra"
+      }
+    ],
+    "originalSHA256": "1bcc84a10e1898580624152b109d5217ca1935bf135a8f9000edf39eeb1d950d",
+    "packetSHA256": "9fb82119f597ecaadc098a77f8a9725aae9e9ab013da9f649558a0406b3a924b"
+  },
+  {
+    "code": "DNK",
+    "league": "Superliga Danimarca",
+    "season": 2026,
+    "originalRows": 126,
+    "verifiedDistinct": 86,
+    "consolidatedCopies": 0,
+    "reviewRows": 40,
+    "ft": 45,
+    "ht": 0,
+    "htExact": 0,
+    "expectedRegular": 132,
+    "expectedFull": null,
+    "missingResults": null,
+    "missingRegularMatches": 132,
+    "missingFinalPhaseMatches": null,
+    "resultsHeldForReview": 0,
+    "regularFT": 0,
+    "roundRobinVerified": false,
+    "phaseCounts": {
+      "unknown": 45,
+      "regular": 41
+    },
+    "status": "parziale",
+    "reasons": {
+      "identita_non_documentata": 40
+    },
+    "sources": [
+      {
+        "url": "https://www.football-data.co.uk/new/DNK.csv",
+        "sha256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4",
+        "kind": "extra"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/DEN_1_superliga/results_2627.csv",
+        "sha256": "f6a5810e413dcd4429e5d96278f1d574facf40757b74aa1a796aa3dab6367443",
+        "kind": "community"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/DEN_1_superliga/fixtures_2627.csv",
+        "sha256": "d024af9072c51b7586b6c5c03f81e4516b0436b3f5c8a33b92da02e1550fbaaf",
+        "kind": "community"
+      }
+    ],
+    "originalSHA256": "fc3806ea1b1228d563373bc565a2ffd9e18beaf614095b72b63d329bc9437f69",
+    "packetSHA256": "5bb76ed4989c5ff2991bae7a14776266836a4a86ea707a54be7169721db76eb2"
+  },
+  {
+    "code": "ROU",
+    "league": "SuperLiga Romania",
+    "season": 2021,
+    "originalRows": 320,
+    "verifiedDistinct": 281,
+    "consolidatedCopies": 0,
+    "reviewRows": 39,
+    "ft": 281,
+    "ht": 0,
+    "htExact": 0,
+    "expectedRegular": 240,
+    "expectedFull": null,
+    "missingResults": null,
+    "missingRegularMatches": 240,
+    "missingFinalPhaseMatches": null,
+    "resultsHeldForReview": 0,
+    "regularFT": 0,
+    "roundRobinVerified": false,
+    "phaseCounts": {
+      "unknown": 281
+    },
+    "status": "parziale",
+    "reasons": {
+      "identita_non_documentata": 39
+    },
+    "sources": [
+      {
+        "url": "https://www.football-data.co.uk/new/ROU.csv",
+        "sha256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e",
+        "kind": "extra"
+      }
+    ],
+    "originalSHA256": "83aaeb07ef2b8767bf1fc0100e9f42555be133e986aa714e1c259be842c93973",
+    "packetSHA256": "347a73e95f70a8e700456a7401edcbfe946faf6eb70f00c0583b18747142412e"
+  },
+  {
+    "code": "ROU",
+    "league": "SuperLiga Romania",
+    "season": 2022,
+    "originalRows": 321,
+    "verifiedDistinct": 278,
+    "consolidatedCopies": 0,
+    "reviewRows": 43,
+    "ft": 278,
+    "ht": 0,
+    "htExact": 0,
+    "expectedRegular": 240,
+    "expectedFull": null,
+    "missingResults": null,
+    "missingRegularMatches": 240,
+    "missingFinalPhaseMatches": null,
+    "resultsHeldForReview": 0,
+    "regularFT": 0,
+    "roundRobinVerified": false,
+    "phaseCounts": {
+      "unknown": 278
+    },
+    "status": "parziale",
+    "reasons": {
+      "identita_non_documentata": 43
+    },
+    "sources": [
+      {
+        "url": "https://www.football-data.co.uk/new/ROU.csv",
+        "sha256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e",
+        "kind": "extra"
+      }
+    ],
+    "originalSHA256": "00189a31f8e4d655ff04d0a62b44a499f31155108ec5066d0f85523b55131973",
+    "packetSHA256": "6a7c045f0b34a5e69547dd8f1d4a59a4707ca70630ec8e5a7ab2cf278a140118"
+  },
+  {
+    "code": "ROU",
+    "league": "SuperLiga Romania",
+    "season": 2023,
+    "originalRows": 321,
+    "verifiedDistinct": 280,
+    "consolidatedCopies": 0,
+    "reviewRows": 41,
+    "ft": 280,
+    "ht": 0,
+    "htExact": 0,
+    "expectedRegular": 240,
+    "expectedFull": null,
+    "missingResults": null,
+    "missingRegularMatches": 240,
+    "missingFinalPhaseMatches": null,
+    "resultsHeldForReview": 0,
+    "regularFT": 0,
+    "roundRobinVerified": false,
+    "phaseCounts": {
+      "unknown": 280
+    },
+    "status": "parziale",
+    "reasons": {
+      "identita_non_documentata": 41
+    },
+    "sources": [
+      {
+        "url": "https://www.football-data.co.uk/new/ROU.csv",
+        "sha256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e",
+        "kind": "extra"
+      }
+    ],
+    "originalSHA256": "edfcf93a4b1c0e266c0fdb9c2ab639a5f0fa188b02c0639b94afade25254ee5e",
+    "packetSHA256": "b70a50f4269a7aa0198325d9cee345dd22a517a31f87db940cad45a1f5734cb8"
+  },
+  {
+    "code": "ROU",
+    "league": "SuperLiga Romania",
+    "season": 2024,
+    "originalRows": 315,
+    "verifiedDistinct": 276,
+    "consolidatedCopies": 0,
+    "reviewRows": 39,
+    "ft": 276,
+    "ht": 0,
+    "htExact": 0,
+    "expectedRegular": 240,
+    "expectedFull": null,
+    "missingResults": null,
+    "missingRegularMatches": 240,
+    "missingFinalPhaseMatches": null,
+    "resultsHeldForReview": 0,
+    "regularFT": 0,
+    "roundRobinVerified": false,
+    "phaseCounts": {
+      "unknown": 276
+    },
+    "status": "parziale",
+    "reasons": {
+      "identita_non_documentata": 39
+    },
+    "sources": [
+      {
+        "url": "https://www.football-data.co.uk/new/ROU.csv",
+        "sha256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e",
+        "kind": "extra"
+      }
+    ],
+    "originalSHA256": "293c7e7a0711e11b9cac4d1bb6b6ff5b23beb532f748c0bf70987ead61be301c",
+    "packetSHA256": "8abf3492182421560055fe2a1281ee24c183e48c934a7edf194cd85423813a62"
+  },
+  {
+    "code": "ROU",
+    "league": "SuperLiga Romania",
+    "season": 2025,
+    "originalRows": 321,
+    "verifiedDistinct": 246,
+    "consolidatedCopies": 0,
+    "reviewRows": 75,
+    "ft": 246,
+    "ht": 0,
+    "htExact": 0,
+    "expectedRegular": 240,
+    "expectedFull": null,
+    "missingResults": null,
+    "missingRegularMatches": 240,
+    "missingFinalPhaseMatches": null,
+    "resultsHeldForReview": 0,
+    "regularFT": 0,
+    "roundRobinVerified": false,
+    "phaseCounts": {
+      "unknown": 246
+    },
+    "status": "parziale",
+    "reasons": {
+      "identita_non_documentata": 75
+    },
+    "sources": [
+      {
+        "url": "https://www.football-data.co.uk/new/ROU.csv",
+        "sha256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e",
+        "kind": "extra"
+      }
+    ],
+    "originalSHA256": "92a4965fcd72ebc979e80019aedc73e5919c7f71ce8d77a8bb673a2e10782151",
+    "packetSHA256": "fdd0341a82ddaa8e2deca7abbee27b16b2e4605d9efc709e20a65326b5094c5d"
+  },
+  {
+    "code": "ROU",
+    "league": "SuperLiga Romania",
+    "season": 2026,
+    "originalRows": 208,
+    "verifiedDistinct": 182,
+    "consolidatedCopies": 0,
+    "reviewRows": 26,
+    "ft": 84,
+    "ht": 0,
+    "htExact": 0,
+    "expectedRegular": 240,
+    "expectedFull": null,
+    "missingResults": null,
+    "missingRegularMatches": 240,
+    "missingFinalPhaseMatches": null,
+    "resultsHeldForReview": 0,
+    "regularFT": 0,
+    "roundRobinVerified": false,
+    "phaseCounts": {
+      "unknown": 84,
+      "regular": 98
+    },
+    "status": "parziale",
+    "reasons": {
+      "identita_non_documentata": 26
+    },
+    "sources": [
+      {
+        "url": "https://www.football-data.co.uk/new/ROU.csv",
+        "sha256": "be14e7a6ae81eb1256d5837a1ac3dffe1c6d5f0abb438d85bc36de028a531d8e",
+        "kind": "extra"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ROU_1_liga-1/results_2627.csv",
+        "sha256": "3844879adf544114b863165854dcb53c9f950025d6a1d416b0b57fee6283ca82",
+        "kind": "community"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ROU_1_liga-1/fixtures_2627.csv",
+        "sha256": "f9383821d7630d87a79ecdcd5e27efd73e5be11991479227902c5715573d4471",
+        "kind": "community"
+      }
+    ],
+    "originalSHA256": "b5bc504d3e16a283b4b0334d680ba24d28cdfd3b1d4d49aeceab6bdcf474e70b",
+    "packetSHA256": "dec6ac63e71a28a00327673287e40f2e00d94b61054e117a392fcf07fc3c8d43"
+  },
+  {
+    "code": "P2",
+    "league": "Liga Portugal 2",
+    "season": 2021,
+    "originalRows": 0,
+    "verifiedDistinct": 0,
+    "consolidatedCopies": 0,
+    "reviewRows": 0,
+    "ft": 0,
+    "ht": 0,
+    "htExact": 0,
+    "expectedRegular": null,
+    "expectedFull": null,
+    "missingResults": null,
+    "missingRegularMatches": null,
+    "missingFinalPhaseMatches": null,
+    "resultsHeldForReview": 0,
+    "regularFT": 0,
+    "roundRobinVerified": false,
+    "phaseCounts": {},
+    "status": "non verificabile",
+    "reasons": {},
+    "sources": [],
+    "originalSHA256": "c7f15378a7301a8ec9c663e882cedb64bcb7ad98f748cea844abaa5b43a94cc3",
+    "packetSHA256": "c760a811153743fa6f2caffd55557058e75634346df0c1e6b7ab1608a3d0cac9"
+  },
+  {
+    "code": "P2",
+    "league": "Liga Portugal 2",
+    "season": 2022,
+    "originalRows": 0,
+    "verifiedDistinct": 0,
+    "consolidatedCopies": 0,
+    "reviewRows": 0,
+    "ft": 0,
+    "ht": 0,
+    "htExact": 0,
+    "expectedRegular": null,
+    "expectedFull": null,
+    "missingResults": null,
+    "missingRegularMatches": null,
+    "missingFinalPhaseMatches": null,
+    "resultsHeldForReview": 0,
+    "regularFT": 0,
+    "roundRobinVerified": false,
+    "phaseCounts": {},
+    "status": "non verificabile",
+    "reasons": {},
+    "sources": [],
+    "originalSHA256": "c7f15378a7301a8ec9c663e882cedb64bcb7ad98f748cea844abaa5b43a94cc3",
+    "packetSHA256": "25cba47338fef888b109ba97c717f75a1173b6b8942e0344c5f488559f16f60a"
+  },
+  {
+    "code": "P2",
+    "league": "Liga Portugal 2",
+    "season": 2023,
+    "originalRows": 0,
+    "verifiedDistinct": 0,
+    "consolidatedCopies": 0,
+    "reviewRows": 0,
+    "ft": 0,
+    "ht": 0,
+    "htExact": 0,
+    "expectedRegular": null,
+    "expectedFull": null,
+    "missingResults": null,
+    "missingRegularMatches": null,
+    "missingFinalPhaseMatches": null,
+    "resultsHeldForReview": 0,
+    "regularFT": 0,
+    "roundRobinVerified": false,
+    "phaseCounts": {},
+    "status": "non verificabile",
+    "reasons": {},
+    "sources": [],
+    "originalSHA256": "c7f15378a7301a8ec9c663e882cedb64bcb7ad98f748cea844abaa5b43a94cc3",
+    "packetSHA256": "b008261942a9a5e8d02942a0b61467186511f5a8ace900e273c3f9622d98259f"
+  },
+  {
+    "code": "P2",
+    "league": "Liga Portugal 2",
+    "season": 2024,
+    "originalRows": 0,
+    "verifiedDistinct": 0,
+    "consolidatedCopies": 0,
+    "reviewRows": 0,
+    "ft": 0,
+    "ht": 0,
+    "htExact": 0,
+    "expectedRegular": null,
+    "expectedFull": null,
+    "missingResults": null,
+    "missingRegularMatches": null,
+    "missingFinalPhaseMatches": null,
+    "resultsHeldForReview": 0,
+    "regularFT": 0,
+    "roundRobinVerified": false,
+    "phaseCounts": {},
+    "status": "non verificabile",
+    "reasons": {},
+    "sources": [],
+    "originalSHA256": "c7f15378a7301a8ec9c663e882cedb64bcb7ad98f748cea844abaa5b43a94cc3",
+    "packetSHA256": "805d635ba83523108908cc11da7b04eaeebab9d0a4b51bac04312167fbc9574f"
+  },
+  {
+    "code": "P2",
+    "league": "Liga Portugal 2",
+    "season": 2025,
+    "originalRows": 0,
+    "verifiedDistinct": 0,
+    "consolidatedCopies": 0,
+    "reviewRows": 0,
+    "ft": 0,
+    "ht": 0,
+    "htExact": 0,
+    "expectedRegular": null,
+    "expectedFull": null,
+    "missingResults": null,
+    "missingRegularMatches": null,
+    "missingFinalPhaseMatches": null,
+    "resultsHeldForReview": 0,
+    "regularFT": 0,
+    "roundRobinVerified": false,
+    "phaseCounts": {},
+    "status": "non verificabile",
+    "reasons": {},
+    "sources": [],
+    "originalSHA256": "c7f15378a7301a8ec9c663e882cedb64bcb7ad98f748cea844abaa5b43a94cc3",
+    "packetSHA256": "6dda67e92a7a17238bead9ce4162860865a8bd9785cfe0cd65c0aff263954962"
+  },
+  {
+    "code": "P2",
+    "league": "Liga Portugal 2",
+    "season": 2026,
+    "originalRows": 0,
+    "verifiedDistinct": 0,
+    "consolidatedCopies": 0,
+    "reviewRows": 0,
+    "ft": 0,
+    "ht": 0,
+    "htExact": 0,
+    "expectedRegular": null,
+    "expectedFull": null,
+    "missingResults": null,
+    "missingRegularMatches": null,
+    "missingFinalPhaseMatches": null,
+    "resultsHeldForReview": 0,
+    "regularFT": 0,
+    "roundRobinVerified": false,
+    "phaseCounts": {},
+    "status": "non verificabile",
+    "reasons": {},
+    "sources": [],
+    "originalSHA256": "c7f15378a7301a8ec9c663e882cedb64bcb7ad98f748cea844abaa5b43a94cc3",
+    "packetSHA256": "8b4160597ec24d1e2845f68308b40a59955d04187b7291791a8257e7ed44afa2"
+  },
+  {
+    "code": "DK2",
+    "league": "1st Division Danimarca",
+    "season": 2021,
+    "originalRows": 0,
+    "verifiedDistinct": 0,
+    "consolidatedCopies": 0,
+    "reviewRows": 0,
+    "ft": 0,
+    "ht": 0,
+    "htExact": 0,
+    "expectedRegular": null,
+    "expectedFull": null,
+    "missingResults": null,
+    "missingRegularMatches": null,
+    "missingFinalPhaseMatches": null,
+    "resultsHeldForReview": 0,
+    "regularFT": 0,
+    "roundRobinVerified": false,
+    "phaseCounts": {},
+    "status": "non verificabile",
+    "reasons": {},
+    "sources": [],
+    "originalSHA256": "c7f15378a7301a8ec9c663e882cedb64bcb7ad98f748cea844abaa5b43a94cc3",
+    "packetSHA256": "39756696b88be086a50652d9837ba47a7f523bdb80f79035dcb5b8964a32fb45"
+  },
+  {
+    "code": "DK2",
+    "league": "1st Division Danimarca",
+    "season": 2022,
+    "originalRows": 0,
+    "verifiedDistinct": 0,
+    "consolidatedCopies": 0,
+    "reviewRows": 0,
+    "ft": 0,
+    "ht": 0,
+    "htExact": 0,
+    "expectedRegular": null,
+    "expectedFull": null,
+    "missingResults": null,
+    "missingRegularMatches": null,
+    "missingFinalPhaseMatches": null,
+    "resultsHeldForReview": 0,
+    "regularFT": 0,
+    "roundRobinVerified": false,
+    "phaseCounts": {},
+    "status": "non verificabile",
+    "reasons": {},
+    "sources": [],
+    "originalSHA256": "c7f15378a7301a8ec9c663e882cedb64bcb7ad98f748cea844abaa5b43a94cc3",
+    "packetSHA256": "8b86e07bea7ca429fcc9ac804f2bcae7b3b62c156dadd188d4f2230afd66565c"
+  },
+  {
+    "code": "DK2",
+    "league": "1st Division Danimarca",
+    "season": 2023,
+    "originalRows": 0,
+    "verifiedDistinct": 0,
+    "consolidatedCopies": 0,
+    "reviewRows": 0,
+    "ft": 0,
+    "ht": 0,
+    "htExact": 0,
+    "expectedRegular": null,
+    "expectedFull": null,
+    "missingResults": null,
+    "missingRegularMatches": null,
+    "missingFinalPhaseMatches": null,
+    "resultsHeldForReview": 0,
+    "regularFT": 0,
+    "roundRobinVerified": false,
+    "phaseCounts": {},
+    "status": "non verificabile",
+    "reasons": {},
+    "sources": [],
+    "originalSHA256": "c7f15378a7301a8ec9c663e882cedb64bcb7ad98f748cea844abaa5b43a94cc3",
+    "packetSHA256": "a92dae5fa23b2e5f86ea114a20dc3c38c8b8805ab4dd92b0039a91c62b4e6559"
+  },
+  {
+    "code": "DK2",
+    "league": "1st Division Danimarca",
+    "season": 2024,
+    "originalRows": 0,
+    "verifiedDistinct": 0,
+    "consolidatedCopies": 0,
+    "reviewRows": 0,
+    "ft": 0,
+    "ht": 0,
+    "htExact": 0,
+    "expectedRegular": null,
+    "expectedFull": null,
+    "missingResults": null,
+    "missingRegularMatches": null,
+    "missingFinalPhaseMatches": null,
+    "resultsHeldForReview": 0,
+    "regularFT": 0,
+    "roundRobinVerified": false,
+    "phaseCounts": {},
+    "status": "non verificabile",
+    "reasons": {},
+    "sources": [],
+    "originalSHA256": "c7f15378a7301a8ec9c663e882cedb64bcb7ad98f748cea844abaa5b43a94cc3",
+    "packetSHA256": "5e1d541334182166062f2570b3ff8860ffad5dd4f3a8efd7deb40d512defd59f"
+  },
+  {
+    "code": "DK2",
+    "league": "1st Division Danimarca",
+    "season": 2025,
+    "originalRows": 0,
+    "verifiedDistinct": 0,
+    "consolidatedCopies": 0,
+    "reviewRows": 0,
+    "ft": 0,
+    "ht": 0,
+    "htExact": 0,
+    "expectedRegular": null,
+    "expectedFull": null,
+    "missingResults": null,
+    "missingRegularMatches": null,
+    "missingFinalPhaseMatches": null,
+    "resultsHeldForReview": 0,
+    "regularFT": 0,
+    "roundRobinVerified": false,
+    "phaseCounts": {},
+    "status": "non verificabile",
+    "reasons": {},
+    "sources": [],
+    "originalSHA256": "c7f15378a7301a8ec9c663e882cedb64bcb7ad98f748cea844abaa5b43a94cc3",
+    "packetSHA256": "95265dea461756663355aac24cf984de196999d6eef1744fd94e5a41d7d8c95a"
+  },
+  {
+    "code": "DK2",
+    "league": "1st Division Danimarca",
+    "season": 2026,
+    "originalRows": 0,
+    "verifiedDistinct": 0,
+    "consolidatedCopies": 0,
+    "reviewRows": 0,
+    "ft": 0,
+    "ht": 0,
+    "htExact": 0,
+    "expectedRegular": null,
+    "expectedFull": null,
+    "missingResults": null,
+    "missingRegularMatches": null,
+    "missingFinalPhaseMatches": null,
+    "resultsHeldForReview": 0,
+    "regularFT": 0,
+    "roundRobinVerified": false,
+    "phaseCounts": {},
+    "status": "non verificabile",
+    "reasons": {},
+    "sources": [],
+    "originalSHA256": "c7f15378a7301a8ec9c663e882cedb64bcb7ad98f748cea844abaa5b43a94cc3",
+    "packetSHA256": "a2a71b598d065c9f11db89ce11b044aafe0dd385a29176cbddaf66337d552693"
+  },
+  {
+    "code": "HR1",
+    "league": "HNL Croazia",
+    "season": 2021,
+    "originalRows": 0,
+    "verifiedDistinct": 0,
+    "consolidatedCopies": 0,
+    "reviewRows": 0,
+    "ft": 0,
+    "ht": 0,
+    "htExact": 0,
+    "expectedRegular": 180,
+    "expectedFull": null,
+    "missingResults": null,
+    "missingRegularMatches": 180,
+    "missingFinalPhaseMatches": null,
+    "resultsHeldForReview": 0,
+    "regularFT": 0,
+    "roundRobinVerified": false,
+    "phaseCounts": {},
+    "status": "non verificabile",
+    "reasons": {},
+    "sources": [],
+    "originalSHA256": "c7f15378a7301a8ec9c663e882cedb64bcb7ad98f748cea844abaa5b43a94cc3",
+    "packetSHA256": "10b22a607a24e01f5ddecbcbfd8d6571b2e82bace845f9f92ab7f90849f12d95"
+  },
+  {
+    "code": "HR1",
+    "league": "HNL Croazia",
+    "season": 2022,
+    "originalRows": 0,
+    "verifiedDistinct": 0,
+    "consolidatedCopies": 0,
+    "reviewRows": 0,
+    "ft": 0,
+    "ht": 0,
+    "htExact": 0,
+    "expectedRegular": 180,
+    "expectedFull": null,
+    "missingResults": null,
+    "missingRegularMatches": 180,
+    "missingFinalPhaseMatches": null,
+    "resultsHeldForReview": 0,
+    "regularFT": 0,
+    "roundRobinVerified": false,
+    "phaseCounts": {},
+    "status": "non verificabile",
+    "reasons": {},
+    "sources": [],
+    "originalSHA256": "c7f15378a7301a8ec9c663e882cedb64bcb7ad98f748cea844abaa5b43a94cc3",
+    "packetSHA256": "b3a257203342fb20a15bf27e32c8399e0f20ab873fb4fa26341418b6d232a707"
+  },
+  {
+    "code": "HR1",
+    "league": "HNL Croazia",
+    "season": 2023,
+    "originalRows": 0,
+    "verifiedDistinct": 0,
+    "consolidatedCopies": 0,
+    "reviewRows": 0,
+    "ft": 0,
+    "ht": 0,
+    "htExact": 0,
+    "expectedRegular": 180,
+    "expectedFull": null,
+    "missingResults": null,
+    "missingRegularMatches": 180,
+    "missingFinalPhaseMatches": null,
+    "resultsHeldForReview": 0,
+    "regularFT": 0,
+    "roundRobinVerified": false,
+    "phaseCounts": {},
+    "status": "non verificabile",
+    "reasons": {},
+    "sources": [],
+    "originalSHA256": "c7f15378a7301a8ec9c663e882cedb64bcb7ad98f748cea844abaa5b43a94cc3",
+    "packetSHA256": "fd12524b5bd8a039c7e24704c62dc653c168e5f9aa240e66c1c343658234201e"
+  },
+  {
+    "code": "HR1",
+    "league": "HNL Croazia",
+    "season": 2024,
+    "originalRows": 0,
+    "verifiedDistinct": 0,
+    "consolidatedCopies": 0,
+    "reviewRows": 0,
+    "ft": 0,
+    "ht": 0,
+    "htExact": 0,
+    "expectedRegular": 180,
+    "expectedFull": null,
+    "missingResults": null,
+    "missingRegularMatches": 180,
+    "missingFinalPhaseMatches": null,
+    "resultsHeldForReview": 0,
+    "regularFT": 0,
+    "roundRobinVerified": false,
+    "phaseCounts": {},
+    "status": "non verificabile",
+    "reasons": {},
+    "sources": [],
+    "originalSHA256": "c7f15378a7301a8ec9c663e882cedb64bcb7ad98f748cea844abaa5b43a94cc3",
+    "packetSHA256": "f3fe44430acfc4fa064186459b1bf9b3a60ba353204d70a8c14dd80485c10ed8"
+  },
+  {
+    "code": "HR1",
+    "league": "HNL Croazia",
+    "season": 2025,
+    "originalRows": 0,
+    "verifiedDistinct": 0,
+    "consolidatedCopies": 0,
+    "reviewRows": 0,
+    "ft": 0,
+    "ht": 0,
+    "htExact": 0,
+    "expectedRegular": 180,
+    "expectedFull": null,
+    "missingResults": null,
+    "missingRegularMatches": 180,
+    "missingFinalPhaseMatches": null,
+    "resultsHeldForReview": 0,
+    "regularFT": 0,
+    "roundRobinVerified": false,
+    "phaseCounts": {},
+    "status": "non verificabile",
+    "reasons": {},
+    "sources": [],
+    "originalSHA256": "c7f15378a7301a8ec9c663e882cedb64bcb7ad98f748cea844abaa5b43a94cc3",
+    "packetSHA256": "caba4d11b4d6398fa3fc6b00862902d6f1c3f78e657a98e2ff08ce879cbd11c9"
+  },
+  {
+    "code": "HR1",
+    "league": "HNL Croazia",
+    "season": 2026,
+    "originalRows": 160,
+    "verifiedDistinct": 100,
+    "consolidatedCopies": 0,
+    "reviewRows": 60,
+    "ft": 32,
+    "ht": 0,
+    "htExact": 0,
+    "expectedRegular": 180,
+    "expectedFull": null,
+    "missingResults": null,
+    "missingRegularMatches": 180,
+    "missingFinalPhaseMatches": null,
+    "resultsHeldForReview": 0,
+    "regularFT": 32,
+    "roundRobinVerified": false,
+    "phaseCounts": {
+      "regular": 100
+    },
+    "status": "parziale",
+    "reasons": {
+      "identita_non_documentata": 60
+    },
+    "sources": [
+      {
+        "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/CRO_1_hnl/results_2627.csv",
+        "sha256": "b65bf316af9b18e78f73677f86d312885479bac58ab5861c020d5b58b2bf00fe",
+        "kind": "community"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/CRO_1_hnl/fixtures_2627.csv",
+        "sha256": "01fb55c80b548ef1c01e132db0b840511e0ad1ee4622e14f9793e132a42f3881",
+        "kind": "community"
+      }
+    ],
+    "originalSHA256": "6799ff184130df247343796097cf16477a8be1284f4a7ac115c41afbd9beef51",
+    "packetSHA256": "2dc296a4c86700005a9433f1c92c128eb68cc0fb28cc6b91d4eea68e10cebac5"
+  },
+  {
+    "code": "HR2",
+    "league": "Prva NL Croazia",
+    "season": 2021,
+    "originalRows": 0,
+    "verifiedDistinct": 0,
+    "consolidatedCopies": 0,
+    "reviewRows": 0,
+    "ft": 0,
+    "ht": 0,
+    "htExact": 0,
+    "expectedRegular": null,
+    "expectedFull": null,
+    "missingResults": null,
+    "missingRegularMatches": null,
+    "missingFinalPhaseMatches": null,
+    "resultsHeldForReview": 0,
+    "regularFT": 0,
+    "roundRobinVerified": false,
+    "phaseCounts": {},
+    "status": "non verificabile",
+    "reasons": {},
+    "sources": [],
+    "originalSHA256": "c7f15378a7301a8ec9c663e882cedb64bcb7ad98f748cea844abaa5b43a94cc3",
+    "packetSHA256": "9d56abb4cb6b79ae3b0454948724edefbfafc870d99c57635d8e5f6544fdc8e8"
+  },
+  {
+    "code": "HR2",
+    "league": "Prva NL Croazia",
+    "season": 2022,
+    "originalRows": 0,
+    "verifiedDistinct": 0,
+    "consolidatedCopies": 0,
+    "reviewRows": 0,
+    "ft": 0,
+    "ht": 0,
+    "htExact": 0,
+    "expectedRegular": null,
+    "expectedFull": null,
+    "missingResults": null,
+    "missingRegularMatches": null,
+    "missingFinalPhaseMatches": null,
+    "resultsHeldForReview": 0,
+    "regularFT": 0,
+    "roundRobinVerified": false,
+    "phaseCounts": {},
+    "status": "non verificabile",
+    "reasons": {},
+    "sources": [],
+    "originalSHA256": "c7f15378a7301a8ec9c663e882cedb64bcb7ad98f748cea844abaa5b43a94cc3",
+    "packetSHA256": "3728e71766ab65c55c39424c66937064e8bbfd120bde6c65c14fd7e6e673a49e"
+  },
+  {
+    "code": "HR2",
+    "league": "Prva NL Croazia",
+    "season": 2023,
+    "originalRows": 0,
+    "verifiedDistinct": 0,
+    "consolidatedCopies": 0,
+    "reviewRows": 0,
+    "ft": 0,
+    "ht": 0,
+    "htExact": 0,
+    "expectedRegular": null,
+    "expectedFull": null,
+    "missingResults": null,
+    "missingRegularMatches": null,
+    "missingFinalPhaseMatches": null,
+    "resultsHeldForReview": 0,
+    "regularFT": 0,
+    "roundRobinVerified": false,
+    "phaseCounts": {},
+    "status": "non verificabile",
+    "reasons": {},
+    "sources": [],
+    "originalSHA256": "c7f15378a7301a8ec9c663e882cedb64bcb7ad98f748cea844abaa5b43a94cc3",
+    "packetSHA256": "86646a65450446cf6d53a5436cb9545e81fb0c349961b40d4c9f946a88075b4d"
+  },
+  {
+    "code": "HR2",
+    "league": "Prva NL Croazia",
+    "season": 2024,
+    "originalRows": 0,
+    "verifiedDistinct": 0,
+    "consolidatedCopies": 0,
+    "reviewRows": 0,
+    "ft": 0,
+    "ht": 0,
+    "htExact": 0,
+    "expectedRegular": null,
+    "expectedFull": null,
+    "missingResults": null,
+    "missingRegularMatches": null,
+    "missingFinalPhaseMatches": null,
+    "resultsHeldForReview": 0,
+    "regularFT": 0,
+    "roundRobinVerified": false,
+    "phaseCounts": {},
+    "status": "non verificabile",
+    "reasons": {},
+    "sources": [],
+    "originalSHA256": "c7f15378a7301a8ec9c663e882cedb64bcb7ad98f748cea844abaa5b43a94cc3",
+    "packetSHA256": "3864725faac14a1123dcbfb7003d1602be6ff7980ab35bad77ef080658348e55"
+  },
+  {
+    "code": "HR2",
+    "league": "Prva NL Croazia",
+    "season": 2025,
+    "originalRows": 0,
+    "verifiedDistinct": 0,
+    "consolidatedCopies": 0,
+    "reviewRows": 0,
+    "ft": 0,
+    "ht": 0,
+    "htExact": 0,
+    "expectedRegular": null,
+    "expectedFull": null,
+    "missingResults": null,
+    "missingRegularMatches": null,
+    "missingFinalPhaseMatches": null,
+    "resultsHeldForReview": 0,
+    "regularFT": 0,
+    "roundRobinVerified": false,
+    "phaseCounts": {},
+    "status": "non verificabile",
+    "reasons": {},
+    "sources": [],
+    "originalSHA256": "c7f15378a7301a8ec9c663e882cedb64bcb7ad98f748cea844abaa5b43a94cc3",
+    "packetSHA256": "4ff4724af65a25547a49455523758d8a0231013f721647c73a2d3d4dc8b643a3"
+  },
+  {
+    "code": "HR2",
+    "league": "Prva NL Croazia",
+    "season": 2026,
+    "originalRows": 0,
+    "verifiedDistinct": 0,
+    "consolidatedCopies": 0,
+    "reviewRows": 0,
+    "ft": 0,
+    "ht": 0,
+    "htExact": 0,
+    "expectedRegular": null,
+    "expectedFull": null,
+    "missingResults": null,
+    "missingRegularMatches": null,
+    "missingFinalPhaseMatches": null,
+    "resultsHeldForReview": 0,
+    "regularFT": 0,
+    "roundRobinVerified": false,
+    "phaseCounts": {},
+    "status": "non verificabile",
+    "reasons": {},
+    "sources": [],
+    "originalSHA256": "c7f15378a7301a8ec9c663e882cedb64bcb7ad98f748cea844abaa5b43a94cc3",
+    "packetSHA256": "a629edc942657d301ed8646b1418880f199a6a9ed19fb0a1d162a0cccf2a3549"
+  },
+  {
+    "code": "RO2",
+    "league": "Liga II Romania",
+    "season": 2021,
+    "originalRows": 0,
+    "verifiedDistinct": 0,
+    "consolidatedCopies": 0,
+    "reviewRows": 0,
+    "ft": 0,
+    "ht": 0,
+    "htExact": 0,
+    "expectedRegular": null,
+    "expectedFull": null,
+    "missingResults": null,
+    "missingRegularMatches": null,
+    "missingFinalPhaseMatches": null,
+    "resultsHeldForReview": 0,
+    "regularFT": 0,
+    "roundRobinVerified": false,
+    "phaseCounts": {},
+    "status": "non verificabile",
+    "reasons": {},
+    "sources": [],
+    "originalSHA256": "c7f15378a7301a8ec9c663e882cedb64bcb7ad98f748cea844abaa5b43a94cc3",
+    "packetSHA256": "ba159c15db5b6d15782d02951bb0f1b7982111968504b68733f52b70b02e24e3"
+  },
+  {
+    "code": "RO2",
+    "league": "Liga II Romania",
+    "season": 2022,
+    "originalRows": 0,
+    "verifiedDistinct": 0,
+    "consolidatedCopies": 0,
+    "reviewRows": 0,
+    "ft": 0,
+    "ht": 0,
+    "htExact": 0,
+    "expectedRegular": null,
+    "expectedFull": null,
+    "missingResults": null,
+    "missingRegularMatches": null,
+    "missingFinalPhaseMatches": null,
+    "resultsHeldForReview": 0,
+    "regularFT": 0,
+    "roundRobinVerified": false,
+    "phaseCounts": {},
+    "status": "non verificabile",
+    "reasons": {},
+    "sources": [],
+    "originalSHA256": "c7f15378a7301a8ec9c663e882cedb64bcb7ad98f748cea844abaa5b43a94cc3",
+    "packetSHA256": "79b0a09623eafca959914fb1359467e66a33e0ab3e8c5da060b1100a94436cd9"
+  },
+  {
+    "code": "RO2",
+    "league": "Liga II Romania",
+    "season": 2023,
+    "originalRows": 0,
+    "verifiedDistinct": 0,
+    "consolidatedCopies": 0,
+    "reviewRows": 0,
+    "ft": 0,
+    "ht": 0,
+    "htExact": 0,
+    "expectedRegular": null,
+    "expectedFull": null,
+    "missingResults": null,
+    "missingRegularMatches": null,
+    "missingFinalPhaseMatches": null,
+    "resultsHeldForReview": 0,
+    "regularFT": 0,
+    "roundRobinVerified": false,
+    "phaseCounts": {},
+    "status": "non verificabile",
+    "reasons": {},
+    "sources": [],
+    "originalSHA256": "c7f15378a7301a8ec9c663e882cedb64bcb7ad98f748cea844abaa5b43a94cc3",
+    "packetSHA256": "2b01edff00afc3c2f4675207ecdd3710c35f51c572057a1da09551e02cf2f500"
+  },
+  {
+    "code": "RO2",
+    "league": "Liga II Romania",
+    "season": 2024,
+    "originalRows": 0,
+    "verifiedDistinct": 0,
+    "consolidatedCopies": 0,
+    "reviewRows": 0,
+    "ft": 0,
+    "ht": 0,
+    "htExact": 0,
+    "expectedRegular": null,
+    "expectedFull": null,
+    "missingResults": null,
+    "missingRegularMatches": null,
+    "missingFinalPhaseMatches": null,
+    "resultsHeldForReview": 0,
+    "regularFT": 0,
+    "roundRobinVerified": false,
+    "phaseCounts": {},
+    "status": "non verificabile",
+    "reasons": {},
+    "sources": [],
+    "originalSHA256": "c7f15378a7301a8ec9c663e882cedb64bcb7ad98f748cea844abaa5b43a94cc3",
+    "packetSHA256": "1da50093383ee5dd5c970eac7271f84abe94308041c9942f6bc67a63ea64bfb1"
+  },
+  {
+    "code": "RO2",
+    "league": "Liga II Romania",
+    "season": 2025,
+    "originalRows": 0,
+    "verifiedDistinct": 0,
+    "consolidatedCopies": 0,
+    "reviewRows": 0,
+    "ft": 0,
+    "ht": 0,
+    "htExact": 0,
+    "expectedRegular": null,
+    "expectedFull": null,
+    "missingResults": null,
+    "missingRegularMatches": null,
+    "missingFinalPhaseMatches": null,
+    "resultsHeldForReview": 0,
+    "regularFT": 0,
+    "roundRobinVerified": false,
+    "phaseCounts": {},
+    "status": "non verificabile",
+    "reasons": {},
+    "sources": [],
+    "originalSHA256": "c7f15378a7301a8ec9c663e882cedb64bcb7ad98f748cea844abaa5b43a94cc3",
+    "packetSHA256": "fb876a6a2a20e311fbd302708860345ccfb77a2ce2aa016e3ba20b805b763d7d"
+  },
+  {
+    "code": "RO2",
+    "league": "Liga II Romania",
+    "season": 2026,
+    "originalRows": 0,
+    "verifiedDistinct": 0,
+    "consolidatedCopies": 0,
+    "reviewRows": 0,
+    "ft": 0,
+    "ht": 0,
+    "htExact": 0,
+    "expectedRegular": null,
+    "expectedFull": null,
+    "missingResults": null,
+    "missingRegularMatches": null,
+    "missingFinalPhaseMatches": null,
+    "resultsHeldForReview": 0,
+    "regularFT": 0,
+    "roundRobinVerified": false,
+    "phaseCounts": {},
+    "status": "non verificabile",
+    "reasons": {},
+    "sources": [],
+    "originalSHA256": "c7f15378a7301a8ec9c663e882cedb64bcb7ad98f748cea844abaa5b43a94cc3",
+    "packetSHA256": "74abac78eac654c55154f4d62baf194faf59612f8ad78dcff3ecb1095589f218"
+  },
+  {
+    "code": "CL",
+    "league": "Champions League",
+    "season": 2021,
+    "originalRows": 125,
+    "verifiedDistinct": 10,
+    "consolidatedCopies": 0,
+    "reviewRows": 115,
+    "ft": 10,
+    "ht": 10,
+    "htExact": 10,
+    "expectedRegular": null,
+    "expectedFull": null,
+    "missingResults": null,
+    "missingRegularMatches": null,
+    "missingFinalPhaseMatches": null,
+    "resultsHeldForReview": 0,
+    "regularFT": 0,
+    "roundRobinVerified": false,
+    "phaseCounts": {
+      "group-stage": 8,
+      "knockout": 2
+    },
+    "status": "parziale",
+    "reasons": {
+      "identita_non_documentata": 115
+    },
+    "sources": [
+      {
+        "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2021-22/cl.txt",
+        "sha256": "36241f4479aa9efda62c62318366bbf36f84cc8719f6387c5747cb5dea7ec519",
+        "kind": "footballtxt"
+      }
+    ],
+    "originalSHA256": "4142abe9b8685095aa56d1d849292e77398b000bdee71817b33fd67246cc60d4",
+    "packetSHA256": "625f11e9734f793441dbaa9e66536dc7ac4ea24135ff900cb4c4cb9faeae627e"
+  },
+  {
+    "code": "CL",
+    "league": "Champions League",
+    "season": 2022,
+    "originalRows": 125,
+    "verifiedDistinct": 18,
+    "consolidatedCopies": 0,
+    "reviewRows": 107,
+    "ft": 18,
+    "ht": 15,
+    "htExact": 15,
+    "expectedRegular": null,
+    "expectedFull": null,
+    "missingResults": null,
+    "missingRegularMatches": null,
+    "missingFinalPhaseMatches": null,
+    "resultsHeldForReview": 0,
+    "regularFT": 0,
+    "roundRobinVerified": false,
+    "phaseCounts": {
+      "group-stage": 14,
+      "knockout": 4
+    },
+    "status": "parziale",
+    "reasons": {
+      "identita_non_documentata": 107
+    },
+    "sources": [
+      {
+        "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2022-23/cl.txt",
+        "sha256": "bf9cd05939b055f12ee9b095bec1c20a0922277bef8940172218548de2e7b93a",
+        "kind": "footballtxt"
+      }
+    ],
+    "originalSHA256": "c86b15e7fd1f8259650086dbda173427dda5d0946ec9d23d6cc99e55084626e8",
+    "packetSHA256": "37daf068f086d8a10d4e0d77e7cb1de0f44ce82f06157b0c0b894913afad517e"
+  },
+  {
+    "code": "CL",
+    "league": "Champions League",
+    "season": 2023,
+    "originalRows": 125,
+    "verifiedDistinct": 51,
+    "consolidatedCopies": 0,
+    "reviewRows": 74,
+    "ft": 51,
+    "ht": 48,
+    "htExact": 48,
+    "expectedRegular": null,
+    "expectedFull": null,
+    "missingResults": null,
+    "missingRegularMatches": null,
+    "missingFinalPhaseMatches": null,
+    "resultsHeldForReview": 0,
+    "regularFT": 35,
+    "roundRobinVerified": false,
+    "phaseCounts": {
+      "regular": 35,
+      "knockout": 16
+    },
+    "status": "parziale",
+    "reasons": {
+      "identita_non_documentata": 74
+    },
+    "sources": [
+      {
+        "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2023-24/cl.txt",
+        "sha256": "5872bee720b32410f28c5272fb7fe7b07aa0f66bcb31ffe157893d75c14c47c5",
+        "kind": "footballtxt"
+      }
+    ],
+    "originalSHA256": "d12175f46088e474d5f00cadd7e8b905fb8d0270995b00d78add306e6b466812",
+    "packetSHA256": "80937c3f91b5941cece9dd6e4bc7e50ffc9b4088c991fb7a5259c740db4db112"
+  },
+  {
+    "code": "CL",
+    "league": "Champions League",
+    "season": 2024,
+    "originalRows": 279,
+    "verifiedDistinct": 57,
+    "consolidatedCopies": 0,
+    "reviewRows": 222,
+    "ft": 57,
+    "ht": 54,
+    "htExact": 54,
+    "expectedRegular": null,
+    "expectedFull": 279,
+    "missingResults": null,
+    "missingRegularMatches": null,
+    "missingFinalPhaseMatches": null,
+    "resultsHeldForReview": 0,
+    "regularFT": 0,
+    "roundRobinVerified": false,
+    "phaseCounts": {
+      "league-phase": 35,
+      "playoff": 7,
+      "knockout": 15
+    },
+    "status": "parziale",
+    "reasons": {
+      "identita_non_documentata": 222
+    },
+    "sources": [
+      {
+        "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2024-25/cl.txt",
+        "sha256": "c2692b22af02c5df4587b69c5f430aebf7d936845b5337aee462ce8e649eb1b5",
+        "kind": "footballtxt"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2024-25/clq.txt",
+        "sha256": "a39cc3ed20233ce2fcc490d4feda4a67dacf0d8080c83f4078ab34eca4632c25",
+        "kind": "footballtxt"
+      }
+    ],
+    "originalSHA256": "9a3954fbd0025ee4db830f603521ab8e1ef880af9e7fcd697343fb2c8406119d",
+    "packetSHA256": "38373ddf8d448506175656923963e46548b09e14a807ed79c5547bf0229bb48e"
+  },
+  {
+    "code": "CL",
+    "league": "Champions League",
+    "season": 2025,
+    "originalRows": 281,
+    "verifiedDistinct": 68,
+    "consolidatedCopies": 0,
+    "reviewRows": 213,
+    "ft": 68,
+    "ht": 68,
+    "htExact": 68,
+    "expectedRegular": null,
+    "expectedFull": 281,
+    "missingResults": null,
+    "missingRegularMatches": null,
+    "missingFinalPhaseMatches": null,
+    "resultsHeldForReview": 0,
+    "regularFT": 0,
+    "roundRobinVerified": false,
+    "phaseCounts": {
+      "league-phase": 49,
+      "playoff": 4,
+      "knockout": 15
+    },
+    "status": "parziale",
+    "reasons": {
+      "identita_non_documentata": 213
+    },
+    "sources": [
+      {
+        "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/cl.txt",
+        "sha256": "2b1877308587ff1004c21b8e961b9050b8754f968244e0635eb005040fd9d5cb",
+        "kind": "footballtxt"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/clq.txt",
+        "sha256": "2212922ca831a0ebb4bb8be07575392f53f1294acc47ffab15c7a1ad121f7d37",
+        "kind": "footballtxt"
+      }
+    ],
+    "originalSHA256": "b0ee33d98733d17572aa92763225d764f405cafea5bd8df45b45145dbf614bd5",
+    "packetSHA256": "cdd4d8ecb6980dbd2972a0fa6a459f8bb93419d12b44ef1054d3c4aeb12ddb2a"
+  },
+  {
+    "code": "CL",
+    "league": "Champions League",
+    "season": 2026,
+    "originalRows": 144,
+    "verifiedDistinct": 81,
+    "consolidatedCopies": 0,
+    "reviewRows": 63,
+    "ft": 30,
+    "ht": 0,
+    "htExact": 0,
+    "expectedRegular": null,
+    "expectedFull": null,
+    "missingResults": null,
+    "missingRegularMatches": null,
+    "missingFinalPhaseMatches": null,
+    "resultsHeldForReview": 0,
+    "regularFT": 30,
+    "roundRobinVerified": false,
+    "phaseCounts": {
+      "regular": 81
+    },
+    "status": "parziale",
+    "reasons": {
+      "identita_non_documentata": 63
+    },
+    "sources": [
+      {
+        "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/UEFA_1_champions-league/results_2627.csv",
+        "sha256": "1636280b7e222303be80db64b804d1b1f2c7ffc4fd34d094fd24bffdf219323f",
+        "kind": "community"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/UEFA_1_champions-league/fixtures_2627.csv",
+        "sha256": "b1893f7264b9fbdd8519e4ba9293ffd9e6de54210299ccee59f80aa3922f16a3",
+        "kind": "community"
+      }
+    ],
+    "originalSHA256": "7ac1aaaf2662affd56bbb72e53f91f927713f86548a7adf63279a38c081b737d",
+    "packetSHA256": "cbe27bc41e8578655f6aab4b92ba84190f40ef478f8c11426c199a6963fec610"
+  }
+]

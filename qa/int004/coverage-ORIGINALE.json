@@ -1,0 +1,14 @@
+{
+  "frame": "ORIGINALE",
+  "originalRecords": 28544,
+  "conservativeRows": 28302,
+  "consolidatedCopies": 242,
+  "retainedUnresolvedRows": 4,
+  "allOriginalRowsAccountedFor": true,
+  "states": {
+    "completo verificato": 11,
+    "parziale": 98,
+    "non verificabile": 29
+  },
+  "personalRecordsPublished": false
+}

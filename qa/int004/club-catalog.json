@@ -1,0 +1,412 @@
+{
+  "sources": [
+    {
+      "country": "BEL",
+      "url": "https://raw.githubusercontent.com/openfootball/clubs/ae3800227c449447b3a337fc0aac79a8f02f4c8b/europe/belgium/be.clubs.txt",
+      "sha256": "e1c3ff0089b55e30aa87be775e9e2a3c0e385d41a12c9efb792401dd2a818cfc",
+      "bytes": 7542
+    },
+    {
+      "country": "HRV",
+      "url": "https://raw.githubusercontent.com/openfootball/clubs/ae3800227c449447b3a337fc0aac79a8f02f4c8b/europe/croatia/hr.clubs.txt",
+      "sha256": "f9fcbf74fd49d3a73515c7952f341a83e7563fa5399f31c9c0f0252104f85388",
+      "bytes": 2587
+    },
+    {
+      "country": "DNK",
+      "url": "https://raw.githubusercontent.com/openfootball/clubs/ae3800227c449447b3a337fc0aac79a8f02f4c8b/europe/denmark/dk.clubs.txt",
+      "sha256": "6f57960e61f315a9e4e745d07551a52efce419610a66cdb63a42e66bdaeca787",
+      "bytes": 4898
+    },
+    {
+      "country": "ENG",
+      "url": "https://raw.githubusercontent.com/openfootball/clubs/ae3800227c449447b3a337fc0aac79a8f02f4c8b/europe/england/eng.clubs.txt",
+      "sha256": "272bf00c7cc8991a0dc98493d0963fab18f07435098637a968f700015e83e93e",
+      "bytes": 24232
+    },
+    {
+      "country": "FRA",
+      "url": "https://raw.githubusercontent.com/openfootball/clubs/ae3800227c449447b3a337fc0aac79a8f02f4c8b/europe/france/fr.clubs.txt",
+      "sha256": "bfdba243242c950759cfeb4de3541ecd319885753cee2e9f4719ce78875aca07",
+      "bytes": 10306
+    },
+    {
+      "country": "GER",
+      "url": "https://raw.githubusercontent.com/openfootball/clubs/ae3800227c449447b3a337fc0aac79a8f02f4c8b/europe/germany/de.clubs.txt",
+      "sha256": "5e0d22d19880a17bfff665a1643835c91d2cabf9dd9c6052e2f4a041eb15afa7",
+      "bytes": 23083
+    },
+    {
+      "country": "ITA",
+      "url": "https://raw.githubusercontent.com/openfootball/clubs/ae3800227c449447b3a337fc0aac79a8f02f4c8b/europe/italy/it.clubs.txt",
+      "sha256": "a82c16981a2a2d8eb24e687f1b254c993f146ed1fa224e01e4a174ef6ca960a1",
+      "bytes": 10078
+    },
+    {
+      "country": "NED",
+      "url": "https://raw.githubusercontent.com/openfootball/clubs/ae3800227c449447b3a337fc0aac79a8f02f4c8b/europe/netherlands/nl.clubs.txt",
+      "sha256": "bcb046aef99b86822b3a2dcfb3ae60d666837690f6842c1f88f3e050785b7f3e",
+      "bytes": 5629
+    },
+    {
+      "country": "PRT",
+      "url": "https://raw.githubusercontent.com/openfootball/clubs/ae3800227c449447b3a337fc0aac79a8f02f4c8b/europe/portugal/pt.clubs.txt",
+      "sha256": "9b2ec8b0903a4f59f1c14c0994919c105028835778f0f0372b43a6682e70be85",
+      "bytes": 6305
+    },
+    {
+      "country": "ROU",
+      "url": "https://raw.githubusercontent.com/openfootball/clubs/ae3800227c449447b3a337fc0aac79a8f02f4c8b/europe/romania/ro.clubs.txt",
+      "sha256": "60408900aead4213281de30c303187d294498bae5072278cb11c0568f2246fff",
+      "bytes": 8400
+    },
+    {
+      "country": "ESP",
+      "url": "https://raw.githubusercontent.com/openfootball/clubs/ae3800227c449447b3a337fc0aac79a8f02f4c8b/europe/spain/es.clubs.txt",
+      "sha256": "057b6d2fa987ed488d9881b4741f65859be3649d78860aff25d3e1308e2c693a",
+      "bytes": 10576
+    },
+    {
+      "country": "TUR",
+      "url": "https://raw.githubusercontent.com/openfootball/clubs/ae3800227c449447b3a337fc0aac79a8f02f4c8b/europe/turkey/tr.clubs.txt",
+      "sha256": "a6f4ed5def4eada3c89d8d16e7b45002b76883415cd5ed07b8f3cb305b5ffe4a",
+      "bytes": 9106
+    },
+    {
+      "country": "WAL",
+      "url": "https://raw.githubusercontent.com/openfootball/clubs/ae3800227c449447b3a337fc0aac79a8f02f4c8b/europe/wales/wal.clubs.txt",
+      "sha256": "cf48b787d4364458fe68857d94408c7960e60c4d30f49481542a484c1cdb176b",
+      "bytes": 2896
+    }
+  ],
+  "clubs": 1065,
+  "ambiguousAliases": [
+    {
+      "country": "GER",
+      "alias": "bsv schwarz-weiss rehden",
+      "ids": [
+        "club:of:GER:bsv-schwarz-wei-rehden",
+        "club:of:GER:bsv-sw-rehden"
+      ]
+    },
+    {
+      "country": "GER",
+      "alias": "bsv rehden",
+      "ids": [
+        "club:of:GER:bsv-schwarz-wei-rehden",
+        "club:of:GER:bsv-sw-rehden"
+      ]
+    },
+    {
+      "country": "GER",
+      "alias": "ballsportverein schwarz-weiss rehden",
+      "ids": [
+        "club:of:GER:bsv-schwarz-wei-rehden",
+        "club:of:GER:bsv-sw-rehden"
+      ]
+    },
+    {
+      "country": "GER",
+      "alias": "bsv schwarz-wei rehden",
+      "ids": [
+        "club:of:GER:bsv-schwarz-wei-rehden",
+        "club:of:GER:bsv-sw-rehden"
+      ]
+    },
+    {
+      "country": "GER",
+      "alias": "ballsportverein schwarz-wei rehden",
+      "ids": [
+        "club:of:GER:bsv-schwarz-wei-rehden",
+        "club:of:GER:bsv-sw-rehden"
+      ]
+    }
+  ],
+  "omitted": [
+    {
+      "country": "BEL",
+      "name": "Germinal Beerschot (1920-2013)",
+      "reason": "Closed historical entity; successor identity not inferred"
+    },
+    {
+      "country": "BEL",
+      "name": "Beerschot VAC (1899-1999)",
+      "reason": "Closed historical entity; successor identity not inferred"
+    },
+    {
+      "country": "BEL",
+      "name": "Waterschei Thor (1919-1988)",
+      "reason": "Closed historical entity; successor identity not inferred"
+    },
+    {
+      "country": "BEL",
+      "name": "KSV Waregem (1925-2001)",
+      "reason": "Closed historical entity; successor identity not inferred"
+    },
+    {
+      "country": "HRV",
+      "name": "NK Croatia Sesvete (1957-2012)",
+      "reason": "Closed historical entity; successor identity not inferred"
+    },
+    {
+      "country": "HRV",
+      "name": "NK Kamen Ingrad (1929-2008)",
+      "reason": "Closed historical entity; successor identity not inferred"
+    },
+    {
+      "country": "DNK",
+      "name": "B 1903 København (1903-1992)",
+      "reason": "Closed historical entity; successor identity not inferred"
+    },
+    {
+      "country": "DNK",
+      "name": "KB København (1876-1992)",
+      "reason": "Closed historical entity; successor identity not inferred"
+    },
+    {
+      "country": "DNK",
+      "name": "Ikast FS (1935-1999)",
+      "reason": "Closed historical entity; successor identity not inferred"
+    },
+    {
+      "country": "DNK",
+      "name": "Herfølge BK (1921-2009)",
+      "reason": "Closed historical entity; successor identity not inferred"
+    },
+    {
+      "country": "DNK",
+      "name": "Køge BK (1927-2009)",
+      "reason": "Closed historical entity; successor identity not inferred"
+    },
+    {
+      "country": "DNK",
+      "name": "B 1901 Nykøbing (1901-1994)",
+      "reason": "Closed historical entity; successor identity not inferred"
+    },
+    {
+      "country": "ENG",
+      "name": "Thames AFC (1928-1932)",
+      "reason": "Closed historical entity; successor identity not inferred"
+    },
+    {
+      "country": "ENG",
+      "name": "Darwen FC (1870-2009)",
+      "reason": "Closed historical entity; successor identity not inferred"
+    },
+    {
+      "country": "ENG",
+      "name": "Bootle FC (1879-1893)",
+      "reason": "Closed historical entity; successor identity not inferred"
+    },
+    {
+      "country": "ENG",
+      "name": "Wigan Borough FC (1920-1931)",
+      "reason": "Closed historical entity; successor identity not inferred"
+    },
+    {
+      "country": "ENG",
+      "name": "Loughborough FC (1886-1900)",
+      "reason": "Closed historical entity; successor identity not inferred"
+    },
+    {
+      "country": "ENG",
+      "name": "Middlesbrough Ironopolis FC (1889-1894)",
+      "reason": "Closed historical entity; successor identity not inferred"
+    },
+    {
+      "country": "ENG",
+      "name": "Scarborough FC (1879-2007)",
+      "reason": "Closed historical entity; successor identity not inferred"
+    },
+    {
+      "country": "ENG",
+      "name": "Leeds City FC (1904-1919)",
+      "reason": "Closed historical entity; successor identity not inferred"
+    },
+    {
+      "country": "ENG",
+      "name": "Rotherham County FC (1870-1925)",
+      "reason": "Closed historical entity; successor identity not inferred"
+    },
+    {
+      "country": "ENG",
+      "name": "Rotherham Town FC (1899-1925)",
+      "reason": "Closed historical entity; successor identity not inferred"
+    },
+    {
+      "country": "ENG",
+      "name": "Burton United FC (1901-1910)",
+      "reason": "Closed historical entity; successor identity not inferred"
+    },
+    {
+      "country": "ENG",
+      "name": "Burton Swifts FC (1871-1901)",
+      "reason": "Closed historical entity; successor identity not inferred"
+    },
+    {
+      "country": "ENG",
+      "name": "Burton Wanderers FC (1871-1901)",
+      "reason": "Closed historical entity; successor identity not inferred"
+    },
+    {
+      "country": "ENG",
+      "name": "New Brighton Tower FC (1898-1901)",
+      "reason": "Closed historical entity; successor identity not inferred"
+    },
+    {
+      "country": "ENG",
+      "name": "Rushden & Diamonds (1992-2011)",
+      "reason": "Closed historical entity; successor identity not inferred"
+    },
+    {
+      "country": "ENG",
+      "name": "Telford United FC (1872-2004)",
+      "reason": "Closed historical entity; successor identity not inferred"
+    },
+    {
+      "country": "ENG",
+      "name": "Accrington FC (1878-1896)",
+      "reason": "Closed historical entity; successor identity not inferred"
+    },
+    {
+      "country": "ENG",
+      "name": "Hereford United FC (1924-2014)",
+      "reason": "Closed historical entity; successor identity not inferred"
+    },
+    {
+      "country": "ENG",
+      "name": "Salisbury City FC (1947-2014)",
+      "reason": "Closed historical entity; successor identity not inferred"
+    },
+    {
+      "country": "GER",
+      "name": "Blau-Weiß 90 Berlin (-1992)",
+      "reason": "Closed historical entity; successor identity not inferred"
+    },
+    {
+      "country": "GER",
+      "name": "SC Tasmania 1900 Berlin (-1973)",
+      "reason": "Closed historical entity; successor identity not inferred"
+    },
+    {
+      "country": "GER",
+      "name": "VfB Leipzig (-2004)",
+      "reason": "Closed historical entity; successor identity not inferred"
+    },
+    {
+      "country": "GER",
+      "name": "1. FC Lokomotive Leipzig (1966-1991)",
+      "reason": "Closed historical entity; successor identity not inferred"
+    },
+    {
+      "country": "GER",
+      "name": "FC Sachsen Leipzig (1990-2011)",
+      "reason": "Closed historical entity; successor identity not inferred"
+    },
+    {
+      "country": "GER",
+      "name": "SG Sachsen Leipzig (2011-2014)",
+      "reason": "Closed historical entity; successor identity not inferred"
+    },
+    {
+      "country": "ITA",
+      "name": "AC Cesena (1940-2018)",
+      "reason": "Closed historical entity; successor identity not inferred"
+    },
+    {
+      "country": "NED",
+      "name": "FC Amsterdam (1972-1982)",
+      "reason": "Closed historical entity; successor identity not inferred"
+    },
+    {
+      "country": "NED",
+      "name": "HFC Haarlem (1889-2010)",
+      "reason": "Closed historical entity; successor identity not inferred"
+    },
+    {
+      "country": "NED",
+      "name": "Rapid JC Heerlen (1954-1962)",
+      "reason": "Closed historical entity; successor identity not inferred"
+    },
+    {
+      "country": "PRT",
+      "name": "UD Vilafranquense (-2023)",
+      "reason": "Closed historical entity; successor identity not inferred"
+    },
+    {
+      "country": "ROU",
+      "name": "Victoria București (1949-1990)",
+      "reason": "Closed historical entity; successor identity not inferred"
+    },
+    {
+      "country": "ROU",
+      "name": "FC Viitorul Constanța (2009-2021)",
+      "reason": "Closed historical entity; successor identity not inferred"
+    },
+    {
+      "country": "ROU",
+      "name": "Corona Brașov (2010-2014)",
+      "reason": "Closed historical entity; successor identity not inferred"
+    },
+    {
+      "country": "ROU",
+      "name": "ASA Târgu Mureș (2008-2018)",
+      "reason": "Closed historical entity; successor identity not inferred"
+    },
+    {
+      "country": "ROU",
+      "name": "Chimia Râmnicu Vâlcea (1946-2004)",
+      "reason": "Closed historical entity; successor identity not inferred"
+    },
+    {
+      "country": "ROU",
+      "name": "Unirea Urziceni (1954-2017)",
+      "reason": "Closed historical entity; successor identity not inferred"
+    },
+    {
+      "country": "ROU",
+      "name": "FC Extensiv Craiova (1949-2013)",
+      "reason": "Closed historical entity; successor identity not inferred"
+    },
+    {
+      "country": "ROU",
+      "name": "FC Victoria Brănești (1968-2012)",
+      "reason": "Closed historical entity; successor identity not inferred"
+    },
+    {
+      "country": "ROU",
+      "name": "CSU Voința Sibiu (2007-2012)",
+      "reason": "Closed historical entity; successor identity not inferred"
+    },
+    {
+      "country": "ESP",
+      "name": "UE Lleida (1939-2011)",
+      "reason": "Closed historical entity; successor identity not inferred"
+    },
+    {
+      "country": "ESP",
+      "name": "CF Extremadura (-2010)",
+      "reason": "Closed historical entity; successor identity not inferred"
+    },
+    {
+      "country": "ESP",
+      "name": "Lorca FC (2003-2022)",
+      "reason": "Closed historical entity; successor identity not inferred"
+    },
+    {
+      "country": "ESP",
+      "name": "Ontinyent CF (1947-2019)",
+      "reason": "Closed historical entity; successor identity not inferred"
+    },
+    {
+      "country": "TUR",
+      "name": "Petrol Ofisi SK (1954-2010)",
+      "reason": "Closed historical entity; successor identity not inferred"
+    },
+    {
+      "country": "WAL",
+      "name": "Aberdare Athletic FC (1893-1928)",
+      "reason": "Closed historical entity; successor identity not inferred"
+    }
+  ]
+}

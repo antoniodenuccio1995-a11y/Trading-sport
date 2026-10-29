@@ -1,0 +1,786 @@
+{
+  "originalPacket": "histories/stab003/F1_2026.json",
+  "originalSHA256": "784afd2d0cc89fc59402593143d56712e00ee0a0086785e148487c4f7c55a075",
+  "review": [
+    {
+      "originalIndex": 72,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1793318400000,
+        "lg": "Ligue 1",
+        "H": "Havre Athletic Club",
+        "A": "Paris Saint-Germain",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "FRA",
+          "AwayCountry": "FRA",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/FRA_1_ligue-1/fixtures_2627.csv",
+              "sha256": "df28fedb4327f4a1d8ae03b752d6a83c385b83ebaf437c3f89591c10d11156e5"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 86,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1794096000000,
+        "lg": "Ligue 1",
+        "H": "Havre Athletic Club",
+        "A": "FC Lorient",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "FRA",
+          "AwayCountry": "FRA",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/FRA_1_ligue-1/fixtures_2627.csv",
+              "sha256": "df28fedb4327f4a1d8ae03b752d6a83c385b83ebaf437c3f89591c10d11156e5"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 90,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1795132800000,
+        "lg": "Ligue 1",
+        "H": "Estac Troyes",
+        "A": "Havre Athletic Club",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "FRA",
+          "AwayCountry": "FRA",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/FRA_1_ligue-1/fixtures_2627.csv",
+              "sha256": "df28fedb4327f4a1d8ae03b752d6a83c385b83ebaf437c3f89591c10d11156e5"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 101,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1795824000000,
+        "lg": "Ligue 1",
+        "H": "Havre Athletic Club",
+        "A": "RC Strasbourg Alsace",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "FRA",
+          "AwayCountry": "FRA",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/FRA_1_ligue-1/fixtures_2627.csv",
+              "sha256": "df28fedb4327f4a1d8ae03b752d6a83c385b83ebaf437c3f89591c10d11156e5"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 112,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1796428800000,
+        "lg": "Ligue 1",
+        "H": "RC Lens",
+        "A": "Havre Athletic Club",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "FRA",
+          "AwayCountry": "FRA",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/FRA_1_ligue-1/fixtures_2627.csv",
+              "sha256": "df28fedb4327f4a1d8ae03b752d6a83c385b83ebaf437c3f89591c10d11156e5"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 120,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1797033600000,
+        "lg": "Ligue 1",
+        "H": "Havre Athletic Club",
+        "A": "Le Mans FC",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "FRA",
+          "AwayCountry": "FRA",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/FRA_1_ligue-1/fixtures_2627.csv",
+              "sha256": "df28fedb4327f4a1d8ae03b752d6a83c385b83ebaf437c3f89591c10d11156e5"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 130,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1798848000000,
+        "lg": "Ligue 1",
+        "H": "Paris FC",
+        "A": "Havre Athletic Club",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "FRA",
+          "AwayCountry": "FRA",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/FRA_1_ligue-1/fixtures_2627.csv",
+              "sha256": "df28fedb4327f4a1d8ae03b752d6a83c385b83ebaf437c3f89591c10d11156e5"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 138,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1800057600000,
+        "lg": "Ligue 1",
+        "H": "OGC Nice",
+        "A": "Havre Athletic Club",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "FRA",
+          "AwayCountry": "FRA",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/FRA_1_ligue-1/fixtures_2627.csv",
+              "sha256": "df28fedb4327f4a1d8ae03b752d6a83c385b83ebaf437c3f89591c10d11156e5"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 150,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1800748800000,
+        "lg": "Ligue 1",
+        "H": "Havre Athletic Club",
+        "A": "Stade Rennais FC",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "FRA",
+          "AwayCountry": "FRA",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/FRA_1_ligue-1/fixtures_2627.csv",
+              "sha256": "df28fedb4327f4a1d8ae03b752d6a83c385b83ebaf437c3f89591c10d11156e5"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 155,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1801267200000,
+        "lg": "Ligue 1",
+        "H": "Angers SCO",
+        "A": "Havre Athletic Club",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "FRA",
+          "AwayCountry": "FRA",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/FRA_1_ligue-1/fixtures_2627.csv",
+              "sha256": "df28fedb4327f4a1d8ae03b752d6a83c385b83ebaf437c3f89591c10d11156e5"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 165,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1801785600000,
+        "lg": "Ligue 1",
+        "H": "Havre Athletic Club",
+        "A": "Toulouse FC",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "FRA",
+          "AwayCountry": "FRA",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/FRA_1_ligue-1/fixtures_2627.csv",
+              "sha256": "df28fedb4327f4a1d8ae03b752d6a83c385b83ebaf437c3f89591c10d11156e5"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 172,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1802390400000,
+        "lg": "Ligue 1",
+        "H": "FC Lorient",
+        "A": "Havre Athletic Club",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "FRA",
+          "AwayCountry": "FRA",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/FRA_1_ligue-1/fixtures_2627.csv",
+              "sha256": "df28fedb4327f4a1d8ae03b752d6a83c385b83ebaf437c3f89591c10d11156e5"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 182,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1802995200000,
+        "lg": "Ligue 1",
+        "H": "Havre Athletic Club",
+        "A": "Olympique Lyonnais",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "FRA",
+          "AwayCountry": "FRA",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/FRA_1_ligue-1/fixtures_2627.csv",
+              "sha256": "df28fedb4327f4a1d8ae03b752d6a83c385b83ebaf437c3f89591c10d11156e5"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 196,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1803600000000,
+        "lg": "Ligue 1",
+        "H": "RC Strasbourg Alsace",
+        "A": "Havre Athletic Club",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "FRA",
+          "AwayCountry": "FRA",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/FRA_1_ligue-1/fixtures_2627.csv",
+              "sha256": "df28fedb4327f4a1d8ae03b752d6a83c385b83ebaf437c3f89591c10d11156e5"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 201,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1804204800000,
+        "lg": "Ligue 1",
+        "H": "Havre Athletic Club",
+        "A": "OGC Nice",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "FRA",
+          "AwayCountry": "FRA",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/FRA_1_ligue-1/fixtures_2627.csv",
+              "sha256": "df28fedb4327f4a1d8ae03b752d6a83c385b83ebaf437c3f89591c10d11156e5"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 208,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1804809600000,
+        "lg": "Ligue 1",
+        "H": "Havre Athletic Club",
+        "A": "RC Lens",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "FRA",
+          "AwayCountry": "FRA",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/FRA_1_ligue-1/fixtures_2627.csv",
+              "sha256": "df28fedb4327f4a1d8ae03b752d6a83c385b83ebaf437c3f89591c10d11156e5"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 216,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1805414400000,
+        "lg": "Ligue 1",
+        "H": "AS Monaco",
+        "A": "Havre Athletic Club",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "FRA",
+          "AwayCountry": "FRA",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/FRA_1_ligue-1/fixtures_2627.csv",
+              "sha256": "df28fedb4327f4a1d8ae03b752d6a83c385b83ebaf437c3f89591c10d11156e5"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 227,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1806624000000,
+        "lg": "Ligue 1",
+        "H": "Havre Athletic Club",
+        "A": "Estac Troyes",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "FRA",
+          "AwayCountry": "FRA",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/FRA_1_ligue-1/fixtures_2627.csv",
+              "sha256": "df28fedb4327f4a1d8ae03b752d6a83c385b83ebaf437c3f89591c10d11156e5"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 242,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1807228800000,
+        "lg": "Ligue 1",
+        "H": "Paris Saint-Germain",
+        "A": "Havre Athletic Club",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "FRA",
+          "AwayCountry": "FRA",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/FRA_1_ligue-1/fixtures_2627.csv",
+              "sha256": "df28fedb4327f4a1d8ae03b752d6a83c385b83ebaf437c3f89591c10d11156e5"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 246,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1807833600000,
+        "lg": "Ligue 1",
+        "H": "Havre Athletic Club",
+        "A": "Olympique de Marseille",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "FRA",
+          "AwayCountry": "FRA",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/FRA_1_ligue-1/fixtures_2627.csv",
+              "sha256": "df28fedb4327f4a1d8ae03b752d6a83c385b83ebaf437c3f89591c10d11156e5"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 255,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1808438400000,
+        "lg": "Ligue 1",
+        "H": "Le Mans FC",
+        "A": "Havre Athletic Club",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "FRA",
+          "AwayCountry": "FRA",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/FRA_1_ligue-1/fixtures_2627.csv",
+              "sha256": "df28fedb4327f4a1d8ae03b752d6a83c385b83ebaf437c3f89591c10d11156e5"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 264,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1809043200000,
+        "lg": "Ligue 1",
+        "H": "Havre Athletic Club",
+        "A": "Paris FC",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "FRA",
+          "AwayCountry": "FRA",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/FRA_1_ligue-1/fixtures_2627.csv",
+              "sha256": "df28fedb4327f4a1d8ae03b752d6a83c385b83ebaf437c3f89591c10d11156e5"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 278,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1809648000000,
+        "lg": "Ligue 1",
+        "H": "Stade Rennais FC",
+        "A": "Havre Athletic Club",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "FRA",
+          "AwayCountry": "FRA",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/FRA_1_ligue-1/fixtures_2627.csv",
+              "sha256": "df28fedb4327f4a1d8ae03b752d6a83c385b83ebaf437c3f89591c10d11156e5"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 286,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1810339200000,
+        "lg": "Ligue 1",
+        "H": "Stade Brestois 29",
+        "A": "Havre Athletic Club",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "FRA",
+          "AwayCountry": "FRA",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/FRA_1_ligue-1/fixtures_2627.csv",
+              "sha256": "df28fedb4327f4a1d8ae03b752d6a83c385b83ebaf437c3f89591c10d11156e5"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 291,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1810857600000,
+        "lg": "Ligue 1",
+        "H": "Havre Athletic Club",
+        "A": "LOSC Lille",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "FRA",
+          "AwayCountry": "FRA",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/FRA_1_ligue-1/fixtures_2627.csv",
+              "sha256": "df28fedb4327f4a1d8ae03b752d6a83c385b83ebaf437c3f89591c10d11156e5"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 297,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1811462400000,
+        "lg": "Ligue 1",
+        "H": "AJ Auxerre",
+        "A": "Havre Athletic Club",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "FRA",
+          "AwayCountry": "FRA",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/FRA_1_ligue-1/fixtures_2627.csv",
+              "sha256": "df28fedb4327f4a1d8ae03b752d6a83c385b83ebaf437c3f89591c10d11156e5"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    }
+  ]
+}

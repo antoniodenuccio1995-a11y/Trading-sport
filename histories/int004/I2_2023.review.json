@@ -1,0 +1,69 @@
+{
+  "originalPacket": "histories/stab003/I2_2023.json",
+  "originalSHA256": "082a01943227a85c1c802a05a2ec5eeb463af1ac2f98c5fbd03d03be161db508",
+  "review": [
+    {
+      "originalIndex": 382,
+      "reason": "riferimento_secondario_regolare_non_riconciliato_per_data",
+      "record": {
+        "d": 1715904000000,
+        "lg": "Serie B",
+        "H": "Palermo FC",
+        "A": "Sampdoria",
+        "h": 2,
+        "a": 0,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "Round 1",
+          "HomeCountry": "ITA",
+          "AwayCountry": "ITA",
+          "PublishedRound": "Round 1",
+          "CsvSeason": 2023,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/italy/master/2023-24/2-serieb.txt",
+              "sha256": "3be0dd5060db797931912dc0b37b3ddf583407e12f2eb79ed69f09b269a18e15"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 383,
+      "reason": "riferimento_secondario_regolare_non_riconciliato_per_data",
+      "record": {
+        "d": 1715990400000,
+        "lg": "Serie B",
+        "H": "US Catanzaro",
+        "A": "Brescia Calcio",
+        "h": 2,
+        "a": 2,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "Phase": "Round 1",
+          "HomeCountry": "ITA",
+          "AwayCountry": "ITA",
+          "PublishedRound": "Round 1",
+          "CupScoreEvidence": "4-2 a.e.t. (2-2, 1-1)",
+          "CsvSeason": 2023,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/italy/master/2023-24/2-serieb.txt",
+              "sha256": "3be0dd5060db797931912dc0b37b3ddf583407e12f2eb79ed69f09b269a18e15"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 1,
+        "shots": null
+      }
+    }
+  ]
+}

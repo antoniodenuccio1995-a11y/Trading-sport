@@ -1,0 +1,1311 @@
+{
+  "originalPacket": "histories/stab003/DNK_2026.json",
+  "originalSHA256": "fc3806ea1b1228d563373bc565a2ffd9e18beaf614095b72b63d329bc9437f69",
+  "review": [
+    {
+      "originalIndex": 1,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1784937600000,
+        "lg": "Superliga Danimarca",
+        "H": "Aarhus",
+        "A": "Brondby",
+        "h": 1,
+        "a": 1,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2026,
+          "HistSourceURL": "https://www.football-data.co.uk/new/DNK.csv",
+          "HistSourceSHA256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/DNK.csv",
+              "sha256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4"
+            },
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/DEN_1_superliga/results_2627.csv",
+              "sha256": "f6a5810e413dcd4429e5d96278f1d574facf40757b74aa1a796aa3dab6367443"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 2,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1785024000000,
+        "lg": "Superliga Danimarca",
+        "H": "Sonderjyske",
+        "A": "Midtjylland",
+        "h": 2,
+        "a": 3,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2026,
+          "HistSourceURL": "https://www.football-data.co.uk/new/DNK.csv",
+          "HistSourceSHA256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/DNK.csv",
+              "sha256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4"
+            },
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/DEN_1_superliga/results_2627.csv",
+              "sha256": "f6a5810e413dcd4429e5d96278f1d574facf40757b74aa1a796aa3dab6367443"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 9,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1785628800000,
+        "lg": "Superliga Danimarca",
+        "H": "Brondby",
+        "A": "Viborg",
+        "h": 1,
+        "a": 0,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2026,
+          "HistSourceURL": "https://www.football-data.co.uk/new/DNK.csv",
+          "HistSourceSHA256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/DNK.csv",
+              "sha256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4"
+            },
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/DEN_1_superliga/results_2627.csv",
+              "sha256": "f6a5810e413dcd4429e5d96278f1d574facf40757b74aa1a796aa3dab6367443"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 11,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1785715200000,
+        "lg": "Superliga Danimarca",
+        "H": "Odense",
+        "A": "Sonderjyske",
+        "h": 1,
+        "a": 0,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2026,
+          "HistSourceURL": "https://www.football-data.co.uk/new/DNK.csv",
+          "HistSourceSHA256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/DNK.csv",
+              "sha256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4"
+            },
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/DEN_1_superliga/results_2627.csv",
+              "sha256": "f6a5810e413dcd4429e5d96278f1d574facf40757b74aa1a796aa3dab6367443"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 12,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1786060800000,
+        "lg": "Superliga Danimarca",
+        "H": "Sonderjyske",
+        "A": "Viborg",
+        "h": 0,
+        "a": 0,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2026,
+          "HistSourceURL": "https://www.football-data.co.uk/new/DNK.csv",
+          "HistSourceSHA256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/DNK.csv",
+              "sha256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4"
+            },
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/DEN_1_superliga/results_2627.csv",
+              "sha256": "f6a5810e413dcd4429e5d96278f1d574facf40757b74aa1a796aa3dab6367443"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 14,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1786233600000,
+        "lg": "Superliga Danimarca",
+        "H": "Horsens",
+        "A": "Brondby",
+        "h": 0,
+        "a": 2,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2026,
+          "HistSourceURL": "https://www.football-data.co.uk/new/DNK.csv",
+          "HistSourceSHA256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/DNK.csv",
+              "sha256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4"
+            },
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/DEN_1_superliga/results_2627.csv",
+              "sha256": "f6a5810e413dcd4429e5d96278f1d574facf40757b74aa1a796aa3dab6367443"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 21,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1786924800000,
+        "lg": "Superliga Danimarca",
+        "H": "Brondby",
+        "A": "Sonderjyske",
+        "h": 3,
+        "a": 2,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2026,
+          "HistSourceURL": "https://www.football-data.co.uk/new/DNK.csv",
+          "HistSourceSHA256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/DNK.csv",
+              "sha256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4"
+            },
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/DEN_1_superliga/results_2627.csv",
+              "sha256": "f6a5810e413dcd4429e5d96278f1d574facf40757b74aa1a796aa3dab6367443"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 22,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1787443200000,
+        "lg": "Superliga Danimarca",
+        "H": "Sonderjyske",
+        "A": "Nordsjaelland",
+        "h": 0,
+        "a": 3,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2026,
+          "HistSourceURL": "https://www.football-data.co.uk/new/DNK.csv",
+          "HistSourceSHA256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/DNK.csv",
+              "sha256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4"
+            },
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/DEN_1_superliga/results_2627.csv",
+              "sha256": "f6a5810e413dcd4429e5d96278f1d574facf40757b74aa1a796aa3dab6367443"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 27,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1787529600000,
+        "lg": "Superliga Danimarca",
+        "H": "Brondby",
+        "A": "Silkeborg",
+        "h": 3,
+        "a": 1,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2026,
+          "HistSourceURL": "https://www.football-data.co.uk/new/DNK.csv",
+          "HistSourceSHA256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/DNK.csv",
+              "sha256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4"
+            },
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/DEN_1_superliga/results_2627.csv",
+              "sha256": "f6a5810e413dcd4429e5d96278f1d574facf40757b74aa1a796aa3dab6367443"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 32,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1788048000000,
+        "lg": "Superliga Danimarca",
+        "H": "Nordsjaelland",
+        "A": "Brondby",
+        "h": 3,
+        "a": 1,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2026,
+          "HistSourceURL": "https://www.football-data.co.uk/new/DNK.csv",
+          "HistSourceSHA256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/DNK.csv",
+              "sha256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4"
+            },
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/DEN_1_superliga/results_2627.csv",
+              "sha256": "f6a5810e413dcd4429e5d96278f1d574facf40757b74aa1a796aa3dab6367443"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 33,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1788134400000,
+        "lg": "Superliga Danimarca",
+        "H": "FC Copenhagen",
+        "A": "Sonderjyske",
+        "h": 3,
+        "a": 1,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2026,
+          "HistSourceURL": "https://www.football-data.co.uk/new/DNK.csv",
+          "HistSourceSHA256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/DNK.csv",
+              "sha256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4"
+            },
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/DEN_1_superliga/results_2627.csv",
+              "sha256": "f6a5810e413dcd4429e5d96278f1d574facf40757b74aa1a796aa3dab6367443"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 38,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1788652800000,
+        "lg": "Superliga Danimarca",
+        "H": "Sonderjyske",
+        "A": "Horsens",
+        "h": 2,
+        "a": 5,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2026,
+          "HistSourceURL": "https://www.football-data.co.uk/new/DNK.csv",
+          "HistSourceSHA256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/DNK.csv",
+              "sha256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4"
+            },
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/DEN_1_superliga/results_2627.csv",
+              "sha256": "f6a5810e413dcd4429e5d96278f1d574facf40757b74aa1a796aa3dab6367443"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 40,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1788652800000,
+        "lg": "Superliga Danimarca",
+        "H": "Brondby",
+        "A": "Randers FC",
+        "h": 0,
+        "a": 3,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2026,
+          "HistSourceURL": "https://www.football-data.co.uk/new/DNK.csv",
+          "HistSourceSHA256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/DNK.csv",
+              "sha256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4"
+            },
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/DEN_1_superliga/results_2627.csv",
+              "sha256": "f6a5810e413dcd4429e5d96278f1d574facf40757b74aa1a796aa3dab6367443"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 43,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1789257600000,
+        "lg": "Superliga Danimarca",
+        "H": "Lyngby",
+        "A": "Sonderjyske",
+        "h": 1,
+        "a": 1,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2026,
+          "HistSourceURL": "https://www.football-data.co.uk/new/DNK.csv",
+          "HistSourceSHA256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/DNK.csv",
+              "sha256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4"
+            },
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/DEN_1_superliga/results_2627.csv",
+              "sha256": "f6a5810e413dcd4429e5d96278f1d574facf40757b74aa1a796aa3dab6367443"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 47,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1789344000000,
+        "lg": "Superliga Danimarca",
+        "H": "Midtjylland",
+        "A": "Brondby",
+        "h": 4,
+        "a": 1,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2026,
+          "HistSourceURL": "https://www.football-data.co.uk/new/DNK.csv",
+          "HistSourceSHA256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/DNK.csv",
+              "sha256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4"
+            },
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/DEN_1_superliga/results_2627.csv",
+              "sha256": "f6a5810e413dcd4429e5d96278f1d574facf40757b74aa1a796aa3dab6367443"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 50,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1789862400000,
+        "lg": "Superliga Danimarca",
+        "H": "Brondby",
+        "A": "FC Copenhagen",
+        "h": 0,
+        "a": 1,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2026,
+          "HistSourceURL": "https://www.football-data.co.uk/new/DNK.csv",
+          "HistSourceSHA256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/DNK.csv",
+              "sha256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4"
+            },
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/DEN_1_superliga/results_2627.csv",
+              "sha256": "f6a5810e413dcd4429e5d96278f1d574facf40757b74aa1a796aa3dab6367443"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 51,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1789862400000,
+        "lg": "Superliga Danimarca",
+        "H": "Sonderjyske",
+        "A": "Randers FC",
+        "h": 4,
+        "a": 2,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2026,
+          "HistSourceURL": "https://www.football-data.co.uk/new/DNK.csv",
+          "HistSourceSHA256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/DNK.csv",
+              "sha256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4"
+            },
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/DEN_1_superliga/results_2627.csv",
+              "sha256": "f6a5810e413dcd4429e5d96278f1d574facf40757b74aa1a796aa3dab6367443"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 57,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1791676800000,
+        "lg": "Superliga Danimarca",
+        "H": "Brondby",
+        "A": "Lyngby",
+        "h": 5,
+        "a": 2,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2026,
+          "HistSourceURL": "https://www.football-data.co.uk/new/DNK.csv",
+          "HistSourceSHA256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/DNK.csv",
+              "sha256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4"
+            },
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/DEN_1_superliga/results_2627.csv",
+              "sha256": "f6a5810e413dcd4429e5d96278f1d574facf40757b74aa1a796aa3dab6367443"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 59,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1791763200000,
+        "lg": "Superliga Danimarca",
+        "H": "Aarhus",
+        "A": "Sonderjyske",
+        "h": 3,
+        "a": 0,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2026,
+          "HistSourceURL": "https://www.football-data.co.uk/new/DNK.csv",
+          "HistSourceSHA256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/DNK.csv",
+              "sha256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4"
+            },
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/DEN_1_superliga/results_2627.csv",
+              "sha256": "f6a5810e413dcd4429e5d96278f1d574facf40757b74aa1a796aa3dab6367443"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 62,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1792281600000,
+        "lg": "Superliga Danimarca",
+        "H": "Sonderjyske",
+        "A": "Silkeborg",
+        "h": 4,
+        "a": 0,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2026,
+          "HistSourceURL": "https://www.football-data.co.uk/new/DNK.csv",
+          "HistSourceSHA256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/DNK.csv",
+              "sha256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4"
+            },
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/DEN_1_superliga/results_2627.csv",
+              "sha256": "f6a5810e413dcd4429e5d96278f1d574facf40757b74aa1a796aa3dab6367443"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 63,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1792281600000,
+        "lg": "Superliga Danimarca",
+        "H": "Odense",
+        "A": "Brondby",
+        "h": 2,
+        "a": 1,
+        "ht": null,
+        "up": false,
+        "o": {
+          "CsvSeason": 2026,
+          "HistSourceURL": "https://www.football-data.co.uk/new/DNK.csv",
+          "HistSourceSHA256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4",
+          "HistProvider": "Football-Data",
+          "Phase": "unclassified",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/new/DNK.csv",
+              "sha256": "342f6e4b9b095edfa38dcfd2e1a1c3a8cff6f403baf8f6036cb0628d7bcbdef4"
+            },
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/DEN_1_superliga/results_2627.csv",
+              "sha256": "f6a5810e413dcd4429e5d96278f1d574facf40757b74aa1a796aa3dab6367443"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 67,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1793491200000,
+        "lg": "Superliga Danimarca",
+        "H": "Brondby",
+        "A": "Aarhus",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "DNK",
+          "AwayCountry": "DNK",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/DEN_1_superliga/fixtures_2627.csv",
+              "sha256": "d024af9072c51b7586b6c5c03f81e4516b0436b3f5c8a33b92da02e1550fbaaf"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 71,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1793577600000,
+        "lg": "Superliga Danimarca",
+        "H": "Sonderjyske",
+        "A": "FC Copenhagen",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "DNK",
+          "AwayCountry": "DNK",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/DEN_1_superliga/fixtures_2627.csv",
+              "sha256": "d024af9072c51b7586b6c5c03f81e4516b0436b3f5c8a33b92da02e1550fbaaf"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 75,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1794096000000,
+        "lg": "Superliga Danimarca",
+        "H": "FC Copenhagen",
+        "A": "Brondby",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "DNK",
+          "AwayCountry": "DNK",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/DEN_1_superliga/fixtures_2627.csv",
+              "sha256": "d024af9072c51b7586b6c5c03f81e4516b0436b3f5c8a33b92da02e1550fbaaf"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 76,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1794096000000,
+        "lg": "Superliga Danimarca",
+        "H": "Midtjylland",
+        "A": "Sonderjyske",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "DNK",
+          "AwayCountry": "DNK",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/DEN_1_superliga/fixtures_2627.csv",
+              "sha256": "d024af9072c51b7586b6c5c03f81e4516b0436b3f5c8a33b92da02e1550fbaaf"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 81,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1795305600000,
+        "lg": "Superliga Danimarca",
+        "H": "Sonderjyske",
+        "A": "Odense",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "DNK",
+          "AwayCountry": "DNK",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/DEN_1_superliga/fixtures_2627.csv",
+              "sha256": "d024af9072c51b7586b6c5c03f81e4516b0436b3f5c8a33b92da02e1550fbaaf"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 83,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1795392000000,
+        "lg": "Superliga Danimarca",
+        "H": "Brondby",
+        "A": "Midtjylland",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "DNK",
+          "AwayCountry": "DNK",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/DEN_1_superliga/fixtures_2627.csv",
+              "sha256": "d024af9072c51b7586b6c5c03f81e4516b0436b3f5c8a33b92da02e1550fbaaf"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 84,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1795737600000,
+        "lg": "Superliga Danimarca",
+        "H": "Sonderjyske",
+        "A": "Brondby",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "DNK",
+          "AwayCountry": "DNK",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/DEN_1_superliga/fixtures_2627.csv",
+              "sha256": "d024af9072c51b7586b6c5c03f81e4516b0436b3f5c8a33b92da02e1550fbaaf"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 91,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1796515200000,
+        "lg": "Superliga Danimarca",
+        "H": "Brondby",
+        "A": "Odense",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "DNK",
+          "AwayCountry": "DNK",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/DEN_1_superliga/fixtures_2627.csv",
+              "sha256": "d024af9072c51b7586b6c5c03f81e4516b0436b3f5c8a33b92da02e1550fbaaf"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 95,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1796601600000,
+        "lg": "Superliga Danimarca",
+        "H": "Viborg",
+        "A": "Sonderjyske",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "DNK",
+          "AwayCountry": "DNK",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/DEN_1_superliga/fixtures_2627.csv",
+              "sha256": "d024af9072c51b7586b6c5c03f81e4516b0436b3f5c8a33b92da02e1550fbaaf"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 97,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1803168000000,
+        "lg": "Superliga Danimarca",
+        "H": "Lyngby",
+        "A": "Brondby",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "DNK",
+          "AwayCountry": "DNK",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/DEN_1_superliga/fixtures_2627.csv",
+              "sha256": "d024af9072c51b7586b6c5c03f81e4516b0436b3f5c8a33b92da02e1550fbaaf"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 101,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1803168000000,
+        "lg": "Superliga Danimarca",
+        "H": "Sonderjyske",
+        "A": "Aarhus",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "DNK",
+          "AwayCountry": "DNK",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/DEN_1_superliga/fixtures_2627.csv",
+              "sha256": "d024af9072c51b7586b6c5c03f81e4516b0436b3f5c8a33b92da02e1550fbaaf"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 103,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1803772800000,
+        "lg": "Superliga Danimarca",
+        "H": "Brondby",
+        "A": "Nordsjaelland",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "DNK",
+          "AwayCountry": "DNK",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/DEN_1_superliga/fixtures_2627.csv",
+              "sha256": "d024af9072c51b7586b6c5c03f81e4516b0436b3f5c8a33b92da02e1550fbaaf"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 106,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1803772800000,
+        "lg": "Superliga Danimarca",
+        "H": "Randers FC",
+        "A": "Sonderjyske",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "DNK",
+          "AwayCountry": "DNK",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/DEN_1_superliga/fixtures_2627.csv",
+              "sha256": "d024af9072c51b7586b6c5c03f81e4516b0436b3f5c8a33b92da02e1550fbaaf"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 111,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1804377600000,
+        "lg": "Superliga Danimarca",
+        "H": "Nordsjaelland",
+        "A": "Sonderjyske",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "DNK",
+          "AwayCountry": "DNK",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/DEN_1_superliga/fixtures_2627.csv",
+              "sha256": "d024af9072c51b7586b6c5c03f81e4516b0436b3f5c8a33b92da02e1550fbaaf"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 113,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1804377600000,
+        "lg": "Superliga Danimarca",
+        "H": "Silkeborg",
+        "A": "Brondby",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "DNK",
+          "AwayCountry": "DNK",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/DEN_1_superliga/fixtures_2627.csv",
+              "sha256": "d024af9072c51b7586b6c5c03f81e4516b0436b3f5c8a33b92da02e1550fbaaf"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 118,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1804982400000,
+        "lg": "Superliga Danimarca",
+        "H": "Sonderjyske",
+        "A": "Lyngby",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "DNK",
+          "AwayCountry": "DNK",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/DEN_1_superliga/fixtures_2627.csv",
+              "sha256": "d024af9072c51b7586b6c5c03f81e4516b0436b3f5c8a33b92da02e1550fbaaf"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 119,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1804982400000,
+        "lg": "Superliga Danimarca",
+        "H": "Viborg",
+        "A": "Brondby",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "DNK",
+          "AwayCountry": "DNK",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/DEN_1_superliga/fixtures_2627.csv",
+              "sha256": "d024af9072c51b7586b6c5c03f81e4516b0436b3f5c8a33b92da02e1550fbaaf"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 120,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1805587200000,
+        "lg": "Superliga Danimarca",
+        "H": "Brondby",
+        "A": "Horsens",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "DNK",
+          "AwayCountry": "DNK",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/DEN_1_superliga/fixtures_2627.csv",
+              "sha256": "d024af9072c51b7586b6c5c03f81e4516b0436b3f5c8a33b92da02e1550fbaaf"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 125,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1805587200000,
+        "lg": "Superliga Danimarca",
+        "H": "Silkeborg",
+        "A": "Sonderjyske",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "DNK",
+          "AwayCountry": "DNK",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/DEN_1_superliga/fixtures_2627.csv",
+              "sha256": "d024af9072c51b7586b6c5c03f81e4516b0436b3f5c8a33b92da02e1550fbaaf"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    }
+  ]
+}

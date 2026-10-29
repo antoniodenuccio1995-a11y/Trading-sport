@@ -1,0 +1,37 @@
+{
+  "url": "https://raw.githubusercontent.com/openfootball/england/4dffd3b1ad3b04ba6f885eb7fca3b1c2318a6c7d/2023-24/facup.txt",
+  "commit": "4dffd3b1ad3b04ba6f885eb7fca3b1c2318a6c7d",
+  "sha256": "2ccca37d088961f07e396dae438f88f767566c53dba4aa290f924e07017056ee",
+  "sourceExcerpt": [
+    "Round 3",
+    "Thu Jan 4 2024",
+    "20:00 Crystal Palace v Everton FC 0-0",
+    "Wed Jan 17",
+    "Everton FC v Crystal Palace 1-0 (1-0)"
+  ],
+  "annotation": "The second match is the actual FA Cup third-round replay; ReplayNumber is an explicit test annotation, not a source-provided event ID.",
+  "matches": [
+    {
+      "date": "2024-01-04",
+      "H": "Crystal Palace",
+      "A": "Everton FC",
+      "h": 0,
+      "a": 0,
+      "ht": null,
+      "hth": null,
+      "hta": null,
+      "replay": 0
+    },
+    {
+      "date": "2024-01-17",
+      "H": "Everton FC",
+      "A": "Crystal Palace",
+      "h": 1,
+      "a": 0,
+      "ht": 1,
+      "hth": 1,
+      "hta": 0,
+      "replay": 1
+    }
+  ]
+}

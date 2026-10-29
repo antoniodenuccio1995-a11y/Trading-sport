@@ -1,0 +1,31 @@
+{
+  "inputRecords": 28544,
+  "sourceSHA256": "809d7ecce6bcf8bbc39812107e29052689520a075304bf7c743f17bc1dd31f2a",
+  "personalRecordsPublished": false,
+  "checks": [
+    "T8: all original rows accounted for in a conservative preview, including four retained unresolved schedule observations",
+    "T8: actual atomic save and export retain both original manual payloads",
+    "T8: exact compact record and manual persistence after browser restart",
+    "T8: undo restores the empty test archive without editing the supplied backup"
+  ],
+  "pageerrorCount": 0,
+  "consoleErrors": [],
+  "networkMode": "isolated: optional font CSS empty; automatic live refresh postponed via existing cache timestamps in test profiles only",
+  "outputRecords": 28302,
+  "consolidatedCopies": 242,
+  "preservedUnresolved": 4,
+  "testedSourceSHA256": {
+    "Trading_Analytics_v0.2U-rc5_TA-INT-004.html": "0f094350700750026e5e303cafbf9384ff494738c56cd9a56c92eff5bf2d4a4a",
+    "ta-club-aliases-int004.js": "105b36aecfa02a502daf63ca6d14ca3cdf3da88f894092a5729039e6bd572f93",
+    "ta-clubs-v4.js": "142d243fe45b2cb346f36469814862bcfc740fce87cfeb31bd09f4155fe184e6",
+    "ta-fixture-identity.js": "b5c0130a4ce59ed11f5b135cf7e8119527e61d37e5860ad53bd7bba70ddf9cf7",
+    "ta-json-recovery-rc5.js": "0152204d53df15307c59647bb8f4671ee5ac9d503700b8d79d93498d005e1384",
+    "ta-csv-import-v02U-rc5.js": "1ca10996342701032416f6edc55e41bb2bffd490fb6b2500aa2fa621ee6bd51c",
+    "ta-history-coverage-rc5.js": "d63661147d2860b80bc98257a15e605b72d2516d5555fecfd1ab4c76fb62f023",
+    "ta-history-manifest-rc5.js": "5ce65d2c5f76fb5340fa39f35ea7b5d619248625d49e873edbfa6966230eaf1c",
+    "ta-int004-ui.js": "4af380a6e856b81b4ebc2309eb92c21cf538a9fdda0a2c1897424a8365ea1223",
+    "ta-int004-area.js": "3051dce94bb8b304eec68f5b9e9c3477bfb0f178e66bc80a6424f80f99538d2f",
+    "ta-int004-app.js": "34fd5b9ef4392e85e3c7ea6ac3d765ba438ab961ce871cc527defcd1e9440697"
+  },
+  "outcome": "PASS"
+}

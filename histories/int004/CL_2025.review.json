@@ -1,0 +1,6617 @@
+{
+  "originalPacket": "histories/stab003/CL_2025.json",
+  "originalSHA256": "b0ee33d98733d17572aa92763225d764f405cafea5bd8df45b45145dbf614bd5",
+  "review": [
+    {
+      "originalIndex": 0,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1757980800000,
+        "lg": "Champions League",
+        "H": "Athletic Club (ESP)",
+        "A": "Arsenal FC",
+        "h": 0,
+        "a": 2,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "Phase": "League, Matchday 1",
+          "HomeCountry": "INT",
+          "AwayCountry": "ENG",
+          "PublishedRound": "League, Matchday 1",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/cl.txt",
+              "sha256": "2b1877308587ff1004c21b8e961b9050b8754f968244e0635eb005040fd9d5cb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 1,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1757980800000,
+        "lg": "Champions League",
+        "H": "PSV (NED)",
+        "A": "Royale Union Saint-Gilloise",
+        "h": 1,
+        "a": 3,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "Phase": "League, Matchday 1",
+          "HomeCountry": "INT",
+          "AwayCountry": "BEL",
+          "PublishedRound": "League, Matchday 1",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/cl.txt",
+              "sha256": "2b1877308587ff1004c21b8e961b9050b8754f968244e0635eb005040fd9d5cb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 2,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 2,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1757980800000,
+        "lg": "Champions League",
+        "H": "Juventus FC (ITA)",
+        "A": "Borussia Dortmund",
+        "h": 4,
+        "a": 4,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "Phase": "League, Matchday 1",
+          "HomeCountry": "INT",
+          "AwayCountry": "GER",
+          "PublishedRound": "League, Matchday 1",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/cl.txt",
+              "sha256": "2b1877308587ff1004c21b8e961b9050b8754f968244e0635eb005040fd9d5cb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 3,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1757980800000,
+        "lg": "Champions League",
+        "H": "Sport Lisboa e Benfica",
+        "A": "Qarabağ Ağdam FK",
+        "h": 2,
+        "a": 3,
+        "ht": 3,
+        "up": false,
+        "o": {
+          "Phase": "League, Matchday 1",
+          "HomeCountry": "PRT",
+          "AwayCountry": "AZE",
+          "PublishedRound": "League, Matchday 1",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/cl.txt",
+              "sha256": "2b1877308587ff1004c21b8e961b9050b8754f968244e0635eb005040fd9d5cb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 2,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 5,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1757980800000,
+        "lg": "Champions League",
+        "H": "Real Madrid CF (ESP)",
+        "A": "Olympique de Marseille",
+        "h": 2,
+        "a": 1,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "Phase": "League, Matchday 1",
+          "HomeCountry": "INT",
+          "AwayCountry": "FRA",
+          "PublishedRound": "League, Matchday 1",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/cl.txt",
+              "sha256": "2b1877308587ff1004c21b8e961b9050b8754f968244e0635eb005040fd9d5cb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 6,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1758067200000,
+        "lg": "Champions League",
+        "H": "SK Slavia Praha (CZE)",
+        "A": "FK Bodø/Glimt",
+        "h": 2,
+        "a": 2,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "League, Matchday 1",
+          "HomeCountry": "INT",
+          "AwayCountry": "NOR",
+          "PublishedRound": "League, Matchday 1",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/cl.txt",
+              "sha256": "2b1877308587ff1004c21b8e961b9050b8754f968244e0635eb005040fd9d5cb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 7,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1758067200000,
+        "lg": "Champions League",
+        "H": "PAE Olympiakos SFP",
+        "A": "Paphos FC",
+        "h": 0,
+        "a": 0,
+        "ht": null,
+        "up": false,
+        "o": {
+          "Phase": "League, Matchday 1",
+          "HomeCountry": "GRC",
+          "AwayCountry": "CYP",
+          "PublishedRound": "League, Matchday 1",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/cl.txt",
+              "sha256": "2b1877308587ff1004c21b8e961b9050b8754f968244e0635eb005040fd9d5cb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 8,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1758067200000,
+        "lg": "Champions League",
+        "H": "AFC Ajax (NED)",
+        "A": "FC Internazionale Milano",
+        "h": 0,
+        "a": 2,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "League, Matchday 1",
+          "HomeCountry": "INT",
+          "AwayCountry": "ITA",
+          "PublishedRound": "League, Matchday 1",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/cl.txt",
+              "sha256": "2b1877308587ff1004c21b8e961b9050b8754f968244e0635eb005040fd9d5cb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 9,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1758067200000,
+        "lg": "Champions League",
+        "H": "Liverpool FC (ENG)",
+        "A": "Club Atlético de Madrid",
+        "h": 3,
+        "a": 2,
+        "ht": 3,
+        "up": false,
+        "o": {
+          "Phase": "League, Matchday 1",
+          "HomeCountry": "INT",
+          "AwayCountry": "ESP",
+          "PublishedRound": "League, Matchday 1",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/cl.txt",
+              "sha256": "2b1877308587ff1004c21b8e961b9050b8754f968244e0635eb005040fd9d5cb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 2,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 12,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1758153600000,
+        "lg": "Champions League",
+        "H": "FC København (DEN)",
+        "A": "Bayer 04 Leverkusen",
+        "h": 2,
+        "a": 2,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "League, Matchday 1",
+          "HomeCountry": "INT",
+          "AwayCountry": "GER",
+          "PublishedRound": "League, Matchday 1",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/cl.txt",
+              "sha256": "2b1877308587ff1004c21b8e961b9050b8754f968244e0635eb005040fd9d5cb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 13,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1758153600000,
+        "lg": "Champions League",
+        "H": "Club Brugge KV (BEL)",
+        "A": "AS Monaco FC",
+        "h": 4,
+        "a": 1,
+        "ht": 3,
+        "up": false,
+        "o": {
+          "Phase": "League, Matchday 1",
+          "HomeCountry": "INT",
+          "AwayCountry": "MCO",
+          "PublishedRound": "League, Matchday 1",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/cl.txt",
+              "sha256": "2b1877308587ff1004c21b8e961b9050b8754f968244e0635eb005040fd9d5cb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 3,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 17,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1758153600000,
+        "lg": "Champions League",
+        "H": "Sporting Clube de Portugal",
+        "A": "FK Kairat",
+        "h": 4,
+        "a": 1,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "League, Matchday 1",
+          "HomeCountry": "PRT",
+          "AwayCountry": "KAZ",
+          "PublishedRound": "League, Matchday 1",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/cl.txt",
+              "sha256": "2b1877308587ff1004c21b8e961b9050b8754f968244e0635eb005040fd9d5cb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 18,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1759190400000,
+        "lg": "Champions League",
+        "H": "Atalanta BC (ITA)",
+        "A": "Club Brugge KV",
+        "h": 2,
+        "a": 1,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "League, Matchday 2",
+          "HomeCountry": "INT",
+          "AwayCountry": "BEL",
+          "PublishedRound": "League, Matchday 2",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/cl.txt",
+              "sha256": "2b1877308587ff1004c21b8e961b9050b8754f968244e0635eb005040fd9d5cb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 19,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1759190400000,
+        "lg": "Champions League",
+        "H": "FK Kairat (KAZ)",
+        "A": "Real Madrid CF",
+        "h": 0,
+        "a": 5,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "League, Matchday 2",
+          "HomeCountry": "INT",
+          "AwayCountry": "ESP",
+          "PublishedRound": "League, Matchday 2",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/cl.txt",
+              "sha256": "2b1877308587ff1004c21b8e961b9050b8754f968244e0635eb005040fd9d5cb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 20,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1759190400000,
+        "lg": "Champions League",
+        "H": "Galatasaray SK (TUR)",
+        "A": "Liverpool FC",
+        "h": 1,
+        "a": 0,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "League, Matchday 2",
+          "HomeCountry": "INT",
+          "AwayCountry": "ENG",
+          "PublishedRound": "League, Matchday 2",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/cl.txt",
+              "sha256": "2b1877308587ff1004c21b8e961b9050b8754f968244e0635eb005040fd9d5cb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 23,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1759190400000,
+        "lg": "Champions League",
+        "H": "FK Bodø/Glimt (NOR)",
+        "A": "Tottenham Hotspur FC",
+        "h": 2,
+        "a": 2,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "Phase": "League, Matchday 2",
+          "HomeCountry": "INT",
+          "AwayCountry": "ENG",
+          "PublishedRound": "League, Matchday 2",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/cl.txt",
+              "sha256": "2b1877308587ff1004c21b8e961b9050b8754f968244e0635eb005040fd9d5cb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 24,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1759190400000,
+        "lg": "Champions League",
+        "H": "Paphos FC (CYP)",
+        "A": "FC Bayern München",
+        "h": 1,
+        "a": 5,
+        "ht": 5,
+        "up": false,
+        "o": {
+          "Phase": "League, Matchday 2",
+          "HomeCountry": "INT",
+          "AwayCountry": "GER",
+          "PublishedRound": "League, Matchday 2",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/cl.txt",
+              "sha256": "2b1877308587ff1004c21b8e961b9050b8754f968244e0635eb005040fd9d5cb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 4,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 25,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1759190400000,
+        "lg": "Champions League",
+        "H": "Chelsea FC (ENG)",
+        "A": "Sport Lisboa e Benfica",
+        "h": 1,
+        "a": 0,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "League, Matchday 2",
+          "HomeCountry": "INT",
+          "AwayCountry": "PRT",
+          "PublishedRound": "League, Matchday 2",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/cl.txt",
+              "sha256": "2b1877308587ff1004c21b8e961b9050b8754f968244e0635eb005040fd9d5cb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 26,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1759190400000,
+        "lg": "Champions League",
+        "H": "FC Internazionale Milano",
+        "A": "SK Slavia Praha",
+        "h": 3,
+        "a": 0,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "Phase": "League, Matchday 2",
+          "HomeCountry": "ITA",
+          "AwayCountry": "CZE",
+          "PublishedRound": "League, Matchday 2",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/cl.txt",
+              "sha256": "2b1877308587ff1004c21b8e961b9050b8754f968244e0635eb005040fd9d5cb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 2,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 27,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1759276800000,
+        "lg": "Champions League",
+        "H": "Qarabağ Ağdam FK (AZE)",
+        "A": "FC København",
+        "h": 2,
+        "a": 0,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "League, Matchday 2",
+          "HomeCountry": "INT",
+          "AwayCountry": "DNK",
+          "PublishedRound": "League, Matchday 2",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/cl.txt",
+              "sha256": "2b1877308587ff1004c21b8e961b9050b8754f968244e0635eb005040fd9d5cb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 30,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1759276800000,
+        "lg": "Champions League",
+        "H": "FC Barcelona (ESP)",
+        "A": "Paris Saint-Germain FC",
+        "h": 1,
+        "a": 2,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "Phase": "League, Matchday 2",
+          "HomeCountry": "INT",
+          "AwayCountry": "FRA",
+          "PublishedRound": "League, Matchday 2",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/cl.txt",
+              "sha256": "2b1877308587ff1004c21b8e961b9050b8754f968244e0635eb005040fd9d5cb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 31,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1759276800000,
+        "lg": "Champions League",
+        "H": "AS Monaco FC (MCO)",
+        "A": "Manchester City FC",
+        "h": 2,
+        "a": 2,
+        "ht": 3,
+        "up": false,
+        "o": {
+          "Phase": "League, Matchday 2",
+          "HomeCountry": "INT",
+          "AwayCountry": "ENG",
+          "PublishedRound": "League, Matchday 2",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/cl.txt",
+              "sha256": "2b1877308587ff1004c21b8e961b9050b8754f968244e0635eb005040fd9d5cb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 2,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 33,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1759276800000,
+        "lg": "Champions League",
+        "H": "Arsenal FC (ENG)",
+        "A": "PAE Olympiakos SFP",
+        "h": 2,
+        "a": 0,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "League, Matchday 2",
+          "HomeCountry": "INT",
+          "AwayCountry": "GRC",
+          "PublishedRound": "League, Matchday 2",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/cl.txt",
+              "sha256": "2b1877308587ff1004c21b8e961b9050b8754f968244e0635eb005040fd9d5cb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 34,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1759276800000,
+        "lg": "Champions League",
+        "H": "Villarreal CF (ESP)",
+        "A": "Juventus FC",
+        "h": 2,
+        "a": 2,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "League, Matchday 2",
+          "HomeCountry": "INT",
+          "AwayCountry": "ITA",
+          "PublishedRound": "League, Matchday 2",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/cl.txt",
+              "sha256": "2b1877308587ff1004c21b8e961b9050b8754f968244e0635eb005040fd9d5cb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 35,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1759276800000,
+        "lg": "Champions League",
+        "H": "SSC Napoli (ITA)",
+        "A": "Sporting Clube de Portugal",
+        "h": 2,
+        "a": 1,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "League, Matchday 2",
+          "HomeCountry": "INT",
+          "AwayCountry": "PRT",
+          "PublishedRound": "League, Matchday 2",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/cl.txt",
+              "sha256": "2b1877308587ff1004c21b8e961b9050b8754f968244e0635eb005040fd9d5cb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 36,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1761004800000,
+        "lg": "Champions League",
+        "H": "FC Barcelona (ESP)",
+        "A": "PAE Olympiakos SFP",
+        "h": 6,
+        "a": 1,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "Phase": "League, Matchday 3",
+          "HomeCountry": "INT",
+          "AwayCountry": "GRC",
+          "PublishedRound": "League, Matchday 3",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/cl.txt",
+              "sha256": "2b1877308587ff1004c21b8e961b9050b8754f968244e0635eb005040fd9d5cb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 2,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 37,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1761004800000,
+        "lg": "Champions League",
+        "H": "FK Kairat (KAZ)",
+        "A": "Paphos FC",
+        "h": 0,
+        "a": 0,
+        "ht": null,
+        "up": false,
+        "o": {
+          "Phase": "League, Matchday 3",
+          "HomeCountry": "INT",
+          "AwayCountry": "CYP",
+          "PublishedRound": "League, Matchday 3",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/cl.txt",
+              "sha256": "2b1877308587ff1004c21b8e961b9050b8754f968244e0635eb005040fd9d5cb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 39,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1761004800000,
+        "lg": "Champions League",
+        "H": "FC København (DEN)",
+        "A": "Borussia Dortmund",
+        "h": 2,
+        "a": 4,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "Phase": "League, Matchday 3",
+          "HomeCountry": "INT",
+          "AwayCountry": "GER",
+          "PublishedRound": "League, Matchday 3",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/cl.txt",
+              "sha256": "2b1877308587ff1004c21b8e961b9050b8754f968244e0635eb005040fd9d5cb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 41,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1761004800000,
+        "lg": "Champions League",
+        "H": "Villarreal CF (ESP)",
+        "A": "Manchester City FC",
+        "h": 0,
+        "a": 2,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "Phase": "League, Matchday 3",
+          "HomeCountry": "INT",
+          "AwayCountry": "ENG",
+          "PublishedRound": "League, Matchday 3",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/cl.txt",
+              "sha256": "2b1877308587ff1004c21b8e961b9050b8754f968244e0635eb005040fd9d5cb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 2,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 42,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1761004800000,
+        "lg": "Champions League",
+        "H": "Arsenal FC (ENG)",
+        "A": "Club Atlético de Madrid",
+        "h": 4,
+        "a": 0,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "Phase": "League, Matchday 3",
+          "HomeCountry": "INT",
+          "AwayCountry": "ESP",
+          "PublishedRound": "League, Matchday 3",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/cl.txt",
+              "sha256": "2b1877308587ff1004c21b8e961b9050b8754f968244e0635eb005040fd9d5cb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 44,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1761004800000,
+        "lg": "Champions League",
+        "H": "PSV (NED)",
+        "A": "SSC Napoli",
+        "h": 6,
+        "a": 2,
+        "ht": 3,
+        "up": false,
+        "o": {
+          "Phase": "League, Matchday 3",
+          "HomeCountry": "INT",
+          "AwayCountry": "ITA",
+          "PublishedRound": "League, Matchday 3",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/cl.txt",
+              "sha256": "2b1877308587ff1004c21b8e961b9050b8754f968244e0635eb005040fd9d5cb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 2,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 45,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1761091200000,
+        "lg": "Champions League",
+        "H": "Galatasaray SK (TUR)",
+        "A": "FK Bodø/Glimt",
+        "h": 3,
+        "a": 1,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "Phase": "League, Matchday 3",
+          "HomeCountry": "INT",
+          "AwayCountry": "NOR",
+          "PublishedRound": "League, Matchday 3",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/cl.txt",
+              "sha256": "2b1877308587ff1004c21b8e961b9050b8754f968244e0635eb005040fd9d5cb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 2,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 46,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1761091200000,
+        "lg": "Champions League",
+        "H": "Athletic Club (ESP)",
+        "A": "Qarabağ Ağdam FK",
+        "h": 3,
+        "a": 1,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "Phase": "League, Matchday 3",
+          "HomeCountry": "INT",
+          "AwayCountry": "AZE",
+          "PublishedRound": "League, Matchday 3",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/cl.txt",
+              "sha256": "2b1877308587ff1004c21b8e961b9050b8754f968244e0635eb005040fd9d5cb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 48,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1761091200000,
+        "lg": "Champions League",
+        "H": "Atalanta BC (ITA)",
+        "A": "SK Slavia Praha",
+        "h": 0,
+        "a": 0,
+        "ht": null,
+        "up": false,
+        "o": {
+          "Phase": "League, Matchday 3",
+          "HomeCountry": "INT",
+          "AwayCountry": "CZE",
+          "PublishedRound": "League, Matchday 3",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/cl.txt",
+              "sha256": "2b1877308587ff1004c21b8e961b9050b8754f968244e0635eb005040fd9d5cb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 50,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1761091200000,
+        "lg": "Champions League",
+        "H": "AS Monaco FC (MCO)",
+        "A": "Tottenham Hotspur FC",
+        "h": 0,
+        "a": 0,
+        "ht": null,
+        "up": false,
+        "o": {
+          "Phase": "League, Matchday 3",
+          "HomeCountry": "INT",
+          "AwayCountry": "ENG",
+          "PublishedRound": "League, Matchday 3",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/cl.txt",
+              "sha256": "2b1877308587ff1004c21b8e961b9050b8754f968244e0635eb005040fd9d5cb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 52,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1761091200000,
+        "lg": "Champions League",
+        "H": "Chelsea FC (ENG)",
+        "A": "AFC Ajax",
+        "h": 5,
+        "a": 1,
+        "ht": 5,
+        "up": false,
+        "o": {
+          "Phase": "League, Matchday 3",
+          "HomeCountry": "INT",
+          "AwayCountry": "NED",
+          "PublishedRound": "League, Matchday 3",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/cl.txt",
+              "sha256": "2b1877308587ff1004c21b8e961b9050b8754f968244e0635eb005040fd9d5cb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 4,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 53,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1761091200000,
+        "lg": "Champions League",
+        "H": "Real Madrid CF (ESP)",
+        "A": "Juventus FC",
+        "h": 1,
+        "a": 0,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "Phase": "League, Matchday 3",
+          "HomeCountry": "INT",
+          "AwayCountry": "ITA",
+          "PublishedRound": "League, Matchday 3",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/cl.txt",
+              "sha256": "2b1877308587ff1004c21b8e961b9050b8754f968244e0635eb005040fd9d5cb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 54,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1762214400000,
+        "lg": "Champions League",
+        "H": "SK Slavia Praha (CZE)",
+        "A": "Arsenal FC",
+        "h": 0,
+        "a": 3,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "League, Matchday 4",
+          "HomeCountry": "INT",
+          "AwayCountry": "ENG",
+          "PublishedRound": "League, Matchday 4",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/cl.txt",
+              "sha256": "2b1877308587ff1004c21b8e961b9050b8754f968244e0635eb005040fd9d5cb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 55,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1762214400000,
+        "lg": "Champions League",
+        "H": "SSC Napoli (ITA)",
+        "A": "Eintracht Frankfurt",
+        "h": 0,
+        "a": 0,
+        "ht": null,
+        "up": false,
+        "o": {
+          "Phase": "League, Matchday 4",
+          "HomeCountry": "INT",
+          "AwayCountry": "GER",
+          "PublishedRound": "League, Matchday 4",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/cl.txt",
+              "sha256": "2b1877308587ff1004c21b8e961b9050b8754f968244e0635eb005040fd9d5cb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 56,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1762214400000,
+        "lg": "Champions League",
+        "H": "Juventus FC (ITA)",
+        "A": "Sporting Clube de Portugal",
+        "h": 1,
+        "a": 1,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "Phase": "League, Matchday 4",
+          "HomeCountry": "INT",
+          "AwayCountry": "PRT",
+          "PublishedRound": "League, Matchday 4",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/cl.txt",
+              "sha256": "2b1877308587ff1004c21b8e961b9050b8754f968244e0635eb005040fd9d5cb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 59,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1762214400000,
+        "lg": "Champions League",
+        "H": "FK Bodø/Glimt (NOR)",
+        "A": "AS Monaco FC",
+        "h": 0,
+        "a": 1,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "League, Matchday 4",
+          "HomeCountry": "INT",
+          "AwayCountry": "MCO",
+          "PublishedRound": "League, Matchday 4",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/cl.txt",
+              "sha256": "2b1877308587ff1004c21b8e961b9050b8754f968244e0635eb005040fd9d5cb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 60,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1762214400000,
+        "lg": "Champions League",
+        "H": "PAE Olympiakos SFP",
+        "A": "PSV",
+        "h": 1,
+        "a": 1,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "League, Matchday 4",
+          "HomeCountry": "GRC",
+          "AwayCountry": "NED",
+          "PublishedRound": "League, Matchday 4",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/cl.txt",
+              "sha256": "2b1877308587ff1004c21b8e961b9050b8754f968244e0635eb005040fd9d5cb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 62,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1762214400000,
+        "lg": "Champions League",
+        "H": "Liverpool FC (ENG)",
+        "A": "Real Madrid CF",
+        "h": 1,
+        "a": 0,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "Phase": "League, Matchday 4",
+          "HomeCountry": "INT",
+          "AwayCountry": "ESP",
+          "PublishedRound": "League, Matchday 4",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/cl.txt",
+              "sha256": "2b1877308587ff1004c21b8e961b9050b8754f968244e0635eb005040fd9d5cb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 63,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1762300800000,
+        "lg": "Champions League",
+        "H": "Paphos FC (CYP)",
+        "A": "Villarreal CF",
+        "h": 1,
+        "a": 0,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "Phase": "League, Matchday 4",
+          "HomeCountry": "INT",
+          "AwayCountry": "ESP",
+          "PublishedRound": "League, Matchday 4",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/cl.txt",
+              "sha256": "2b1877308587ff1004c21b8e961b9050b8754f968244e0635eb005040fd9d5cb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 64,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1762300800000,
+        "lg": "Champions League",
+        "H": "Qarabağ Ağdam FK (AZE)",
+        "A": "Chelsea FC",
+        "h": 2,
+        "a": 2,
+        "ht": 3,
+        "up": false,
+        "o": {
+          "Phase": "League, Matchday 4",
+          "HomeCountry": "INT",
+          "AwayCountry": "ENG",
+          "PublishedRound": "League, Matchday 4",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/cl.txt",
+              "sha256": "2b1877308587ff1004c21b8e961b9050b8754f968244e0635eb005040fd9d5cb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 2,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 65,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1762300800000,
+        "lg": "Champions League",
+        "H": "FC Internazionale Milano",
+        "A": "FK Kairat",
+        "h": 2,
+        "a": 1,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "League, Matchday 4",
+          "HomeCountry": "ITA",
+          "AwayCountry": "KAZ",
+          "PublishedRound": "League, Matchday 4",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/cl.txt",
+              "sha256": "2b1877308587ff1004c21b8e961b9050b8754f968244e0635eb005040fd9d5cb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 67,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1762300800000,
+        "lg": "Champions League",
+        "H": "Club Brugge KV (BEL)",
+        "A": "FC Barcelona",
+        "h": 3,
+        "a": 3,
+        "ht": 3,
+        "up": false,
+        "o": {
+          "Phase": "League, Matchday 4",
+          "HomeCountry": "INT",
+          "AwayCountry": "ESP",
+          "PublishedRound": "League, Matchday 4",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/cl.txt",
+              "sha256": "2b1877308587ff1004c21b8e961b9050b8754f968244e0635eb005040fd9d5cb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 2,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 70,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1762300800000,
+        "lg": "Champions League",
+        "H": "AFC Ajax (NED)",
+        "A": "Galatasaray SK",
+        "h": 0,
+        "a": 3,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "Phase": "League, Matchday 4",
+          "HomeCountry": "INT",
+          "AwayCountry": "TUR",
+          "PublishedRound": "League, Matchday 4",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/cl.txt",
+              "sha256": "2b1877308587ff1004c21b8e961b9050b8754f968244e0635eb005040fd9d5cb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 72,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1764028800000,
+        "lg": "Champions League",
+        "H": "AFC Ajax (NED)",
+        "A": "Sport Lisboa e Benfica",
+        "h": 0,
+        "a": 2,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "League, Matchday 5",
+          "HomeCountry": "INT",
+          "AwayCountry": "PRT",
+          "PublishedRound": "League, Matchday 5",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/cl.txt",
+              "sha256": "2b1877308587ff1004c21b8e961b9050b8754f968244e0635eb005040fd9d5cb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 73,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1764028800000,
+        "lg": "Champions League",
+        "H": "Galatasaray SK (TUR)",
+        "A": "Royale Union Saint-Gilloise",
+        "h": 0,
+        "a": 1,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "Phase": "League, Matchday 5",
+          "HomeCountry": "INT",
+          "AwayCountry": "BEL",
+          "PublishedRound": "League, Matchday 5",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/cl.txt",
+              "sha256": "2b1877308587ff1004c21b8e961b9050b8754f968244e0635eb005040fd9d5cb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 76,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1764028800000,
+        "lg": "Champions League",
+        "H": "FK Bodø/Glimt (NOR)",
+        "A": "Juventus FC",
+        "h": 2,
+        "a": 3,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "League, Matchday 5",
+          "HomeCountry": "INT",
+          "AwayCountry": "ITA",
+          "PublishedRound": "League, Matchday 5",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/cl.txt",
+              "sha256": "2b1877308587ff1004c21b8e961b9050b8754f968244e0635eb005040fd9d5cb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 78,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1764028800000,
+        "lg": "Champions League",
+        "H": "SK Slavia Praha (CZE)",
+        "A": "Athletic Club",
+        "h": 0,
+        "a": 0,
+        "ht": null,
+        "up": false,
+        "o": {
+          "Phase": "League, Matchday 5",
+          "HomeCountry": "INT",
+          "AwayCountry": "ESP",
+          "PublishedRound": "League, Matchday 5",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/cl.txt",
+              "sha256": "2b1877308587ff1004c21b8e961b9050b8754f968244e0635eb005040fd9d5cb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 79,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1764028800000,
+        "lg": "Champions League",
+        "H": "SSC Napoli (ITA)",
+        "A": "Qarabağ Ağdam FK",
+        "h": 2,
+        "a": 0,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "Phase": "League, Matchday 5",
+          "HomeCountry": "INT",
+          "AwayCountry": "AZE",
+          "PublishedRound": "League, Matchday 5",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/cl.txt",
+              "sha256": "2b1877308587ff1004c21b8e961b9050b8754f968244e0635eb005040fd9d5cb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 80,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1764028800000,
+        "lg": "Champions League",
+        "H": "Chelsea FC (ENG)",
+        "A": "FC Barcelona",
+        "h": 3,
+        "a": 0,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "League, Matchday 5",
+          "HomeCountry": "INT",
+          "AwayCountry": "ESP",
+          "PublishedRound": "League, Matchday 5",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/cl.txt",
+              "sha256": "2b1877308587ff1004c21b8e961b9050b8754f968244e0635eb005040fd9d5cb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 81,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1764115200000,
+        "lg": "Champions League",
+        "H": "Paphos FC (CYP)",
+        "A": "AS Monaco FC",
+        "h": 2,
+        "a": 2,
+        "ht": 3,
+        "up": false,
+        "o": {
+          "Phase": "League, Matchday 5",
+          "HomeCountry": "INT",
+          "AwayCountry": "MCO",
+          "PublishedRound": "League, Matchday 5",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/cl.txt",
+              "sha256": "2b1877308587ff1004c21b8e961b9050b8754f968244e0635eb005040fd9d5cb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 2,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 82,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1764115200000,
+        "lg": "Champions League",
+        "H": "FC København (DEN)",
+        "A": "FK Kairat",
+        "h": 3,
+        "a": 2,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "League, Matchday 5",
+          "HomeCountry": "INT",
+          "AwayCountry": "KAZ",
+          "PublishedRound": "League, Matchday 5",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/cl.txt",
+              "sha256": "2b1877308587ff1004c21b8e961b9050b8754f968244e0635eb005040fd9d5cb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 83,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1764115200000,
+        "lg": "Champions League",
+        "H": "Liverpool FC (ENG)",
+        "A": "PSV",
+        "h": 1,
+        "a": 4,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "Phase": "League, Matchday 5",
+          "HomeCountry": "INT",
+          "AwayCountry": "NED",
+          "PublishedRound": "League, Matchday 5",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/cl.txt",
+              "sha256": "2b1877308587ff1004c21b8e961b9050b8754f968244e0635eb005040fd9d5cb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 87,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1764115200000,
+        "lg": "Champions League",
+        "H": "Arsenal FC (ENG)",
+        "A": "FC Bayern München",
+        "h": 3,
+        "a": 1,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "Phase": "League, Matchday 5",
+          "HomeCountry": "INT",
+          "AwayCountry": "GER",
+          "PublishedRound": "League, Matchday 5",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/cl.txt",
+              "sha256": "2b1877308587ff1004c21b8e961b9050b8754f968244e0635eb005040fd9d5cb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 88,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1764115200000,
+        "lg": "Champions League",
+        "H": "PAE Olympiakos SFP",
+        "A": "Real Madrid CF",
+        "h": 3,
+        "a": 4,
+        "ht": 4,
+        "up": false,
+        "o": {
+          "Phase": "League, Matchday 5",
+          "HomeCountry": "GRC",
+          "AwayCountry": "ESP",
+          "PublishedRound": "League, Matchday 5",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/cl.txt",
+              "sha256": "2b1877308587ff1004c21b8e961b9050b8754f968244e0635eb005040fd9d5cb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 3,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 90,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1765238400000,
+        "lg": "Champions League",
+        "H": "FK Kairat (KAZ)",
+        "A": "PAE Olympiakos SFP",
+        "h": 0,
+        "a": 1,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "Phase": "League, Matchday 6",
+          "HomeCountry": "INT",
+          "AwayCountry": "GRC",
+          "PublishedRound": "League, Matchday 6",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/cl.txt",
+              "sha256": "2b1877308587ff1004c21b8e961b9050b8754f968244e0635eb005040fd9d5cb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 92,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1765238400000,
+        "lg": "Champions League",
+        "H": "FC Barcelona (ESP)",
+        "A": "Eintracht Frankfurt",
+        "h": 2,
+        "a": 1,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "League, Matchday 6",
+          "HomeCountry": "INT",
+          "AwayCountry": "GER",
+          "PublishedRound": "League, Matchday 6",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/cl.txt",
+              "sha256": "2b1877308587ff1004c21b8e961b9050b8754f968244e0635eb005040fd9d5cb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 93,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1765238400000,
+        "lg": "Champions League",
+        "H": "PSV (NED)",
+        "A": "Club Atlético de Madrid",
+        "h": 2,
+        "a": 3,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "Phase": "League, Matchday 6",
+          "HomeCountry": "INT",
+          "AwayCountry": "ESP",
+          "PublishedRound": "League, Matchday 6",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/cl.txt",
+              "sha256": "2b1877308587ff1004c21b8e961b9050b8754f968244e0635eb005040fd9d5cb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 95,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1765238400000,
+        "lg": "Champions League",
+        "H": "Tottenham Hotspur FC",
+        "A": "SK Slavia Praha",
+        "h": 3,
+        "a": 0,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "League, Matchday 6",
+          "HomeCountry": "ENG",
+          "AwayCountry": "CZE",
+          "PublishedRound": "League, Matchday 6",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/cl.txt",
+              "sha256": "2b1877308587ff1004c21b8e961b9050b8754f968244e0635eb005040fd9d5cb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 96,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1765238400000,
+        "lg": "Champions League",
+        "H": "AS Monaco FC (MCO)",
+        "A": "Galatasaray SK",
+        "h": 1,
+        "a": 0,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "Phase": "League, Matchday 6",
+          "HomeCountry": "INT",
+          "AwayCountry": "TUR",
+          "PublishedRound": "League, Matchday 6",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/cl.txt",
+              "sha256": "2b1877308587ff1004c21b8e961b9050b8754f968244e0635eb005040fd9d5cb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 97,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1765238400000,
+        "lg": "Champions League",
+        "H": "Atalanta BC (ITA)",
+        "A": "Chelsea FC",
+        "h": 2,
+        "a": 1,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "League, Matchday 6",
+          "HomeCountry": "INT",
+          "AwayCountry": "ENG",
+          "PublishedRound": "League, Matchday 6",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/cl.txt",
+              "sha256": "2b1877308587ff1004c21b8e961b9050b8754f968244e0635eb005040fd9d5cb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 99,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1765324800000,
+        "lg": "Champions League",
+        "H": "Villarreal CF (ESP)",
+        "A": "FC København",
+        "h": 2,
+        "a": 3,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "League, Matchday 6",
+          "HomeCountry": "INT",
+          "AwayCountry": "DNK",
+          "PublishedRound": "League, Matchday 6",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/cl.txt",
+              "sha256": "2b1877308587ff1004c21b8e961b9050b8754f968244e0635eb005040fd9d5cb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 100,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1765324800000,
+        "lg": "Champions League",
+        "H": "Qarabağ Ağdam FK (AZE)",
+        "A": "AFC Ajax",
+        "h": 2,
+        "a": 4,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "Phase": "League, Matchday 6",
+          "HomeCountry": "INT",
+          "AwayCountry": "NED",
+          "PublishedRound": "League, Matchday 6",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/cl.txt",
+              "sha256": "2b1877308587ff1004c21b8e961b9050b8754f968244e0635eb005040fd9d5cb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 101,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1765324800000,
+        "lg": "Champions League",
+        "H": "Borussia Dortmund",
+        "A": "FK Bodø/Glimt",
+        "h": 2,
+        "a": 2,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "Phase": "League, Matchday 6",
+          "HomeCountry": "GER",
+          "AwayCountry": "NOR",
+          "PublishedRound": "League, Matchday 6",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/cl.txt",
+              "sha256": "2b1877308587ff1004c21b8e961b9050b8754f968244e0635eb005040fd9d5cb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 102,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1765324800000,
+        "lg": "Champions League",
+        "H": "Athletic Club (ESP)",
+        "A": "Paris Saint-Germain FC",
+        "h": 0,
+        "a": 0,
+        "ht": null,
+        "up": false,
+        "o": {
+          "Phase": "League, Matchday 6",
+          "HomeCountry": "INT",
+          "AwayCountry": "FRA",
+          "PublishedRound": "League, Matchday 6",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/cl.txt",
+              "sha256": "2b1877308587ff1004c21b8e961b9050b8754f968244e0635eb005040fd9d5cb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 104,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1765324800000,
+        "lg": "Champions League",
+        "H": "Club Brugge KV (BEL)",
+        "A": "Arsenal FC",
+        "h": 0,
+        "a": 3,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "League, Matchday 6",
+          "HomeCountry": "INT",
+          "AwayCountry": "ENG",
+          "PublishedRound": "League, Matchday 6",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/cl.txt",
+              "sha256": "2b1877308587ff1004c21b8e961b9050b8754f968244e0635eb005040fd9d5cb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 106,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1765324800000,
+        "lg": "Champions League",
+        "H": "Juventus FC (ITA)",
+        "A": "Paphos FC",
+        "h": 2,
+        "a": 0,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "Phase": "League, Matchday 6",
+          "HomeCountry": "INT",
+          "AwayCountry": "CYP",
+          "PublishedRound": "League, Matchday 6",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/cl.txt",
+              "sha256": "2b1877308587ff1004c21b8e961b9050b8754f968244e0635eb005040fd9d5cb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 107,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1765324800000,
+        "lg": "Champions League",
+        "H": "Real Madrid CF (ESP)",
+        "A": "Manchester City FC",
+        "h": 1,
+        "a": 2,
+        "ht": 3,
+        "up": false,
+        "o": {
+          "Phase": "League, Matchday 6",
+          "HomeCountry": "INT",
+          "AwayCountry": "ENG",
+          "PublishedRound": "League, Matchday 6",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/cl.txt",
+              "sha256": "2b1877308587ff1004c21b8e961b9050b8754f968244e0635eb005040fd9d5cb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 2,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 108,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1768867200000,
+        "lg": "Champions League",
+        "H": "FK Kairat (KAZ)",
+        "A": "Club Brugge KV",
+        "h": 1,
+        "a": 4,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "Phase": "League, Matchday 7",
+          "HomeCountry": "INT",
+          "AwayCountry": "BEL",
+          "PublishedRound": "League, Matchday 7",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/cl.txt",
+              "sha256": "2b1877308587ff1004c21b8e961b9050b8754f968244e0635eb005040fd9d5cb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 2,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 109,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1768867200000,
+        "lg": "Champions League",
+        "H": "FK Bodø/Glimt (NOR)",
+        "A": "Manchester City FC",
+        "h": 3,
+        "a": 1,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "Phase": "League, Matchday 7",
+          "HomeCountry": "INT",
+          "AwayCountry": "ENG",
+          "PublishedRound": "League, Matchday 7",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/cl.txt",
+              "sha256": "2b1877308587ff1004c21b8e961b9050b8754f968244e0635eb005040fd9d5cb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 2,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 112,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1768867200000,
+        "lg": "Champions League",
+        "H": "PAE Olympiakos SFP",
+        "A": "Bayer 04 Leverkusen",
+        "h": 2,
+        "a": 0,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "Phase": "League, Matchday 7",
+          "HomeCountry": "GRC",
+          "AwayCountry": "GER",
+          "PublishedRound": "League, Matchday 7",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/cl.txt",
+              "sha256": "2b1877308587ff1004c21b8e961b9050b8754f968244e0635eb005040fd9d5cb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 2,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 113,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1768867200000,
+        "lg": "Champions League",
+        "H": "Villarreal CF (ESP)",
+        "A": "AFC Ajax",
+        "h": 1,
+        "a": 2,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "Phase": "League, Matchday 7",
+          "HomeCountry": "INT",
+          "AwayCountry": "NED",
+          "PublishedRound": "League, Matchday 7",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/cl.txt",
+              "sha256": "2b1877308587ff1004c21b8e961b9050b8754f968244e0635eb005040fd9d5cb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 114,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1768867200000,
+        "lg": "Champions League",
+        "H": "FC København (DEN)",
+        "A": "SSC Napoli",
+        "h": 1,
+        "a": 1,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "League, Matchday 7",
+          "HomeCountry": "INT",
+          "AwayCountry": "ITA",
+          "PublishedRound": "League, Matchday 7",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/cl.txt",
+              "sha256": "2b1877308587ff1004c21b8e961b9050b8754f968244e0635eb005040fd9d5cb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 115,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1768867200000,
+        "lg": "Champions League",
+        "H": "Real Madrid CF (ESP)",
+        "A": "AS Monaco FC",
+        "h": 6,
+        "a": 1,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "Phase": "League, Matchday 7",
+          "HomeCountry": "INT",
+          "AwayCountry": "MCO",
+          "PublishedRound": "League, Matchday 7",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/cl.txt",
+              "sha256": "2b1877308587ff1004c21b8e961b9050b8754f968244e0635eb005040fd9d5cb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 2,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 117,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1768953600000,
+        "lg": "Champions League",
+        "H": "Qarabağ Ağdam FK (AZE)",
+        "A": "Eintracht Frankfurt",
+        "h": 3,
+        "a": 2,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "Phase": "League, Matchday 7",
+          "HomeCountry": "INT",
+          "AwayCountry": "GER",
+          "PublishedRound": "League, Matchday 7",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/cl.txt",
+              "sha256": "2b1877308587ff1004c21b8e961b9050b8754f968244e0635eb005040fd9d5cb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 118,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1768953600000,
+        "lg": "Champions League",
+        "H": "Galatasaray SK (TUR)",
+        "A": "Club Atlético de Madrid",
+        "h": 1,
+        "a": 1,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "Phase": "League, Matchday 7",
+          "HomeCountry": "INT",
+          "AwayCountry": "ESP",
+          "PublishedRound": "League, Matchday 7",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/cl.txt",
+              "sha256": "2b1877308587ff1004c21b8e961b9050b8754f968244e0635eb005040fd9d5cb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 120,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1768953600000,
+        "lg": "Champions League",
+        "H": "SK Slavia Praha (CZE)",
+        "A": "FC Barcelona",
+        "h": 2,
+        "a": 4,
+        "ht": 4,
+        "up": false,
+        "o": {
+          "Phase": "League, Matchday 7",
+          "HomeCountry": "INT",
+          "AwayCountry": "ESP",
+          "PublishedRound": "League, Matchday 7",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/cl.txt",
+              "sha256": "2b1877308587ff1004c21b8e961b9050b8754f968244e0635eb005040fd9d5cb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 2,
+        "hta": 2,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 121,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1768953600000,
+        "lg": "Champions League",
+        "H": "Atalanta BC (ITA)",
+        "A": "Athletic Club",
+        "h": 2,
+        "a": 3,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "League, Matchday 7",
+          "HomeCountry": "INT",
+          "AwayCountry": "ESP",
+          "PublishedRound": "League, Matchday 7",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/cl.txt",
+              "sha256": "2b1877308587ff1004c21b8e961b9050b8754f968244e0635eb005040fd9d5cb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 122,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1768953600000,
+        "lg": "Champions League",
+        "H": "Juventus FC (ITA)",
+        "A": "Sport Lisboa e Benfica",
+        "h": 2,
+        "a": 0,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "Phase": "League, Matchday 7",
+          "HomeCountry": "INT",
+          "AwayCountry": "PRT",
+          "PublishedRound": "League, Matchday 7",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/cl.txt",
+              "sha256": "2b1877308587ff1004c21b8e961b9050b8754f968244e0635eb005040fd9d5cb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 125,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1768953600000,
+        "lg": "Champions League",
+        "H": "Chelsea FC (ENG)",
+        "A": "Paphos FC",
+        "h": 1,
+        "a": 0,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "Phase": "League, Matchday 7",
+          "HomeCountry": "INT",
+          "AwayCountry": "CYP",
+          "PublishedRound": "League, Matchday 7",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/cl.txt",
+              "sha256": "2b1877308587ff1004c21b8e961b9050b8754f968244e0635eb005040fd9d5cb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 126,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1769558400000,
+        "lg": "Champions League",
+        "H": "Liverpool FC (ENG)",
+        "A": "Qarabağ Ağdam FK",
+        "h": 6,
+        "a": 0,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "Phase": "League, Matchday 8",
+          "HomeCountry": "INT",
+          "AwayCountry": "AZE",
+          "PublishedRound": "League, Matchday 8",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/cl.txt",
+              "sha256": "2b1877308587ff1004c21b8e961b9050b8754f968244e0635eb005040fd9d5cb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 2,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 127,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1769558400000,
+        "lg": "Champions League",
+        "H": "FC Barcelona (ESP)",
+        "A": "FC København",
+        "h": 4,
+        "a": 1,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "League, Matchday 8",
+          "HomeCountry": "INT",
+          "AwayCountry": "DNK",
+          "PublishedRound": "League, Matchday 8",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/cl.txt",
+              "sha256": "2b1877308587ff1004c21b8e961b9050b8754f968244e0635eb005040fd9d5cb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 130,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1769558400000,
+        "lg": "Champions League",
+        "H": "Arsenal FC (ENG)",
+        "A": "FK Kairat",
+        "h": 3,
+        "a": 2,
+        "ht": 4,
+        "up": false,
+        "o": {
+          "Phase": "League, Matchday 8",
+          "HomeCountry": "INT",
+          "AwayCountry": "KAZ",
+          "PublishedRound": "League, Matchday 8",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/cl.txt",
+              "sha256": "2b1877308587ff1004c21b8e961b9050b8754f968244e0635eb005040fd9d5cb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 3,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 132,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1769558400000,
+        "lg": "Champions League",
+        "H": "Club Brugge KV (BEL)",
+        "A": "Olympique de Marseille",
+        "h": 3,
+        "a": 0,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "Phase": "League, Matchday 8",
+          "HomeCountry": "INT",
+          "AwayCountry": "FRA",
+          "PublishedRound": "League, Matchday 8",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/cl.txt",
+              "sha256": "2b1877308587ff1004c21b8e961b9050b8754f968244e0635eb005040fd9d5cb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 2,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 134,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1769558400000,
+        "lg": "Champions League",
+        "H": "AS Monaco FC (MCO)",
+        "A": "Juventus FC",
+        "h": 0,
+        "a": 0,
+        "ht": null,
+        "up": false,
+        "o": {
+          "Phase": "League, Matchday 8",
+          "HomeCountry": "INT",
+          "AwayCountry": "ITA",
+          "PublishedRound": "League, Matchday 8",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/cl.txt",
+              "sha256": "2b1877308587ff1004c21b8e961b9050b8754f968244e0635eb005040fd9d5cb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 135,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1769558400000,
+        "lg": "Champions League",
+        "H": "Club Atlético de Madrid",
+        "A": "FK Bodø/Glimt",
+        "h": 1,
+        "a": 2,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "Phase": "League, Matchday 8",
+          "HomeCountry": "ESP",
+          "AwayCountry": "NOR",
+          "PublishedRound": "League, Matchday 8",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/cl.txt",
+              "sha256": "2b1877308587ff1004c21b8e961b9050b8754f968244e0635eb005040fd9d5cb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 136,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1769558400000,
+        "lg": "Champions League",
+        "H": "Athletic Club (ESP)",
+        "A": "Sporting Clube de Portugal",
+        "h": 2,
+        "a": 3,
+        "ht": 3,
+        "up": false,
+        "o": {
+          "Phase": "League, Matchday 8",
+          "HomeCountry": "INT",
+          "AwayCountry": "PRT",
+          "PublishedRound": "League, Matchday 8",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/cl.txt",
+              "sha256": "2b1877308587ff1004c21b8e961b9050b8754f968244e0635eb005040fd9d5cb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 2,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 137,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1769558400000,
+        "lg": "Champions League",
+        "H": "AFC Ajax (NED)",
+        "A": "PAE Olympiakos SFP",
+        "h": 1,
+        "a": 2,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "Phase": "League, Matchday 8",
+          "HomeCountry": "INT",
+          "AwayCountry": "GRC",
+          "PublishedRound": "League, Matchday 8",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/cl.txt",
+              "sha256": "2b1877308587ff1004c21b8e961b9050b8754f968244e0635eb005040fd9d5cb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 139,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1769558400000,
+        "lg": "Champions League",
+        "H": "Paphos FC (CYP)",
+        "A": "SK Slavia Praha",
+        "h": 4,
+        "a": 1,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "Phase": "League, Matchday 8",
+          "HomeCountry": "INT",
+          "AwayCountry": "CZE",
+          "PublishedRound": "League, Matchday 8",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/cl.txt",
+              "sha256": "2b1877308587ff1004c21b8e961b9050b8754f968244e0635eb005040fd9d5cb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 140,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1769558400000,
+        "lg": "Champions League",
+        "H": "PSV (NED)",
+        "A": "FC Bayern München",
+        "h": 1,
+        "a": 2,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "Phase": "League, Matchday 8",
+          "HomeCountry": "INT",
+          "AwayCountry": "GER",
+          "PublishedRound": "League, Matchday 8",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/cl.txt",
+              "sha256": "2b1877308587ff1004c21b8e961b9050b8754f968244e0635eb005040fd9d5cb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 141,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1769558400000,
+        "lg": "Champions League",
+        "H": "SSC Napoli (ITA)",
+        "A": "Chelsea FC",
+        "h": 2,
+        "a": 3,
+        "ht": 3,
+        "up": false,
+        "o": {
+          "Phase": "League, Matchday 8",
+          "HomeCountry": "INT",
+          "AwayCountry": "ENG",
+          "PublishedRound": "League, Matchday 8",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/cl.txt",
+              "sha256": "2b1877308587ff1004c21b8e961b9050b8754f968244e0635eb005040fd9d5cb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 2,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 144,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1771286400000,
+        "lg": "Champions League",
+        "H": "Galatasaray SK (TUR)",
+        "A": "Juventus FC",
+        "h": 5,
+        "a": 2,
+        "ht": 3,
+        "up": false,
+        "o": {
+          "Phase": "Playoffs, Matchday 1",
+          "HomeCountry": "INT",
+          "AwayCountry": "ITA",
+          "PublishedRound": "Playoffs, Matchday 1",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/cl.txt",
+              "sha256": "2b1877308587ff1004c21b8e961b9050b8754f968244e0635eb005040fd9d5cb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 2,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 146,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1771286400000,
+        "lg": "Champions League",
+        "H": "AS Monaco FC (MCO)",
+        "A": "Paris Saint-Germain FC",
+        "h": 2,
+        "a": 3,
+        "ht": 4,
+        "up": false,
+        "o": {
+          "Phase": "Playoffs, Matchday 1",
+          "HomeCountry": "INT",
+          "AwayCountry": "FRA",
+          "PublishedRound": "Playoffs, Matchday 1",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/cl.txt",
+              "sha256": "2b1877308587ff1004c21b8e961b9050b8754f968244e0635eb005040fd9d5cb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 2,
+        "hta": 2,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 148,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1771372800000,
+        "lg": "Champions League",
+        "H": "Qarabağ Ağdam FK (AZE)",
+        "A": "Newcastle United FC",
+        "h": 1,
+        "a": 6,
+        "ht": 5,
+        "up": false,
+        "o": {
+          "Phase": "Playoffs, Matchday 1",
+          "HomeCountry": "INT",
+          "AwayCountry": "ENG",
+          "PublishedRound": "Playoffs, Matchday 1",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/cl.txt",
+              "sha256": "2b1877308587ff1004c21b8e961b9050b8754f968244e0635eb005040fd9d5cb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 5,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 149,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1771372800000,
+        "lg": "Champions League",
+        "H": "Club Brugge KV (BEL)",
+        "A": "Club Atlético de Madrid",
+        "h": 3,
+        "a": 3,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "Phase": "Playoffs, Matchday 1",
+          "HomeCountry": "INT",
+          "AwayCountry": "ESP",
+          "PublishedRound": "Playoffs, Matchday 1",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/cl.txt",
+              "sha256": "2b1877308587ff1004c21b8e961b9050b8754f968244e0635eb005040fd9d5cb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 2,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 150,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1771372800000,
+        "lg": "Champions League",
+        "H": "PAE Olympiakos SFP",
+        "A": "Bayer 04 Leverkusen",
+        "h": 0,
+        "a": 2,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "Phase": "Playoffs, Matchday 1",
+          "HomeCountry": "GRC",
+          "AwayCountry": "GER",
+          "PublishedRound": "Playoffs, Matchday 1",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/cl.txt",
+              "sha256": "2b1877308587ff1004c21b8e961b9050b8754f968244e0635eb005040fd9d5cb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 151,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1771372800000,
+        "lg": "Champions League",
+        "H": "FK Bodø/Glimt (NOR)",
+        "A": "FC Internazionale Milano",
+        "h": 3,
+        "a": 1,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "Phase": "Playoffs, Matchday 1",
+          "HomeCountry": "INT",
+          "AwayCountry": "ITA",
+          "PublishedRound": "Playoffs, Matchday 1",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/cl.txt",
+              "sha256": "2b1877308587ff1004c21b8e961b9050b8754f968244e0635eb005040fd9d5cb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 153,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1771891200000,
+        "lg": "Champions League",
+        "H": "Newcastle United FC",
+        "A": "Qarabağ Ağdam FK",
+        "h": 3,
+        "a": 2,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "Phase": "Playoffs, Matchday 2",
+          "HomeCountry": "ENG",
+          "AwayCountry": "AZE",
+          "PublishedRound": "Playoffs, Matchday 2",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/cl.txt",
+              "sha256": "2b1877308587ff1004c21b8e961b9050b8754f968244e0635eb005040fd9d5cb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 2,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 154,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1771891200000,
+        "lg": "Champions League",
+        "H": "Bayer 04 Leverkusen",
+        "A": "PAE Olympiakos SFP",
+        "h": 0,
+        "a": 0,
+        "ht": null,
+        "up": false,
+        "o": {
+          "Phase": "Playoffs, Matchday 2",
+          "HomeCountry": "GER",
+          "AwayCountry": "GRC",
+          "PublishedRound": "Playoffs, Matchday 2",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/cl.txt",
+              "sha256": "2b1877308587ff1004c21b8e961b9050b8754f968244e0635eb005040fd9d5cb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 155,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1771891200000,
+        "lg": "Champions League",
+        "H": "FC Internazionale Milano",
+        "A": "FK Bodø/Glimt",
+        "h": 1,
+        "a": 2,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "Phase": "Playoffs, Matchday 2",
+          "HomeCountry": "ITA",
+          "AwayCountry": "NOR",
+          "PublishedRound": "Playoffs, Matchday 2",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/cl.txt",
+              "sha256": "2b1877308587ff1004c21b8e961b9050b8754f968244e0635eb005040fd9d5cb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 156,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1771977600000,
+        "lg": "Champions League",
+        "H": "Atalanta BC (ITA)",
+        "A": "Borussia Dortmund",
+        "h": 4,
+        "a": 1,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "Phase": "Playoffs, Matchday 2",
+          "HomeCountry": "INT",
+          "AwayCountry": "GER",
+          "PublishedRound": "Playoffs, Matchday 2",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/cl.txt",
+              "sha256": "2b1877308587ff1004c21b8e961b9050b8754f968244e0635eb005040fd9d5cb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 2,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 157,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1771977600000,
+        "lg": "Champions League",
+        "H": "Real Madrid CF (ESP)",
+        "A": "Sport Lisboa e Benfica",
+        "h": 2,
+        "a": 1,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "Phase": "Playoffs, Matchday 2",
+          "HomeCountry": "INT",
+          "AwayCountry": "PRT",
+          "PublishedRound": "Playoffs, Matchday 2",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/cl.txt",
+              "sha256": "2b1877308587ff1004c21b8e961b9050b8754f968244e0635eb005040fd9d5cb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 159,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1771977600000,
+        "lg": "Champions League",
+        "H": "Juventus FC (ITA)",
+        "A": "Galatasaray SK",
+        "h": 3,
+        "a": 0,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "Playoffs, Matchday 2",
+          "HomeCountry": "INT",
+          "AwayCountry": "TUR",
+          "PublishedRound": "Playoffs, Matchday 2",
+          "CupScoreEvidence": "3-2 a.e.t. (3-0, 1-0)",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/cl.txt",
+              "sha256": "2b1877308587ff1004c21b8e961b9050b8754f968244e0635eb005040fd9d5cb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 160,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1773100800000,
+        "lg": "Champions League",
+        "H": "Galatasaray SK (TUR)",
+        "A": "Liverpool FC",
+        "h": 1,
+        "a": 0,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "Finals, Round of 16",
+          "HomeCountry": "INT",
+          "AwayCountry": "ENG",
+          "PublishedRound": "Finals, Round of 16",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/cl.txt",
+              "sha256": "2b1877308587ff1004c21b8e961b9050b8754f968244e0635eb005040fd9d5cb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 161,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1773100800000,
+        "lg": "Champions League",
+        "H": "Atalanta BC (ITA)",
+        "A": "FC Bayern München",
+        "h": 1,
+        "a": 6,
+        "ht": 3,
+        "up": false,
+        "o": {
+          "Phase": "Finals, Round of 16",
+          "HomeCountry": "INT",
+          "AwayCountry": "GER",
+          "PublishedRound": "Finals, Round of 16",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/cl.txt",
+              "sha256": "2b1877308587ff1004c21b8e961b9050b8754f968244e0635eb005040fd9d5cb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 3,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 166,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1773187200000,
+        "lg": "Champions League",
+        "H": "Real Madrid CF (ESP)",
+        "A": "Manchester City FC",
+        "h": 3,
+        "a": 0,
+        "ht": 3,
+        "up": false,
+        "o": {
+          "Phase": "Finals, Round of 16",
+          "HomeCountry": "INT",
+          "AwayCountry": "ENG",
+          "PublishedRound": "Finals, Round of 16",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/cl.txt",
+              "sha256": "2b1877308587ff1004c21b8e961b9050b8754f968244e0635eb005040fd9d5cb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 3,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 167,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1773187200000,
+        "lg": "Champions League",
+        "H": "FK Bodø/Glimt (NOR)",
+        "A": "Sporting Clube de Portugal",
+        "h": 3,
+        "a": 0,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "Phase": "Finals, Round of 16",
+          "HomeCountry": "INT",
+          "AwayCountry": "PRT",
+          "PublishedRound": "Finals, Round of 16",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/cl.txt",
+              "sha256": "2b1877308587ff1004c21b8e961b9050b8754f968244e0635eb005040fd9d5cb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 2,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 168,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1773705600000,
+        "lg": "Champions League",
+        "H": "Sporting Clube de Portugal",
+        "A": "FK Bodø/Glimt",
+        "h": 3,
+        "a": 0,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "Finals, Round of 16",
+          "HomeCountry": "PRT",
+          "AwayCountry": "NOR",
+          "PublishedRound": "Finals, Round of 16",
+          "CupScoreEvidence": "5-0 a.e.t. (3-0, 1-0)",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/cl.txt",
+              "sha256": "2b1877308587ff1004c21b8e961b9050b8754f968244e0635eb005040fd9d5cb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 169,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1773705600000,
+        "lg": "Champions League",
+        "H": "Chelsea FC (ENG)",
+        "A": "Paris Saint-Germain FC",
+        "h": 0,
+        "a": 3,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "Phase": "Finals, Round of 16",
+          "HomeCountry": "INT",
+          "AwayCountry": "FRA",
+          "PublishedRound": "Finals, Round of 16",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/cl.txt",
+              "sha256": "2b1877308587ff1004c21b8e961b9050b8754f968244e0635eb005040fd9d5cb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 2,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 171,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1773705600000,
+        "lg": "Champions League",
+        "H": "Arsenal FC (ENG)",
+        "A": "Bayer 04 Leverkusen",
+        "h": 2,
+        "a": 0,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "Finals, Round of 16",
+          "HomeCountry": "INT",
+          "AwayCountry": "GER",
+          "PublishedRound": "Finals, Round of 16",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/cl.txt",
+              "sha256": "2b1877308587ff1004c21b8e961b9050b8754f968244e0635eb005040fd9d5cb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 172,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1773792000000,
+        "lg": "Champions League",
+        "H": "FC Barcelona (ESP)",
+        "A": "Newcastle United FC",
+        "h": 7,
+        "a": 2,
+        "ht": 5,
+        "up": false,
+        "o": {
+          "Phase": "Finals, Round of 16",
+          "HomeCountry": "INT",
+          "AwayCountry": "ENG",
+          "PublishedRound": "Finals, Round of 16",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/cl.txt",
+              "sha256": "2b1877308587ff1004c21b8e961b9050b8754f968244e0635eb005040fd9d5cb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 3,
+        "hta": 2,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 173,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1773792000000,
+        "lg": "Champions League",
+        "H": "Liverpool FC (ENG)",
+        "A": "Galatasaray SK",
+        "h": 4,
+        "a": 0,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "Finals, Round of 16",
+          "HomeCountry": "INT",
+          "AwayCountry": "TUR",
+          "PublishedRound": "Finals, Round of 16",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/cl.txt",
+              "sha256": "2b1877308587ff1004c21b8e961b9050b8754f968244e0635eb005040fd9d5cb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 176,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1775520000000,
+        "lg": "Champions League",
+        "H": "Real Madrid CF (ESP)",
+        "A": "FC Bayern München",
+        "h": 1,
+        "a": 2,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "Finals, Quarterfinals",
+          "HomeCountry": "INT",
+          "AwayCountry": "GER",
+          "PublishedRound": "Finals, Quarterfinals",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/cl.txt",
+              "sha256": "2b1877308587ff1004c21b8e961b9050b8754f968244e0635eb005040fd9d5cb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 179,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1775606400000,
+        "lg": "Champions League",
+        "H": "FC Barcelona (ESP)",
+        "A": "Club Atlético de Madrid",
+        "h": 0,
+        "a": 2,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "Finals, Quarterfinals",
+          "HomeCountry": "INT",
+          "AwayCountry": "ESP",
+          "PublishedRound": "Finals, Quarterfinals",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/cl.txt",
+              "sha256": "2b1877308587ff1004c21b8e961b9050b8754f968244e0635eb005040fd9d5cb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 180,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1776124800000,
+        "lg": "Champions League",
+        "H": "Liverpool FC (ENG)",
+        "A": "Paris Saint-Germain FC",
+        "h": 0,
+        "a": 2,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "Phase": "Finals, Quarterfinals",
+          "HomeCountry": "INT",
+          "AwayCountry": "FRA",
+          "PublishedRound": "Finals, Quarterfinals",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/cl.txt",
+              "sha256": "2b1877308587ff1004c21b8e961b9050b8754f968244e0635eb005040fd9d5cb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 183,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1776211200000,
+        "lg": "Champions League",
+        "H": "Arsenal FC (ENG)",
+        "A": "Sporting Clube de Portugal",
+        "h": 0,
+        "a": 0,
+        "ht": null,
+        "up": false,
+        "o": {
+          "Phase": "Finals, Quarterfinals",
+          "HomeCountry": "INT",
+          "AwayCountry": "PRT",
+          "PublishedRound": "Finals, Quarterfinals",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/cl.txt",
+              "sha256": "2b1877308587ff1004c21b8e961b9050b8754f968244e0635eb005040fd9d5cb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 186,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1777939200000,
+        "lg": "Champions League",
+        "H": "Arsenal FC (ENG)",
+        "A": "Club Atlético de Madrid",
+        "h": 1,
+        "a": 0,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "Finals, Semifinals",
+          "HomeCountry": "INT",
+          "AwayCountry": "ESP",
+          "PublishedRound": "Finals, Semifinals",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/cl.txt",
+              "sha256": "2b1877308587ff1004c21b8e961b9050b8754f968244e0635eb005040fd9d5cb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 189,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1751932800000,
+        "lg": "Champions League",
+        "H": "Kuopion PS (FIN)",
+        "A": "FC Milsami",
+        "h": 1,
+        "a": 0,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "Phase": "qualifying",
+          "HomeCountry": "INT",
+          "AwayCountry": "MDA",
+          "PublishedRound": "1. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/clq.txt",
+              "sha256": "2212922ca831a0ebb4bb8be07575392f53f1294acc47ffab15c7a1ad121f7d37"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 190,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1751932800000,
+        "lg": "Champions League",
+        "H": "FC Iberia 1999 (GEO)",
+        "A": "Malmö FF",
+        "h": 1,
+        "a": 3,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "qualifying",
+          "HomeCountry": "INT",
+          "AwayCountry": "SWE",
+          "PublishedRound": "1. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/clq.txt",
+              "sha256": "2212922ca831a0ebb4bb8be07575392f53f1294acc47ffab15c7a1ad121f7d37"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 191,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1751932800000,
+        "lg": "Champions League",
+        "H": "FC Noah (ARM)",
+        "A": "FK Budućnost Podgorica",
+        "h": 1,
+        "a": 0,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "Phase": "qualifying",
+          "HomeCountry": "INT",
+          "AwayCountry": "MNE",
+          "PublishedRound": "1. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/clq.txt",
+              "sha256": "2212922ca831a0ebb4bb8be07575392f53f1294acc47ffab15c7a1ad121f7d37"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 192,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1751932800000,
+        "lg": "Champions League",
+        "H": "FCI Levadia (EST)",
+        "A": "FK RFS",
+        "h": 0,
+        "a": 1,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "Phase": "qualifying",
+          "HomeCountry": "INT",
+          "AwayCountry": "LVA",
+          "PublishedRound": "1. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/clq.txt",
+              "sha256": "2212922ca831a0ebb4bb8be07575392f53f1294acc47ffab15c7a1ad121f7d37"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 193,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1751932800000,
+        "lg": "Champions League",
+        "H": "Olimpija Ljubljana",
+        "A": "FK Kairat",
+        "h": 1,
+        "a": 1,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "Phase": "qualifying",
+          "HomeCountry": "SVN",
+          "AwayCountry": "KAZ",
+          "PublishedRound": "1. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/clq.txt",
+              "sha256": "2212922ca831a0ebb4bb8be07575392f53f1294acc47ffab15c7a1ad121f7d37"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 194,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1751932800000,
+        "lg": "Champions League",
+        "H": "The New Saints (WAL)",
+        "A": "KF Shkëndija 79",
+        "h": 0,
+        "a": 0,
+        "ht": null,
+        "up": false,
+        "o": {
+          "Phase": "qualifying",
+          "HomeCountry": "INT",
+          "AwayCountry": "MKD",
+          "PublishedRound": "1. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/clq.txt",
+              "sha256": "2212922ca831a0ebb4bb8be07575392f53f1294acc47ffab15c7a1ad121f7d37"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 195,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1751932800000,
+        "lg": "Champions League",
+        "H": "KF Drita (KOS)",
+        "A": "FC Differdange 03",
+        "h": 1,
+        "a": 0,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "Phase": "qualifying",
+          "HomeCountry": "INT",
+          "AwayCountry": "LUX",
+          "PublishedRound": "1. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/clq.txt",
+              "sha256": "2212922ca831a0ebb4bb8be07575392f53f1294acc47ffab15c7a1ad121f7d37"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 196,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1751932800000,
+        "lg": "Champions League",
+        "H": "Víkingur (FRO)",
+        "A": "Lincoln Red Imps",
+        "h": 2,
+        "a": 3,
+        "ht": 5,
+        "up": false,
+        "o": {
+          "Phase": "qualifying",
+          "HomeCountry": "INT",
+          "AwayCountry": "GIB",
+          "PublishedRound": "1. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/clq.txt",
+              "sha256": "2212922ca831a0ebb4bb8be07575392f53f1294acc47ffab15c7a1ad121f7d37"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 2,
+        "hta": 3,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 197,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1751932800000,
+        "lg": "Champions League",
+        "H": "Egnatia Rrogozhine",
+        "A": "Breiðablik",
+        "h": 1,
+        "a": 0,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "Phase": "qualifying",
+          "HomeCountry": "ALB",
+          "AwayCountry": "ISL",
+          "PublishedRound": "1. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/clq.txt",
+              "sha256": "2212922ca831a0ebb4bb8be07575392f53f1294acc47ffab15c7a1ad121f7d37"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 198,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1751932800000,
+        "lg": "Champions League",
+        "H": "SS Virtus (SMR)",
+        "A": "Zrinjski Mostar",
+        "h": 0,
+        "a": 2,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "qualifying",
+          "HomeCountry": "INT",
+          "AwayCountry": "BIH",
+          "PublishedRound": "1. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/clq.txt",
+              "sha256": "2212922ca831a0ebb4bb8be07575392f53f1294acc47ffab15c7a1ad121f7d37"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 199,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1752019200000,
+        "lg": "Champions League",
+        "H": "FK Žalgiris (LTU)",
+        "A": "Hamrun Spartans",
+        "h": 2,
+        "a": 0,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "Phase": "qualifying",
+          "HomeCountry": "INT",
+          "AwayCountry": "MLT",
+          "PublishedRound": "1. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/clq.txt",
+              "sha256": "2212922ca831a0ebb4bb8be07575392f53f1294acc47ffab15c7a1ad121f7d37"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 200,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1752019200000,
+        "lg": "Champions League",
+        "H": "FCSB (ROU)",
+        "A": "Inter Club d'Escaldes",
+        "h": 3,
+        "a": 1,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "Phase": "qualifying",
+          "HomeCountry": "INT",
+          "AwayCountry": "AND",
+          "PublishedRound": "1. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/clq.txt",
+              "sha256": "2212922ca831a0ebb4bb8be07575392f53f1294acc47ffab15c7a1ad121f7d37"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 2,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 201,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1752019200000,
+        "lg": "Champions League",
+        "H": "PFC Ludogorets Razgrad",
+        "A": "Dinamo Minsk",
+        "h": 1,
+        "a": 0,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "Phase": "qualifying",
+          "HomeCountry": "BUL",
+          "AwayCountry": "BLR",
+          "PublishedRound": "1. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/clq.txt",
+              "sha256": "2212922ca831a0ebb4bb8be07575392f53f1294acc47ffab15c7a1ad121f7d37"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 202,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1752019200000,
+        "lg": "Champions League",
+        "H": "Shelbourne FC (IRL)",
+        "A": "Linfield FC",
+        "h": 1,
+        "a": 0,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "Phase": "qualifying",
+          "HomeCountry": "INT",
+          "AwayCountry": "NIR",
+          "PublishedRound": "1. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/clq.txt",
+              "sha256": "2212922ca831a0ebb4bb8be07575392f53f1294acc47ffab15c7a1ad121f7d37"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 203,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1752537600000,
+        "lg": "Champions League",
+        "H": "FK Kairat (KAZ)",
+        "A": "Olimpija Ljubljana",
+        "h": 2,
+        "a": 0,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "Phase": "qualifying",
+          "HomeCountry": "INT",
+          "AwayCountry": "SVN",
+          "PublishedRound": "1. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/clq.txt",
+              "sha256": "2212922ca831a0ebb4bb8be07575392f53f1294acc47ffab15c7a1ad121f7d37"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 2,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 204,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1752537600000,
+        "lg": "Champions League",
+        "H": "Lincoln Red Imps (GIB)",
+        "A": "Víkingur",
+        "h": 1,
+        "a": 0,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "Phase": "qualifying",
+          "HomeCountry": "INT",
+          "AwayCountry": "FRO",
+          "PublishedRound": "1. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/clq.txt",
+              "sha256": "2212922ca831a0ebb4bb8be07575392f53f1294acc47ffab15c7a1ad121f7d37"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 205,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1752537600000,
+        "lg": "Champions League",
+        "H": "Hamrun Spartans (MLT)",
+        "A": "FK Žalgiris",
+        "h": 2,
+        "a": 0,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "Phase": "qualifying",
+          "HomeCountry": "INT",
+          "AwayCountry": "LTU",
+          "PublishedRound": "1. Round",
+          "CupScoreEvidence": "11-10 pen. 2-0 a.e.t. (2-0, 2-0)",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/clq.txt",
+              "sha256": "2212922ca831a0ebb4bb8be07575392f53f1294acc47ffab15c7a1ad121f7d37"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 2,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 206,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1752537600000,
+        "lg": "Champions League",
+        "H": "FC Milsami (MDA)",
+        "A": "Kuopion PS",
+        "h": 0,
+        "a": 0,
+        "ht": null,
+        "up": false,
+        "o": {
+          "Phase": "qualifying",
+          "HomeCountry": "INT",
+          "AwayCountry": "FIN",
+          "PublishedRound": "1. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/clq.txt",
+              "sha256": "2212922ca831a0ebb4bb8be07575392f53f1294acc47ffab15c7a1ad121f7d37"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 207,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1752537600000,
+        "lg": "Champions League",
+        "H": "Malmö FF (SWE)",
+        "A": "FC Iberia 1999",
+        "h": 3,
+        "a": 1,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "Phase": "qualifying",
+          "HomeCountry": "INT",
+          "AwayCountry": "GEO",
+          "PublishedRound": "1. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/clq.txt",
+              "sha256": "2212922ca831a0ebb4bb8be07575392f53f1294acc47ffab15c7a1ad121f7d37"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 208,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1752537600000,
+        "lg": "Champions League",
+        "H": "FK RFS (LVA)",
+        "A": "FCI Levadia",
+        "h": 1,
+        "a": 0,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "Phase": "qualifying",
+          "HomeCountry": "INT",
+          "AwayCountry": "EST",
+          "PublishedRound": "1. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/clq.txt",
+              "sha256": "2212922ca831a0ebb4bb8be07575392f53f1294acc47ffab15c7a1ad121f7d37"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 209,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1752537600000,
+        "lg": "Champions League",
+        "H": "KF Shkëndija 79 (MKD)",
+        "A": "The New Saints",
+        "h": 1,
+        "a": 1,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "Phase": "qualifying",
+          "HomeCountry": "INT",
+          "AwayCountry": "WAL",
+          "PublishedRound": "1. Round",
+          "CupScoreEvidence": "2-1 a.e.t. (1-1, 1-1)",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/clq.txt",
+              "sha256": "2212922ca831a0ebb4bb8be07575392f53f1294acc47ffab15c7a1ad121f7d37"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 210,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1752537600000,
+        "lg": "Champions League",
+        "H": "FC Differdange 03",
+        "A": "KF Drita",
+        "h": 2,
+        "a": 3,
+        "ht": 3,
+        "up": false,
+        "o": {
+          "Phase": "qualifying",
+          "HomeCountry": "LUX",
+          "AwayCountry": "KOS",
+          "PublishedRound": "1. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/clq.txt",
+              "sha256": "2212922ca831a0ebb4bb8be07575392f53f1294acc47ffab15c7a1ad121f7d37"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 2,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 211,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1752537600000,
+        "lg": "Champions League",
+        "H": "Inter Club d'Escaldes",
+        "A": "FCSB",
+        "h": 2,
+        "a": 1,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "Phase": "qualifying",
+          "HomeCountry": "AND",
+          "AwayCountry": "ROU",
+          "PublishedRound": "1. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/clq.txt",
+              "sha256": "2212922ca831a0ebb4bb8be07575392f53f1294acc47ffab15c7a1ad121f7d37"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 212,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1752537600000,
+        "lg": "Champions League",
+        "H": "Breiðablik (ISL)",
+        "A": "Egnatia Rrogozhine",
+        "h": 5,
+        "a": 0,
+        "ht": 4,
+        "up": false,
+        "o": {
+          "Phase": "qualifying",
+          "HomeCountry": "INT",
+          "AwayCountry": "ALB",
+          "PublishedRound": "1. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/clq.txt",
+              "sha256": "2212922ca831a0ebb4bb8be07575392f53f1294acc47ffab15c7a1ad121f7d37"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 4,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 213,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1752537600000,
+        "lg": "Champions League",
+        "H": "Zrinjski Mostar (BIH)",
+        "A": "SS Virtus",
+        "h": 2,
+        "a": 1,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "qualifying",
+          "HomeCountry": "INT",
+          "AwayCountry": "SMR",
+          "PublishedRound": "1. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/clq.txt",
+              "sha256": "2212922ca831a0ebb4bb8be07575392f53f1294acc47ffab15c7a1ad121f7d37"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 214,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1752537600000,
+        "lg": "Champions League",
+        "H": "FK Budućnost Podgorica",
+        "A": "FC Noah",
+        "h": 2,
+        "a": 2,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "Phase": "qualifying",
+          "HomeCountry": "MNE",
+          "AwayCountry": "ARM",
+          "PublishedRound": "1. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/clq.txt",
+              "sha256": "2212922ca831a0ebb4bb8be07575392f53f1294acc47ffab15c7a1ad121f7d37"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 2,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 215,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1752624000000,
+        "lg": "Champions League",
+        "H": "Linfield FC (NIR)",
+        "A": "Shelbourne FC",
+        "h": 1,
+        "a": 1,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "Phase": "qualifying",
+          "HomeCountry": "INT",
+          "AwayCountry": "IRL",
+          "PublishedRound": "1. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/clq.txt",
+              "sha256": "2212922ca831a0ebb4bb8be07575392f53f1294acc47ffab15c7a1ad121f7d37"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 216,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1752624000000,
+        "lg": "Champions League",
+        "H": "Dinamo Minsk (BLR)",
+        "A": "PFC Ludogorets Razgrad",
+        "h": 2,
+        "a": 1,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "qualifying",
+          "HomeCountry": "INT",
+          "AwayCountry": "BUL",
+          "PublishedRound": "1. Round",
+          "CupScoreEvidence": "2-2 a.e.t. (2-1, 0-1)",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/clq.txt",
+              "sha256": "2212922ca831a0ebb4bb8be07575392f53f1294acc47ffab15c7a1ad121f7d37"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 217,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1753142400000,
+        "lg": "Champions League",
+        "H": "Kuopion PS (FIN)",
+        "A": "FK Kairat",
+        "h": 2,
+        "a": 0,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "Phase": "qualifying",
+          "HomeCountry": "INT",
+          "AwayCountry": "KAZ",
+          "PublishedRound": "2. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/clq.txt",
+              "sha256": "2212922ca831a0ebb4bb8be07575392f53f1294acc47ffab15c7a1ad121f7d37"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 218,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1753142400000,
+        "lg": "Champions League",
+        "H": "Lincoln Red Imps (GIB)",
+        "A": "Crvena Zvezda",
+        "h": 0,
+        "a": 1,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "qualifying",
+          "HomeCountry": "INT",
+          "AwayCountry": "SRB",
+          "PublishedRound": "2. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/clq.txt",
+              "sha256": "2212922ca831a0ebb4bb8be07575392f53f1294acc47ffab15c7a1ad121f7d37"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 219,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1753142400000,
+        "lg": "Champions League",
+        "H": "FC Noah (ARM)",
+        "A": "Ferencvárosi TC",
+        "h": 1,
+        "a": 2,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "Phase": "qualifying",
+          "HomeCountry": "INT",
+          "AwayCountry": "HUN",
+          "PublishedRound": "2. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/clq.txt",
+              "sha256": "2212922ca831a0ebb4bb8be07575392f53f1294acc47ffab15c7a1ad121f7d37"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 220,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1753142400000,
+        "lg": "Champions League",
+        "H": "FK RFS (LVA)",
+        "A": "Malmö FF",
+        "h": 1,
+        "a": 4,
+        "ht": 3,
+        "up": false,
+        "o": {
+          "Phase": "qualifying",
+          "HomeCountry": "INT",
+          "AwayCountry": "SWE",
+          "PublishedRound": "2. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/clq.txt",
+              "sha256": "2212922ca831a0ebb4bb8be07575392f53f1294acc47ffab15c7a1ad121f7d37"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 2,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 221,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1753142400000,
+        "lg": "Champions League",
+        "H": "Hamrun Spartans (MLT)",
+        "A": "Dinamo Kiev",
+        "h": 0,
+        "a": 3,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "qualifying",
+          "HomeCountry": "INT",
+          "AwayCountry": "UKR",
+          "PublishedRound": "2. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/clq.txt",
+              "sha256": "2212922ca831a0ebb4bb8be07575392f53f1294acc47ffab15c7a1ad121f7d37"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 222,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1753142400000,
+        "lg": "Champions League",
+        "H": "Pafos FC (CYP)",
+        "A": "Maccabi Tel Aviv",
+        "h": 1,
+        "a": 1,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "Phase": "qualifying",
+          "HomeCountry": "INT",
+          "AwayCountry": "ISR",
+          "PublishedRound": "2. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/clq.txt",
+              "sha256": "2212922ca831a0ebb4bb8be07575392f53f1294acc47ffab15c7a1ad121f7d37"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 223,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1753142400000,
+        "lg": "Champions League",
+        "H": "FC København (DEN)",
+        "A": "KF Drita",
+        "h": 2,
+        "a": 0,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "Phase": "qualifying",
+          "HomeCountry": "INT",
+          "AwayCountry": "KOS",
+          "PublishedRound": "2. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/clq.txt",
+              "sha256": "2212922ca831a0ebb4bb8be07575392f53f1294acc47ffab15c7a1ad121f7d37"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 224,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1753142400000,
+        "lg": "Champions League",
+        "H": "Viktoria Plzeň (CZE)",
+        "A": "Servette FC",
+        "h": 0,
+        "a": 1,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "qualifying",
+          "HomeCountry": "INT",
+          "AwayCountry": "CHE",
+          "PublishedRound": "2. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/clq.txt",
+              "sha256": "2212922ca831a0ebb4bb8be07575392f53f1294acc47ffab15c7a1ad121f7d37"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 225,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1753142400000,
+        "lg": "Champions League",
+        "H": "KF Shkëndija 79 (MKD)",
+        "A": "FCSB",
+        "h": 1,
+        "a": 0,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "Phase": "qualifying",
+          "HomeCountry": "INT",
+          "AwayCountry": "ROU",
+          "PublishedRound": "2. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/clq.txt",
+              "sha256": "2212922ca831a0ebb4bb8be07575392f53f1294acc47ffab15c7a1ad121f7d37"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 226,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1753142400000,
+        "lg": "Champions League",
+        "H": "Slovan Bratislava",
+        "A": "Zrinjski Mostar",
+        "h": 4,
+        "a": 0,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "Phase": "qualifying",
+          "HomeCountry": "SVK",
+          "AwayCountry": "BIH",
+          "PublishedRound": "2. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/clq.txt",
+              "sha256": "2212922ca831a0ebb4bb8be07575392f53f1294acc47ffab15c7a1ad121f7d37"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 2,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 227,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1753142400000,
+        "lg": "Champions League",
+        "H": "Lech Poznań (POL)",
+        "A": "Breiðablik",
+        "h": 7,
+        "a": 1,
+        "ht": 6,
+        "up": false,
+        "o": {
+          "Phase": "qualifying",
+          "HomeCountry": "INT",
+          "AwayCountry": "ISL",
+          "PublishedRound": "2. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/clq.txt",
+              "sha256": "2212922ca831a0ebb4bb8be07575392f53f1294acc47ffab15c7a1ad121f7d37"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 5,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 228,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1753142400000,
+        "lg": "Champions League",
+        "H": "HNK Rijeka (CRO)",
+        "A": "PFC Ludogorets Razgrad",
+        "h": 0,
+        "a": 0,
+        "ht": null,
+        "up": false,
+        "o": {
+          "Phase": "qualifying",
+          "HomeCountry": "INT",
+          "AwayCountry": "BUL",
+          "PublishedRound": "2. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/clq.txt",
+              "sha256": "2212922ca831a0ebb4bb8be07575392f53f1294acc47ffab15c7a1ad121f7d37"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 229,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1753142400000,
+        "lg": "Champions League",
+        "H": "Rangers FC (SCO)",
+        "A": "Panathinaikos",
+        "h": 2,
+        "a": 0,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "Phase": "qualifying",
+          "HomeCountry": "INT",
+          "AwayCountry": "GRC",
+          "PublishedRound": "2. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/clq.txt",
+              "sha256": "2212922ca831a0ebb4bb8be07575392f53f1294acc47ffab15c7a1ad121f7d37"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 230,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1753228800000,
+        "lg": "Champions League",
+        "H": "SK Brann (NOR)",
+        "A": "RB Salzburg",
+        "h": 1,
+        "a": 4,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "qualifying",
+          "HomeCountry": "INT",
+          "AwayCountry": "AUT",
+          "PublishedRound": "2. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/clq.txt",
+              "sha256": "2212922ca831a0ebb4bb8be07575392f53f1294acc47ffab15c7a1ad121f7d37"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 231,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1753228800000,
+        "lg": "Champions League",
+        "H": "Shelbourne FC (IRL)",
+        "A": "Qarabağ FK",
+        "h": 0,
+        "a": 3,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "qualifying",
+          "HomeCountry": "INT",
+          "AwayCountry": "AZE",
+          "PublishedRound": "2. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/clq.txt",
+              "sha256": "2212922ca831a0ebb4bb8be07575392f53f1294acc47ffab15c7a1ad121f7d37"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 232,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1753747200000,
+        "lg": "Champions League",
+        "H": "FK Kairat (KAZ)",
+        "A": "Kuopion PS",
+        "h": 3,
+        "a": 0,
+        "ht": 3,
+        "up": false,
+        "o": {
+          "Phase": "qualifying",
+          "HomeCountry": "INT",
+          "AwayCountry": "FIN",
+          "PublishedRound": "2. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/clq.txt",
+              "sha256": "2212922ca831a0ebb4bb8be07575392f53f1294acc47ffab15c7a1ad121f7d37"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 3,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 233,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1753747200000,
+        "lg": "Champions League",
+        "H": "Dinamo Kiev (UKR)",
+        "A": "Hamrun Spartans",
+        "h": 3,
+        "a": 0,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "Phase": "qualifying",
+          "HomeCountry": "INT",
+          "AwayCountry": "MLT",
+          "PublishedRound": "2. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/clq.txt",
+              "sha256": "2212922ca831a0ebb4bb8be07575392f53f1294acc47ffab15c7a1ad121f7d37"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 2,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 234,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1753747200000,
+        "lg": "Champions League",
+        "H": "KF Drita (KOS)",
+        "A": "FC København",
+        "h": 0,
+        "a": 1,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "qualifying",
+          "HomeCountry": "INT",
+          "AwayCountry": "DNK",
+          "PublishedRound": "2. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/clq.txt",
+              "sha256": "2212922ca831a0ebb4bb8be07575392f53f1294acc47ffab15c7a1ad121f7d37"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 235,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1753747200000,
+        "lg": "Champions League",
+        "H": "Crvena Zvezda (SRB)",
+        "A": "Lincoln Red Imps",
+        "h": 5,
+        "a": 1,
+        "ht": 4,
+        "up": false,
+        "o": {
+          "Phase": "qualifying",
+          "HomeCountry": "INT",
+          "AwayCountry": "GIB",
+          "PublishedRound": "2. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/clq.txt",
+              "sha256": "2212922ca831a0ebb4bb8be07575392f53f1294acc47ffab15c7a1ad121f7d37"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 4,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 236,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1753747200000,
+        "lg": "Champions League",
+        "H": "Zrinjski Mostar (BIH)",
+        "A": "Slovan Bratislava",
+        "h": 2,
+        "a": 2,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "Phase": "qualifying",
+          "HomeCountry": "INT",
+          "AwayCountry": "SVK",
+          "PublishedRound": "2. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/clq.txt",
+              "sha256": "2212922ca831a0ebb4bb8be07575392f53f1294acc47ffab15c7a1ad121f7d37"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 237,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1753833600000,
+        "lg": "Champions League",
+        "H": "Qarabağ FK (AZE)",
+        "A": "Shelbourne FC",
+        "h": 1,
+        "a": 0,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "qualifying",
+          "HomeCountry": "INT",
+          "AwayCountry": "IRL",
+          "PublishedRound": "2. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/clq.txt",
+              "sha256": "2212922ca831a0ebb4bb8be07575392f53f1294acc47ffab15c7a1ad121f7d37"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 238,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1753833600000,
+        "lg": "Champions League",
+        "H": "Malmö FF (SWE)",
+        "A": "FK RFS",
+        "h": 1,
+        "a": 0,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "qualifying",
+          "HomeCountry": "INT",
+          "AwayCountry": "LVA",
+          "PublishedRound": "2. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/clq.txt",
+              "sha256": "2212922ca831a0ebb4bb8be07575392f53f1294acc47ffab15c7a1ad121f7d37"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 239,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1753833600000,
+        "lg": "Champions League",
+        "H": "PFC Ludogorets Razgrad",
+        "A": "HNK Rijeka",
+        "h": 1,
+        "a": 1,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "qualifying",
+          "HomeCountry": "BUL",
+          "AwayCountry": "HRV",
+          "PublishedRound": "2. Round",
+          "CupScoreEvidence": "3-1 a.e.t. (1-1, 1-0)",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/clq.txt",
+              "sha256": "2212922ca831a0ebb4bb8be07575392f53f1294acc47ffab15c7a1ad121f7d37"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 240,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1753833600000,
+        "lg": "Champions League",
+        "H": "FCSB (ROU)",
+        "A": "KF Shkëndija 79",
+        "h": 1,
+        "a": 2,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "Phase": "qualifying",
+          "HomeCountry": "INT",
+          "AwayCountry": "MKD",
+          "PublishedRound": "2. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/clq.txt",
+              "sha256": "2212922ca831a0ebb4bb8be07575392f53f1294acc47ffab15c7a1ad121f7d37"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 241,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1753833600000,
+        "lg": "Champions League",
+        "H": "Maccabi Tel Aviv (ISR)",
+        "A": "Pafos FC",
+        "h": 0,
+        "a": 1,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "qualifying",
+          "HomeCountry": "INT",
+          "AwayCountry": "CYP",
+          "PublishedRound": "2. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/clq.txt",
+              "sha256": "2212922ca831a0ebb4bb8be07575392f53f1294acc47ffab15c7a1ad121f7d37"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 242,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1753833600000,
+        "lg": "Champions League",
+        "H": "Ferencvárosi TC (HUN)",
+        "A": "FC Noah",
+        "h": 4,
+        "a": 3,
+        "ht": 4,
+        "up": false,
+        "o": {
+          "Phase": "qualifying",
+          "HomeCountry": "INT",
+          "AwayCountry": "ARM",
+          "PublishedRound": "2. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/clq.txt",
+              "sha256": "2212922ca831a0ebb4bb8be07575392f53f1294acc47ffab15c7a1ad121f7d37"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 2,
+        "hta": 2,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 243,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1753833600000,
+        "lg": "Champions League",
+        "H": "Panathinaikos (GRE)",
+        "A": "Rangers FC",
+        "h": 1,
+        "a": 1,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "Phase": "qualifying",
+          "HomeCountry": "INT",
+          "AwayCountry": "SCO",
+          "PublishedRound": "2. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/clq.txt",
+              "sha256": "2212922ca831a0ebb4bb8be07575392f53f1294acc47ffab15c7a1ad121f7d37"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 244,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1753833600000,
+        "lg": "Champions League",
+        "H": "Breiðablik (ISL)",
+        "A": "Lech Poznań",
+        "h": 0,
+        "a": 1,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "qualifying",
+          "HomeCountry": "INT",
+          "AwayCountry": "POL",
+          "PublishedRound": "2. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/clq.txt",
+              "sha256": "2212922ca831a0ebb4bb8be07575392f53f1294acc47ffab15c7a1ad121f7d37"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 245,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1753833600000,
+        "lg": "Champions League",
+        "H": "RB Salzburg (AUT)",
+        "A": "SK Brann",
+        "h": 1,
+        "a": 1,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "Phase": "qualifying",
+          "HomeCountry": "INT",
+          "AwayCountry": "NOR",
+          "PublishedRound": "2. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/clq.txt",
+              "sha256": "2212922ca831a0ebb4bb8be07575392f53f1294acc47ffab15c7a1ad121f7d37"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 246,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1753833600000,
+        "lg": "Champions League",
+        "H": "Servette FC (SUI)",
+        "A": "Viktoria Plzeň",
+        "h": 1,
+        "a": 3,
+        "ht": 3,
+        "up": false,
+        "o": {
+          "Phase": "qualifying",
+          "HomeCountry": "INT",
+          "AwayCountry": "CZE",
+          "PublishedRound": "2. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/clq.txt",
+              "sha256": "2212922ca831a0ebb4bb8be07575392f53f1294acc47ffab15c7a1ad121f7d37"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 2,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 247,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1754352000000,
+        "lg": "Champions League",
+        "H": "Malmö FF (SWE)",
+        "A": "FC København",
+        "h": 0,
+        "a": 0,
+        "ht": null,
+        "up": false,
+        "o": {
+          "Phase": "qualifying",
+          "HomeCountry": "INT",
+          "AwayCountry": "DNK",
+          "PublishedRound": "3. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/clq.txt",
+              "sha256": "2212922ca831a0ebb4bb8be07575392f53f1294acc47ffab15c7a1ad121f7d37"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 248,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1754352000000,
+        "lg": "Champions League",
+        "H": "Dinamo Kiev (UKR)",
+        "A": "Pafos FC",
+        "h": 0,
+        "a": 1,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "Phase": "qualifying",
+          "HomeCountry": "INT",
+          "AwayCountry": "CYP",
+          "PublishedRound": "3. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/clq.txt",
+              "sha256": "2212922ca831a0ebb4bb8be07575392f53f1294acc47ffab15c7a1ad121f7d37"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 249,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1754352000000,
+        "lg": "Champions League",
+        "H": "KF Shkëndija 79 (MKD)",
+        "A": "Qarabağ FK",
+        "h": 0,
+        "a": 1,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "qualifying",
+          "HomeCountry": "INT",
+          "AwayCountry": "AZE",
+          "PublishedRound": "3. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/clq.txt",
+              "sha256": "2212922ca831a0ebb4bb8be07575392f53f1294acc47ffab15c7a1ad121f7d37"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 250,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1754352000000,
+        "lg": "Champions League",
+        "H": "Rangers FC (SCO)",
+        "A": "Viktoria Plzeň",
+        "h": 3,
+        "a": 0,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "Phase": "qualifying",
+          "HomeCountry": "INT",
+          "AwayCountry": "CZE",
+          "PublishedRound": "3. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/clq.txt",
+              "sha256": "2212922ca831a0ebb4bb8be07575392f53f1294acc47ffab15c7a1ad121f7d37"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 2,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 251,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1754438400000,
+        "lg": "Champions League",
+        "H": "FK Kairat (KAZ)",
+        "A": "Slovan Bratislava",
+        "h": 1,
+        "a": 0,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "Phase": "qualifying",
+          "HomeCountry": "INT",
+          "AwayCountry": "SVK",
+          "PublishedRound": "3. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/clq.txt",
+              "sha256": "2212922ca831a0ebb4bb8be07575392f53f1294acc47ffab15c7a1ad121f7d37"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 252,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1754438400000,
+        "lg": "Champions League",
+        "H": "RB Salzburg (AUT)",
+        "A": "Club Brugge KV",
+        "h": 0,
+        "a": 1,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "Phase": "qualifying",
+          "HomeCountry": "INT",
+          "AwayCountry": "BEL",
+          "PublishedRound": "3. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/clq.txt",
+              "sha256": "2212922ca831a0ebb4bb8be07575392f53f1294acc47ffab15c7a1ad121f7d37"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 253,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1754438400000,
+        "lg": "Champions League",
+        "H": "PFC Ludogorets Razgrad",
+        "A": "Ferencvárosi TC",
+        "h": 0,
+        "a": 0,
+        "ht": null,
+        "up": false,
+        "o": {
+          "Phase": "qualifying",
+          "HomeCountry": "BUL",
+          "AwayCountry": "HUN",
+          "PublishedRound": "3. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/clq.txt",
+              "sha256": "2212922ca831a0ebb4bb8be07575392f53f1294acc47ffab15c7a1ad121f7d37"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 254,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1754438400000,
+        "lg": "Champions League",
+        "H": "Lech Poznań (POL)",
+        "A": "Crvena Zvezda",
+        "h": 1,
+        "a": 3,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "Phase": "qualifying",
+          "HomeCountry": "INT",
+          "AwayCountry": "SRB",
+          "PublishedRound": "3. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/clq.txt",
+              "sha256": "2212922ca831a0ebb4bb8be07575392f53f1294acc47ffab15c7a1ad121f7d37"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 255,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1754438400000,
+        "lg": "Champions League",
+        "H": "OGC Nice (FRA)",
+        "A": "SL Benfica",
+        "h": 0,
+        "a": 2,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "Phase": "qualifying",
+          "HomeCountry": "INT",
+          "AwayCountry": "PRT",
+          "PublishedRound": "3. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/clq.txt",
+              "sha256": "2212922ca831a0ebb4bb8be07575392f53f1294acc47ffab15c7a1ad121f7d37"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 256,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1754438400000,
+        "lg": "Champions League",
+        "H": "Feyenoord (NED)",
+        "A": "Fenerbahçe",
+        "h": 2,
+        "a": 1,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "qualifying",
+          "HomeCountry": "INT",
+          "AwayCountry": "TUR",
+          "PublishedRound": "3. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/clq.txt",
+              "sha256": "2212922ca831a0ebb4bb8be07575392f53f1294acc47ffab15c7a1ad121f7d37"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 257,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1754956800000,
+        "lg": "Champions League",
+        "H": "Qarabağ FK (AZE)",
+        "A": "KF Shkëndija 79",
+        "h": 5,
+        "a": 1,
+        "ht": 5,
+        "up": false,
+        "o": {
+          "Phase": "qualifying",
+          "HomeCountry": "INT",
+          "AwayCountry": "MKD",
+          "PublishedRound": "3. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/clq.txt",
+              "sha256": "2212922ca831a0ebb4bb8be07575392f53f1294acc47ffab15c7a1ad121f7d37"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 4,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 258,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1754956800000,
+        "lg": "Champions League",
+        "H": "FC København (DEN)",
+        "A": "Malmö FF",
+        "h": 5,
+        "a": 0,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "Phase": "qualifying",
+          "HomeCountry": "INT",
+          "AwayCountry": "SWE",
+          "PublishedRound": "3. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/clq.txt",
+              "sha256": "2212922ca831a0ebb4bb8be07575392f53f1294acc47ffab15c7a1ad121f7d37"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 2,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 259,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1754956800000,
+        "lg": "Champions League",
+        "H": "Pafos FC (CYP)",
+        "A": "Dinamo Kiev",
+        "h": 2,
+        "a": 0,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "qualifying",
+          "HomeCountry": "INT",
+          "AwayCountry": "UKR",
+          "PublishedRound": "3. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/clq.txt",
+              "sha256": "2212922ca831a0ebb4bb8be07575392f53f1294acc47ffab15c7a1ad121f7d37"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 260,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1754956800000,
+        "lg": "Champions League",
+        "H": "Viktoria Plzeň (CZE)",
+        "A": "Rangers FC",
+        "h": 2,
+        "a": 1,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "qualifying",
+          "HomeCountry": "INT",
+          "AwayCountry": "SCO",
+          "PublishedRound": "3. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/clq.txt",
+              "sha256": "2212922ca831a0ebb4bb8be07575392f53f1294acc47ffab15c7a1ad121f7d37"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 261,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1754956800000,
+        "lg": "Champions League",
+        "H": "Fenerbahçe (TUR)",
+        "A": "Feyenoord",
+        "h": 5,
+        "a": 2,
+        "ht": 3,
+        "up": false,
+        "o": {
+          "Phase": "qualifying",
+          "HomeCountry": "INT",
+          "AwayCountry": "NED",
+          "PublishedRound": "3. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/clq.txt",
+              "sha256": "2212922ca831a0ebb4bb8be07575392f53f1294acc47ffab15c7a1ad121f7d37"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 2,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 262,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1754956800000,
+        "lg": "Champions League",
+        "H": "Club Brugge KV (BEL)",
+        "A": "RB Salzburg",
+        "h": 3,
+        "a": 2,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "Phase": "qualifying",
+          "HomeCountry": "INT",
+          "AwayCountry": "AUT",
+          "PublishedRound": "3. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/clq.txt",
+              "sha256": "2212922ca831a0ebb4bb8be07575392f53f1294acc47ffab15c7a1ad121f7d37"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 2,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 263,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1754956800000,
+        "lg": "Champions League",
+        "H": "Slovan Bratislava",
+        "A": "FK Kairat",
+        "h": 1,
+        "a": 0,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "qualifying",
+          "HomeCountry": "SVK",
+          "AwayCountry": "KAZ",
+          "PublishedRound": "3. Round",
+          "CupScoreEvidence": "3-4 pen. 1-0 a.e.t. (1-0, 1-0)",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/clq.txt",
+              "sha256": "2212922ca831a0ebb4bb8be07575392f53f1294acc47ffab15c7a1ad121f7d37"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 264,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1754956800000,
+        "lg": "Champions League",
+        "H": "Ferencvárosi TC (HUN)",
+        "A": "PFC Ludogorets Razgrad",
+        "h": 3,
+        "a": 0,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "qualifying",
+          "HomeCountry": "INT",
+          "AwayCountry": "BUL",
+          "PublishedRound": "3. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/clq.txt",
+              "sha256": "2212922ca831a0ebb4bb8be07575392f53f1294acc47ffab15c7a1ad121f7d37"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 265,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1754956800000,
+        "lg": "Champions League",
+        "H": "Crvena Zvezda (SRB)",
+        "A": "Lech Poznań",
+        "h": 1,
+        "a": 1,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "qualifying",
+          "HomeCountry": "INT",
+          "AwayCountry": "POL",
+          "PublishedRound": "3. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/clq.txt",
+              "sha256": "2212922ca831a0ebb4bb8be07575392f53f1294acc47ffab15c7a1ad121f7d37"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 266,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1754956800000,
+        "lg": "Champions League",
+        "H": "SL Benfica (POR)",
+        "A": "OGC Nice",
+        "h": 2,
+        "a": 0,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "Phase": "qualifying",
+          "HomeCountry": "INT",
+          "AwayCountry": "FRA",
+          "PublishedRound": "3. Round",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/clq.txt",
+              "sha256": "2212922ca831a0ebb4bb8be07575392f53f1294acc47ffab15c7a1ad121f7d37"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 2,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 267,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1755561600000,
+        "lg": "Champions League",
+        "H": "Ferencvárosi TC (HUN)",
+        "A": "Qarabağ FK",
+        "h": 1,
+        "a": 3,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "qualifying",
+          "HomeCountry": "INT",
+          "AwayCountry": "AZE",
+          "PublishedRound": "Play-offs",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/clq.txt",
+              "sha256": "2212922ca831a0ebb4bb8be07575392f53f1294acc47ffab15c7a1ad121f7d37"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 268,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1755561600000,
+        "lg": "Champions League",
+        "H": "Crvena Zvezda (SRB)",
+        "A": "Pafos FC",
+        "h": 1,
+        "a": 2,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "qualifying",
+          "HomeCountry": "INT",
+          "AwayCountry": "CYP",
+          "PublishedRound": "Play-offs",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/clq.txt",
+              "sha256": "2212922ca831a0ebb4bb8be07575392f53f1294acc47ffab15c7a1ad121f7d37"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 269,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1755561600000,
+        "lg": "Champions League",
+        "H": "Rangers FC (SCO)",
+        "A": "Club Brugge KV",
+        "h": 1,
+        "a": 3,
+        "ht": 3,
+        "up": false,
+        "o": {
+          "Phase": "qualifying",
+          "HomeCountry": "INT",
+          "AwayCountry": "BEL",
+          "PublishedRound": "Play-offs",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/clq.txt",
+              "sha256": "2212922ca831a0ebb4bb8be07575392f53f1294acc47ffab15c7a1ad121f7d37"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 3,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 270,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1755648000000,
+        "lg": "Champions League",
+        "H": "FK Bodø/Glimt (NOR)",
+        "A": "Sturm Graz",
+        "h": 5,
+        "a": 0,
+        "ht": 3,
+        "up": false,
+        "o": {
+          "Phase": "qualifying",
+          "HomeCountry": "INT",
+          "AwayCountry": "AUT",
+          "PublishedRound": "Play-offs",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/clq.txt",
+              "sha256": "2212922ca831a0ebb4bb8be07575392f53f1294acc47ffab15c7a1ad121f7d37"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 3,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 271,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1755648000000,
+        "lg": "Champions League",
+        "H": "Celtic FC (SCO)",
+        "A": "FK Kairat",
+        "h": 0,
+        "a": 0,
+        "ht": null,
+        "up": false,
+        "o": {
+          "Phase": "qualifying",
+          "HomeCountry": "INT",
+          "AwayCountry": "KAZ",
+          "PublishedRound": "Play-offs",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/clq.txt",
+              "sha256": "2212922ca831a0ebb4bb8be07575392f53f1294acc47ffab15c7a1ad121f7d37"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 272,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1755648000000,
+        "lg": "Champions League",
+        "H": "FC Basel 1893 (SUI)",
+        "A": "FC København",
+        "h": 1,
+        "a": 1,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "Phase": "qualifying",
+          "HomeCountry": "INT",
+          "AwayCountry": "DNK",
+          "PublishedRound": "Play-offs",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/clq.txt",
+              "sha256": "2212922ca831a0ebb4bb8be07575392f53f1294acc47ffab15c7a1ad121f7d37"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 273,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1755648000000,
+        "lg": "Champions League",
+        "H": "Fenerbahçe (TUR)",
+        "A": "SL Benfica",
+        "h": 0,
+        "a": 0,
+        "ht": null,
+        "up": false,
+        "o": {
+          "Phase": "qualifying",
+          "HomeCountry": "INT",
+          "AwayCountry": "PRT",
+          "PublishedRound": "Play-offs",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/clq.txt",
+              "sha256": "2212922ca831a0ebb4bb8be07575392f53f1294acc47ffab15c7a1ad121f7d37"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 274,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1756166400000,
+        "lg": "Champions League",
+        "H": "FK Kairat (KAZ)",
+        "A": "Celtic FC",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "qualifying",
+          "HomeCountry": "INT",
+          "AwayCountry": "SCO",
+          "PublishedRound": "Play-offs",
+          "CupScoreEvidence": "3-2 pen. 0-0 a.e.t. (0-0)",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/clq.txt",
+              "sha256": "2212922ca831a0ebb4bb8be07575392f53f1294acc47ffab15c7a1ad121f7d37"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 275,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1756166400000,
+        "lg": "Champions League",
+        "H": "Pafos FC (CYP)",
+        "A": "Crvena Zvezda",
+        "h": 1,
+        "a": 1,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "Phase": "qualifying",
+          "HomeCountry": "INT",
+          "AwayCountry": "SRB",
+          "PublishedRound": "Play-offs",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/clq.txt",
+              "sha256": "2212922ca831a0ebb4bb8be07575392f53f1294acc47ffab15c7a1ad121f7d37"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 276,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1756166400000,
+        "lg": "Champions League",
+        "H": "Sturm Graz (AUT)",
+        "A": "FK Bodø/Glimt",
+        "h": 2,
+        "a": 1,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "Phase": "qualifying",
+          "HomeCountry": "INT",
+          "AwayCountry": "NOR",
+          "PublishedRound": "Play-offs",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/clq.txt",
+              "sha256": "2212922ca831a0ebb4bb8be07575392f53f1294acc47ffab15c7a1ad121f7d37"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 277,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1756252800000,
+        "lg": "Champions League",
+        "H": "Qarabağ FK (AZE)",
+        "A": "Ferencvárosi TC",
+        "h": 2,
+        "a": 3,
+        "ht": 3,
+        "up": false,
+        "o": {
+          "Phase": "qualifying",
+          "HomeCountry": "INT",
+          "AwayCountry": "HUN",
+          "PublishedRound": "Play-offs",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/clq.txt",
+              "sha256": "2212922ca831a0ebb4bb8be07575392f53f1294acc47ffab15c7a1ad121f7d37"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 2,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 278,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1756252800000,
+        "lg": "Champions League",
+        "H": "FC København (DEN)",
+        "A": "FC Basel 1893",
+        "h": 2,
+        "a": 0,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "Phase": "qualifying",
+          "HomeCountry": "INT",
+          "AwayCountry": "CHE",
+          "PublishedRound": "Play-offs",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/clq.txt",
+              "sha256": "2212922ca831a0ebb4bb8be07575392f53f1294acc47ffab15c7a1ad121f7d37"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 279,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1756252800000,
+        "lg": "Champions League",
+        "H": "SL Benfica (POR)",
+        "A": "Fenerbahçe",
+        "h": 1,
+        "a": 0,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "qualifying",
+          "HomeCountry": "INT",
+          "AwayCountry": "TUR",
+          "PublishedRound": "Play-offs",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/clq.txt",
+              "sha256": "2212922ca831a0ebb4bb8be07575392f53f1294acc47ffab15c7a1ad121f7d37"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 280,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1756252800000,
+        "lg": "Champions League",
+        "H": "Club Brugge KV (BEL)",
+        "A": "Rangers FC",
+        "h": 6,
+        "a": 0,
+        "ht": 5,
+        "up": false,
+        "o": {
+          "Phase": "qualifying",
+          "HomeCountry": "INT",
+          "AwayCountry": "SCO",
+          "PublishedRound": "Play-offs",
+          "CsvSeason": 2025,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2025-26/clq.txt",
+              "sha256": "2212922ca831a0ebb4bb8be07575392f53f1294acc47ffab15c7a1ad121f7d37"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 5,
+        "hta": 0,
+        "shots": null
+      }
+    }
+  ]
+}

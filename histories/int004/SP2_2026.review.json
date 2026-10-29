@@ -1,0 +1,5564 @@
+{
+  "originalPacket": "histories/stab003/SP2_2026.json",
+  "originalSHA256": "f4c57cf5d22592592f476d7ceadc42f74ec26234a3c6add0235eb46ebff6e042",
+  "review": [
+    {
+      "originalIndex": 0,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1786665600000,
+        "lg": "Segunda División",
+        "H": "Sociedad B",
+        "A": "Castellon",
+        "h": 0,
+        "a": 1,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2026,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2627/SP2.csv",
+          "HistSourceSHA256": "e83471ff5b45472aaa551625073db4a06606e803306341a2549e76c18a08e37f",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2627/SP2.csv",
+              "sha256": "e83471ff5b45472aaa551625073db4a06606e803306341a2549e76c18a08e37f"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 1,
+        "shots": [
+          4,
+          13,
+          1,
+          5
+        ]
+      }
+    },
+    {
+      "originalIndex": 1,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1786752000000,
+        "lg": "Segunda División",
+        "H": "Andorra",
+        "A": "Ceuta",
+        "h": 5,
+        "a": 1,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2026,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2627/SP2.csv",
+          "HistSourceSHA256": "e83471ff5b45472aaa551625073db4a06606e803306341a2549e76c18a08e37f",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2627/SP2.csv",
+              "sha256": "e83471ff5b45472aaa551625073db4a06606e803306341a2549e76c18a08e37f"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": [
+          25,
+          5,
+          11,
+          1
+        ]
+      }
+    },
+    {
+      "originalIndex": 2,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1786752000000,
+        "lg": "Segunda División",
+        "H": "Cadiz",
+        "A": "Celta B",
+        "h": 0,
+        "a": 0,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2026,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2627/SP2.csv",
+          "HistSourceSHA256": "e83471ff5b45472aaa551625073db4a06606e803306341a2549e76c18a08e37f",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2627/SP2.csv",
+              "sha256": "e83471ff5b45472aaa551625073db4a06606e803306341a2549e76c18a08e37f"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          17,
+          5,
+          3,
+          5
+        ]
+      }
+    },
+    {
+      "originalIndex": 13,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1787356800000,
+        "lg": "Segunda División",
+        "H": "Albacete",
+        "A": "Sociedad B",
+        "h": 1,
+        "a": 2,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "CsvSeason": 2026,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2627/SP2.csv",
+          "HistSourceSHA256": "e83471ff5b45472aaa551625073db4a06606e803306341a2549e76c18a08e37f",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2627/SP2.csv",
+              "sha256": "e83471ff5b45472aaa551625073db4a06606e803306341a2549e76c18a08e37f"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 2,
+        "shots": [
+          17,
+          12,
+          7,
+          6
+        ]
+      }
+    },
+    {
+      "originalIndex": 14,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1787356800000,
+        "lg": "Segunda División",
+        "H": "Ceuta",
+        "A": "Las Palmas",
+        "h": 0,
+        "a": 2,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2026,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2627/SP2.csv",
+          "HistSourceSHA256": "e83471ff5b45472aaa551625073db4a06606e803306341a2549e76c18a08e37f",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2627/SP2.csv",
+              "sha256": "e83471ff5b45472aaa551625073db4a06606e803306341a2549e76c18a08e37f"
+            },
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_2_segunda-division/results_2627.csv",
+              "sha256": "cfe283ce19783bf767977bbaea9e96d4490a3616afcba9948c06ff567404cecc"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 1,
+        "shots": [
+          19,
+          9,
+          4,
+          4
+        ]
+      }
+    },
+    {
+      "originalIndex": 20,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1787529600000,
+        "lg": "Segunda División",
+        "H": "Celta B",
+        "A": "Andorra",
+        "h": 4,
+        "a": 2,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2026,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2627/SP2.csv",
+          "HistSourceSHA256": "e83471ff5b45472aaa551625073db4a06606e803306341a2549e76c18a08e37f",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2627/SP2.csv",
+              "sha256": "e83471ff5b45472aaa551625073db4a06606e803306341a2549e76c18a08e37f"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          10,
+          17,
+          7,
+          5
+        ]
+      }
+    },
+    {
+      "originalIndex": 27,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1788048000000,
+        "lg": "Segunda División",
+        "H": "Andorra",
+        "A": "Eibar",
+        "h": 0,
+        "a": 1,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2026,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2627/SP2.csv",
+          "HistSourceSHA256": "e83471ff5b45472aaa551625073db4a06606e803306341a2549e76c18a08e37f",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2627/SP2.csv",
+              "sha256": "e83471ff5b45472aaa551625073db4a06606e803306341a2549e76c18a08e37f"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          28,
+          4,
+          5,
+          1
+        ]
+      }
+    },
+    {
+      "originalIndex": 29,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1788048000000,
+        "lg": "Segunda División",
+        "H": "Mallorca",
+        "A": "Ceuta",
+        "h": 3,
+        "a": 0,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2026,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2627/SP2.csv",
+          "HistSourceSHA256": "e83471ff5b45472aaa551625073db4a06606e803306341a2549e76c18a08e37f",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2627/SP2.csv",
+              "sha256": "e83471ff5b45472aaa551625073db4a06606e803306341a2549e76c18a08e37f"
+            },
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_2_segunda-division/results_2627.csv",
+              "sha256": "cfe283ce19783bf767977bbaea9e96d4490a3616afcba9948c06ff567404cecc"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": [
+          13,
+          5,
+          4,
+          0
+        ]
+      }
+    },
+    {
+      "originalIndex": 31,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1788134400000,
+        "lg": "Segunda División",
+        "H": "Burgos",
+        "A": "Sociedad B",
+        "h": 2,
+        "a": 2,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "CsvSeason": 2026,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2627/SP2.csv",
+          "HistSourceSHA256": "e83471ff5b45472aaa551625073db4a06606e803306341a2549e76c18a08e37f",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2627/SP2.csv",
+              "sha256": "e83471ff5b45472aaa551625073db4a06606e803306341a2549e76c18a08e37f"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 1,
+        "shots": [
+          12,
+          15,
+          4,
+          5
+        ]
+      }
+    },
+    {
+      "originalIndex": 32,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1788134400000,
+        "lg": "Segunda División",
+        "H": "Celta B",
+        "A": "Castellon",
+        "h": 1,
+        "a": 2,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2026,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2627/SP2.csv",
+          "HistSourceSHA256": "e83471ff5b45472aaa551625073db4a06606e803306341a2549e76c18a08e37f",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2627/SP2.csv",
+              "sha256": "e83471ff5b45472aaa551625073db4a06606e803306341a2549e76c18a08e37f"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 1,
+        "shots": [
+          12,
+          13,
+          4,
+          5
+        ]
+      }
+    },
+    {
+      "originalIndex": 34,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1788566400000,
+        "lg": "Segunda División",
+        "H": "Sociedad B",
+        "A": "Tenerife",
+        "h": 1,
+        "a": 1,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2026,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2627/SP2.csv",
+          "HistSourceSHA256": "e83471ff5b45472aaa551625073db4a06606e803306341a2549e76c18a08e37f",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2627/SP2.csv",
+              "sha256": "e83471ff5b45472aaa551625073db4a06606e803306341a2549e76c18a08e37f"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          8,
+          5,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "originalIndex": 36,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1788566400000,
+        "lg": "Segunda División",
+        "H": "Ceuta",
+        "A": "Celta B",
+        "h": 0,
+        "a": 2,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2026,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2627/SP2.csv",
+          "HistSourceSHA256": "e83471ff5b45472aaa551625073db4a06606e803306341a2549e76c18a08e37f",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2627/SP2.csv",
+              "sha256": "e83471ff5b45472aaa551625073db4a06606e803306341a2549e76c18a08e37f"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 1,
+        "shots": [
+          18,
+          15,
+          6,
+          4
+        ]
+      }
+    },
+    {
+      "originalIndex": 37,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1788566400000,
+        "lg": "Segunda División",
+        "H": "Valladolid",
+        "A": "Andorra",
+        "h": 1,
+        "a": 0,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2026,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2627/SP2.csv",
+          "HistSourceSHA256": "e83471ff5b45472aaa551625073db4a06606e803306341a2549e76c18a08e37f",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2627/SP2.csv",
+              "sha256": "e83471ff5b45472aaa551625073db4a06606e803306341a2549e76c18a08e37f"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": [
+          9,
+          13,
+          3,
+          4
+        ]
+      }
+    },
+    {
+      "originalIndex": 44,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1789084800000,
+        "lg": "Segunda División",
+        "H": "Burgos",
+        "A": "Ceuta",
+        "h": 3,
+        "a": 1,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "CsvSeason": 2026,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2627/SP2.csv",
+          "HistSourceSHA256": "e83471ff5b45472aaa551625073db4a06606e803306341a2549e76c18a08e37f",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2627/SP2.csv",
+              "sha256": "e83471ff5b45472aaa551625073db4a06606e803306341a2549e76c18a08e37f"
+            },
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_2_segunda-division/results_2627.csv",
+              "sha256": "cfe283ce19783bf767977bbaea9e96d4490a3616afcba9948c06ff567404cecc"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 1,
+        "shots": [
+          7,
+          12,
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "originalIndex": 45,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1789171200000,
+        "lg": "Segunda División",
+        "H": "Andorra",
+        "A": "Sociedad B",
+        "h": 1,
+        "a": 3,
+        "ht": 3,
+        "up": false,
+        "o": {
+          "CsvSeason": 2026,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2627/SP2.csv",
+          "HistSourceSHA256": "e83471ff5b45472aaa551625073db4a06606e803306341a2549e76c18a08e37f",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2627/SP2.csv",
+              "sha256": "e83471ff5b45472aaa551625073db4a06606e803306341a2549e76c18a08e37f"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 3,
+        "shots": [
+          23,
+          15,
+          7,
+          5
+        ]
+      }
+    },
+    {
+      "originalIndex": 54,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1789344000000,
+        "lg": "Segunda División",
+        "H": "Celta B",
+        "A": "Eibar",
+        "h": 0,
+        "a": 4,
+        "ht": 4,
+        "up": false,
+        "o": {
+          "CsvSeason": 2026,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2627/SP2.csv",
+          "HistSourceSHA256": "e83471ff5b45472aaa551625073db4a06606e803306341a2549e76c18a08e37f",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2627/SP2.csv",
+              "sha256": "e83471ff5b45472aaa551625073db4a06606e803306341a2549e76c18a08e37f"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 4,
+        "shots": [
+          24,
+          12,
+          9,
+          7
+        ]
+      }
+    },
+    {
+      "originalIndex": 56,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1789776000000,
+        "lg": "Segunda División",
+        "H": "Sociedad B",
+        "A": "Mallorca",
+        "h": 0,
+        "a": 1,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2026,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2627/SP2.csv",
+          "HistSourceSHA256": "e83471ff5b45472aaa551625073db4a06606e803306341a2549e76c18a08e37f",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2627/SP2.csv",
+              "sha256": "e83471ff5b45472aaa551625073db4a06606e803306341a2549e76c18a08e37f"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          10,
+          9,
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "originalIndex": 57,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1789776000000,
+        "lg": "Segunda División",
+        "H": "Andorra",
+        "A": "Sp Gijon",
+        "h": 1,
+        "a": 3,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2026,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2627/SP2.csv",
+          "HistSourceSHA256": "e83471ff5b45472aaa551625073db4a06606e803306341a2549e76c18a08e37f",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2627/SP2.csv",
+              "sha256": "e83471ff5b45472aaa551625073db4a06606e803306341a2549e76c18a08e37f"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 1,
+        "shots": [
+          13,
+          7,
+          4,
+          4
+        ]
+      }
+    },
+    {
+      "originalIndex": 62,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1789862400000,
+        "lg": "Segunda División",
+        "H": "Ceuta",
+        "A": "Valladolid",
+        "h": 1,
+        "a": 1,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2026,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2627/SP2.csv",
+          "HistSourceSHA256": "e83471ff5b45472aaa551625073db4a06606e803306341a2549e76c18a08e37f",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2627/SP2.csv",
+              "sha256": "e83471ff5b45472aaa551625073db4a06606e803306341a2549e76c18a08e37f"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          12,
+          11,
+          3,
+          6
+        ]
+      }
+    },
+    {
+      "originalIndex": 63,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1789862400000,
+        "lg": "Segunda División",
+        "H": "Almeria",
+        "A": "Celta B",
+        "h": 2,
+        "a": 0,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "CsvSeason": 2026,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2627/SP2.csv",
+          "HistSourceSHA256": "e83471ff5b45472aaa551625073db4a06606e803306341a2549e76c18a08e37f",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2627/SP2.csv",
+              "sha256": "e83471ff5b45472aaa551625073db4a06606e803306341a2549e76c18a08e37f"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 2,
+        "hta": 0,
+        "shots": [
+          16,
+          12,
+          6,
+          1
+        ]
+      }
+    },
+    {
+      "originalIndex": 67,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1790380800000,
+        "lg": "Segunda División",
+        "H": "Ceuta",
+        "A": "Sociedad B",
+        "h": 3,
+        "a": 1,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2026,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2627/SP2.csv",
+          "HistSourceSHA256": "e83471ff5b45472aaa551625073db4a06606e803306341a2549e76c18a08e37f",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2627/SP2.csv",
+              "sha256": "e83471ff5b45472aaa551625073db4a06606e803306341a2549e76c18a08e37f"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          25,
+          5,
+          8,
+          2
+        ]
+      }
+    },
+    {
+      "originalIndex": 68,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1790380800000,
+        "lg": "Segunda División",
+        "H": "Granada",
+        "A": "Andorra",
+        "h": 2,
+        "a": 3,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "CsvSeason": 2026,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2627/SP2.csv",
+          "HistSourceSHA256": "e83471ff5b45472aaa551625073db4a06606e803306341a2549e76c18a08e37f",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2627/SP2.csv",
+              "sha256": "e83471ff5b45472aaa551625073db4a06606e803306341a2549e76c18a08e37f"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 2,
+        "shots": [
+          23,
+          6,
+          5,
+          5
+        ]
+      }
+    },
+    {
+      "originalIndex": 69,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1790380800000,
+        "lg": "Segunda División",
+        "H": "Celta B",
+        "A": "Sabadell",
+        "h": 1,
+        "a": 1,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "CsvSeason": 2026,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2627/SP2.csv",
+          "HistSourceSHA256": "e83471ff5b45472aaa551625073db4a06606e803306341a2549e76c18a08e37f",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2627/SP2.csv",
+              "sha256": "e83471ff5b45472aaa551625073db4a06606e803306341a2549e76c18a08e37f"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 1,
+        "shots": [
+          4,
+          10,
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "originalIndex": 81,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1791072000000,
+        "lg": "Segunda División",
+        "H": "Sociedad B",
+        "A": "Granada",
+        "h": 2,
+        "a": 3,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "CsvSeason": 2026,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2627/SP2.csv",
+          "HistSourceSHA256": "e83471ff5b45472aaa551625073db4a06606e803306341a2549e76c18a08e37f",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2627/SP2.csv",
+              "sha256": "e83471ff5b45472aaa551625073db4a06606e803306341a2549e76c18a08e37f"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 2,
+        "hta": 0,
+        "shots": [
+          17,
+          23,
+          6,
+          5
+        ]
+      }
+    },
+    {
+      "originalIndex": 82,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1791072000000,
+        "lg": "Segunda División",
+        "H": "Sp Gijon",
+        "A": "Celta B",
+        "h": 3,
+        "a": 2,
+        "ht": 3,
+        "up": false,
+        "o": {
+          "CsvSeason": 2026,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2627/SP2.csv",
+          "HistSourceSHA256": "e83471ff5b45472aaa551625073db4a06606e803306341a2549e76c18a08e37f",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2627/SP2.csv",
+              "sha256": "e83471ff5b45472aaa551625073db4a06606e803306341a2549e76c18a08e37f"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 2,
+        "hta": 1,
+        "shots": [
+          13,
+          14,
+          7,
+          8
+        ]
+      }
+    },
+    {
+      "originalIndex": 83,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1791072000000,
+        "lg": "Segunda División",
+        "H": "Castellon",
+        "A": "Ceuta",
+        "h": 1,
+        "a": 1,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2026,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2627/SP2.csv",
+          "HistSourceSHA256": "e83471ff5b45472aaa551625073db4a06606e803306341a2549e76c18a08e37f",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2627/SP2.csv",
+              "sha256": "e83471ff5b45472aaa551625073db4a06606e803306341a2549e76c18a08e37f"
+            },
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_2_segunda-division/results_2627.csv",
+              "sha256": "cfe283ce19783bf767977bbaea9e96d4490a3616afcba9948c06ff567404cecc"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": [
+          10,
+          13,
+          2,
+          4
+        ]
+      }
+    },
+    {
+      "originalIndex": 86,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1791072000000,
+        "lg": "Segunda División",
+        "H": "Sabadell",
+        "A": "Andorra",
+        "h": 0,
+        "a": 0,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2026,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2627/SP2.csv",
+          "HistSourceSHA256": "e83471ff5b45472aaa551625073db4a06606e803306341a2549e76c18a08e37f",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2627/SP2.csv",
+              "sha256": "e83471ff5b45472aaa551625073db4a06606e803306341a2549e76c18a08e37f"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          19,
+          4,
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "originalIndex": 88,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1791590400000,
+        "lg": "Segunda División",
+        "H": "Ceuta",
+        "A": "Sabadell",
+        "h": 1,
+        "a": 2,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "CsvSeason": 2026,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2627/SP2.csv",
+          "HistSourceSHA256": "e83471ff5b45472aaa551625073db4a06606e803306341a2549e76c18a08e37f",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2627/SP2.csv",
+              "sha256": "e83471ff5b45472aaa551625073db4a06606e803306341a2549e76c18a08e37f"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 1,
+        "shots": [
+          17,
+          11,
+          4,
+          3
+        ]
+      }
+    },
+    {
+      "originalIndex": 90,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1791590400000,
+        "lg": "Segunda División",
+        "H": "Celta B",
+        "A": "Sociedad B",
+        "h": 4,
+        "a": 1,
+        "ht": 3,
+        "up": false,
+        "o": {
+          "CsvSeason": 2026,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2627/SP2.csv",
+          "HistSourceSHA256": "e83471ff5b45472aaa551625073db4a06606e803306341a2549e76c18a08e37f",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2627/SP2.csv",
+              "sha256": "e83471ff5b45472aaa551625073db4a06606e803306341a2549e76c18a08e37f"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 3,
+        "hta": 0,
+        "shots": [
+          13,
+          23,
+          8,
+          5
+        ]
+      }
+    },
+    {
+      "originalIndex": 91,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1791676800000,
+        "lg": "Segunda División",
+        "H": "Andorra",
+        "A": "Castellon",
+        "h": 1,
+        "a": 0,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2026,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2627/SP2.csv",
+          "HistSourceSHA256": "e83471ff5b45472aaa551625073db4a06606e803306341a2549e76c18a08e37f",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2627/SP2.csv",
+              "sha256": "e83471ff5b45472aaa551625073db4a06606e803306341a2549e76c18a08e37f"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": [
+          16,
+          12,
+          8,
+          3
+        ]
+      }
+    },
+    {
+      "originalIndex": 100,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1792195200000,
+        "lg": "Segunda División",
+        "H": "Sociedad B",
+        "A": "Almeria",
+        "h": 2,
+        "a": 4,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "CsvSeason": 2026,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2627/SP2.csv",
+          "HistSourceSHA256": "e83471ff5b45472aaa551625073db4a06606e803306341a2549e76c18a08e37f",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2627/SP2.csv",
+              "sha256": "e83471ff5b45472aaa551625073db4a06606e803306341a2549e76c18a08e37f"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 2,
+        "shots": [
+          21,
+          7,
+          9,
+          4
+        ]
+      }
+    },
+    {
+      "originalIndex": 104,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1792281600000,
+        "lg": "Segunda División",
+        "H": "Ceuta",
+        "A": "Oviedo",
+        "h": 1,
+        "a": 2,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2026,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2627/SP2.csv",
+          "HistSourceSHA256": "e83471ff5b45472aaa551625073db4a06606e803306341a2549e76c18a08e37f",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2627/SP2.csv",
+              "sha256": "e83471ff5b45472aaa551625073db4a06606e803306341a2549e76c18a08e37f"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 1,
+        "shots": [
+          28,
+          17,
+          7,
+          9
+        ]
+      }
+    },
+    {
+      "originalIndex": 106,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1792281600000,
+        "lg": "Segunda División",
+        "H": "Girona",
+        "A": "Andorra",
+        "h": 2,
+        "a": 0,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "CsvSeason": 2026,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2627/SP2.csv",
+          "HistSourceSHA256": "e83471ff5b45472aaa551625073db4a06606e803306341a2549e76c18a08e37f",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2627/SP2.csv",
+              "sha256": "e83471ff5b45472aaa551625073db4a06606e803306341a2549e76c18a08e37f"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 2,
+        "hta": 0,
+        "shots": [
+          11,
+          6,
+          4,
+          3
+        ]
+      }
+    },
+    {
+      "originalIndex": 109,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1792368000000,
+        "lg": "Segunda División",
+        "H": "Celta B",
+        "A": "Tenerife",
+        "h": 1,
+        "a": 1,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2026,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2627/SP2.csv",
+          "HistSourceSHA256": "e83471ff5b45472aaa551625073db4a06606e803306341a2549e76c18a08e37f",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2627/SP2.csv",
+              "sha256": "e83471ff5b45472aaa551625073db4a06606e803306341a2549e76c18a08e37f"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": [
+          14,
+          9,
+          4,
+          3
+        ]
+      }
+    },
+    {
+      "originalIndex": 113,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1792800000000,
+        "lg": "Segunda División",
+        "H": "Girona",
+        "A": "Celta B",
+        "h": 5,
+        "a": 1,
+        "ht": 4,
+        "up": false,
+        "o": {
+          "CsvSeason": 2026,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2627/SP2.csv",
+          "HistSourceSHA256": "e83471ff5b45472aaa551625073db4a06606e803306341a2549e76c18a08e37f",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2627/SP2.csv",
+              "sha256": "e83471ff5b45472aaa551625073db4a06606e803306341a2549e76c18a08e37f"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 4,
+        "hta": 0,
+        "shots": [
+          21,
+          3,
+          8,
+          3
+        ]
+      }
+    },
+    {
+      "originalIndex": 114,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1792800000000,
+        "lg": "Segunda División",
+        "H": "Las Palmas",
+        "A": "Sociedad B",
+        "h": 1,
+        "a": 0,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2026,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2627/SP2.csv",
+          "HistSourceSHA256": "e83471ff5b45472aaa551625073db4a06606e803306341a2549e76c18a08e37f",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2627/SP2.csv",
+              "sha256": "e83471ff5b45472aaa551625073db4a06606e803306341a2549e76c18a08e37f"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": [
+          13,
+          12,
+          4,
+          3
+        ]
+      }
+    },
+    {
+      "originalIndex": 118,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1792886400000,
+        "lg": "Segunda División",
+        "H": "Cadiz",
+        "A": "Ceuta",
+        "h": 3,
+        "a": 1,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2026,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2627/SP2.csv",
+          "HistSourceSHA256": "e83471ff5b45472aaa551625073db4a06606e803306341a2549e76c18a08e37f",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2627/SP2.csv",
+              "sha256": "e83471ff5b45472aaa551625073db4a06606e803306341a2549e76c18a08e37f"
+            },
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_2_segunda-division/results_2627.csv",
+              "sha256": "cfe283ce19783bf767977bbaea9e96d4490a3616afcba9948c06ff567404cecc"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 1,
+        "shots": [
+          11,
+          24,
+          5,
+          5
+        ]
+      }
+    },
+    {
+      "originalIndex": 120,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1792972800000,
+        "lg": "Segunda División",
+        "H": "Andorra",
+        "A": "Burgos",
+        "h": 2,
+        "a": 3,
+        "ht": 5,
+        "up": false,
+        "o": {
+          "CsvSeason": 2026,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2627/SP2.csv",
+          "HistSourceSHA256": "e83471ff5b45472aaa551625073db4a06606e803306341a2549e76c18a08e37f",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2627/SP2.csv",
+              "sha256": "e83471ff5b45472aaa551625073db4a06606e803306341a2549e76c18a08e37f"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 2,
+        "hta": 3,
+        "shots": [
+          20,
+          13,
+          11,
+          7
+        ]
+      }
+    },
+    {
+      "originalIndex": 121,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1793404800000,
+        "lg": "Segunda División",
+        "H": "Real Sociedad II",
+        "A": "Girona",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_2_segunda-division/fixtures_2627.csv",
+              "sha256": "e5872a096e421dc2c3d4cdd7f2e1e60e3448569cb633ab5248594901952aa2db"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 123,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1793404800000,
+        "lg": "Segunda División",
+        "H": "RC Celta Fortuna",
+        "A": "Córdoba",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_2_segunda-division/fixtures_2627.csv",
+              "sha256": "e5872a096e421dc2c3d4cdd7f2e1e60e3448569cb633ab5248594901952aa2db"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 124,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1793404800000,
+        "lg": "Segunda División",
+        "H": "Albacete",
+        "A": "CD Sabadell",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_2_segunda-division/fixtures_2627.csv",
+              "sha256": "e5872a096e421dc2c3d4cdd7f2e1e60e3448569cb633ab5248594901952aa2db"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 126,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1793491200000,
+        "lg": "Segunda División",
+        "H": "Ceuta",
+        "A": "Sporting Gijón",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_2_segunda-division/fixtures_2627.csv",
+              "sha256": "e5872a096e421dc2c3d4cdd7f2e1e60e3448569cb633ab5248594901952aa2db"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 128,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1793491200000,
+        "lg": "Segunda División",
+        "H": "Tenerife",
+        "A": "FC Andorra",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_2_segunda-division/fixtures_2627.csv",
+              "sha256": "e5872a096e421dc2c3d4cdd7f2e1e60e3448569cb633ab5248594901952aa2db"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 133,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1794009600000,
+        "lg": "Segunda División",
+        "H": "Burgos",
+        "A": "RC Celta Fortuna",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_2_segunda-division/fixtures_2627.csv",
+              "sha256": "e5872a096e421dc2c3d4cdd7f2e1e60e3448569cb633ab5248594901952aa2db"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 135,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1794009600000,
+        "lg": "Segunda División",
+        "H": "Córdoba",
+        "A": "Ceuta",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_2_segunda-division/fixtures_2627.csv",
+              "sha256": "e5872a096e421dc2c3d4cdd7f2e1e60e3448569cb633ab5248594901952aa2db"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 138,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1794096000000,
+        "lg": "Segunda División",
+        "H": "FC Andorra",
+        "A": "Mallorca",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_2_segunda-division/fixtures_2627.csv",
+              "sha256": "e5872a096e421dc2c3d4cdd7f2e1e60e3448569cb633ab5248594901952aa2db"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 142,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1794182400000,
+        "lg": "Segunda División",
+        "H": "CD Sabadell",
+        "A": "Real Sociedad II",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_2_segunda-division/fixtures_2627.csv",
+              "sha256": "e5872a096e421dc2c3d4cdd7f2e1e60e3448569cb633ab5248594901952aa2db"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 145,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1794614400000,
+        "lg": "Segunda División",
+        "H": "Real Sociedad II",
+        "A": "Sporting Gijón",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_2_segunda-division/fixtures_2627.csv",
+              "sha256": "e5872a096e421dc2c3d4cdd7f2e1e60e3448569cb633ab5248594901952aa2db"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 146,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1794614400000,
+        "lg": "Segunda División",
+        "H": "Almería",
+        "A": "FC Andorra",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_2_segunda-division/fixtures_2627.csv",
+              "sha256": "e5872a096e421dc2c3d4cdd7f2e1e60e3448569cb633ab5248594901952aa2db"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 149,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1794700800000,
+        "lg": "Segunda División",
+        "H": "Tenerife",
+        "A": "Ceuta",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_2_segunda-division/fixtures_2627.csv",
+              "sha256": "e5872a096e421dc2c3d4cdd7f2e1e60e3448569cb633ab5248594901952aa2db"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 152,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1794700800000,
+        "lg": "Segunda División",
+        "H": "Eldense",
+        "A": "CD Sabadell",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_2_segunda-division/fixtures_2627.csv",
+              "sha256": "e5872a096e421dc2c3d4cdd7f2e1e60e3448569cb633ab5248594901952aa2db"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 153,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1794787200000,
+        "lg": "Segunda División",
+        "H": "Albacete",
+        "A": "RC Celta Fortuna",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_2_segunda-division/fixtures_2627.csv",
+              "sha256": "e5872a096e421dc2c3d4cdd7f2e1e60e3448569cb633ab5248594901952aa2db"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 155,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1795305600000,
+        "lg": "Segunda División",
+        "H": "CD Sabadell",
+        "A": "Granada",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_2_segunda-division/fixtures_2627.csv",
+              "sha256": "e5872a096e421dc2c3d4cdd7f2e1e60e3448569cb633ab5248594901952aa2db"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 157,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1795305600000,
+        "lg": "Segunda División",
+        "H": "Ceuta",
+        "A": "Almería",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_2_segunda-division/fixtures_2627.csv",
+              "sha256": "e5872a096e421dc2c3d4cdd7f2e1e60e3448569cb633ab5248594901952aa2db"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 159,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1795305600000,
+        "lg": "Segunda División",
+        "H": "FC Andorra",
+        "A": "Leganés",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_2_segunda-division/fixtures_2627.csv",
+              "sha256": "e5872a096e421dc2c3d4cdd7f2e1e60e3448569cb633ab5248594901952aa2db"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 161,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1795305600000,
+        "lg": "Segunda División",
+        "H": "RC Celta Fortuna",
+        "A": "Real Valladolid",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_2_segunda-division/fixtures_2627.csv",
+              "sha256": "e5872a096e421dc2c3d4cdd7f2e1e60e3448569cb633ab5248594901952aa2db"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 162,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1795305600000,
+        "lg": "Segunda División",
+        "H": "Real Sociedad II",
+        "A": "Cádiz",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_2_segunda-division/fixtures_2627.csv",
+              "sha256": "e5872a096e421dc2c3d4cdd7f2e1e60e3448569cb633ab5248594901952aa2db"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 170,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1795910400000,
+        "lg": "Segunda División",
+        "H": "Granada",
+        "A": "Ceuta",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_2_segunda-division/fixtures_2627.csv",
+              "sha256": "e5872a096e421dc2c3d4cdd7f2e1e60e3448569cb633ab5248594901952aa2db"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 171,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1795910400000,
+        "lg": "Segunda División",
+        "H": "Las Palmas",
+        "A": "FC Andorra",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_2_segunda-division/fixtures_2627.csv",
+              "sha256": "e5872a096e421dc2c3d4cdd7f2e1e60e3448569cb633ab5248594901952aa2db"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 172,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1795910400000,
+        "lg": "Segunda División",
+        "H": "Leganés",
+        "A": "CD Sabadell",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_2_segunda-division/fixtures_2627.csv",
+              "sha256": "e5872a096e421dc2c3d4cdd7f2e1e60e3448569cb633ab5248594901952aa2db"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 174,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1795910400000,
+        "lg": "Segunda División",
+        "H": "Real Oviedo",
+        "A": "RC Celta Fortuna",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_2_segunda-division/fixtures_2627.csv",
+              "sha256": "e5872a096e421dc2c3d4cdd7f2e1e60e3448569cb633ab5248594901952aa2db"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 175,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1795910400000,
+        "lg": "Segunda División",
+        "H": "Real Valladolid",
+        "A": "Real Sociedad II",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_2_segunda-division/fixtures_2627.csv",
+              "sha256": "e5872a096e421dc2c3d4cdd7f2e1e60e3448569cb633ab5248594901952aa2db"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 177,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1796515200000,
+        "lg": "Segunda División",
+        "H": "CD Sabadell",
+        "A": "Eibar",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_2_segunda-division/fixtures_2627.csv",
+              "sha256": "e5872a096e421dc2c3d4cdd7f2e1e60e3448569cb633ab5248594901952aa2db"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 179,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1796515200000,
+        "lg": "Segunda División",
+        "H": "Ceuta",
+        "A": "Albacete",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_2_segunda-division/fixtures_2627.csv",
+              "sha256": "e5872a096e421dc2c3d4cdd7f2e1e60e3448569cb633ab5248594901952aa2db"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 181,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1796515200000,
+        "lg": "Segunda División",
+        "H": "FC Andorra",
+        "A": "Real Oviedo",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_2_segunda-division/fixtures_2627.csv",
+              "sha256": "e5872a096e421dc2c3d4cdd7f2e1e60e3448569cb633ab5248594901952aa2db"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 183,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1796515200000,
+        "lg": "Segunda División",
+        "H": "RC Celta Fortuna",
+        "A": "Mallorca",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_2_segunda-division/fixtures_2627.csv",
+              "sha256": "e5872a096e421dc2c3d4cdd7f2e1e60e3448569cb633ab5248594901952aa2db"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 184,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1796515200000,
+        "lg": "Segunda División",
+        "H": "Real Sociedad II",
+        "A": "Leganés",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_2_segunda-division/fixtures_2627.csv",
+              "sha256": "e5872a096e421dc2c3d4cdd7f2e1e60e3448569cb633ab5248594901952aa2db"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 188,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1797120000000,
+        "lg": "Segunda División",
+        "H": "Cádiz",
+        "A": "CD Sabadell",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_2_segunda-division/fixtures_2627.csv",
+              "sha256": "e5872a096e421dc2c3d4cdd7f2e1e60e3448569cb633ab5248594901952aa2db"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 191,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1797120000000,
+        "lg": "Segunda División",
+        "H": "Eldense",
+        "A": "FC Andorra",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_2_segunda-division/fixtures_2627.csv",
+              "sha256": "e5872a096e421dc2c3d4cdd7f2e1e60e3448569cb633ab5248594901952aa2db"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 193,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1797120000000,
+        "lg": "Segunda División",
+        "H": "Las Palmas",
+        "A": "RC Celta Fortuna",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_2_segunda-division/fixtures_2627.csv",
+              "sha256": "e5872a096e421dc2c3d4cdd7f2e1e60e3448569cb633ab5248594901952aa2db"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 194,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1797120000000,
+        "lg": "Segunda División",
+        "H": "Leganés",
+        "A": "Ceuta",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_2_segunda-division/fixtures_2627.csv",
+              "sha256": "e5872a096e421dc2c3d4cdd7f2e1e60e3448569cb633ab5248594901952aa2db"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 196,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1797120000000,
+        "lg": "Segunda División",
+        "H": "Real Oviedo",
+        "A": "Real Sociedad II",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_2_segunda-division/fixtures_2627.csv",
+              "sha256": "e5872a096e421dc2c3d4cdd7f2e1e60e3448569cb633ab5248594901952aa2db"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 201,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1797724800000,
+        "lg": "Segunda División",
+        "H": "CD Sabadell",
+        "A": "Las Palmas",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_2_segunda-division/fixtures_2627.csv",
+              "sha256": "e5872a096e421dc2c3d4cdd7f2e1e60e3448569cb633ab5248594901952aa2db"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 203,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1797724800000,
+        "lg": "Segunda División",
+        "H": "Ceuta",
+        "A": "Eibar",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_2_segunda-division/fixtures_2627.csv",
+              "sha256": "e5872a096e421dc2c3d4cdd7f2e1e60e3448569cb633ab5248594901952aa2db"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 204,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1797724800000,
+        "lg": "Segunda División",
+        "H": "FC Andorra",
+        "A": "Cádiz",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_2_segunda-division/fixtures_2627.csv",
+              "sha256": "e5872a096e421dc2c3d4cdd7f2e1e60e3448569cb633ab5248594901952aa2db"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 205,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1797724800000,
+        "lg": "Segunda División",
+        "H": "RC Celta Fortuna",
+        "A": "Eldense",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_2_segunda-division/fixtures_2627.csv",
+              "sha256": "e5872a096e421dc2c3d4cdd7f2e1e60e3448569cb633ab5248594901952aa2db"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 206,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1797724800000,
+        "lg": "Segunda División",
+        "H": "Real Sociedad II",
+        "A": "Córdoba",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_2_segunda-division/fixtures_2627.csv",
+              "sha256": "e5872a096e421dc2c3d4cdd7f2e1e60e3448569cb633ab5248594901952aa2db"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 210,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1798934400000,
+        "lg": "Segunda División",
+        "H": "Córdoba",
+        "A": "FC Andorra",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_2_segunda-division/fixtures_2627.csv",
+              "sha256": "e5872a096e421dc2c3d4cdd7f2e1e60e3448569cb633ab5248594901952aa2db"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 211,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1798934400000,
+        "lg": "Segunda División",
+        "H": "Eibar",
+        "A": "Real Sociedad II",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_2_segunda-division/fixtures_2627.csv",
+              "sha256": "e5872a096e421dc2c3d4cdd7f2e1e60e3448569cb633ab5248594901952aa2db"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 212,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1798934400000,
+        "lg": "Segunda División",
+        "H": "Eldense",
+        "A": "Ceuta",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_2_segunda-division/fixtures_2627.csv",
+              "sha256": "e5872a096e421dc2c3d4cdd7f2e1e60e3448569cb633ab5248594901952aa2db"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 213,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1798934400000,
+        "lg": "Segunda División",
+        "H": "Girona",
+        "A": "CD Sabadell",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_2_segunda-division/fixtures_2627.csv",
+              "sha256": "e5872a096e421dc2c3d4cdd7f2e1e60e3448569cb633ab5248594901952aa2db"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 216,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1798934400000,
+        "lg": "Segunda División",
+        "H": "Leganés",
+        "A": "RC Celta Fortuna",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_2_segunda-division/fixtures_2627.csv",
+              "sha256": "e5872a096e421dc2c3d4cdd7f2e1e60e3448569cb633ab5248594901952aa2db"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 220,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1799539200000,
+        "lg": "Segunda División",
+        "H": "Albacete",
+        "A": "FC Andorra",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_2_segunda-division/fixtures_2627.csv",
+              "sha256": "e5872a096e421dc2c3d4cdd7f2e1e60e3448569cb633ab5248594901952aa2db"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 222,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1799539200000,
+        "lg": "Segunda División",
+        "H": "CD Sabadell",
+        "A": "Real Valladolid",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_2_segunda-division/fixtures_2627.csv",
+              "sha256": "e5872a096e421dc2c3d4cdd7f2e1e60e3448569cb633ab5248594901952aa2db"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 224,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1799539200000,
+        "lg": "Segunda División",
+        "H": "Ceuta",
+        "A": "Girona",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_2_segunda-division/fixtures_2627.csv",
+              "sha256": "e5872a096e421dc2c3d4cdd7f2e1e60e3448569cb633ab5248594901952aa2db"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 227,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1799539200000,
+        "lg": "Segunda División",
+        "H": "RC Celta Fortuna",
+        "A": "Granada",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_2_segunda-division/fixtures_2627.csv",
+              "sha256": "e5872a096e421dc2c3d4cdd7f2e1e60e3448569cb633ab5248594901952aa2db"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 228,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1799539200000,
+        "lg": "Segunda División",
+        "H": "Real Sociedad II",
+        "A": "Eldense",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_2_segunda-division/fixtures_2627.csv",
+              "sha256": "e5872a096e421dc2c3d4cdd7f2e1e60e3448569cb633ab5248594901952aa2db"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 234,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1800144000000,
+        "lg": "Segunda División",
+        "H": "Córdoba",
+        "A": "CD Sabadell",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_2_segunda-division/fixtures_2627.csv",
+              "sha256": "e5872a096e421dc2c3d4cdd7f2e1e60e3448569cb633ab5248594901952aa2db"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 235,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1800144000000,
+        "lg": "Segunda División",
+        "H": "Eibar",
+        "A": "RC Celta Fortuna",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_2_segunda-division/fixtures_2627.csv",
+              "sha256": "e5872a096e421dc2c3d4cdd7f2e1e60e3448569cb633ab5248594901952aa2db"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 237,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1800144000000,
+        "lg": "Segunda División",
+        "H": "FC Andorra",
+        "A": "Tenerife",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_2_segunda-division/fixtures_2627.csv",
+              "sha256": "e5872a096e421dc2c3d4cdd7f2e1e60e3448569cb633ab5248594901952aa2db"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 238,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1800144000000,
+        "lg": "Segunda División",
+        "H": "Granada",
+        "A": "Real Sociedad II",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_2_segunda-division/fixtures_2627.csv",
+              "sha256": "e5872a096e421dc2c3d4cdd7f2e1e60e3448569cb633ab5248594901952aa2db"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 241,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1800144000000,
+        "lg": "Segunda División",
+        "H": "Real Valladolid",
+        "A": "Ceuta",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_2_segunda-division/fixtures_2627.csv",
+              "sha256": "e5872a096e421dc2c3d4cdd7f2e1e60e3448569cb633ab5248594901952aa2db"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 244,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1800748800000,
+        "lg": "Segunda División",
+        "H": "CD Sabadell",
+        "A": "Ceuta",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_2_segunda-division/fixtures_2627.csv",
+              "sha256": "e5872a096e421dc2c3d4cdd7f2e1e60e3448569cb633ab5248594901952aa2db"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 248,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1800748800000,
+        "lg": "Segunda División",
+        "H": "Mallorca",
+        "A": "FC Andorra",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_2_segunda-division/fixtures_2627.csv",
+              "sha256": "e5872a096e421dc2c3d4cdd7f2e1e60e3448569cb633ab5248594901952aa2db"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 249,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1800748800000,
+        "lg": "Segunda División",
+        "H": "RC Celta Fortuna",
+        "A": "Burgos",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_2_segunda-division/fixtures_2627.csv",
+              "sha256": "e5872a096e421dc2c3d4cdd7f2e1e60e3448569cb633ab5248594901952aa2db"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 250,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1800748800000,
+        "lg": "Segunda División",
+        "H": "Real Sociedad II",
+        "A": "Las Palmas",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_2_segunda-division/fixtures_2627.csv",
+              "sha256": "e5872a096e421dc2c3d4cdd7f2e1e60e3448569cb633ab5248594901952aa2db"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 254,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1801353600000,
+        "lg": "Segunda División",
+        "H": "Ceuta",
+        "A": "Tenerife",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_2_segunda-division/fixtures_2627.csv",
+              "sha256": "e5872a096e421dc2c3d4cdd7f2e1e60e3448569cb633ab5248594901952aa2db"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 258,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1801353600000,
+        "lg": "Segunda División",
+        "H": "FC Andorra",
+        "A": "Almería",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_2_segunda-division/fixtures_2627.csv",
+              "sha256": "e5872a096e421dc2c3d4cdd7f2e1e60e3448569cb633ab5248594901952aa2db"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 259,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1801353600000,
+        "lg": "Segunda División",
+        "H": "Girona",
+        "A": "Real Sociedad II",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_2_segunda-division/fixtures_2627.csv",
+              "sha256": "e5872a096e421dc2c3d4cdd7f2e1e60e3448569cb633ab5248594901952aa2db"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 260,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1801353600000,
+        "lg": "Segunda División",
+        "H": "Granada",
+        "A": "CD Sabadell",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_2_segunda-division/fixtures_2627.csv",
+              "sha256": "e5872a096e421dc2c3d4cdd7f2e1e60e3448569cb633ab5248594901952aa2db"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 263,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1801353600000,
+        "lg": "Segunda División",
+        "H": "Real Valladolid",
+        "A": "RC Celta Fortuna",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_2_segunda-division/fixtures_2627.csv",
+              "sha256": "e5872a096e421dc2c3d4cdd7f2e1e60e3448569cb633ab5248594901952aa2db"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 266,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1801958400000,
+        "lg": "Segunda División",
+        "H": "CD Sabadell",
+        "A": "Burgos",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_2_segunda-division/fixtures_2627.csv",
+              "sha256": "e5872a096e421dc2c3d4cdd7f2e1e60e3448569cb633ab5248594901952aa2db"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 271,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1801958400000,
+        "lg": "Segunda División",
+        "H": "RC Celta Fortuna",
+        "A": "Girona",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_2_segunda-division/fixtures_2627.csv",
+              "sha256": "e5872a096e421dc2c3d4cdd7f2e1e60e3448569cb633ab5248594901952aa2db"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 272,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1801958400000,
+        "lg": "Segunda División",
+        "H": "Real Sociedad II",
+        "A": "FC Andorra",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_2_segunda-division/fixtures_2627.csv",
+              "sha256": "e5872a096e421dc2c3d4cdd7f2e1e60e3448569cb633ab5248594901952aa2db"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 273,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1801958400000,
+        "lg": "Segunda División",
+        "H": "Sporting Gijón",
+        "A": "Ceuta",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_2_segunda-division/fixtures_2627.csv",
+              "sha256": "e5872a096e421dc2c3d4cdd7f2e1e60e3448569cb633ab5248594901952aa2db"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 277,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1802563200000,
+        "lg": "Segunda División",
+        "H": "Ceuta",
+        "A": "Mallorca",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_2_segunda-division/fixtures_2627.csv",
+              "sha256": "e5872a096e421dc2c3d4cdd7f2e1e60e3448569cb633ab5248594901952aa2db"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 278,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1802563200000,
+        "lg": "Segunda División",
+        "H": "Cádiz",
+        "A": "Real Sociedad II",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_2_segunda-division/fixtures_2627.csv",
+              "sha256": "e5872a096e421dc2c3d4cdd7f2e1e60e3448569cb633ab5248594901952aa2db"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 280,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1802563200000,
+        "lg": "Segunda División",
+        "H": "FC Andorra",
+        "A": "RC Celta Fortuna",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_2_segunda-division/fixtures_2627.csv",
+              "sha256": "e5872a096e421dc2c3d4cdd7f2e1e60e3448569cb633ab5248594901952aa2db"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 284,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1802563200000,
+        "lg": "Segunda División",
+        "H": "Real Oviedo",
+        "A": "CD Sabadell",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_2_segunda-division/fixtures_2627.csv",
+              "sha256": "e5872a096e421dc2c3d4cdd7f2e1e60e3448569cb633ab5248594901952aa2db"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 286,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1803168000000,
+        "lg": "Segunda División",
+        "H": "Almería",
+        "A": "Ceuta",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_2_segunda-division/fixtures_2627.csv",
+              "sha256": "e5872a096e421dc2c3d4cdd7f2e1e60e3448569cb633ab5248594901952aa2db"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 287,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1803168000000,
+        "lg": "Segunda División",
+        "H": "CD Sabadell",
+        "A": "Eldense",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_2_segunda-division/fixtures_2627.csv",
+              "sha256": "e5872a096e421dc2c3d4cdd7f2e1e60e3448569cb633ab5248594901952aa2db"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 293,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1803168000000,
+        "lg": "Segunda División",
+        "H": "RC Celta Fortuna",
+        "A": "Las Palmas",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_2_segunda-division/fixtures_2627.csv",
+              "sha256": "e5872a096e421dc2c3d4cdd7f2e1e60e3448569cb633ab5248594901952aa2db"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 294,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1803168000000,
+        "lg": "Segunda División",
+        "H": "Real Sociedad II",
+        "A": "Real Valladolid",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_2_segunda-division/fixtures_2627.csv",
+              "sha256": "e5872a096e421dc2c3d4cdd7f2e1e60e3448569cb633ab5248594901952aa2db"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 295,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1803168000000,
+        "lg": "Segunda División",
+        "H": "Sporting Gijón",
+        "A": "FC Andorra",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_2_segunda-division/fixtures_2627.csv",
+              "sha256": "e5872a096e421dc2c3d4cdd7f2e1e60e3448569cb633ab5248594901952aa2db"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 298,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1803772800000,
+        "lg": "Segunda División",
+        "H": "Castellón",
+        "A": "FC Andorra",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_2_segunda-division/fixtures_2627.csv",
+              "sha256": "e5872a096e421dc2c3d4cdd7f2e1e60e3448569cb633ab5248594901952aa2db"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 299,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1803772800000,
+        "lg": "Segunda División",
+        "H": "Ceuta",
+        "A": "Leganés",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_2_segunda-division/fixtures_2627.csv",
+              "sha256": "e5872a096e421dc2c3d4cdd7f2e1e60e3448569cb633ab5248594901952aa2db"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 301,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1803772800000,
+        "lg": "Segunda División",
+        "H": "Eldense",
+        "A": "RC Celta Fortuna",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_2_segunda-division/fixtures_2627.csv",
+              "sha256": "e5872a096e421dc2c3d4cdd7f2e1e60e3448569cb633ab5248594901952aa2db"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 304,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1803772800000,
+        "lg": "Segunda División",
+        "H": "Las Palmas",
+        "A": "CD Sabadell",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_2_segunda-division/fixtures_2627.csv",
+              "sha256": "e5872a096e421dc2c3d4cdd7f2e1e60e3448569cb633ab5248594901952aa2db"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 305,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1803772800000,
+        "lg": "Segunda División",
+        "H": "Mallorca",
+        "A": "Real Sociedad II",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_2_segunda-division/fixtures_2627.csv",
+              "sha256": "e5872a096e421dc2c3d4cdd7f2e1e60e3448569cb633ab5248594901952aa2db"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 310,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1804377600000,
+        "lg": "Segunda División",
+        "H": "CD Sabadell",
+        "A": "Albacete",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_2_segunda-division/fixtures_2627.csv",
+              "sha256": "e5872a096e421dc2c3d4cdd7f2e1e60e3448569cb633ab5248594901952aa2db"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 313,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1804377600000,
+        "lg": "Segunda División",
+        "H": "FC Andorra",
+        "A": "Girona",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_2_segunda-division/fixtures_2627.csv",
+              "sha256": "e5872a096e421dc2c3d4cdd7f2e1e60e3448569cb633ab5248594901952aa2db"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 316,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1804377600000,
+        "lg": "Segunda División",
+        "H": "RC Celta Fortuna",
+        "A": "Real Oviedo",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_2_segunda-division/fixtures_2627.csv",
+              "sha256": "e5872a096e421dc2c3d4cdd7f2e1e60e3448569cb633ab5248594901952aa2db"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 317,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1804377600000,
+        "lg": "Segunda División",
+        "H": "Real Sociedad II",
+        "A": "Ceuta",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_2_segunda-division/fixtures_2627.csv",
+              "sha256": "e5872a096e421dc2c3d4cdd7f2e1e60e3448569cb633ab5248594901952aa2db"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 320,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1804982400000,
+        "lg": "Segunda División",
+        "H": "Castellón",
+        "A": "RC Celta Fortuna",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_2_segunda-division/fixtures_2627.csv",
+              "sha256": "e5872a096e421dc2c3d4cdd7f2e1e60e3448569cb633ab5248594901952aa2db"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 321,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1804982400000,
+        "lg": "Segunda División",
+        "H": "Ceuta",
+        "A": "FC Andorra",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_2_segunda-division/fixtures_2627.csv",
+              "sha256": "e5872a096e421dc2c3d4cdd7f2e1e60e3448569cb633ab5248594901952aa2db"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 327,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1804982400000,
+        "lg": "Segunda División",
+        "H": "Real Sociedad II",
+        "A": "Eibar",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_2_segunda-division/fixtures_2627.csv",
+              "sha256": "e5872a096e421dc2c3d4cdd7f2e1e60e3448569cb633ab5248594901952aa2db"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 329,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1804982400000,
+        "lg": "Segunda División",
+        "H": "Tenerife",
+        "A": "CD Sabadell",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_2_segunda-division/fixtures_2627.csv",
+              "sha256": "e5872a096e421dc2c3d4cdd7f2e1e60e3448569cb633ab5248594901952aa2db"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 330,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1805587200000,
+        "lg": "Segunda División",
+        "H": "Almería",
+        "A": "Real Sociedad II",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_2_segunda-division/fixtures_2627.csv",
+              "sha256": "e5872a096e421dc2c3d4cdd7f2e1e60e3448569cb633ab5248594901952aa2db"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 332,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1805587200000,
+        "lg": "Segunda División",
+        "H": "CD Sabadell",
+        "A": "RC Celta Fortuna",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_2_segunda-division/fixtures_2627.csv",
+              "sha256": "e5872a096e421dc2c3d4cdd7f2e1e60e3448569cb633ab5248594901952aa2db"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 334,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1805587200000,
+        "lg": "Segunda División",
+        "H": "Eibar",
+        "A": "Ceuta",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_2_segunda-division/fixtures_2627.csv",
+              "sha256": "e5872a096e421dc2c3d4cdd7f2e1e60e3448569cb633ab5248594901952aa2db"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 335,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1805587200000,
+        "lg": "Segunda División",
+        "H": "FC Andorra",
+        "A": "Albacete",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_2_segunda-division/fixtures_2627.csv",
+              "sha256": "e5872a096e421dc2c3d4cdd7f2e1e60e3448569cb633ab5248594901952aa2db"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 342,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1806192000000,
+        "lg": "Segunda División",
+        "H": "CD Sabadell",
+        "A": "Mallorca",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_2_segunda-division/fixtures_2627.csv",
+              "sha256": "e5872a096e421dc2c3d4cdd7f2e1e60e3448569cb633ab5248594901952aa2db"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 344,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1806192000000,
+        "lg": "Segunda División",
+        "H": "Ceuta",
+        "A": "Granada",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_2_segunda-division/fixtures_2627.csv",
+              "sha256": "e5872a096e421dc2c3d4cdd7f2e1e60e3448569cb633ab5248594901952aa2db"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 345,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1806192000000,
+        "lg": "Segunda División",
+        "H": "Eibar",
+        "A": "FC Andorra",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_2_segunda-division/fixtures_2627.csv",
+              "sha256": "e5872a096e421dc2c3d4cdd7f2e1e60e3448569cb633ab5248594901952aa2db"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 348,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1806192000000,
+        "lg": "Segunda División",
+        "H": "RC Celta Fortuna",
+        "A": "Sporting Gijón",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_2_segunda-division/fixtures_2627.csv",
+              "sha256": "e5872a096e421dc2c3d4cdd7f2e1e60e3448569cb633ab5248594901952aa2db"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 350,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1806192000000,
+        "lg": "Segunda División",
+        "H": "Real Sociedad II",
+        "A": "Burgos",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_2_segunda-division/fixtures_2627.csv",
+              "sha256": "e5872a096e421dc2c3d4cdd7f2e1e60e3448569cb633ab5248594901952aa2db"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 354,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1806796800000,
+        "lg": "Segunda División",
+        "H": "Córdoba",
+        "A": "RC Celta Fortuna",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_2_segunda-division/fixtures_2627.csv",
+              "sha256": "e5872a096e421dc2c3d4cdd7f2e1e60e3448569cb633ab5248594901952aa2db"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 355,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1806796800000,
+        "lg": "Segunda División",
+        "H": "FC Andorra",
+        "A": "Eldense",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_2_segunda-division/fixtures_2627.csv",
+              "sha256": "e5872a096e421dc2c3d4cdd7f2e1e60e3448569cb633ab5248594901952aa2db"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 357,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1806796800000,
+        "lg": "Segunda División",
+        "H": "Las Palmas",
+        "A": "Ceuta",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_2_segunda-division/fixtures_2627.csv",
+              "sha256": "e5872a096e421dc2c3d4cdd7f2e1e60e3448569cb633ab5248594901952aa2db"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 360,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1806796800000,
+        "lg": "Segunda División",
+        "H": "Real Sociedad II",
+        "A": "Albacete",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_2_segunda-division/fixtures_2627.csv",
+              "sha256": "e5872a096e421dc2c3d4cdd7f2e1e60e3448569cb633ab5248594901952aa2db"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 361,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1806796800000,
+        "lg": "Segunda División",
+        "H": "Real Valladolid",
+        "A": "CD Sabadell",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_2_segunda-division/fixtures_2627.csv",
+              "sha256": "e5872a096e421dc2c3d4cdd7f2e1e60e3448569cb633ab5248594901952aa2db"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 363,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1807401600000,
+        "lg": "Segunda División",
+        "H": "Albacete",
+        "A": "Ceuta",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_2_segunda-division/fixtures_2627.csv",
+              "sha256": "e5872a096e421dc2c3d4cdd7f2e1e60e3448569cb633ab5248594901952aa2db"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 365,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1807401600000,
+        "lg": "Segunda División",
+        "H": "CD Sabadell",
+        "A": "Leganés",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_2_segunda-division/fixtures_2627.csv",
+              "sha256": "e5872a096e421dc2c3d4cdd7f2e1e60e3448569cb633ab5248594901952aa2db"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 368,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1807401600000,
+        "lg": "Segunda División",
+        "H": "FC Andorra",
+        "A": "Real Valladolid",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_2_segunda-division/fixtures_2627.csv",
+              "sha256": "e5872a096e421dc2c3d4cdd7f2e1e60e3448569cb633ab5248594901952aa2db"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 371,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1807401600000,
+        "lg": "Segunda División",
+        "H": "RC Celta Fortuna",
+        "A": "Cádiz",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_2_segunda-division/fixtures_2627.csv",
+              "sha256": "e5872a096e421dc2c3d4cdd7f2e1e60e3448569cb633ab5248594901952aa2db"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 373,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1807401600000,
+        "lg": "Segunda División",
+        "H": "Sporting Gijón",
+        "A": "Real Sociedad II",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_2_segunda-division/fixtures_2627.csv",
+              "sha256": "e5872a096e421dc2c3d4cdd7f2e1e60e3448569cb633ab5248594901952aa2db"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 374,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1808006400000,
+        "lg": "Segunda División",
+        "H": "CD Sabadell",
+        "A": "Sporting Gijón",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_2_segunda-division/fixtures_2627.csv",
+              "sha256": "e5872a096e421dc2c3d4cdd7f2e1e60e3448569cb633ab5248594901952aa2db"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 375,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1808006400000,
+        "lg": "Segunda División",
+        "H": "Ceuta",
+        "A": "Castellón",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_2_segunda-division/fixtures_2627.csv",
+              "sha256": "e5872a096e421dc2c3d4cdd7f2e1e60e3448569cb633ab5248594901952aa2db"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 376,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1808006400000,
+        "lg": "Segunda División",
+        "H": "Cádiz",
+        "A": "FC Andorra",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_2_segunda-division/fixtures_2627.csv",
+              "sha256": "e5872a096e421dc2c3d4cdd7f2e1e60e3448569cb633ab5248594901952aa2db"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 382,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1808006400000,
+        "lg": "Segunda División",
+        "H": "RC Celta Fortuna",
+        "A": "Almería",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_2_segunda-division/fixtures_2627.csv",
+              "sha256": "e5872a096e421dc2c3d4cdd7f2e1e60e3448569cb633ab5248594901952aa2db"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 384,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1808006400000,
+        "lg": "Segunda División",
+        "H": "Tenerife",
+        "A": "Real Sociedad II",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_2_segunda-division/fixtures_2627.csv",
+              "sha256": "e5872a096e421dc2c3d4cdd7f2e1e60e3448569cb633ab5248594901952aa2db"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 389,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1808611200000,
+        "lg": "Segunda División",
+        "H": "Ceuta",
+        "A": "Eldense",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_2_segunda-division/fixtures_2627.csv",
+              "sha256": "e5872a096e421dc2c3d4cdd7f2e1e60e3448569cb633ab5248594901952aa2db"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 390,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1808611200000,
+        "lg": "Segunda División",
+        "H": "Eibar",
+        "A": "CD Sabadell",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_2_segunda-division/fixtures_2627.csv",
+              "sha256": "e5872a096e421dc2c3d4cdd7f2e1e60e3448569cb633ab5248594901952aa2db"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 391,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1808611200000,
+        "lg": "Segunda División",
+        "H": "FC Andorra",
+        "A": "Córdoba",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_2_segunda-division/fixtures_2627.csv",
+              "sha256": "e5872a096e421dc2c3d4cdd7f2e1e60e3448569cb633ab5248594901952aa2db"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 394,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1808611200000,
+        "lg": "Segunda División",
+        "H": "Real Sociedad II",
+        "A": "RC Celta Fortuna",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_2_segunda-division/fixtures_2627.csv",
+              "sha256": "e5872a096e421dc2c3d4cdd7f2e1e60e3448569cb633ab5248594901952aa2db"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 396,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1809216000000,
+        "lg": "Segunda División",
+        "H": "CD Sabadell",
+        "A": "Girona",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_2_segunda-division/fixtures_2627.csv",
+              "sha256": "e5872a096e421dc2c3d4cdd7f2e1e60e3448569cb633ab5248594901952aa2db"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 398,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1809216000000,
+        "lg": "Segunda División",
+        "H": "Córdoba",
+        "A": "Real Sociedad II",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_2_segunda-division/fixtures_2627.csv",
+              "sha256": "e5872a096e421dc2c3d4cdd7f2e1e60e3448569cb633ab5248594901952aa2db"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 400,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1809216000000,
+        "lg": "Segunda División",
+        "H": "FC Andorra",
+        "A": "Las Palmas",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_2_segunda-division/fixtures_2627.csv",
+              "sha256": "e5872a096e421dc2c3d4cdd7f2e1e60e3448569cb633ab5248594901952aa2db"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 403,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1809216000000,
+        "lg": "Segunda División",
+        "H": "RC Celta Fortuna",
+        "A": "Ceuta",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_2_segunda-division/fixtures_2627.csv",
+              "sha256": "e5872a096e421dc2c3d4cdd7f2e1e60e3448569cb633ab5248594901952aa2db"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 408,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1809820800000,
+        "lg": "Segunda División",
+        "H": "Almería",
+        "A": "CD Sabadell",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_2_segunda-division/fixtures_2627.csv",
+              "sha256": "e5872a096e421dc2c3d4cdd7f2e1e60e3448569cb633ab5248594901952aa2db"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 409,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1809820800000,
+        "lg": "Segunda División",
+        "H": "Burgos",
+        "A": "FC Andorra",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_2_segunda-division/fixtures_2627.csv",
+              "sha256": "e5872a096e421dc2c3d4cdd7f2e1e60e3448569cb633ab5248594901952aa2db"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 411,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1809820800000,
+        "lg": "Segunda División",
+        "H": "Ceuta",
+        "A": "Cádiz",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_2_segunda-division/fixtures_2627.csv",
+              "sha256": "e5872a096e421dc2c3d4cdd7f2e1e60e3448569cb633ab5248594901952aa2db"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 415,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1809820800000,
+        "lg": "Segunda División",
+        "H": "Mallorca",
+        "A": "RC Celta Fortuna",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_2_segunda-division/fixtures_2627.csv",
+              "sha256": "e5872a096e421dc2c3d4cdd7f2e1e60e3448569cb633ab5248594901952aa2db"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 416,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1809820800000,
+        "lg": "Segunda División",
+        "H": "Real Sociedad II",
+        "A": "Real Oviedo",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_2_segunda-division/fixtures_2627.csv",
+              "sha256": "e5872a096e421dc2c3d4cdd7f2e1e60e3448569cb633ab5248594901952aa2db"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 418,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1810425600000,
+        "lg": "Segunda División",
+        "H": "Castellón",
+        "A": "Real Sociedad II",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_2_segunda-division/fixtures_2627.csv",
+              "sha256": "e5872a096e421dc2c3d4cdd7f2e1e60e3448569cb633ab5248594901952aa2db"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 421,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1810425600000,
+        "lg": "Segunda División",
+        "H": "FC Andorra",
+        "A": "CD Sabadell",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_2_segunda-division/fixtures_2627.csv",
+              "sha256": "e5872a096e421dc2c3d4cdd7f2e1e60e3448569cb633ab5248594901952aa2db"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 425,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1810425600000,
+        "lg": "Segunda División",
+        "H": "RC Celta Fortuna",
+        "A": "Albacete",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_2_segunda-division/fixtures_2627.csv",
+              "sha256": "e5872a096e421dc2c3d4cdd7f2e1e60e3448569cb633ab5248594901952aa2db"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 426,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1810425600000,
+        "lg": "Segunda División",
+        "H": "Real Oviedo",
+        "A": "Ceuta",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_2_segunda-division/fixtures_2627.csv",
+              "sha256": "e5872a096e421dc2c3d4cdd7f2e1e60e3448569cb633ab5248594901952aa2db"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 432,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1811030400000,
+        "lg": "Segunda División",
+        "H": "CD Sabadell",
+        "A": "Cádiz",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_2_segunda-division/fixtures_2627.csv",
+              "sha256": "e5872a096e421dc2c3d4cdd7f2e1e60e3448569cb633ab5248594901952aa2db"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 433,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1811030400000,
+        "lg": "Segunda División",
+        "H": "Ceuta",
+        "A": "Córdoba",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_2_segunda-division/fixtures_2627.csv",
+              "sha256": "e5872a096e421dc2c3d4cdd7f2e1e60e3448569cb633ab5248594901952aa2db"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 435,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1811030400000,
+        "lg": "Segunda División",
+        "H": "Eldense",
+        "A": "Real Sociedad II",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_2_segunda-division/fixtures_2627.csv",
+              "sha256": "e5872a096e421dc2c3d4cdd7f2e1e60e3448569cb633ab5248594901952aa2db"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 436,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1811030400000,
+        "lg": "Segunda División",
+        "H": "Granada",
+        "A": "RC Celta Fortuna",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_2_segunda-division/fixtures_2627.csv",
+              "sha256": "e5872a096e421dc2c3d4cdd7f2e1e60e3448569cb633ab5248594901952aa2db"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 437,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1811030400000,
+        "lg": "Segunda División",
+        "H": "Leganés",
+        "A": "FC Andorra",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_2_segunda-division/fixtures_2627.csv",
+              "sha256": "e5872a096e421dc2c3d4cdd7f2e1e60e3448569cb633ab5248594901952aa2db"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 444,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1811635200000,
+        "lg": "Segunda División",
+        "H": "FC Andorra",
+        "A": "Granada",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_2_segunda-division/fixtures_2627.csv",
+              "sha256": "e5872a096e421dc2c3d4cdd7f2e1e60e3448569cb633ab5248594901952aa2db"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 445,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1811635200000,
+        "lg": "Segunda División",
+        "H": "Girona",
+        "A": "Ceuta",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_2_segunda-division/fixtures_2627.csv",
+              "sha256": "e5872a096e421dc2c3d4cdd7f2e1e60e3448569cb633ab5248594901952aa2db"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 448,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1811635200000,
+        "lg": "Segunda División",
+        "H": "RC Celta Fortuna",
+        "A": "Leganés",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_2_segunda-division/fixtures_2627.csv",
+              "sha256": "e5872a096e421dc2c3d4cdd7f2e1e60e3448569cb633ab5248594901952aa2db"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 449,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1811635200000,
+        "lg": "Segunda División",
+        "H": "Real Sociedad II",
+        "A": "CD Sabadell",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "ESP",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/ESP_2_segunda-division/fixtures_2627.csv",
+              "sha256": "e5872a096e421dc2c3d4cdd7f2e1e60e3448569cb633ab5248594901952aa2db"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    }
+  ]
+}

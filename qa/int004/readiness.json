@@ -1,0 +1,6 @@
+{
+  "scope": "source snapshot only, not the final audit handoff receipt",
+  "readyForIndependentAudit": false,
+  "finalReceipt": "The exact-commit consolidated report and readiness gate are published as immutable evidence linked from PR #4 after the complete clean run.",
+  "readyForStableRelease": false
+}

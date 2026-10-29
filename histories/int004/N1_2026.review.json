@@ -1,0 +1,726 @@
+{
+  "originalPacket": "histories/stab003/N1_2026.json",
+  "originalSHA256": "ec1a75d2e823aa8b8cee35d83334267b1a97c68fc4650a4f7b03499cde76cc08",
+  "review": [
+    {
+      "originalIndex": 92,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1793404800000,
+        "lg": "Eredivisie",
+        "H": "sc Heerenveen",
+        "A": "N.E.C. Nijmegen",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "NED",
+          "AwayCountry": "NED",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/NED_1_eredivisie/fixtures_2627.csv",
+              "sha256": "bab3c04d1649d564be3606f692cfaa25d6b8467707abf819ee49a3e5a88d7fad"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 107,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1794096000000,
+        "lg": "Eredivisie",
+        "H": "FC Utrecht",
+        "A": "N.E.C. Nijmegen",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "NED",
+          "AwayCountry": "NED",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/NED_1_eredivisie/fixtures_2627.csv",
+              "sha256": "bab3c04d1649d564be3606f692cfaa25d6b8467707abf819ee49a3e5a88d7fad"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 108,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1795219200000,
+        "lg": "Eredivisie",
+        "H": "N.E.C. Nijmegen",
+        "A": "PSV",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "NED",
+          "AwayCountry": "NED",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/NED_1_eredivisie/fixtures_2627.csv",
+              "sha256": "bab3c04d1649d564be3606f692cfaa25d6b8467707abf819ee49a3e5a88d7fad"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 125,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1795910400000,
+        "lg": "Eredivisie",
+        "H": "N.E.C. Nijmegen",
+        "A": "FC Twente",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "NED",
+          "AwayCountry": "NED",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/NED_1_eredivisie/fixtures_2627.csv",
+              "sha256": "bab3c04d1649d564be3606f692cfaa25d6b8467707abf819ee49a3e5a88d7fad"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 128,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1796428800000,
+        "lg": "Eredivisie",
+        "H": "Sparta Rotterdam",
+        "A": "N.E.C. Nijmegen",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "NED",
+          "AwayCountry": "NED",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/NED_1_eredivisie/fixtures_2627.csv",
+              "sha256": "bab3c04d1649d564be3606f692cfaa25d6b8467707abf819ee49a3e5a88d7fad"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 141,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1797120000000,
+        "lg": "Eredivisie",
+        "H": "AZ",
+        "A": "N.E.C. Nijmegen",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "NED",
+          "AwayCountry": "NED",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/NED_1_eredivisie/fixtures_2627.csv",
+              "sha256": "bab3c04d1649d564be3606f692cfaa25d6b8467707abf819ee49a3e5a88d7fad"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 147,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1797724800000,
+        "lg": "Eredivisie",
+        "H": "N.E.C. Nijmegen",
+        "A": "ADO Den Haag",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "NED",
+          "AwayCountry": "NED",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/NED_1_eredivisie/fixtures_2627.csv",
+              "sha256": "bab3c04d1649d564be3606f692cfaa25d6b8467707abf819ee49a3e5a88d7fad"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 157,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1799539200000,
+        "lg": "Eredivisie",
+        "H": "N.E.C. Nijmegen",
+        "A": "SC Cambuur",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "NED",
+          "AwayCountry": "NED",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/NED_1_eredivisie/fixtures_2627.csv",
+              "sha256": "bab3c04d1649d564be3606f692cfaa25d6b8467707abf819ee49a3e5a88d7fad"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 162,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1800057600000,
+        "lg": "Eredivisie",
+        "H": "Telstar",
+        "A": "N.E.C. Nijmegen",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "NED",
+          "AwayCountry": "NED",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/NED_1_eredivisie/fixtures_2627.csv",
+              "sha256": "bab3c04d1649d564be3606f692cfaa25d6b8467707abf819ee49a3e5a88d7fad"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 176,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1800748800000,
+        "lg": "Eredivisie",
+        "H": "N.E.C. Nijmegen",
+        "A": "Willem II",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "NED",
+          "AwayCountry": "NED",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/NED_1_eredivisie/fixtures_2627.csv",
+              "sha256": "bab3c04d1649d564be3606f692cfaa25d6b8467707abf819ee49a3e5a88d7fad"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 187,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1801353600000,
+        "lg": "Eredivisie",
+        "H": "FC Groningen",
+        "A": "N.E.C. Nijmegen",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "NED",
+          "AwayCountry": "NED",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/NED_1_eredivisie/fixtures_2627.csv",
+              "sha256": "bab3c04d1649d564be3606f692cfaa25d6b8467707abf819ee49a3e5a88d7fad"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 191,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1802476800000,
+        "lg": "Eredivisie",
+        "H": "Feyenoord",
+        "A": "N.E.C. Nijmegen",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "NED",
+          "AwayCountry": "NED",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/NED_1_eredivisie/fixtures_2627.csv",
+              "sha256": "bab3c04d1649d564be3606f692cfaa25d6b8467707abf819ee49a3e5a88d7fad"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 203,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1803081600000,
+        "lg": "Eredivisie",
+        "H": "N.E.C. Nijmegen",
+        "A": "Sparta Rotterdam",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "NED",
+          "AwayCountry": "NED",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/NED_1_eredivisie/fixtures_2627.csv",
+              "sha256": "bab3c04d1649d564be3606f692cfaa25d6b8467707abf819ee49a3e5a88d7fad"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 211,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1803686400000,
+        "lg": "Eredivisie",
+        "H": "N.E.C. Nijmegen",
+        "A": "AZ",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "NED",
+          "AwayCountry": "NED",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/NED_1_eredivisie/fixtures_2627.csv",
+              "sha256": "bab3c04d1649d564be3606f692cfaa25d6b8467707abf819ee49a3e5a88d7fad"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 220,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1804291200000,
+        "lg": "Eredivisie",
+        "H": "Fortuna Sittard",
+        "A": "N.E.C. Nijmegen",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "NED",
+          "AwayCountry": "NED",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/NED_1_eredivisie/fixtures_2627.csv",
+              "sha256": "bab3c04d1649d564be3606f692cfaa25d6b8467707abf819ee49a3e5a88d7fad"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 227,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1804896000000,
+        "lg": "Eredivisie",
+        "H": "Excelsior Rotterdam",
+        "A": "N.E.C. Nijmegen",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "NED",
+          "AwayCountry": "NED",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/NED_1_eredivisie/fixtures_2627.csv",
+              "sha256": "bab3c04d1649d564be3606f692cfaa25d6b8467707abf819ee49a3e5a88d7fad"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 240,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1805500800000,
+        "lg": "Eredivisie",
+        "H": "N.E.C. Nijmegen",
+        "A": "Ajax",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "NED",
+          "AwayCountry": "NED",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/NED_1_eredivisie/fixtures_2627.csv",
+              "sha256": "bab3c04d1649d564be3606f692cfaa25d6b8467707abf819ee49a3e5a88d7fad"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 246,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1806710400000,
+        "lg": "Eredivisie",
+        "H": "Go Ahead Eagles",
+        "A": "N.E.C. Nijmegen",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "NED",
+          "AwayCountry": "NED",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/NED_1_eredivisie/fixtures_2627.csv",
+              "sha256": "bab3c04d1649d564be3606f692cfaa25d6b8467707abf819ee49a3e5a88d7fad"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 255,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1807315200000,
+        "lg": "Eredivisie",
+        "H": "N.E.C. Nijmegen",
+        "A": "sc Heerenveen",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "NED",
+          "AwayCountry": "NED",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/NED_1_eredivisie/fixtures_2627.csv",
+              "sha256": "bab3c04d1649d564be3606f692cfaa25d6b8467707abf819ee49a3e5a88d7fad"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 263,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1808524800000,
+        "lg": "Eredivisie",
+        "H": "FC Twente",
+        "A": "N.E.C. Nijmegen",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "NED",
+          "AwayCountry": "NED",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/NED_1_eredivisie/fixtures_2627.csv",
+              "sha256": "bab3c04d1649d564be3606f692cfaa25d6b8467707abf819ee49a3e5a88d7fad"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 275,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1809129600000,
+        "lg": "Eredivisie",
+        "H": "N.E.C. Nijmegen",
+        "A": "PEC Zwolle",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "NED",
+          "AwayCountry": "NED",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/NED_1_eredivisie/fixtures_2627.csv",
+              "sha256": "bab3c04d1649d564be3606f692cfaa25d6b8467707abf819ee49a3e5a88d7fad"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 279,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1809734400000,
+        "lg": "Eredivisie",
+        "H": "ADO Den Haag",
+        "A": "N.E.C. Nijmegen",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "NED",
+          "AwayCountry": "NED",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/NED_1_eredivisie/fixtures_2627.csv",
+              "sha256": "bab3c04d1649d564be3606f692cfaa25d6b8467707abf819ee49a3e5a88d7fad"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 296,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1810425600000,
+        "lg": "Eredivisie",
+        "H": "PSV",
+        "A": "N.E.C. Nijmegen",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "NED",
+          "AwayCountry": "NED",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/NED_1_eredivisie/fixtures_2627.csv",
+              "sha256": "bab3c04d1649d564be3606f692cfaa25d6b8467707abf819ee49a3e5a88d7fad"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 299,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1811030400000,
+        "lg": "Eredivisie",
+        "H": "N.E.C. Nijmegen",
+        "A": "FC Utrecht",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "NED",
+          "AwayCountry": "NED",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/NED_1_eredivisie/fixtures_2627.csv",
+              "sha256": "bab3c04d1649d564be3606f692cfaa25d6b8467707abf819ee49a3e5a88d7fad"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    }
+  ]
+}

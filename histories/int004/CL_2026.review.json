@@ -1,0 +1,1896 @@
+{
+  "originalPacket": "histories/stab003/CL_2026.json",
+  "originalSHA256": "7ac1aaaf2662affd56bbb72e53f91f927713f86548a7adf63279a38c081b737d",
+  "review": [
+    {
+      "originalIndex": 0,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1788825600000,
+        "lg": "Champions League",
+        "H": "AEK Athens",
+        "A": "LASK",
+        "h": 1,
+        "a": 0,
+        "ht": null,
+        "up": false,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "INT",
+          "AwayCountry": "INT",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/UEFA_1_champions-league/results_2627.csv",
+              "sha256": "1636280b7e222303be80db64b804d1b1f2c7ffc4fd34d094fd24bffdf219323f"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 7,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1788912000000,
+        "lg": "Champions League",
+        "H": "Stuttgart",
+        "A": "Viking",
+        "h": 3,
+        "a": 1,
+        "ht": null,
+        "up": false,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "INT",
+          "AwayCountry": "INT",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/UEFA_1_champions-league/results_2627.csv",
+              "sha256": "1636280b7e222303be80db64b804d1b1f2c7ffc4fd34d094fd24bffdf219323f"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 8,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1788912000000,
+        "lg": "Champions League",
+        "H": "Liverpool",
+        "A": "Atleti",
+        "h": 2,
+        "a": 1,
+        "ht": null,
+        "up": false,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "INT",
+          "AwayCountry": "INT",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/UEFA_1_champions-league/results_2627.csv",
+              "sha256": "1636280b7e222303be80db64b804d1b1f2c7ffc4fd34d094fd24bffdf219323f"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 10,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1788912000000,
+        "lg": "Champions League",
+        "H": "Paris",
+        "A": "S. Bratislava",
+        "h": 6,
+        "a": 1,
+        "ht": null,
+        "up": false,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "INT",
+          "AwayCountry": "INT",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/UEFA_1_champions-league/results_2627.csv",
+              "sha256": "1636280b7e222303be80db64b804d1b1f2c7ffc4fd34d094fd24bffdf219323f"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 13,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1788998400000,
+        "lg": "Champions League",
+        "H": "PSV",
+        "A": "Shakhtar",
+        "h": 1,
+        "a": 1,
+        "ht": null,
+        "up": false,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "INT",
+          "AwayCountry": "INT",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/UEFA_1_champions-league/results_2627.csv",
+              "sha256": "1636280b7e222303be80db64b804d1b1f2c7ffc4fd34d094fd24bffdf219323f"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 14,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1788998400000,
+        "lg": "Champions League",
+        "H": "Bayern München",
+        "A": "Bodø/Glimt",
+        "h": 5,
+        "a": 0,
+        "ht": null,
+        "up": false,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "INT",
+          "AwayCountry": "INT",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/UEFA_1_champions-league/results_2627.csv",
+              "sha256": "1636280b7e222303be80db64b804d1b1f2c7ffc4fd34d094fd24bffdf219323f"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 16,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1788998400000,
+        "lg": "Champions League",
+        "H": "Man Utd",
+        "A": "Sabah",
+        "h": 4,
+        "a": 0,
+        "ht": null,
+        "up": false,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "INT",
+          "AwayCountry": "INT",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/UEFA_1_champions-league/results_2627.csv",
+              "sha256": "1636280b7e222303be80db64b804d1b1f2c7ffc4fd34d094fd24bffdf219323f"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 17,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1788998400000,
+        "lg": "Champions League",
+        "H": "Slavia Praha",
+        "A": "Lens",
+        "h": 2,
+        "a": 3,
+        "ht": null,
+        "up": false,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "INT",
+          "AwayCountry": "INT",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/UEFA_1_champions-league/results_2627.csv",
+              "sha256": "1636280b7e222303be80db64b804d1b1f2c7ffc4fd34d094fd24bffdf219323f"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 19,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1791849600000,
+        "lg": "Champions League",
+        "H": "Sabah",
+        "A": "Slavia Praha",
+        "h": 2,
+        "a": 0,
+        "ht": null,
+        "up": false,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "INT",
+          "AwayCountry": "INT",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/UEFA_1_champions-league/results_2627.csv",
+              "sha256": "1636280b7e222303be80db64b804d1b1f2c7ffc4fd34d094fd24bffdf219323f"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 21,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1791849600000,
+        "lg": "Champions League",
+        "H": "Atleti",
+        "A": "Man Utd",
+        "h": 2,
+        "a": 0,
+        "ht": null,
+        "up": false,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "INT",
+          "AwayCountry": "INT",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/UEFA_1_champions-league/results_2627.csv",
+              "sha256": "1636280b7e222303be80db64b804d1b1f2c7ffc4fd34d094fd24bffdf219323f"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 25,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1791849600000,
+        "lg": "Champions League",
+        "H": "Viking",
+        "A": "Bayern München",
+        "h": 3,
+        "a": 3,
+        "ht": null,
+        "up": false,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "INT",
+          "AwayCountry": "INT",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/UEFA_1_champions-league/results_2627.csv",
+              "sha256": "1636280b7e222303be80db64b804d1b1f2c7ffc4fd34d094fd24bffdf219323f"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 28,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1791936000000,
+        "lg": "Champions League",
+        "H": "LASK",
+        "A": "Liverpool",
+        "h": 3,
+        "a": 6,
+        "ht": null,
+        "up": false,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "INT",
+          "AwayCountry": "INT",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/UEFA_1_champions-league/results_2627.csv",
+              "sha256": "1636280b7e222303be80db64b804d1b1f2c7ffc4fd34d094fd24bffdf219323f"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 30,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1791936000000,
+        "lg": "Champions League",
+        "H": "Bodø/Glimt",
+        "A": "B. Dortmund",
+        "h": 1,
+        "a": 0,
+        "ht": null,
+        "up": false,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "INT",
+          "AwayCountry": "INT",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/UEFA_1_champions-league/results_2627.csv",
+              "sha256": "1636280b7e222303be80db64b804d1b1f2c7ffc4fd34d094fd24bffdf219323f"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 34,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1791936000000,
+        "lg": "Champions League",
+        "H": "S. Bratislava",
+        "A": "Stuttgart",
+        "h": 0,
+        "a": 3,
+        "ht": null,
+        "up": false,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "INT",
+          "AwayCountry": "INT",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/UEFA_1_champions-league/results_2627.csv",
+              "sha256": "1636280b7e222303be80db64b804d1b1f2c7ffc4fd34d094fd24bffdf219323f"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 35,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1791936000000,
+        "lg": "Champions League",
+        "H": "Shakhtar",
+        "A": "AEK Athens",
+        "h": 3,
+        "a": 1,
+        "ht": null,
+        "up": false,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "INT",
+          "AwayCountry": "INT",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/UEFA_1_champions-league/results_2627.csv",
+              "sha256": "1636280b7e222303be80db64b804d1b1f2c7ffc4fd34d094fd24bffdf219323f"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 36,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1792454400000,
+        "lg": "Champions League",
+        "H": "Fenerbahçe",
+        "A": "Slavia Praha",
+        "h": 2,
+        "a": 2,
+        "ht": null,
+        "up": false,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "INT",
+          "AwayCountry": "INT",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/UEFA_1_champions-league/results_2627.csv",
+              "sha256": "1636280b7e222303be80db64b804d1b1f2c7ffc4fd34d094fd24bffdf219323f"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 37,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1792454400000,
+        "lg": "Champions League",
+        "H": "Sabah",
+        "A": "B. Dortmund",
+        "h": 1,
+        "a": 2,
+        "ht": null,
+        "up": false,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "INT",
+          "AwayCountry": "INT",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/UEFA_1_champions-league/results_2627.csv",
+              "sha256": "1636280b7e222303be80db64b804d1b1f2c7ffc4fd34d094fd24bffdf219323f"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 39,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1792454400000,
+        "lg": "Champions League",
+        "H": "Man City",
+        "A": "AEK Athens",
+        "h": 5,
+        "a": 1,
+        "ht": null,
+        "up": false,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "INT",
+          "AwayCountry": "INT",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/UEFA_1_champions-league/results_2627.csv",
+              "sha256": "1636280b7e222303be80db64b804d1b1f2c7ffc4fd34d094fd24bffdf219323f"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 40,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1792454400000,
+        "lg": "Champions League",
+        "H": "Napoli",
+        "A": "Bodø/Glimt",
+        "h": 4,
+        "a": 3,
+        "ht": null,
+        "up": false,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "INT",
+          "AwayCountry": "INT",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/UEFA_1_champions-league/results_2627.csv",
+              "sha256": "1636280b7e222303be80db64b804d1b1f2c7ffc4fd34d094fd24bffdf219323f"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 43,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1792454400000,
+        "lg": "Champions League",
+        "H": "Roma",
+        "A": "S. Bratislava",
+        "h": 4,
+        "a": 0,
+        "ht": null,
+        "up": false,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "INT",
+          "AwayCountry": "INT",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/UEFA_1_champions-league/results_2627.csv",
+              "sha256": "1636280b7e222303be80db64b804d1b1f2c7ffc4fd34d094fd24bffdf219323f"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 44,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1792454400000,
+        "lg": "Champions League",
+        "H": "Stuttgart",
+        "A": "Atleti",
+        "h": 1,
+        "a": 1,
+        "ht": null,
+        "up": false,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "INT",
+          "AwayCountry": "INT",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/UEFA_1_champions-league/results_2627.csv",
+              "sha256": "1636280b7e222303be80db64b804d1b1f2c7ffc4fd34d094fd24bffdf219323f"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 47,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1792540800000,
+        "lg": "Champions League",
+        "H": "Aston Villa",
+        "A": "Viking",
+        "h": 3,
+        "a": 1,
+        "ht": null,
+        "up": false,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "INT",
+          "AwayCountry": "INT",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/UEFA_1_champions-league/results_2627.csv",
+              "sha256": "1636280b7e222303be80db64b804d1b1f2c7ffc4fd34d094fd24bffdf219323f"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 50,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1792540800000,
+        "lg": "Champions League",
+        "H": "Inter",
+        "A": "Shakhtar",
+        "h": 1,
+        "a": 0,
+        "ht": null,
+        "up": false,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "INT",
+          "AwayCountry": "INT",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/UEFA_1_champions-league/results_2627.csv",
+              "sha256": "1636280b7e222303be80db64b804d1b1f2c7ffc4fd34d094fd24bffdf219323f"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 53,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1792540800000,
+        "lg": "Champions League",
+        "H": "Sporting CP",
+        "A": "LASK",
+        "h": 2,
+        "a": 3,
+        "ht": null,
+        "up": false,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "INT",
+          "AwayCountry": "INT",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/UEFA_1_champions-league/results_2627.csv",
+              "sha256": "1636280b7e222303be80db64b804d1b1f2c7ffc4fd34d094fd24bffdf219323f"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 55,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1793664000000,
+        "lg": "Champions League",
+        "H": "Shakhtar",
+        "A": "Sporting CP",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "INT",
+          "AwayCountry": "INT",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/UEFA_1_champions-league/fixtures_2627.csv",
+              "sha256": "b1893f7264b9fbdd8519e4ba9293ffd9e6de54210299ccee59f80aa3922f16a3"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 56,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1793664000000,
+        "lg": "Champions League",
+        "H": "Atleti",
+        "A": "Bayern München",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "INT",
+          "AwayCountry": "INT",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/UEFA_1_champions-league/fixtures_2627.csv",
+              "sha256": "b1893f7264b9fbdd8519e4ba9293ffd9e6de54210299ccee59f80aa3922f16a3"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 58,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1793664000000,
+        "lg": "Champions League",
+        "H": "Bodø/Glimt",
+        "A": "Lille",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "INT",
+          "AwayCountry": "INT",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/UEFA_1_champions-league/fixtures_2627.csv",
+              "sha256": "b1893f7264b9fbdd8519e4ba9293ffd9e6de54210299ccee59f80aa3922f16a3"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 60,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1793664000000,
+        "lg": "Champions League",
+        "H": "LASK",
+        "A": "S. Bratislava",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "INT",
+          "AwayCountry": "INT",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/UEFA_1_champions-league/fixtures_2627.csv",
+              "sha256": "b1893f7264b9fbdd8519e4ba9293ffd9e6de54210299ccee59f80aa3922f16a3"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 63,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1793750400000,
+        "lg": "Champions League",
+        "H": "AEK Athens",
+        "A": "Real Madrid",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "INT",
+          "AwayCountry": "INT",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/UEFA_1_champions-league/fixtures_2627.csv",
+              "sha256": "b1893f7264b9fbdd8519e4ba9293ffd9e6de54210299ccee59f80aa3922f16a3"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 70,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1793750400000,
+        "lg": "Champions League",
+        "H": "Slavia Praha",
+        "A": "Arsenal",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "INT",
+          "AwayCountry": "INT",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/UEFA_1_champions-league/fixtures_2627.csv",
+              "sha256": "b1893f7264b9fbdd8519e4ba9293ffd9e6de54210299ccee59f80aa3922f16a3"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 71,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1793750400000,
+        "lg": "Champions League",
+        "H": "Viking",
+        "A": "Sabah",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "INT",
+          "AwayCountry": "INT",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/UEFA_1_champions-league/fixtures_2627.csv",
+              "sha256": "b1893f7264b9fbdd8519e4ba9293ffd9e6de54210299ccee59f80aa3922f16a3"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 72,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1795478400000,
+        "lg": "Champions League",
+        "H": "Bodø/Glimt",
+        "A": "LASK",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "INT",
+          "AwayCountry": "INT",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/UEFA_1_champions-league/fixtures_2627.csv",
+              "sha256": "b1893f7264b9fbdd8519e4ba9293ffd9e6de54210299ccee59f80aa3922f16a3"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 75,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1795478400000,
+        "lg": "Champions League",
+        "H": "Como",
+        "A": "AEK Athens",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "INT",
+          "AwayCountry": "INT",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/UEFA_1_champions-league/fixtures_2627.csv",
+              "sha256": "b1893f7264b9fbdd8519e4ba9293ffd9e6de54210299ccee59f80aa3922f16a3"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 80,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1795478400000,
+        "lg": "Champions League",
+        "H": "S. Bratislava",
+        "A": "Real Betis",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "INT",
+          "AwayCountry": "INT",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/UEFA_1_champions-league/fixtures_2627.csv",
+              "sha256": "b1893f7264b9fbdd8519e4ba9293ffd9e6de54210299ccee59f80aa3922f16a3"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 81,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1795564800000,
+        "lg": "Champions League",
+        "H": "Sabah",
+        "A": "Barcelona",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "INT",
+          "AwayCountry": "INT",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/UEFA_1_champions-league/fixtures_2627.csv",
+              "sha256": "b1893f7264b9fbdd8519e4ba9293ffd9e6de54210299ccee59f80aa3922f16a3"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 82,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1795564800000,
+        "lg": "Champions League",
+        "H": "Slavia Praha",
+        "A": "Villarreal",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "INT",
+          "AwayCountry": "INT",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/UEFA_1_champions-league/fixtures_2627.csv",
+              "sha256": "b1893f7264b9fbdd8519e4ba9293ffd9e6de54210299ccee59f80aa3922f16a3"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 83,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1795564800000,
+        "lg": "Champions League",
+        "H": "Atleti",
+        "A": "Viking",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "INT",
+          "AwayCountry": "INT",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/UEFA_1_champions-league/fixtures_2627.csv",
+              "sha256": "b1893f7264b9fbdd8519e4ba9293ffd9e6de54210299ccee59f80aa3922f16a3"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 88,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1795564800000,
+        "lg": "Champions League",
+        "H": "Shakhtar",
+        "A": "Fenerbahçe",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "INT",
+          "AwayCountry": "INT",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/UEFA_1_champions-league/fixtures_2627.csv",
+              "sha256": "b1893f7264b9fbdd8519e4ba9293ffd9e6de54210299ccee59f80aa3922f16a3"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 90,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1796688000000,
+        "lg": "Champions League",
+        "H": "Viking",
+        "A": "Feyenoord",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "INT",
+          "AwayCountry": "INT",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/UEFA_1_champions-league/fixtures_2627.csv",
+              "sha256": "b1893f7264b9fbdd8519e4ba9293ffd9e6de54210299ccee59f80aa3922f16a3"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 91,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1796688000000,
+        "lg": "Champions League",
+        "H": "Villarreal",
+        "A": "Sabah",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "INT",
+          "AwayCountry": "INT",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/UEFA_1_champions-league/fixtures_2627.csv",
+              "sha256": "b1893f7264b9fbdd8519e4ba9293ffd9e6de54210299ccee59f80aa3922f16a3"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 92,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1796688000000,
+        "lg": "Champions League",
+        "H": "AEK Athens",
+        "A": "Galatasaray",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "INT",
+          "AwayCountry": "INT",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/UEFA_1_champions-league/fixtures_2627.csv",
+              "sha256": "b1893f7264b9fbdd8519e4ba9293ffd9e6de54210299ccee59f80aa3922f16a3"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 95,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1796688000000,
+        "lg": "Champions League",
+        "H": "Bayern München",
+        "A": "Slavia Praha",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "INT",
+          "AwayCountry": "INT",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/UEFA_1_champions-league/fixtures_2627.csv",
+              "sha256": "b1893f7264b9fbdd8519e4ba9293ffd9e6de54210299ccee59f80aa3922f16a3"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 100,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1796774400000,
+        "lg": "Champions League",
+        "H": "S. Bratislava",
+        "A": "Shakhtar",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "INT",
+          "AwayCountry": "INT",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/UEFA_1_champions-league/fixtures_2627.csv",
+              "sha256": "b1893f7264b9fbdd8519e4ba9293ffd9e6de54210299ccee59f80aa3922f16a3"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 103,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1796774400000,
+        "lg": "Champions League",
+        "H": "LASK",
+        "A": "Fenerbahçe",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "INT",
+          "AwayCountry": "INT",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/UEFA_1_champions-league/fixtures_2627.csv",
+              "sha256": "b1893f7264b9fbdd8519e4ba9293ffd9e6de54210299ccee59f80aa3922f16a3"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 104,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1796774400000,
+        "lg": "Champions League",
+        "H": "Lens",
+        "A": "Bodø/Glimt",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "INT",
+          "AwayCountry": "INT",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/UEFA_1_champions-league/fixtures_2627.csv",
+              "sha256": "b1893f7264b9fbdd8519e4ba9293ffd9e6de54210299ccee59f80aa3922f16a3"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 106,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1796774400000,
+        "lg": "Champions League",
+        "H": "PSV",
+        "A": "Atleti",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "INT",
+          "AwayCountry": "INT",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/UEFA_1_champions-league/fixtures_2627.csv",
+              "sha256": "b1893f7264b9fbdd8519e4ba9293ffd9e6de54210299ccee59f80aa3922f16a3"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 108,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1800316800000,
+        "lg": "Champions League",
+        "H": "Bodø/Glimt",
+        "A": "Atleti",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "INT",
+          "AwayCountry": "INT",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/UEFA_1_champions-league/fixtures_2627.csv",
+              "sha256": "b1893f7264b9fbdd8519e4ba9293ffd9e6de54210299ccee59f80aa3922f16a3"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 110,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1800316800000,
+        "lg": "Champions League",
+        "H": "AEK Athens",
+        "A": "Roma",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "INT",
+          "AwayCountry": "INT",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/UEFA_1_champions-league/fixtures_2627.csv",
+              "sha256": "b1893f7264b9fbdd8519e4ba9293ffd9e6de54210299ccee59f80aa3922f16a3"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 113,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1800316800000,
+        "lg": "Champions League",
+        "H": "Lille",
+        "A": "S. Bratislava",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "INT",
+          "AwayCountry": "INT",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/UEFA_1_champions-league/fixtures_2627.csv",
+              "sha256": "b1893f7264b9fbdd8519e4ba9293ffd9e6de54210299ccee59f80aa3922f16a3"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 114,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1800316800000,
+        "lg": "Champions League",
+        "H": "Porto",
+        "A": "Slavia Praha",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "INT",
+          "AwayCountry": "INT",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/UEFA_1_champions-league/fixtures_2627.csv",
+              "sha256": "b1893f7264b9fbdd8519e4ba9293ffd9e6de54210299ccee59f80aa3922f16a3"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 115,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1800316800000,
+        "lg": "Champions League",
+        "H": "Real Madrid",
+        "A": "LASK",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "INT",
+          "AwayCountry": "INT",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/UEFA_1_champions-league/fixtures_2627.csv",
+              "sha256": "b1893f7264b9fbdd8519e4ba9293ffd9e6de54210299ccee59f80aa3922f16a3"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 118,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1800403200000,
+        "lg": "Champions League",
+        "H": "Sabah",
+        "A": "Napoli",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "INT",
+          "AwayCountry": "INT",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/UEFA_1_champions-league/fixtures_2627.csv",
+              "sha256": "b1893f7264b9fbdd8519e4ba9293ffd9e6de54210299ccee59f80aa3922f16a3"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 120,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1800403200000,
+        "lg": "Champions League",
+        "H": "Leipzig",
+        "A": "Shakhtar",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "INT",
+          "AwayCountry": "INT",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/UEFA_1_champions-league/fixtures_2627.csv",
+              "sha256": "b1893f7264b9fbdd8519e4ba9293ffd9e6de54210299ccee59f80aa3922f16a3"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 125,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1800403200000,
+        "lg": "Champions League",
+        "H": "Viking",
+        "A": "PSV",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "INT",
+          "AwayCountry": "INT",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/UEFA_1_champions-league/fixtures_2627.csv",
+              "sha256": "b1893f7264b9fbdd8519e4ba9293ffd9e6de54210299ccee59f80aa3922f16a3"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 126,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1801008000000,
+        "lg": "Champions League",
+        "H": "Arsenal",
+        "A": "Sabah",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "INT",
+          "AwayCountry": "INT",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/UEFA_1_champions-league/fixtures_2627.csv",
+              "sha256": "b1893f7264b9fbdd8519e4ba9293ffd9e6de54210299ccee59f80aa3922f16a3"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 127,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1801008000000,
+        "lg": "Champions League",
+        "H": "Atleti",
+        "A": "Fenerbahçe",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "INT",
+          "AwayCountry": "INT",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/UEFA_1_champions-league/fixtures_2627.csv",
+              "sha256": "b1893f7264b9fbdd8519e4ba9293ffd9e6de54210299ccee59f80aa3922f16a3"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 128,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1801008000000,
+        "lg": "Champions League",
+        "H": "B. Dortmund",
+        "A": "AEK Athens",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "INT",
+          "AwayCountry": "INT",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/UEFA_1_champions-league/fixtures_2627.csv",
+              "sha256": "b1893f7264b9fbdd8519e4ba9293ffd9e6de54210299ccee59f80aa3922f16a3"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 131,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1801008000000,
+        "lg": "Champions League",
+        "H": "Club Brugge",
+        "A": "Bodø/Glimt",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "INT",
+          "AwayCountry": "INT",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/UEFA_1_champions-league/fixtures_2627.csv",
+              "sha256": "b1893f7264b9fbdd8519e4ba9293ffd9e6de54210299ccee59f80aa3922f16a3"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 133,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1801008000000,
+        "lg": "Champions League",
+        "H": "LASK",
+        "A": "Porto",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "INT",
+          "AwayCountry": "INT",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/UEFA_1_champions-league/fixtures_2627.csv",
+              "sha256": "b1893f7264b9fbdd8519e4ba9293ffd9e6de54210299ccee59f80aa3922f16a3"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 136,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1801008000000,
+        "lg": "Champions League",
+        "H": "Napoli",
+        "A": "Viking",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "INT",
+          "AwayCountry": "INT",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/UEFA_1_champions-league/fixtures_2627.csv",
+              "sha256": "b1893f7264b9fbdd8519e4ba9293ffd9e6de54210299ccee59f80aa3922f16a3"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 140,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1801008000000,
+        "lg": "Champions League",
+        "H": "S. Bratislava",
+        "A": "Inter",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "INT",
+          "AwayCountry": "INT",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/UEFA_1_champions-league/fixtures_2627.csv",
+              "sha256": "b1893f7264b9fbdd8519e4ba9293ffd9e6de54210299ccee59f80aa3922f16a3"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 141,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1801008000000,
+        "lg": "Champions League",
+        "H": "Shakhtar",
+        "A": "Real Madrid",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "INT",
+          "AwayCountry": "INT",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/UEFA_1_champions-league/fixtures_2627.csv",
+              "sha256": "b1893f7264b9fbdd8519e4ba9293ffd9e6de54210299ccee59f80aa3922f16a3"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 142,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1801008000000,
+        "lg": "Champions League",
+        "H": "Slavia Praha",
+        "A": "Aston Villa",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "INT",
+          "AwayCountry": "INT",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/UEFA_1_champions-league/fixtures_2627.csv",
+              "sha256": "b1893f7264b9fbdd8519e4ba9293ffd9e6de54210299ccee59f80aa3922f16a3"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "originalProposalRows": 35022,
+  "conservativeRows": 34673,
+  "analysisUsable": 34627,
+  "consolidated": 349,
+  "retainedReview": 46,
+  "coverageStates": {
+    "completo verificato": 14,
+    "parziale": 95,
+    "non verificabile": 29
+  },
+  "originalUnchanged": true,
+  "personalRecordsPublished": false
+}

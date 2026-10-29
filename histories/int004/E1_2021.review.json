@@ -1,0 +1,38 @@
+{
+  "originalPacket": "histories/stab003/E1_2021.json",
+  "originalSHA256": "c94fe7910c78e2f3f8cf1e4663a5c29e2e2e5fa5bc6b500036cadf4a2fa6af78",
+  "review": [
+    {
+      "originalIndex": 555,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1652745600000,
+        "lg": "Championship",
+        "H": "Nottingham Forest FC",
+        "A": "1-2 a.e.t. (1-2, 1-0)  Sheffield United FC",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "Playoffs",
+          "HomeCountry": "ENG",
+          "AwayCountry": "ENG",
+          "PublishedRound": "Playoffs",
+          "CupScoreEvidence": "3-2 pen.",
+          "CsvSeason": 2021,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/england/master/2021-22/2-championship.txt",
+              "sha256": "cfad00fd132faba713a1c2928670b8df790adafe838989d437d40f716a4c0beb"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    }
+  ]
+}

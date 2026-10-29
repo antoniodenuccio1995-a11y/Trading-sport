@@ -1,0 +1,618 @@
+{
+  "originalPacket": "histories/stab003/T1_2026.json",
+  "originalSHA256": "cecb7e8ffcee5a2ed0ced05f2da6d696375dcd8af1adf120e928bed8986a9147",
+  "review": [
+    {
+      "originalIndex": 1,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1786752000000,
+        "lg": "Süper Lig",
+        "H": "Kasimpasa",
+        "A": "Trabzonspor",
+        "h": 1,
+        "a": 1,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2026,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2627/T1.csv",
+          "HistSourceSHA256": "c307b0cc913901a1821d8f8e6fa0f628e50113561a5a3d0ec6bbdb6834a1cdae",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2627/T1.csv",
+              "sha256": "c307b0cc913901a1821d8f8e6fa0f628e50113561a5a3d0ec6bbdb6834a1cdae"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 1,
+        "shots": [
+          9,
+          13,
+          4,
+          5
+        ]
+      }
+    },
+    {
+      "originalIndex": 6,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1786838400000,
+        "lg": "Süper Lig",
+        "H": "Amedspor",
+        "A": "Erzurumspor",
+        "h": 3,
+        "a": 0,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2026,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2627/T1.csv",
+          "HistSourceSHA256": "c307b0cc913901a1821d8f8e6fa0f628e50113561a5a3d0ec6bbdb6834a1cdae",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2627/T1.csv",
+              "sha256": "c307b0cc913901a1821d8f8e6fa0f628e50113561a5a3d0ec6bbdb6834a1cdae"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          13,
+          5,
+          5,
+          1
+        ]
+      }
+    },
+    {
+      "originalIndex": 10,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1787356800000,
+        "lg": "Süper Lig",
+        "H": "Corum",
+        "A": "Kasimpasa",
+        "h": 0,
+        "a": 1,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2026,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2627/T1.csv",
+          "HistSourceSHA256": "c307b0cc913901a1821d8f8e6fa0f628e50113561a5a3d0ec6bbdb6834a1cdae",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2627/T1.csv",
+              "sha256": "c307b0cc913901a1821d8f8e6fa0f628e50113561a5a3d0ec6bbdb6834a1cdae"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 1,
+        "shots": [
+          16,
+          6,
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "originalIndex": 17,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1787529600000,
+        "lg": "Süper Lig",
+        "H": "Kocaelispor",
+        "A": "Amedspor",
+        "h": 2,
+        "a": 0,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2026,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2627/T1.csv",
+          "HistSourceSHA256": "c307b0cc913901a1821d8f8e6fa0f628e50113561a5a3d0ec6bbdb6834a1cdae",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2627/T1.csv",
+              "sha256": "c307b0cc913901a1821d8f8e6fa0f628e50113561a5a3d0ec6bbdb6834a1cdae"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": [
+          11,
+          12,
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "originalIndex": 23,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1788048000000,
+        "lg": "Süper Lig",
+        "H": "Buyuksehyr",
+        "A": "Kasimpasa",
+        "h": 1,
+        "a": 1,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2026,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2627/T1.csv",
+          "HistSourceSHA256": "c307b0cc913901a1821d8f8e6fa0f628e50113561a5a3d0ec6bbdb6834a1cdae",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2627/T1.csv",
+              "sha256": "c307b0cc913901a1821d8f8e6fa0f628e50113561a5a3d0ec6bbdb6834a1cdae"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": [
+          12,
+          12,
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "originalIndex": 25,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1788134400000,
+        "lg": "Süper Lig",
+        "H": "Amedspor",
+        "A": "Trabzonspor",
+        "h": 2,
+        "a": 1,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "CsvSeason": 2026,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2627/T1.csv",
+          "HistSourceSHA256": "c307b0cc913901a1821d8f8e6fa0f628e50113561a5a3d0ec6bbdb6834a1cdae",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2627/T1.csv",
+              "sha256": "c307b0cc913901a1821d8f8e6fa0f628e50113561a5a3d0ec6bbdb6834a1cdae"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 1,
+        "shots": [
+          17,
+          8,
+          7,
+          5
+        ]
+      }
+    },
+    {
+      "originalIndex": 31,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1788652800000,
+        "lg": "Süper Lig",
+        "H": "Kasimpasa",
+        "A": "Amedspor",
+        "h": 2,
+        "a": 2,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2026,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2627/T1.csv",
+          "HistSourceSHA256": "c307b0cc913901a1821d8f8e6fa0f628e50113561a5a3d0ec6bbdb6834a1cdae",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2627/T1.csv",
+              "sha256": "c307b0cc913901a1821d8f8e6fa0f628e50113561a5a3d0ec6bbdb6834a1cdae"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": [
+          14,
+          14,
+          7,
+          4
+        ]
+      }
+    },
+    {
+      "originalIndex": 41,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1789257600000,
+        "lg": "Süper Lig",
+        "H": "Genclerbirligi",
+        "A": "Kasimpasa",
+        "h": 1,
+        "a": 2,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2026,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2627/T1.csv",
+          "HistSourceSHA256": "c307b0cc913901a1821d8f8e6fa0f628e50113561a5a3d0ec6bbdb6834a1cdae",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2627/T1.csv",
+              "sha256": "c307b0cc913901a1821d8f8e6fa0f628e50113561a5a3d0ec6bbdb6834a1cdae"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": [
+          15,
+          16,
+          5,
+          3
+        ]
+      }
+    },
+    {
+      "originalIndex": 42,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1789257600000,
+        "lg": "Süper Lig",
+        "H": "Amedspor",
+        "A": "Buyuksehyr",
+        "h": 5,
+        "a": 0,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2026,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2627/T1.csv",
+          "HistSourceSHA256": "c307b0cc913901a1821d8f8e6fa0f628e50113561a5a3d0ec6bbdb6834a1cdae",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2627/T1.csv",
+              "sha256": "c307b0cc913901a1821d8f8e6fa0f628e50113561a5a3d0ec6bbdb6834a1cdae"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": [
+          22,
+          7,
+          6,
+          1
+        ]
+      }
+    },
+    {
+      "originalIndex": 45,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1789689600000,
+        "lg": "Süper Lig",
+        "H": "Kasimpasa",
+        "A": "Konyaspor",
+        "h": 0,
+        "a": 0,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2026,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2627/T1.csv",
+          "HistSourceSHA256": "c307b0cc913901a1821d8f8e6fa0f628e50113561a5a3d0ec6bbdb6834a1cdae",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2627/T1.csv",
+              "sha256": "c307b0cc913901a1821d8f8e6fa0f628e50113561a5a3d0ec6bbdb6834a1cdae"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          13,
+          11,
+          2,
+          4
+        ]
+      }
+    },
+    {
+      "originalIndex": 52,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1789862400000,
+        "lg": "Süper Lig",
+        "H": "Amedspor",
+        "A": "Besiktas",
+        "h": 3,
+        "a": 2,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "CsvSeason": 2026,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2627/T1.csv",
+          "HistSourceSHA256": "c307b0cc913901a1821d8f8e6fa0f628e50113561a5a3d0ec6bbdb6834a1cdae",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2627/T1.csv",
+              "sha256": "c307b0cc913901a1821d8f8e6fa0f628e50113561a5a3d0ec6bbdb6834a1cdae"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 2,
+        "hta": 0,
+        "shots": [
+          10,
+          21,
+          8,
+          8
+        ]
+      }
+    },
+    {
+      "originalIndex": 54,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1791504000000,
+        "lg": "Süper Lig",
+        "H": "Galatasaray",
+        "A": "Kasimpasa",
+        "h": 3,
+        "a": 1,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2026,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2627/T1.csv",
+          "HistSourceSHA256": "c307b0cc913901a1821d8f8e6fa0f628e50113561a5a3d0ec6bbdb6834a1cdae",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2627/T1.csv",
+              "sha256": "c307b0cc913901a1821d8f8e6fa0f628e50113561a5a3d0ec6bbdb6834a1cdae"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": [
+          25,
+          9,
+          11,
+          3
+        ]
+      }
+    },
+    {
+      "originalIndex": 55,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1791590400000,
+        "lg": "Süper Lig",
+        "H": "Genclerbirligi",
+        "A": "Amedspor",
+        "h": 2,
+        "a": 2,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2026,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2627/T1.csv",
+          "HistSourceSHA256": "c307b0cc913901a1821d8f8e6fa0f628e50113561a5a3d0ec6bbdb6834a1cdae",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2627/T1.csv",
+              "sha256": "c307b0cc913901a1821d8f8e6fa0f628e50113561a5a3d0ec6bbdb6834a1cdae"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 1,
+        "shots": [
+          11,
+          19,
+          4,
+          5
+        ]
+      }
+    },
+    {
+      "originalIndex": 65,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1792195200000,
+        "lg": "Süper Lig",
+        "H": "Amedspor",
+        "A": "Konyaspor",
+        "h": 1,
+        "a": 0,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2026,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2627/T1.csv",
+          "HistSourceSHA256": "c307b0cc913901a1821d8f8e6fa0f628e50113561a5a3d0ec6bbdb6834a1cdae",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2627/T1.csv",
+              "sha256": "c307b0cc913901a1821d8f8e6fa0f628e50113561a5a3d0ec6bbdb6834a1cdae"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          13,
+          4,
+          4,
+          1
+        ]
+      }
+    },
+    {
+      "originalIndex": 68,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1792281600000,
+        "lg": "Süper Lig",
+        "H": "Kasimpasa",
+        "A": "Samsunspor",
+        "h": 4,
+        "a": 1,
+        "ht": 3,
+        "up": false,
+        "o": {
+          "CsvSeason": 2026,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2627/T1.csv",
+          "HistSourceSHA256": "c307b0cc913901a1821d8f8e6fa0f628e50113561a5a3d0ec6bbdb6834a1cdae",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2627/T1.csv",
+              "sha256": "c307b0cc913901a1821d8f8e6fa0f628e50113561a5a3d0ec6bbdb6834a1cdae"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 2,
+        "hta": 1,
+        "shots": [
+          23,
+          12,
+          9,
+          4
+        ]
+      }
+    },
+    {
+      "originalIndex": 73,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1792800000000,
+        "lg": "Süper Lig",
+        "H": "Eyupspor",
+        "A": "Kasimpasa",
+        "h": 0,
+        "a": 1,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2026,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2627/T1.csv",
+          "HistSourceSHA256": "c307b0cc913901a1821d8f8e6fa0f628e50113561a5a3d0ec6bbdb6834a1cdae",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2627/T1.csv",
+              "sha256": "c307b0cc913901a1821d8f8e6fa0f628e50113561a5a3d0ec6bbdb6834a1cdae"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 1,
+        "shots": [
+          12,
+          10,
+          4,
+          4
+        ]
+      }
+    },
+    {
+      "originalIndex": 75,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1792800000000,
+        "lg": "Süper Lig",
+        "H": "Samsunspor",
+        "A": "Amedspor",
+        "h": 1,
+        "a": 2,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2026,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2627/T1.csv",
+          "HistSourceSHA256": "c307b0cc913901a1821d8f8e6fa0f628e50113561a5a3d0ec6bbdb6834a1cdae",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2627/T1.csv",
+              "sha256": "c307b0cc913901a1821d8f8e6fa0f628e50113561a5a3d0ec6bbdb6834a1cdae"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": [
+          10,
+          22,
+          3,
+          6
+        ]
+      }
+    }
+  ]
+}

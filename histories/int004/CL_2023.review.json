@@ -1,0 +1,2301 @@
+{
+  "originalPacket": "histories/stab003/CL_2023.json",
+  "originalSHA256": "d12175f46088e474d5f00cadd7e8b905fb8d0270995b00d78add306e6b466812",
+  "review": [
+    {
+      "originalIndex": 0,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1695081600000,
+        "lg": "Champions League",
+        "H": "AC Milan (ITA)",
+        "A": "Newcastle United FC",
+        "h": 0,
+        "a": 0,
+        "ht": null,
+        "up": false,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "INT",
+          "AwayCountry": "ENG",
+          "PublishedRound": "Group, Matchday 1",
+          "CsvSeason": 2023,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2023-24/cl.txt",
+              "sha256": "5872bee720b32410f28c5272fb7fe7b07aa0f66bcb31ffe157893d75c14c47c5"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 1,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1695081600000,
+        "lg": "Champions League",
+        "H": "BSC Young Boys (SUI)",
+        "A": "RB Leipzig",
+        "h": 1,
+        "a": 3,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "INT",
+          "AwayCountry": "GER",
+          "PublishedRound": "Group, Matchday 1",
+          "CsvSeason": 2023,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2023-24/cl.txt",
+              "sha256": "5872bee720b32410f28c5272fb7fe7b07aa0f66bcb31ffe157893d75c14c47c5"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 2,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1695081600000,
+        "lg": "Champions League",
+        "H": "SS Lazio (ITA)",
+        "A": "Club Atlético de Madrid",
+        "h": 1,
+        "a": 1,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "INT",
+          "AwayCountry": "ESP",
+          "PublishedRound": "Group, Matchday 1",
+          "CsvSeason": 2023,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2023-24/cl.txt",
+              "sha256": "5872bee720b32410f28c5272fb7fe7b07aa0f66bcb31ffe157893d75c14c47c5"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 3,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1695081600000,
+        "lg": "Champions League",
+        "H": "Feyenoord Rotterdam",
+        "A": "Celtic FC",
+        "h": 2,
+        "a": 0,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "NED",
+          "AwayCountry": "SCO",
+          "PublishedRound": "Group, Matchday 1",
+          "CsvSeason": 2023,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2023-24/cl.txt",
+              "sha256": "5872bee720b32410f28c5272fb7fe7b07aa0f66bcb31ffe157893d75c14c47c5"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 5,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1695081600000,
+        "lg": "Champions League",
+        "H": "Manchester City FC",
+        "A": "FK Crvena Zvezda",
+        "h": 3,
+        "a": 1,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ENG",
+          "AwayCountry": "SRB",
+          "PublishedRound": "Group, Matchday 1",
+          "CsvSeason": 2023,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2023-24/cl.txt",
+              "sha256": "5872bee720b32410f28c5272fb7fe7b07aa0f66bcb31ffe157893d75c14c47c5"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 6,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1695081600000,
+        "lg": "Champions League",
+        "H": "FC Barcelona (ESP)",
+        "A": "Royal Antwerp FC",
+        "h": 5,
+        "a": 0,
+        "ht": 3,
+        "up": false,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "INT",
+          "AwayCountry": "BEL",
+          "PublishedRound": "Group, Matchday 1",
+          "CsvSeason": 2023,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2023-24/cl.txt",
+              "sha256": "5872bee720b32410f28c5272fb7fe7b07aa0f66bcb31ffe157893d75c14c47c5"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 3,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 7,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1695081600000,
+        "lg": "Champions League",
+        "H": "FK Shakhtar Donetsk",
+        "A": "FC Porto",
+        "h": 1,
+        "a": 3,
+        "ht": 4,
+        "up": false,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "UKR",
+          "AwayCountry": "PRT",
+          "PublishedRound": "Group, Matchday 1",
+          "CsvSeason": 2023,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2023-24/cl.txt",
+              "sha256": "5872bee720b32410f28c5272fb7fe7b07aa0f66bcb31ffe157893d75c14c47c5"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 3,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 8,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1695168000000,
+        "lg": "Champions League",
+        "H": "Real Madrid CF (ESP)",
+        "A": "1. FC Union Berlin",
+        "h": 1,
+        "a": 0,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "INT",
+          "AwayCountry": "GER",
+          "PublishedRound": "Group, Matchday 1",
+          "CsvSeason": 2023,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2023-24/cl.txt",
+              "sha256": "5872bee720b32410f28c5272fb7fe7b07aa0f66bcb31ffe157893d75c14c47c5"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 9,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1695168000000,
+        "lg": "Champions League",
+        "H": "Galatasaray SK (TUR)",
+        "A": "FC København",
+        "h": 2,
+        "a": 2,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "INT",
+          "AwayCountry": "DNK",
+          "PublishedRound": "Group, Matchday 1",
+          "CsvSeason": 2023,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2023-24/cl.txt",
+              "sha256": "5872bee720b32410f28c5272fb7fe7b07aa0f66bcb31ffe157893d75c14c47c5"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 10,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1695168000000,
+        "lg": "Champions League",
+        "H": "Sevilla FC (ESP)",
+        "A": "Racing Club de Lens",
+        "h": 1,
+        "a": 1,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "INT",
+          "AwayCountry": "FRA",
+          "PublishedRound": "Group, Matchday 1",
+          "CsvSeason": 2023,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2023-24/cl.txt",
+              "sha256": "5872bee720b32410f28c5272fb7fe7b07aa0f66bcb31ffe157893d75c14c47c5"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 13,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1695168000000,
+        "lg": "Champions League",
+        "H": "Sport Lisboa e Benfica",
+        "A": "FC Red Bull Salzburg",
+        "h": 0,
+        "a": 2,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "PRT",
+          "AwayCountry": "AUT",
+          "PublishedRound": "Group, Matchday 1",
+          "CsvSeason": 2023,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2023-24/cl.txt",
+              "sha256": "5872bee720b32410f28c5272fb7fe7b07aa0f66bcb31ffe157893d75c14c47c5"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 15,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1695168000000,
+        "lg": "Champions League",
+        "H": "Arsenal FC (ENG)",
+        "A": "PSV",
+        "h": 4,
+        "a": 0,
+        "ht": 3,
+        "up": false,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "INT",
+          "AwayCountry": "NED",
+          "PublishedRound": "Group, Matchday 1",
+          "CsvSeason": 2023,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2023-24/cl.txt",
+              "sha256": "5872bee720b32410f28c5272fb7fe7b07aa0f66bcb31ffe157893d75c14c47c5"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 3,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 17,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1696291200000,
+        "lg": "Champions League",
+        "H": "FC Red Bull Salzburg",
+        "A": "Real Sociedad de Fútbol",
+        "h": 0,
+        "a": 2,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "AUT",
+          "AwayCountry": "ESP",
+          "PublishedRound": "Group, Matchday 2",
+          "CsvSeason": 2023,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2023-24/cl.txt",
+              "sha256": "5872bee720b32410f28c5272fb7fe7b07aa0f66bcb31ffe157893d75c14c47c5"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 2,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 18,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1696291200000,
+        "lg": "Champions League",
+        "H": "SSC Napoli (ITA)",
+        "A": "Real Madrid CF",
+        "h": 2,
+        "a": 3,
+        "ht": 3,
+        "up": false,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "INT",
+          "AwayCountry": "ESP",
+          "PublishedRound": "Group, Matchday 2",
+          "CsvSeason": 2023,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2023-24/cl.txt",
+              "sha256": "5872bee720b32410f28c5272fb7fe7b07aa0f66bcb31ffe157893d75c14c47c5"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 2,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 20,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1696291200000,
+        "lg": "Champions League",
+        "H": "FC København (DEN)",
+        "A": "FC Bayern München",
+        "h": 1,
+        "a": 2,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "INT",
+          "AwayCountry": "GER",
+          "PublishedRound": "Group, Matchday 2",
+          "CsvSeason": 2023,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2023-24/cl.txt",
+              "sha256": "5872bee720b32410f28c5272fb7fe7b07aa0f66bcb31ffe157893d75c14c47c5"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 23,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1696291200000,
+        "lg": "Champions League",
+        "H": "PSV (NED)",
+        "A": "Sevilla FC",
+        "h": 2,
+        "a": 2,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "INT",
+          "AwayCountry": "ESP",
+          "PublishedRound": "Group, Matchday 2",
+          "CsvSeason": 2023,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2023-24/cl.txt",
+              "sha256": "5872bee720b32410f28c5272fb7fe7b07aa0f66bcb31ffe157893d75c14c47c5"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 25,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1696377600000,
+        "lg": "Champions League",
+        "H": "Royal Antwerp FC (BEL)",
+        "A": "FK Shakhtar Donetsk",
+        "h": 2,
+        "a": 3,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "INT",
+          "AwayCountry": "UKR",
+          "PublishedRound": "Group, Matchday 2",
+          "CsvSeason": 2023,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2023-24/cl.txt",
+              "sha256": "5872bee720b32410f28c5272fb7fe7b07aa0f66bcb31ffe157893d75c14c47c5"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 2,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 26,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1696377600000,
+        "lg": "Champions League",
+        "H": "Celtic FC (SCO)",
+        "A": "SS Lazio",
+        "h": 1,
+        "a": 2,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "INT",
+          "AwayCountry": "ITA",
+          "PublishedRound": "Group, Matchday 2",
+          "CsvSeason": 2023,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2023-24/cl.txt",
+              "sha256": "5872bee720b32410f28c5272fb7fe7b07aa0f66bcb31ffe157893d75c14c47c5"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 29,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1696377600000,
+        "lg": "Champions League",
+        "H": "FK Crvena Zvezda (SRB)",
+        "A": "BSC Young Boys",
+        "h": 2,
+        "a": 2,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "INT",
+          "AwayCountry": "CHE",
+          "PublishedRound": "Group, Matchday 2",
+          "CsvSeason": 2023,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2023-24/cl.txt",
+              "sha256": "5872bee720b32410f28c5272fb7fe7b07aa0f66bcb31ffe157893d75c14c47c5"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 30,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1696377600000,
+        "lg": "Champions League",
+        "H": "RB Leipzig (GER)",
+        "A": "Manchester City FC",
+        "h": 1,
+        "a": 3,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "INT",
+          "AwayCountry": "ENG",
+          "PublishedRound": "Group, Matchday 2",
+          "CsvSeason": 2023,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2023-24/cl.txt",
+              "sha256": "5872bee720b32410f28c5272fb7fe7b07aa0f66bcb31ffe157893d75c14c47c5"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 31,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1696377600000,
+        "lg": "Champions League",
+        "H": "FC Porto (POR)",
+        "A": "FC Barcelona",
+        "h": 0,
+        "a": 1,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "INT",
+          "AwayCountry": "ESP",
+          "PublishedRound": "Group, Matchday 2",
+          "CsvSeason": 2023,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2023-24/cl.txt",
+              "sha256": "5872bee720b32410f28c5272fb7fe7b07aa0f66bcb31ffe157893d75c14c47c5"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 32,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1698105600000,
+        "lg": "Champions League",
+        "H": "FC Internazionale Milano",
+        "A": "FC Red Bull Salzburg",
+        "h": 2,
+        "a": 1,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ITA",
+          "AwayCountry": "AUT",
+          "PublishedRound": "Group, Matchday 3",
+          "CsvSeason": 2023,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2023-24/cl.txt",
+              "sha256": "5872bee720b32410f28c5272fb7fe7b07aa0f66bcb31ffe157893d75c14c47c5"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 33,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1698105600000,
+        "lg": "Champions League",
+        "H": "Galatasaray SK (TUR)",
+        "A": "FC Bayern München",
+        "h": 1,
+        "a": 3,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "INT",
+          "AwayCountry": "GER",
+          "PublishedRound": "Group, Matchday 3",
+          "CsvSeason": 2023,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2023-24/cl.txt",
+              "sha256": "5872bee720b32410f28c5272fb7fe7b07aa0f66bcb31ffe157893d75c14c47c5"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 38,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1698105600000,
+        "lg": "Champions League",
+        "H": "Sevilla FC (ESP)",
+        "A": "Arsenal FC",
+        "h": 1,
+        "a": 2,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "INT",
+          "AwayCountry": "ENG",
+          "PublishedRound": "Group, Matchday 3",
+          "CsvSeason": 2023,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2023-24/cl.txt",
+              "sha256": "5872bee720b32410f28c5272fb7fe7b07aa0f66bcb31ffe157893d75c14c47c5"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 41,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1698192000000,
+        "lg": "Champions League",
+        "H": "FC Barcelona (ESP)",
+        "A": "FK Shakhtar Donetsk",
+        "h": 2,
+        "a": 1,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "INT",
+          "AwayCountry": "UKR",
+          "PublishedRound": "Group, Matchday 3",
+          "CsvSeason": 2023,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2023-24/cl.txt",
+              "sha256": "5872bee720b32410f28c5272fb7fe7b07aa0f66bcb31ffe157893d75c14c47c5"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 2,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 42,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1698192000000,
+        "lg": "Champions League",
+        "H": "Celtic FC (SCO)",
+        "A": "Club Atlético de Madrid",
+        "h": 2,
+        "a": 2,
+        "ht": 3,
+        "up": false,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "INT",
+          "AwayCountry": "ESP",
+          "PublishedRound": "Group, Matchday 3",
+          "CsvSeason": 2023,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2023-24/cl.txt",
+              "sha256": "5872bee720b32410f28c5272fb7fe7b07aa0f66bcb31ffe157893d75c14c47c5"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 2,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 45,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1698192000000,
+        "lg": "Champions League",
+        "H": "BSC Young Boys (SUI)",
+        "A": "Manchester City FC",
+        "h": 1,
+        "a": 3,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "INT",
+          "AwayCountry": "ENG",
+          "PublishedRound": "Group, Matchday 3",
+          "CsvSeason": 2023,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2023-24/cl.txt",
+              "sha256": "5872bee720b32410f28c5272fb7fe7b07aa0f66bcb31ffe157893d75c14c47c5"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 46,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1698192000000,
+        "lg": "Champions League",
+        "H": "RB Leipzig (GER)",
+        "A": "FK Crvena Zvezda",
+        "h": 3,
+        "a": 1,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "INT",
+          "AwayCountry": "SRB",
+          "PublishedRound": "Group, Matchday 3",
+          "CsvSeason": 2023,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2023-24/cl.txt",
+              "sha256": "5872bee720b32410f28c5272fb7fe7b07aa0f66bcb31ffe157893d75c14c47c5"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 47,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1698192000000,
+        "lg": "Champions League",
+        "H": "Royal Antwerp FC (BEL)",
+        "A": "FC Porto",
+        "h": 1,
+        "a": 4,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "INT",
+          "AwayCountry": "PRT",
+          "PublishedRound": "Group, Matchday 3",
+          "CsvSeason": 2023,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2023-24/cl.txt",
+              "sha256": "5872bee720b32410f28c5272fb7fe7b07aa0f66bcb31ffe157893d75c14c47c5"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 49,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1699315200000,
+        "lg": "Champions League",
+        "H": "FK Shakhtar Donetsk",
+        "A": "FC Barcelona",
+        "h": 1,
+        "a": 0,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "UKR",
+          "AwayCountry": "ESP",
+          "PublishedRound": "Group, Matchday 4",
+          "CsvSeason": 2023,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2023-24/cl.txt",
+              "sha256": "5872bee720b32410f28c5272fb7fe7b07aa0f66bcb31ffe157893d75c14c47c5"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 50,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1699315200000,
+        "lg": "Champions League",
+        "H": "Club Atlético de Madrid",
+        "A": "Celtic FC",
+        "h": 6,
+        "a": 0,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "SCO",
+          "PublishedRound": "Group, Matchday 4",
+          "CsvSeason": 2023,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2023-24/cl.txt",
+              "sha256": "5872bee720b32410f28c5272fb7fe7b07aa0f66bcb31ffe157893d75c14c47c5"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 2,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 51,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1699315200000,
+        "lg": "Champions League",
+        "H": "SS Lazio (ITA)",
+        "A": "Feyenoord Rotterdam",
+        "h": 1,
+        "a": 0,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "INT",
+          "AwayCountry": "NED",
+          "PublishedRound": "Group, Matchday 4",
+          "CsvSeason": 2023,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2023-24/cl.txt",
+              "sha256": "5872bee720b32410f28c5272fb7fe7b07aa0f66bcb31ffe157893d75c14c47c5"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 52,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1699315200000,
+        "lg": "Champions League",
+        "H": "AC Milan (ITA)",
+        "A": "Paris Saint-Germain FC",
+        "h": 2,
+        "a": 1,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "INT",
+          "AwayCountry": "FRA",
+          "PublishedRound": "Group, Matchday 4",
+          "CsvSeason": 2023,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2023-24/cl.txt",
+              "sha256": "5872bee720b32410f28c5272fb7fe7b07aa0f66bcb31ffe157893d75c14c47c5"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 53,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1699315200000,
+        "lg": "Champions League",
+        "H": "Manchester City FC",
+        "A": "BSC Young Boys",
+        "h": 3,
+        "a": 0,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ENG",
+          "AwayCountry": "CHE",
+          "PublishedRound": "Group, Matchday 4",
+          "CsvSeason": 2023,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2023-24/cl.txt",
+              "sha256": "5872bee720b32410f28c5272fb7fe7b07aa0f66bcb31ffe157893d75c14c47c5"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 2,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 54,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1699315200000,
+        "lg": "Champions League",
+        "H": "FK Crvena Zvezda (SRB)",
+        "A": "RB Leipzig",
+        "h": 1,
+        "a": 2,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "INT",
+          "AwayCountry": "GER",
+          "PublishedRound": "Group, Matchday 4",
+          "CsvSeason": 2023,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2023-24/cl.txt",
+              "sha256": "5872bee720b32410f28c5272fb7fe7b07aa0f66bcb31ffe157893d75c14c47c5"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 55,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1699315200000,
+        "lg": "Champions League",
+        "H": "FC Porto (POR)",
+        "A": "Royal Antwerp FC",
+        "h": 2,
+        "a": 0,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "INT",
+          "AwayCountry": "BEL",
+          "PublishedRound": "Group, Matchday 4",
+          "CsvSeason": 2023,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2023-24/cl.txt",
+              "sha256": "5872bee720b32410f28c5272fb7fe7b07aa0f66bcb31ffe157893d75c14c47c5"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 56,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1699401600000,
+        "lg": "Champions League",
+        "H": "SSC Napoli (ITA)",
+        "A": "1. FC Union Berlin",
+        "h": 1,
+        "a": 1,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "INT",
+          "AwayCountry": "GER",
+          "PublishedRound": "Group, Matchday 4",
+          "CsvSeason": 2023,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2023-24/cl.txt",
+              "sha256": "5872bee720b32410f28c5272fb7fe7b07aa0f66bcb31ffe157893d75c14c47c5"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 58,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1699401600000,
+        "lg": "Champions League",
+        "H": "Real Madrid CF (ESP)",
+        "A": "Sporting Clube de Braga",
+        "h": 3,
+        "a": 0,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "INT",
+          "AwayCountry": "PRT",
+          "PublishedRound": "Group, Matchday 4",
+          "CsvSeason": 2023,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2023-24/cl.txt",
+              "sha256": "5872bee720b32410f28c5272fb7fe7b07aa0f66bcb31ffe157893d75c14c47c5"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 59,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1699401600000,
+        "lg": "Champions League",
+        "H": "FC Red Bull Salzburg",
+        "A": "FC Internazionale Milano",
+        "h": 0,
+        "a": 1,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "AUT",
+          "AwayCountry": "ITA",
+          "PublishedRound": "Group, Matchday 4",
+          "CsvSeason": 2023,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2023-24/cl.txt",
+              "sha256": "5872bee720b32410f28c5272fb7fe7b07aa0f66bcb31ffe157893d75c14c47c5"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 61,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1699401600000,
+        "lg": "Champions League",
+        "H": "FC København (DEN)",
+        "A": "Manchester United FC",
+        "h": 4,
+        "a": 3,
+        "ht": 4,
+        "up": false,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "INT",
+          "AwayCountry": "ENG",
+          "PublishedRound": "Group, Matchday 4",
+          "CsvSeason": 2023,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2023-24/cl.txt",
+              "sha256": "5872bee720b32410f28c5272fb7fe7b07aa0f66bcb31ffe157893d75c14c47c5"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 2,
+        "hta": 2,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 62,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1699401600000,
+        "lg": "Champions League",
+        "H": "Arsenal FC (ENG)",
+        "A": "Sevilla FC",
+        "h": 2,
+        "a": 0,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "INT",
+          "AwayCountry": "ESP",
+          "PublishedRound": "Group, Matchday 4",
+          "CsvSeason": 2023,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2023-24/cl.txt",
+              "sha256": "5872bee720b32410f28c5272fb7fe7b07aa0f66bcb31ffe157893d75c14c47c5"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 63,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1699401600000,
+        "lg": "Champions League",
+        "H": "PSV (NED)",
+        "A": "Racing Club de Lens",
+        "h": 1,
+        "a": 0,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "INT",
+          "AwayCountry": "FRA",
+          "PublishedRound": "Group, Matchday 4",
+          "CsvSeason": 2023,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2023-24/cl.txt",
+              "sha256": "5872bee720b32410f28c5272fb7fe7b07aa0f66bcb31ffe157893d75c14c47c5"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 64,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1701129600000,
+        "lg": "Champions League",
+        "H": "SS Lazio (ITA)",
+        "A": "Celtic FC",
+        "h": 2,
+        "a": 0,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "INT",
+          "AwayCountry": "SCO",
+          "PublishedRound": "Group, Matchday 5",
+          "CsvSeason": 2023,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2023-24/cl.txt",
+              "sha256": "5872bee720b32410f28c5272fb7fe7b07aa0f66bcb31ffe157893d75c14c47c5"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 65,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1701129600000,
+        "lg": "Champions League",
+        "H": "FK Shakhtar Donetsk",
+        "A": "Royal Antwerp FC",
+        "h": 1,
+        "a": 0,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "UKR",
+          "AwayCountry": "BEL",
+          "PublishedRound": "Group, Matchday 5",
+          "CsvSeason": 2023,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2023-24/cl.txt",
+              "sha256": "5872bee720b32410f28c5272fb7fe7b07aa0f66bcb31ffe157893d75c14c47c5"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 67,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1701129600000,
+        "lg": "Champions League",
+        "H": "AC Milan (ITA)",
+        "A": "Borussia Dortmund",
+        "h": 1,
+        "a": 3,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "INT",
+          "AwayCountry": "GER",
+          "PublishedRound": "Group, Matchday 5",
+          "CsvSeason": 2023,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2023-24/cl.txt",
+              "sha256": "5872bee720b32410f28c5272fb7fe7b07aa0f66bcb31ffe157893d75c14c47c5"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 69,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1701129600000,
+        "lg": "Champions League",
+        "H": "BSC Young Boys (SUI)",
+        "A": "FK Crvena Zvezda",
+        "h": 2,
+        "a": 0,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "INT",
+          "AwayCountry": "SRB",
+          "PublishedRound": "Group, Matchday 5",
+          "CsvSeason": 2023,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2023-24/cl.txt",
+              "sha256": "5872bee720b32410f28c5272fb7fe7b07aa0f66bcb31ffe157893d75c14c47c5"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 2,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 71,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1701129600000,
+        "lg": "Champions League",
+        "H": "FC Barcelona (ESP)",
+        "A": "FC Porto",
+        "h": 2,
+        "a": 1,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "INT",
+          "AwayCountry": "PRT",
+          "PublishedRound": "Group, Matchday 5",
+          "CsvSeason": 2023,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2023-24/cl.txt",
+              "sha256": "5872bee720b32410f28c5272fb7fe7b07aa0f66bcb31ffe157893d75c14c47c5"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 72,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1701216000000,
+        "lg": "Champions League",
+        "H": "Galatasaray SK (TUR)",
+        "A": "Manchester United FC",
+        "h": 3,
+        "a": 3,
+        "ht": 3,
+        "up": false,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "INT",
+          "AwayCountry": "ENG",
+          "PublishedRound": "Group, Matchday 5",
+          "CsvSeason": 2023,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2023-24/cl.txt",
+              "sha256": "5872bee720b32410f28c5272fb7fe7b07aa0f66bcb31ffe157893d75c14c47c5"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 2,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 73,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1701216000000,
+        "lg": "Champions League",
+        "H": "Sevilla FC (ESP)",
+        "A": "PSV",
+        "h": 2,
+        "a": 3,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "INT",
+          "AwayCountry": "NED",
+          "PublishedRound": "Group, Matchday 5",
+          "CsvSeason": 2023,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2023-24/cl.txt",
+              "sha256": "5872bee720b32410f28c5272fb7fe7b07aa0f66bcb31ffe157893d75c14c47c5"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 75,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1701216000000,
+        "lg": "Champions League",
+        "H": "Real Madrid CF (ESP)",
+        "A": "SSC Napoli",
+        "h": 4,
+        "a": 2,
+        "ht": 3,
+        "up": false,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "INT",
+          "AwayCountry": "ITA",
+          "PublishedRound": "Group, Matchday 5",
+          "CsvSeason": 2023,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2023-24/cl.txt",
+              "sha256": "5872bee720b32410f28c5272fb7fe7b07aa0f66bcb31ffe157893d75c14c47c5"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 2,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 77,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1701216000000,
+        "lg": "Champions League",
+        "H": "Real Sociedad de Fútbol",
+        "A": "FC Red Bull Salzburg",
+        "h": 0,
+        "a": 0,
+        "ht": null,
+        "up": false,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "ESP",
+          "AwayCountry": "AUT",
+          "PublishedRound": "Group, Matchday 5",
+          "CsvSeason": 2023,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2023-24/cl.txt",
+              "sha256": "5872bee720b32410f28c5272fb7fe7b07aa0f66bcb31ffe157893d75c14c47c5"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 79,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1701216000000,
+        "lg": "Champions League",
+        "H": "Arsenal FC (ENG)",
+        "A": "Racing Club de Lens",
+        "h": 6,
+        "a": 0,
+        "ht": 5,
+        "up": false,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "INT",
+          "AwayCountry": "FRA",
+          "PublishedRound": "Group, Matchday 5",
+          "CsvSeason": 2023,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2023-24/cl.txt",
+              "sha256": "5872bee720b32410f28c5272fb7fe7b07aa0f66bcb31ffe157893d75c14c47c5"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 5,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 80,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1702339200000,
+        "lg": "Champions League",
+        "H": "PSV (NED)",
+        "A": "Arsenal FC",
+        "h": 1,
+        "a": 1,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "INT",
+          "AwayCountry": "ENG",
+          "PublishedRound": "Group, Matchday 6",
+          "CsvSeason": 2023,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2023-24/cl.txt",
+              "sha256": "5872bee720b32410f28c5272fb7fe7b07aa0f66bcb31ffe157893d75c14c47c5"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 83,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1702339200000,
+        "lg": "Champions League",
+        "H": "SSC Napoli (ITA)",
+        "A": "Sporting Clube de Braga",
+        "h": 2,
+        "a": 0,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "INT",
+          "AwayCountry": "PRT",
+          "PublishedRound": "Group, Matchday 6",
+          "CsvSeason": 2023,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2023-24/cl.txt",
+              "sha256": "5872bee720b32410f28c5272fb7fe7b07aa0f66bcb31ffe157893d75c14c47c5"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 2,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 85,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1702339200000,
+        "lg": "Champions League",
+        "H": "FC Red Bull Salzburg",
+        "A": "Sport Lisboa e Benfica",
+        "h": 1,
+        "a": 3,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "AUT",
+          "AwayCountry": "PRT",
+          "PublishedRound": "Group, Matchday 6",
+          "CsvSeason": 2023,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2023-24/cl.txt",
+              "sha256": "5872bee720b32410f28c5272fb7fe7b07aa0f66bcb31ffe157893d75c14c47c5"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 2,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 87,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1702339200000,
+        "lg": "Champions League",
+        "H": "FC København (DEN)",
+        "A": "Galatasaray SK",
+        "h": 1,
+        "a": 0,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "INT",
+          "AwayCountry": "TUR",
+          "PublishedRound": "Group, Matchday 6",
+          "CsvSeason": 2023,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2023-24/cl.txt",
+              "sha256": "5872bee720b32410f28c5272fb7fe7b07aa0f66bcb31ffe157893d75c14c47c5"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 88,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1702425600000,
+        "lg": "Champions League",
+        "H": "RB Leipzig (GER)",
+        "A": "BSC Young Boys",
+        "h": 2,
+        "a": 1,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "INT",
+          "AwayCountry": "CHE",
+          "PublishedRound": "Group, Matchday 6",
+          "CsvSeason": 2023,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2023-24/cl.txt",
+              "sha256": "5872bee720b32410f28c5272fb7fe7b07aa0f66bcb31ffe157893d75c14c47c5"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 89,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1702425600000,
+        "lg": "Champions League",
+        "H": "FK Crvena Zvezda (SRB)",
+        "A": "Manchester City FC",
+        "h": 2,
+        "a": 3,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "INT",
+          "AwayCountry": "ENG",
+          "PublishedRound": "Group, Matchday 6",
+          "CsvSeason": 2023,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2023-24/cl.txt",
+              "sha256": "5872bee720b32410f28c5272fb7fe7b07aa0f66bcb31ffe157893d75c14c47c5"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 91,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1702425600000,
+        "lg": "Champions League",
+        "H": "Celtic FC (SCO)",
+        "A": "Feyenoord Rotterdam",
+        "h": 2,
+        "a": 1,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "INT",
+          "AwayCountry": "NED",
+          "PublishedRound": "Group, Matchday 6",
+          "CsvSeason": 2023,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2023-24/cl.txt",
+              "sha256": "5872bee720b32410f28c5272fb7fe7b07aa0f66bcb31ffe157893d75c14c47c5"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 94,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1702425600000,
+        "lg": "Champions League",
+        "H": "Royal Antwerp FC (BEL)",
+        "A": "FC Barcelona",
+        "h": 3,
+        "a": 2,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "INT",
+          "AwayCountry": "ESP",
+          "PublishedRound": "Group, Matchday 6",
+          "CsvSeason": 2023,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2023-24/cl.txt",
+              "sha256": "5872bee720b32410f28c5272fb7fe7b07aa0f66bcb31ffe157893d75c14c47c5"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 95,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1702425600000,
+        "lg": "Champions League",
+        "H": "FC Porto (POR)",
+        "A": "FK Shakhtar Donetsk",
+        "h": 5,
+        "a": 3,
+        "ht": 3,
+        "up": false,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "INT",
+          "AwayCountry": "UKR",
+          "PublishedRound": "Group, Matchday 6",
+          "CsvSeason": 2023,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2023-24/cl.txt",
+              "sha256": "5872bee720b32410f28c5272fb7fe7b07aa0f66bcb31ffe157893d75c14c47c5"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 2,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 96,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1707782400000,
+        "lg": "Champions League",
+        "H": "FC København (DEN)",
+        "A": "Manchester City FC",
+        "h": 1,
+        "a": 3,
+        "ht": 3,
+        "up": false,
+        "o": {
+          "Phase": "Finals, Round of 16",
+          "HomeCountry": "INT",
+          "AwayCountry": "ENG",
+          "PublishedRound": "Finals, Round of 16",
+          "CsvSeason": 2023,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2023-24/cl.txt",
+              "sha256": "5872bee720b32410f28c5272fb7fe7b07aa0f66bcb31ffe157893d75c14c47c5"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 2,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 97,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1707782400000,
+        "lg": "Champions League",
+        "H": "RB Leipzig (GER)",
+        "A": "Real Madrid CF",
+        "h": 0,
+        "a": 1,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "Phase": "Finals, Round of 16",
+          "HomeCountry": "INT",
+          "AwayCountry": "ESP",
+          "PublishedRound": "Finals, Round of 16",
+          "CsvSeason": 2023,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2023-24/cl.txt",
+              "sha256": "5872bee720b32410f28c5272fb7fe7b07aa0f66bcb31ffe157893d75c14c47c5"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 99,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1707868800000,
+        "lg": "Champions League",
+        "H": "SS Lazio (ITA)",
+        "A": "FC Bayern München",
+        "h": 1,
+        "a": 0,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "Phase": "Finals, Round of 16",
+          "HomeCountry": "INT",
+          "AwayCountry": "GER",
+          "PublishedRound": "Finals, Round of 16",
+          "CsvSeason": 2023,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2023-24/cl.txt",
+              "sha256": "5872bee720b32410f28c5272fb7fe7b07aa0f66bcb31ffe157893d75c14c47c5"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 101,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1708387200000,
+        "lg": "Champions League",
+        "H": "PSV (NED)",
+        "A": "Borussia Dortmund",
+        "h": 1,
+        "a": 1,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "Finals, Round of 16",
+          "HomeCountry": "INT",
+          "AwayCountry": "GER",
+          "PublishedRound": "Finals, Round of 16",
+          "CsvSeason": 2023,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2023-24/cl.txt",
+              "sha256": "5872bee720b32410f28c5272fb7fe7b07aa0f66bcb31ffe157893d75c14c47c5"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 102,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1708473600000,
+        "lg": "Champions League",
+        "H": "FC Porto (POR)",
+        "A": "Arsenal FC",
+        "h": 1,
+        "a": 0,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "Phase": "Finals, Round of 16",
+          "HomeCountry": "INT",
+          "AwayCountry": "ENG",
+          "PublishedRound": "Finals, Round of 16",
+          "CsvSeason": 2023,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2023-24/cl.txt",
+              "sha256": "5872bee720b32410f28c5272fb7fe7b07aa0f66bcb31ffe157893d75c14c47c5"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 103,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1708473600000,
+        "lg": "Champions League",
+        "H": "SSC Napoli (ITA)",
+        "A": "FC Barcelona",
+        "h": 1,
+        "a": 1,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "Phase": "Finals, Round of 16",
+          "HomeCountry": "INT",
+          "AwayCountry": "ESP",
+          "PublishedRound": "Finals, Round of 16",
+          "CsvSeason": 2023,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2023-24/cl.txt",
+              "sha256": "5872bee720b32410f28c5272fb7fe7b07aa0f66bcb31ffe157893d75c14c47c5"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 107,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1709683200000,
+        "lg": "Champions League",
+        "H": "Real Madrid CF (ESP)",
+        "A": "RB Leipzig",
+        "h": 1,
+        "a": 1,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "Phase": "Finals, Round of 16",
+          "HomeCountry": "INT",
+          "AwayCountry": "GER",
+          "PublishedRound": "Finals, Round of 16",
+          "CsvSeason": 2023,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2023-24/cl.txt",
+              "sha256": "5872bee720b32410f28c5272fb7fe7b07aa0f66bcb31ffe157893d75c14c47c5"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 108,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1710201600000,
+        "lg": "Champions League",
+        "H": "Arsenal FC (ENG)",
+        "A": "FC Porto",
+        "h": 1,
+        "a": 0,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "Phase": "Finals, Round of 16",
+          "HomeCountry": "INT",
+          "AwayCountry": "PRT",
+          "PublishedRound": "Finals, Round of 16",
+          "CupScoreEvidence": "4-2 pen. 1-0 a.e.t. (1-0, 1-0)",
+          "CsvSeason": 2023,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2023-24/cl.txt",
+              "sha256": "5872bee720b32410f28c5272fb7fe7b07aa0f66bcb31ffe157893d75c14c47c5"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 109,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1710201600000,
+        "lg": "Champions League",
+        "H": "FC Barcelona (ESP)",
+        "A": "SSC Napoli",
+        "h": 3,
+        "a": 1,
+        "ht": 3,
+        "up": false,
+        "o": {
+          "Phase": "Finals, Round of 16",
+          "HomeCountry": "INT",
+          "AwayCountry": "ITA",
+          "PublishedRound": "Finals, Round of 16",
+          "CsvSeason": 2023,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2023-24/cl.txt",
+              "sha256": "5872bee720b32410f28c5272fb7fe7b07aa0f66bcb31ffe157893d75c14c47c5"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 2,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 112,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1712620800000,
+        "lg": "Champions League",
+        "H": "Arsenal FC (ENG)",
+        "A": "FC Bayern München",
+        "h": 2,
+        "a": 2,
+        "ht": 3,
+        "up": false,
+        "o": {
+          "Phase": "Finals, Quarterfinals",
+          "HomeCountry": "INT",
+          "AwayCountry": "GER",
+          "PublishedRound": "Finals, Quarterfinals",
+          "CsvSeason": 2023,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2023-24/cl.txt",
+              "sha256": "5872bee720b32410f28c5272fb7fe7b07aa0f66bcb31ffe157893d75c14c47c5"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 2,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 113,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1712620800000,
+        "lg": "Champions League",
+        "H": "Real Madrid CF (ESP)",
+        "A": "Manchester City FC",
+        "h": 3,
+        "a": 3,
+        "ht": 3,
+        "up": false,
+        "o": {
+          "Phase": "Finals, Quarterfinals",
+          "HomeCountry": "INT",
+          "AwayCountry": "ENG",
+          "PublishedRound": "Finals, Quarterfinals",
+          "CsvSeason": 2023,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2023-24/cl.txt",
+              "sha256": "5872bee720b32410f28c5272fb7fe7b07aa0f66bcb31ffe157893d75c14c47c5"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 2,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 117,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1713225600000,
+        "lg": "Champions League",
+        "H": "FC Barcelona (ESP)",
+        "A": "Paris Saint-Germain FC",
+        "h": 1,
+        "a": 4,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "Phase": "Finals, Quarterfinals",
+          "HomeCountry": "INT",
+          "AwayCountry": "FRA",
+          "PublishedRound": "Finals, Quarterfinals",
+          "CsvSeason": 2023,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2023-24/cl.txt",
+              "sha256": "5872bee720b32410f28c5272fb7fe7b07aa0f66bcb31ffe157893d75c14c47c5"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 1,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 123,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1715126400000,
+        "lg": "Champions League",
+        "H": "Real Madrid CF (ESP)",
+        "A": "FC Bayern München",
+        "h": 2,
+        "a": 1,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "Phase": "Finals, Semifinals",
+          "HomeCountry": "INT",
+          "AwayCountry": "GER",
+          "PublishedRound": "Finals, Semifinals",
+          "CsvSeason": 2023,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/openfootball/champions-league/master/2023-24/cl.txt",
+              "sha256": "5872bee720b32410f28c5272fb7fe7b07aa0f66bcb31ffe157893d75c14c47c5"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": null
+      }
+    }
+  ]
+}

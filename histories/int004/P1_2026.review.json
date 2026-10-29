@@ -1,0 +1,756 @@
+{
+  "originalPacket": "histories/stab003/P1_2026.json",
+  "originalSHA256": "6b9ee05aed0ee93fe2667c9ac7dec89876fd96c237d14bb3dd8901555aa5674e",
+  "review": [
+    {
+      "originalIndex": 86,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1793491200000,
+        "lg": "Primeira Liga",
+        "H": "Marítimo M.",
+        "A": "Santa Clara",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "PRT",
+          "AwayCountry": "PRT",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/POR_1_primeira-liga/fixtures_2627.csv",
+              "sha256": "c27bd9fc6eb1ddc36a6a78da34caac16cf3f8338e859d2fb01d386808f1048f8"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 94,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1794096000000,
+        "lg": "Primeira Liga",
+        "H": "Estoril Praia",
+        "A": "Marítimo M.",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "PRT",
+          "AwayCountry": "PRT",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/POR_1_primeira-liga/fixtures_2627.csv",
+              "sha256": "c27bd9fc6eb1ddc36a6a78da34caac16cf3f8338e859d2fb01d386808f1048f8"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 99,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1795737600000,
+        "lg": "Primeira Liga",
+        "H": "Marítimo M.",
+        "A": "CD Nacional",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "PRT",
+          "AwayCountry": "PRT",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/POR_1_primeira-liga/fixtures_2627.csv",
+              "sha256": "c27bd9fc6eb1ddc36a6a78da34caac16cf3f8338e859d2fb01d386808f1048f8"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 116,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1796515200000,
+        "lg": "Primeira Liga",
+        "H": "Sporting CP",
+        "A": "Marítimo M.",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "PRT",
+          "AwayCountry": "PRT",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/POR_1_primeira-liga/fixtures_2627.csv",
+              "sha256": "c27bd9fc6eb1ddc36a6a78da34caac16cf3f8338e859d2fb01d386808f1048f8"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 122,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1797120000000,
+        "lg": "Primeira Liga",
+        "H": "Marítimo M.",
+        "A": "Rio Ave FC",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "PRT",
+          "AwayCountry": "PRT",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/POR_1_primeira-liga/fixtures_2627.csv",
+              "sha256": "c27bd9fc6eb1ddc36a6a78da34caac16cf3f8338e859d2fb01d386808f1048f8"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 127,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1797724800000,
+        "lg": "Primeira Liga",
+        "H": "Estrela Amadora",
+        "A": "Marítimo M.",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "PRT",
+          "AwayCountry": "PRT",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/POR_1_primeira-liga/fixtures_2627.csv",
+              "sha256": "c27bd9fc6eb1ddc36a6a78da34caac16cf3f8338e859d2fb01d386808f1048f8"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 139,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1798329600000,
+        "lg": "Primeira Liga",
+        "H": "Marítimo M.",
+        "A": "SC Braga",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "PRT",
+          "AwayCountry": "PRT",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/POR_1_primeira-liga/fixtures_2627.csv",
+              "sha256": "c27bd9fc6eb1ddc36a6a78da34caac16cf3f8338e859d2fb01d386808f1048f8"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 147,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1799539200000,
+        "lg": "Primeira Liga",
+        "H": "FC Alverca",
+        "A": "Marítimo M.",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "PRT",
+          "AwayCountry": "PRT",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/POR_1_primeira-liga/fixtures_2627.csv",
+              "sha256": "c27bd9fc6eb1ddc36a6a78da34caac16cf3f8338e859d2fb01d386808f1048f8"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 155,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1800144000000,
+        "lg": "Primeira Liga",
+        "H": "Casa Pia AC",
+        "A": "Marítimo M.",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "PRT",
+          "AwayCountry": "PRT",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/POR_1_primeira-liga/fixtures_2627.csv",
+              "sha256": "c27bd9fc6eb1ddc36a6a78da34caac16cf3f8338e859d2fb01d386808f1048f8"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 166,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1800748800000,
+        "lg": "Primeira Liga",
+        "H": "Marítimo M.",
+        "A": "FC Famalicão",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "PRT",
+          "AwayCountry": "PRT",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/POR_1_primeira-liga/fixtures_2627.csv",
+              "sha256": "c27bd9fc6eb1ddc36a6a78da34caac16cf3f8338e859d2fb01d386808f1048f8"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 171,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1801353600000,
+        "lg": "Primeira Liga",
+        "H": "Académico",
+        "A": "Marítimo M.",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "PRT",
+          "AwayCountry": "PRT",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/POR_1_primeira-liga/fixtures_2627.csv",
+              "sha256": "c27bd9fc6eb1ddc36a6a78da34caac16cf3f8338e859d2fb01d386808f1048f8"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 184,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1801958400000,
+        "lg": "Primeira Liga",
+        "H": "Marítimo M.",
+        "A": "FC Arouca",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "PRT",
+          "AwayCountry": "PRT",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/POR_1_primeira-liga/fixtures_2627.csv",
+              "sha256": "c27bd9fc6eb1ddc36a6a78da34caac16cf3f8338e859d2fb01d386808f1048f8"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 197,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1802563200000,
+        "lg": "Primeira Liga",
+        "H": "SL Benfica",
+        "A": "Marítimo M.",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "PRT",
+          "AwayCountry": "PRT",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/POR_1_primeira-liga/fixtures_2627.csv",
+              "sha256": "c27bd9fc6eb1ddc36a6a78da34caac16cf3f8338e859d2fb01d386808f1048f8"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 203,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1803168000000,
+        "lg": "Primeira Liga",
+        "H": "Marítimo M.",
+        "A": "Moreirense FC",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "PRT",
+          "AwayCountry": "PRT",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/POR_1_primeira-liga/fixtures_2627.csv",
+              "sha256": "c27bd9fc6eb1ddc36a6a78da34caac16cf3f8338e859d2fb01d386808f1048f8"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 211,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1803772800000,
+        "lg": "Primeira Liga",
+        "H": "Marítimo M.",
+        "A": "Gil Vicente FC",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "PRT",
+          "AwayCountry": "PRT",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/POR_1_primeira-liga/fixtures_2627.csv",
+              "sha256": "c27bd9fc6eb1ddc36a6a78da34caac16cf3f8338e859d2fb01d386808f1048f8"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 220,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1804377600000,
+        "lg": "Primeira Liga",
+        "H": "FC Porto",
+        "A": "Marítimo M.",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "PRT",
+          "AwayCountry": "PRT",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/POR_1_primeira-liga/fixtures_2627.csv",
+              "sha256": "c27bd9fc6eb1ddc36a6a78da34caac16cf3f8338e859d2fb01d386808f1048f8"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 230,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1804982400000,
+        "lg": "Primeira Liga",
+        "H": "Marítimo M.",
+        "A": "Vitória SC",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "PRT",
+          "AwayCountry": "PRT",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/POR_1_primeira-liga/fixtures_2627.csv",
+              "sha256": "c27bd9fc6eb1ddc36a6a78da34caac16cf3f8338e859d2fb01d386808f1048f8"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 240,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1805587200000,
+        "lg": "Primeira Liga",
+        "H": "Santa Clara",
+        "A": "Marítimo M.",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "PRT",
+          "AwayCountry": "PRT",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/POR_1_primeira-liga/fixtures_2627.csv",
+              "sha256": "c27bd9fc6eb1ddc36a6a78da34caac16cf3f8338e859d2fb01d386808f1048f8"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 248,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1806710400000,
+        "lg": "Primeira Liga",
+        "H": "Marítimo M.",
+        "A": "Estoril Praia",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "PRT",
+          "AwayCountry": "PRT",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/POR_1_primeira-liga/fixtures_2627.csv",
+              "sha256": "c27bd9fc6eb1ddc36a6a78da34caac16cf3f8338e859d2fb01d386808f1048f8"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 252,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1807315200000,
+        "lg": "Primeira Liga",
+        "H": "CD Nacional",
+        "A": "Marítimo M.",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "PRT",
+          "AwayCountry": "PRT",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/POR_1_primeira-liga/fixtures_2627.csv",
+              "sha256": "c27bd9fc6eb1ddc36a6a78da34caac16cf3f8338e859d2fb01d386808f1048f8"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 266,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1807920000000,
+        "lg": "Primeira Liga",
+        "H": "Marítimo M.",
+        "A": "Sporting CP",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "PRT",
+          "AwayCountry": "PRT",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/POR_1_primeira-liga/fixtures_2627.csv",
+              "sha256": "c27bd9fc6eb1ddc36a6a78da34caac16cf3f8338e859d2fb01d386808f1048f8"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 275,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1808524800000,
+        "lg": "Primeira Liga",
+        "H": "Rio Ave FC",
+        "A": "Marítimo M.",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "PRT",
+          "AwayCountry": "PRT",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/POR_1_primeira-liga/fixtures_2627.csv",
+              "sha256": "c27bd9fc6eb1ddc36a6a78da34caac16cf3f8338e859d2fb01d386808f1048f8"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 284,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1809129600000,
+        "lg": "Primeira Liga",
+        "H": "Marítimo M.",
+        "A": "Estrela Amadora",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "PRT",
+          "AwayCountry": "PRT",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/POR_1_primeira-liga/fixtures_2627.csv",
+              "sha256": "c27bd9fc6eb1ddc36a6a78da34caac16cf3f8338e859d2fb01d386808f1048f8"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 295,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1809734400000,
+        "lg": "Primeira Liga",
+        "H": "SC Braga",
+        "A": "Marítimo M.",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "PRT",
+          "AwayCountry": "PRT",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/POR_1_primeira-liga/fixtures_2627.csv",
+              "sha256": "c27bd9fc6eb1ddc36a6a78da34caac16cf3f8338e859d2fb01d386808f1048f8"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 301,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1810339200000,
+        "lg": "Primeira Liga",
+        "H": "Marítimo M.",
+        "A": "FC Alverca",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "PRT",
+          "AwayCountry": "PRT",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/POR_1_primeira-liga/fixtures_2627.csv",
+              "sha256": "c27bd9fc6eb1ddc36a6a78da34caac16cf3f8338e859d2fb01d386808f1048f8"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    }
+  ]
+}

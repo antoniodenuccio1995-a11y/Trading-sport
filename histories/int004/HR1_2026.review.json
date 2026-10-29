@@ -1,0 +1,1806 @@
+{
+  "originalPacket": "histories/stab003/HR1_2026.json",
+  "originalSHA256": "6799ff184130df247343796097cf16477a8be1284f4a7ac115c41afbd9beef51",
+  "review": [
+    {
+      "originalIndex": 2,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1785542400000,
+        "lg": "HNL Croazia",
+        "H": "Istra 1961",
+        "A": "Lok. Zagreb",
+        "h": 2,
+        "a": 3,
+        "ht": null,
+        "up": false,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "HRV",
+          "AwayCountry": "HRV",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/CRO_1_hnl/results_2627.csv",
+              "sha256": "b65bf316af9b18e78f73677f86d312885479bac58ab5861c020d5b58b2bf00fe"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 3,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1785628800000,
+        "lg": "HNL Croazia",
+        "H": "Rijeka",
+        "A": "Rudes",
+        "h": 2,
+        "a": 1,
+        "ht": null,
+        "up": false,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "HRV",
+          "AwayCountry": "HRV",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/CRO_1_hnl/results_2627.csv",
+              "sha256": "b65bf316af9b18e78f73677f86d312885479bac58ab5861c020d5b58b2bf00fe"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 5,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1786147200000,
+        "lg": "HNL Croazia",
+        "H": "Lok. Zagreb",
+        "A": "Gorica",
+        "h": 3,
+        "a": 1,
+        "ht": null,
+        "up": false,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "HRV",
+          "AwayCountry": "HRV",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/CRO_1_hnl/results_2627.csv",
+              "sha256": "b65bf316af9b18e78f73677f86d312885479bac58ab5861c020d5b58b2bf00fe"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 6,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1786147200000,
+        "lg": "HNL Croazia",
+        "H": "Rudes",
+        "A": "Osijek",
+        "h": 1,
+        "a": 6,
+        "ht": null,
+        "up": false,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "HRV",
+          "AwayCountry": "HRV",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/CRO_1_hnl/results_2627.csv",
+              "sha256": "b65bf316af9b18e78f73677f86d312885479bac58ab5861c020d5b58b2bf00fe"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 9,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1786665600000,
+        "lg": "HNL Croazia",
+        "H": "Din. Zagreb",
+        "A": "Rudes",
+        "h": 4,
+        "a": 0,
+        "ht": null,
+        "up": false,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "HRV",
+          "AwayCountry": "HRV",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/CRO_1_hnl/results_2627.csv",
+              "sha256": "b65bf316af9b18e78f73677f86d312885479bac58ab5861c020d5b58b2bf00fe"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 11,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1786752000000,
+        "lg": "HNL Croazia",
+        "H": "Osijek",
+        "A": "Lok. Zagreb",
+        "h": 1,
+        "a": 0,
+        "ht": null,
+        "up": false,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "HRV",
+          "AwayCountry": "HRV",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/CRO_1_hnl/results_2627.csv",
+              "sha256": "b65bf316af9b18e78f73677f86d312885479bac58ab5861c020d5b58b2bf00fe"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 14,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1787270400000,
+        "lg": "HNL Croazia",
+        "H": "Rudes",
+        "A": "Lok. Zagreb",
+        "h": 4,
+        "a": 1,
+        "ht": null,
+        "up": false,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "HRV",
+          "AwayCountry": "HRV",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/CRO_1_hnl/results_2627.csv",
+              "sha256": "b65bf316af9b18e78f73677f86d312885479bac58ab5861c020d5b58b2bf00fe"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 20,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1787961600000,
+        "lg": "HNL Croazia",
+        "H": "Varazdin",
+        "A": "Rudes",
+        "h": 2,
+        "a": 0,
+        "ht": null,
+        "up": false,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "HRV",
+          "AwayCountry": "HRV",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/CRO_1_hnl/results_2627.csv",
+              "sha256": "b65bf316af9b18e78f73677f86d312885479bac58ab5861c020d5b58b2bf00fe"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 23,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1788134400000,
+        "lg": "HNL Croazia",
+        "H": "Hajduk Split",
+        "A": "Lok. Zagreb",
+        "h": 2,
+        "a": 0,
+        "ht": null,
+        "up": false,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "HRV",
+          "AwayCountry": "HRV",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/CRO_1_hnl/results_2627.csv",
+              "sha256": "b65bf316af9b18e78f73677f86d312885479bac58ab5861c020d5b58b2bf00fe"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 27,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1788652800000,
+        "lg": "HNL Croazia",
+        "H": "Rudes",
+        "A": "Hajduk Split",
+        "h": 0,
+        "a": 4,
+        "ht": null,
+        "up": false,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "HRV",
+          "AwayCountry": "HRV",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/CRO_1_hnl/results_2627.csv",
+              "sha256": "b65bf316af9b18e78f73677f86d312885479bac58ab5861c020d5b58b2bf00fe"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 28,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1788652800000,
+        "lg": "HNL Croazia",
+        "H": "Slaven Belupo",
+        "A": "Lok. Zagreb",
+        "h": 2,
+        "a": 1,
+        "ht": null,
+        "up": false,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "HRV",
+          "AwayCountry": "HRV",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/CRO_1_hnl/results_2627.csv",
+              "sha256": "b65bf316af9b18e78f73677f86d312885479bac58ab5861c020d5b58b2bf00fe"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 29,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1789171200000,
+        "lg": "HNL Croazia",
+        "H": "Lok. Zagreb",
+        "A": "Rijeka",
+        "h": 1,
+        "a": 1,
+        "ht": null,
+        "up": false,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "HRV",
+          "AwayCountry": "HRV",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/CRO_1_hnl/results_2627.csv",
+              "sha256": "b65bf316af9b18e78f73677f86d312885479bac58ab5861c020d5b58b2bf00fe"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 32,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1789257600000,
+        "lg": "HNL Croazia",
+        "H": "Istra 1961",
+        "A": "Rudes",
+        "h": 3,
+        "a": 2,
+        "ht": null,
+        "up": false,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "HRV",
+          "AwayCountry": "HRV",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/CRO_1_hnl/results_2627.csv",
+              "sha256": "b65bf316af9b18e78f73677f86d312885479bac58ab5861c020d5b58b2bf00fe"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 34,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1789689600000,
+        "lg": "HNL Croazia",
+        "H": "Rudes",
+        "A": "Slaven Belupo",
+        "h": 2,
+        "a": 2,
+        "ht": null,
+        "up": false,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "HRV",
+          "AwayCountry": "HRV",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/CRO_1_hnl/results_2627.csv",
+              "sha256": "b65bf316af9b18e78f73677f86d312885479bac58ab5861c020d5b58b2bf00fe"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 37,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1789862400000,
+        "lg": "HNL Croazia",
+        "H": "Din. Zagreb",
+        "A": "Lok. Zagreb",
+        "h": 3,
+        "a": 2,
+        "ht": null,
+        "up": false,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "HRV",
+          "AwayCountry": "HRV",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/CRO_1_hnl/results_2627.csv",
+              "sha256": "b65bf316af9b18e78f73677f86d312885479bac58ab5861c020d5b58b2bf00fe"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 39,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1791504000000,
+        "lg": "HNL Croazia",
+        "H": "Gorica",
+        "A": "Rudes",
+        "h": 1,
+        "a": 2,
+        "ht": null,
+        "up": false,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "HRV",
+          "AwayCountry": "HRV",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/CRO_1_hnl/results_2627.csv",
+              "sha256": "b65bf316af9b18e78f73677f86d312885479bac58ab5861c020d5b58b2bf00fe"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 42,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1791676800000,
+        "lg": "HNL Croazia",
+        "H": "Lok. Zagreb",
+        "A": "Varazdin",
+        "h": 0,
+        "a": 1,
+        "ht": null,
+        "up": false,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "HRV",
+          "AwayCountry": "HRV",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/CRO_1_hnl/results_2627.csv",
+              "sha256": "b65bf316af9b18e78f73677f86d312885479bac58ab5861c020d5b58b2bf00fe"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 44,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1792108800000,
+        "lg": "HNL Croazia",
+        "H": "Rudes",
+        "A": "Rijeka",
+        "h": 1,
+        "a": 2,
+        "ht": null,
+        "up": false,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "HRV",
+          "AwayCountry": "HRV",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/CRO_1_hnl/results_2627.csv",
+              "sha256": "b65bf316af9b18e78f73677f86d312885479bac58ab5861c020d5b58b2bf00fe"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 45,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1792195200000,
+        "lg": "HNL Croazia",
+        "H": "Lok. Zagreb",
+        "A": "Istra 1961",
+        "h": 2,
+        "a": 0,
+        "ht": null,
+        "up": false,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "HRV",
+          "AwayCountry": "HRV",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/CRO_1_hnl/results_2627.csv",
+              "sha256": "b65bf316af9b18e78f73677f86d312885479bac58ab5861c020d5b58b2bf00fe"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 49,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1792800000000,
+        "lg": "HNL Croazia",
+        "H": "Gorica",
+        "A": "Lok. Zagreb",
+        "h": 0,
+        "a": 0,
+        "ht": null,
+        "up": false,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "HRV",
+          "AwayCountry": "HRV",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/CRO_1_hnl/results_2627.csv",
+              "sha256": "b65bf316af9b18e78f73677f86d312885479bac58ab5861c020d5b58b2bf00fe"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 51,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1792886400000,
+        "lg": "HNL Croazia",
+        "H": "Osijek",
+        "A": "Rudes",
+        "h": 0,
+        "a": 1,
+        "ht": null,
+        "up": false,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "HRV",
+          "AwayCountry": "HRV",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/CRO_1_hnl/results_2627.csv",
+              "sha256": "b65bf316af9b18e78f73677f86d312885479bac58ab5861c020d5b58b2bf00fe"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 56,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1793404800000,
+        "lg": "HNL Croazia",
+        "H": "Rudes",
+        "A": "Din. Zagreb",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "HRV",
+          "AwayCountry": "HRV",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/CRO_1_hnl/fixtures_2627.csv",
+              "sha256": "01fb55c80b548ef1c01e132db0b840511e0ad1ee4622e14f9793e132a42f3881"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 57,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1793491200000,
+        "lg": "HNL Croazia",
+        "H": "Lok. Zagreb",
+        "A": "Osijek",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "HRV",
+          "AwayCountry": "HRV",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/CRO_1_hnl/fixtures_2627.csv",
+              "sha256": "01fb55c80b548ef1c01e132db0b840511e0ad1ee4622e14f9793e132a42f3881"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 59,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1793923200000,
+        "lg": "HNL Croazia",
+        "H": "Lok. Zagreb",
+        "A": "Rudes",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "HRV",
+          "AwayCountry": "HRV",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/CRO_1_hnl/fixtures_2627.csv",
+              "sha256": "01fb55c80b548ef1c01e132db0b840511e0ad1ee4622e14f9793e132a42f3881"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 65,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1795219200000,
+        "lg": "HNL Croazia",
+        "H": "Lok. Zagreb",
+        "A": "Hajduk Split",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "HRV",
+          "AwayCountry": "HRV",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/CRO_1_hnl/fixtures_2627.csv",
+              "sha256": "01fb55c80b548ef1c01e132db0b840511e0ad1ee4622e14f9793e132a42f3881"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 67,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1795219200000,
+        "lg": "HNL Croazia",
+        "H": "Rudes",
+        "A": "Varazdin",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "HRV",
+          "AwayCountry": "HRV",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/CRO_1_hnl/fixtures_2627.csv",
+              "sha256": "01fb55c80b548ef1c01e132db0b840511e0ad1ee4622e14f9793e132a42f3881"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 70,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1795824000000,
+        "lg": "HNL Croazia",
+        "H": "Hajduk Split",
+        "A": "Rudes",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "HRV",
+          "AwayCountry": "HRV",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/CRO_1_hnl/fixtures_2627.csv",
+              "sha256": "01fb55c80b548ef1c01e132db0b840511e0ad1ee4622e14f9793e132a42f3881"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 72,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1795824000000,
+        "lg": "HNL Croazia",
+        "H": "Lok. Zagreb",
+        "A": "Slaven Belupo",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "HRV",
+          "AwayCountry": "HRV",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/CRO_1_hnl/fixtures_2627.csv",
+              "sha256": "01fb55c80b548ef1c01e132db0b840511e0ad1ee4622e14f9793e132a42f3881"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 76,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1796428800000,
+        "lg": "HNL Croazia",
+        "H": "Rijeka",
+        "A": "Lok. Zagreb",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "HRV",
+          "AwayCountry": "HRV",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/CRO_1_hnl/fixtures_2627.csv",
+              "sha256": "01fb55c80b548ef1c01e132db0b840511e0ad1ee4622e14f9793e132a42f3881"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 77,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1796428800000,
+        "lg": "HNL Croazia",
+        "H": "Rudes",
+        "A": "Istra 1961",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "HRV",
+          "AwayCountry": "HRV",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/CRO_1_hnl/fixtures_2627.csv",
+              "sha256": "01fb55c80b548ef1c01e132db0b840511e0ad1ee4622e14f9793e132a42f3881"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 82,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1797033600000,
+        "lg": "HNL Croazia",
+        "H": "Lok. Zagreb",
+        "A": "Din. Zagreb",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "HRV",
+          "AwayCountry": "HRV",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/CRO_1_hnl/fixtures_2627.csv",
+              "sha256": "01fb55c80b548ef1c01e132db0b840511e0ad1ee4622e14f9793e132a42f3881"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 84,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1797033600000,
+        "lg": "HNL Croazia",
+        "H": "Slaven Belupo",
+        "A": "Rudes",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "HRV",
+          "AwayCountry": "HRV",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/CRO_1_hnl/fixtures_2627.csv",
+              "sha256": "01fb55c80b548ef1c01e132db0b840511e0ad1ee4622e14f9793e132a42f3881"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 88,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1797638400000,
+        "lg": "HNL Croazia",
+        "H": "Rudes",
+        "A": "Gorica",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "HRV",
+          "AwayCountry": "HRV",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/CRO_1_hnl/fixtures_2627.csv",
+              "sha256": "01fb55c80b548ef1c01e132db0b840511e0ad1ee4622e14f9793e132a42f3881"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 89,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1797638400000,
+        "lg": "HNL Croazia",
+        "H": "Varazdin",
+        "A": "Lok. Zagreb",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "HRV",
+          "AwayCountry": "HRV",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/CRO_1_hnl/fixtures_2627.csv",
+              "sha256": "01fb55c80b548ef1c01e132db0b840511e0ad1ee4622e14f9793e132a42f3881"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 92,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1800662400000,
+        "lg": "HNL Croazia",
+        "H": "Istra 1961",
+        "A": "Lok. Zagreb",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "HRV",
+          "AwayCountry": "HRV",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/CRO_1_hnl/fixtures_2627.csv",
+              "sha256": "01fb55c80b548ef1c01e132db0b840511e0ad1ee4622e14f9793e132a42f3881"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 93,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1800662400000,
+        "lg": "HNL Croazia",
+        "H": "Rijeka",
+        "A": "Rudes",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "HRV",
+          "AwayCountry": "HRV",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/CRO_1_hnl/fixtures_2627.csv",
+              "sha256": "01fb55c80b548ef1c01e132db0b840511e0ad1ee4622e14f9793e132a42f3881"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 96,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1801267200000,
+        "lg": "HNL Croazia",
+        "H": "Lok. Zagreb",
+        "A": "Gorica",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "HRV",
+          "AwayCountry": "HRV",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/CRO_1_hnl/fixtures_2627.csv",
+              "sha256": "01fb55c80b548ef1c01e132db0b840511e0ad1ee4622e14f9793e132a42f3881"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 98,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1801267200000,
+        "lg": "HNL Croazia",
+        "H": "Rudes",
+        "A": "Osijek",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "HRV",
+          "AwayCountry": "HRV",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/CRO_1_hnl/fixtures_2627.csv",
+              "sha256": "01fb55c80b548ef1c01e132db0b840511e0ad1ee4622e14f9793e132a42f3881"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 100,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1801872000000,
+        "lg": "HNL Croazia",
+        "H": "Din. Zagreb",
+        "A": "Rudes",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "HRV",
+          "AwayCountry": "HRV",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/CRO_1_hnl/fixtures_2627.csv",
+              "sha256": "01fb55c80b548ef1c01e132db0b840511e0ad1ee4622e14f9793e132a42f3881"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 103,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1801872000000,
+        "lg": "HNL Croazia",
+        "H": "Osijek",
+        "A": "Lok. Zagreb",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "HRV",
+          "AwayCountry": "HRV",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/CRO_1_hnl/fixtures_2627.csv",
+              "sha256": "01fb55c80b548ef1c01e132db0b840511e0ad1ee4622e14f9793e132a42f3881"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 108,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1802476800000,
+        "lg": "HNL Croazia",
+        "H": "Rudes",
+        "A": "Lok. Zagreb",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "HRV",
+          "AwayCountry": "HRV",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/CRO_1_hnl/fixtures_2627.csv",
+              "sha256": "01fb55c80b548ef1c01e132db0b840511e0ad1ee4622e14f9793e132a42f3881"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 112,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1803081600000,
+        "lg": "HNL Croazia",
+        "H": "Lok. Zagreb",
+        "A": "Hajduk Split",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "HRV",
+          "AwayCountry": "HRV",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/CRO_1_hnl/fixtures_2627.csv",
+              "sha256": "01fb55c80b548ef1c01e132db0b840511e0ad1ee4622e14f9793e132a42f3881"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 114,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1803081600000,
+        "lg": "HNL Croazia",
+        "H": "Varazdin",
+        "A": "Rudes",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "HRV",
+          "AwayCountry": "HRV",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/CRO_1_hnl/fixtures_2627.csv",
+              "sha256": "01fb55c80b548ef1c01e132db0b840511e0ad1ee4622e14f9793e132a42f3881"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 117,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1803686400000,
+        "lg": "HNL Croazia",
+        "H": "Rudes",
+        "A": "Hajduk Split",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "HRV",
+          "AwayCountry": "HRV",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/CRO_1_hnl/fixtures_2627.csv",
+              "sha256": "01fb55c80b548ef1c01e132db0b840511e0ad1ee4622e14f9793e132a42f3881"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 118,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1803686400000,
+        "lg": "HNL Croazia",
+        "H": "Slaven Belupo",
+        "A": "Lok. Zagreb",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "HRV",
+          "AwayCountry": "HRV",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/CRO_1_hnl/fixtures_2627.csv",
+              "sha256": "01fb55c80b548ef1c01e132db0b840511e0ad1ee4622e14f9793e132a42f3881"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 122,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1804291200000,
+        "lg": "HNL Croazia",
+        "H": "Istra 1961",
+        "A": "Rudes",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "HRV",
+          "AwayCountry": "HRV",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/CRO_1_hnl/fixtures_2627.csv",
+              "sha256": "01fb55c80b548ef1c01e132db0b840511e0ad1ee4622e14f9793e132a42f3881"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 123,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1804291200000,
+        "lg": "HNL Croazia",
+        "H": "Lok. Zagreb",
+        "A": "Rijeka",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "HRV",
+          "AwayCountry": "HRV",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/CRO_1_hnl/fixtures_2627.csv",
+              "sha256": "01fb55c80b548ef1c01e132db0b840511e0ad1ee4622e14f9793e132a42f3881"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 125,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1804896000000,
+        "lg": "HNL Croazia",
+        "H": "Din. Zagreb",
+        "A": "Lok. Zagreb",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "HRV",
+          "AwayCountry": "HRV",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/CRO_1_hnl/fixtures_2627.csv",
+              "sha256": "01fb55c80b548ef1c01e132db0b840511e0ad1ee4622e14f9793e132a42f3881"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 128,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1804896000000,
+        "lg": "HNL Croazia",
+        "H": "Rudes",
+        "A": "Slaven Belupo",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "HRV",
+          "AwayCountry": "HRV",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/CRO_1_hnl/fixtures_2627.csv",
+              "sha256": "01fb55c80b548ef1c01e132db0b840511e0ad1ee4622e14f9793e132a42f3881"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 130,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1805500800000,
+        "lg": "HNL Croazia",
+        "H": "Gorica",
+        "A": "Rudes",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "HRV",
+          "AwayCountry": "HRV",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/CRO_1_hnl/fixtures_2627.csv",
+              "sha256": "01fb55c80b548ef1c01e132db0b840511e0ad1ee4622e14f9793e132a42f3881"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 132,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1805500800000,
+        "lg": "HNL Croazia",
+        "H": "Lok. Zagreb",
+        "A": "Varazdin",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "HRV",
+          "AwayCountry": "HRV",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/CRO_1_hnl/fixtures_2627.csv",
+              "sha256": "01fb55c80b548ef1c01e132db0b840511e0ad1ee4622e14f9793e132a42f3881"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 136,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1806710400000,
+        "lg": "HNL Croazia",
+        "H": "Lok. Zagreb",
+        "A": "Istra 1961",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "HRV",
+          "AwayCountry": "HRV",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/CRO_1_hnl/fixtures_2627.csv",
+              "sha256": "01fb55c80b548ef1c01e132db0b840511e0ad1ee4622e14f9793e132a42f3881"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 138,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1806710400000,
+        "lg": "HNL Croazia",
+        "H": "Rudes",
+        "A": "Rijeka",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "HRV",
+          "AwayCountry": "HRV",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/CRO_1_hnl/fixtures_2627.csv",
+              "sha256": "01fb55c80b548ef1c01e132db0b840511e0ad1ee4622e14f9793e132a42f3881"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 141,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1807315200000,
+        "lg": "HNL Croazia",
+        "H": "Gorica",
+        "A": "Lok. Zagreb",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "HRV",
+          "AwayCountry": "HRV",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/CRO_1_hnl/fixtures_2627.csv",
+              "sha256": "01fb55c80b548ef1c01e132db0b840511e0ad1ee4622e14f9793e132a42f3881"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 143,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1807315200000,
+        "lg": "HNL Croazia",
+        "H": "Osijek",
+        "A": "Rudes",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "HRV",
+          "AwayCountry": "HRV",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/CRO_1_hnl/fixtures_2627.csv",
+              "sha256": "01fb55c80b548ef1c01e132db0b840511e0ad1ee4622e14f9793e132a42f3881"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 146,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1807920000000,
+        "lg": "HNL Croazia",
+        "H": "Lok. Zagreb",
+        "A": "Osijek",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "HRV",
+          "AwayCountry": "HRV",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/CRO_1_hnl/fixtures_2627.csv",
+              "sha256": "01fb55c80b548ef1c01e132db0b840511e0ad1ee4622e14f9793e132a42f3881"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 148,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1807920000000,
+        "lg": "HNL Croazia",
+        "H": "Rudes",
+        "A": "Din. Zagreb",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "HRV",
+          "AwayCountry": "HRV",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/CRO_1_hnl/fixtures_2627.csv",
+              "sha256": "01fb55c80b548ef1c01e132db0b840511e0ad1ee4622e14f9793e132a42f3881"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 152,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1808524800000,
+        "lg": "HNL Croazia",
+        "H": "Lok. Zagreb",
+        "A": "Rudes",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "HRV",
+          "AwayCountry": "HRV",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/CRO_1_hnl/fixtures_2627.csv",
+              "sha256": "01fb55c80b548ef1c01e132db0b840511e0ad1ee4622e14f9793e132a42f3881"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 156,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1809129600000,
+        "lg": "HNL Croazia",
+        "H": "Hajduk Split",
+        "A": "Lok. Zagreb",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "HRV",
+          "AwayCountry": "HRV",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/CRO_1_hnl/fixtures_2627.csv",
+              "sha256": "01fb55c80b548ef1c01e132db0b840511e0ad1ee4622e14f9793e132a42f3881"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    },
+    {
+      "originalIndex": 158,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1809129600000,
+        "lg": "HNL Croazia",
+        "H": "Rudes",
+        "A": "Varazdin",
+        "h": null,
+        "a": null,
+        "ht": null,
+        "up": true,
+        "o": {
+          "Phase": "regular",
+          "HomeCountry": "HRV",
+          "AwayCountry": "HRV",
+          "Source": "Open Matchday (riferimento pubblico)",
+          "CsvSeason": 2026,
+          "HistSources": [
+            {
+              "url": "https://raw.githubusercontent.com/oladeeayo/open-matchday/5bab54301722564438c8070b70b446271e639637/data/CRO_1_hnl/fixtures_2627.csv",
+              "sha256": "01fb55c80b548ef1c01e132db0b840511e0ad1ee4622e14f9793e132a42f3881"
+            }
+          ]
+        },
+        "hth": null,
+        "hta": null,
+        "shots": null
+      }
+    }
+  ]
+}

@@ -1,0 +1,4326 @@
+{
+  "originalPacket": "histories/stab003/SP2_2025.json",
+  "originalSHA256": "f74862415e3dc72660e607eedd1372118debdbda855c2b62905280f537d6da1d",
+  "review": [
+    {
+      "originalIndex": 1,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1755216000000,
+        "lg": "Segunda División",
+        "H": "Valladolid",
+        "A": "Ceuta",
+        "h": 3,
+        "a": 0,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+          "HistSourceSHA256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+              "sha256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 2,
+        "hta": 0,
+        "shots": [
+          16,
+          5,
+          9,
+          0
+        ]
+      }
+    },
+    {
+      "originalIndex": 5,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1755388800000,
+        "lg": "Segunda División",
+        "H": "Sociedad B",
+        "A": "Zaragoza",
+        "h": 1,
+        "a": 0,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+          "HistSourceSHA256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+              "sha256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": [
+          3,
+          18,
+          2,
+          5
+        ]
+      }
+    },
+    {
+      "originalIndex": 8,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1755388800000,
+        "lg": "Segunda División",
+        "H": "Las Palmas",
+        "A": "Andorra",
+        "h": 1,
+        "a": 1,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+          "HistSourceSHA256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+              "sha256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": [
+          10,
+          7,
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "originalIndex": 15,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1755907200000,
+        "lg": "Segunda División",
+        "H": "Ceuta",
+        "A": "Sp Gijon",
+        "h": 0,
+        "a": 1,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+          "HistSourceSHA256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+              "sha256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 1,
+        "shots": [
+          12,
+          7,
+          7,
+          4
+        ]
+      }
+    },
+    {
+      "originalIndex": 16,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1755907200000,
+        "lg": "Segunda División",
+        "H": "Zaragoza",
+        "A": "Andorra",
+        "h": 1,
+        "a": 3,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+          "HistSourceSHA256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+              "sha256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 1,
+        "shots": [
+          13,
+          17,
+          6,
+          10
+        ]
+      }
+    },
+    {
+      "originalIndex": 19,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1755993600000,
+        "lg": "Segunda División",
+        "H": "Malaga",
+        "A": "Sociedad B",
+        "h": 1,
+        "a": 0,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+          "HistSourceSHA256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+              "sha256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          21,
+          10,
+          5,
+          4
+        ]
+      }
+    },
+    {
+      "originalIndex": 22,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1756425600000,
+        "lg": "Segunda División",
+        "H": "Sociedad B",
+        "A": "Almeria",
+        "h": 2,
+        "a": 2,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+          "HistSourceSHA256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+              "sha256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 1,
+        "shots": [
+          9,
+          16,
+          3,
+          5
+        ]
+      }
+    },
+    {
+      "originalIndex": 24,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1756512000000,
+        "lg": "Segunda División",
+        "H": "Santander",
+        "A": "Ceuta",
+        "h": 4,
+        "a": 1,
+        "ht": 3,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+          "HistSourceSHA256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+              "sha256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 2,
+        "hta": 1,
+        "shots": [
+          17,
+          11,
+          9,
+          1
+        ]
+      }
+    },
+    {
+      "originalIndex": 27,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1756598400000,
+        "lg": "Segunda División",
+        "H": "Andorra",
+        "A": "Burgos",
+        "h": 2,
+        "a": 1,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+          "HistSourceSHA256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+              "sha256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": [
+          14,
+          12,
+          5,
+          4
+        ]
+      }
+    },
+    {
+      "originalIndex": 38,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1757203200000,
+        "lg": "Segunda División",
+        "H": "Ceuta",
+        "A": "Huesca",
+        "h": 2,
+        "a": 1,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+          "HistSourceSHA256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+              "sha256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": [
+          14,
+          6,
+          4,
+          1
+        ]
+      }
+    },
+    {
+      "originalIndex": 40,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1757203200000,
+        "lg": "Segunda División",
+        "H": "Sociedad B",
+        "A": "Cadiz",
+        "h": 3,
+        "a": 3,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+          "HistSourceSHA256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+              "sha256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 1,
+        "shots": [
+          17,
+          9,
+          5,
+          2
+        ]
+      }
+    },
+    {
+      "originalIndex": 43,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1757289600000,
+        "lg": "Segunda División",
+        "H": "Eibar",
+        "A": "Andorra",
+        "h": 2,
+        "a": 0,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+          "HistSourceSHA256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+              "sha256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          16,
+          11,
+          6,
+          5
+        ]
+      }
+    },
+    {
+      "originalIndex": 44,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1757635200000,
+        "lg": "Segunda División",
+        "H": "Las Palmas",
+        "A": "Sociedad B",
+        "h": 2,
+        "a": 1,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+          "HistSourceSHA256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+              "sha256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": [
+          16,
+          3,
+          5,
+          1
+        ]
+      }
+    },
+    {
+      "originalIndex": 49,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1757808000000,
+        "lg": "Segunda División",
+        "H": "Andorra",
+        "A": "Cordoba",
+        "h": 3,
+        "a": 1,
+        "ht": 3,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+          "HistSourceSHA256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+              "sha256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 2,
+        "hta": 1,
+        "shots": [
+          14,
+          19,
+          8,
+          5
+        ]
+      }
+    },
+    {
+      "originalIndex": 51,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1757808000000,
+        "lg": "Segunda División",
+        "H": "Castellon",
+        "A": "Ceuta",
+        "h": 3,
+        "a": 3,
+        "ht": 3,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+          "HistSourceSHA256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+              "sha256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 2,
+        "hta": 1,
+        "shots": [
+          15,
+          10,
+          7,
+          5
+        ]
+      }
+    },
+    {
+      "originalIndex": 57,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1758326400000,
+        "lg": "Segunda División",
+        "H": "Andorra",
+        "A": "Mirandes",
+        "h": 1,
+        "a": 1,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+          "HistSourceSHA256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+              "sha256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 1,
+        "shots": [
+          18,
+          7,
+          6,
+          2
+        ]
+      }
+    },
+    {
+      "originalIndex": 60,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1758412800000,
+        "lg": "Segunda División",
+        "H": "Ceuta",
+        "A": "Zaragoza",
+        "h": 1,
+        "a": 0,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+          "HistSourceSHA256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+              "sha256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          7,
+          12,
+          3,
+          3
+        ]
+      }
+    },
+    {
+      "originalIndex": 62,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1758412800000,
+        "lg": "Segunda División",
+        "H": "Eibar",
+        "A": "Sociedad B",
+        "h": 2,
+        "a": 1,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+          "HistSourceSHA256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+              "sha256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": [
+          12,
+          16,
+          5,
+          4
+        ]
+      }
+    },
+    {
+      "originalIndex": 68,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1758931200000,
+        "lg": "Segunda División",
+        "H": "Santander",
+        "A": "Andorra",
+        "h": 1,
+        "a": 2,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+          "HistSourceSHA256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+              "sha256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          18,
+          14,
+          6,
+          4
+        ]
+      }
+    },
+    {
+      "originalIndex": 70,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1759017600000,
+        "lg": "Segunda División",
+        "H": "Sociedad B",
+        "A": "Cordoba",
+        "h": 1,
+        "a": 1,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+          "HistSourceSHA256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+              "sha256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": [
+          10,
+          13,
+          5,
+          3
+        ]
+      }
+    },
+    {
+      "originalIndex": 72,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1759017600000,
+        "lg": "Segunda División",
+        "H": "Cadiz",
+        "A": "Ceuta",
+        "h": 0,
+        "a": 0,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+          "HistSourceSHA256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+              "sha256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          9,
+          11,
+          3,
+          3
+        ]
+      }
+    },
+    {
+      "originalIndex": 77,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1759449600000,
+        "lg": "Segunda División",
+        "H": "Ceuta",
+        "A": "Eibar",
+        "h": 1,
+        "a": 0,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+          "HistSourceSHA256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+              "sha256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": [
+          12,
+          5,
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "originalIndex": 79,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1759536000000,
+        "lg": "Segunda División",
+        "H": "Andorra",
+        "A": "Leganes",
+        "h": 1,
+        "a": 2,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+          "HistSourceSHA256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+              "sha256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          8,
+          11,
+          4,
+          5
+        ]
+      }
+    },
+    {
+      "originalIndex": 81,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1759536000000,
+        "lg": "Segunda División",
+        "H": "Granada",
+        "A": "Sociedad B",
+        "h": 5,
+        "a": 2,
+        "ht": 6,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+          "HistSourceSHA256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+              "sha256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 5,
+        "hta": 1,
+        "shots": [
+          13,
+          14,
+          5,
+          8
+        ]
+      }
+    },
+    {
+      "originalIndex": 91,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1760140800000,
+        "lg": "Segunda División",
+        "H": "Sociedad B",
+        "A": "Andorra",
+        "h": 3,
+        "a": 0,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+          "HistSourceSHA256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+              "sha256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": [
+          9,
+          10,
+          5,
+          3
+        ]
+      }
+    },
+    {
+      "originalIndex": 92,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1760227200000,
+        "lg": "Segunda División",
+        "H": "Albacete",
+        "A": "Ceuta",
+        "h": 0,
+        "a": 0,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+          "HistSourceSHA256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+              "sha256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          13,
+          3,
+          4,
+          1
+        ]
+      }
+    },
+    {
+      "originalIndex": 99,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1760659200000,
+        "lg": "Segunda División",
+        "H": "Andorra",
+        "A": "Granada",
+        "h": 0,
+        "a": 0,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+          "HistSourceSHA256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+              "sha256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          13,
+          13,
+          3,
+          4
+        ]
+      }
+    },
+    {
+      "originalIndex": 100,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1760745600000,
+        "lg": "Segunda División",
+        "H": "Ceuta",
+        "A": "Mirandes",
+        "h": 2,
+        "a": 0,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+          "HistSourceSHA256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+              "sha256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 2,
+        "hta": 0,
+        "shots": [
+          12,
+          7,
+          5,
+          1
+        ]
+      }
+    },
+    {
+      "originalIndex": 110,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1761350400000,
+        "lg": "Segunda División",
+        "H": "Cultural Leonesa",
+        "A": "Ceuta",
+        "h": 0,
+        "a": 1,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+          "HistSourceSHA256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+              "sha256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 1,
+        "shots": [
+          15,
+          5,
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "originalIndex": 113,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1761350400000,
+        "lg": "Segunda División",
+        "H": "Burgos",
+        "A": "Sociedad B",
+        "h": 1,
+        "a": 0,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+          "HistSourceSHA256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+              "sha256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          14,
+          5,
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "originalIndex": 116,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1761436800000,
+        "lg": "Segunda División",
+        "H": "Malaga",
+        "A": "Andorra",
+        "h": 4,
+        "a": 1,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+          "HistSourceSHA256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+              "sha256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": [
+          16,
+          23,
+          7,
+          5
+        ]
+      }
+    },
+    {
+      "originalIndex": 120,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1761868800000,
+        "lg": "Segunda División",
+        "H": "Santander",
+        "A": "Sociedad B",
+        "h": 1,
+        "a": 0,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+          "HistSourceSHA256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+              "sha256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": [
+          13,
+          12,
+          1,
+          4
+        ]
+      }
+    },
+    {
+      "originalIndex": 125,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1762041600000,
+        "lg": "Segunda División",
+        "H": "Andorra",
+        "A": "Cadiz",
+        "h": 0,
+        "a": 0,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+          "HistSourceSHA256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+              "sha256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          15,
+          5,
+          4,
+          1
+        ]
+      }
+    },
+    {
+      "originalIndex": 126,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1762041600000,
+        "lg": "Segunda División",
+        "H": "Cordoba",
+        "A": "Ceuta",
+        "h": 2,
+        "a": 0,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+          "HistSourceSHA256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+              "sha256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 2,
+        "hta": 0,
+        "shots": [
+          12,
+          12,
+          4,
+          2
+        ]
+      }
+    },
+    {
+      "originalIndex": 131,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1762300800000,
+        "lg": "Segunda División",
+        "H": "Sociedad B",
+        "A": "Huesca",
+        "h": 2,
+        "a": 0,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+          "HistSourceSHA256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+              "sha256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": [
+          13,
+          10,
+          5,
+          1
+        ]
+      }
+    },
+    {
+      "originalIndex": 133,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1762560000000,
+        "lg": "Segunda División",
+        "H": "Sociedad B",
+        "A": "Leganes",
+        "h": 2,
+        "a": 1,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+          "HistSourceSHA256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+              "sha256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 1,
+        "shots": [
+          12,
+          9,
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "originalIndex": 135,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1762560000000,
+        "lg": "Segunda División",
+        "H": "Huesca",
+        "A": "Andorra",
+        "h": 2,
+        "a": 2,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+          "HistSourceSHA256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+              "sha256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 2,
+        "shots": [
+          10,
+          20,
+          5,
+          3
+        ]
+      }
+    },
+    {
+      "originalIndex": 143,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1763164800000,
+        "lg": "Segunda División",
+        "H": "Albacete",
+        "A": "Andorra",
+        "h": 1,
+        "a": 0,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+          "HistSourceSHA256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+              "sha256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          17,
+          17,
+          6,
+          6
+        ]
+      }
+    },
+    {
+      "originalIndex": 144,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1763164800000,
+        "lg": "Segunda División",
+        "H": "Castellon",
+        "A": "Sociedad B",
+        "h": 5,
+        "a": 4,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+          "HistSourceSHA256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+              "sha256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 1,
+        "shots": [
+          23,
+          19,
+          8,
+          9
+        ]
+      }
+    },
+    {
+      "originalIndex": 146,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1763251200000,
+        "lg": "Segunda División",
+        "H": "Ceuta",
+        "A": "Leganes",
+        "h": 1,
+        "a": 2,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+          "HistSourceSHA256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+              "sha256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 1,
+        "shots": [
+          14,
+          12,
+          1,
+          5
+        ]
+      }
+    },
+    {
+      "originalIndex": 154,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1763769600000,
+        "lg": "Segunda División",
+        "H": "Andorra",
+        "A": "Castellon",
+        "h": 1,
+        "a": 3,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+          "HistSourceSHA256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+              "sha256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 1,
+        "shots": [
+          10,
+          16,
+          4,
+          6
+        ]
+      }
+    },
+    {
+      "originalIndex": 158,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1763856000000,
+        "lg": "Segunda División",
+        "H": "La Coruna",
+        "A": "Ceuta",
+        "h": 2,
+        "a": 1,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+          "HistSourceSHA256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+              "sha256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": [
+          16,
+          13,
+          7,
+          4
+        ]
+      }
+    },
+    {
+      "originalIndex": 163,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1763942400000,
+        "lg": "Segunda División",
+        "H": "Sociedad B",
+        "A": "Valladolid",
+        "h": 1,
+        "a": 0,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+          "HistSourceSHA256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+              "sha256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": [
+          13,
+          20,
+          4,
+          3
+        ]
+      }
+    },
+    {
+      "originalIndex": 164,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1764115200000,
+        "lg": "Segunda División",
+        "H": "Ceuta",
+        "A": "Almeria",
+        "h": 3,
+        "a": 2,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+          "HistSourceSHA256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+              "sha256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 1,
+        "shots": [
+          10,
+          15,
+          7,
+          6
+        ]
+      }
+    },
+    {
+      "originalIndex": 165,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1764288000000,
+        "lg": "Segunda División",
+        "H": "Sp Gijon",
+        "A": "Andorra",
+        "h": 1,
+        "a": 1,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+          "HistSourceSHA256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+              "sha256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          23,
+          10,
+          10,
+          2
+        ]
+      }
+    },
+    {
+      "originalIndex": 166,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1764374400000,
+        "lg": "Segunda División",
+        "H": "Ceuta",
+        "A": "Burgos",
+        "h": 1,
+        "a": 0,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+          "HistSourceSHA256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+              "sha256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": [
+          14,
+          9,
+          5,
+          1
+        ]
+      }
+    },
+    {
+      "originalIndex": 174,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1764460800000,
+        "lg": "Segunda División",
+        "H": "Mirandes",
+        "A": "Sociedad B",
+        "h": 1,
+        "a": 0,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+          "HistSourceSHA256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+              "sha256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          16,
+          16,
+          5,
+          6
+        ]
+      }
+    },
+    {
+      "originalIndex": 176,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1764979200000,
+        "lg": "Segunda División",
+        "H": "Andorra",
+        "A": "Almeria",
+        "h": 1,
+        "a": 2,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+          "HistSourceSHA256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+              "sha256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          19,
+          17,
+          6,
+          8
+        ]
+      }
+    },
+    {
+      "originalIndex": 178,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1764979200000,
+        "lg": "Segunda División",
+        "H": "Sociedad B",
+        "A": "Sp Gijon",
+        "h": 0,
+        "a": 1,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+          "HistSourceSHA256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+              "sha256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          8,
+          9,
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "originalIndex": 183,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1765065600000,
+        "lg": "Segunda División",
+        "H": "Granada",
+        "A": "Ceuta",
+        "h": 1,
+        "a": 1,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+          "HistSourceSHA256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+              "sha256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 1,
+        "shots": [
+          15,
+          9,
+          3,
+          3
+        ]
+      }
+    },
+    {
+      "originalIndex": 190,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1765584000000,
+        "lg": "Segunda División",
+        "H": "Valladolid",
+        "A": "Andorra",
+        "h": 0,
+        "a": 1,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+          "HistSourceSHA256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+              "sha256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          17,
+          9,
+          5,
+          2
+        ]
+      }
+    },
+    {
+      "originalIndex": 192,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1765584000000,
+        "lg": "Segunda División",
+        "H": "La Coruna",
+        "A": "Sociedad B",
+        "h": 0,
+        "a": 3,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+          "HistSourceSHA256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+              "sha256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 1,
+        "shots": [
+          17,
+          10,
+          9,
+          3
+        ]
+      }
+    },
+    {
+      "originalIndex": 196,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1765670400000,
+        "lg": "Segunda División",
+        "H": "Ceuta",
+        "A": "Las Palmas",
+        "h": 1,
+        "a": 1,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+          "HistSourceSHA256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+              "sha256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          15,
+          8,
+          4,
+          2
+        ]
+      }
+    },
+    {
+      "originalIndex": 199,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1766188800000,
+        "lg": "Segunda División",
+        "H": "Andorra",
+        "A": "La Coruna",
+        "h": 1,
+        "a": 0,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+          "HistSourceSHA256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+              "sha256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          12,
+          10,
+          4,
+          1
+        ]
+      }
+    },
+    {
+      "originalIndex": 205,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1766275200000,
+        "lg": "Segunda División",
+        "H": "Sociedad B",
+        "A": "Ceuta",
+        "h": 1,
+        "a": 3,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+          "HistSourceSHA256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+              "sha256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 1,
+        "shots": [
+          8,
+          19,
+          5,
+          7
+        ]
+      }
+    },
+    {
+      "originalIndex": 210,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1767398400000,
+        "lg": "Segunda División",
+        "H": "Cultural Leonesa",
+        "A": "Sociedad B",
+        "h": 1,
+        "a": 1,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+          "HistSourceSHA256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+              "sha256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          9,
+          15,
+          1,
+          4
+        ]
+      }
+    },
+    {
+      "originalIndex": 216,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1767484800000,
+        "lg": "Segunda División",
+        "H": "Ceuta",
+        "A": "Andorra",
+        "h": 2,
+        "a": 1,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+          "HistSourceSHA256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+              "sha256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": [
+          8,
+          12,
+          5,
+          8
+        ]
+      }
+    },
+    {
+      "originalIndex": 222,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1768003200000,
+        "lg": "Segunda División",
+        "H": "Sociedad B",
+        "A": "Albacete",
+        "h": 0,
+        "a": 0,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+          "HistSourceSHA256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+              "sha256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          13,
+          20,
+          3,
+          6
+        ]
+      }
+    },
+    {
+      "originalIndex": 223,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1768003200000,
+        "lg": "Segunda División",
+        "H": "Andorra",
+        "A": "Cultural Leonesa",
+        "h": 1,
+        "a": 1,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+          "HistSourceSHA256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+              "sha256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 1,
+        "shots": [
+          18,
+          2,
+          5,
+          2
+        ]
+      }
+    },
+    {
+      "originalIndex": 229,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1768089600000,
+        "lg": "Segunda División",
+        "H": "Malaga",
+        "A": "Ceuta",
+        "h": 2,
+        "a": 1,
+        "ht": 3,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+          "HistSourceSHA256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+              "sha256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 2,
+        "hta": 1,
+        "shots": [
+          18,
+          3,
+          8,
+          2
+        ]
+      }
+    },
+    {
+      "originalIndex": 232,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1768608000000,
+        "lg": "Segunda División",
+        "H": "Ceuta",
+        "A": "Valladolid",
+        "h": 0,
+        "a": 3,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+          "HistSourceSHA256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+              "sha256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 1,
+        "shots": [
+          21,
+          12,
+          6,
+          6
+        ]
+      }
+    },
+    {
+      "originalIndex": 234,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1768608000000,
+        "lg": "Segunda División",
+        "H": "Zaragoza",
+        "A": "Sociedad B",
+        "h": 1,
+        "a": 1,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+          "HistSourceSHA256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+              "sha256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          16,
+          27,
+          1,
+          7
+        ]
+      }
+    },
+    {
+      "originalIndex": 236,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1768694400000,
+        "lg": "Segunda División",
+        "H": "Mirandes",
+        "A": "Andorra",
+        "h": 1,
+        "a": 2,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+          "HistSourceSHA256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+              "sha256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 1,
+        "shots": [
+          16,
+          14,
+          5,
+          3
+        ]
+      }
+    },
+    {
+      "originalIndex": 244,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1769212800000,
+        "lg": "Segunda División",
+        "H": "Leganes",
+        "A": "Sociedad B",
+        "h": 2,
+        "a": 0,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+          "HistSourceSHA256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+              "sha256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          20,
+          9,
+          7,
+          4
+        ]
+      }
+    },
+    {
+      "originalIndex": 248,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1769299200000,
+        "lg": "Segunda División",
+        "H": "Andorra",
+        "A": "Huesca",
+        "h": 1,
+        "a": 1,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+          "HistSourceSHA256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+              "sha256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 1,
+        "shots": [
+          19,
+          6,
+          5,
+          1
+        ]
+      }
+    },
+    {
+      "originalIndex": 252,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1769385600000,
+        "lg": "Segunda División",
+        "H": "Ceuta",
+        "A": "Cultural Leonesa",
+        "h": 3,
+        "a": 1,
+        "ht": 3,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+          "HistSourceSHA256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+              "sha256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 2,
+        "hta": 1,
+        "shots": [
+          18,
+          14,
+          10,
+          6
+        ]
+      }
+    },
+    {
+      "originalIndex": 253,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1769731200000,
+        "lg": "Segunda División",
+        "H": "Sociedad B",
+        "A": "Las Palmas",
+        "h": 1,
+        "a": 1,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+          "HistSourceSHA256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+              "sha256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          12,
+          11,
+          5,
+          4
+        ]
+      }
+    },
+    {
+      "originalIndex": 258,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1769904000000,
+        "lg": "Segunda División",
+        "H": "Almeria",
+        "A": "Ceuta",
+        "h": 4,
+        "a": 2,
+        "ht": 4,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+          "HistSourceSHA256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+              "sha256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 3,
+        "hta": 1,
+        "shots": [
+          16,
+          16,
+          9,
+          4
+        ]
+      }
+    },
+    {
+      "originalIndex": 260,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1769904000000,
+        "lg": "Segunda División",
+        "H": "Castellon",
+        "A": "Andorra",
+        "h": 2,
+        "a": 0,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+          "HistSourceSHA256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+              "sha256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 2,
+        "hta": 0,
+        "shots": [
+          18,
+          10,
+          6,
+          5
+        ]
+      }
+    },
+    {
+      "originalIndex": 265,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1770422400000,
+        "lg": "Segunda División",
+        "H": "Andorra",
+        "A": "Sociedad B",
+        "h": 1,
+        "a": 2,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+          "HistSourceSHA256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+              "sha256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 1,
+        "shots": [
+          14,
+          7,
+          3,
+          2
+        ]
+      }
+    },
+    {
+      "originalIndex": 274,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1770940800000,
+        "lg": "Segunda División",
+        "H": "Almeria",
+        "A": "Andorra",
+        "h": 3,
+        "a": 2,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+          "HistSourceSHA256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+              "sha256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 1,
+        "shots": [
+          15,
+          15,
+          6,
+          7
+        ]
+      }
+    },
+    {
+      "originalIndex": 281,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1771113600000,
+        "lg": "Segunda División",
+        "H": "Huesca",
+        "A": "Ceuta",
+        "h": 2,
+        "a": 0,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+          "HistSourceSHA256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+              "sha256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          10,
+          11,
+          3,
+          4
+        ]
+      }
+    },
+    {
+      "originalIndex": 284,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1771200000000,
+        "lg": "Segunda División",
+        "H": "Sociedad B",
+        "A": "Malaga",
+        "h": 2,
+        "a": 1,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+          "HistSourceSHA256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+              "sha256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 1,
+        "shots": [
+          13,
+          17,
+          8,
+          4
+        ]
+      }
+    },
+    {
+      "originalIndex": 285,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1771545600000,
+        "lg": "Segunda División",
+        "H": "Ceuta",
+        "A": "Granada",
+        "h": 2,
+        "a": 1,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+          "HistSourceSHA256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+              "sha256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": [
+          10,
+          11,
+          4,
+          3
+        ]
+      }
+    },
+    {
+      "originalIndex": 292,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1771718400000,
+        "lg": "Segunda División",
+        "H": "Andorra",
+        "A": "Zaragoza",
+        "h": 2,
+        "a": 1,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+          "HistSourceSHA256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+              "sha256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 2,
+        "hta": 0,
+        "shots": [
+          17,
+          6,
+          6,
+          2
+        ]
+      }
+    },
+    {
+      "originalIndex": 295,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1771804800000,
+        "lg": "Segunda División",
+        "H": "Cadiz",
+        "A": "Sociedad B",
+        "h": 0,
+        "a": 2,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+          "HistSourceSHA256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+              "sha256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          14,
+          17,
+          2,
+          10
+        ]
+      }
+    },
+    {
+      "originalIndex": 296,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1771977600000,
+        "lg": "Segunda División",
+        "H": "Ceuta",
+        "A": "Cordoba",
+        "h": 3,
+        "a": 2,
+        "ht": 5,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+          "HistSourceSHA256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+              "sha256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 3,
+        "hta": 2,
+        "shots": [
+          5,
+          12,
+          3,
+          5
+        ]
+      }
+    },
+    {
+      "originalIndex": 302,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1772323200000,
+        "lg": "Segunda División",
+        "H": "Sociedad B",
+        "A": "La Coruna",
+        "h": 2,
+        "a": 3,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+          "HistSourceSHA256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+              "sha256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 1,
+        "shots": [
+          14,
+          11,
+          4,
+          4
+        ]
+      }
+    },
+    {
+      "originalIndex": 303,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1772323200000,
+        "lg": "Segunda División",
+        "H": "Mirandes",
+        "A": "Ceuta",
+        "h": 0,
+        "a": 1,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+          "HistSourceSHA256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+              "sha256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 1,
+        "shots": [
+          20,
+          8,
+          10,
+          4
+        ]
+      }
+    },
+    {
+      "originalIndex": 307,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1772409600000,
+        "lg": "Segunda División",
+        "H": "Cordoba",
+        "A": "Andorra",
+        "h": 1,
+        "a": 4,
+        "ht": 3,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+          "HistSourceSHA256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+              "sha256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 3,
+        "shots": [
+          13,
+          13,
+          4,
+          8
+        ]
+      }
+    },
+    {
+      "originalIndex": 310,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1772841600000,
+        "lg": "Segunda División",
+        "H": "Sociedad B",
+        "A": "Castellon",
+        "h": 4,
+        "a": 2,
+        "ht": 4,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+          "HistSourceSHA256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+              "sha256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 2,
+        "hta": 2,
+        "shots": [
+          17,
+          23,
+          8,
+          8
+        ]
+      }
+    },
+    {
+      "originalIndex": 313,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1772928000000,
+        "lg": "Segunda División",
+        "H": "Las Palmas",
+        "A": "Ceuta",
+        "h": 4,
+        "a": 0,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+          "HistSourceSHA256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+              "sha256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": [
+          15,
+          4,
+          9,
+          2
+        ]
+      }
+    },
+    {
+      "originalIndex": 314,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1772928000000,
+        "lg": "Segunda División",
+        "H": "Andorra",
+        "A": "Sp Gijon",
+        "h": 1,
+        "a": 0,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+          "HistSourceSHA256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+              "sha256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          22,
+          4,
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "originalIndex": 323,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1773446400000,
+        "lg": "Segunda División",
+        "H": "Ceuta",
+        "A": "La Coruna",
+        "h": 1,
+        "a": 2,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+          "HistSourceSHA256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+              "sha256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 1,
+        "shots": [
+          18,
+          11,
+          5,
+          5
+        ]
+      }
+    },
+    {
+      "originalIndex": 324,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1773532800000,
+        "lg": "Segunda División",
+        "H": "Cordoba",
+        "A": "Sociedad B",
+        "h": 0,
+        "a": 2,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+          "HistSourceSHA256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+              "sha256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 2,
+        "shots": [
+          27,
+          9,
+          6,
+          5
+        ]
+      }
+    },
+    {
+      "originalIndex": 325,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1773532800000,
+        "lg": "Segunda División",
+        "H": "Granada",
+        "A": "Andorra",
+        "h": 1,
+        "a": 1,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+          "HistSourceSHA256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+              "sha256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 1,
+        "shots": [
+          11,
+          12,
+          5,
+          4
+        ]
+      }
+    },
+    {
+      "originalIndex": 331,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1774051200000,
+        "lg": "Segunda División",
+        "H": "Leganes",
+        "A": "Ceuta",
+        "h": 5,
+        "a": 2,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+          "HistSourceSHA256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+              "sha256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 1,
+        "shots": [
+          21,
+          14,
+          8,
+          5
+        ]
+      }
+    },
+    {
+      "originalIndex": 332,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1774051200000,
+        "lg": "Segunda División",
+        "H": "Andorra",
+        "A": "Eibar",
+        "h": 0,
+        "a": 1,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+          "HistSourceSHA256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+              "sha256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 1,
+        "shots": [
+          14,
+          5,
+          3,
+          2
+        ]
+      }
+    },
+    {
+      "originalIndex": 338,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1774137600000,
+        "lg": "Segunda División",
+        "H": "Sociedad B",
+        "A": "Granada",
+        "h": 0,
+        "a": 2,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+          "HistSourceSHA256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+              "sha256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 2,
+        "shots": [
+          18,
+          9,
+          5,
+          4
+        ]
+      }
+    },
+    {
+      "originalIndex": 342,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1774656000000,
+        "lg": "Segunda División",
+        "H": "Ceuta",
+        "A": "Cadiz",
+        "h": 2,
+        "a": 1,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+          "HistSourceSHA256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+              "sha256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": [
+          8,
+          4,
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "originalIndex": 349,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1774742400000,
+        "lg": "Segunda División",
+        "H": "Cultural Leonesa",
+        "A": "Andorra",
+        "h": 0,
+        "a": 4,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+          "HistSourceSHA256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+              "sha256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 2,
+        "shots": [
+          10,
+          11,
+          6,
+          7
+        ]
+      }
+    },
+    {
+      "originalIndex": 351,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1774742400000,
+        "lg": "Segunda División",
+        "H": "Almeria",
+        "A": "Sociedad B",
+        "h": 5,
+        "a": 1,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+          "HistSourceSHA256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+              "sha256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 2,
+        "hta": 0,
+        "shots": [
+          29,
+          18,
+          10,
+          6
+        ]
+      }
+    },
+    {
+      "originalIndex": 355,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1775001600000,
+        "lg": "Segunda División",
+        "H": "Andorra",
+        "A": "Malaga",
+        "h": 3,
+        "a": 3,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+          "HistSourceSHA256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+              "sha256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 2,
+        "shots": [
+          19,
+          12,
+          8,
+          6
+        ]
+      }
+    },
+    {
+      "originalIndex": 356,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1775001600000,
+        "lg": "Segunda División",
+        "H": "Burgos",
+        "A": "Ceuta",
+        "h": 1,
+        "a": 1,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+          "HistSourceSHA256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+              "sha256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 1,
+        "shots": [
+          8,
+          5,
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "originalIndex": 361,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1775088000000,
+        "lg": "Segunda División",
+        "H": "Sociedad B",
+        "A": "Eibar",
+        "h": 0,
+        "a": 1,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+          "HistSourceSHA256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+              "sha256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 1,
+        "shots": [
+          12,
+          11,
+          2,
+          5
+        ]
+      }
+    },
+    {
+      "originalIndex": 367,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1775347200000,
+        "lg": "Segunda División",
+        "H": "Eibar",
+        "A": "Ceuta",
+        "h": 3,
+        "a": 0,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+          "HistSourceSHA256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+              "sha256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": [
+          13,
+          6,
+          6,
+          1
+        ]
+      }
+    },
+    {
+      "originalIndex": 368,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1775347200000,
+        "lg": "Segunda División",
+        "H": "Andorra",
+        "A": "Santander",
+        "h": 6,
+        "a": 2,
+        "ht": 4,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+          "HistSourceSHA256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+              "sha256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 2,
+        "hta": 2,
+        "shots": [
+          21,
+          9,
+          9,
+          3
+        ]
+      }
+    },
+    {
+      "originalIndex": 373,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1775433600000,
+        "lg": "Segunda División",
+        "H": "Sp Gijon",
+        "A": "Sociedad B",
+        "h": 1,
+        "a": 0,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+          "HistSourceSHA256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+              "sha256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": [
+          21,
+          11,
+          11,
+          2
+        ]
+      }
+    },
+    {
+      "originalIndex": 374,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1775779200000,
+        "lg": "Segunda División",
+        "H": "Ceuta",
+        "A": "Sociedad B",
+        "h": 0,
+        "a": 0,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+          "HistSourceSHA256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+              "sha256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          15,
+          16,
+          4,
+          3
+        ]
+      }
+    },
+    {
+      "originalIndex": 381,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1775952000000,
+        "lg": "Segunda División",
+        "H": "Cadiz",
+        "A": "Andorra",
+        "h": 0,
+        "a": 1,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+          "HistSourceSHA256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+              "sha256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 1,
+        "shots": [
+          11,
+          7,
+          5,
+          3
+        ]
+      }
+    },
+    {
+      "originalIndex": 385,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1776384000000,
+        "lg": "Segunda División",
+        "H": "Sociedad B",
+        "A": "Santander",
+        "h": 1,
+        "a": 3,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+          "HistSourceSHA256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+              "sha256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 2,
+        "shots": [
+          17,
+          11,
+          3,
+          7
+        ]
+      }
+    },
+    {
+      "originalIndex": 387,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1776470400000,
+        "lg": "Segunda División",
+        "H": "Zaragoza",
+        "A": "Ceuta",
+        "h": 2,
+        "a": 2,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+          "HistSourceSHA256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+              "sha256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 1,
+        "shots": [
+          25,
+          8,
+          8,
+          3
+        ]
+      }
+    },
+    {
+      "originalIndex": 390,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1776556800000,
+        "lg": "Segunda División",
+        "H": "Andorra",
+        "A": "Valladolid",
+        "h": 1,
+        "a": 0,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+          "HistSourceSHA256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+              "sha256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          11,
+          4,
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "originalIndex": 397,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1777075200000,
+        "lg": "Segunda División",
+        "H": "Valladolid",
+        "A": "Sociedad B",
+        "h": 1,
+        "a": 0,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+          "HistSourceSHA256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+              "sha256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          11,
+          11,
+          1,
+          3
+        ]
+      }
+    },
+    {
+      "originalIndex": 404,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1777161600000,
+        "lg": "Segunda División",
+        "H": "Leganes",
+        "A": "Andorra",
+        "h": 0,
+        "a": 4,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+          "HistSourceSHA256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+              "sha256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 1,
+        "shots": [
+          17,
+          15,
+          8,
+          10
+        ]
+      }
+    },
+    {
+      "originalIndex": 405,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1777161600000,
+        "lg": "Segunda División",
+        "H": "Ceuta",
+        "A": "Santander",
+        "h": 0,
+        "a": 0,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+          "HistSourceSHA256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+              "sha256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          6,
+          19,
+          0,
+          9
+        ]
+      }
+    },
+    {
+      "originalIndex": 407,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1777593600000,
+        "lg": "Segunda División",
+        "H": "Andorra",
+        "A": "Albacete",
+        "h": 0,
+        "a": 1,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+          "HistSourceSHA256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+              "sha256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          25,
+          4,
+          7,
+          2
+        ]
+      }
+    },
+    {
+      "originalIndex": 414,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1777766400000,
+        "lg": "Segunda División",
+        "H": "Sp Gijon",
+        "A": "Ceuta",
+        "h": 1,
+        "a": 2,
+        "ht": 3,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+          "HistSourceSHA256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+              "sha256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 2,
+        "shots": [
+          9,
+          17,
+          3,
+          8
+        ]
+      }
+    },
+    {
+      "originalIndex": 415,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1777766400000,
+        "lg": "Segunda División",
+        "H": "Sociedad B",
+        "A": "Burgos",
+        "h": 0,
+        "a": 0,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+          "HistSourceSHA256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+              "sha256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          15,
+          7,
+          4,
+          2
+        ]
+      }
+    },
+    {
+      "originalIndex": 419,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1778284800000,
+        "lg": "Segunda División",
+        "H": "Ceuta",
+        "A": "Castellon",
+        "h": 1,
+        "a": 1,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+          "HistSourceSHA256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+              "sha256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          8,
+          18,
+          4,
+          5
+        ]
+      }
+    },
+    {
+      "originalIndex": 424,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1778371200000,
+        "lg": "Segunda División",
+        "H": "Andorra",
+        "A": "Las Palmas",
+        "h": 5,
+        "a": 1,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+          "HistSourceSHA256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+              "sha256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 1,
+        "shots": [
+          19,
+          8,
+          9,
+          4
+        ]
+      }
+    },
+    {
+      "originalIndex": 428,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1778457600000,
+        "lg": "Segunda División",
+        "H": "Huesca",
+        "A": "Sociedad B",
+        "h": 1,
+        "a": 2,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+          "HistSourceSHA256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+              "sha256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 1,
+        "shots": [
+          19,
+          16,
+          5,
+          5
+        ]
+      }
+    },
+    {
+      "originalIndex": 431,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1778889600000,
+        "lg": "Segunda División",
+        "H": "Sociedad B",
+        "A": "Mirandes",
+        "h": 2,
+        "a": 2,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+          "HistSourceSHA256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+              "sha256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 1,
+        "shots": [
+          17,
+          3,
+          6,
+          3
+        ]
+      }
+    },
+    {
+      "originalIndex": 432,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1778889600000,
+        "lg": "Segunda División",
+        "H": "Ceuta",
+        "A": "Malaga",
+        "h": 1,
+        "a": 4,
+        "ht": 3,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+          "HistSourceSHA256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+              "sha256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 3,
+        "shots": [
+          14,
+          11,
+          6,
+          8
+        ]
+      }
+    },
+    {
+      "originalIndex": 437,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1778976000000,
+        "lg": "Segunda División",
+        "H": "La Coruna",
+        "A": "Andorra",
+        "h": 2,
+        "a": 1,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+          "HistSourceSHA256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+              "sha256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 1,
+        "shots": [
+          14,
+          11,
+          7,
+          4
+        ]
+      }
+    },
+    {
+      "originalIndex": 440,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1779580800000,
+        "lg": "Segunda División",
+        "H": "Albacete",
+        "A": "Sociedad B",
+        "h": 3,
+        "a": 1,
+        "ht": 2,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+          "HistSourceSHA256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+              "sha256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 2,
+        "hta": 0,
+        "shots": [
+          20,
+          12,
+          7,
+          4
+        ]
+      }
+    },
+    {
+      "originalIndex": 441,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1779580800000,
+        "lg": "Segunda División",
+        "H": "Andorra",
+        "A": "Ceuta",
+        "h": 0,
+        "a": 2,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+          "HistSourceSHA256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+              "sha256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 1,
+        "shots": [
+          11,
+          4,
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "originalIndex": 451,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1780099200000,
+        "lg": "Segunda División",
+        "H": "Ceuta",
+        "A": "Albacete",
+        "h": 1,
+        "a": 0,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+          "HistSourceSHA256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+              "sha256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": [
+          8,
+          11,
+          4,
+          4
+        ]
+      }
+    },
+    {
+      "originalIndex": 452,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1780099200000,
+        "lg": "Segunda División",
+        "H": "Sociedad B",
+        "A": "Cultural Leonesa",
+        "h": 1,
+        "a": 1,
+        "ht": 0,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+          "HistSourceSHA256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+              "sha256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 0,
+        "hta": 0,
+        "shots": [
+          12,
+          11,
+          4,
+          3
+        ]
+      }
+    },
+    {
+      "originalIndex": 455,
+      "reason": "identita_non_documentata",
+      "record": {
+        "d": 1780185600000,
+        "lg": "Segunda División",
+        "H": "Burgos",
+        "A": "Andorra",
+        "h": 1,
+        "a": 0,
+        "ht": 1,
+        "up": false,
+        "o": {
+          "CsvSeason": 2025,
+          "HistSourceURL": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+          "HistSourceSHA256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de",
+          "HistProvider": "Football-Data",
+          "Phase": "regular",
+          "HistSources": [
+            {
+              "url": "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+              "sha256": "4986060e5c1d55626aef24c4bbeaaea2278b27a0b7696927405705aaa57405de"
+            }
+          ],
+          "Source": "Riferimenti storici pubblici TA-STAB-003"
+        },
+        "hth": 1,
+        "hta": 0,
+        "shots": [
+          11,
+          13,
+          5,
+          3
+        ]
+      }
+    }
+  ]
+}
