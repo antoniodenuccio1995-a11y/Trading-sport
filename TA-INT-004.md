@@ -1,5 +1,7 @@
 # TA-INT-004 — v0.2U-rc5, candidata per revisione indipendente
 
+**Ripresa e consolidamento del 29/10:** corretto il FAIL di reimportazione del backup reale descritto nel [commento vincolante della DIREZIONE](https://github.com/antoniodenuccio1995-a11y/Trading-sport/pull/4#issuecomment-6491569703). Il codice conserva la correzione del Backtest c6d9aa4. Il collaudo completo viene eseguito di nuovo da copia pulita dell’esatto commit consegnato: fa fede il rapporto finale collegato nella PR #4, non i precedenti rapporti PASS. [Diagnosi e matrice del nuovo ciclo](docs/int004/QA_CONSOLIDATO_2026-10-29.md).
+
 **Correzione urgente successiva a `b379d6f`:** risolto `safeKickoffFuture is not defined` nel Backtest con partite di oggi. La funzione degli orari è condivisa con lo Scanner, senza duplicazioni. [Diagnosi, prove prima/dopo e limiti](docs/int004/CORREZIONE_ORARI_RC5.md). Il precedente collaudo non copriva questo percorso: è aggiunto un test del pulsante effettivo con gare di oggi e domani.
 
 **Stato: sviluppo integrato e collaudato; approvazione indipendente e rilascio stabile ancora aperti.** Backtest, Mercato e alias operativi sono integrati con il nuovo motore di identità. Nessun merge su `main`, deploy o aggiornamento automatico dell'archivio personale.

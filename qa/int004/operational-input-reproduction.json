@@ -4,6 +4,8 @@
   "allFrozenRc4FilesIdentical": 314,
   "personalDataUsed": false,
   "pageerrors": [],
+  "consoleErrors": [],
+  "networkMode": "isolated: optional font CSS empty; automatic live refresh postponed via existing cache timestamps in test profiles only",
   "outcome": "PASS",
   "defectReproduced": true,
   "archivedObservations": 2,

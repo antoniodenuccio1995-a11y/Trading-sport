@@ -37,21 +37,58 @@
   const minutes=Object.hasOwn(fixed,z)?fixed[z]:offset&&+offset[2]<=14&&+offset[3]<60?(+offset[2]*60+ +offset[3])*(offset[1]==='-'?-1:1):null;
   return minutes==null?null:Date.parse(date+'T'+clock+':00Z')-minutes*60000;
  }
+ const utcValue=o=>o.KickoffUTC??o.KickoffISO??o.kickoffISO??o.startTimeUTC;
+ function timeSources(r){
+  const o=r.o||{},saved=Array.isArray(o.FixtureTimeObservations)?o.FixtureTimeObservations.filter(v=>v&&typeof v==='object'&&!Array.isArray(v)):[];
+  const changed=['Time','SourceTime','TimeZone'].some(k=>text(o[k])&&!saved.some(v=>text(v[k])===text(o[k])))||(text(utcValue(o))&&!saved.some(v=>text(utcValue(v))===text(utcValue(o))));
+  return saved.length&&!changed?saved:[o];
+ }
+ function timeSnapshot(o){return {Time:o.Time??null,SourceTime:o.SourceTime??null,KickoffUTC:utcValue(o)??null,TimeZone:o.TimeZone??null,source:o.Source??o.CsvSourceFile??o.source??null};}
+ function clockObservations(r){
+  const date=new Date(r.d).toISOString().slice(0,10);
+  // A merged row's flat Time/TimeZone fields can come from different sources.
+  // Retain each original pairing instead of manufacturing a new combined clock.
+  const sources=timeSources(r),clocks=[];
+  for(const v of sources){
+   if(!v||typeof v!=='object')continue;
+   const utc=utcValue(v);
+   if(utc){const n=instant(date,null,null,utc);if(Number.isFinite(n))clocks.push({kickoff:null,timeZone:'UTC',instant:n});continue;}
+   for(const value of [v.Time,v.SourceTime]){
+    const m=/^(\d{1,2}):(\d{2})(?::\d{2})?$/.exec(text(value));
+    if(!m||+m[1]>=24||+m[2]>=60)continue;
+    const kickoff=m[1].padStart(2,'0')+':'+m[2],timeZone=text(v.TimeZone)||null;
+    clocks.push({kickoff,timeZone,instant:instant(date,kickoff,timeZone,null)});
+   }
+  }
+  return [...new Map(clocks.map(c=>[JSON.stringify(c),c])).values()];
+ }
+ function clockCompatible(a,b){
+  if(Number.isFinite(a.instant)&&Number.isFinite(b.instant))return a.instant===b.instant;
+  return !!a.kickoff&&a.kickoff===b.kickoff&&(!a.timeZone||!b.timeZone||fold(a.timeZone)===fold(b.timeZone));
+ }
+ function clockDisagreement(a,b,requireRecordedClocks=false){
+  if(!a.length||!b.length)return false;
+  // A replay of an already recorded source observation is not a new conflict.
+  // Mere overlap is insufficient: partial overlaps with new clocks stay blocked.
+  const covered=(x,y)=>x.every(v=>y.some(w=>clockCompatible(v,w)));
+  return requireRecordedClocks?!covered(b,a):!covered(a,b)&&!covered(b,a);
+ }
  function context(r){
   const o=r.o||{},p=phase(r),date=new Date(r.d).toISOString().slice(0,10),utc=o.KickoffUTC??o.KickoffISO??o.kickoffISO??o.startTimeUTC,clock=text(utc??o.Time??o.SourceTime),time=/^(\d{1,2}):(\d{2})(?::\d{2})?$/.exec(clock),kickoff=time&&+time[1]<24&&+time[2]<60?time[1].padStart(2,'0')+':'+time[2]:null;
-  return {league:competition(r.lg),season:season(r),date,phase:p.stage,phaseDetail:p.detail,matchday:p.matchday,model:p.model,kickoff,timeZone:text(utc?'UTC':o.TimeZone)||null,kickoffInstant:instant(date,kickoff,text(utc?'UTC':o.TimeZone),utc),event:event(r)||events(r)[0]||null,events:events(r),instance:text(o.MatchInstance??o.ReplayNumber??o.ReplayOf),leg:o.Leg==null?null:text(o.Leg),status:fold(o.MatchStatus??o.Status),group:text(o.Group)||null};
+  const observations=clockObservations(r),known=observations.filter(v=>Number.isFinite(v.instant)),instants=new Set(known.map(v=>v.instant));
+  const kickoffInstant=known.length===observations.length&&instants.size===1?known[0].instant:null;
+  return {league:competition(r.lg),season:season(r),date,phase:p.stage,phaseDetail:p.detail,matchday:p.matchday,model:p.model,kickoff,timeZone:text(utc?'UTC':o.TimeZone)||null,kickoffInstant,clockObservations:observations,event:event(r)||events(r)[0]||null,events:events(r),instance:text(o.MatchInstance??o.ReplayNumber??o.ReplayOf),leg:o.Leg==null?null:text(o.Leg),status:fold(o.MatchStatus??o.Status),group:text(o.Group)||null};
  }
  function club(r,side,resolve){return r.o?.['Club'+side+'Id']||(resolve?resolve(r[side==='Home'?'H':'A'],competition(r.lg)).id:r[side==='Home'?'H':'A'])}
  function base(r,resolve){const c=context(r);return JSON.stringify([c.league,c.season,c.date,club(r,'Home',resolve),club(r,'Away',resolve)])}
  function key(r,resolve){const c=context(r);return JSON.stringify([base(r,resolve),c.instance,c.leg,c.event?.provider||null,c.event?.id||null])}
- function relation(a,b){
+ function relation(a,b,options={}){
   const x=context(a),y=context(b);if(x.league!==y.league||x.season!==y.season||x.date!==y.date)return {kind:'different',reason:'competition-season-date'};
   if(x.instance!==y.instance&&(x.instance||y.instance))return {kind:'different',reason:'explicit-replay-instance'};
   if(x.leg&&y.leg&&x.leg!==y.leg)return {kind:'different',reason:'explicit-leg'};
   for(const e of x.events)for(const f of y.events)if(e.provider===f.provider&&e.id!==f.id)return {kind:'different',reason:'distinct-trusted-source-events'};
   const sameEvent=x.events.some(e=>y.events.some(f=>e.provider===f.provider&&e.id===f.id));
-  const knownInstants=Number.isFinite(x.kickoffInstant)&&Number.isFinite(y.kickoffInstant),clockDisagreement=knownInstants?x.kickoffInstant!==y.kickoffInstant:x.kickoff&&y.kickoff&&(x.kickoff!==y.kickoff||x.timeZone&&y.timeZone&&x.timeZone!==y.timeZone);
-  if(clockDisagreement&&!sameEvent&&!!a.up===!!b.up)return {kind:'conflict',reason:'kickoff-disagreement'};
+  if(clockDisagreement(x.clockObservations,y.clockObservations,options.requireRecordedClocks)&&!sameEvent&&!!a.up===!!b.up)return {kind:'conflict',reason:'kickoff-disagreement'};
   if(x.phase!=='unknown'&&y.phase!=='unknown'&&x.phase!==y.phase)return {kind:'conflict',reason:'sporting-phase-disagreement'};
   if(x.phaseDetail&&y.phaseDetail&&x.phaseDetail!==y.phaseDetail)return {kind:'conflict',reason:'sporting-round-disagreement'};
   for(const side of ['Home','Away']){const ao=a.o||{},bo=b.o||{},ap=fold(ao[side+'Provider']??ao.Provider??ao['Club'+side+'Provider']),bp=fold(bo[side+'Provider']??bo.Provider??bo['Club'+side+'Provider']),ai=ao[side+'TeamID']??ao[side+'ID']??ao['Club'+side+'SourceId'],bi=bo[side+'TeamID']??bo[side+'ID']??bo['Club'+side+'SourceId'];if(ap&&ap===bp&&ai!=null&&bi!=null&&text(ai)!==text(bi))return {kind:'conflict',reason:'club-source-identity-disagreement'};}
@@ -67,5 +104,5 @@
   o.FixtureIdentityVersion='TA-INT-004';return {...r,lg,o};
  }
  function usable(r){const status=context(r).status;return !/cancel|void|abandon|annull|postponed|suspend|sospes|rinviat/.test(status)&&!(r.up===false&&/not.started|scheduled|in.progress|live/.test(status))}
- return {competition,season,phase,context,base,key,relation,normalise,usable,multiPhaseLeagues:[...multi]};
+ return {competition,season,phase,context,base,key,relation,normalise,usable,timeSources,timeSnapshot,multiPhaseLeagues:[...multi]};
 });

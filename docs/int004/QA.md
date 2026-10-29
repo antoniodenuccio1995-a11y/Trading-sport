@@ -1,4 +1,6 @@
-# Rapporto QA — candidata v0.2U-rc5 TA-INT-004
+# Rapporti QA di sviluppo — candidata v0.2U-rc5 TA-INT-004
+
+**Riferimento per la consegna consolidata del 29/10:** [QA_CONSOLIDATO_2026-10-29.md](QA_CONSOLIDATO_2026-10-29.md) e rapporto finale riferito al commit esatto nella PR #4. Questo documento conserva il perimetro delle verifiche di sviluppo; i PASS precedenti non attestavano la reimportazione ripetuta e non sostituiscono il nuovo ciclo end-to-end.
 
 **Addendum urgente successivo a b379d6f:** il collaudo Windows ha individuato un percorso non coperto dai test precedenti: Backtest con partite di oggi chiamava una funzione locale allo Scanner. Il FAIL è riprodotto, la definizione è ora condivisa e il nuovo test del pulsante copre orari futuri, passati, assenti, senza fuso e manuali. Evidenze prima/dopo, prova di sola rilocazione e limiti sono in [CORREZIONE_ORARI_RC5.md](CORREZIONE_ORARI_RC5.md). I PASS precedenti non costituivano prova di questo scenario.
 

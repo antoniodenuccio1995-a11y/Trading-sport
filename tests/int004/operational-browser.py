@@ -4,6 +4,7 @@ All fixtures are synthetic or public; downloads never contain personal rows.
 from pathlib import Path
 import csv,datetime,functools,hashlib,http.server,io,json,threading
 from playwright.sync_api import sync_playwright
+from browser_environment import isolate
 
 ROOT=Path(__file__).resolve().parents[2]
 FILES=['Trading_Analytics_v0.2U-rc5_TA-INT-004.html','ta-club-aliases-int004.js','ta-clubs-v4.js','ta-fixture-identity.js','ta-json-recovery-rc5.js','ta-csv-import-v02U-rc5.js','ta-history-coverage-rc5.js','ta-history-manifest-rc5.js','ta-int004-ui.js','ta-int004-area.js','ta-int004-app.js']
@@ -44,7 +45,7 @@ def preset_oracle(rows,strategy):
 try:
  with sync_playwright() as pw:
   b=pw.chromium.launch(executable_path='/usr/bin/chromium',headless=True,args=['--no-sandbox'])
-  c=b.new_context(accept_downloads=True);c.route('**/*',lambda r:r.continue_() if r.request.url.startswith(base) else r.abort());p=c.new_page();p.set_default_timeout(120000)
+  c=b.new_context(accept_downloads=True);isolate(c,base,report);p=c.new_page();p.set_default_timeout(120000)
   p.clock.set_fixed_time(datetime.datetime(2026,10,28,10,tzinfo=datetime.timezone.utc));p.on('pageerror',lambda e:report['pageerrors'].append(str(e)));p.on('dialog',lambda d:d.accept())
   p.goto(base+'Trading_Analytics_v0.2U-rc5_TA-INT-004.html');p.wait_for_function('archiveReady');p.evaluate('window.taStabAreaReady')
   assert p.locator('#m option').evaluate_all('(xs)=>xs.map(x=>x.value)')==['o15','o25','u25','btts','ht','draw','home','away']
@@ -128,6 +129,6 @@ try:
   assert 'Paesi diversi' in p.locator('#taQuickStatus').inner_text(),p.locator('#taQuickStatus').inner_text()
   passed('Simplified aliases preserve the cross-country guard and advanced options')
   assert not report['pageerrors'],report['pageerrors'];assert hashes()==tested
-  report.update(outcome='PASS',testedSourceSHA256=tested);c.close();b.close()
+  assert not report.get('consoleErrors',[]),report.get('consoleErrors');report.update(outcome='PASS',testedSourceSHA256=tested);c.close();b.close()
 finally:
  s.shutdown();(ROOT/'qa/int004/operational-browser.json').write_text(json.dumps(report,indent=2)+'\n')

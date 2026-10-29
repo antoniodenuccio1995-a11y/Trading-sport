@@ -1,5 +1,9 @@
 # Trading Analytics v0.2U-rc5 — candidata TA-INT-004
 
+**Candidata consolidata del 29/10/2026:** include la correzione della reimportazione JSON e quella del Backtest con gare di oggi. Estrarre **tutto il nuovo ZIP** in una cartella separata: il nuovo fix è nei moduli JavaScript, aggiornare soltanto l’HTML non basta. Il commit definitivo, lo ZIP verificato e il rapporto del collaudo completo eseguito da copia pulita sono collegati nella PR #4.
+
+[QA consolidato e procedura completa](docs/int004/QA_CONSOLIDATO_2026-10-29.md). Le evidenze sul commit definitivo sono pubblicate separatamente dal codice affinché contengano il suo SHA esatto; il riferimento nella PR identifica una sola candidata.
+
 **Correzione urgente dopo b379d6f:** risolto l'errore `safeKickoffFuture is not defined` del Backtest quando sono presenti gare di oggi. Estrarre il nuovo ZIP in una cartella separata per conservare la candidata precedente. L'HTML mantiene lo stesso nome; i moduli applicativi adiacenti sono invariati. Il nuovo AUDIT resta necessario. [Dettagli e test](docs/int004/CORREZIONE_ORARI_RC5.md).
 
 Questa è una candidata per collaudo indipendente. Non è una versione stabile e non aggiorna automaticamente la copia che stai usando.

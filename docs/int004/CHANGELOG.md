@@ -1,5 +1,15 @@
 # TA-INT-004 — Changelog candidata v0.2U-rc5
 
+## Consolidamento 29/10 — reimportazione e collaudo integrale
+
+- Orari confrontati come osservazioni originali di fonte, senza reinterpretare `Time` e `SourceTime` aggregati come un nuovo conflitto. Una storia di orari deve coprire interamente l’altra; una sola intersezione non basta.
+- Conservati gli abbinamenti orario/fuso di ciascuna fonte; non si costruisce un istante UTC prendendo l’orario da una fonte e il fuso da un’altra. Le indicazioni UTC esplicite rimangono autorevoli nella propria osservazione.
+- La ripetizione esatta di righe già mantenute in revisione non riscrive né riconcilia l’archivio: resta un no-op con avviso. Osservazioni nuove o valori discordanti continuano a bloccare l’integrazione.
+- Aggiunti test per riordino delle fonti, serializzazione, reimportazioni ripetute, nuovi conflitti, copertura parziale degli orari e metadati malformati.
+- Nuovo ciclo browser con upload, anteprima, conferma, export, reload, tre reimportazioni del sorgente, reimport dell’export e Undo; dati sintetici, backup rc4 recuperato e originale, senza scrivere negli input.
+- Runner unico del collaudo completo: log, comandi, manifest dei sorgenti, console e pageerror, codici di uscita, confronto su tutti i valori e verifica dalla stessa versione/commit in copia pulita. Nessuna suite vecchia è considerata una ricevuta nuova.
+- Correzione Backtest di oggi conservata. HTML, modelli, classifiche e registro trade invariati rispetto a c6d9aa4. Nessun merge o deploy.
+
 ## Correzione urgente degli orari dopo b379d6f
 
 - Risolto il riferimento non visibile a `safeKickoffFuture` dal Backtest; una sola funzione, invariata, ora condivisa con lo Scanner.

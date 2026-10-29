@@ -24,6 +24,64 @@ test('historical VfB Leipzig is not mapped to RB Leipzig through a shared city a
 
 test('a prior unplayed schedule can become a played result despite a revised clock, retaining both observations',()=>{const a=row({up:true,h:null,a:null,o:{Time:'15:30'}}),b=copy({o:{SourceTime:'14:30'}}),p=R.plan([a,b]);assert.equal(p.report.safe,true);assert.equal(p.records.length,1);assert.equal(p.records[0].up,false);assert.equal(p.records[0].o.Time,'15:30');assert.equal(p.records[0].o.SourceTime,'14:30')});
 
+test('AUDIT 29/10: schedule/result clocks remain idempotent through repeated imports, serialization and source order',()=>{
+ const calendar=row({up:true,h:null,a:null,o:{CsvSeason:2025,Time:'15:30',Source:'Synthetic schedule'}}),result=row({o:{CsvSeason:2025,SourceTime:'14:30',Source:'Synthetic result',B365H:'2.75'},ht:1,hth:0,hta:1});
+ for(const input of [[calendar,result],[result,calendar]]){
+  const first=R.plan(input);assert.equal(first.report.safe,true);assert.equal(first.records.length,1);
+  for(let n=0;n<5;n++){const again=R.plan(JSON.parse(JSON.stringify(input)),JSON.parse(JSON.stringify(first.records)));assert.equal(again.report.safe,true);assert.deepEqual(again.records,first.records);}
+  assert.equal(R.plan(first.records,first.records).report.safe,true);
+  assert.equal(first.records[0].o.FixtureTimeObservations.length,2);assert.equal(first.records[0].o.Time,'15:30');assert.equal(first.records[0].o.SourceTime,'14:30');assert.equal(first.records[0].o.B365H,'2.75');assert.equal(first.records[0].ht,1);
+ }
+});
+test('previous observations never waive a truly new clock, timezone, score or quote conflict',()=>{
+ const first=R.plan([row({up:true,h:null,a:null,o:{Time:'15:30'}}),row({o:{SourceTime:'14:30',B365H:'2.75'}})]);
+ for(const other of [row({o:{Time:'16:30'}}),row({h:8,o:{SourceTime:'14:30'}}),row({o:{SourceTime:'14:30',B365H:'3.25'}})]){
+  const p=R.plan([other],first.records);assert.equal(p.report.safe,false);assert.deepEqual(p.records,first.records);
+ }
+ const known=R.plan([row({o:{Time:'16:30',TimeZone:'+02:00'}}),row({o:{Time:'14:30',TimeZone:'UTC'}})]);
+ assert.equal(R.plan([row({o:{Time:'16:30',TimeZone:'UTC'}})],known.records).report.safe,false);
+});
+test('partially overlapping clock histories do not create a transitive merge',()=>{
+ const left=R.plan([row({up:true,h:null,a:null,o:{Time:'15:30'}}),row({o:{SourceTime:'14:30'}})]),right=R.plan([row({up:true,h:null,a:null,o:{Time:'15:30'}}),row({o:{SourceTime:'16:30'}})]);
+ assert.equal(R.plan(right.records,left.records).report.safe,false);
+});
+test('incoming history cannot smuggle a new clock into an existing archive by retaining one old clock',()=>{
+ const old=R.plan([row({o:{Time:'14:30'}})]),richer=R.plan([row({up:true,h:null,a:null,o:{Time:'15:30'}}),row({o:{SourceTime:'14:30'}})]);
+ const update=R.plan(richer.records,old.records);assert.equal(update.report.safe,false);assert.deepEqual(update.records,old.records);
+ assert.equal(R.plan([row({o:{SourceTime:'14:30'}})],richer.records).report.safe,true);
+});
+test('merged clocks never manufacture UTC certainty from different original field/zone pairings',()=>{
+ const first=R.plan([row({up:true,h:null,a:null,o:{Time:'15:30'}}),row({o:{SourceTime:'14:30',TimeZone:'UTC'}})]);
+ assert.equal(first.report.safe,true);assert.equal(F.context(first.records[0]).kickoffInstant,null);
+ assert.equal(R.plan([row({o:{SourceTime:'14:30',TimeZone:'UTC'}})],first.records).report.safe,true);
+});
+test('a fresh explicit UTC clock is authoritative within its own source, never fabricated from another source',()=>{
+ const a=row({o:{KickoffUTC:'2025-08-22T14:30:00Z',Time:'16:30'}});
+ assert.equal(F.context(a).kickoffInstant,Date.UTC(2025,7,22,14,30));
+ assert.equal(F.context(row({o:{KickoffUTC:'invalid',Time:'16:30',TimeZone:'UTC'}})).kickoffInstant,null);
+ const original=R.plan([row({up:true,h:null,a:null,o:{Time:'15:30'}}),row({o:{SourceTime:'14:30'}})]);
+ const changed=JSON.parse(JSON.stringify(original.records[0]));changed.o.Time='16:30';
+ assert.equal(R.plan([changed],original.records).report.safe,false);
+ assert.equal(R.plan([row({o:{FixtureTimeObservations:[null]}})]).report.safe,false);
+});
+test('an exact replay of previously retained unresolved rows is a no-op, never a silent reconciliation',()=>{
+ const old=[row({o:{Time:'18:00'}}),row({o:{Time:'21:00'}})],p=R.plan(old,old);
+ assert.equal(p.report.safe,true);assert.deepEqual(p.records,old);assert.equal(p.report.archiveNeedsReconciliation,2);
+ const changed=R.plan([row({h:9,o:{Time:'18:00'}})],old);assert.equal(changed.report.safe,false);assert.deepEqual(changed.records,old);
+});
+test('a clock disagreement is not waived by equal event codes belonging to different providers',()=>{
+ const a=row({o:{Provider:'primary',MatchID:'7',Time:'16:30',TimeZone:'UTC'}}),b=row({o:{Provider:'secondary',MatchID:'7',Time:'17:30',TimeZone:'UTC'}});
+ assert.equal(R.plan([a,b]).report.safe,false);
+ const same=row({o:{Provider:'secondary',MatchID:'7',Time:'18:30',TimeZone:'+02:00'}}),p=R.plan([a,same]);
+ assert.equal(p.report.safe,true);assert.equal(p.records[0].o.FixtureEventSources.length,2);assert.equal(R.plan([a,same],p.records).report.safe,true);
+});
+test('the actual FA Cup Crystal Palace/Everton replay remains two independently dated fixtures',()=>{
+ const data=require('./fixtures/fa-cup-replay-2023-24.json');
+ const records=data.matches.map(m=>({d:Date.parse(m.date+'T00:00:00Z'),lg:'FA Cup',H:m.H,A:m.A,h:m.h,a:m.a,ht:m.ht,hth:m.hth,hta:m.hta,shots:null,up:false,o:{CsvSeason:2023,Phase:'knockout',ReplayNumber:m.replay,HomeCountry:'ENG',AwayCountry:'ENG',Source:data.url,HistSourceSHA256:data.sha256}}));
+ const first=R.plan(records);assert.equal(first.report.safe,true);assert.equal(first.records.length,2);assert.deepEqual(first.records.map(r=>[r.h,r.a]),[[0,0],[1,0]]);assert.equal(first.records[1].o.ReplayNumber,1);
+ const again=R.plan(records,first.records);assert.equal(again.report.safe,true);assert.deepEqual(again.records,first.records);
+});
+
 test('new unrelated imports do not silently consolidate or remove existing duplicate archive rows',()=>{const old=[row(),copy()],incoming=row({d:Date.UTC(2025,8,2)}),p=R.plan([incoming],old);assert.equal(p.report.safe,true);assert.equal(p.records.length,3);assert.deepEqual(p.records.slice(0,2),old);assert.equal(p.report.archiveNeedsReconciliation,2)});
 
 test('unrelated imports preserve all original fields and IDs of existing singleton records',()=>{const old=copy(),p=R.plan([row({d:Date.UTC(2025,8,2)})],[old]);assert.deepEqual(p.records[0],old)});

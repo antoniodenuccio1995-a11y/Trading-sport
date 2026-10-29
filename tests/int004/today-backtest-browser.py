@@ -4,6 +4,7 @@ Uses public history and synthetic calendars, never a personal JSON archive.
 from pathlib import Path
 import csv,datetime,functools,hashlib,http.server,io,json,threading
 from playwright.sync_api import sync_playwright
+from browser_environment import isolate
 ROOT=Path(__file__).resolve().parents[2]
 FILES=['Trading_Analytics_v0.2U-rc5_TA-INT-004.html','ta-fixture-identity.js','ta-clubs-v4.js','ta-json-recovery-rc5.js']
 hashes=lambda:{f:hashlib.sha256((ROOT/f).read_bytes()).hexdigest() for f in FILES}
@@ -14,7 +15,7 @@ s=http.server.ThreadingHTTPServer(('127.0.0.1',0),functools.partial(Quiet,direct
 def passed(text):report['checks'].append(text);print('PASS',text,flush=True)
 try:
  with sync_playwright() as pw:
-  b=pw.chromium.launch(executable_path='/usr/bin/chromium',headless=True,args=['--no-sandbox']);c=b.new_context(accept_downloads=True,timezone_id='Europe/Rome');c.route('**/*',lambda r:r.continue_() if r.request.url.startswith(base) else r.abort());p=c.new_page();p.set_default_timeout(60000);p.clock.set_fixed_time(datetime.datetime(2026,10,28,10,tzinfo=datetime.timezone.utc));p.on('pageerror',lambda e:report['pageerrors'].append(str(e)))
+  b=pw.chromium.launch(executable_path='/usr/bin/chromium',headless=True,args=['--no-sandbox']);c=b.new_context(accept_downloads=True,timezone_id='Europe/Rome');isolate(c,base,report);p=c.new_page();p.set_default_timeout(60000);p.clock.set_fixed_time(datetime.datetime(2026,10,28,10,tzinfo=datetime.timezone.utc));p.on('pageerror',lambda e:report['pageerrors'].append(str(e)))
   p.goto(base+'Trading_Analytics_v0.2U-rc5_TA-INT-004.html');p.wait_for_function('archiveReady');p.evaluate('window.taStabAreaReady')
   history=[]
   for year in [2024,2025]:history += [r for r in json.loads((ROOT/f'histories/stab003/I1_{year}.json').read_text())['records'] if r[8].get('HistProvider')=='Football-Data' and not r[7]]
@@ -54,5 +55,5 @@ try:
   values=list(csv.reader(io.StringIO(Path(download.value.path()).read_text(encoding='utf-8-sig'))));assert len(values)==len(original)+1
   p.locator('#out').screenshot(path=str(ROOT/'qa/int004/today-backtest.png'))
   passed('Search and complete CSV download work after current-day Backtest execution')
-  assert hashes()==tested and not report['pageerrors'];report.update(outcome='PASS',testedSourceSHA256=tested);c.close();b.close()
+  assert hashes()==tested and not report['pageerrors'];assert not report.get('consoleErrors',[]),report.get('consoleErrors');report.update(outcome='PASS',testedSourceSHA256=tested);c.close();b.close()
 finally:s.shutdown();(ROOT/'qa/int004/today-backtest-browser.json').write_text(json.dumps(report,indent=2)+'\n')

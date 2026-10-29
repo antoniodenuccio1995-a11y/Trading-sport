@@ -1,0 +1,30 @@
+{
+  "baselineCommit": "c6d9aa4c9ba1184ab5acc125906ec041709d9b27",
+  "outcome": "FAIL_REPRODUCED_BEFORE_FIX",
+  "synthetic": {
+    "firstSafe": true,
+    "againSafe": false
+  },
+  "datasets": [
+    {
+      "dataset": "original",
+      "firstRows": 28302,
+      "reimportSafe": false,
+      "blockedGroups": 8,
+      "reasons": [
+        "gruppo preesistente",
+        "kickoff-disagreement"
+      ]
+    },
+    {
+      "dataset": "rc4Recovered",
+      "firstRows": 28300,
+      "reimportSafe": false,
+      "blockedGroups": 5,
+      "reasons": [
+        "kickoff-disagreement"
+      ]
+    }
+  ],
+  "privateRowsPublished": false
+}

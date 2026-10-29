@@ -2,6 +2,7 @@
 from pathlib import Path
 import hashlib,json,functools,http.server,threading
 from playwright.sync_api import sync_playwright
+from browser_environment import isolate
 ROOT=Path(__file__).resolve().parents[2]
 SOURCES=['Trading_Analytics_v0.2U-rc5_TA-INT-004.html', 'ta-club-aliases-int004.js', 'ta-clubs-v4.js', 'ta-fixture-identity.js', 'ta-json-recovery-rc5.js', 'ta-csv-import-v02U-rc5.js', 'ta-history-coverage-rc5.js', 'ta-history-manifest-rc5.js', 'ta-int004-ui.js', 'ta-int004-area.js', 'ta-int004-app.js']
 def source_hashes():return {f:hashlib.sha256((ROOT/f).read_bytes()).hexdigest() for f in SOURCES}
@@ -13,7 +14,7 @@ report={'checks':[],'pageerrors':[],'personalDataUsed':False}
 def passed(x):report['checks'].append(x);print('PASS',x,flush=True)
 try:
  with sync_playwright() as pw:
-  b=pw.chromium.launch(executable_path='/usr/bin/chromium',headless=True,args=['--no-sandbox']);c=b.new_context(accept_downloads=True);c.route('**/*',lambda r:r.continue_() if r.request.url.startswith(base) else r.abort());p=c.new_page();p.set_default_timeout(60000);p.on('pageerror',lambda e:report['pageerrors'].append(str(e)));p.on('dialog',lambda d:d.accept());p.goto(base+'Trading_Analytics_v0.2U-rc5_TA-INT-004.html');p.wait_for_function('archiveReady');p.evaluate('window.taStabAreaReady')
+  b=pw.chromium.launch(executable_path='/usr/bin/chromium',headless=True,args=['--no-sandbox']);c=b.new_context(accept_downloads=True);isolate(c,base,report);p=c.new_page();p.set_default_timeout(60000);p.on('pageerror',lambda e:report['pageerrors'].append(str(e)));p.on('dialog',lambda d:d.accept());p.goto(base+'Trading_Analytics_v0.2U-rc5_TA-INT-004.html');p.wait_for_function('archiveReady');p.evaluate('window.taStabAreaReady')
   pair=p.evaluate("""()=>{const a={d:Date.UTC(2025,7,22),lg:'Serie B',H:'Pescara',A:'Cesena',h:1,a:3,ht:null,hth:null,hta:null,shots:null,up:false,o:{CsvSeason:2025,Phase:'regular',Source:'Independent primary fixture'}};return [a,{...a,H:'Delfino Pescara',A:'Cesena FC',o:{CsvSeason:2025,Phase:'1. Round',Source:'Independent secondary fixture'}}]}""")
   p.evaluate('async a=>{const saved=await mergeImported(a);if(!saved.ok)throw Error("save failed")}',pair);assert p.evaluate('rows.length')==1;assert p.evaluate('new Set(rows.flatMap(r=>[r.H,r.A])).size')==2;passed('T1: audit pair imports as one encounter and two clubs through the application')
   p.evaluate('async a=>await mergeImported(a)',pair);assert p.evaluate('rows.length')==1;passed('T2: repeated application import preserves the encounter count')
@@ -35,5 +36,5 @@ try:
   p.locator('.workspace-nav button[data-open-workspace="dati"]').click();p.locator('#taRecoveryUndo').evaluate('(el)=>el.click()');p.wait_for_function('!archiveBackupBusy');assert p.evaluate('rows.length')==2;passed('T7: undo restores both original raw records after reload')
   with p.expect_download() as after_trades:p.locator('#taExportTrades').evaluate('(el)=>el.click()')
   trades_after=json.loads(Path(after_trades.value.path()).read_text());assert trades_after['items']==frozen['items'] and trades_after['quotes']==frozen['quotes'];passed('Trade journal frozen scores, events and quotes remain exact across reconciliation, reload and undo')
-  assert source_hashes()==TESTED_SOURCES;report['testedSourceSHA256']=TESTED_SOURCES;assert not report['pageerrors'],report['pageerrors'];report['outcome']='PASS';c.close();b.close()
+  assert source_hashes()==TESTED_SOURCES;report['testedSourceSHA256']=TESTED_SOURCES;assert not report['pageerrors'],report['pageerrors'];assert not report.get('consoleErrors',[]),report.get('consoleErrors');report['outcome']='PASS';c.close();b.close()
 finally:s.shutdown();(ROOT/'qa/int004/browser.json').write_text(json.dumps(report,indent=2)+'\n')

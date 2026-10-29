@@ -8,9 +8,11 @@ for name in ['gradeMarket','scoreFromPrice','fraction','emptyScore','weightedHis
  assert block(old)==block(new),name;formula[name]=hashlib.sha256(block(new).encode()).hexdigest()
 def journal(s):return s[s.index('const JOURNAL_DB='):s.index('</script>',s.index('const JOURNAL_DB='))]
 assert journal(old)==journal(new)
+rc5_previous=subprocess.check_output(['git','show','c6d9aa4c9ba1184ab5acc125906ec041709d9b27:Trading_Analytics_v0.2U-rc5_TA-INT-004.html'],cwd=ROOT,text=True)
+assert new==rc5_previous,'HTML changed since the shared Backtest clock fix'
 for m in re.finditer(r'<script>(.*?)</script>',new,re.S):subprocess.run(['node','--check'],input=m[1],text=True,check=True)
 modules=['ta-clubs-v4.js','ta-json-recovery-rc5.js','ta-csv-import-v02U-rc5.js','ta-fixture-identity.js','ta-history-coverage-rc5.js','ta-history-manifest-rc5.js',*map(lambda p:p.name,ROOT.glob('*int004*.js'))]
 for f in set(modules):subprocess.run(['node','--check',str(ROOT/f)],check=True)
 files=subprocess.check_output(['git','ls-tree','-r','--name-only',BASE],cwd=ROOT,text=True).splitlines()
 for f in files:assert (ROOT/f).read_bytes()==subprocess.check_output(['git','show',BASE+':'+f],cwd=ROOT),f
-(ROOT/'qa/int004/preservation.json').write_text(json.dumps({'outcome':'PASS','baseline':BASE,'frozenFiles':len(files),'formulaSHA256':formula,'journalUnchanged':True,'syntaxChecked':True},indent=2)+'\n');print('Preserved baseline files:',len(files))
+(ROOT/'qa/int004/preservation.json').write_text(json.dumps({'outcome':'PASS','baseline':BASE,'frozenFiles':len(files),'formulaSHA256':formula,'journalUnchanged':True,'htmlExactlyC6d9aa4':True,'syntaxChecked':True},indent=2)+'\n');print('Preserved baseline files:',len(files))

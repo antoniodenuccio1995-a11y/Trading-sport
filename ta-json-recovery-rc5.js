@@ -64,6 +64,7 @@
    if(r.o['Club'+side+'Sources']!=null&&!Array.isArray(r.o['Club'+side+'Sources']))throw Error('Provenienze squadra non valide');
   }
   for(const k of ['FixtureSourceContexts','FixtureTimeObservations','FixtureEventSources'])if(r.o[k]!=null&&!Array.isArray(r.o[k]))throw Error('Metadati '+k+' non validi: deve essere un elenco.');
+  if(r.o.FixtureTimeObservations?.some(v=>!v||typeof v!=='object'||Array.isArray(v)))throw Error('Osservazione orario non valida: deve essere un oggetto.');
   if(r.o.RecoveryEvidence!=null&&!Array.isArray(r.o.RecoveryEvidence))throw Error('Provenienze di recupero non valide');
   if(r.o.CsvSeason!==undefined&&(!Number.isInteger(r.o.CsvSeason)||r.o.CsvSeason<1900||r.o.CsvSeason>2099))throw Error('Stagione non valida');
   for(const k of ['ht','hth','hta'])if(!empty(r[k])&&(!Number.isInteger(r[k])||r[k]<0))throw Error('Risultato primo tempo non valido');
@@ -78,6 +79,10 @@
   const out=clone(a),mixed=!!a.up!==!!b.up,played=a.up?b:a,fixture=a.up?a:b,scoreFields=new Set(['h','a','ht','hth','hta','shots']);
   const statMeta=new Set(['FTHG','FTAG','HTHG','HTAG','FTR','HTR','HS','AS','HST','AST','HF','AF','HC','AC','HY','AY','HR','AR']);
   const aMeta=clone(a.o||{}),bMeta=clone(b.o||{});let fixtureEvidence=null;
+  for(const [row,meta]of [[a,aMeta],[b,bMeta]]){
+   const clocks=fixtures.timeSources(row).map(fixtures.timeSnapshot).filter(v=>[v.Time,v.SourceTime,v.KickoffUTC].some(x=>!empty(x)));
+   if(clocks.length)meta.FixtureTimeObservations=union(meta.FixtureTimeObservations||[],clocks);
+  }
   if(mixed){const meta=a.up?aMeta:bMeta;fixtureEvidence={kind:'unplayed-fixture-values',values:Object.fromEntries([...scoreFields].filter(k=>!empty(fixture[k])).map(k=>[k,fixture[k]])),metadata:Object.fromEntries(Object.entries(meta).filter(([k])=>statMeta.has(k)))};for(const k of statMeta)delete meta[k];}
   for(const k of new Set([...Object.keys(a),...Object.keys(b)])){
    if(['H','A','o','up'].includes(k))continue;
@@ -128,7 +133,8 @@
     const ctx=fixtures.context(next),eventKeys=ctx.events.map(e=>JSON.stringify([ctx.league,ctx.season,e.provider,e.id])),knownGroups=[...new Set(eventKeys.flatMap(k=>[...(eventGroups.get(k)||[])]))].filter(k=>{const c=fixtures.context(groups.get(k)[0].row);return !(c.instance!==ctx.instance&&(c.instance||ctx.instance))&&!(c.leg&&ctx.leg&&c.leg!==ctx.leg)});
     if(knownGroups.length>1)throw Error('Identificativi di fonte collegano più eventi già distinti: verifica necessaria.');
     const priorEvent=knownGroups[0],crossContext=priorEvent&&fixtures.base(groups.get(priorEvent)[0].row,clubs.resolve)!==base;
-    const id=crossContext?priorEvent:choices.length===1?choices[0]:clubs.matchId(next),contextConflict=crossContext?'trusted-event-context-disagreement':choices.length===1&&fixtures.relation(groups.get(id)[0].row,next).kind==='conflict'?fixtures.relation(groups.get(id)[0].row,next).reason:null;
+    const id=crossContext?priorEvent:choices.length===1?choices[0]:clubs.matchId(next),prior=choices.length===1?groups.get(id)[0]:null;
+    const relation=prior?fixtures.relation(prior.row,next,{requireRecordedClocks:origin==='file'&&prior.origin==='archivio'}):null,contextConflict=crossContext?'trusted-event-context-disagreement':relation?.kind==='conflict'?relation.reason:null;
     for(const ek of eventKeys){if(!eventGroups.has(ek))eventGroups.set(ek,new Set());eventGroups.get(ek).add(id);}
     if(!groups.has(id))groups.set(id,[]);if(!bases.has(base))bases.set(base,[]);if(!bases.get(base).includes(id))bases.get(base).push(id);
     groups.get(id).push({row:next,index,origin,contextConflict});normalized.push({row:next,index,origin});
@@ -146,7 +152,9 @@
    if(base.length>1){
     for(const v of base){records.push(clone(existing[v.index]));report.coverage.push({outputIndex:records.length-1,inputs:[{index:v.index,origin:'archivio'}],retainedForReview:true});}
     report.archiveNeedsReconciliation=(report.archiveNeedsReconciliation||0)+base.length;
-    if(incoming.length){report.problematic+=incoming.length;report.excluded.push(...incoming.map(v=>describe(v.row,v.index,v.origin)));report.collisions.push({id,kind:'archivio_da_riconciliare',fields:['gruppo preesistente'],records:entries.map(v=>describe(v.row,v.index,v.origin)),treatment:'Archivio preesistente conservato integralmente; simulare la riconciliazione prima di integrare questo gruppo.'});}
+    const alreadyPresent=incoming.filter(v=>base.some(b=>equal(v.row,b.row))),unseen=incoming.filter(v=>!alreadyPresent.includes(v));
+    report.identical+=alreadyPresent.length;
+    if(unseen.length){report.problematic+=unseen.length;report.excluded.push(...unseen.map(v=>describe(v.row,v.index,v.origin)));report.collisions.push({id,kind:'archivio_da_riconciliare',fields:['gruppo preesistente'],records:[...base,...unseen].map(v=>describe(v.row,v.index,v.origin)),treatment:'Archivio preesistente conservato integralmente; simulare la riconciliazione prima di integrare questo gruppo.'});}
     continue;
    }
 
