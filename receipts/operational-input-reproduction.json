@@ -1,0 +1,19 @@
+{
+  "inputHTML": "Trading_Analytics_v0.2U-rc4_FIX_BACKTEST_ALIAS_MERCATO.html",
+  "inputHTMLSHA256": "0c40bb04975741c09536ba58b9a46033421743bb8e50f74c3f382c206f835aaf",
+  "allFrozenRc4FilesIdentical": 314,
+  "personalDataUsed": false,
+  "pageerrors": [],
+  "consoleErrors": [],
+  "networkMode": "isolated: optional font CSS empty; automatic live refresh postponed via existing cache timestamps in test profiles only",
+  "outcome": "PASS",
+  "defectReproduced": true,
+  "archivedObservations": 2,
+  "standings": {
+    "games": 2,
+    "clubs": 4
+  },
+  "persistentAfterReload": true,
+  "marketOptions": 8,
+  "simplifiedAliasUIAvailable": true
+}

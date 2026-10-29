@@ -1,0 +1,33 @@
+{
+  "outcome": "PASS",
+  "testedCommit": "bf2f0cc8558fa30ddecf1d969c1d84fba3a2da4a",
+  "scope": "Fresh readonly recomputation of both private aggregate matrices using final modules; frozen asOf 2026-10-28",
+  "personalRowsPublished": false,
+  "command": "node tests/int004/private-matrices.cjs \"$ORIGINAL_BACKUP\" \"$PREVIOUS_PROPOSAL\" \"$PRIVATE_OUTPUT\" (equivalent readonly CSV comparison)",
+  "results": [
+    {
+      "name": "ORIGINALE",
+      "outcome": "PASS",
+      "all138AggregatesIdentical": true,
+      "sourceSHA256": "809d7ecce6bcf8bbc39812107e29052689520a075304bf7c743f17bc1dd31f2a",
+      "matrixSHA256": "01fe3733c8e58518f8f5a3b66e50a3d82709c61367c39535f6cd8bca13e711d8",
+      "states": {
+        "completo verificato": 11,
+        "parziale": 98,
+        "non verificabile": 29
+      }
+    },
+    {
+      "name": "PROPOSTA_RC4",
+      "outcome": "PASS",
+      "all138AggregatesIdentical": true,
+      "sourceSHA256": "2b21e33f6222eb81dbd3242ef3f7b82c3b152d839e7fd92b015b54c217ee2468",
+      "matrixSHA256": "387f71611057e2e178fa67626334bc86a667205face9b213359d43ed158ffc59",
+      "states": {
+        "completo verificato": 14,
+        "parziale": 95,
+        "non verificabile": 29
+      }
+    }
+  ]
+}

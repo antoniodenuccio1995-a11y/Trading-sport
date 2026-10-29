@@ -1,0 +1,1042 @@
+TAP version 13
+# Subtest: ROU 2024/2025: league, season, scores
+ok 1 - ROU 2024/2025: league, season, scores
+  ---
+  duration_ms: 4.326319
+  type: 'test'
+  ...
+# Subtest: ROU 2025/2026: league, season, scores
+ok 2 - ROU 2025/2026: league, season, scores
+  ---
+  duration_ms: 0.830577
+  type: 'test'
+  ...
+# Subtest: DNK 2024/2025: league, season, scores
+ok 3 - DNK 2024/2025: league, season, scores
+  ---
+  duration_ms: 0.335214
+  type: 'test'
+  ...
+# Subtest: DNK 2025/2026: league, season, scores
+ok 4 - DNK 2025/2026: league, season, scores
+  ---
+  duration_ms: 0.391948
+  type: 'test'
+  ...
+# Subtest: P1 2024/2025: league, season, scores
+ok 5 - P1 2024/2025: league, season, scores
+  ---
+  duration_ms: 0.278969
+  type: 'test'
+  ...
+# Subtest: P1 2025/2026: league, season, scores
+ok 6 - P1 2025/2026: league, season, scores
+  ---
+  duration_ms: 2.506465
+  type: 'test'
+  ...
+# Subtest: SP1 2024/2025: league, season, scores
+ok 7 - SP1 2024/2025: league, season, scores
+  ---
+  duration_ms: 0.241793
+  type: 'test'
+  ...
+# Subtest: SP1 2025/2026: league, season, scores
+ok 8 - SP1 2025/2026: league, season, scores
+  ---
+  duration_ms: 0.316536
+  type: 'test'
+  ...
+# Subtest: SP2 2024/2025: league, season, scores
+ok 9 - SP2 2024/2025: league, season, scores
+  ---
+  duration_ms: 4.121982
+  type: 'test'
+  ...
+# Subtest: SP2 2025/2026: league, season, scores
+ok 10 - SP2 2025/2026: league, season, scores
+  ---
+  duration_ms: 0.494172
+  type: 'test'
+  ...
+# Subtest: F1 2024/2025: league, season, scores
+ok 11 - F1 2024/2025: league, season, scores
+  ---
+  duration_ms: 0.343957
+  type: 'test'
+  ...
+# Subtest: F1 2025/2026: league, season, scores
+ok 12 - F1 2025/2026: league, season, scores
+  ---
+  duration_ms: 0.250076
+  type: 'test'
+  ...
+# Subtest: F2 2024/2025: league, season, scores
+ok 13 - F2 2024/2025: league, season, scores
+  ---
+  duration_ms: 0.305108
+  type: 'test'
+  ...
+# Subtest: F2 2025/2026: league, season, scores
+ok 14 - F2 2025/2026: league, season, scores
+  ---
+  duration_ms: 0.199619
+  type: 'test'
+  ...
+# Subtest: N1 2024/2025: league, season, scores
+ok 15 - N1 2024/2025: league, season, scores
+  ---
+  duration_ms: 0.192269
+  type: 'test'
+  ...
+# Subtest: N1 2025/2026: league, season, scores
+ok 16 - N1 2025/2026: league, season, scores
+  ---
+  duration_ms: 0.216515
+  type: 'test'
+  ...
+# Subtest: normalized UTF-8 BOM, semicolon, case/aliases, quote escaping and Unicode
+ok 17 - normalized UTF-8 BOM, semicolon, case/aliases, quote escaping and Unicode
+  ---
+  duration_ms: 0.561855
+  type: 'test'
+  ...
+# Subtest: manual league required when both filename and metadata are absent
+ok 18 - manual league required when both filename and metadata are absent
+  ---
+  duration_ms: 0.661924
+  type: 'test'
+  ...
+# Subtest: unrecognized code is recoverable through explicit selection
+ok 19 - unrecognized code is recoverable through explicit selection
+  ---
+  duration_ms: 1.182026
+  type: 'test'
+  ...
+# Subtest: recognized metadata cannot be relabelled by manual selection
+ok 20 - recognized metadata cannot be relabelled by manual selection
+  ---
+  duration_ms: 0.412019
+  type: 'test'
+  ...
+# Subtest: Country disambiguates Superliga and survives cumulative season filter
+ok 21 - Country disambiguates Superliga and survives cumulative season filter
+  ---
+  duration_ms: 0.469004
+  type: 'test'
+  ...
+# Subtest: invalid dates rejected without Date.UTC rollover; EU and leap dates supported
+ok 22 - invalid dates rejected without Date.UTC rollover; EU and leap dates supported
+  ---
+  duration_ms: 0.298418
+  type: 'test'
+  ...
+# Subtest: partial, negative, fractional and non numeric scores never become zero
+ok 23 - partial, negative, fractional and non numeric scores never become zero
+  ---
+  duration_ms: 0.46551
+  type: 'test'
+  ...
+# Subtest: missing/impossible HT is null, actual 0-0 is evidence
+ok 24 - missing/impossible HT is null, actual 0-0 is evidence
+  ---
+  duration_ms: 0.481363
+  type: 'test'
+  ...
+# Subtest: date/metadata disagreement rejected; explicit season cannot invent games
+ok 25 - date/metadata disagreement rejected; explicit season cannot invent games
+  ---
+  duration_ms: 0.892501
+  type: 'test'
+  ...
+# Subtest: cache and community schema remain supported
+ok 26 - cache and community schema remain supported
+  ---
+  duration_ms: 0.829476
+  type: 'test'
+  ...
+# Subtest: malformed quoting, duplicate aliases and shifted columns blocked
+ok 27 - malformed quoting, duplicate aliases and shifted columns blocked
+  ---
+  duration_ms: 0.36618
+  type: 'test'
+  ...
+# Subtest: filename mapping covers new leagues without guessing active sidebar
+ok 28 - filename mapping covers new leagues without guessing active sidebar
+  ---
+  duration_ms: 0.18006
+  type: 'test'
+  ...
+# Subtest: exact 131-column utility header preserves scores, odds and explicit unknown-code recovery
+ok 29 - exact 131-column utility header preserves scores, odds and explicit unknown-code recovery
+  ---
+  duration_ms: 1.839122
+  type: 'test'
+  ...
+# Subtest: candidate script syntax and protected baseline byte identity
+ok 30 - candidate script syntax and protected baseline byte identity
+  ---
+  duration_ms: 264.080041
+  type: 'test'
+  ...
+# Subtest: F-01: mixed known/unknown requires an explicit row resolution, not merely a league option
+ok 31 - F-01: mixed known/unknown requires an explicit row resolution, not merely a league option
+  ---
+  duration_ms: 7.226297
+  type: 'test'
+  ...
+# Subtest: F-01: missing row metadata cannot inherit a known code elsewhere
+ok 32 - F-01: missing row metadata cannot inherit a known code elsewhere
+  ---
+  duration_ms: 0.43234
+  type: 'test'
+  ...
+# Subtest: Five required verified aliases resolve to one permanent identity each
+ok 33 - Five required verified aliases resolve to one permanent identity each
+  ---
+  duration_ms: 0.426721
+  type: 'test'
+  ...
+# Subtest: No similarity-only joining; distinct clubs and ambiguities stay separate
+ok 34 - No similarity-only joining; distinct clubs and ambiguities stay separate
+  ---
+  duration_ms: 0.30607
+  type: 'test'
+  ...
+# Subtest: Unverified IDs are deterministic, country scoped and survive promotions
+ok 35 - Unverified IDs are deterministic, country scoped and survive promotions
+  ---
+  duration_ms: 48.688748
+  type: 'test'
+  ...
+# Subtest: Multinational competitions require context for unverified homonyms
+ok 36 - Multinational competitions require context for unverified homonyms
+  ---
+  duration_ms: 0.317888
+  type: 'test'
+  ...
+# Subtest: Provider team IDs distinguish homonyms and permit only exact scoped identifier joins
+ok 37 - Provider team IDs distinguish homonyms and permit only exact scoped identifier joins
+  ---
+  duration_ms: 0.9649
+  type: 'test'
+  ...
+# Subtest: Homonymous opponents with distinct source IDs or countries stay distinct in string-based modules too
+ok 38 - Homonymous opponents with distinct source IDs or countries stay distinct in string-based modules too
+  ---
+  duration_ms: 1.699844
+  type: 'test'
+  ...
+# Subtest: Original name, provider ID, results, HT, odds and shots remain available
+ok 39 - Original name, provider ID, results, HT, odds and shots remain available
+  ---
+  duration_ms: 0.530347
+  type: 'test'
+  ...
+# Subtest: F-02/F-03 shared reader preserves Season and normalizes reference schemas
+ok 40 - F-02/F-03 shared reader preserves Season and normalizes reference schemas
+  ---
+  duration_ms: 0.726131
+  type: 'test'
+  ...
+# Subtest: A permanent stored ID is never silently reallocated by a changed registry
+ok 41 - A permanent stored ID is never silently reallocated by a changed registry
+  ---
+  duration_ms: 13.348876
+  type: 'test'
+  ...
+# Subtest: Migration simulation is pure and preserves all protected values
+ok 42 - Migration simulation is pure and preserves all protected values
+  ---
+  duration_ms: 10.871573
+  type: 'test'
+  ...
+# Subtest: Migration collisions are reported and block application without dropping matches
+ok 43 - Migration collisions are reported and block application without dropping matches
+  ---
+  duration_ms: 0.768985
+  type: 'test'
+  ...
+# Subtest: Invalid backup values are reported before migration rather than coerced or saved
+ok 44 - Invalid backup values are reported before migration rather than coerced or saved
+  ---
+  duration_ms: 3.397193
+  type: 'test'
+  ...
+# Subtest: Provenance from alias re-imports is merged rather than discarded
+ok 45 - Provenance from alias re-imports is merged rather than discarded
+  ---
+  duration_ms: 0.415294
+  type: 'test'
+  ...
+# Subtest: Same-identity opponents cannot enter the archive
+ok 46 - Same-identity opponents cannot enter the archive
+  ---
+  duration_ms: 0.380842
+  type: 'test'
+  ...
+# Subtest: Membership normalization keeps declared year, source evidence and identity
+ok 47 - Membership normalization keeps declared year, source evidence and identity
+  ---
+  duration_ms: 0.256626
+  type: 'test'
+  ...
+# Subtest: Previous versions and score formula implementations remain byte identical
+ok 48 - Previous versions and score formula implementations remain byte identical
+  ---
+  duration_ms: 349.731661
+  type: 'test'
+  ...
+# Subtest: automatic recognition of compact v2, v1, legacy arrays and rows
+ok 49 - automatic recognition of compact v2, v1, legacy arrays and rows
+  ---
+  duration_ms: 7.092925
+  type: 'test'
+  ...
+# Subtest: diagnostic exports are clearly distinguished from backups
+ok 50 - diagnostic exports are clearly distinguished from backups
+  ---
+  duration_ms: 0.562545
+  type: 'test'
+  ...
+# Subtest: malformed JSON and unsupported version retain an exportable report
+ok 51 - malformed JSON and unsupported version retain an exportable report
+  ---
+  duration_ms: 0.464939
+  type: 'test'
+  ...
+# Subtest: exact duplicate consolidated without false identity conflict
+ok 52 - exact duplicate consolidated without false identity conflict
+  ---
+  duration_ms: 1.675047
+  type: 'test'
+  ...
+# Subtest: alias copies consolidate with both raw provenances
+ok 53 - alias copies consolidate with both raw provenances
+  ---
+  duration_ms: 1.616749
+  type: 'test'
+  ...
+# Subtest: compatible fields enrich without losing odds or metadata
+ok 54 - compatible fields enrich without losing odds or metadata
+  ---
+  duration_ms: 1.266783
+  type: 'test'
+  ...
+# Subtest: disagreeing final results always blocked and recorded
+ok 55 - disagreeing final results always blocked and recorded
+  ---
+  duration_ms: 0.671729
+  type: 'test'
+  ...
+# Subtest: HT, shots, odds and season disagreements cannot overwrite each other
+ok 56 - HT, shots, odds and season disagreements cannot overwrite each other
+  ---
+  duration_ms: 1.665392
+  type: 'test'
+  ...
+# Subtest: distinct provider evidence is preserved rather than mislabeled as incompatible
+ok 57 - distinct provider evidence is preserved rather than mislabeled as incompatible
+  ---
+  duration_ms: 0.69182
+  type: 'test'
+  ...
+# Subtest: safe partial plan excludes entire conflicting input group and preserves current rows exactly
+ok 58 - safe partial plan excludes entire conflicting input group and preserves current rows exactly
+  ---
+  duration_ms: 0.733773
+  type: 'test'
+  ...
+# Subtest: invalid rows remain in diagnostic report and cannot pass as a complete import
+ok 59 - invalid rows remain in diagnostic report and cannot pass as a complete import
+  ---
+  duration_ms: 0.428474
+  type: 'test'
+  ...
+# Subtest: ambiguous labels are blocked while unknown distinct labels do not require alias verification
+ok 60 - ambiguous labels are blocked while unknown distinct labels do not require alias verification
+  ---
+  duration_ms: 0.403927
+  type: 'test'
+  ...
+# Subtest: existing inconsistent groups cannot be partially reclassified by mirroring them into a file
+ok 61 - existing inconsistent groups cannot be partially reclassified by mirroring them into a file
+  ---
+  duration_ms: 0.598139
+  type: 'test'
+  ...
+# Subtest: fixtures and completed results combine safely
+ok 62 - fixtures and completed results combine safely
+  ---
+  duration_ms: 0.393982
+  type: 'test'
+  ...
+# Subtest: planning does not mutate input, observations or user rules
+ok 63 - planning does not mutate input, observations or user rules
+  ---
+  duration_ms: 0.594593
+  type: 'test'
+  ...
+# Subtest: 40 synthetic former key collisions now classified, not claimed as real user records
+ok 64 - 40 synthetic former key collisions now classified, not claimed as real user records
+  ---
+  duration_ms: 6.976821
+  type: 'test'
+  ...
+# Subtest: confirmation rules persist IDs across subsequent imports and raw aliases are retained
+ok 65 - confirmation rules persist IDs across subsequent imports and raw aliases are retained
+  ---
+  duration_ms: 0.573882
+  type: 'test'
+  ...
+# Subtest: correcting an erroneous alias association uses raw source name instead of stale canonical name
+ok 66 - correcting an erroneous alias association uses raw source name instead of stale canonical name
+  ---
+  duration_ms: 0.437988
+  type: 'test'
+  ...
+# Subtest: distinct club decision is stable on reload and does not join similarly named clubs
+ok 67 - distinct club decision is stable on reload and does not join similarly named clubs
+  ---
+  duration_ms: 0.451868
+  type: 'test'
+  ...
+# Subtest: same provider and source ID keep one identity despite changed source names
+ok 68 - same provider and source ID keep one identity despite changed source names
+  ---
+  duration_ms: 0.31921
+  type: 'test'
+  ...
+# Subtest: unscoped UI queries do not pollute registry with UNSPECIFIED clubs
+ok 69 - unscoped UI queries do not pollute registry with UNSPECIFIED clubs
+  ---
+  duration_ms: 0.223856
+  type: 'test'
+  ...
+# Subtest: UNSPECIFIED proposals need confirmation and reuse country scoped ID afterwards
+ok 70 - UNSPECIFIED proposals need confirmation and reuse country scoped ID afterwards
+  ---
+  duration_ms: 0.953052
+  type: 'test'
+  ...
+# Subtest: Paris FC and PSG; Manchester City and United; FCSB and CSA remain separate
+ok 71 - Paris FC and PSG; Manchester City and United; FCSB and CSA remain separate
+  ---
+  duration_ms: 0.177006
+  type: 'test'
+  ...
+# Subtest: cross country user rules and contradictory duplicate rules rejected
+ok 72 - cross country user rules and contradictory duplicate rules rejected
+  ---
+  duration_ms: 0.50596
+  type: 'test'
+  ...
+# Subtest: malformed auxiliary data is diagnosed before any import
+ok 73 - malformed auxiliary data is diagnosed before any import
+  ---
+  duration_ms: 0.851098
+  type: 'test'
+  ...
+# Subtest: coverage maps every safely consolidated source row
+ok 74 - coverage maps every safely consolidated source row
+  ---
+  duration_ms: 0.428774
+  type: 'test'
+  ...
+# Subtest: membership correction follows preserved raw alias instead of stale display name
+ok 75 - membership correction follows preserved raw alias instead of stale display name
+  ---
+  duration_ms: 0.382414
+  type: 'test'
+  ...
+# Subtest: same user alias in different countries is scoped, and contextless queries stay ambiguous
+ok 76 - same user alias in different countries is scoped, and contextless queries stay ambiguous
+  ---
+  duration_ms: 0.213261
+  type: 'test'
+  ...
+# Subtest: invalid dates outside JS range and malformed strategies produce diagnostic errors
+ok 77 - invalid dates outside JS range and malformed strategies produce diagnostic errors
+  ---
+  duration_ms: 0.260581
+  type: 'test'
+  ...
+# Subtest: malformed goal events cannot be saved as valid auxiliary data
+ok 78 - malformed goal events cannot be saved as valid auxiliary data
+  ---
+  duration_ms: 0.320161
+  type: 'test'
+  ...
+# Subtest: equivalent numeric representations are consolidated with both originals retained as evidence
+ok 79 - equivalent numeric representations are consolidated with both originals retained as evidence
+  ---
+  duration_ms: 0.75166
+  type: 'test'
+  ...
+# Subtest: T1: audit pair has one match, two clubs, original names and phase evidence
+ok 80 - T1: audit pair has one match, two clubs, original names and phase evidence
+  ---
+  duration_ms: 9.041465
+  type: 'test'
+  ...
+# Subtest: T2: repeated imports are idempotent
+ok 81 - T2: repeated imports are idempotent
+  ---
+  duration_ms: 3.44126
+  type: 'test'
+  ...
+# Subtest: T3: conflicting FT cannot overwrite the previous record
+ok 82 - T3: conflicting FT cannot overwrite the previous record
+  ---
+  duration_ms: 1.494606
+  type: 'test'
+  ...
+# Subtest: statistics and odds disagreements are conflicts; missing observations integrate
+ok 83 - statistics and odds disagreements are conflicts; missing observations integrate
+  ---
+  duration_ms: 5.543198
+  type: 'test'
+  ...
+# Subtest: T4: genuinely additional playoff, playout and replay games survive
+ok 84 - T4: genuinely additional playoff, playout and replay games survive
+  ---
+  duration_ms: 3.083863
+  type: 'test'
+  ...
+# Subtest: round numbers are independent of phases and multiphase rounds remain uncertain
+ok 85 - round numbers are independent of phases and multiphase rounds remain uncertain
+  ---
+  duration_ms: 0.693082
+  type: 'test'
+  ...
+# Subtest: different competitions and explicit seasons never join
+ok 86 - different competitions and explicit seasons never join
+  ---
+  duration_ms: 1.048635
+  type: 'test'
+  ...
+# Subtest: explicit competition codes share the canonical fixture identity
+ok 87 - explicit competition codes share the canonical fixture identity
+  ---
+  duration_ms: 0.924369
+  type: 'test'
+  ...
+# Subtest: two distinct trusted events survive; an unqualified third row is ambiguous
+ok 88 - two distinct trusted events survive; an unqualified third row is ambiguous
+  ---
+  duration_ms: 1.860565
+  type: 'test'
+  ...
+# Subtest: inconsistent kickoff or sporting context is reviewable rather than a second counted fixture
+ok 89 - inconsistent kickoff or sporting context is reviewable rather than a second counted fixture
+  ---
+  duration_ms: 1.975358
+  type: 'test'
+  ...
+# Subtest: same trusted event with different clock observations remains identifiable and preserves both
+ok 90 - same trusted event with different clock observations remains identifiable and preserves both
+  ---
+  duration_ms: 1.711782
+  type: 'test'
+  ...
+# Subtest: closed AC Cesena is not automatically the modern Cesena FC identity
+ok 91 - closed AC Cesena is not automatically the modern Cesena FC identity
+  ---
+  duration_ms: 0.493852
+  type: 'test'
+  ...
+# Subtest: explicit generated alias IDs migrate with old identifiers retained, provider IDs are protected
+ok 92 - explicit generated alias IDs migrate with old identifiers retained, provider IDs are protected
+  ---
+  duration_ms: 0.77853
+  type: 'test'
+  ...
+# Subtest: normalisation is stable after repeated serialization and retains FT/HT/quote values
+ok 93 - normalisation is stable after repeated serialization and retains FT/HT/quote values
+  ---
+  duration_ms: 0.580682
+  type: 'test'
+  ...
+# Subtest: E: archive reconciliation retains every unresolved record unchanged and conserves coverage
+ok 94 - E: archive reconciliation retains every unresolved record unchanged and conserves coverage
+  ---
+  duration_ms: 1.925213
+  type: 'test'
+  ...
+# Subtest: T5: the analysis projection excludes cancelled games and unresolved conflicts without editing raw data
+ok 95 - T5: the analysis projection excludes cancelled games and unresolved conflicts without editing raw data
+  ---
+  duration_ms: 18.167124
+  type: 'test'
+  ...
+# Subtest: historical VfB Leipzig is not mapped to RB Leipzig through a shared city alias
+ok 96 - historical VfB Leipzig is not mapped to RB Leipzig through a shared city alias
+  ---
+  duration_ms: 0.207452
+  type: 'test'
+  ...
+# Subtest: a prior unplayed schedule can become a played result despite a revised clock, retaining both observations
+ok 97 - a prior unplayed schedule can become a played result despite a revised clock, retaining both observations
+  ---
+  duration_ms: 1.81099
+  type: 'test'
+  ...
+# Subtest: AUDIT 29/10: schedule/result clocks remain idempotent through repeated imports, serialization and source order
+ok 98 - AUDIT 29/10: schedule/result clocks remain idempotent through repeated imports, serialization and source order
+  ---
+  duration_ms: 18.977692
+  type: 'test'
+  ...
+# Subtest: previous observations never waive a truly new clock, timezone, score or quote conflict
+ok 99 - previous observations never waive a truly new clock, timezone, score or quote conflict
+  ---
+  duration_ms: 5.015175
+  type: 'test'
+  ...
+# Subtest: partially overlapping clock histories do not create a transitive merge
+ok 100 - partially overlapping clock histories do not create a transitive merge
+  ---
+  duration_ms: 5.02541
+  type: 'test'
+  ...
+# Subtest: incoming history cannot smuggle a new clock into an existing archive by retaining one old clock
+ok 101 - incoming history cannot smuggle a new clock into an existing archive by retaining one old clock
+  ---
+  duration_ms: 1.886224
+  type: 'test'
+  ...
+# Subtest: merged clocks never manufacture UTC certainty from different original field/zone pairings
+ok 102 - merged clocks never manufacture UTC certainty from different original field/zone pairings
+  ---
+  duration_ms: 2.531383
+  type: 'test'
+  ...
+# Subtest: a fresh explicit UTC clock is authoritative within its own source, never fabricated from another source
+ok 103 - a fresh explicit UTC clock is authoritative within its own source, never fabricated from another source
+  ---
+  duration_ms: 1.799564
+  type: 'test'
+  ...
+# Subtest: an exact replay of previously retained unresolved rows is a no-op, never a silent reconciliation
+ok 104 - an exact replay of previously retained unresolved rows is a no-op, never a silent reconciliation
+  ---
+  duration_ms: 1.787977
+  type: 'test'
+  ...
+# Subtest: a clock disagreement is not waived by equal event codes belonging to different providers
+ok 105 - a clock disagreement is not waived by equal event codes belonging to different providers
+  ---
+  duration_ms: 3.425487
+  type: 'test'
+  ...
+# Subtest: the actual FA Cup Crystal Palace/Everton replay remains two independently dated fixtures
+ok 106 - the actual FA Cup Crystal Palace/Everton replay remains two independently dated fixtures
+  ---
+  duration_ms: 2.563571
+  type: 'test'
+  ...
+# Subtest: new unrelated imports do not silently consolidate or remove existing duplicate archive rows
+ok 107 - new unrelated imports do not silently consolidate or remove existing duplicate archive rows
+  ---
+  duration_ms: 1.152742
+  type: 'test'
+  ...
+# Subtest: unrelated imports preserve all original fields and IDs of existing singleton records
+ok 108 - unrelated imports preserve all original fields and IDs of existing singleton records
+  ---
+  duration_ms: 0.469525
+  type: 'test'
+  ...
+# Subtest: country contradictions are blocked while documented Welsh association membership remains valid
+ok 109 - country contradictions are blocked while documented Welsh association membership remains valid
+  ---
+  duration_ms: 0.668925
+  type: 'test'
+  ...
+# Subtest: reused trusted event IDs with incompatible dates are reviewed instead of becoming two counted fixtures
+ok 110 - reused trusted event IDs with incompatible dates are reviewed instead of becoming two counted fixtures
+  ---
+  duration_ms: 1.444831
+  type: 'test'
+  ...
+# Subtest: inconsistent club IDs from one provider are not fused by the shared display alias
+ok 111 - inconsistent club IDs from one provider are not fused by the shared display alias
+  ---
+  duration_ms: 1.278921
+  type: 'test'
+  ...
+# Subtest: documented English and Italian final-stage headings stay playoffs rather than being treated as regular rounds
+ok 112 - documented English and Italian final-stage headings stay playoffs rather than being treated as regular rounds
+  ---
+  duration_ms: 0.936457
+  type: 'test'
+  ...
+# Subtest: legacy generated IDs for another documented alias migrate without losing the original ID
+ok 113 - legacy generated IDs for another documented alias migrate without losing the original ID
+  ---
+  duration_ms: 0.315034
+  type: 'test'
+  ...
+# Subtest: one provider ID cannot silently overwrite the documented identity of a different real club
+ok 114 - one provider ID cannot silently overwrite the documented identity of a different real club
+  ---
+  duration_ms: 0.347542
+  type: 'test'
+  ...
+# Subtest: CSV source identifiers, round headers and replay context reach the shared identity engine
+ok 115 - CSV source identifiers, round headers and replay context reach the shared identity engine
+  ---
+  duration_ms: 12.423235
+  type: 'test'
+  ...
+# Subtest: explicit UTC offsets identify equivalent kickoff instants while preserving both source clocks
+ok 116 - explicit UTC offsets identify equivalent kickoff instants while preserving both source clocks
+  ---
+  duration_ms: 1.192422
+  type: 'test'
+  ...
+# Subtest: different known UTC instants remain a conflict even if clock text is the same
+ok 117 - different known UTC instants remain a conflict even if clock text is the same
+  ---
+  duration_ms: 0.893993
+  type: 'test'
+  ...
+# Subtest: unknown competition text and malformed derived metadata do not become object-prototype identities
+ok 118 - unknown competition text and malformed derived metadata do not become object-prototype identities
+  ---
+  duration_ms: 0.298639
+  type: 'test'
+  ...
+# Subtest: qualified identifiers from every original source survive merging and remain usable for future identity checks
+ok 119 - qualified identifiers from every original source survive merging and remain usable for future identity checks
+  ---
+  duration_ms: 1.33139
+  type: 'test'
+  ...
+# Subtest: explicit replays or different legs are preserved when a provider qualifies its event code with that context
+ok 120 - explicit replays or different legs are preserved when a provider qualifies its event code with that context
+  ---
+  duration_ms: 1.355846
+  type: 'test'
+  ...
+# Subtest: explicitly suspended or nonfinal games cannot become played statistical observations
+ok 121 - explicitly suspended or nonfinal games cannot become played statistical observations
+  ---
+  duration_ms: 1.287444
+  type: 'test'
+  ...
+# Subtest: automatic recognition of compact v2, v1, legacy arrays and rows
+ok 122 - automatic recognition of compact v2, v1, legacy arrays and rows
+  ---
+  duration_ms: 184.931401
+  type: 'test'
+  ...
+# Subtest: diagnostic exports are clearly distinguished from backups
+ok 123 - diagnostic exports are clearly distinguished from backups
+  ---
+  duration_ms: 0.573171
+  type: 'test'
+  ...
+# Subtest: malformed JSON and unsupported version retain an exportable report
+ok 124 - malformed JSON and unsupported version retain an exportable report
+  ---
+  duration_ms: 0.507692
+  type: 'test'
+  ...
+# Subtest: exact duplicate consolidated without false identity conflict
+ok 125 - exact duplicate consolidated without false identity conflict
+  ---
+  duration_ms: 1.56402
+  type: 'test'
+  ...
+# Subtest: alias copies consolidate with both raw provenances
+ok 126 - alias copies consolidate with both raw provenances
+  ---
+  duration_ms: 1.814205
+  type: 'test'
+  ...
+# Subtest: compatible fields enrich without losing odds or metadata
+ok 127 - compatible fields enrich without losing odds or metadata
+  ---
+  duration_ms: 0.992601
+  type: 'test'
+  ...
+# Subtest: disagreeing final results always blocked and recorded
+ok 128 - disagreeing final results always blocked and recorded
+  ---
+  duration_ms: 0.604989
+  type: 'test'
+  ...
+# Subtest: HT, shots, odds and season disagreements cannot overwrite each other
+ok 129 - HT, shots, odds and season disagreements cannot overwrite each other
+  ---
+  duration_ms: 1.855337
+  type: 'test'
+  ...
+# Subtest: distinct provider evidence is preserved rather than mislabeled as incompatible
+ok 130 - distinct provider evidence is preserved rather than mislabeled as incompatible
+  ---
+  duration_ms: 3.593138
+  type: 'test'
+  ...
+# Subtest: safe partial plan excludes entire conflicting input group and preserves current rows exactly
+ok 131 - safe partial plan excludes entire conflicting input group and preserves current rows exactly
+  ---
+  duration_ms: 0.842495
+  type: 'test'
+  ...
+# Subtest: invalid rows remain in diagnostic report and cannot pass as a complete import
+ok 132 - invalid rows remain in diagnostic report and cannot pass as a complete import
+  ---
+  duration_ms: 0.396576
+  type: 'test'
+  ...
+# Subtest: ambiguous labels are blocked while unknown distinct labels do not require alias verification
+ok 133 - ambiguous labels are blocked while unknown distinct labels do not require alias verification
+  ---
+  duration_ms: 0.54541
+  type: 'test'
+  ...
+# Subtest: existing inconsistent groups cannot be partially reclassified by mirroring them into a file
+ok 134 - existing inconsistent groups cannot be partially reclassified by mirroring them into a file
+  ---
+  duration_ms: 0.539491
+  type: 'test'
+  ...
+# Subtest: fixtures and completed results combine safely
+ok 135 - fixtures and completed results combine safely
+  ---
+  duration_ms: 0.614013
+  type: 'test'
+  ...
+# Subtest: planning does not mutate input, observations or user rules
+ok 136 - planning does not mutate input, observations or user rules
+  ---
+  duration_ms: 0.717217
+  type: 'test'
+  ...
+# Subtest: 40 synthetic former key collisions now classified, not claimed as real user records
+ok 137 - 40 synthetic former key collisions now classified, not claimed as real user records
+  ---
+  duration_ms: 6.07716
+  type: 'test'
+  ...
+# Subtest: confirmation rules persist IDs across subsequent imports and raw aliases are retained
+ok 138 - confirmation rules persist IDs across subsequent imports and raw aliases are retained
+  ---
+  duration_ms: 0.847003
+  type: 'test'
+  ...
+# Subtest: correcting an erroneous alias association uses raw source name instead of stale canonical name
+ok 139 - correcting an erroneous alias association uses raw source name instead of stale canonical name
+  ---
+  duration_ms: 0.366791
+  type: 'test'
+  ...
+# Subtest: distinct club decision is stable on reload and does not join similarly named clubs
+ok 140 - distinct club decision is stable on reload and does not join similarly named clubs
+  ---
+  duration_ms: 0.433281
+  type: 'test'
+  ...
+# Subtest: same provider and source ID keep one identity despite changed source names
+ok 141 - same provider and source ID keep one identity despite changed source names
+  ---
+  duration_ms: 0.260241
+  type: 'test'
+  ...
+# Subtest: unscoped UI queries do not pollute registry with UNSPECIFIED clubs
+ok 142 - unscoped UI queries do not pollute registry with UNSPECIFIED clubs
+  ---
+  duration_ms: 0.293661
+  type: 'test'
+  ...
+# Subtest: UNSPECIFIED proposals need confirmation and reuse country scoped ID afterwards
+ok 143 - UNSPECIFIED proposals need confirmation and reuse country scoped ID afterwards
+  ---
+  duration_ms: 0.65251
+  type: 'test'
+  ...
+# Subtest: Paris FC and PSG; Manchester City and United; FCSB and CSA remain separate
+ok 144 - Paris FC and PSG; Manchester City and United; FCSB and CSA remain separate
+  ---
+  duration_ms: 0.321624
+  type: 'test'
+  ...
+# Subtest: cross country user rules and contradictory duplicate rules rejected
+ok 145 - cross country user rules and contradictory duplicate rules rejected
+  ---
+  duration_ms: 0.601974
+  type: 'test'
+  ...
+# Subtest: malformed auxiliary data is diagnosed before any import
+ok 146 - malformed auxiliary data is diagnosed before any import
+  ---
+  duration_ms: 0.518859
+  type: 'test'
+  ...
+# Subtest: coverage maps every safely consolidated source row
+ok 147 - coverage maps every safely consolidated source row
+  ---
+  duration_ms: 0.547082
+  type: 'test'
+  ...
+# Subtest: membership correction follows preserved raw alias instead of stale display name
+ok 148 - membership correction follows preserved raw alias instead of stale display name
+  ---
+  duration_ms: 0.327842
+  type: 'test'
+  ...
+# Subtest: same user alias in different countries is scoped, and contextless queries stay ambiguous
+ok 149 - same user alias in different countries is scoped, and contextless queries stay ambiguous
+  ---
+  duration_ms: 0.226691
+  type: 'test'
+  ...
+# Subtest: invalid dates outside JS range and malformed strategies produce diagnostic errors
+ok 150 - invalid dates outside JS range and malformed strategies produce diagnostic errors
+  ---
+  duration_ms: 0.314703
+  type: 'test'
+  ...
+# Subtest: malformed goal events cannot be saved as valid auxiliary data
+ok 151 - malformed goal events cannot be saved as valid auxiliary data
+  ---
+  duration_ms: 0.37289
+  type: 'test'
+  ...
+# Subtest: equivalent numeric representations are consolidated with both originals retained as evidence
+ok 152 - equivalent numeric representations are consolidated with both originals retained as evidence
+  ---
+  duration_ms: 0.962355
+  type: 'test'
+  ...
+# Subtest: legacy manual d/H/A format migrates from an exact dated fixture and retains the entire original payload
+ok 153 - legacy manual d/H/A format migrates from an exact dated fixture and retains the entire original payload
+  ---
+  duration_ms: 0.53286
+  type: 'test'
+  ...
+# Subtest: unresolved manual context is retained without guessing a league or blocking the match archive
+ok 154 - unresolved manual context is retained without guessing a league or blocking the match archive
+  ---
+  duration_ms: 0.446311
+  type: 'test'
+  ...
+# Subtest: an auxiliary-only previous backup can be recovered without creating played matches
+ok 155 - an auxiliary-only previous backup can be recovered without creating played matches
+  ---
+  duration_ms: 0.236746
+  type: 'test'
+  ...
+# Subtest: INT is not a country disambiguation tag and repeated canonicalization is stable
+ok 156 - INT is not a country disambiguation tag and repeated canonicalization is stable
+  ---
+  duration_ms: 0.443687
+  type: 'test'
+  ...
+# Subtest: source-scoped Paris is resolved by exact fixture evidence and never globally aliased
+ok 157 - source-scoped Paris is resolved by exact fixture evidence and never globally aliased
+  ---
+  duration_ms: 0.859371
+  type: 'test'
+  ...
+# Subtest: chronological recovery remaps coverage indices instead of invalidating reload/rollback
+ok 158 - chronological recovery remaps coverage indices instead of invalidating reload/rollback
+  ---
+  duration_ms: 0.384267
+  type: 'test'
+  ...
+# Subtest: public reference comparison distinguishes missing matches from unresolved names and HT missingness
+ok 159 - public reference comparison distinguishes missing matches from unresolved names and HT missingness
+  ---
+  duration_ms: 276.17683
+  type: 'test'
+  ...
+# Subtest: Serie A 2022/23 reference includes the independently sourced relegation playoff
+ok 160 - Serie A 2022/23 reference includes the independently sourced relegation playoff
+  ---
+  duration_ms: 3.154269
+  type: 'test'
+  ...
+# Subtest: League One regular-only file cannot certify the season without the five promotion playoffs
+ok 161 - League One regular-only file cannot certify the season without the five promotion playoffs
+  ---
+  duration_ms: 0.265139
+  type: 'test'
+  ...
+# Subtest: community home_shots/home_target headers preserve supplied shot data
+ok 162 - community home_shots/home_target headers preserve supplied shot data
+  ---
+  duration_ms: 5.983068
+  type: 'test'
+  ...
+# Subtest: unplayed zero placeholders cannot become an invented halftime result when FT arrives
+ok 163 - unplayed zero placeholders cannot become an invented halftime result when FT arrives
+  ---
+  duration_ms: 13.056426
+  type: 'test'
+  ...
+# Subtest: reimporting a fixture never fills unknown played HT with an unplayed zero
+ok 164 - reimporting a fixture never fills unknown played HT with an unplayed zero
+  ---
+  duration_ms: 0.902056
+  type: 'test'
+  ...
+# Subtest: history bridge prefers a documented exact name when alias IDs differ across seasons
+ok 165 - history bridge prefers a documented exact name when alias IDs differ across seasons
+  ---
+  duration_ms: 1.511611
+  type: 'test'
+  ...
+# Subtest: history bridge does not merge continental homonyms with conflicting known countries
+ok 166 - history bridge does not merge continental homonyms with conflicting known countries
+  ---
+  duration_ms: 1.129287
+  type: 'test'
+  ...
+# Subtest: stored pending display names remain stable when a continental match precedes national data
+ok 167 - stored pending display names remain stable when a continental match precedes national data
+  ---
+  duration_ms: 0.295735
+  type: 'test'
+  ...
+# Subtest: documented national aliases consolidate the exact dated fixture while preserving original IDs and provenance
+ok 168 - documented national aliases consolidate the exact dated fixture while preserving original IDs and provenance
+  ---
+  duration_ms: 1.47099
+  type: 'test'
+  ...
+# Subtest: documented aliases cannot overwrite conflicting results or merge different dates or countries
+ok 169 - documented aliases cannot overwrite conflicting results or merge different dates or countries
+  ---
+  duration_ms: 0.903307
+  type: 'test'
+  ...
+# Subtest: provider IDs are not consolidated through a public name dictionary
+ok 170 - provider IDs are not consolidated through a public name dictionary
+  ---
+  duration_ms: 1.207735
+  type: 'test'
+  ...
+# Subtest: Spurs is a documented Tottenham alias in the English national context
+ok 171 - Spurs is a documented Tottenham alias in the English national context
+  ---
+  duration_ms: 0.355053
+  type: 'test'
+  ...
+# Subtest: disputed public observations require review and cannot alter an existing result
+ok 172 - disputed public observations require review and cannot alter an existing result
+  ---
+  duration_ms: 0.556416
+  type: 'test'
+  ...
+1..172
+# tests 172
+# suites 0
+# pass 172
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 1181.071419

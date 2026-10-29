@@ -1,0 +1,15 @@
+{
+  "commit": "bf2f0cc8558fa30ddecf1d969c1d84fba3a2da4a",
+  "archiveSHA256": "2aa88d6d34dd43678e3c6ee1408c28694992cad6f9a2bb85588d8ff739f95950",
+  "personalDataUsed": false,
+  "pageerrors": [],
+  "consoleErrors": [],
+  "networkMode": "isolated: optional font CSS empty; automatic live refresh postponed via existing cache timestamps in test profiles only",
+  "outcome": "PASS",
+  "allCommitFilesExact": 680,
+  "extractedHTTPAppReady": true,
+  "marketOptions": 8,
+  "simplifiedAliasesPresent": true,
+  "auditPairDistinct": 1,
+  "privateBackupFilesAbsent": true
+}
