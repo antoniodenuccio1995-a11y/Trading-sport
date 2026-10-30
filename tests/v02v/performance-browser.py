@@ -15,5 +15,24 @@ try:
   before=p.evaluate('taFingerprint()');disk=p.evaluate('archiveDbGet().then(TARecovery.stable)');t=time.monotonic();p.reload();p.evaluate('taVInitialized');report['timingsSeconds']['coldReload28k']=round(time.monotonic()-t,3);assert report['timingsSeconds']['coldReload28k']<30;assert p.evaluate('taFingerprint()')==before;assert p.evaluate('archiveDbGet().then(TARecovery.stable)')==disk;assert p.evaluate('document.body.dataset.workspace')=='dashboard';ok('Cold Dashboard with 28k restores without archive/auxiliary writes, under 30s blocking budget')
   t=time.monotonic();p.locator('.workspace-nav [data-open-workspace="calendario"]').click();p.locator('#vCalTeam').fill('Inter');report['timingsSeconds']['calendarAndAliasFilter28k']=round(time.monotonic()-t,3);assert report['timingsSeconds']['calendarAndAliasFilter28k']<10;assert p.locator('#vCalendarRows tbody tr').count()<=50;ok('28k calendar is paginated and alias-filtered under 10s budget')
   p.locator('.workspace-nav [data-open-workspace="analisi"]').click();p.locator('#analisi [data-open-workspace="comparatore"]').click();p.locator('#vaCountry').select_option('ITA');p.locator('#vaCompetition').select_option('Serie A');p.locator('#vaClub').select_option(label='Inter');p.locator('#vaSeason').select_option('all');t=time.monotonic();p.locator('#vCmpRun').click();report['timingsSeconds']['comparator28k']=round(time.monotonic()-t,3);assert report['timingsSeconds']['comparator28k']<10;assert p.evaluate('taVComparator.a.n')>100;assert p.evaluate('taFingerprint()')==before;assert p.evaluate('archiveDbGet().then(TARecovery.stable)')==disk;ok('Historic comparator on private archive leaves every stored section unchanged')
+  report['h2hReal']=p.evaluate('''()=>{
+   const i=taVIndex(),now=Date.parse('2026-10-30T12:00:00Z'),cutoff=Date.parse('2026-10-30T00:00:00Z'),groups=new Map();
+   const playable=r=>!r.up&&Number.isInteger(r.h)&&r.h>=0&&Number.isInteger(r.a)&&r.a>=0&&!/extra|penalt|aet|shootout/i.test(String(r.o?.ScoreScope??r.o?.ResultScope??''));
+   for(const x of i.entries){if(x.r.d>=cutoff||!x.comp.official||!TAFixtures.usable(x.r))continue;
+    const ids=[x.ids.H,x.ids.A].sort(),k=JSON.stringify(ids);if(!groups.has(k))groups.set(k,{ids,entries:[]});groups.get(k).entries.push(x);}
+   let affected=0,comparisons=0,errors=0;
+   for(const {ids,entries} of groups.values()){
+    entries.sort((a,b)=>a.r.d-b.r.d);const played=entries.filter(x=>playable(x.r));
+    if(played.length>=5&&entries.slice(-5).filter(x=>playable(x.r)).length<5)affected++;
+    for(const limit of [5,10,'all']){
+     const expected=limit==='all'?played:played.slice(-limit),actual=TAV02V.h2h(i,...ids,cutoff,limit,null,now);
+     comparisons++;if(actual.n!==expected.length||actual.timeline.map(x=>x.key).join('|')!==expected.map(x=>x.key).join('|'))errors++;
+    }
+   }
+   return {outcome:errors?'FAIL':'PASS',cutoff:'2026-10-30',pairGroups:groups.size,comparisons,groupsExposedToPreviousBug:affected,errors,privateDetailsPublished:false};
+  }''')
+  assert report['h2hReal']['outcome']=='PASS' and report['h2hReal']['groupsExposedToPreviousBug']>0,report['h2hReal']
+  assert p.evaluate('taFingerprint()')==before and p.evaluate('archiveDbGet().then(TARecovery.stable)')==disk
+  ok('Every real H2H pair checked at 5/10/all against an independent FT-first oracle; no archive writes')
   assert not report['pageerrors'] and not report['consoleErrors'];assert hashlib.sha256(a.real_backup.read_bytes()).hexdigest()==original;report['outcome']='PASS';c.close();b.close()
 finally:s.shutdown();(OUT/'performance-browser.json').write_text(json.dumps(report,indent=2)+'\n')

@@ -62,8 +62,7 @@
     }
     return index;
   }
-  const today = () =>
-      new Date().toLocaleDateString("en-CA", { timeZone: "Europe/Rome" }),
+  const today = () => new Date(V.day(Date.now())).toISOString().slice(0, 10),
     iso = (t) => new Date(t).toISOString().slice(0, 10),
     seasonLabel = (y) => `${y}/${String((+y + 1) % 100).padStart(2, "0")}`;
   const venueLabel = {
@@ -221,8 +220,8 @@
               .map((x) => x.season),
           ),
         ].sort((a, b) => b - a);
-    const current =
-      new Date().getUTCFullYear() - (new Date().getUTCMonth() < 6 ? 1 : 0);
+    const observed = new Date(V.day(Date.now())),
+      current = observed.getUTCFullYear() - (observed.getUTCMonth() < 6 ? 1 : 0);
     options(
       c.Season,
       [["all", "Tutto lo storico"], ...new Set([current, ...years])].map((x) =>

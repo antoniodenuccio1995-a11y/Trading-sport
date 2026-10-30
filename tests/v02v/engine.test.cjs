@@ -25,6 +25,7 @@ const data = [
     lg: "Coppa Italia",
     CompetitionCountry: "ITA",
     CompetitionType: "cup",
+    Official: true,
     NeutralVenue: true,
   }),
   mk("2026-10-10", "A", "B", 3, 2, { ScoreScope: "extra-time" }),

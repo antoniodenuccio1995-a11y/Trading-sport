@@ -23,7 +23,9 @@ def job(name,cmd,public=None,cwd=ROOT,extraenv=None):
  if r.returncode:stop.set()
 def baseline():job('rc5-full-regression',['python','tests/int004/run-consolidated-qa.py','--real-backup',str(args.real_backup),'--original-backup',str(args.original_backup),'--operational-root',str(args.operational_root),'--run-dir',str(OUT/'rc5-final'),'--require-clean'],public='python tests/int004/run-consolidated-qa.py --real-backup "$REAL_BACKUP" --original-backup "$ORIGINAL_BACKUP" --operational-root "$OPERATIONAL_ROOT" --run-dir "$RUN_DIR/rc5-final" --require-clean',cwd=legacy)
 def features():
- job('engine-unit',['node','--test','--test-reporter=tap','tests/v02v/engine.test.cjs'])
+ job('engine-unit',['node','--test','--test-reporter=tap','tests/v02v/engine.test.cjs','tests/v02v/audit-regressions.test.cjs'])
+ job('audit-original-reproducer',['node','tests/v02v/audit-repro.cjs',str(ROOT)])
+ job('audit-browser-IND01-03',['python','tests/v02v/audit-browser.py'])
  job('neutrality-holdout',['node','tests/v02v/neutrality.cjs'])
  if not stop.is_set():(uiout/'neutrality.json').write_bytes((ROOT/'qa/v02v/neutrality.json').read_bytes())
  job('v02v-preservation',['python','tests/v02v/preservation.py'])
@@ -39,11 +41,12 @@ try:
  with concurrent.futures.ThreadPoolExecutor(max_workers=3) as pool:
   for result in [pool.submit(f) for f in [baseline,features,recovery]]:result.result()
  assert not stop.is_set(),'At least one blocker failed: fix, freeze a new SHA and rerun the complete gate'
- assert len(report['jobs'])==15,len(report['jobs'])
+ assert len(report['jobs'])==17,len(report['jobs'])
  assert manifest()==source,'Tracked source changed during testing'
  assert json.loads((OUT/'rc5-final/readiness.json').read_text())['testedCommit']==head
  receipt=json.loads((uiout/'browser.json').read_text());assert receipt['outcome']=='PASS' and len(receipt['CMP'])==12
- for f in [uiout/'browser.json',uiout/'performance-browser.json',*uiout.glob('v02v-*.json')]:
+ audit=json.loads((uiout/'audit-browser.json').read_text());assert len(audit['checks'])==3 and len(audit['clockCases'])==15
+ for f in [uiout/'browser.json',uiout/'audit-browser.json',uiout/'performance-browser.json',*uiout.glob('v02v-*.json')]:
   data=json.loads(f.read_text());assert data.get('outcome')=='PASS',f.name;assert not data.get('pageerrors') and not data.get('pageerrorCount') and not data.get('consoleErrors'),f.name
   for field in ['sourceSHA256','testedSourceSHA256']:
    if isinstance(data.get(field),dict):

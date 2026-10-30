@@ -52,7 +52,22 @@
     home: "Vittoria casa",
     away: "Vittoria ospite",
   };
-  const day = (t) => Math.floor(t / DAY) * DAY;
+  // Match dates are nominal civil dates encoded at 00:00Z, not kickoff instants.
+  // Encode the Rome observation date the same way; never use a fixed UTC offset.
+  const observationZone = "Europe/Rome",
+    observationDate = new Intl.DateTimeFormat("en-CA", {
+      timeZone: observationZone,
+      year: "numeric",
+      month: "2-digit",
+      day: "2-digit",
+    });
+  const day = (t) => {
+    if (!Number.isFinite(t)) return NaN;
+    const parts = Object.fromEntries(
+      observationDate.formatToParts(t).map((p) => [p.type, p.value]),
+    );
+    return Date.UTC(+parts.year, +parts.month - 1, +parts.day);
+  };
   const date = (s) => {
     if (!s) return null;
     const t = Date.parse(s + "T00:00:00Z");
@@ -86,7 +101,7 @@
       official =
         !friendly &&
         o.Official !== false &&
-        (known || cup || type === "league" || o.Official === true);
+        (known || o.Official === true);
     return { name, country, kind, official };
   }
   function venue(r, side) {
@@ -213,14 +228,17 @@
       };
     });
   }
+  function observationCutoff(filter, now) {
+    const end = date(filter.to);
+    return Math.min(
+      Number.isFinite(filter.cutoff) ? filter.cutoff : Infinity,
+      end == null ? Infinity : end + DAY,
+      day(now),
+    );
+  }
   function select(index, filter = {}, now = Date.now()) {
-    const end = date(filter.to),
-      from = date(filter.from),
-      cutoff = Math.min(
-        Number.isFinite(filter.cutoff) ? filter.cutoff : Infinity,
-        end == null ? Infinity : end + DAY,
-        day(now),
-      );
+    const from = date(filter.from),
+      cutoff = observationCutoff(filter, now);
     return index.entries
       .filter((x) => {
         const r = x.r,
@@ -357,12 +375,7 @@
       played = sample.filter((x) => ftKnown(x.r)),
       summary = summarize(sample),
       last = played.at(-1),
-      cutoff = Number.isFinite(filter.cutoff)
-        ? filter.cutoff
-        : Math.min(
-            date(filter.to) == null ? day(now) : date(filter.to) + DAY,
-            day(now),
-          );
+      cutoff = observationCutoff(filter, now);
     return {
       ...summary,
       filter: { ...filter },
@@ -380,7 +393,7 @@
     index,
     a,
     b,
-    cutoff = day(Date.now()),
+    cutoff = Infinity,
     limit = 10,
     scope,
     now = Date.now(),
@@ -396,7 +409,15 @@
       )
       .map((x) => ({ ...x, side: x.ids.H === a ? "H" : "A" }))
       .sort((a, b) => a.r.d - b.r.d);
-    return summarize(limit === "all" ? sample : sample.slice(-Number(limit)));
+    const played = sample.filter((x) => ftKnown(x.r)),
+      summary = summarize(
+        limit === "all" ? played : played.slice(-Number(limit)),
+      );
+    // Excluded observations stay in the archive and remain separately countable;
+    // they must never consume a place in the last N usable sporting results.
+    summary.quality.availableFT = played.length;
+    summary.quality.excludedFT = sample.length - played.length;
+    return summary;
   }
   function eventStat(sample, key) {
     const values = sample
@@ -484,6 +505,7 @@
     fold,
     date,
     day,
+    observationZone,
     countryNames,
     markets,
     labels,
