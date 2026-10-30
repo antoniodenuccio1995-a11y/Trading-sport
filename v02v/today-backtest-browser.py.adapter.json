@@ -1,0 +1,7 @@
+{
+  "originalTest": "tests/int004/today-backtest-browser.py",
+  "originalTestSHA256": "a1be8a8ee81b873fd4380926bc04db340e021c8158d985c2c0cd605c28e80383",
+  "adaptation": "ONLY replace rc5 HTML entry filename with v0.2V HTML entry filename",
+  "adaptedSHA256": "5995a42e57c9f43192e39e21ea83158cfce38bd3f77c3ee242d060a5e9be0a20",
+  "entrySHA256": "eb6c91d7350815b58fd78fae57ebba337c99130046529109f20d052db9639cb7"
+}

@@ -1,0 +1,19 @@
+{
+  "outcome": "PASS",
+  "testedCommit": "240f747d9891e4754945be66096cbda67e1a05fd",
+  "readyForIndependentAudit": true,
+  "readyForStableRelease": false,
+  "independentAuditApproved": false,
+  "blockingFailures": 0,
+  "reimportFunctionalCycle": "PASS",
+  "todayBacktest": "PASS",
+  "nativeWindows": "NON ESEGUITO",
+  "liveDownloads": "NON ESEGUITO",
+  "personalOriginalsModified": false,
+  "personalRowsPublished": false,
+  "warnings": [
+    "Nuovo AUDIT richiesto; nessun merge o deploy",
+    "Quattro osservazioni originali irrisolte restano conservate, nessuna fusione forzata",
+    "Matrici storiche riferite allo snapshot congelato, stagioni parziali dichiarate separatamente"
+  ]
+}

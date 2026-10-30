@@ -1,0 +1,17 @@
+{
+  "outcome": "PASS",
+  "originalSHA256": "809d7ecce6bcf8bbc39812107e29052689520a075304bf7c743f17bc1dd31f2a",
+  "originalRecords": 28544,
+  "rc4BaselineDistinct": 28402,
+  "rc5ConservativeRecords": 28302,
+  "consolidatedCopies": 242,
+  "additionalConsolidationsComparedWithRc4": 100,
+  "retainedUnresolvedRows": 4,
+  "originalRowsAccountedFor": 28544,
+  "nonemptyQuoteValuesChecked": 172964,
+  "originalNamesPreserved": 57088,
+  "manualPayloadsPreserved": 2,
+  "manualFieldsChecked": 6,
+  "errorCount": 0,
+  "personalRowsPublished": false
+}

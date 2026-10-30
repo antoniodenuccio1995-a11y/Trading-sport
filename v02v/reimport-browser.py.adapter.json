@@ -1,0 +1,7 @@
+{
+  "originalTest": "tests/int004/reimport-browser.py",
+  "originalTestSHA256": "7c15868af556621900410426d413947bbe8fe2339f243dcc2f466ec94e0528fd",
+  "adaptation": "ONLY replace rc5 HTML entry filename with v0.2V HTML entry filename",
+  "adaptedSHA256": "3906f037cbeaf1422b2325710d3bd70d444819d63c3b9dcba45e9f73a2443cd5",
+  "entrySHA256": "eb6c91d7350815b58fd78fae57ebba337c99130046529109f20d052db9639cb7"
+}

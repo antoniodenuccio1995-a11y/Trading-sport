@@ -1,0 +1,5 @@
+PASS Actual Backtest click accepts verified future clocks today and tomorrow, excludes elapsed/equal/missing/unzoned/malformed clocks today, and leaves every historical operation exact
+PASS Backtest and Scanner resolve the single shared clock function without duplicate implementations
+PASS Actual Scanner refresh applies the same conservative clock policy to the same four eligible fixtures
+PASS All six presets execute through the actual Backtest button with current-day fixtures present
+PASS Search and complete CSV download work after current-day Backtest execution

@@ -1,0 +1,262 @@
+TAP version 13
+# Subtest: T1: audit pair has one match, two clubs, original names and phase evidence
+ok 1 - T1: audit pair has one match, two clubs, original names and phase evidence
+  ---
+  duration_ms: 40.824555
+  type: 'test'
+  ...
+# Subtest: T2: repeated imports are idempotent
+ok 2 - T2: repeated imports are idempotent
+  ---
+  duration_ms: 11.034592
+  type: 'test'
+  ...
+# Subtest: T3: conflicting FT cannot overwrite the previous record
+ok 3 - T3: conflicting FT cannot overwrite the previous record
+  ---
+  duration_ms: 0.942575
+  type: 'test'
+  ...
+# Subtest: statistics and odds disagreements are conflicts; missing observations integrate
+ok 4 - statistics and odds disagreements are conflicts; missing observations integrate
+  ---
+  duration_ms: 10.637266
+  type: 'test'
+  ...
+# Subtest: T4: genuinely additional playoff, playout and replay games survive
+ok 5 - T4: genuinely additional playoff, playout and replay games survive
+  ---
+  duration_ms: 4.458636
+  type: 'test'
+  ...
+# Subtest: round numbers are independent of phases and multiphase rounds remain uncertain
+ok 6 - round numbers are independent of phases and multiphase rounds remain uncertain
+  ---
+  duration_ms: 3.807198
+  type: 'test'
+  ...
+# Subtest: different competitions and explicit seasons never join
+ok 7 - different competitions and explicit seasons never join
+  ---
+  duration_ms: 0.776677
+  type: 'test'
+  ...
+# Subtest: explicit competition codes share the canonical fixture identity
+ok 8 - explicit competition codes share the canonical fixture identity
+  ---
+  duration_ms: 0.524197
+  type: 'test'
+  ...
+# Subtest: two distinct trusted events survive; an unqualified third row is ambiguous
+ok 9 - two distinct trusted events survive; an unqualified third row is ambiguous
+  ---
+  duration_ms: 4.203423
+  type: 'test'
+  ...
+# Subtest: inconsistent kickoff or sporting context is reviewable rather than a second counted fixture
+ok 10 - inconsistent kickoff or sporting context is reviewable rather than a second counted fixture
+  ---
+  duration_ms: 4.983354
+  type: 'test'
+  ...
+# Subtest: same trusted event with different clock observations remains identifiable and preserves both
+ok 11 - same trusted event with different clock observations remains identifiable and preserves both
+  ---
+  duration_ms: 1.329246
+  type: 'test'
+  ...
+# Subtest: closed AC Cesena is not automatically the modern Cesena FC identity
+ok 12 - closed AC Cesena is not automatically the modern Cesena FC identity
+  ---
+  duration_ms: 0.323426
+  type: 'test'
+  ...
+# Subtest: explicit generated alias IDs migrate with old identifiers retained, provider IDs are protected
+ok 13 - explicit generated alias IDs migrate with old identifiers retained, provider IDs are protected
+  ---
+  duration_ms: 0.349194
+  type: 'test'
+  ...
+# Subtest: normalisation is stable after repeated serialization and retains FT/HT/quote values
+ok 14 - normalisation is stable after repeated serialization and retains FT/HT/quote values
+  ---
+  duration_ms: 0.315784
+  type: 'test'
+  ...
+# Subtest: E: archive reconciliation retains every unresolved record unchanged and conserves coverage
+ok 15 - E: archive reconciliation retains every unresolved record unchanged and conserves coverage
+  ---
+  duration_ms: 10.264186
+  type: 'test'
+  ...
+# Subtest: T5: the analysis projection excludes cancelled games and unresolved conflicts without editing raw data
+ok 16 - T5: the analysis projection excludes cancelled games and unresolved conflicts without editing raw data
+  ---
+  duration_ms: 4.335773
+  type: 'test'
+  ...
+# Subtest: historical VfB Leipzig is not mapped to RB Leipzig through a shared city alias
+ok 17 - historical VfB Leipzig is not mapped to RB Leipzig through a shared city alias
+  ---
+  duration_ms: 0.298969
+  type: 'test'
+  ...
+# Subtest: a prior unplayed schedule can become a played result despite a revised clock, retaining both observations
+ok 18 - a prior unplayed schedule can become a played result despite a revised clock, retaining both observations
+  ---
+  duration_ms: 27.287318
+  type: 'test'
+  ...
+# Subtest: AUDIT 29/10: schedule/result clocks remain idempotent through repeated imports, serialization and source order
+ok 19 - AUDIT 29/10: schedule/result clocks remain idempotent through repeated imports, serialization and source order
+  ---
+  duration_ms: 48.686673
+  type: 'test'
+  ...
+# Subtest: previous observations never waive a truly new clock, timezone, score or quote conflict
+ok 20 - previous observations never waive a truly new clock, timezone, score or quote conflict
+  ---
+  duration_ms: 11.985731
+  type: 'test'
+  ...
+# Subtest: partially overlapping clock histories do not create a transitive merge
+ok 21 - partially overlapping clock histories do not create a transitive merge
+  ---
+  duration_ms: 6.195445
+  type: 'test'
+  ...
+# Subtest: incoming history cannot smuggle a new clock into an existing archive by retaining one old clock
+ok 22 - incoming history cannot smuggle a new clock into an existing archive by retaining one old clock
+  ---
+  duration_ms: 1.224058
+  type: 'test'
+  ...
+# Subtest: merged clocks never manufacture UTC certainty from different original field/zone pairings
+ok 23 - merged clocks never manufacture UTC certainty from different original field/zone pairings
+  ---
+  duration_ms: 1.250137
+  type: 'test'
+  ...
+# Subtest: a fresh explicit UTC clock is authoritative within its own source, never fabricated from another source
+ok 24 - a fresh explicit UTC clock is authoritative within its own source, never fabricated from another source
+  ---
+  duration_ms: 23.975364
+  type: 'test'
+  ...
+# Subtest: an exact replay of previously retained unresolved rows is a no-op, never a silent reconciliation
+ok 25 - an exact replay of previously retained unresolved rows is a no-op, never a silent reconciliation
+  ---
+  duration_ms: 1.57778
+  type: 'test'
+  ...
+# Subtest: a clock disagreement is not waived by equal event codes belonging to different providers
+ok 26 - a clock disagreement is not waived by equal event codes belonging to different providers
+  ---
+  duration_ms: 9.977926
+  type: 'test'
+  ...
+# Subtest: the actual FA Cup Crystal Palace/Everton replay remains two independently dated fixtures
+ok 27 - the actual FA Cup Crystal Palace/Everton replay remains two independently dated fixtures
+  ---
+  duration_ms: 7.106114
+  type: 'test'
+  ...
+# Subtest: new unrelated imports do not silently consolidate or remove existing duplicate archive rows
+ok 28 - new unrelated imports do not silently consolidate or remove existing duplicate archive rows
+  ---
+  duration_ms: 0.585169
+  type: 'test'
+  ...
+# Subtest: unrelated imports preserve all original fields and IDs of existing singleton records
+ok 29 - unrelated imports preserve all original fields and IDs of existing singleton records
+  ---
+  duration_ms: 0.368994
+  type: 'test'
+  ...
+# Subtest: country contradictions are blocked while documented Welsh association membership remains valid
+ok 30 - country contradictions are blocked while documented Welsh association membership remains valid
+  ---
+  duration_ms: 0.557577
+  type: 'test'
+  ...
+# Subtest: reused trusted event IDs with incompatible dates are reviewed instead of becoming two counted fixtures
+ok 31 - reused trusted event IDs with incompatible dates are reviewed instead of becoming two counted fixtures
+  ---
+  duration_ms: 0.728914
+  type: 'test'
+  ...
+# Subtest: inconsistent club IDs from one provider are not fused by the shared display alias
+ok 32 - inconsistent club IDs from one provider are not fused by the shared display alias
+  ---
+  duration_ms: 6.149275
+  type: 'test'
+  ...
+# Subtest: documented English and Italian final-stage headings stay playoffs rather than being treated as regular rounds
+ok 33 - documented English and Italian final-stage headings stay playoffs rather than being treated as regular rounds
+  ---
+  duration_ms: 0.25967
+  type: 'test'
+  ...
+# Subtest: legacy generated IDs for another documented alias migrate without losing the original ID
+ok 34 - legacy generated IDs for another documented alias migrate without losing the original ID
+  ---
+  duration_ms: 0.245108
+  type: 'test'
+  ...
+# Subtest: one provider ID cannot silently overwrite the documented identity of a different real club
+ok 35 - one provider ID cannot silently overwrite the documented identity of a different real club
+  ---
+  duration_ms: 0.19307
+  type: 'test'
+  ...
+# Subtest: CSV source identifiers, round headers and replay context reach the shared identity engine
+ok 36 - CSV source identifiers, round headers and replay context reach the shared identity engine
+  ---
+  duration_ms: 8.525435
+  type: 'test'
+  ...
+# Subtest: explicit UTC offsets identify equivalent kickoff instants while preserving both source clocks
+ok 37 - explicit UTC offsets identify equivalent kickoff instants while preserving both source clocks
+  ---
+  duration_ms: 7.779053
+  type: 'test'
+  ...
+# Subtest: different known UTC instants remain a conflict even if clock text is the same
+ok 38 - different known UTC instants remain a conflict even if clock text is the same
+  ---
+  duration_ms: 0.526851
+  type: 'test'
+  ...
+# Subtest: unknown competition text and malformed derived metadata do not become object-prototype identities
+ok 39 - unknown competition text and malformed derived metadata do not become object-prototype identities
+  ---
+  duration_ms: 0.247902
+  type: 'test'
+  ...
+# Subtest: qualified identifiers from every original source survive merging and remain usable for future identity checks
+ok 40 - qualified identifiers from every original source survive merging and remain usable for future identity checks
+  ---
+  duration_ms: 6.089806
+  type: 'test'
+  ...
+# Subtest: explicit replays or different legs are preserved when a provider qualifies its event code with that context
+ok 41 - explicit replays or different legs are preserved when a provider qualifies its event code with that context
+  ---
+  duration_ms: 1.007393
+  type: 'test'
+  ...
+# Subtest: explicitly suspended or nonfinal games cannot become played statistical observations
+ok 42 - explicitly suspended or nonfinal games cannot become played statistical observations
+  ---
+  duration_ms: 6.4053
+  type: 'test'
+  ...
+1..42
+# tests 42
+# suites 0
+# pass 42
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 766.38831

@@ -1,0 +1,21 @@
+{
+  "outcome": "PASS",
+  "checks": [
+    "Actual private backup import confirms 28,300 conservative records",
+    "Cold Dashboard with 28k restores without archive/auxiliary writes, under 30s blocking budget",
+    "28k calendar is paginated and alias-filtered under 10s budget",
+    "Historic comparator on private archive leaves every stored section unchanged"
+  ],
+  "pageerrors": [],
+  "consoleErrors": [],
+  "sourceSHA256": "0fc4859c8176a75b0c6bbc7f4bf11c8c7f6f19cad0cfba6b02b95d10201aad2d",
+  "privateRowsPublished": false,
+  "browser": "Chromium Linux HTTP",
+  "timingsSeconds": {
+    "import": 18.397,
+    "coldReload28k": 11.039,
+    "calendarAndAliasFilter28k": 0.821,
+    "comparator28k": 0.058
+  },
+  "networkMode": "isolated: optional font CSS empty; automatic live refresh postponed via existing cache timestamps in test profiles only"
+}

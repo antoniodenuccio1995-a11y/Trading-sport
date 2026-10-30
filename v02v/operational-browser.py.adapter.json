@@ -1,0 +1,7 @@
+{
+  "originalTest": "tests/int004/operational-browser.py",
+  "originalTestSHA256": "7cb62bea65159459e360ed3e79b5bdcb14231979494ac53ee198a6f68b332065",
+  "adaptation": "ONLY replace rc5 HTML entry filename with v0.2V HTML entry filename",
+  "adaptedSHA256": "7e3e5528706322203f670d80242624f8e9279bf77087539b216bcec7d0079d91",
+  "entrySHA256": "eb6c91d7350815b58fd78fae57ebba337c99130046529109f20d052db9639cb7"
+}

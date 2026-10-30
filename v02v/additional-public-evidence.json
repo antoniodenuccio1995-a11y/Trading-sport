@@ -1,0 +1,17 @@
+{
+  "outcome": "PASS",
+  "checks": [
+    "Actual public JSON upload/confirmation, independent 2024/25 Inter and 2025/26 Barcelona selections, 38 FT each, real browser screenshot"
+  ],
+  "pageerrors": [],
+  "consoleErrors": [],
+  "personalRowsPublished": false,
+  "dataset": "Public I1_2024 and SP1_2025 Football-Data packets",
+  "networkMode": "isolated: optional font CSS empty; automatic live refresh postponed via existing cache timestamps in test profiles only",
+  "sourceSHA256": {
+    "Trading_Analytics_v0.2V-rc1_TA-V02V-001.html": "eb6c91d7350815b58fd78fae57ebba337c99130046529109f20d052db9639cb7",
+    "ta-v02v-engine.js": "c5814a28f849dbc5cf8d3a732f3852621dd003fb86d8e3a5ab189bdb89cd606d",
+    "ta-v02v-ui.js": "8772d55260c834db2eb7fd6c19a90ea7c5749d9c495edf284696efd6be68a934",
+    "ta-v02v.css": "b45baec94224b11faf9fc8f910cd83df4e21b83de7c3c5a50375b5300b2ccaba"
+  }
+}

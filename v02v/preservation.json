@@ -1,0 +1,7 @@
+{
+  "outcome": "PASS",
+  "baseline": "bf2f0cc8558fa30ddecf1d969c1d84fba3a2da4a",
+  "frozenFiles": 577,
+  "newHTMLOnlyWhitelistedChanges": true,
+  "protectedFormulaTradeBacktestScannerStandingsUnchanged": true
+}

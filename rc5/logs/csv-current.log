@@ -1,0 +1,190 @@
+TAP version 13
+# Subtest: ROU 2024/2025: league, season, scores
+ok 1 - ROU 2024/2025: league, season, scores
+  ---
+  duration_ms: 31.482233
+  type: 'test'
+  ...
+# Subtest: ROU 2025/2026: league, season, scores
+ok 2 - ROU 2025/2026: league, season, scores
+  ---
+  duration_ms: 0.916176
+  type: 'test'
+  ...
+# Subtest: DNK 2024/2025: league, season, scores
+ok 3 - DNK 2024/2025: league, season, scores
+  ---
+  duration_ms: 0.837198
+  type: 'test'
+  ...
+# Subtest: DNK 2025/2026: league, season, scores
+ok 4 - DNK 2025/2026: league, season, scores
+  ---
+  duration_ms: 1.434054
+  type: 'test'
+  ...
+# Subtest: P1 2024/2025: league, season, scores
+ok 5 - P1 2024/2025: league, season, scores
+  ---
+  duration_ms: 0.457387
+  type: 'test'
+  ...
+# Subtest: P1 2025/2026: league, season, scores
+ok 6 - P1 2025/2026: league, season, scores
+  ---
+  duration_ms: 0.551188
+  type: 'test'
+  ...
+# Subtest: SP1 2024/2025: league, season, scores
+ok 7 - SP1 2024/2025: league, season, scores
+  ---
+  duration_ms: 0.650276
+  type: 'test'
+  ...
+# Subtest: SP1 2025/2026: league, season, scores
+ok 8 - SP1 2025/2026: league, season, scores
+  ---
+  duration_ms: 0.310756
+  type: 'test'
+  ...
+# Subtest: SP2 2024/2025: league, season, scores
+ok 9 - SP2 2024/2025: league, season, scores
+  ---
+  duration_ms: 3.289872
+  type: 'test'
+  ...
+# Subtest: SP2 2025/2026: league, season, scores
+ok 10 - SP2 2025/2026: league, season, scores
+  ---
+  duration_ms: 0.595033
+  type: 'test'
+  ...
+# Subtest: F1 2024/2025: league, season, scores
+ok 11 - F1 2024/2025: league, season, scores
+  ---
+  duration_ms: 1.380393
+  type: 'test'
+  ...
+# Subtest: F1 2025/2026: league, season, scores
+ok 12 - F1 2025/2026: league, season, scores
+  ---
+  duration_ms: 0.29972
+  type: 'test'
+  ...
+# Subtest: F2 2024/2025: league, season, scores
+ok 13 - F2 2024/2025: league, season, scores
+  ---
+  duration_ms: 0.207772
+  type: 'test'
+  ...
+# Subtest: F2 2025/2026: league, season, scores
+ok 14 - F2 2025/2026: league, season, scores
+  ---
+  duration_ms: 0.177046
+  type: 'test'
+  ...
+# Subtest: N1 2024/2025: league, season, scores
+ok 15 - N1 2024/2025: league, season, scores
+  ---
+  duration_ms: 0.429385
+  type: 'test'
+  ...
+# Subtest: N1 2025/2026: league, season, scores
+ok 16 - N1 2025/2026: league, season, scores
+  ---
+  duration_ms: 0.310086
+  type: 'test'
+  ...
+# Subtest: normalized UTF-8 BOM, semicolon, case/aliases, quote escaping and Unicode
+ok 17 - normalized UTF-8 BOM, semicolon, case/aliases, quote escaping and Unicode
+  ---
+  duration_ms: 1.996498
+  type: 'test'
+  ...
+# Subtest: manual league required when both filename and metadata are absent
+ok 18 - manual league required when both filename and metadata are absent
+  ---
+  duration_ms: 1.688676
+  type: 'test'
+  ...
+# Subtest: unrecognized code is recoverable through explicit selection
+ok 19 - unrecognized code is recoverable through explicit selection
+  ---
+  duration_ms: 1.55791
+  type: 'test'
+  ...
+# Subtest: recognized metadata cannot be relabelled by manual selection
+ok 20 - recognized metadata cannot be relabelled by manual selection
+  ---
+  duration_ms: 0.574083
+  type: 'test'
+  ...
+# Subtest: Country disambiguates Superliga and survives cumulative season filter
+ok 21 - Country disambiguates Superliga and survives cumulative season filter
+  ---
+  duration_ms: 28.788599
+  type: 'test'
+  ...
+# Subtest: invalid dates rejected without Date.UTC rollover; EU and leap dates supported
+ok 22 - invalid dates rejected without Date.UTC rollover; EU and leap dates supported
+  ---
+  duration_ms: 9.974831
+  type: 'test'
+  ...
+# Subtest: partial, negative, fractional and non numeric scores never become zero
+ok 23 - partial, negative, fractional and non numeric scores never become zero
+  ---
+  duration_ms: 1.164379
+  type: 'test'
+  ...
+# Subtest: missing/impossible HT is null, actual 0-0 is evidence
+ok 24 - missing/impossible HT is null, actual 0-0 is evidence
+  ---
+  duration_ms: 0.414642
+  type: 'test'
+  ...
+# Subtest: date/metadata disagreement rejected; explicit season cannot invent games
+ok 25 - date/metadata disagreement rejected; explicit season cannot invent games
+  ---
+  duration_ms: 0.850267
+  type: 'test'
+  ...
+# Subtest: cache and community schema remain supported
+ok 26 - cache and community schema remain supported
+  ---
+  duration_ms: 3.417683
+  type: 'test'
+  ...
+# Subtest: malformed quoting, duplicate aliases and shifted columns blocked
+ok 27 - malformed quoting, duplicate aliases and shifted columns blocked
+  ---
+  duration_ms: 0.33274
+  type: 'test'
+  ...
+# Subtest: filename mapping covers new leagues without guessing active sidebar
+ok 28 - filename mapping covers new leagues without guessing active sidebar
+  ---
+  duration_ms: 3.162209
+  type: 'test'
+  ...
+# Subtest: exact 131-column utility header preserves scores, odds and explicit unknown-code recovery
+ok 29 - exact 131-column utility header preserves scores, odds and explicit unknown-code recovery
+  ---
+  duration_ms: 2.859124
+  type: 'test'
+  ...
+# Subtest: candidate script syntax and protected baseline byte identity
+ok 30 - candidate script syntax and protected baseline byte identity
+  ---
+  duration_ms: 548.058069
+  type: 'test'
+  ...
+1..30
+# tests 30
+# suites 0
+# pass 30
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 1079.65488

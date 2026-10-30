@@ -1,0 +1,18 @@
+{
+  "commit": "240f747d9891e4754945be66096cbda67e1a05fd",
+  "archiveSHA256": "1499a5e90e11dec7a58ac9dc6ce98d6d149255f60218711d9712d90f798ee60d",
+  "personalDataUsed": false,
+  "pageerrors": [],
+  "consoleErrors": [],
+  "networkMode": "isolated: optional font CSS empty; automatic live refresh postponed via existing cache timestamps in test profiles only",
+  "outcome": "PASS",
+  "allCommitFilesExact": 697,
+  "extractedHTTPAppReady": true,
+  "marketOptions": 8,
+  "simplifiedAliasesPresent": true,
+  "auditPairDistinct": 1,
+  "privateBackupFilesAbsent": true,
+  "verifierSHA256": "b79e7d7ccf0fa2b94f924fab122efde7231707486342cec304c91c06c6df3744",
+  "entryAdaptation": "Only rc5 HTML entry filename replaced with v0.2V HTML; no verification assertion removed or changed",
+  "downloadURL": "https://github.com/antoniodenuccio1995-a11y/Trading-sport/archive/240f747d9891e4754945be66096cbda67e1a05fd.zip"
+}

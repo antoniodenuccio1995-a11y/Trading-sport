@@ -1,0 +1,4 @@
+PASS Actual private backup import confirms 28,300 conservative records
+PASS Cold Dashboard with 28k restores without archive/auxiliary writes, under 30s blocking budget
+PASS 28k calendar is paginated and alias-filtered under 10s budget
+PASS Historic comparator on private archive leaves every stored section unchanged

@@ -1,0 +1,124 @@
+{
+  "checks": [
+    "Dashboard empty has no sample data, no archive write, four navigation destinations",
+    "Calendar exposes both phase and matchday on the same canonical cup fixture",
+    "CMP01 Country \u2192 competition \u2192 actual archived club through independent selectors",
+    "CMP02 Italy and Spain selected on separate sides",
+    "CMP03 Inter 2024/25 and Barcelona 2025/26 remain independent",
+    "Independent Python goal/win/HT oracle equals visible comparator data",
+    "CMP04 Promoted Leeds keeps one canonical club across Championship and Premier League",
+    "CMP05 Current season excludes future scored fixture and today, does not turn AET into 90-minute result",
+    "CMP06 All history and custom inclusive dates compose without future leakage",
+    "CMP07 Available official cup is included only in all-competition scope",
+    "CMP08 Home/away exclude explicitly neutral match, total includes it",
+    "CMP10 Partial season and missing HT show distinct actual denominators",
+    "CMP11 Swap preserves each complete filter set, reset clears dates",
+    "CMP12 Hypothetical comparison has no prediction or trading recommendation",
+    "Composed calendar filters open exact canonical fixture and date, with persistent watchlist",
+    "CMP09 Match Analysis and Comparator identical fields and canonical sample keys on same filters",
+    "Resume/H2H all history and actual venue samples exclude future, HT absent distinct",
+    "Future match: new H2H, shared profiles and descriptive signal samples exclude future scored archive rows",
+    "Universal exact-alias and nation search expose actual archive destinations",
+    "All four large Dashboard actions navigate to functional existing/new screens",
+    "Navigating and configuring all new features leaves archive fingerprint completely unchanged",
+    "Reload returns to Dashboard, retains calendar filter/watchlist and imported archive",
+    "Actual calendar CSV export matches all filtered canonical fixtures",
+    "Country folders, accessible reorder/pin and international group persist through refresh/reload",
+    "Sidebar competition synchronizes Calendar/Scanner/Backtest; zero-data competition remains empty without changing archive",
+    "Preserved standings, teams, chronological validation and actual global trade-journal navigation",
+    "Calendar pagination and all composed country/competition/season/phase/date/alias/status filters",
+    "Mobile Dashboard has no horizontal overflow",
+    "Fresh uncached Dashboard: no automatic external requests, no matches-store writes, coverage audit deferred",
+    "Coverage matrix computes the original 138 combinations on explicit panel opening",
+    "A concurrent writer still blocks stale import: no relaxed transaction or fingerprint check"
+  ],
+  "pageerrors": [],
+  "consoleErrors": [],
+  "browser": "Chromium Linux HTTP",
+  "outcome": "PASS",
+  "CMP": {
+    "CMP01": {
+      "outcome": "PASS",
+      "description": "Country \u2192 competition \u2192 actual archived club through independent selectors"
+    },
+    "CMP02": {
+      "outcome": "PASS",
+      "description": "Italy and Spain selected on separate sides"
+    },
+    "CMP03": {
+      "outcome": "PASS",
+      "description": "Inter 2024/25 and Barcelona 2025/26 remain independent"
+    },
+    "CMP04": {
+      "outcome": "PASS",
+      "description": "Promoted Leeds keeps one canonical club across Championship and Premier League"
+    },
+    "CMP05": {
+      "outcome": "PASS",
+      "description": "Current season excludes future scored fixture and today, does not turn AET into 90-minute result"
+    },
+    "CMP06": {
+      "outcome": "PASS",
+      "description": "All history and custom inclusive dates compose without future leakage"
+    },
+    "CMP07": {
+      "outcome": "PASS",
+      "description": "Available official cup is included only in all-competition scope"
+    },
+    "CMP08": {
+      "outcome": "PASS",
+      "description": "Home/away exclude explicitly neutral match, total includes it"
+    },
+    "CMP10": {
+      "outcome": "PASS",
+      "description": "Partial season and missing HT show distinct actual denominators"
+    },
+    "CMP11": {
+      "outcome": "PASS",
+      "description": "Swap preserves each complete filter set, reset clears dates"
+    },
+    "CMP12": {
+      "outcome": "PASS",
+      "description": "Hypothetical comparison has no prediction or trading recommendation"
+    },
+    "CMP09": {
+      "outcome": "PASS",
+      "description": "Match Analysis and Comparator identical fields and canonical sample keys on same filters"
+    }
+  },
+  "timings": {},
+  "networkMode": "isolated: optional font CSS empty; automatic live refresh postponed via existing cache timestamps in test profiles only",
+  "independentOracle": {
+    "source": "public I1_2024 compact raw records / Python",
+    "expected": {
+      "n": 38,
+      "gf": 79,
+      "ga": 35
+    },
+    "observed": {
+      "n": 38,
+      "gf": 79,
+      "ga": 35,
+      "w": 24,
+      "d": 9,
+      "l": 5,
+      "ht": {
+        "n": 38,
+        "over05": {
+          "w": 26,
+          "n": 38,
+          "p": 68.42105263157895
+        },
+        "splitN": 38,
+        "gf": 1.0263157894736843,
+        "ga": 0.34210526315789475
+      }
+    }
+  },
+  "sourceSHA256": {
+    "Trading_Analytics_v0.2V-rc1_TA-V02V-001.html": "eb6c91d7350815b58fd78fae57ebba337c99130046529109f20d052db9639cb7",
+    "ta-v02v-engine.js": "c5814a28f849dbc5cf8d3a732f3852621dd003fb86d8e3a5ab189bdb89cd606d",
+    "ta-v02v-ui.js": "8772d55260c834db2eb7fd6c19a90ea7c5749d9c495edf284696efd6be68a934",
+    "ta-v02v.css": "b45baec94224b11faf9fc8f910cd83df4e21b83de7c3c5a50375b5300b2ccaba"
+  }
+}
