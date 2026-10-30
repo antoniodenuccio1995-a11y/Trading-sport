@@ -1,0 +1,7 @@
+{
+  "originalTest": "tests/int004/consultation-browser.py",
+  "originalTestSHA256": "84361e06adefed33104fa7d84de42d20ca931834e3c6db2e522d386c3c2c3fc4",
+  "adaptation": "ONLY replace rc5 HTML entry filename with v0.2V HTML entry filename",
+  "adaptedSHA256": "ad280d12c2f20f4940fd82539262551c063b2a4b4d407d1b59e0a0220cac1919",
+  "entrySHA256": "eb6c91d7350815b58fd78fae57ebba337c99130046529109f20d052db9639cb7"
+}

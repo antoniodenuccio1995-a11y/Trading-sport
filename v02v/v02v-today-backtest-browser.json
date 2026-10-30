@@ -1,0 +1,36 @@
+{
+  "checks": [
+    "Actual Backtest click accepts verified future clocks today and tomorrow, excludes elapsed/equal/missing/unzoned/malformed clocks today, and leaves every historical operation exact",
+    "Backtest and Scanner resolve the single shared clock function without duplicate implementations",
+    "Actual Scanner refresh applies the same conservative clock policy to the same four eligible fixtures",
+    "All six presets execute through the actual Backtest button with current-day fixtures present",
+    "Search and complete CSV download work after current-day Backtest execution"
+  ],
+  "pageerrors": [],
+  "personalDataUsed": false,
+  "browser": "Chromium Linux HTTP",
+  "fixedTimeUTC": "2026-10-28T10:00:00Z",
+  "consoleErrors": [],
+  "networkMode": "isolated: optional font CSS empty; automatic live refresh postponed via existing cache timestamps in test profiles only",
+  "observedClickPrefix": "Backtest eseguito. Serie A \u00b7 Tutte le stagioni \u00b7 691 incontri selezionati.\n\n691\noperazioni\n46.3%\nfrequenza dell\u2019evento\n50.0%\nprobabilit\u00e0 implicita nella quota\n-",
+  "expectedFuture": [
+    "QA Today Manual Future",
+    "QA Today Offset Future",
+    "QA Today UTC Future",
+    "QA Tomorrow No Clock"
+  ],
+  "actualFuture": [
+    "QA Today Manual Future",
+    "QA Today Offset Future",
+    "QA Today UTC Future",
+    "QA Tomorrow No Clock"
+  ],
+  "scannerStatus": "4 gare future verificabili in archivio, 0 con dati sufficienti per il filtro scelto. Oggi vengono escluse gare con orario non verificabile. Gli orari delle fonti possono cambiare.",
+  "outcome": "PASS",
+  "testedSourceSHA256": {
+    "Trading_Analytics_v0.2V-rc1_TA-V02V-001.html": "eb6c91d7350815b58fd78fae57ebba337c99130046529109f20d052db9639cb7",
+    "ta-fixture-identity.js": "c19ea52b61417aed066031d7262386d6bbed0b12aa01b9828a961fa000d277ec",
+    "ta-clubs-v4.js": "142d243fe45b2cb346f36469814862bcfc740fce87cfeb31bd09f4155fe184e6",
+    "ta-json-recovery-rc5.js": "66703b1fd0eec1df5c64f9ca80cedb29cd2d3a8378e4a121a9546c26aee74ccc"
+  }
+}

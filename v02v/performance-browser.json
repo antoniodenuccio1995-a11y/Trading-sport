@@ -1,0 +1,31 @@
+{
+  "outcome": "PASS",
+  "checks": [
+    "Actual private backup import confirms 28,300 conservative records",
+    "Cold Dashboard with 28k restores without archive/auxiliary writes, under 30s blocking budget",
+    "28k calendar is paginated and alias-filtered under 10s budget",
+    "Historic comparator on private archive leaves every stored section unchanged",
+    "Every real H2H pair checked at 5/10/all against an independent FT-first oracle; no archive writes"
+  ],
+  "pageerrors": [],
+  "consoleErrors": [],
+  "sourceSHA256": "0fc4859c8176a75b0c6bbc7f4bf11c8c7f6f19cad0cfba6b02b95d10201aad2d",
+  "privateRowsPublished": false,
+  "browser": "Chromium Linux HTTP",
+  "timingsSeconds": {
+    "import": 19.496,
+    "coldReload28k": 9.601,
+    "calendarAndAliasFilter28k": 0.993,
+    "comparator28k": 0.064
+  },
+  "networkMode": "isolated: optional font CSS empty; automatic live refresh postponed via existing cache timestamps in test profiles only",
+  "h2hReal": {
+    "outcome": "PASS",
+    "cutoff": "2026-10-30",
+    "pairGroups": 5358,
+    "comparisons": 16074,
+    "groupsExposedToPreviousBug": 14,
+    "errors": 0,
+    "privateDetailsPublished": false
+  }
+}

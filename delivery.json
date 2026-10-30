@@ -1,0 +1,19 @@
+{
+  "commit": "43b92dfc21112a1df7f20dc6f56f6add8042219a",
+  "archiveSHA256": "f8ba9a8c842deadad3d86baea138084cdff17d15ecc22187da4b7673ae4bc6ac",
+  "personalDataUsed": false,
+  "pageerrors": [],
+  "consoleErrors": [],
+  "networkMode": "isolated: optional font CSS empty; automatic live refresh postponed via existing cache timestamps in test profiles only",
+  "outcome": "PASS",
+  "allCommitFilesExact": 701,
+  "extractedHTTPAppReady": true,
+  "marketOptions": 8,
+  "simplifiedAliasesPresent": true,
+  "auditPairDistinct": 1,
+  "privateBackupFilesAbsent": true,
+  "verifierOriginalSHA256": "b79e7d7ccf0fa2b94f924fab122efde7231707486342cec304c91c06c6df3744",
+  "verifierAdaptedSHA256": "10b3714200dec7e7ef2301e3a35ad88d3e7f0600bf06cc3e494219fde7720904",
+  "adaptation": "Replace HTML entry filename; ADD Dashboard/four-actions/new initialization checks and the unchanged AUDIT acceptance on extracted modules; remove no assertions",
+  "auditExtractedModulesPASS": true
+}

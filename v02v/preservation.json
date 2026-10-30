@@ -1,0 +1,10 @@
+{
+  "outcome": "PASS",
+  "baseline": "bf2f0cc8558fa30ddecf1d969c1d84fba3a2da4a",
+  "frozenFiles": 577,
+  "auditedCandidate": "240f747d9891e4754945be66096cbda67e1a05fd",
+  "frozenCandidateFiles": 586,
+  "originalCandidateHTMLCSSUnchanged": true,
+  "newHTMLOnlyWhitelistedChanges": true,
+  "protectedFormulaTradeBacktestScannerStandingsUnchanged": true
+}

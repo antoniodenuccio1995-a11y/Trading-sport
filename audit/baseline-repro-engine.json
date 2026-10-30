@@ -1,0 +1,22 @@
+{
+  "checks": [
+    {
+      "id": "V02V-IND-01",
+      "expected": 5,
+      "observed": 3,
+      "outcome": "FAIL"
+    },
+    {
+      "id": "V02V-IND-02",
+      "expected": 1,
+      "observed": 0,
+      "outcome": "FAIL"
+    },
+    {
+      "id": "V02V-IND-03",
+      "expected": 1,
+      "observed": 2,
+      "outcome": "FAIL"
+    }
+  ]
+}

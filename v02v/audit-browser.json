@@ -1,0 +1,181 @@
+{
+  "outcome": "PASS",
+  "checks": [
+    {
+      "id": "V02V-IND-01",
+      "outcome": "PASS",
+      "last5": 5,
+      "last10": 6,
+      "all": 6,
+      "excludedFT": 2,
+      "archiveUnchanged": true
+    },
+    {
+      "id": "V02V-IND-02",
+      "outcome": "PASS",
+      "browserCases": 15,
+      "sameDayFutureExcluded": true
+    },
+    {
+      "id": "V02V-IND-03",
+      "outcome": "PASS",
+      "allOfficialN": 1,
+      "unknownCompetitionOnlyN": 1,
+      "archiveUnchanged": true,
+      "classification": {
+        "name": "Coppa QA da verificare",
+        "country": "ITA",
+        "kind": "cup",
+        "official": false
+      }
+    }
+  ],
+  "clockCases": [
+    {
+      "instant": "2026-10-30T00:30:00+01:00",
+      "browserTimezone": "Europe/Rome",
+      "expectedRomeDay": "2026-10-30",
+      "comparatorN": 1,
+      "h2hN": 1,
+      "signalLeagueN": 1,
+      "outcome": "PASS"
+    },
+    {
+      "instant": "2026-07-01T00:30:00+02:00",
+      "browserTimezone": "Europe/Rome",
+      "expectedRomeDay": "2026-07-01",
+      "comparatorN": 1,
+      "h2hN": 1,
+      "signalLeagueN": 1,
+      "outcome": "PASS"
+    },
+    {
+      "instant": "2026-03-29T03:01:00+02:00",
+      "browserTimezone": "Europe/Rome",
+      "expectedRomeDay": "2026-03-29",
+      "comparatorN": 1,
+      "h2hN": 1,
+      "signalLeagueN": 1,
+      "outcome": "PASS"
+    },
+    {
+      "instant": "2026-10-25T02:30:00+01:00",
+      "browserTimezone": "Europe/Rome",
+      "expectedRomeDay": "2026-10-25",
+      "comparatorN": 1,
+      "h2hN": 1,
+      "signalLeagueN": 1,
+      "outcome": "PASS"
+    },
+    {
+      "instant": "2027-01-01T00:30:00+01:00",
+      "browserTimezone": "Europe/Rome",
+      "expectedRomeDay": "2027-01-01",
+      "comparatorN": 1,
+      "h2hN": 1,
+      "signalLeagueN": 1,
+      "outcome": "PASS"
+    },
+    {
+      "instant": "2026-10-30T00:30:00+01:00",
+      "browserTimezone": "America/New_York",
+      "expectedRomeDay": "2026-10-30",
+      "comparatorN": 1,
+      "h2hN": 1,
+      "signalLeagueN": 1,
+      "outcome": "PASS"
+    },
+    {
+      "instant": "2026-07-01T00:30:00+02:00",
+      "browserTimezone": "America/New_York",
+      "expectedRomeDay": "2026-07-01",
+      "comparatorN": 1,
+      "h2hN": 1,
+      "signalLeagueN": 1,
+      "outcome": "PASS"
+    },
+    {
+      "instant": "2026-03-29T03:01:00+02:00",
+      "browserTimezone": "America/New_York",
+      "expectedRomeDay": "2026-03-29",
+      "comparatorN": 1,
+      "h2hN": 1,
+      "signalLeagueN": 1,
+      "outcome": "PASS"
+    },
+    {
+      "instant": "2026-10-25T02:30:00+01:00",
+      "browserTimezone": "America/New_York",
+      "expectedRomeDay": "2026-10-25",
+      "comparatorN": 1,
+      "h2hN": 1,
+      "signalLeagueN": 1,
+      "outcome": "PASS"
+    },
+    {
+      "instant": "2027-01-01T00:30:00+01:00",
+      "browserTimezone": "America/New_York",
+      "expectedRomeDay": "2027-01-01",
+      "comparatorN": 1,
+      "h2hN": 1,
+      "signalLeagueN": 1,
+      "outcome": "PASS"
+    },
+    {
+      "instant": "2026-10-30T00:30:00+01:00",
+      "browserTimezone": "Asia/Tokyo",
+      "expectedRomeDay": "2026-10-30",
+      "comparatorN": 1,
+      "h2hN": 1,
+      "signalLeagueN": 1,
+      "outcome": "PASS"
+    },
+    {
+      "instant": "2026-07-01T00:30:00+02:00",
+      "browserTimezone": "Asia/Tokyo",
+      "expectedRomeDay": "2026-07-01",
+      "comparatorN": 1,
+      "h2hN": 1,
+      "signalLeagueN": 1,
+      "outcome": "PASS"
+    },
+    {
+      "instant": "2026-03-29T03:01:00+02:00",
+      "browserTimezone": "Asia/Tokyo",
+      "expectedRomeDay": "2026-03-29",
+      "comparatorN": 1,
+      "h2hN": 1,
+      "signalLeagueN": 1,
+      "outcome": "PASS"
+    },
+    {
+      "instant": "2026-10-25T02:30:00+01:00",
+      "browserTimezone": "Asia/Tokyo",
+      "expectedRomeDay": "2026-10-25",
+      "comparatorN": 1,
+      "h2hN": 1,
+      "signalLeagueN": 1,
+      "outcome": "PASS"
+    },
+    {
+      "instant": "2027-01-01T00:30:00+01:00",
+      "browserTimezone": "Asia/Tokyo",
+      "expectedRomeDay": "2027-01-01",
+      "comparatorN": 1,
+      "h2hN": 1,
+      "signalLeagueN": 1,
+      "outcome": "PASS"
+    }
+  ],
+  "pageerrors": [],
+  "consoleErrors": [],
+  "syntheticDataOnly": true,
+  "browser": "154.0.8037.57",
+  "networkMode": "isolated: optional font CSS empty; automatic live refresh postponed via existing cache timestamps in test profiles only",
+  "sourceSHA256": {
+    "Trading_Analytics_v0.2V-rc1_TA-V02V-001.html": "eb6c91d7350815b58fd78fae57ebba337c99130046529109f20d052db9639cb7",
+    "ta-v02v-engine.js": "b5aeb46669c9903f433b0fed49f35ca11d96c92bb38f615ca5d3e43abe37f7d0",
+    "ta-v02v-ui.js": "210119a8c97c1d265e0312d36b4a1159d42a301b1b0179c99097197da343f519",
+    "ta-v02v.css": "b45baec94224b11faf9fc8f910cd83df4e21b83de7c3c5a50375b5300b2ccaba"
+  }
+}

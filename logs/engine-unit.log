@@ -1,0 +1,136 @@
+TAP version 13
+# Subtest: IND-01: last 5/10/all count usable FT first, with independent expected dates
+ok 1 - IND-01: last 5/10/all count usable FT first, with independent expected dates
+  ---
+  duration_ms: 10.679481
+  type: 'test'
+  ...
+# Subtest: IND-02: one Rome civil-date boundary, winter/summer/DST/month/year and offset instants
+ok 2 - IND-02: one Rome civil-date boundary, winter/summer/DST/month/year and offset instants
+  ---
+  duration_ms: 0.350586
+  type: 'test'
+  ...
+# Subtest: IND-02: select/profile/H2H/signals all include yesterday and exclude today/future
+ok 3 - IND-02: select/profile/H2H/signals all include yesterday and exclude today/future
+  ---
+  duration_ms: 8.130583
+  type: 'test'
+  ...
+# Subtest: IND-02: host timezone cannot change the explicit Rome policy
+ok 4 - IND-02: host timezone cannot change the explicit Rome policy
+  ---
+  duration_ms: 391.033565
+  type: 'test'
+  ...
+# Subtest: IND-03: Cup/Coppa/Copa/type cannot qualify official status; strict explicit flag can
+ok 5 - IND-03: Cup/Coppa/Copa/type cannot qualify official status; strict explicit flag can
+  ---
+  duration_ms: 23.769904
+  type: 'test'
+  ...
+# Subtest: IND-03: registered cup/league, explicit opt-out and friendlies take precedence
+ok 6 - IND-03: registered cup/league, explicit opt-out and friendlies take precedence
+  ---
+  duration_ms: 0.371699
+  type: 'test'
+  ...
+# Subtest: Independent exact counts, percentages and missing denominators
+ok 7 - Independent exact counts, percentages and missing denominators
+  ---
+  duration_ms: 6.834626
+  type: 'test'
+  ...
+# Subtest: Temporal cutoffs exclude same day, later dates, and bogus future scores
+ok 8 - Temporal cutoffs exclude same day, later dates, and bogus future scores
+  ---
+  duration_ms: 1.893975
+  type: 'test'
+  ...
+# Subtest: Date interval includes endpoints and composes with historical season
+ok 9 - Date interval includes endpoints and composes with historical season
+  ---
+  duration_ms: 1.037588
+  type: 'test'
+  ...
+# Subtest: Actual home, away, total and neutral scopes differ without manufacturing home venue
+ok 10 - Actual home, away, total and neutral scopes differ without manufacturing home venue
+  ---
+  duration_ms: 1.490328
+  type: 'test'
+  ...
+# Subtest: HT zero is known, absent HT remains null and extra-time FT excluded
+ok 11 - HT zero is known, absent HT remains null and extra-time FT excluded
+  ---
+  duration_ms: 0.192128
+  type: 'test'
+  ...
+# Subtest: Shared profile equal for both consumers and inputs never mutated
+ok 12 - Shared profile equal for both consumers and inputs never mutated
+  ---
+  duration_ms: 3.140186
+  type: 'test'
+  ...
+# Subtest: H2H counts actual meetings in each venue, capped before selected date
+ok 13 - H2H counts actual meetings in each venue, capped before selected date
+  ---
+  duration_ms: 0.950318
+  type: 'test'
+  ...
+# Subtest: Rest and congestion use dates preceding cutoff
+ok 14 - Rest and congestion use dates preceding cutoff
+  ---
+  duration_ms: 0.764558
+  type: 'test'
+  ...
+# Subtest: Clock requires coherent original time/fuso, no unzoned confidence
+ok 15 - Clock requires coherent original time/fuso, no unzoned confidence
+  ---
+  duration_ms: 0.7459
+  type: 'test'
+  ...
+# Subtest: Interpretation false-positive guard, numerical supportive evidence and max3
+ok 16 - Interpretation false-positive guard, numerical supportive evidence and max3
+  ---
+  duration_ms: 4.430455
+  type: 'test'
+  ...
+# Subtest: Contrary evidence is not promoted to positive, mixed contexts yield no Over signal
+ok 17 - Contrary evidence is not promoted to positive, mixed contexts yield no Over signal
+  ---
+  duration_ms: 8.766889
+  type: 'test'
+  ...
+# Subtest: Signal input at same/later day cannot change output or leak outcomes
+ok 18 - Signal input at same/later day cannot change output or leak outcomes
+  ---
+  duration_ms: 6.132011
+  type: 'test'
+  ...
+# Subtest: Canonical promoted clubs and aliases retained as one identity
+ok 19 - Canonical promoted clubs and aliases retained as one identity
+  ---
+  duration_ms: 2.357091
+  type: 'test'
+  ...
+# Subtest: Future fixture cannot consume already scored records dated after the observation day
+ok 20 - Future fixture cannot consume already scored records dated after the observation day
+  ---
+  duration_ms: 6.859624
+  type: 'test'
+  ...
+# Subtest: All-official scope excludes declared friendlies and unqualified competitions, without deleting rows
+ok 21 - All-official scope excludes declared friendlies and unqualified competitions, without deleting rows
+  ---
+  duration_ms: 1.158651
+  type: 'test'
+  ...
+1..21
+# tests 21
+# suites 0
+# pass 21
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 580.960106

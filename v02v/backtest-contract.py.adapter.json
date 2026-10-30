@@ -1,0 +1,7 @@
+{
+  "originalTest": "tests/int004/backtest-contract.py",
+  "originalTestSHA256": "9dcfaaef062677ca36eac0e79c3a6296c1d1ce50952663604bb0c9c2cae6fad1",
+  "adaptation": "ONLY replace rc5 HTML entry filename with v0.2V HTML entry filename",
+  "adaptedSHA256": "fde190de838d26884930cb99de0c5d79989f5e714ccb266eaa096ffc2156d8d1",
+  "entrySHA256": "eb6c91d7350815b58fd78fae57ebba337c99130046529109f20d052db9639cb7"
+}

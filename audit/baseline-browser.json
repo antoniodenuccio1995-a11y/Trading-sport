@@ -1,0 +1,51 @@
+{
+  "outcome": "FAIL_REPRODUCED_THREE_FUNCTIONAL_DEFECTS",
+  "checks": [],
+  "issues": [
+    {
+      "id": "V02V-IND-01",
+      "title": "H2H limit applied before excluding unplayed/missing-FT observations",
+      "expectedLast5": 5,
+      "observedLast5": 3,
+      "allPlayedObserved": 6,
+      "input": {
+        "played": 6,
+        "pastUnplayed": 2,
+        "analysisDate": "2026-10-20"
+      },
+      "browserReproduced": true
+    },
+    {
+      "id": "V02V-IND-02",
+      "title": "Rome calendar day and UTC statistical cutoff disagree around local midnight",
+      "nowRome": "2026-10-30T00:30:00+01:00",
+      "nowUTC": "2026-10-29T23:30:00.000Z",
+      "romeDay": "2026-10-30",
+      "previousDayPlayed": "2026-10-29",
+      "expectedN": 1,
+      "observedN": 0,
+      "browserReproduced": true
+    },
+    {
+      "id": "V02V-IND-03",
+      "title": "Unqualified Cup name is treated as an official competition",
+      "originalOfficialFieldPresent": false,
+      "qualification": "no Official flag, no CompetitionType, absent from known competition registry",
+      "expectedAllOfficialN": 1,
+      "observedAllOfficialN": 2,
+      "competitionOnlyN": 1,
+      "derivedClassification": {
+        "name": "Coppa QA da verificare",
+        "country": "ITA",
+        "kind": "cup",
+        "official": true
+      },
+      "browserReproduced": true
+    }
+  ],
+  "pageerrors": [],
+  "consoleErrors": [],
+  "syntheticDataOnly": true,
+  "browser": "154.0.8037.57",
+  "networkMode": "isolated: optional font CSS empty; automatic live refresh postponed via existing cache timestamps in test profiles only"
+}

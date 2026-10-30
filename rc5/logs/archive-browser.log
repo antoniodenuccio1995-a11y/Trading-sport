@@ -1,0 +1,10 @@
+PASS T1: audit pair imports as one encounter and two clubs through the application
+PASS T2: repeated application import preserves the encounter count
+PASS T5: standings consume one game and two clubs
+PASS T5: previously duplicated raw archive remains intact while statistical projection uses a distinct fixture
+PASS E: startup preserves the previously saved raw duplicates byte-for-byte until explicit repair
+PASS E: reconciliation preview writes nothing and cannot commit before backup generation
+PASS E: explicit reconciliation after backup consolidates the saved duplicate
+PASS T7: reconciled archive persists and exports its single encounter
+PASS T7: undo restores both original raw records after reload
+PASS Trade journal frozen scores, events and quotes remain exact across reconciliation, reload and undo

@@ -1,0 +1,5 @@
+PASS A: two genuinely distinct trusted events remain two in daily calendar, upcoming board and scanner
+PASS A/B: one official fixture and a manual alias copy appear once across future consultations
+PASS A/F: scanner uses the shared explicit UTC kickoff for a verified future fixture today
+PASS F: halftime frequency uses two known observations, not a missing HT as a third negative result
+PASS F: absent halftime observations display unavailable instead of an invented 0%
