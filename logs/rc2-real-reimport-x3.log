@@ -1,0 +1,19 @@
+PASS synthetic: real upload, safe preview without writes, confirmation and full JSON export
+PASS synthetic: all exported sections identical after reload
+PASS synthetic: three actual reimports of the same source, each committed/reloaded, preserve every record and auxiliary section exactly
+PASS synthetic: reimport of the new export is also an exact no-op
+PASS synthetic: Undo of a reimport restores the exact preceding complete archive
+PASS synthetic: Undo of the first import restores the genuinely empty isolated profile
+PASS synthetic: a genuinely new clock still blocks confirmation without changing the archive
+PASS rc4Recovered: real upload, safe preview without writes, confirmation and full JSON export
+PASS rc4Recovered: all exported sections identical after reload
+PASS rc4Recovered: three actual reimports of the same source, each committed/reloaded, preserve every record and auxiliary section exactly
+PASS rc4Recovered: reimport of the new export is also an exact no-op
+PASS rc4Recovered: Undo of a reimport restores the exact preceding complete archive
+PASS rc4Recovered: Undo of the first import restores the genuinely empty isolated profile
+PASS original: real upload, safe preview without writes, confirmation and full JSON export
+PASS original: all exported sections identical after reload
+PASS original: three actual reimports of the same source, each committed/reloaded, preserve every record and auxiliary section exactly
+PASS original: reimport of the new export is also an exact no-op
+PASS original: Undo of a reimport restores the exact preceding complete archive
+PASS original: Undo of the first import restores the genuinely empty isolated profile

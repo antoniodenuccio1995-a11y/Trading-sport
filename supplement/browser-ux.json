@@ -1,0 +1,1416 @@
+{
+  "outcome": "PASS",
+  "pageerrors": [],
+  "consoleErrors": [],
+  "checks": [
+    "Shell/Dashboard before data readiness; actual screencast frames and DOM frame trace, no rc5 workspace or matches write",
+    "Every one of 14 today fixtures shown full-width; ordered competition/verified time, next seven days separate",
+    "Canonical fixture date reaches legacy controls/market panels; future scored poison cannot alter any displayed rc5 market grade",
+    "Sample wording is explicit with FT/HT, dates, scope and incomplete-coverage disclaimer",
+    "Existing Confronti contains H2H/form/new interpretation; brief overview above, original tabs preserved",
+    "All 17 existing indicators, four columns and venue/total league benchmarks equal independent Python oracle; asymmetric 5+5, HT gaps, neutral and future excluded",
+    "1920\u2192360\u2192768\u21921024\u21921440\u21921920 on six sections, fluid main, no document overflow, all four comparison values visible",
+    "Compact country/league hierarchy retains pin/reorder/active semantics and keyboard-focusable controls",
+    "Scanner defaults today; tomorrow/3/7/custom bounds, aliases/country, unknown/past today clocks excluded; ratings unchanged",
+    "Calendar day/league groups, sticky headings, textual status and complete CSV independent of grouping/page",
+    "Both last match and last comparator independently resume, without archive changes"
+  ],
+  "resize": [
+    {
+      "width": 1920,
+      "main": 1628,
+      "scroll": 1920,
+      "section": "dashboard"
+    },
+    {
+      "width": 360,
+      "main": 360,
+      "scroll": 360,
+      "section": "dashboard"
+    },
+    {
+      "width": 768,
+      "main": 768,
+      "scroll": 768,
+      "section": "dashboard"
+    },
+    {
+      "width": 1024,
+      "main": 744,
+      "scroll": 1024,
+      "section": "dashboard"
+    },
+    {
+      "width": 1440,
+      "main": 1160,
+      "scroll": 1440,
+      "section": "dashboard"
+    },
+    {
+      "width": 1920,
+      "main": 1628,
+      "scroll": 1920,
+      "section": "dashboard"
+    },
+    {
+      "width": 1920,
+      "main": 1628,
+      "scroll": 1920,
+      "section": "calendario"
+    },
+    {
+      "width": 360,
+      "main": 360,
+      "scroll": 360,
+      "section": "calendario"
+    },
+    {
+      "width": 768,
+      "main": 768,
+      "scroll": 768,
+      "section": "calendario"
+    },
+    {
+      "width": 1024,
+      "main": 744,
+      "scroll": 1024,
+      "section": "calendario"
+    },
+    {
+      "width": 1440,
+      "main": 1160,
+      "scroll": 1440,
+      "section": "calendario"
+    },
+    {
+      "width": 1920,
+      "main": 1628,
+      "scroll": 1920,
+      "section": "calendario"
+    },
+    {
+      "width": 1920,
+      "main": 1628,
+      "scroll": 1920,
+      "section": "analisi"
+    },
+    {
+      "width": 360,
+      "main": 360,
+      "scroll": 360,
+      "section": "analisi"
+    },
+    {
+      "width": 768,
+      "main": 768,
+      "scroll": 768,
+      "section": "analisi"
+    },
+    {
+      "width": 1024,
+      "main": 744,
+      "scroll": 1024,
+      "section": "analisi"
+    },
+    {
+      "width": 1440,
+      "main": 1160,
+      "scroll": 1440,
+      "section": "analisi"
+    },
+    {
+      "width": 1920,
+      "main": 1628,
+      "scroll": 1920,
+      "section": "analisi"
+    },
+    {
+      "width": 1920,
+      "main": 1628,
+      "scroll": 1920,
+      "section": "comparatore"
+    },
+    {
+      "width": 360,
+      "main": 360,
+      "scroll": 360,
+      "section": "comparatore"
+    },
+    {
+      "width": 768,
+      "main": 768,
+      "scroll": 768,
+      "section": "comparatore"
+    },
+    {
+      "width": 1024,
+      "main": 744,
+      "scroll": 1024,
+      "section": "comparatore"
+    },
+    {
+      "width": 1440,
+      "main": 1160,
+      "scroll": 1440,
+      "section": "comparatore"
+    },
+    {
+      "width": 1920,
+      "main": 1628,
+      "scroll": 1920,
+      "section": "comparatore"
+    },
+    {
+      "width": 1920,
+      "main": 1628,
+      "scroll": 1920,
+      "section": "scanner"
+    },
+    {
+      "width": 360,
+      "main": 360,
+      "scroll": 360,
+      "section": "scanner"
+    },
+    {
+      "width": 768,
+      "main": 768,
+      "scroll": 768,
+      "section": "scanner"
+    },
+    {
+      "width": 1024,
+      "main": 744,
+      "scroll": 1024,
+      "section": "scanner"
+    },
+    {
+      "width": 1440,
+      "main": 1160,
+      "scroll": 1440,
+      "section": "scanner"
+    },
+    {
+      "width": 1920,
+      "main": 1628,
+      "scroll": 1920,
+      "section": "scanner"
+    },
+    {
+      "width": 1920,
+      "main": 1628,
+      "scroll": 1920,
+      "section": "dati"
+    },
+    {
+      "width": 360,
+      "main": 360,
+      "scroll": 360,
+      "section": "dati"
+    },
+    {
+      "width": 768,
+      "main": 768,
+      "scroll": 768,
+      "section": "dati"
+    },
+    {
+      "width": 1024,
+      "main": 744,
+      "scroll": 1024,
+      "section": "dati"
+    },
+    {
+      "width": 1440,
+      "main": 1160,
+      "scroll": 1440,
+      "section": "dati"
+    },
+    {
+      "width": 1920,
+      "main": 1628,
+      "scroll": 1920,
+      "section": "dati"
+    }
+  ],
+  "P": {
+    "3": {
+      "outcome": "PASS",
+      "check": "Shell/Dashboard before data readiness; actual screencast frames and DOM frame trace, no rc5 workspace or matches write"
+    },
+    "4": {
+      "outcome": "PASS",
+      "check": "Every one of 14 today fixtures shown full-width; ordered competition/verified time, next seven days separate"
+    },
+    "7": {
+      "outcome": "PASS",
+      "check": "Sample wording is explicit with FT/HT, dates, scope and incomplete-coverage disclaimer"
+    },
+    "8": {
+      "outcome": "PASS",
+      "check": "Existing Confronti contains H2H/form/new interpretation; brief overview above, original tabs preserved"
+    },
+    "9": {
+      "outcome": "PASS",
+      "check": "All 17 existing indicators, four columns and venue/total league benchmarks equal independent Python oracle; asymmetric 5+5, HT gaps, neutral and future excluded"
+    },
+    "1": {
+      "outcome": "PASS",
+      "check": "1920\u2192360\u2192768\u21921024\u21921440\u21921920 on six sections, fluid main, no document overflow, all four comparison values visible"
+    },
+    "2": {
+      "outcome": "PASS",
+      "check": "Compact country/league hierarchy retains pin/reorder/active semantics and keyboard-focusable controls"
+    },
+    "10": {
+      "outcome": "PASS",
+      "check": "Scanner defaults today; tomorrow/3/7/custom bounds, aliases/country, unknown/past today clocks excluded; ratings unchanged"
+    },
+    "5": {
+      "outcome": "PASS",
+      "check": "Calendar day/league groups, sticky headings, textual status and complete CSV independent of grouping/page"
+    }
+  },
+  "networkMode": "isolated: optional font CSS empty; automatic live refresh postponed via existing cache timestamps in test profiles only",
+  "startup": {
+    "times": {
+      "shell": 838,
+      "shellFrame": 975,
+      "archiveStart": 995,
+      "archiveRead": 1007,
+      "workerProjected": 1713,
+      "hydrationReady": 1713,
+      "workerIndexReady": 1713,
+      "worker": "background",
+      "projectionReady": 1807,
+      "ready": 1990
+    },
+    "frames": [
+      {
+        "t": 171.8,
+        "visible": [],
+        "boot": true,
+        "ready": false
+      },
+      {
+        "t": 311,
+        "visible": [],
+        "boot": true,
+        "ready": false
+      },
+      {
+        "t": 439,
+        "visible": [],
+        "boot": true,
+        "ready": false
+      },
+      {
+        "t": 589,
+        "visible": [],
+        "boot": true,
+        "ready": false
+      },
+      {
+        "t": 603,
+        "visible": [],
+        "boot": true,
+        "ready": false
+      },
+      {
+        "t": 722,
+        "visible": [],
+        "boot": true,
+        "ready": false
+      },
+      {
+        "t": 739,
+        "visible": [],
+        "boot": true,
+        "ready": false
+      },
+      {
+        "t": 752,
+        "visible": [],
+        "boot": true,
+        "ready": false
+      },
+      {
+        "t": 768,
+        "visible": [],
+        "boot": true,
+        "ready": false
+      },
+      {
+        "t": 833,
+        "visible": [],
+        "boot": true,
+        "ready": false
+      },
+      {
+        "t": 953,
+        "visible": [
+          "dashboard"
+        ],
+        "boot": false,
+        "ready": false
+      },
+      {
+        "t": 975,
+        "visible": [
+          "dashboard"
+        ],
+        "boot": false,
+        "ready": false
+      },
+      {
+        "t": 995,
+        "visible": [
+          "dashboard"
+        ],
+        "boot": false,
+        "ready": false
+      },
+      {
+        "t": 1009,
+        "visible": [
+          "dashboard"
+        ],
+        "boot": false,
+        "ready": false
+      },
+      {
+        "t": 1026,
+        "visible": [
+          "dashboard"
+        ],
+        "boot": false,
+        "ready": false
+      },
+      {
+        "t": 1043,
+        "visible": [
+          "dashboard"
+        ],
+        "boot": false,
+        "ready": false
+      },
+      {
+        "t": 1056,
+        "visible": [
+          "dashboard"
+        ],
+        "boot": false,
+        "ready": false
+      },
+      {
+        "t": 1072,
+        "visible": [
+          "dashboard"
+        ],
+        "boot": false,
+        "ready": false
+      },
+      {
+        "t": 1088,
+        "visible": [
+          "dashboard"
+        ],
+        "boot": false,
+        "ready": false
+      },
+      {
+        "t": 1104,
+        "visible": [
+          "dashboard"
+        ],
+        "boot": false,
+        "ready": false
+      },
+      {
+        "t": 1122,
+        "visible": [
+          "dashboard"
+        ],
+        "boot": false,
+        "ready": false
+      },
+      {
+        "t": 1136,
+        "visible": [
+          "dashboard"
+        ],
+        "boot": false,
+        "ready": false
+      },
+      {
+        "t": 1152,
+        "visible": [
+          "dashboard"
+        ],
+        "boot": false,
+        "ready": false
+      },
+      {
+        "t": 1169,
+        "visible": [
+          "dashboard"
+        ],
+        "boot": false,
+        "ready": false
+      },
+      {
+        "t": 1184,
+        "visible": [
+          "dashboard"
+        ],
+        "boot": false,
+        "ready": false
+      },
+      {
+        "t": 1200,
+        "visible": [
+          "dashboard"
+        ],
+        "boot": false,
+        "ready": false
+      },
+      {
+        "t": 1216,
+        "visible": [
+          "dashboard"
+        ],
+        "boot": false,
+        "ready": false
+      },
+      {
+        "t": 1237,
+        "visible": [
+          "dashboard"
+        ],
+        "boot": false,
+        "ready": false
+      },
+      {
+        "t": 1248,
+        "visible": [
+          "dashboard"
+        ],
+        "boot": false,
+        "ready": false
+      },
+      {
+        "t": 1268,
+        "visible": [
+          "dashboard"
+        ],
+        "boot": false,
+        "ready": false
+      },
+      {
+        "t": 1281,
+        "visible": [
+          "dashboard"
+        ],
+        "boot": false,
+        "ready": false
+      },
+      {
+        "t": 1296,
+        "visible": [
+          "dashboard"
+        ],
+        "boot": false,
+        "ready": false
+      },
+      {
+        "t": 1312,
+        "visible": [
+          "dashboard"
+        ],
+        "boot": false,
+        "ready": false
+      },
+      {
+        "t": 1328,
+        "visible": [
+          "dashboard"
+        ],
+        "boot": false,
+        "ready": false
+      },
+      {
+        "t": 1344,
+        "visible": [
+          "dashboard"
+        ],
+        "boot": false,
+        "ready": false
+      },
+      {
+        "t": 1367,
+        "visible": [
+          "dashboard"
+        ],
+        "boot": false,
+        "ready": false
+      },
+      {
+        "t": 1378,
+        "visible": [
+          "dashboard"
+        ],
+        "boot": false,
+        "ready": false
+      },
+      {
+        "t": 1392,
+        "visible": [
+          "dashboard"
+        ],
+        "boot": false,
+        "ready": false
+      },
+      {
+        "t": 1408,
+        "visible": [
+          "dashboard"
+        ],
+        "boot": false,
+        "ready": false
+      },
+      {
+        "t": 1424,
+        "visible": [
+          "dashboard"
+        ],
+        "boot": false,
+        "ready": false
+      },
+      {
+        "t": 1440,
+        "visible": [
+          "dashboard"
+        ],
+        "boot": false,
+        "ready": false
+      },
+      {
+        "t": 1467,
+        "visible": [
+          "dashboard"
+        ],
+        "boot": false,
+        "ready": false
+      },
+      {
+        "t": 1474,
+        "visible": [
+          "dashboard"
+        ],
+        "boot": false,
+        "ready": false
+      },
+      {
+        "t": 1491,
+        "visible": [
+          "dashboard"
+        ],
+        "boot": false,
+        "ready": false
+      },
+      {
+        "t": 1506,
+        "visible": [
+          "dashboard"
+        ],
+        "boot": false,
+        "ready": false
+      },
+      {
+        "t": 1520,
+        "visible": [
+          "dashboard"
+        ],
+        "boot": false,
+        "ready": false
+      },
+      {
+        "t": 1536,
+        "visible": [
+          "dashboard"
+        ],
+        "boot": false,
+        "ready": false
+      },
+      {
+        "t": 1575,
+        "visible": [
+          "dashboard"
+        ],
+        "boot": false,
+        "ready": false
+      },
+      {
+        "t": 1587,
+        "visible": [
+          "dashboard"
+        ],
+        "boot": false,
+        "ready": false
+      },
+      {
+        "t": 1603,
+        "visible": [
+          "dashboard"
+        ],
+        "boot": false,
+        "ready": false
+      },
+      {
+        "t": 1616,
+        "visible": [
+          "dashboard"
+        ],
+        "boot": false,
+        "ready": false
+      },
+      {
+        "t": 1634,
+        "visible": [
+          "dashboard"
+        ],
+        "boot": false,
+        "ready": false
+      },
+      {
+        "t": 1650,
+        "visible": [
+          "dashboard"
+        ],
+        "boot": false,
+        "ready": false
+      },
+      {
+        "t": 1673,
+        "visible": [
+          "dashboard"
+        ],
+        "boot": false,
+        "ready": false
+      },
+      {
+        "t": 1681,
+        "visible": [
+          "dashboard"
+        ],
+        "boot": false,
+        "ready": false
+      },
+      {
+        "t": 1696,
+        "visible": [
+          "dashboard"
+        ],
+        "boot": false,
+        "ready": false
+      },
+      {
+        "t": 1713,
+        "visible": [
+          "dashboard"
+        ],
+        "boot": false,
+        "ready": false
+      },
+      {
+        "t": 1824,
+        "visible": [
+          "dashboard"
+        ],
+        "boot": false,
+        "ready": false
+      },
+      {
+        "t": 1973,
+        "visible": [
+          "dashboard"
+        ],
+        "boot": false,
+        "ready": false
+      },
+      {
+        "t": 1994,
+        "visible": [
+          "dashboard"
+        ],
+        "boot": false,
+        "ready": true
+      }
+    ],
+    "writes": 0
+  },
+  "comparisonOracle": {
+    "now": {
+      "expected": {
+        "home": {
+          "n": 5,
+          "nv": 3,
+          "gf": 2.8,
+          "ga": 0.8,
+          "total": 3.6,
+          "ppg": 2.6,
+          "scored": 100.0,
+          "conceded": 60.0,
+          "clean": 40.0,
+          "win": 80.0,
+          "winNil": 40.0,
+          "lossNil": 0.0,
+          "bothScored": 100.0,
+          "bothConceded": 33.333333333333336,
+          "leadingHT": 66.66666666666667,
+          "trailingHT": 0.0,
+          "zeroHT": 0.0,
+          "halfGF": 1.3333333333333333,
+          "halfGA": 0.3333333333333333
+        },
+        "homeTotal": {
+          "n": 10,
+          "nv": 7,
+          "gf": 2.5,
+          "ga": 1.0,
+          "total": 3.5,
+          "ppg": 2.3,
+          "scored": 100.0,
+          "conceded": 70.0,
+          "clean": 30.0,
+          "win": 70.0,
+          "winNil": 30.0,
+          "lossNil": 0.0,
+          "bothScored": 71.42857142857143,
+          "bothConceded": 42.857142857142854,
+          "leadingHT": 42.857142857142854,
+          "trailingHT": 14.285714285714286,
+          "zeroHT": 14.285714285714286,
+          "halfGF": 0.8571428571428571,
+          "halfGA": 0.42857142857142855
+        },
+        "away": {
+          "n": 5,
+          "nv": 3,
+          "gf": 3.8,
+          "ga": 3.0,
+          "total": 6.8,
+          "ppg": 1.8,
+          "scored": 100.0,
+          "conceded": 100.0,
+          "clean": 0.0,
+          "win": 40.0,
+          "winNil": 0.0,
+          "lossNil": 0.0,
+          "bothScored": 100.0,
+          "bothConceded": 100.0,
+          "leadingHT": 33.333333333333336,
+          "trailingHT": 0.0,
+          "zeroHT": 0.0,
+          "halfGF": 1.3333333333333333,
+          "halfGA": 1.0
+        },
+        "awayTotal": {
+          "n": 10,
+          "nv": 7,
+          "gf": 3.5,
+          "ga": 2.0,
+          "total": 5.5,
+          "ppg": 2.4,
+          "scored": 100.0,
+          "conceded": 100.0,
+          "clean": 0.0,
+          "win": 70.0,
+          "winNil": 0.0,
+          "lossNil": 0.0,
+          "bothScored": 100.0,
+          "bothConceded": 42.857142857142854,
+          "leadingHT": 71.42857142857143,
+          "trailingHT": 0.0,
+          "zeroHT": 0.0,
+          "halfGF": 1.4285714285714286,
+          "halfGA": 0.42857142857142855
+        },
+        "leagueHome": {
+          "n": 25,
+          "nv": 14,
+          "gf": 2.28,
+          "ga": 1.76,
+          "total": 4.04,
+          "ppg": 1.64,
+          "scored": 92.0,
+          "conceded": 84.0,
+          "clean": 16.0,
+          "win": 48.0,
+          "winNil": 16.0,
+          "lossNil": 8.0,
+          "bothScored": 85.71428571428571,
+          "bothConceded": 42.857142857142854,
+          "leadingHT": 50.0,
+          "trailingHT": 14.285714285714286,
+          "zeroHT": 7.142857142857143,
+          "halfGF": 1.0714285714285714,
+          "halfGA": 0.5
+        },
+        "leagueAway": {
+          "n": 25,
+          "nv": 14,
+          "gf": 1.76,
+          "ga": 2.28,
+          "total": 4.04,
+          "ppg": 1.16,
+          "scored": 84.0,
+          "conceded": 92.0,
+          "clean": 8.0,
+          "win": 32.0,
+          "winNil": 8.0,
+          "lossNil": 16.0,
+          "bothScored": 42.857142857142854,
+          "bothConceded": 85.71428571428571,
+          "leadingHT": 14.285714285714286,
+          "trailingHT": 50.0,
+          "zeroHT": 7.142857142857143,
+          "halfGF": 0.5,
+          "halfGA": 1.0714285714285714
+        },
+        "leagueTotal": {
+          "n": 50,
+          "nv": 28,
+          "gf": 2.02,
+          "ga": 2.02,
+          "total": 4.04,
+          "ppg": 1.4,
+          "scored": 88.0,
+          "conceded": 88.0,
+          "clean": 12.0,
+          "win": 40.0,
+          "winNil": 12.0,
+          "lossNil": 12.0,
+          "bothScored": 64.28571428571429,
+          "bothConceded": 64.28571428571429,
+          "leadingHT": 32.142857142857146,
+          "trailingHT": 32.142857142857146,
+          "zeroHT": 7.142857142857143,
+          "halfGF": 0.7857142857142857,
+          "halfGA": 0.7857142857142857
+        }
+      },
+      "observed": {
+        "home": {
+          "n": 5,
+          "nv": 3,
+          "gf": 2.8,
+          "ga": 0.8,
+          "total": 3.6,
+          "ppg": 2.6,
+          "scored": 100,
+          "conceded": 60,
+          "clean": 40,
+          "win": 80,
+          "winNil": 40,
+          "lossNil": 0,
+          "bothScored": 100,
+          "bothConceded": 33.333333333333336,
+          "leadingHT": 66.66666666666667,
+          "trailingHT": 0,
+          "zeroHT": 0,
+          "halfGF": 1.3333333333333333,
+          "halfGA": 0.3333333333333333
+        },
+        "homeTotal": {
+          "n": 10,
+          "nv": 7,
+          "gf": 2.5,
+          "ga": 1,
+          "total": 3.5,
+          "ppg": 2.3,
+          "scored": 100,
+          "conceded": 70,
+          "clean": 30,
+          "win": 70,
+          "winNil": 30,
+          "lossNil": 0,
+          "bothScored": 71.42857142857143,
+          "bothConceded": 42.857142857142854,
+          "leadingHT": 42.857142857142854,
+          "trailingHT": 14.285714285714286,
+          "zeroHT": 14.285714285714286,
+          "halfGF": 0.8571428571428571,
+          "halfGA": 0.42857142857142855
+        },
+        "away": {
+          "n": 5,
+          "nv": 3,
+          "gf": 3.8,
+          "ga": 3,
+          "total": 6.8,
+          "ppg": 1.8,
+          "scored": 100,
+          "conceded": 100,
+          "clean": 0,
+          "win": 40,
+          "winNil": 0,
+          "lossNil": 0,
+          "bothScored": 100,
+          "bothConceded": 100,
+          "leadingHT": 33.333333333333336,
+          "trailingHT": 0,
+          "zeroHT": 0,
+          "halfGF": 1.3333333333333333,
+          "halfGA": 1
+        },
+        "awayTotal": {
+          "n": 10,
+          "nv": 7,
+          "gf": 3.5,
+          "ga": 2,
+          "total": 5.5,
+          "ppg": 2.4,
+          "scored": 100,
+          "conceded": 100,
+          "clean": 0,
+          "win": 70,
+          "winNil": 0,
+          "lossNil": 0,
+          "bothScored": 100,
+          "bothConceded": 42.857142857142854,
+          "leadingHT": 71.42857142857143,
+          "trailingHT": 0,
+          "zeroHT": 0,
+          "halfGF": 1.4285714285714286,
+          "halfGA": 0.42857142857142855
+        },
+        "leagueHome": {
+          "n": 25,
+          "nv": 14,
+          "gf": 2.28,
+          "ga": 1.76,
+          "total": 4.04,
+          "ppg": 1.64,
+          "scored": 92,
+          "conceded": 84,
+          "clean": 16,
+          "win": 48,
+          "winNil": 16,
+          "lossNil": 8,
+          "bothScored": 85.71428571428571,
+          "bothConceded": 42.857142857142854,
+          "leadingHT": 50,
+          "trailingHT": 14.285714285714286,
+          "zeroHT": 7.142857142857143,
+          "halfGF": 1.0714285714285714,
+          "halfGA": 0.5
+        },
+        "leagueAway": {
+          "n": 25,
+          "nv": 14,
+          "gf": 1.76,
+          "ga": 2.28,
+          "total": 4.04,
+          "ppg": 1.16,
+          "scored": 84,
+          "conceded": 92,
+          "clean": 8,
+          "win": 32,
+          "winNil": 8,
+          "lossNil": 16,
+          "bothScored": 42.857142857142854,
+          "bothConceded": 85.71428571428571,
+          "leadingHT": 14.285714285714286,
+          "trailingHT": 50,
+          "zeroHT": 7.142857142857143,
+          "halfGF": 0.5,
+          "halfGA": 1.0714285714285714
+        },
+        "leagueTotal": {
+          "n": 50,
+          "nv": 28,
+          "gf": 2.02,
+          "ga": 2.02,
+          "total": 4.04,
+          "ppg": 1.4,
+          "scored": 88,
+          "conceded": 88,
+          "clean": 12,
+          "win": 40,
+          "winNil": 12,
+          "lossNil": 12,
+          "bothScored": 64.28571428571429,
+          "bothConceded": 64.28571428571429,
+          "leadingHT": 32.142857142857146,
+          "trailingHT": 32.142857142857146,
+          "zeroHT": 7.142857142857143,
+          "halfGF": 0.7857142857142857,
+          "halfGA": 0.7857142857142857
+        },
+        "excludedNeutral": 1,
+        "keys": [
+          "[\"[\\\"Serie A\\\",2026,\\\"2026-10-01\\\",\\\"club:ita-inter\\\",\\\"club:of:ITA:as-roma\\\"]\",\"\",null,null,null]",
+          "[\"[\\\"Serie A\\\",2026,\\\"2026-10-01\\\",\\\"club:ita-napoli\\\",\\\"club:ita-milan\\\"]\",\"\",null,null,null]",
+          "[\"[\\\"Serie A\\\",2026,\\\"2026-10-01\\\",\\\"club:ita-juventus\\\",\\\"club:of:ITA:torino-fc\\\"]\",\"\",null,null,null]",
+          "[\"[\\\"Serie A\\\",2026,\\\"2026-10-02\\\",\\\"club:of:ITA:as-roma\\\",\\\"club:ita-inter\\\"]\",\"\",null,null,null]",
+          "[\"[\\\"Serie A\\\",2026,\\\"2026-10-02\\\",\\\"club:ita-milan\\\",\\\"club:ita-napoli\\\"]\",\"\",null,null,null]",
+          "[\"[\\\"Serie A\\\",2026,\\\"2026-10-02\\\",\\\"club:ita-juventus\\\",\\\"club:of:ITA:torino-fc\\\"]\",\"\",null,null,null]",
+          "[\"[\\\"Serie A\\\",2026,\\\"2026-10-03\\\",\\\"club:ita-inter\\\",\\\"club:of:ITA:as-roma\\\"]\",\"\",null,null,null]",
+          "[\"[\\\"Serie A\\\",2026,\\\"2026-10-03\\\",\\\"club:ita-napoli\\\",\\\"club:ita-milan\\\"]\",\"\",null,null,null]",
+          "[\"[\\\"Serie A\\\",2026,\\\"2026-10-03\\\",\\\"club:ita-juventus\\\",\\\"club:of:ITA:torino-fc\\\"]\",\"\",null,null,null]",
+          "[\"[\\\"Serie A\\\",2026,\\\"2026-10-04\\\",\\\"club:of:ITA:as-roma\\\",\\\"club:ita-inter\\\"]\",\"\",null,null,null]",
+          "[\"[\\\"Serie A\\\",2026,\\\"2026-10-04\\\",\\\"club:ita-milan\\\",\\\"club:ita-napoli\\\"]\",\"\",null,null,null]",
+          "[\"[\\\"Serie A\\\",2026,\\\"2026-10-04\\\",\\\"club:ita-juventus\\\",\\\"club:of:ITA:torino-fc\\\"]\",\"\",null,null,null]",
+          "[\"[\\\"Serie A\\\",2026,\\\"2026-10-05\\\",\\\"club:ita-inter\\\",\\\"club:of:ITA:as-roma\\\"]\",\"\",null,null,null]",
+          "[\"[\\\"Serie A\\\",2026,\\\"2026-10-05\\\",\\\"club:ita-napoli\\\",\\\"club:ita-milan\\\"]\",\"\",null,null,null]",
+          "[\"[\\\"Serie A\\\",2026,\\\"2026-10-05\\\",\\\"club:ita-juventus\\\",\\\"club:of:ITA:torino-fc\\\"]\",\"\",null,null,null]",
+          "[\"[\\\"Serie A\\\",2026,\\\"2026-10-06\\\",\\\"club:of:ITA:as-roma\\\",\\\"club:ita-inter\\\"]\",\"\",null,null,null]",
+          "[\"[\\\"Serie A\\\",2026,\\\"2026-10-06\\\",\\\"club:ita-milan\\\",\\\"club:ita-napoli\\\"]\",\"\",null,null,null]",
+          "[\"[\\\"Serie A\\\",2026,\\\"2026-10-07\\\",\\\"club:ita-inter\\\",\\\"club:of:ITA:as-roma\\\"]\",\"\",null,null,null]",
+          "[\"[\\\"Serie A\\\",2026,\\\"2026-10-07\\\",\\\"club:ita-napoli\\\",\\\"club:ita-milan\\\"]\",\"\",null,null,null]",
+          "[\"[\\\"Serie A\\\",2026,\\\"2026-10-08\\\",\\\"club:of:ITA:as-roma\\\",\\\"club:ita-inter\\\"]\",\"\",null,null,null]",
+          "[\"[\\\"Serie A\\\",2026,\\\"2026-10-08\\\",\\\"club:ita-milan\\\",\\\"club:ita-napoli\\\"]\",\"\",null,null,null]",
+          "[\"[\\\"Serie A\\\",2026,\\\"2026-10-09\\\",\\\"club:ita-inter\\\",\\\"club:of:ITA:as-roma\\\"]\",\"\",null,null,null]",
+          "[\"[\\\"Serie A\\\",2026,\\\"2026-10-09\\\",\\\"club:ita-napoli\\\",\\\"club:ita-milan\\\"]\",\"\",null,null,null]",
+          "[\"[\\\"Serie A\\\",2026,\\\"2026-10-10\\\",\\\"club:of:ITA:as-roma\\\",\\\"club:ita-inter\\\"]\",\"\",null,null,null]",
+          "[\"[\\\"Serie A\\\",2026,\\\"2026-10-10\\\",\\\"club:ita-milan\\\",\\\"club:ita-napoli\\\"]\",\"\",null,null,null]"
+        ]
+      }
+    },
+    "old": {
+      "expected": {
+        "home": {
+          "n": 5,
+          "nv": 3,
+          "gf": 2.8,
+          "ga": 0.8,
+          "total": 3.6,
+          "ppg": 2.6,
+          "scored": 100.0,
+          "conceded": 60.0,
+          "clean": 40.0,
+          "win": 80.0,
+          "winNil": 40.0,
+          "lossNil": 0.0,
+          "bothScored": 100.0,
+          "bothConceded": 33.333333333333336,
+          "leadingHT": 66.66666666666667,
+          "trailingHT": 0.0,
+          "zeroHT": 0.0,
+          "halfGF": 1.3333333333333333,
+          "halfGA": 0.3333333333333333
+        },
+        "homeTotal": {
+          "n": 10,
+          "nv": 7,
+          "gf": 2.5,
+          "ga": 1.0,
+          "total": 3.5,
+          "ppg": 2.3,
+          "scored": 100.0,
+          "conceded": 70.0,
+          "clean": 30.0,
+          "win": 70.0,
+          "winNil": 30.0,
+          "lossNil": 0.0,
+          "bothScored": 71.42857142857143,
+          "bothConceded": 42.857142857142854,
+          "leadingHT": 42.857142857142854,
+          "trailingHT": 14.285714285714286,
+          "zeroHT": 14.285714285714286,
+          "halfGF": 0.8571428571428571,
+          "halfGA": 0.42857142857142855
+        },
+        "away": {
+          "n": 5,
+          "nv": 3,
+          "gf": 3.8,
+          "ga": 3.0,
+          "total": 6.8,
+          "ppg": 1.8,
+          "scored": 100.0,
+          "conceded": 100.0,
+          "clean": 0.0,
+          "win": 40.0,
+          "winNil": 0.0,
+          "lossNil": 0.0,
+          "bothScored": 100.0,
+          "bothConceded": 100.0,
+          "leadingHT": 33.333333333333336,
+          "trailingHT": 0.0,
+          "zeroHT": 0.0,
+          "halfGF": 1.3333333333333333,
+          "halfGA": 1.0
+        },
+        "awayTotal": {
+          "n": 10,
+          "nv": 7,
+          "gf": 3.5,
+          "ga": 2.0,
+          "total": 5.5,
+          "ppg": 2.4,
+          "scored": 100.0,
+          "conceded": 100.0,
+          "clean": 0.0,
+          "win": 70.0,
+          "winNil": 0.0,
+          "lossNil": 0.0,
+          "bothScored": 100.0,
+          "bothConceded": 42.857142857142854,
+          "leadingHT": 71.42857142857143,
+          "trailingHT": 0.0,
+          "zeroHT": 0.0,
+          "halfGF": 1.4285714285714286,
+          "halfGA": 0.42857142857142855
+        },
+        "leagueHome": {
+          "n": 25,
+          "nv": 14,
+          "gf": 2.28,
+          "ga": 1.76,
+          "total": 4.04,
+          "ppg": 1.64,
+          "scored": 92.0,
+          "conceded": 84.0,
+          "clean": 16.0,
+          "win": 48.0,
+          "winNil": 16.0,
+          "lossNil": 8.0,
+          "bothScored": 85.71428571428571,
+          "bothConceded": 42.857142857142854,
+          "leadingHT": 50.0,
+          "trailingHT": 14.285714285714286,
+          "zeroHT": 7.142857142857143,
+          "halfGF": 1.0714285714285714,
+          "halfGA": 0.5
+        },
+        "leagueAway": {
+          "n": 25,
+          "nv": 14,
+          "gf": 1.76,
+          "ga": 2.28,
+          "total": 4.04,
+          "ppg": 1.16,
+          "scored": 84.0,
+          "conceded": 92.0,
+          "clean": 8.0,
+          "win": 32.0,
+          "winNil": 8.0,
+          "lossNil": 16.0,
+          "bothScored": 42.857142857142854,
+          "bothConceded": 85.71428571428571,
+          "leadingHT": 14.285714285714286,
+          "trailingHT": 50.0,
+          "zeroHT": 7.142857142857143,
+          "halfGF": 0.5,
+          "halfGA": 1.0714285714285714
+        },
+        "leagueTotal": {
+          "n": 50,
+          "nv": 28,
+          "gf": 2.02,
+          "ga": 2.02,
+          "total": 4.04,
+          "ppg": 1.4,
+          "scored": 88.0,
+          "conceded": 88.0,
+          "clean": 12.0,
+          "win": 40.0,
+          "winNil": 12.0,
+          "lossNil": 12.0,
+          "bothScored": 64.28571428571429,
+          "bothConceded": 64.28571428571429,
+          "leadingHT": 32.142857142857146,
+          "trailingHT": 32.142857142857146,
+          "zeroHT": 7.142857142857143,
+          "halfGF": 0.7857142857142857,
+          "halfGA": 0.7857142857142857
+        }
+      },
+      "observed": {
+        "home": {
+          "n": 5,
+          "nv": 3,
+          "gf": 2.8,
+          "ga": 0.8,
+          "total": 3.6,
+          "ppg": 2.6,
+          "scored": 100,
+          "conceded": 60,
+          "clean": 40,
+          "win": 80,
+          "winNil": 40,
+          "lossNil": 0,
+          "bothScored": 100,
+          "bothConceded": 33.333333333333336,
+          "leadingHT": 66.66666666666667,
+          "trailingHT": 0,
+          "zeroHT": 0,
+          "halfGF": 1.3333333333333333,
+          "halfGA": 0.3333333333333333
+        },
+        "homeTotal": {
+          "n": 10,
+          "nv": 7,
+          "gf": 2.5,
+          "ga": 1,
+          "total": 3.5,
+          "ppg": 2.3,
+          "scored": 100,
+          "conceded": 70,
+          "clean": 30,
+          "win": 70,
+          "winNil": 30,
+          "lossNil": 0,
+          "bothScored": 71.42857142857143,
+          "bothConceded": 42.857142857142854,
+          "leadingHT": 42.857142857142854,
+          "trailingHT": 14.285714285714286,
+          "zeroHT": 14.285714285714286,
+          "halfGF": 0.8571428571428571,
+          "halfGA": 0.42857142857142855
+        },
+        "away": {
+          "n": 5,
+          "nv": 3,
+          "gf": 3.8,
+          "ga": 3,
+          "total": 6.8,
+          "ppg": 1.8,
+          "scored": 100,
+          "conceded": 100,
+          "clean": 0,
+          "win": 40,
+          "winNil": 0,
+          "lossNil": 0,
+          "bothScored": 100,
+          "bothConceded": 100,
+          "leadingHT": 33.333333333333336,
+          "trailingHT": 0,
+          "zeroHT": 0,
+          "halfGF": 1.3333333333333333,
+          "halfGA": 1
+        },
+        "awayTotal": {
+          "n": 10,
+          "nv": 7,
+          "gf": 3.5,
+          "ga": 2,
+          "total": 5.5,
+          "ppg": 2.4,
+          "scored": 100,
+          "conceded": 100,
+          "clean": 0,
+          "win": 70,
+          "winNil": 0,
+          "lossNil": 0,
+          "bothScored": 100,
+          "bothConceded": 42.857142857142854,
+          "leadingHT": 71.42857142857143,
+          "trailingHT": 0,
+          "zeroHT": 0,
+          "halfGF": 1.4285714285714286,
+          "halfGA": 0.42857142857142855
+        },
+        "leagueHome": {
+          "n": 25,
+          "nv": 14,
+          "gf": 2.28,
+          "ga": 1.76,
+          "total": 4.04,
+          "ppg": 1.64,
+          "scored": 92,
+          "conceded": 84,
+          "clean": 16,
+          "win": 48,
+          "winNil": 16,
+          "lossNil": 8,
+          "bothScored": 85.71428571428571,
+          "bothConceded": 42.857142857142854,
+          "leadingHT": 50,
+          "trailingHT": 14.285714285714286,
+          "zeroHT": 7.142857142857143,
+          "halfGF": 1.0714285714285714,
+          "halfGA": 0.5
+        },
+        "leagueAway": {
+          "n": 25,
+          "nv": 14,
+          "gf": 1.76,
+          "ga": 2.28,
+          "total": 4.04,
+          "ppg": 1.16,
+          "scored": 84,
+          "conceded": 92,
+          "clean": 8,
+          "win": 32,
+          "winNil": 8,
+          "lossNil": 16,
+          "bothScored": 42.857142857142854,
+          "bothConceded": 85.71428571428571,
+          "leadingHT": 14.285714285714286,
+          "trailingHT": 50,
+          "zeroHT": 7.142857142857143,
+          "halfGF": 0.5,
+          "halfGA": 1.0714285714285714
+        },
+        "leagueTotal": {
+          "n": 50,
+          "nv": 28,
+          "gf": 2.02,
+          "ga": 2.02,
+          "total": 4.04,
+          "ppg": 1.4,
+          "scored": 88,
+          "conceded": 88,
+          "clean": 12,
+          "win": 40,
+          "winNil": 12,
+          "lossNil": 12,
+          "bothScored": 64.28571428571429,
+          "bothConceded": 64.28571428571429,
+          "leadingHT": 32.142857142857146,
+          "trailingHT": 32.142857142857146,
+          "zeroHT": 7.142857142857143,
+          "halfGF": 0.7857142857142857,
+          "halfGA": 0.7857142857142857
+        },
+        "excludedNeutral": 0,
+        "keys": [
+          "[\"[\\\"Serie A\\\",2025,\\\"2025-10-01\\\",\\\"club:ita-inter\\\",\\\"club:of:ITA:as-roma\\\"]\",\"\",null,null,null]",
+          "[\"[\\\"Serie A\\\",2025,\\\"2025-10-01\\\",\\\"club:ita-napoli\\\",\\\"club:ita-milan\\\"]\",\"\",null,null,null]",
+          "[\"[\\\"Serie A\\\",2025,\\\"2025-10-01\\\",\\\"club:ita-juventus\\\",\\\"club:of:ITA:torino-fc\\\"]\",\"\",null,null,null]",
+          "[\"[\\\"Serie A\\\",2025,\\\"2025-10-02\\\",\\\"club:of:ITA:as-roma\\\",\\\"club:ita-inter\\\"]\",\"\",null,null,null]",
+          "[\"[\\\"Serie A\\\",2025,\\\"2025-10-02\\\",\\\"club:ita-milan\\\",\\\"club:ita-napoli\\\"]\",\"\",null,null,null]",
+          "[\"[\\\"Serie A\\\",2025,\\\"2025-10-02\\\",\\\"club:ita-juventus\\\",\\\"club:of:ITA:torino-fc\\\"]\",\"\",null,null,null]",
+          "[\"[\\\"Serie A\\\",2025,\\\"2025-10-03\\\",\\\"club:ita-inter\\\",\\\"club:of:ITA:as-roma\\\"]\",\"\",null,null,null]",
+          "[\"[\\\"Serie A\\\",2025,\\\"2025-10-03\\\",\\\"club:ita-napoli\\\",\\\"club:ita-milan\\\"]\",\"\",null,null,null]",
+          "[\"[\\\"Serie A\\\",2025,\\\"2025-10-03\\\",\\\"club:ita-juventus\\\",\\\"club:of:ITA:torino-fc\\\"]\",\"\",null,null,null]",
+          "[\"[\\\"Serie A\\\",2025,\\\"2025-10-04\\\",\\\"club:of:ITA:as-roma\\\",\\\"club:ita-inter\\\"]\",\"\",null,null,null]",
+          "[\"[\\\"Serie A\\\",2025,\\\"2025-10-04\\\",\\\"club:ita-milan\\\",\\\"club:ita-napoli\\\"]\",\"\",null,null,null]",
+          "[\"[\\\"Serie A\\\",2025,\\\"2025-10-04\\\",\\\"club:ita-juventus\\\",\\\"club:of:ITA:torino-fc\\\"]\",\"\",null,null,null]",
+          "[\"[\\\"Serie A\\\",2025,\\\"2025-10-05\\\",\\\"club:ita-inter\\\",\\\"club:of:ITA:as-roma\\\"]\",\"\",null,null,null]",
+          "[\"[\\\"Serie A\\\",2025,\\\"2025-10-05\\\",\\\"club:ita-napoli\\\",\\\"club:ita-milan\\\"]\",\"\",null,null,null]",
+          "[\"[\\\"Serie A\\\",2025,\\\"2025-10-05\\\",\\\"club:ita-juventus\\\",\\\"club:of:ITA:torino-fc\\\"]\",\"\",null,null,null]",
+          "[\"[\\\"Serie A\\\",2025,\\\"2025-10-06\\\",\\\"club:of:ITA:as-roma\\\",\\\"club:ita-inter\\\"]\",\"\",null,null,null]",
+          "[\"[\\\"Serie A\\\",2025,\\\"2025-10-06\\\",\\\"club:ita-milan\\\",\\\"club:ita-napoli\\\"]\",\"\",null,null,null]",
+          "[\"[\\\"Serie A\\\",2025,\\\"2025-10-07\\\",\\\"club:ita-inter\\\",\\\"club:of:ITA:as-roma\\\"]\",\"\",null,null,null]",
+          "[\"[\\\"Serie A\\\",2025,\\\"2025-10-07\\\",\\\"club:ita-napoli\\\",\\\"club:ita-milan\\\"]\",\"\",null,null,null]",
+          "[\"[\\\"Serie A\\\",2025,\\\"2025-10-08\\\",\\\"club:of:ITA:as-roma\\\",\\\"club:ita-inter\\\"]\",\"\",null,null,null]",
+          "[\"[\\\"Serie A\\\",2025,\\\"2025-10-08\\\",\\\"club:ita-milan\\\",\\\"club:ita-napoli\\\"]\",\"\",null,null,null]",
+          "[\"[\\\"Serie A\\\",2025,\\\"2025-10-09\\\",\\\"club:ita-inter\\\",\\\"club:of:ITA:as-roma\\\"]\",\"\",null,null,null]",
+          "[\"[\\\"Serie A\\\",2025,\\\"2025-10-09\\\",\\\"club:ita-napoli\\\",\\\"club:ita-milan\\\"]\",\"\",null,null,null]",
+          "[\"[\\\"Serie A\\\",2025,\\\"2025-10-10\\\",\\\"club:of:ITA:as-roma\\\",\\\"club:ita-inter\\\"]\",\"\",null,null,null]",
+          "[\"[\\\"Serie A\\\",2025,\\\"2025-10-10\\\",\\\"club:ita-milan\\\",\\\"club:ita-napoli\\\"]\",\"\",null,null,null]"
+        ]
+      }
+    }
+  },
+  "sourceSHA256": {
+    "Trading_Analytics_v0.2V-rc2_TA-V02V-UX-002.html": "b80f89c454b06674b9d6cc6fe462a6ebca858b47e5c26bb2fbb38f94cf1ed586",
+    "ta-v02v-ux-ui.js": "deb09396a7815d8bec295344b10ad0cd7a73e7d8d7a616f9ed79fbcc9a1d0fd6",
+    "ta-v02v-ux.css": "6e3a37c81984237ef3ad31044230c4e8d2360d57bf09b64f377575f12be89968",
+    "ta-v02v-refresh.js": "9fd970439475f5e1a12e6df75cfea496974188c37d648bcfa681e4ecc5e35bc3"
+  }
+}

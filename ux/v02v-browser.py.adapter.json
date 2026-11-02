@@ -1,0 +1,13 @@
+{
+  "originalTest": "v02v/browser.py",
+  "originalSHA256": "aca5ce48ea4e2438c62781969d025900c1f8d711a3c15c5aee324103e5ab3c22",
+  "adaptedSHA256": "3bcc2cfa8ccd9dce0b0d22d428f214c3cfe4857a2fa7597564b59dc14872b2cf",
+  "adaptations": [
+    "rc2 entry and source-hash filenames",
+    "Confronti click before H2H/scope control or screenshot",
+    "group header rows excluded from fixture-row selector",
+    "explicit seven-day Scanner for legacy multi-day sample; TODAY tested separately"
+  ],
+  "assertionsRemoved": 0,
+  "outcome": "PASS"
+}

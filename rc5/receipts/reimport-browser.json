@@ -1,0 +1,160 @@
+{
+  "outcome": "PASS",
+  "checks": [
+    "synthetic: real upload, safe preview without writes, confirmation and full JSON export",
+    "synthetic: all exported sections identical after reload",
+    "synthetic: three actual reimports of the same source, each committed/reloaded, preserve every record and auxiliary section exactly",
+    "synthetic: reimport of the new export is also an exact no-op",
+    "synthetic: Undo of a reimport restores the exact preceding complete archive",
+    "synthetic: Undo of the first import restores the genuinely empty isolated profile",
+    "synthetic: a genuinely new clock still blocks confirmation without changing the archive",
+    "rc4Recovered: real upload, safe preview without writes, confirmation and full JSON export",
+    "rc4Recovered: all exported sections identical after reload",
+    "rc4Recovered: three actual reimports of the same source, each committed/reloaded, preserve every record and auxiliary section exactly",
+    "rc4Recovered: reimport of the new export is also an exact no-op",
+    "rc4Recovered: Undo of a reimport restores the exact preceding complete archive",
+    "rc4Recovered: Undo of the first import restores the genuinely empty isolated profile",
+    "original: real upload, safe preview without writes, confirmation and full JSON export",
+    "original: all exported sections identical after reload",
+    "original: three actual reimports of the same source, each committed/reloaded, preserve every record and auxiliary section exactly",
+    "original: reimport of the new export is also an exact no-op",
+    "original: Undo of a reimport restores the exact preceding complete archive",
+    "original: Undo of the first import restores the genuinely empty isolated profile"
+  ],
+  "datasets": [
+    {
+      "name": "synthetic",
+      "inputRows": 2,
+      "sourceSHA256": "bfa36a2b1daa1059f7a1b2dc1163462dda837b8bd54dff4b31fa591cc488c0eb",
+      "outputRows": 1,
+      "fullExportDigest": "c50e508c1e3319bbe081f7f83e3a866cc578c226b37a1c81cc0672e52e8a8ffc",
+      "sourceReimports": 3,
+      "initialPreview": {
+        "safe": true,
+        "input": 2,
+        "output": 1,
+        "problems": 0,
+        "archiveReview": 0
+      },
+      "rounds": [
+        {
+          "safe": true,
+          "input": 2,
+          "output": 1,
+          "problems": 0,
+          "archiveReview": 0
+        },
+        {
+          "safe": true,
+          "input": 2,
+          "output": 1,
+          "problems": 0,
+          "archiveReview": 0
+        },
+        {
+          "safe": true,
+          "input": 2,
+          "output": 1,
+          "problems": 0,
+          "archiveReview": 0
+        }
+      ],
+      "sourceUnchanged": true
+    },
+    {
+      "name": "rc4Recovered",
+      "inputRows": 28402,
+      "sourceSHA256": "0fc4859c8176a75b0c6bbc7f4bf11c8c7f6f19cad0cfba6b02b95d10201aad2d",
+      "outputRows": 28300,
+      "fullExportDigest": "f83657157136e8a101f59b95d075547a267b69f69ad6e7abc63758bd75981a82",
+      "sourceReimports": 3,
+      "initialPreview": {
+        "safe": true,
+        "input": 28402,
+        "output": 28300,
+        "problems": 0,
+        "archiveReview": 0
+      },
+      "rounds": [
+        {
+          "safe": true,
+          "input": 28402,
+          "output": 28300,
+          "problems": 0,
+          "archiveReview": 0
+        },
+        {
+          "safe": true,
+          "input": 28402,
+          "output": 28300,
+          "problems": 0,
+          "archiveReview": 0
+        },
+        {
+          "safe": true,
+          "input": 28402,
+          "output": 28300,
+          "problems": 0,
+          "archiveReview": 0
+        }
+      ],
+      "sourceUnchanged": true
+    },
+    {
+      "name": "original",
+      "inputRows": 28544,
+      "sourceSHA256": "809d7ecce6bcf8bbc39812107e29052689520a075304bf7c743f17bc1dd31f2a",
+      "outputRows": 28302,
+      "fullExportDigest": "c9e34b98bb31b6b16ba3f9cd5bd5cfd3bfa18f4519ad3b4a572b4b912cfee43f",
+      "sourceReimports": 3,
+      "initialPreview": {
+        "safe": true,
+        "input": 28544,
+        "output": 28302,
+        "problems": 4,
+        "archiveReview": 0
+      },
+      "rounds": [
+        {
+          "safe": true,
+          "input": 28544,
+          "output": 28302,
+          "problems": 0,
+          "archiveReview": 4
+        },
+        {
+          "safe": true,
+          "input": 28544,
+          "output": 28302,
+          "problems": 0,
+          "archiveReview": 4
+        },
+        {
+          "safe": true,
+          "input": 28544,
+          "output": 28302,
+          "problems": 0,
+          "archiveReview": 4
+        }
+      ],
+      "sourceUnchanged": true
+    }
+  ],
+  "pageerrors": [],
+  "consoleErrors": [],
+  "personalRowsPublished": false,
+  "testedSourceSHA256": {
+    "Trading_Analytics_v0.2U-rc5_TA-INT-004.html": "0f094350700750026e5e303cafbf9384ff494738c56cd9a56c92eff5bf2d4a4a",
+    "ta-club-aliases-int004.js": "105b36aecfa02a502daf63ca6d14ca3cdf3da88f894092a5729039e6bd572f93",
+    "ta-clubs-v4.js": "142d243fe45b2cb346f36469814862bcfc740fce87cfeb31bd09f4155fe184e6",
+    "ta-fixture-identity.js": "c19ea52b61417aed066031d7262386d6bbed0b12aa01b9828a961fa000d277ec",
+    "ta-json-recovery-rc5.js": "66703b1fd0eec1df5c64f9ca80cedb29cd2d3a8378e4a121a9546c26aee74ccc",
+    "ta-csv-import-v02U-rc5.js": "1ca10996342701032416f6edc55e41bb2bffd490fb6b2500aa2fa621ee6bd51c",
+    "ta-history-coverage-rc5.js": "d63661147d2860b80bc98257a15e605b72d2516d5555fecfd1ab4c76fb62f023",
+    "ta-history-manifest-rc5.js": "5ce65d2c5f76fb5340fa39f35ea7b5d619248625d49e873edbfa6966230eaf1c",
+    "ta-int004-ui.js": "4af380a6e856b81b4ebc2309eb92c21cf538a9fdda0a2c1897424a8365ea1223",
+    "ta-int004-area.js": "3051dce94bb8b304eec68f5b9e9c3477bfb0f178e66bc80a6424f80f99538d2f",
+    "ta-int004-app.js": "34fd5b9ef4392e85e3c7ea6ac3d765ba438ab961ce871cc527defcd1e9440697"
+  },
+  "networkMode": "isolated: optional font CSS empty; automatic live refresh postponed via existing cache timestamps in test profiles only"
+}

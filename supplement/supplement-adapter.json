@@ -1,0 +1,7 @@
+{
+  "outcome": "PASS",
+  "originalTestSHA256": "d3b97be92c1c8789645943addcb2f8c83b620510f4376f48cdce657f033bf10c",
+  "executedSHA256": "4a7f51cbb3f78e6ad35977d170ea822f08ec7f6b4d2c8dcae7c7d5c7db1b89da",
+  "adaptation": "Only stronger synthetic fixture: different score distributions for A and B; all original assertions and independent Python numeric oracle retained",
+  "assertionsRemoved": 0
+}

@@ -1,0 +1,14 @@
+{
+  "outcome": "PASS",
+  "commit": "204dc6c231f82e7bc0782eb8b1c67a794aeb97b1",
+  "archiveSHA256": "dd9107bd06ce7c99b7a789085cb5c5fd25453e38b903724e625e4a6911fccecf",
+  "pageerrors": [],
+  "consoleErrors": [],
+  "personalDataUsed": false,
+  "networkMode": "isolated: optional font CSS empty; automatic live refresh postponed via existing cache timestamps in test profiles only",
+  "allCommitFilesExact": 724,
+  "extractedHTTPAppReady": true,
+  "workerFromExtractedFiles": true,
+  "originalINDandNEWAssertionsPASS": true,
+  "NEW04OnActualZIP": true
+}

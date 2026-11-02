@@ -1,0 +1,31 @@
+PASS Dashboard empty has no sample data, no archive write, four navigation destinations
+PASS Calendar exposes both phase and matchday on the same canonical cup fixture
+PASS CMP01 Country → competition → actual archived club through independent selectors
+PASS CMP02 Italy and Spain selected on separate sides
+PASS CMP03 Inter 2024/25 and Barcelona 2025/26 remain independent
+PASS Independent Python goal/win/HT oracle equals visible comparator data
+PASS CMP04 Promoted Leeds keeps one canonical club across Championship and Premier League
+PASS CMP05 Current season excludes future scored fixture and today, does not turn AET into 90-minute result
+PASS CMP06 All history and custom inclusive dates compose without future leakage
+PASS CMP07 Available official cup is included only in all-competition scope
+PASS CMP08 Home/away exclude explicitly neutral match, total includes it
+PASS CMP10 Partial season and missing HT show distinct actual denominators
+PASS CMP11 Swap preserves each complete filter set, reset clears dates
+PASS CMP12 Hypothetical comparison has no prediction or trading recommendation
+PASS Composed calendar filters open exact canonical fixture and date, with persistent watchlist
+PASS CMP09 Match Analysis and Comparator identical fields and canonical sample keys on same filters
+PASS Resume/H2H all history and actual venue samples exclude future, HT absent distinct
+PASS Future match: new H2H, shared profiles and descriptive signal samples exclude future scored archive rows
+PASS Universal exact-alias and nation search expose actual archive destinations
+PASS All four large Dashboard actions navigate to functional existing/new screens
+PASS Navigating and configuring all new features leaves archive fingerprint completely unchanged
+PASS Reload returns to Dashboard, retains calendar filter/watchlist and imported archive
+PASS Actual calendar CSV export matches all filtered canonical fixtures
+PASS Country folders, accessible reorder/pin and international group persist through refresh/reload
+PASS Sidebar competition synchronizes Calendar/Scanner/Backtest; zero-data competition remains empty without changing archive
+PASS Preserved standings, teams, chronological validation and actual global trade-journal navigation
+PASS Calendar pagination and all composed country/competition/season/phase/date/alias/status filters
+PASS Mobile Dashboard has no horizontal overflow
+PASS Fresh uncached Dashboard: no automatic external requests, no matches-store writes, coverage audit deferred
+PASS Coverage matrix computes the original 138 combinations on explicit panel opening
+PASS A concurrent writer still blocks stale import: no relaxed transaction or fingerprint check

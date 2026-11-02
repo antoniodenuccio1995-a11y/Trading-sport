@@ -1,0 +1,58 @@
+{
+  "pageerrors": [],
+  "consoleErrors": [],
+  "resize": [
+    {
+      "viewport": 1920,
+      "main": 1628,
+      "max": "none",
+      "scroll": 1920
+    },
+    {
+      "viewport": 360,
+      "main": 360,
+      "max": "none",
+      "scroll": 360
+    },
+    {
+      "viewport": 768,
+      "main": 768,
+      "max": "none",
+      "scroll": 768
+    },
+    {
+      "viewport": 1024,
+      "main": 744,
+      "max": "none",
+      "scroll": 1024
+    },
+    {
+      "viewport": 1440,
+      "main": 1160,
+      "max": "none",
+      "scroll": 1440
+    },
+    {
+      "viewport": 1920,
+      "main": 1628,
+      "max": "none",
+      "scroll": 1920
+    }
+  ],
+  "syntheticDataOnly": true,
+  "networkMode": "isolated: optional font CSS empty; automatic live refresh postponed via existing cache timestamps in test profiles only",
+  "browser": "154.0.8037.57",
+  "servedEngineSHA256": "b5aeb46669c9903f433b0fed49f35ca11d96c92bb38f615ca5d3e43abe37f7d0",
+  "leapBrowser": {
+    "outcome": "PASS",
+    "timezone": "Pacific/Honolulu",
+    "RomeDay": "2028-03-01",
+    "comparatorN": 2,
+    "h2hN": 2,
+    "GF": 3,
+    "archiveUnchanged": true
+  },
+  "terminologyPresent": false,
+  "panelBeforeExistingAnalysis": true,
+  "outcome": "PASS technical ZIP boot and leap test; UX findings separately"
+}

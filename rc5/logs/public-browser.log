@@ -1,0 +1,5 @@
+PASS T2/T5: reconciled I2_2025 imports and reimports as 380 distinct regular encounters
+PASS T5: observed Over 2.5 frequency matches an independent primary-source calculation without duplicates
+PASS T4: genuine Championship playoff games remain archived while regular standings use 552 games
+PASS T4: actual 2022/23 Spezia-Verona playout remains archived while regular standings use 380 games
+PASS T5/F: match analysis and standings exclude later observations even with a poisoned previous-season label

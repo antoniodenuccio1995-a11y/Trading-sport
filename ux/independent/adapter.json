@@ -1,0 +1,6 @@
+{
+  "originalSHA256": "2e4e8837d6b544600677509af9b9c242451c4405ceb2efc374c0f2f6cc03dfcd",
+  "adaptedSHA256": "3f3e64ee5f9ab9d4cc48d7235546bf0b8c937a79d224700d622831b660e3dbe1",
+  "changes": "Only paths/browser/entry and Confronti navigation for screenshot; no assertion or expected value changed",
+  "outcome": "PASS"
+}

@@ -1,0 +1,13 @@
+{
+  "originalTest": "int004/reimport-browser.py",
+  "originalSHA256": "7c15868af556621900410426d413947bbe8fe2339f243dcc2f466ec94e0528fd",
+  "adaptedSHA256": "7d0ee9c4bd3fa201b8350606f2b768770409bff31ec5c000af0acc06a11137f6",
+  "adaptations": [
+    "rc2 entry and source-hash filenames",
+    "Confronti click before H2H/scope control or screenshot",
+    "group header rows excluded from fixture-row selector",
+    "explicit seven-day Scanner for legacy multi-day sample; TODAY tested separately"
+  ],
+  "assertionsRemoved": 0,
+  "outcome": "PASS"
+}

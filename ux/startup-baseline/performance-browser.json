@@ -1,0 +1,323 @@
+{
+  "outcome": "PASS",
+  "checks": [
+    "Actual private backup import confirms 28,300 conservative records",
+    "Cold Dashboard with 28k restores without archive/auxiliary writes, under 30s blocking budget",
+    "28k calendar is paginated and alias-filtered under 10s budget",
+    "Historic comparator on private archive leaves every stored section unchanged",
+    "Every real H2H pair checked at 5/10/all against an independent FT-first oracle; no archive writes"
+  ],
+  "pageerrors": [],
+  "consoleErrors": [],
+  "sourceSHA256": "0fc4859c8176a75b0c6bbc7f4bf11c8c7f6f19cad0cfba6b02b95d10201aad2d",
+  "privateRowsPublished": false,
+  "browser": "Chromium Linux HTTP",
+  "timingsSeconds": {
+    "import": 24.099,
+    "coldReload28k": 9.85,
+    "calendarAndAliasFilter28k": 0.883,
+    "comparator28k": 0.057
+  },
+  "networkMode": "isolated: optional font CSS empty; automatic live refresh postponed via existing cache timestamps in test profiles only",
+  "workerIndexEqualsSynchronous": true,
+  "warmReloads": [
+    {
+      "seconds": 8.923,
+      "phases": null,
+      "frames": [
+        {
+          "t": 77,
+          "visible": [
+            "partite",
+            "analisi",
+            "classifiche",
+            "squadre",
+            "dati",
+            "strategie",
+            "risultati",
+            "validazione"
+          ]
+        },
+        {
+          "t": 93.7,
+          "visible": [
+            "partite",
+            "analisi",
+            "classifiche",
+            "squadre",
+            "dati",
+            "strategie",
+            "risultati",
+            "validazione"
+          ]
+        },
+        {
+          "t": 110.3,
+          "visible": [
+            "partite"
+          ]
+        },
+        {
+          "t": 127,
+          "visible": [
+            "partite"
+          ]
+        },
+        {
+          "t": 210.3,
+          "visible": [
+            "partite"
+          ]
+        },
+        {
+          "t": 227,
+          "visible": [
+            "partite"
+          ]
+        },
+        {
+          "t": 243.7,
+          "visible": [
+            "partite"
+          ]
+        },
+        {
+          "t": 260.3,
+          "visible": [
+            "partite"
+          ]
+        },
+        {
+          "t": 276.9,
+          "visible": [
+            "partite"
+          ]
+        },
+        {
+          "t": 293.7,
+          "visible": [
+            "partite"
+          ]
+        },
+        {
+          "t": 310.3,
+          "visible": [
+            "partite"
+          ]
+        },
+        {
+          "t": 327,
+          "visible": [
+            "partite"
+          ]
+        },
+        {
+          "t": 343.6,
+          "visible": [
+            "partite"
+          ]
+        },
+        {
+          "t": 360.3,
+          "visible": [
+            "partite"
+          ]
+        },
+        {
+          "t": 376.9,
+          "visible": [
+            "partite"
+          ]
+        },
+        {
+          "t": 477,
+          "visible": [
+            "partite"
+          ]
+        },
+        {
+          "t": 4826.8,
+          "visible": [
+            "partite"
+          ]
+        },
+        {
+          "t": 4843.5,
+          "visible": [
+            "partite"
+          ]
+        },
+        {
+          "t": 4876.8,
+          "visible": [
+            "dashboard"
+          ]
+        }
+      ],
+      "archiveUnchanged": true,
+      "startupWrites": 0
+    },
+    {
+      "seconds": 8.802,
+      "phases": null,
+      "frames": [
+        {
+          "t": 73.2,
+          "visible": [
+            "partite",
+            "analisi",
+            "classifiche",
+            "squadre",
+            "dati",
+            "strategie",
+            "risultati",
+            "validazione"
+          ]
+        },
+        {
+          "t": 89.9,
+          "visible": [
+            "partite",
+            "analisi",
+            "classifiche",
+            "squadre",
+            "dati",
+            "strategie",
+            "risultati",
+            "validazione"
+          ]
+        },
+        {
+          "t": 106.6,
+          "visible": [
+            "partite",
+            "analisi",
+            "classifiche",
+            "squadre",
+            "dati",
+            "strategie",
+            "risultati",
+            "validazione"
+          ]
+        },
+        {
+          "t": 139.9,
+          "visible": [
+            "partite"
+          ]
+        },
+        {
+          "t": 156.5,
+          "visible": [
+            "partite"
+          ]
+        },
+        {
+          "t": 189.9,
+          "visible": [
+            "partite"
+          ]
+        },
+        {
+          "t": 206.5,
+          "visible": [
+            "partite"
+          ]
+        },
+        {
+          "t": 223.1,
+          "visible": [
+            "partite"
+          ]
+        },
+        {
+          "t": 239.9,
+          "visible": [
+            "partite"
+          ]
+        },
+        {
+          "t": 256.5,
+          "visible": [
+            "partite"
+          ]
+        },
+        {
+          "t": 273.2,
+          "visible": [
+            "partite"
+          ]
+        },
+        {
+          "t": 289.8,
+          "visible": [
+            "partite"
+          ]
+        },
+        {
+          "t": 306.5,
+          "visible": [
+            "partite"
+          ]
+        },
+        {
+          "t": 323.2,
+          "visible": [
+            "partite"
+          ]
+        },
+        {
+          "t": 339.9,
+          "visible": [
+            "partite"
+          ]
+        },
+        {
+          "t": 356.5,
+          "visible": [
+            "partite"
+          ]
+        },
+        {
+          "t": 489.9,
+          "visible": [
+            "partite"
+          ]
+        },
+        {
+          "t": 4573.1,
+          "visible": [
+            "partite"
+          ]
+        },
+        {
+          "t": 4589.7,
+          "visible": [
+            "partite"
+          ]
+        },
+        {
+          "t": 4606.4,
+          "visible": [
+            "dashboard"
+          ]
+        }
+      ],
+      "archiveUnchanged": true,
+      "startupWrites": 0
+    }
+  ],
+  "startupPhases": null,
+  "h2hReal": {
+    "outcome": "PASS",
+    "cutoff": "2026-10-30",
+    "pairGroups": 5358,
+    "comparisons": 16074,
+    "groupsExposedToPreviousBug": 14,
+    "errors": 0,
+    "privateDetailsPublished": false
+  },
+  "benchmarkEntry": "Trading_Analytics_v0.2V-rc1_TA-V02V-001.html",
+  "originalTestSHA256": "6999857d0cd204094159fb39d39a39ef12bdd6fd552dd6309e9a5f63ddef72d3",
+  "assertionsRemoved": 0
+}

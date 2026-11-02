@@ -1,0 +1,4 @@
+PASS T8: all original rows accounted for in a conservative preview, including four retained unresolved schedule observations
+PASS T8: actual atomic save and export retain both original manual payloads
+PASS T8: exact compact record and manual persistence after browser restart
+PASS T8: undo restores the empty test archive without editing the supplied backup

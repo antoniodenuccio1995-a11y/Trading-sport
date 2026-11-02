@@ -1,0 +1,20 @@
+{
+  "outcome": "PASS",
+  "inputSameSHA256": true,
+  "protocol": "Chromium/Linux/HTTP, separate profiles, same private input, first reload after import and two subsequent warm reloads; not OS cold startup",
+  "rc2": {
+    "cold": 9.738,
+    "warm": [
+      10.248,
+      10.538
+    ]
+  },
+  "rc1": {
+    "cold": 9.85,
+    "warm": [
+      8.923,
+      8.802
+    ]
+  },
+  "privateRowsPublished": false
+}

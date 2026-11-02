@@ -1,0 +1,80 @@
+{
+  "testedCommit": "204dc6c231f82e7bc0782eb8b1c67a794aeb97b1",
+  "requirements": [
+    {
+      "requirement": 1,
+      "priority": "P0",
+      "title": "Responsive senza reload",
+      "status": "PASS",
+      "evidence": "ux/browser-ux.json"
+    },
+    {
+      "requirement": 2,
+      "priority": "P1",
+      "title": "Sidebar compatta e tastiera",
+      "status": "PASS",
+      "evidence": "ux/browser-ux.json"
+    },
+    {
+      "requirement": 3,
+      "priority": "P0",
+      "title": "Startup e dati in background",
+      "status": "PASS shell/reattivita; riserva tempi completi warm piu lenti",
+      "evidence": "ux/browser-ux.json"
+    },
+    {
+      "requirement": 4,
+      "priority": "P0",
+      "title": "Tutte le gare odierne e continuit\u00e0",
+      "status": "PASS",
+      "evidence": "ux/browser-ux.json"
+    },
+    {
+      "requirement": 5,
+      "priority": "P1",
+      "title": "Calendario raggruppato",
+      "status": "PASS",
+      "evidence": "ux/browser-ux.json"
+    },
+    {
+      "requirement": 6,
+      "priority": "P0",
+      "title": "Aggiornamento incrementale",
+      "status": "PASS controllato; live NON ESEGUITO",
+      "evidence": "ux/refresh-browser.json; ux/live-refresh.json"
+    },
+    {
+      "requirement": 7,
+      "priority": "P1",
+      "title": "Terminologia e copertura",
+      "status": "PASS",
+      "evidence": "ux/browser-ux.json"
+    },
+    {
+      "requirement": 8,
+      "priority": "P1",
+      "title": "Analisi dentro Confronti",
+      "status": "PASS",
+      "evidence": "ux/browser-ux.json"
+    },
+    {
+      "requirement": 9,
+      "priority": "P0",
+      "title": "Cruscotto esistente Casa/Totale, Trasferta/Totale",
+      "status": "PASS",
+      "evidence": "ux/browser-ux.json"
+    },
+    {
+      "requirement": 10,
+      "priority": "P0",
+      "title": "Scanner temporale",
+      "status": "PASS",
+      "evidence": "ux/browser-ux.json"
+    }
+  ],
+  "nativeWindows": "NON ESEGUITO",
+  "fileProtocol": "NON ESEGUITO",
+  "physicalMobile": "NON ESEGUITO",
+  "personalJournal": "NON ESEGUITO",
+  "stableApproved": false
+}

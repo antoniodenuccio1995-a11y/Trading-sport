@@ -1,0 +1,18 @@
+{
+  "outcome": "PASS",
+  "baseline": "43b92dfc21112a1df7f20dc6f56f6add8042219a",
+  "frozenFiles": 597,
+  "protectedCodeSpans": [
+    "function run(S)",
+    "function safeKickoffFuture(",
+    "function fraction(",
+    "const JOURNAL_DB=",
+    "function reviewerPeriod(",
+    "function finalAssessment(",
+    "function standingsCompute(",
+    "const ARCHIVE_DB=",
+    "function archiveStrictWrite("
+  ],
+  "descriptiveBuilderOnlyWhitelistedChanges": true,
+  "originalHTMLCSSAndAllModulesUnchanged": true
+}

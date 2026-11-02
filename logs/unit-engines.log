@@ -1,0 +1,34 @@
+✔ Existing comparisonTeamStats orients total GF/GA/HT by club, not raw fixture side (2.42494ms)
+✔ Same cmx-board has four data columns, all 17 indicators and correct total/league denominators (10.753045ms)
+✔ Current/history separation and no future/invalid FT in the expanded comparison (2.831876ms)
+✔ Refresh delta only proposes new/integrable data and preserves inputs, recent/new scopes compose (1.053457ms)
+✔ New disagreeing results, clock or odds must reach conservative preview, never become an unnoticed no-op (0.51063ms)
+✔ IND-01: last 5/10/all count usable FT first, with independent expected dates (11.205008ms)
+✔ IND-02: one Rome civil-date boundary, winter/summer/DST/month/year and offset instants (0.336674ms)
+✔ IND-02: select/profile/H2H/signals all include yesterday and exclude today/future (10.001361ms)
+✔ IND-02: host timezone cannot change the explicit Rome policy (1183.99902ms)
+✔ IND-03: Cup/Coppa/Copa/type cannot qualify official status; strict explicit flag can (47.820121ms)
+✔ IND-03: registered cup/league, explicit opt-out and friendlies take precedence (0.253052ms)
+✔ Independent exact counts, percentages and missing denominators (9.967282ms)
+✔ Temporal cutoffs exclude same day, later dates, and bogus future scores (5.346198ms)
+✔ Date interval includes endpoints and composes with historical season (3.371839ms)
+✔ Actual home, away, total and neutral scopes differ without manufacturing home venue (3.803553ms)
+✔ HT zero is known, absent HT remains null and extra-time FT excluded (0.329434ms)
+✔ Shared profile equal for both consumers and inputs never mutated (4.758785ms)
+✔ H2H counts actual meetings in each venue, capped before selected date (3.677669ms)
+✔ Rest and congestion use dates preceding cutoff (0.859661ms)
+✔ Clock requires coherent original time/fuso, no unzoned confidence (1.278777ms)
+✔ Interpretation false-positive guard, numerical supportive evidence and max3 (7.570653ms)
+✔ Contrary evidence is not promoted to positive, mixed contexts yield no Over signal (16.198857ms)
+✔ Signal input at same/later day cannot change output or leak outcomes (10.908152ms)
+✔ Canonical promoted clubs and aliases retained as one identity (4.641213ms)
+✔ Future fixture cannot consume already scored records dated after the observation day (17.675155ms)
+✔ All-official scope excludes declared friendlies and unqualified competitions, without deleting rows (1.645155ms)
+ℹ tests 26
+ℹ suites 0
+ℹ pass 26
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1469.22209

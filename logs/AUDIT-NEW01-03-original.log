@@ -1,0 +1,26 @@
+{
+  "checks": [
+    {
+      "id": "NEW-01",
+      "outcome": "PASS",
+      "case": "H2H shuffled/reverse venue/historical cutoff/HT null",
+      "n": 5,
+      "gf": 20,
+      "ga": 5
+    },
+    {
+      "id": "NEW-02",
+      "outcome": "PASS",
+      "case": "Leap day/current boundary/earliest cutoff",
+      "allPrior": 2,
+      "historical": 1
+    },
+    {
+      "id": "NEW-03",
+      "outcome": "PASS",
+      "case": "Mixed qualification in same competition independent of record order",
+      "official": 1,
+      "individual": 4
+    }
+  ]
+}

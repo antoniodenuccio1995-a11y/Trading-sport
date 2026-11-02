@@ -1,0 +1,36 @@
+START all-unit
+START archive-browser
+START reimport-e2e
+PASS all-unit seconds 1.913
+START identity-unit
+PASS identity-unit seconds 1.009
+START csv-current
+PASS csv-current seconds 2.406
+START all-public-packets
+PASS all-public-packets seconds 24.155
+START protected-files
+PASS protected-files seconds 4.002
+START audited-input
+PASS archive-browser seconds 35.779
+START public-browser
+PASS audited-input seconds 7.748
+PASS public-browser seconds 46.821
+START consultation
+PASS consultation seconds 7.612
+START backtest-contract
+PASS backtest-contract seconds 8.966
+START today-backtest
+PASS today-backtest seconds 11.411
+START operational-browser
+PASS operational-browser seconds 36.493
+PASS reimport-e2e seconds 1044.54
+START original-recovery
+PASS original-recovery seconds 64.333
+START original-values
+PASS original-values seconds 3.678
+START recovered-values
+PASS recovered-values seconds 4.128
+FULL QA PASS jobs 16 stage exact-commit
+START final-readiness
+PASS final-readiness seconds 0.681
+EXACT-COMMIT FINAL GATE PASS

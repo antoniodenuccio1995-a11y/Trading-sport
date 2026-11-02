@@ -1,0 +1,13 @@
+{
+  "originalTest": "int004/today-backtest-browser.py",
+  "originalSHA256": "a1be8a8ee81b873fd4380926bc04db340e021c8158d985c2c0cd605c28e80383",
+  "adaptedSHA256": "2524cfabe4a1a9da845a1cfa5fd21cfe7051283bd59803582b45fa92a3f7f835",
+  "adaptations": [
+    "rc2 entry and source-hash filenames",
+    "Confronti click before H2H/scope control or screenshot",
+    "group header rows excluded from fixture-row selector",
+    "explicit seven-day Scanner for legacy multi-day sample; TODAY tested separately"
+  ],
+  "assertionsRemoved": 0,
+  "outcome": "PASS"
+}

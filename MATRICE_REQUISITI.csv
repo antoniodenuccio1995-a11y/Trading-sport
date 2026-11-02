@@ -1,0 +1,11 @@
+requirement,priority,title,status,evidence
+1,P0,Responsive senza reload,PASS,ux/browser-ux.json
+2,P1,Sidebar compatta e tastiera,PASS,ux/browser-ux.json
+3,P0,Startup e dati in background,PASS shell/reattivita; riserva tempi completi warm piu lenti,ux/browser-ux.json
+4,P0,Tutte le gare odierne e continuità,PASS,ux/browser-ux.json
+5,P1,Calendario raggruppato,PASS,ux/browser-ux.json
+6,P0,Aggiornamento incrementale,PASS controllato; live NON ESEGUITO,ux/refresh-browser.json; ux/live-refresh.json
+7,P1,Terminologia e copertura,PASS,ux/browser-ux.json
+8,P1,Analisi dentro Confronti,PASS,ux/browser-ux.json
+9,P0,"Cruscotto esistente Casa/Totale, Trasferta/Totale",PASS,ux/browser-ux.json
+10,P0,Scanner temporale,PASS,ux/browser-ux.json

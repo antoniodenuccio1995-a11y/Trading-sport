@@ -1,0 +1,259 @@
+{
+  "outcome": "PASS",
+  "pageerrors": [],
+  "consoleErrors": [],
+  "checks": [
+    "New current results preview without writes; explicit atomic confirmation, future scored rows excluded",
+    "HTTP 304 and same-body SHA avoid parsing, merge, archive persistence; no historical URL",
+    "Changed source proposes only one genuinely new row; first two records byte-equivalent in stable representation",
+    "New conflicting FT is visible and blocked; existing result and snapshot remain unchanged",
+    "Source cache survives reload, kept separate from archive; source change still requires review",
+    "Non-CSV source response handled visibly, no proposal/cache promotion or archive change; manual import remains available"
+  ],
+  "requests": [
+    {
+      "url": "https://www.football-data.co.uk/mmz4281/2627/I1.csv",
+      "headers": {}
+    },
+    {
+      "url": "https://www.football-data.co.uk/mmz4281/2627/I1.csv",
+      "headers": {
+        "if-none-match": "v1"
+      }
+    },
+    {
+      "url": "https://www.football-data.co.uk/mmz4281/2627/I1.csv",
+      "headers": {
+        "if-none-match": "v1"
+      }
+    },
+    {
+      "url": "https://www.football-data.co.uk/mmz4281/2627/I1.csv",
+      "headers": {
+        "if-none-match": "v1"
+      }
+    },
+    {
+      "url": "https://www.football-data.co.uk/mmz4281/2627/I1.csv",
+      "headers": {
+        "if-none-match": "v2"
+      }
+    },
+    {
+      "url": "https://www.football-data.co.uk/mmz4281/2627/I1.csv",
+      "headers": {
+        "if-none-match": "v3"
+      }
+    },
+    {
+      "url": "https://www.football-data.co.uk/mmz4281/2627/I1.csv",
+      "headers": {
+        "if-none-match": "v3"
+      }
+    }
+  ],
+  "receipts": [
+    {
+      "asOf": "2026-10-30T12:00:00.000Z",
+      "mode": "season",
+      "receipts": [
+        {
+          "league": "Serie A",
+          "outcome": "PASS",
+          "merge": "piano batch comune, misurato separatamente",
+          "persistence": "non richiesta: anteprima non confermata",
+          "url": "https://www.football-data.co.uk/mmz4281/2627/I1.csv",
+          "fetchMs": 55,
+          "httpStatus": 200,
+          "downloadMs": 1,
+          "bytes": 167,
+          "hashMs": 0,
+          "acquiredAt": "2026-10-30T12:00:00.000Z",
+          "sourceSHA256": "2f22c0437990cbcbbe236386744535cf182a45fba9e6687fd1f2ba7d60695ab5",
+          "parseMs": 5,
+          "cache": "nuova acquisizione",
+          "parsedRows": 3,
+          "compareMs": 1,
+          "proposedRows": 2
+        }
+      ],
+      "mergeMs": 439,
+      "persistenceMs": null,
+      "proposedRows": 2,
+      "maxConcurrency": 2,
+      "historicalSourcesFetched": 0
+    },
+    {
+      "asOf": "2026-10-30T12:00:00.000Z",
+      "mode": "season",
+      "receipts": [
+        {
+          "league": "Serie A",
+          "outcome": "PASS",
+          "merge": "piano batch comune, misurato separatamente",
+          "persistence": "non richiesta: anteprima non confermata",
+          "url": "https://www.football-data.co.uk/mmz4281/2627/I1.csv",
+          "fetchMs": 19,
+          "httpStatus": 304,
+          "parseMs": 0,
+          "hashMs": 0,
+          "downloadMs": 0,
+          "cache": "HTTP 304",
+          "acquiredAt": "2026-10-30T12:00:00.000Z",
+          "compareMs": 1,
+          "proposedRows": 0
+        }
+      ],
+      "mergeMs": 0,
+      "persistenceMs": null,
+      "proposedRows": 0,
+      "maxConcurrency": 2,
+      "historicalSourcesFetched": 0
+    },
+    {
+      "asOf": "2026-10-30T12:00:00.000Z",
+      "mode": "season",
+      "receipts": [
+        {
+          "league": "Serie A",
+          "outcome": "PASS",
+          "merge": "piano batch comune, misurato separatamente",
+          "persistence": "non richiesta: anteprima non confermata",
+          "url": "https://www.football-data.co.uk/mmz4281/2627/I1.csv",
+          "fetchMs": 12,
+          "httpStatus": 200,
+          "downloadMs": 9,
+          "bytes": 167,
+          "hashMs": 0,
+          "acquiredAt": "2026-10-30T12:00:00.000Z",
+          "sourceSHA256": "2f22c0437990cbcbbe236386744535cf182a45fba9e6687fd1f2ba7d60695ab5",
+          "parseMs": 0,
+          "cache": "contenuto invariato",
+          "compareMs": 1,
+          "proposedRows": 0
+        }
+      ],
+      "mergeMs": 0,
+      "persistenceMs": null,
+      "proposedRows": 0,
+      "maxConcurrency": 2,
+      "historicalSourcesFetched": 0
+    },
+    {
+      "asOf": "2026-10-30T12:00:00.000Z",
+      "mode": "season",
+      "receipts": [
+        {
+          "league": "Serie A",
+          "outcome": "PASS",
+          "merge": "piano batch comune, misurato separatamente",
+          "persistence": "non richiesta: anteprima non confermata",
+          "url": "https://www.football-data.co.uk/mmz4281/2627/I1.csv",
+          "fetchMs": 21,
+          "httpStatus": 200,
+          "downloadMs": 1,
+          "bytes": 209,
+          "hashMs": 0,
+          "acquiredAt": "2026-10-30T12:00:00.000Z",
+          "sourceSHA256": "4fe7169b1a84e0df0c947c66dd6f61bacc712f0f3c68fc438745bd6d8b25a237",
+          "parseMs": 2,
+          "cache": "nuova acquisizione",
+          "parsedRows": 4,
+          "compareMs": 1,
+          "proposedRows": 1
+        }
+      ],
+      "mergeMs": 284,
+      "persistenceMs": null,
+      "proposedRows": 1,
+      "maxConcurrency": 2,
+      "historicalSourcesFetched": 0
+    },
+    {
+      "asOf": "2026-10-30T12:00:00.000Z",
+      "mode": "season",
+      "receipts": [
+        {
+          "league": "Serie A",
+          "outcome": "PASS",
+          "merge": "piano batch comune, misurato separatamente",
+          "persistence": "non richiesta: anteprima non confermata",
+          "url": "https://www.football-data.co.uk/mmz4281/2627/I1.csv",
+          "fetchMs": 27,
+          "httpStatus": 200,
+          "downloadMs": 13,
+          "bytes": 209,
+          "hashMs": 0,
+          "acquiredAt": "2026-10-30T12:00:00.000Z",
+          "sourceSHA256": "01b742516e179363f0b223a7078677251724380b5e76ca3882db3e577bd80aaf",
+          "parseMs": 1,
+          "cache": "nuova acquisizione",
+          "parsedRows": 4,
+          "compareMs": 1,
+          "proposedRows": 1
+        }
+      ],
+      "mergeMs": 283,
+      "persistenceMs": null,
+      "proposedRows": 1,
+      "maxConcurrency": 2,
+      "historicalSourcesFetched": 0
+    },
+    {
+      "asOf": "2026-10-30T12:00:00.000Z",
+      "mode": "recent",
+      "receipts": [
+        {
+          "league": "Serie A",
+          "outcome": "PASS",
+          "merge": "piano batch comune, misurato separatamente",
+          "persistence": "non richiesta: anteprima non confermata",
+          "url": "https://www.football-data.co.uk/mmz4281/2627/I1.csv",
+          "fetchMs": 14,
+          "httpStatus": 304,
+          "parseMs": 0,
+          "hashMs": 0,
+          "downloadMs": 0,
+          "cache": "HTTP 304",
+          "acquiredAt": "2026-10-30T12:00:00.000Z",
+          "compareMs": 1,
+          "proposedRows": 1
+        }
+      ],
+      "mergeMs": 288,
+      "persistenceMs": null,
+      "proposedRows": 1,
+      "maxConcurrency": 2,
+      "historicalSourcesFetched": 0
+    },
+    {
+      "asOf": "2026-10-30T12:00:00.000Z",
+      "mode": "recent",
+      "receipts": [
+        {
+          "league": "Serie A",
+          "outcome": "FAIL: fonte non acquisita",
+          "merge": "piano batch comune, misurato separatamente",
+          "persistence": "non richiesta: anteprima non confermata",
+          "url": "https://www.football-data.co.uk/mmz4281/2627/I1.csv",
+          "fetchMs": 22,
+          "httpStatus": 200,
+          "downloadMs": 5,
+          "bytes": 31,
+          "hashMs": 1,
+          "acquiredAt": "2026-10-30T12:00:00.000Z",
+          "sourceSHA256": "c5e347ef30e32c825e47317ee6dd4e8291f284464237882c4413cb6d53c80fdb",
+          "error": "CSV vuoto o senza partite"
+        }
+      ],
+      "mergeMs": 0,
+      "persistenceMs": null,
+      "proposedRows": 0,
+      "maxConcurrency": 2,
+      "historicalSourcesFetched": 0
+    }
+  ],
+  "networkKind": "controlled HTTP source through real fetch, not live performance",
+  "networkMode": "isolated: optional font CSS empty; automatic live refresh postponed via existing cache timestamps in test profiles only",
+  "confirmedPersistence": 412
+}
