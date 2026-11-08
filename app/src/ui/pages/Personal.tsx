@@ -26,14 +26,13 @@ export function Personal() {
 
 function Login() {
   const [email, setEmail] = useState(""), [pw, setPw] = useState(""), [msg, setMsg] = useState(""), [busy, setBusy] = useState(false);
-  const act = async (kind: "in" | "up" | "link") => {
+  const act = async (kind: "in" | "up") => {
     setBusy(true); setMsg("");
     try {
       const auth = (await supa()).auth;
       const redirect = location.origin + location.pathname + "#/personale";
-      if (kind === "in") { const { error } = await auth.signInWithPassword({ email, password: pw }); if (error) throw error; }
+      if (kind === "in") { const { error } = await auth.signInWithPassword({ email, password: pw }); if (error) throw new Error(error.message === "Invalid login credentials" ? "Email o password non corretti." : error.message); }
       else if (kind === "up") { const { error } = await auth.signUp({ email, password: pw, options: { emailRedirectTo: redirect } }); if (error) throw error; setMsg("Registrazione inviata: conferma dal link che ricevi per email, poi accedi."); }
-      else { const { error } = await auth.signInWithOtp({ email, options: { emailRedirectTo: redirect } }); if (error) throw error; setMsg("Ti ho inviato un link di accesso per email."); }
     } catch (e) { setMsg((e as Error).message); } finally { setBusy(false); }
   };
   return (
@@ -43,9 +42,9 @@ function Login() {
         <input class="input" type="password" autocomplete="current-password" placeholder="Password (min. 6 caratteri)" value={pw} onInput={(e) => setPw((e.target as HTMLInputElement).value)} />
         <button class="btn primary" disabled={busy || !email || pw.length < 6}>Accedi</button>
         <button class="btn" type="button" disabled={busy || !email || pw.length < 6} onClick={() => act("up")}>Registrati</button>
-        <button class="btn" type="button" disabled={busy || !email} onClick={() => act("link")}>Link via email</button>
       </form>
       {msg && <p class="note" role="status">{msg}</p>}
+      <p class="note"><b>Hai già un account:</b> usa la stessa email e password dell'altra app che hai su questo progetto Supabase. "Registrati" serve solo per creare un account nuovo.</p>
       <p class="note">Le statistiche delle partite sono consultabili senza accesso. L'accesso serve solo per i tuoi dati personali, salvati su Supabase e protetti da regole che li rendono leggibili solo al tuo account.</p>
     </Card>
   );

@@ -7,7 +7,7 @@
 | Fonti | football-data.co.uk, Open Matchday | storico dal 2021/22 con quote e statistiche; stagione in corso, calendario, primo tempo |
 | Sincronizzazione | Supabase Edge Function `ta-sync` + `pg_cron` | scarica i CSV, riconosce le squadre, aggiorna `ta_matches` |
 | Pubblicazione | Supabase Storage, bucket pubblico `ta-data` | un file JSON compatto per stagione + manifest |
-| App | `app/` (Vite + Preact + TypeScript), GitHub Pages | legge i file, li tiene in cache nel browser, calcola le statistiche |
+| App | `app/` (Vite + Preact + TypeScript), GitHub Pages (ramo `gh-pages`) | legge i file, li tiene in cache nel browser, calcola le statistiche |
 | Dati personali | tabella `ta_user_data` (login + RLS) | trade, quote, previsioni, note importati dal backup v0.3 |
 
 ## Perché è veloce
@@ -37,7 +37,15 @@ Misure (Chromium, archivio di 28.383 partite dal backup del 6/11):
 
 Il registro è nella tabella `ta_sync_runs` e nella pagina **Stato dei dati** dell'app.
 
-Nota: il piano gratuito di Supabase mette in pausa il progetto dopo 7 giorni senza utilizzo. Se succede, si riattiva dal pannello di Supabase.
+### Pausa dopo 7 giorni (piano gratuito Supabase)
+
+Supabase mette in pausa i progetti gratuiti senza attività sul database per 7 giorni. Tre protezioni indipendenti:
+
+1. gli aggiornamenti automatici scrivono nel database due volte al giorno (`pg_cron` conta come attività);
+2. il job `ta-heartbeat` scrive ogni giorno in `ta_meta` alle 13:07 (ora italiana);
+3. il workflow GitHub `Supabase attivo` legge dal database ogni giorno dall'esterno.
+
+Se nonostante questo il progetto andasse in pausa, Supabase manda un'email una settimana prima; il ripristino è un clic dal pannello. Nel frattempo l'app continua a funzionare con i dati salvati nel browser.
 
 ## Squadre: come vengono riconosciute
 
