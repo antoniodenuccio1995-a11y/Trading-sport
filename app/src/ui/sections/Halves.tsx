@@ -6,7 +6,8 @@ import { halfLeague, halfTeam, type HalfAgg } from "../../stats/halves";
 import type { Halves } from "../../stats/poisson";
 import { pct, teamMatches, type Venue } from "../../stats/team";
 import { PctBar, SplitBar } from "../components/charts";
-import { Card, Seg, fmtNum, fmtPct } from "../components/common";
+import { Card, Seg, fmtNum, fmtPct, usePref } from "../components/common";
+import { PeriodSeg, periodLabel, periodSeasons, type Period } from "../components/period";
 
 const per = (x: number, n: number) => (n ? x / n : null);
 
@@ -61,14 +62,13 @@ function HtFt({ g }: { g: HalfAgg }) {
   );
 }
 
-type Period = "season" | "two";
 
 /** Sezione completa per una partita: casa (in casa) contro ospite (in trasferta), lega, incrocio e modello. */
 export function MatchHalves({ m, leagueAll, model }: { m: Match; leagueAll: Match[]; model: Halves | null }) {
-  const [period, setPeriod] = useState<Period>("season");
+  const [period, setPeriod] = usePref<Period>("period.halves", "season");
   const seasons = [...new Set(leagueAll.map((x) => x.s))].sort();
-  const keep = period === "season" ? [m.s] : seasons.slice(Math.max(0, seasons.indexOf(m.s) - 1), seasons.indexOf(m.s) + 1);
-  const base = leagueAll.filter((x) => keep.includes(x.s) && x.d < m.d);
+  const keep = new Set(periodSeasons(seasons, m.s, period));
+  const base = leagueAll.filter((x) => keep.has(x.s) && x.d < m.d);
   const H = halfTeam(teamMatches(base, m.h, "home"), m.h), A = halfTeam(teamMatches(base, m.a, "away"), m.a);
   const LH = halfLeague(base, "home"), LA = halfLeague(base, "away");
   const few = H.n < 5 || A.n < 5;
@@ -78,8 +78,9 @@ export function MatchHalves({ m, leagueAll, model }: { m: Match; leagueAll: Matc
   return (
     <>
       <div class="row" style="margin-bottom:10px">
-        <Seg<Period> label="Periodo" value={period} onChange={setPeriod} options={[["season", "Questa stagione"], ["two", "Ultime 2 stagioni"]]} />
-        {few && period === "season" && <span class="muted">Poche partite in questa stagione: prova "Ultime 2 stagioni".</span>}
+        <PeriodSeg value={period} onChange={setPeriod} />
+        <span class="muted">{periodLabel(period, m.s, seasons)}</span>
+        {few && period === "season" && <span class="muted">· poche partite in questa stagione: prova "Ultime 3".</span>}
       </div>
       {model && <HalfModel model={model} />}
       <div class="half-grid">
@@ -123,13 +124,13 @@ function HalfModel({ model }: { model: Halves }) {
 }
 
 /** Versione per la pagina squadra: casa, trasferta e totale nella stagione. */
-export function TeamHalves({ team, list, leagueList }: { team: number; list: Match[]; leagueList: Match[] }) {
+export function TeamHalves({ team, list, leagueList, label }: { team: number; list: Match[]; leagueList: Match[]; label?: string }) {
   const [venue, setVenue] = useState<Venue>("all");
   const g = halfTeam(teamMatches(list, team, venue), team);
   const ref = halfLeague(leagueList, venue);
   return (
     <div>
-      <div class="row" style="margin-bottom:8px"><span class="spacer" /><Seg label="Sede" value={venue} onChange={setVenue} options={[["all", "Totale"], ["home", "Casa"], ["away", "Trasferta"]]} /></div>
+      <div class="row" style="margin-bottom:8px">{label && <span class="muted">{label} · stesso periodo delle statistiche</span>}<span class="spacer" /><Seg label="Sede" value={venue} onChange={setVenue} options={[["all", "Totale"], ["home", "Casa"], ["away", "Trasferta"]]} /></div>
       <HalfCard title={teamName(team)} sub={venue === "home" ? "in casa" : venue === "away" ? "in trasferta" : "tutte le gare"} g={g} bench={ref} color="var(--c1)" />
     </div>
   );

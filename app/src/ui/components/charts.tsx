@@ -1,10 +1,10 @@
 // Grafici SVG leggeri: seguono i colori del tema (variabili CSS) e si adattano alla larghezza.
 import type { ComponentChildren } from "preact";
+import type { Zone } from "../../stats/zones";
 
 export const PALETTE = ["var(--c1)", "var(--c2)", "var(--c3)", "var(--c4)", "var(--c5)", "var(--c6)"];
 
 export interface Series { name: string; color: string; values: (number | null)[]; info?: (i: number) => string }
-export interface Zone { from: number; to: number; tone: "top" | "mid" | "low"; label: string }
 
 /** Posizione in classifica nel tempo: 1° in alto. */
 export function RankChart({ x, series, max, zones = [], height = 260, label }: {
@@ -27,10 +27,15 @@ export function RankChart({ x, series, max, zones = [], height = 260, label }: {
   const band = ih / (top - 1);
   return (
     <svg class="chart" viewBox={`0 0 ${W} ${H}`} role="img" aria-label={label}>
-      {zones.map((z) => (
-        <rect key={z.label} x={m.l} width={iw} y={Math.max(m.t, Y(z.from) - band / 2)} height={Math.max(2, Math.min(m.t + ih, Y(z.to) + band / 2) - Math.max(m.t, Y(z.from) - band / 2))}
-          class={`zone ${z.tone}`}><title>{z.label}</title></rect>
-      ))}
+      {zones.map((z) => {
+        const y0 = Math.max(m.t - band / 2, Y(z.from) - band / 2), y1 = Math.min(m.t + ih + band / 2, Y(z.to) + band / 2);
+        return (
+          <g key={`${z.label}${z.from}`} class={`zone z-${z.tone}`}>
+            <rect x={m.l} width={iw} y={y0} height={Math.max(2, y1 - y0)} class="zone-band"><title>{`${z.label}: ${z.from}°–${z.to}°`}</title></rect>
+            <rect x={m.l - 30} width={5} y={y0 + 1} height={Math.max(2, y1 - y0 - 2)} rx={2} class="zone-strip"><title>{z.label}</title></rect>
+          </g>
+        );
+      })}
       {ticks.map((r) => (
         <g key={r}>
           <line x1={m.l} x2={W - m.r} y1={Y(r)} y2={Y(r)} class={r === 1 ? "axis" : "grid"} />
@@ -90,4 +95,12 @@ export function PctBar({ v, mark, color = "var(--accent)", children }: { v: numb
       {children}
     </div>
   );
+}
+
+/** Legenda delle zone di classifica. */
+export function ZoneLegend({ zones }: { zones: Zone[] }) {
+  const seen = new Set<string>();
+  const items = zones.filter((z) => (seen.has(z.label) ? false : (seen.add(z.label), true)));
+  if (!items.length) return null;
+  return <div class="legend zones">{items.map((z) => <span key={z.label}><i class={`z-${z.tone}`} />{z.label} ({z.from === z.to ? `${z.from}°` : `${z.from}°–${z.to}°`})</span>)}</div>;
 }

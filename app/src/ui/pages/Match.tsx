@@ -6,11 +6,13 @@ import { leagueAll, matchForecast } from "../../stats/derived";
 import { implied, type Forecast } from "../../stats/poisson";
 import { standings } from "../../stats/standings";
 import { h2h, leagueTeamAgg, teamAgg, teamMatches } from "../../stats/team";
-import { Card, Form, Tabs, TeamLink, fmtOdd, fmtPct, heat, useStore } from "../components/common";
+import { Card, Form, Tabs, TeamLink, fmtOdd, fmtPct, heat, usePref, useStore } from "../components/common";
+import { PeriodSeg, periodLabel, periodSeasons, type Period } from "../components/period";
 import { href, type Route } from "../router";
 import { MatchHalves } from "../sections/Halves";
 import { MarketCompare } from "../sections/Market";
 import { HistoryRankChart, SeasonRankChart } from "../sections/RankCharts";
+import { StandingsTable } from "../sections/StandingsTable";
 import { StatTable } from "../sections/StatTable";
 
 const TABS: [string, string][] = [["panoramica", "Panoramica e mercato"], ["statistiche", "Statistiche"], ["tempi", "Gol e tempi"], ["classifica", "Classifica"], ["forma", "Forma e precedenti"]];
@@ -49,7 +51,7 @@ function Analysis({ m, tab }: { m: M; tab: string }) {
       </Card>
       <Tabs tabs={TABS} active={tab} link={(k) => href(["partita", m.id], { tab: k })} />
       {tab === "panoramica" && <Overview m={m} fc={fc} />}
-      {tab === "statistiche" && <Stats m={m} season={season} />}
+      {tab === "statistiche" && <Stats m={m} all={all} />}
       {tab === "tempi" && <MatchHalves m={m} leagueAll={all} model={fc?.halves ?? null} />}
       {tab === "classifica" && <StandingsTab m={m} season={season} />}
       {tab === "forma" && <FormTab m={m} />}
@@ -96,13 +98,25 @@ function Overview({ m, fc }: { m: M; fc: Forecast | null }) {
   );
 }
 
-function Stats({ m, season }: { m: M; season: M[] }) {
-  const before = season.filter((x) => x.d < m.d);
-  const hHome = teamAgg(teamMatches(before, m.h, "home"), m.h), aAway = teamAgg(teamMatches(before, m.a, "away"), m.a);
-  const hAll = teamAgg(teamMatches(before, m.h, "all"), m.h), aAll = teamAgg(teamMatches(before, m.a, "all"), m.a);
-  const LH = leagueTeamAgg(before, "home"), LA = leagueTeamAgg(before, "away"), L = leagueTeamAgg(before, "all");
+function Stats({ m, all }: { m: M; all: M[] }) {
+  const [period, setPeriod] = usePref<Period>("period.stats", "season");
+  const seasons = [...new Set(all.map((x) => x.s))].sort();
+  const keep = new Set(periodSeasons(seasons, m.s, period));
+  const base = all.filter((x) => keep.has(x.s) && x.d < m.d);
+  const hHome = teamAgg(teamMatches(base, m.h, "home"), m.h), aAway = teamAgg(teamMatches(base, m.a, "away"), m.a);
+  const hAll = teamAgg(teamMatches(base, m.h, "all"), m.h), aAll = teamAgg(teamMatches(base, m.a, "all"), m.a);
+  const LH = leagueTeamAgg(base, "home"), LA = leagueTeamAgg(base, "away"), L = leagueTeamAgg(base, "all");
+  // stagione in corso contro tutte le stagioni precedenti nello stesso campionato
+  const cur = all.filter((x) => x.s === m.s && x.d < m.d), hist = all.filter((x) => x.s < m.s);
+  const hS = teamAgg(teamMatches(cur, m.h, "home"), m.h), hH = teamAgg(teamMatches(hist, m.h, "home"), m.h);
+  const aS = teamAgg(teamMatches(cur, m.a, "away"), m.a), aH = teamAgg(teamMatches(hist, m.a, "away"), m.a);
+  const histSeasons = seasons.filter((x) => x < m.s);
   return (
     <>
+      <div class="row" style="margin-bottom:10px">
+        <PeriodSeg value={period} onChange={setPeriod} />
+        <span class="muted">{periodLabel(period, m.s, seasons)} · solo partite di {leagueName(m.lg)} prima di questa</span>
+      </div>
       <Card title="Casa in casa, ospite in trasferta">
         <StatTable cols={[
           { label: `${teamName(m.h)} (casa)`, agg: hHome, ref: LH },
@@ -110,9 +124,22 @@ function Stats({ m, season }: { m: M; season: M[] }) {
           { label: `${teamName(m.a)} (trasf.)`, agg: aAway, ref: LA },
           { label: "Media lega in trasf.", agg: LA, isRef: true },
         ]} />
-        <p class="note">Le frecce ▲▼ indicano quanto la squadra è sopra o sotto la media del campionato nella stessa sede (in punti percentuali o in gol). Solo partite della stagione {m.s} giocate prima di questa.</p>
+        <p class="note">Le frecce ▲▼ indicano quanto la squadra è sopra o sotto la media del campionato nella stessa sede e nello stesso periodo (in punti percentuali o in gol).</p>
       </Card>
-      <Card title="Tutte le partite della stagione">
+      <Card title="Questa stagione rispetto allo storico">
+        {histSeasons.length ? (
+          <>
+            <StatTable refName="lo storico della squadra" cols={[
+              { label: `${teamName(m.h)} casa · ${m.s}`, agg: hS, ref: hH },
+              { label: "Storico in casa", agg: hH, isRef: true },
+              { label: `${teamName(m.a)} trasf. · ${m.s}`, agg: aS, ref: aH },
+              { label: "Storico in trasf.", agg: aH, isRef: true },
+            ]} />
+            <p class="note">Storico: stagioni {histSeasons[0]} – {histSeasons[histSeasons.length - 1]} in {leagueName(m.lg)}. Le frecce indicano quanto la stagione in corso è sopra o sotto lo storico della squadra. Una squadra neopromossa ha uno storico breve o assente in questo campionato.</p>
+          </>
+        ) : <p class="muted">Non ci sono stagioni precedenti in archivio per questo campionato.</p>}
+      </Card>
+      <Card title="Tutte le partite del periodo">
         <StatTable cols={[
           { label: teamName(m.h), agg: hAll, ref: L },
           { label: teamName(m.a), agg: aAll, ref: L },
@@ -127,15 +154,9 @@ function StandingsTab({ m, season }: { m: M; season: M[] }) {
   return (
     <>
       <Card title="Posizione nel corso della stagione"><SeasonRankChart lg={m.lg} season={m.s} teams={[m.h, m.a]} before={m.d} /></Card>
-      <Card title="Posizioni per stagione · storico"><HistoryRankChart teams={[m.h, m.a]} lg={m.lg === "CL" ? undefined : m.lg} /></Card>
+      <Card title="Storico per stagione e categoria"><HistoryRankChart teams={[m.h, m.a]} /></Card>
       <Card title="Classifica prima della partita" flush>
-        <div class="tw"><table class="t">
-          <thead><tr><th>#</th><th class="l">Squadra</th><th>G</th><th>V</th><th>N</th><th>P</th><th>GF</th><th>GS</th><th>DR</th><th>Pt</th><th class="l">Forma</th></tr></thead>
-          <tbody>{table.map((r) => (
-            <tr key={r.team} class={r.team === m.h || r.team === m.a ? "hl" : ""}><td>{r.pos}</td><td class="team"><TeamLink id={r.team} season={m.s} /></td>
-              <td>{r.p}</td><td>{r.w}</td><td>{r.d}</td><td>{r.l}</td><td>{r.gf}</td><td>{r.ga}</td><td>{r.gf - r.ga}</td><td><b>{r.pts}</b></td><td class="l"><Form list={r.form} /></td></tr>))}
-          </tbody>
-        </table></div>
+        <StandingsTable rows={table} lg={m.lg} season={m.s} highlight={[m.h, m.a]} ppg={false} />
       </Card>
     </>
   );

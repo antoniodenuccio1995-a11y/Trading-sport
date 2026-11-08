@@ -3,7 +3,8 @@ import { todayDay } from "../../data/dates";
 import { leagueName } from "../../data/store";
 import { played } from "../../data/types";
 import { avg, leagueTeamAgg, pct, scorelines, teamAgg, teamMatches, type Agg } from "../../stats/team";
-import { Card, Form, PctTd, fmtNum, fmtPct, useStore } from "../components/common";
+import { Card, Form, PctTd, fmtNum, fmtPct, usePref, useStore } from "../components/common";
+import { PeriodSeg, periodLabel, periodSeasons, type Period } from "../components/period";
 import { TeamHalves } from "../sections/Halves";
 import { HistoryRankChart, SeasonRankChart } from "../sections/RankCharts";
 import { StatTable } from "../sections/StatTable";
@@ -22,9 +23,20 @@ export function Team({ route }: { route: Route }) {
   const leagues = [...new Set(inSeason.map((m) => m.lg))];
   const domestic = leagues.find((l) => l !== "CL") ?? leagues[0];
   const dom = inSeason.filter((m) => m.lg === domestic);
-  const tot = teamAgg(teamMatches(dom, id, "all"), id), home = teamAgg(teamMatches(dom, id, "home"), id), away = teamAgg(teamMatches(dom, id, "away"), id);
-  const leagueList = s.byLeagueSeason.get(`${domestic}|${season}`) ?? [];
-  const L = leagueTeamAgg(leagueList, "all"), LH = leagueTeamAgg(leagueList, "home"), LA = leagueTeamAgg(leagueList, "away");
+  const tot = teamAgg(teamMatches(dom, id, "all"), id);
+  // periodo scelto: stagioni dello stesso campionato (stessa categoria)
+  const [period, setPeriod] = usePref<Period>("period.team", "season");
+  const lgSeasons = s.seasons.filter((x) => s.byLeagueSeason.has(`${domestic}|${x}`));
+  const keep = new Set(periodSeasons(lgSeasons, season, period));
+  const domP = all.filter((m) => m.lg === domestic && keep.has(m.s));
+  const leagueListP = [...keep].flatMap((x) => s.byLeagueSeason.get(`${domestic}|${x}`) ?? []);
+  const pTot = teamAgg(teamMatches(domP, id, "all"), id), pHome = teamAgg(teamMatches(domP, id, "home"), id), pAway = teamAgg(teamMatches(domP, id, "away"), id);
+  const L = leagueTeamAgg(leagueListP, "all"), LH = leagueTeamAgg(leagueListP, "home"), LA = leagueTeamAgg(leagueListP, "away");
+  // stagione scelta contro le stagioni precedenti nello stesso campionato
+  const hist = all.filter((m) => m.lg === domestic && m.s < season);
+  const histSeasons = [...new Set(hist.map((m) => m.s))].sort();
+  const hTot = teamAgg(teamMatches(hist, id, "all"), id), hHome = teamAgg(teamMatches(hist, id, "home"), id), hAway = teamAgg(teamMatches(hist, id, "away"), id);
+  const sHome = teamAgg(teamMatches(dom, id, "home"), id), sAway = teamAgg(teamMatches(dom, id, "away"), id);
   const last = teamAgg(teamMatches(all, id, "all", { last: 10 }), id);
   const trend = seasons.map((x) => {
     const lgOf = all.find((m) => m.s === x && m.lg !== "CL")?.lg;
@@ -54,9 +66,10 @@ export function Team({ route }: { route: Route }) {
         <div class="tile"><b>{fmtPct(pct(tot.btts, tot.n))}</b><span>Entrambe segnano</span></div>
       </div>
       <div class="grid2">
-        <Card title={`Statistiche ${season}`}>
-          <StatTable cols={[{ label: "Totale", agg: tot, ref: L }, { label: "Casa", agg: home, ref: LH }, { label: "Trasferta", agg: away, ref: LA }]} refCol={{ label: "Media lega", agg: L }} />
-          <p class="note">Le frecce ▲▼ indicano la differenza dalla media del campionato nella stessa sede (casa con casa, trasferta con trasferta).</p>
+        <Card title="Statistiche" right={<PeriodSeg value={period} onChange={setPeriod} />}>
+          <p class="muted" style="margin-top:0">{periodLabel(period, season, lgSeasons)} · {leagueName(domestic ?? "")}</p>
+          <StatTable cols={[{ label: "Totale", agg: pTot, ref: L }, { label: "Casa", agg: pHome, ref: LH }, { label: "Trasferta", agg: pAway, ref: LA }]} refCol={{ label: "Media lega", agg: L }} />
+          <p class="note">Le frecce ▲▼ indicano la differenza dalla media del campionato nella stessa sede e nello stesso periodo. Solo partite di {leagueName(domestic ?? "")}: le stagioni in un'altra categoria non vengono mescolate.</p>
         </Card>
         <div>
           <Results title="Prossime partite" list={next} upcoming />
@@ -67,9 +80,20 @@ export function Team({ route }: { route: Route }) {
         </div>
       </div>
       {domestic && domestic !== "CL" && <Card title={`Posizione nel corso della stagione · ${leagueName(domestic)}`}><SeasonRankChart lg={domestic} season={season} teams={[id]} /></Card>}
-      <Card title="Gol e tempi"><TeamHalves team={id} list={dom} leagueList={leagueList} /></Card>
+      <Card title={`${season} rispetto allo storico`}>
+        {histSeasons.length ? (
+          <>
+            <StatTable refName="lo storico della squadra" cols={[
+              { label: `Totale ${season}`, agg: tot, ref: hTot }, { label: "Storico totale", agg: hTot, isRef: true },
+              { label: `Casa ${season}`, agg: sHome, ref: hHome }, { label: `Trasferta ${season}`, agg: sAway, ref: hAway },
+            ]} />
+            <p class="note">Storico: {histSeasons[0]} – {histSeasons[histSeasons.length - 1]} in {leagueName(domestic ?? "")}. Le frecce indicano la differenza dallo storico della squadra nella stessa sede.</p>
+          </>
+        ) : <p class="muted">Nessuna stagione precedente di questa squadra in {leagueName(domestic ?? "")} nell'archivio.</p>}
+      </Card>
+      <Card title="Gol e tempi"><TeamHalves team={id} list={domP} leagueList={leagueListP} label={periodLabel(period, season, lgSeasons)} /></Card>
       <Results title="Ultimi risultati" list={results} />
-      <Card title="Posizioni per stagione"><HistoryRankChart teams={[id]} /></Card>
+      <Card title="Storico per stagione e categoria"><HistoryRankChart teams={[id]} /></Card>
       <Card title="Andamento per stagione" flush>
         <div class="tw"><table class="t">
           <thead><tr><th class="l">Stagione</th><th class="l">Campionato</th><th>G</th><th>Pt/G</th><th>GF</th><th>GS</th><th>O2,5</th><th>GG</th><th>CS</th><th>1T O0,5</th></tr></thead>

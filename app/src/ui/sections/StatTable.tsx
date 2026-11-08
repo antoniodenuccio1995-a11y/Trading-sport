@@ -32,15 +32,15 @@ const ROWS: [string, (g: Agg) => number | null, Kind][] = [
   ["Cartellini gialli (media)", (g) => avg(g.yeF, g.yeN), "num"],
 ];
 
-function Delta({ v, r, kind }: { v: number | null; r: number | null; kind: Kind }) {
+function Delta({ v, r, kind, refName }: { v: number | null; r: number | null; kind: Kind; refName: string }) {
   if (v === null || r === null) return null;
   const d = v - r, isPct = kind !== "num";
   if (Math.abs(d) < (isPct ? 1 : 0.05)) return <span class="delta">=</span>;
   const txt = `${d > 0 ? "▲" : "▼"}${isPct ? Math.round(Math.abs(d)) : Math.abs(d).toFixed(2)}`;
-  return <span class="delta" title={`${d > 0 ? "Sopra" : "Sotto"} la media lega (${isPct ? fmtPct(r) : fmtNum(r)})`}>{txt}</span>;
+  return <span class="delta" title={`${d > 0 ? "Sopra" : "Sotto"} ${refName} (${isPct ? fmtPct(r) : fmtNum(r)})`}>{txt}</span>;
 }
 
-export function StatTable({ cols, refCol }: { cols: Col[]; refCol?: { label: string; agg: Agg } }) {
+export function StatTable({ cols, refCol, refName = "la media lega" }: { cols: Col[]; refCol?: { label: string; agg: Agg }; refName?: string }) {
   return (
     <div class="tw"><table class="t">
       <thead><tr><th class="l">Statistica</th>{cols.map((c) => <th key={c.label} class={c.isRef ? "ref" : ""}>{c.label}</th>)}{refCol && <th class="ref">{refCol.label}</th>}</tr></thead>
@@ -51,7 +51,7 @@ export function StatTable({ cols, refCol }: { cols: Col[]; refCol?: { label: str
             {cols.map((c, i) => {
               const v = f(c.agg), r = c.ref ? f(c.ref) : null;
               const cls = c.isRef ? "ref" : kind === "pct" ? heat(v) : kind === "inv" ? heat(v, true) : "";
-              return <td key={i} class={cls}>{kind === "num" ? fmtNum(v) : fmtPct(v)}<Delta v={v} r={r} kind={kind} /></td>;
+              return <td key={i} class={cls}>{kind === "num" ? fmtNum(v) : fmtPct(v)}<Delta v={v} r={r} kind={kind} refName={refName} /></td>;
             })}
             {refCol && <td class="ref">{kind === "num" ? fmtNum(f(refCol.agg)) : fmtPct(f(refCol.agg))}</td>}
           </tr>

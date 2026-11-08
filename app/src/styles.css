@@ -173,8 +173,13 @@ table.t { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-
 .chart .line { fill: none; stroke: currentColor; stroke-width: 2.6; stroke-linejoin: round; stroke-linecap: round; }
 .chart .dot { fill: currentColor; stroke: var(--surface); stroke-width: 1.5; }
 .chart .end-label { font-size: 12px; font-weight: 750; fill: currentColor; }
-.chart .zone { opacity: .09; }
-.chart .zone.top { fill: var(--zone-top); } .chart .zone.mid { fill: var(--zone-mid); } .chart .zone.low { fill: var(--zone-low); }
+.chart .zone-band { opacity: .13; }
+.chart .zone-strip { opacity: .9; }
+.z-cl { --z: #2f6fd1; } .z-el { --z: #e07b16; } .z-conf { --z: #0e9aa7; } .z-promo { --z: #1f9d55; }
+.z-playoff { --z: #7cb342; } .z-playout { --z: #d4a017; } .z-releg { --z: #d64535; } .z-split { --z: #8a4fd6; }
+.chart .zone rect { fill: var(--z); }
+.legend.zones i { background: var(--z); }
+.t tr.zr td:first-child { box-shadow: inset 4px 0 0 var(--z); }
 .legend { display: flex; flex-wrap: wrap; gap: 6px 14px; font-size: 12px; color: var(--muted); margin: 4px 0 8px; }
 .legend i { display: inline-block; width: 10px; height: 10px; border-radius: 3px; margin-right: 6px; vertical-align: -1px; }
 .chips { display: flex; flex-wrap: wrap; gap: 6px; margin: 4px 0 10px; }
@@ -226,3 +231,13 @@ table.t { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-
   .kpis { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .half-row { grid-template-columns: 120px 1fr; }
 }
+
+/* --- storico per categoria --- */
+.chart .band-a { fill: var(--surface-2); opacity: .55; }
+.chart .band-b { fill: var(--surface-2); opacity: .15; }
+.chart .band-line { stroke: var(--line); }
+.chart .band-name { font-size: 12px; font-weight: 700; fill: var(--text); }
+.chart .pt-label { font-size: 11px; font-weight: 700; fill: currentColor; }
+.t.strip td { font-size: 12px; }
+.move { font-weight: 800; margin-right: 2px; }
+.move.up { color: var(--pos); } .move.down { color: var(--neg); }

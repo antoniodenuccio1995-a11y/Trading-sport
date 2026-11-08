@@ -96,6 +96,11 @@ select public.ta_call_sync('{"mode":"publish"}'::jsonb);
 - **Squadra:** statistiche con media lega, posizione nella stagione, gol e tempi, posizioni per stagione.
 - **Campionato:** classifica, classifica nel tempo (fino a 6 squadre), statistiche gol, gol per tempo squadra per squadra, forma, risultati, calendario.
 
+### v1.2
+- Zone di classifica per ogni campionato (Champions, Europa, Conference, promozione, playoff, playout, retrocessione; Champions League: ottavi diretti, spareggi, eliminate) nei grafici e nelle tabelle.
+- Storico per stagione e categoria: la nazione come piramide (Serie A sopra, Serie B sotto), con promozioni e retrocessioni (↑ ↓), zone dentro ogni fascia e riepilogo per stagione.
+- Periodo di analisi (stagione, stagione precedente, ultime 3, tutto lo storico) nelle statistiche e in Gol e tempi; tabella "questa stagione rispetto allo storico" con frecce ▲▼.
+
 ## Cosa manca (prossime fasi)
 
 - Inserimento e chiusura dei trade nell'app; ora il registro è in sola lettura.

@@ -8,6 +8,7 @@ import { Card, Form, PctTd, Seg, Tabs, TeamLink, fmtNum, fmtPct, useSort, useSto
 import { href, type Route } from "../router";
 import { PALETTE } from "../components/charts";
 import { SeasonRankChart } from "../sections/RankCharts";
+import { StandingsTable } from "../sections/StandingsTable";
 import { halfLeague, halfTeam } from "../../stats/halves";
 
 const TABS: [string, string][] = [["classifica", "Classifica"], ["andamento", "Classifica nel tempo"], ["gol", "Statistiche gol"], ["tempi", "Gol e tempi"], ["forma", "Forma"], ["risultati", "Risultati"], ["calendario", "Calendario"]];
@@ -44,7 +45,7 @@ export function League({ route }: { route: Route }) {
         <div class="tile"><b>{fmtPct(pct(g.ht05, g.htN))}</b><span>Over 0,5 primo tempo{g.htN < g.n ? ` (${g.htN} gare)` : ""}</span></div>
       </div>
       <Tabs tabs={TABS} active={tab} link={(k) => href(["lega", code], { s: season, tab: k })} />
-      {tab === "classifica" && <Standings list={list} season={season} />}
+      {tab === "classifica" && <Standings code={code} list={list} season={season} />}
       {tab === "andamento" && <Trend code={code} list={list} season={season} />}
       {tab === "gol" && <GoalStats list={list} season={season} />}
       {tab === "tempi" && <LeagueHalves list={list} season={season} />}
@@ -55,20 +56,12 @@ export function League({ route }: { route: Route }) {
   );
 }
 
-function Standings({ list, season }: { list: Match[]; season: string }) {
+function Standings({ code, list, season }: { code: string; list: Match[]; season: string }) {
   const [venue, setVenue] = useState<Venue>("all");
   const rows = useMemo(() => standings(list, venue, undefined, teamName), [list, venue]);
   return (
     <Card flush title="Classifica" right={<Seg label="Sede" value={venue} onChange={setVenue} options={[["all", "Totale"], ["home", "Casa"], ["away", "Trasferta"]]} />}>
-      <div class="tw"><table class="t">
-        <thead><tr><th>#</th><th class="l">Squadra</th><th>G</th><th>V</th><th>N</th><th>P</th><th>GF</th><th>GS</th><th>DR</th><th>Pt</th><th>Pt/G</th><th class="l">Forma</th></tr></thead>
-        <tbody>{rows.map((r) => (
-          <tr key={r.team}><td>{r.pos}</td><td class="team"><TeamLink id={r.team} season={season} /></td>
-            <td>{r.p}</td><td>{r.w}</td><td>{r.d}</td><td>{r.l}</td><td>{r.gf}</td><td>{r.ga}</td>
-            <td class={r.gf - r.ga > 0 ? "pos" : r.gf - r.ga < 0 ? "neg" : ""}>{r.gf - r.ga > 0 ? "+" : ""}{r.gf - r.ga}</td>
-            <td><b>{r.pts}</b></td><td>{fmtNum(avg(r.pts, r.p))}</td><td class="l"><Form list={r.form} /></td></tr>))}
-        </tbody></table></div>
-      <p class="note" style="padding:0 14px 12px">Ordine: punti, differenza reti, gol fatti. Gli scontri diretti non sono considerati.</p>
+      <StandingsTable rows={rows} lg={code} season={season} showZones={venue === "all"} />
     </Card>
   );
 }
