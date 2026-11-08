@@ -88,3 +88,39 @@ export function tradePL(t: Trade): number | null {
   if (t.res === "exit" && Number.isFinite(Number(t.exitpl))) return Number(t.exitpl);
   return null;
 }
+
+// --- quote di mercato salvate per partita (bozza + istantanee) ---
+export interface QuoteSnap { t: number; label: string; ex: string; comm: number; q: Record<string, { b?: number | null; l?: number | null }> }
+export interface MatchQuotes { draft?: QuoteSnap["q"]; snaps: QuoteSnap[] }
+
+const qKey = (id: number) => `ta.quotes.${id}`;
+export function localQuotes(id: number): MatchQuotes {
+  try { const v = JSON.parse(localStorage.getItem(qKey(id)) ?? "null"); if (v && Array.isArray(v.snaps)) return v; } catch { /* nessun dato */ }
+  return { snaps: [] };
+}
+/** C'è una sessione salvata? (senza caricare il client Supabase) */
+export function hasStoredSession(): boolean {
+  try { return Object.keys(localStorage).some((k) => k.startsWith("sb-") && k.endsWith("-auth-token")); } catch { return false; }
+}
+/** Salva in locale e, se hai fatto l'accesso, anche su Supabase (le quote ti seguono su ogni dispositivo). */
+export async function saveQuotes(id: number, data: MatchQuotes): Promise<"locale" | "cloud"> {
+  try { localStorage.setItem(qKey(id), JSON.stringify(data)); } catch { /* memoria piena */ }
+  if (!hasStoredSession()) return "locale";
+  try {
+    const session = await getSession();
+    if (!session) return "locale";
+    const { error } = await (await supa()).from("ta_user_data").upsert(
+      { user_id: session.user.id, kind: "quote", key: `match:${id}`, value: { snaps: data.snaps }, updated_at: new Date().toISOString() },
+      { onConflict: "user_id,kind,key" });
+    return error ? "locale" : "cloud";
+  } catch { return "locale"; }
+}
+export async function remoteQuotes(id: number): Promise<QuoteSnap[] | null> {
+  if (!hasStoredSession()) return null;
+  try {
+    if (!(await getSession())) return null;
+    const { data } = await (await supa()).from("ta_user_data").select("value").eq("kind", "quote").eq("key", `match:${id}`).maybeSingle();
+    const v = data?.value as { snaps?: QuoteSnap[] } | undefined;
+    return Array.isArray(v?.snaps) ? v!.snaps : null;
+  } catch { return null; }
+}

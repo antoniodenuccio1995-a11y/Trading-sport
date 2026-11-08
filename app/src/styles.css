@@ -6,6 +6,8 @@
   --pos: #18794a; --neg: #c0392b; --warn: #a86b0c;
   --hm-1: #f8d7d3; --hm-2: #fbe9e1; --hm-3: transparent; --hm-4: #def3e4; --hm-5: #bfe7cb;
   --f-v: #1f9d55; --f-n: #9aa4ae; --f-p: #d64535;
+  --c1: #1d7a4d; --c2: #2f6fd1; --c3: #d9822b; --c4: #8a4fd6; --c5: #c2410c; --c6: #0e9aa7;
+  --zone-top: #1f9d55; --zone-mid: #2f6fd1; --zone-low: #d64535;
   --radius: 10px; --shadow: 0 1px 2px rgba(16, 24, 40, .06);
   --font: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   --mono: ui-monospace, "SF Mono", "Cascadia Mono", Consolas, monospace;
@@ -17,6 +19,7 @@
     --text: #e6edf3; --muted: #95a1ae; --accent: #3fbf7f; --accent-text: #06140d; --accent-weak: #16301f;
     --pos: #4cc38a; --neg: #ff7b6b; --warn: #e3a948;
     --hm-1: #4a1f1c; --hm-2: #3a2622; --hm-3: transparent; --hm-4: #1d3a28; --hm-5: #23573a;
+    --c1: #4cc38a; --c2: #6ea0ff; --c3: #f0a050; --c4: #b38cff; --c5: #ff8a5c; --c6: #3cc6d1;
   }
 }
 :root[data-theme="dark"] {
@@ -25,6 +28,7 @@
   --text: #e6edf3; --muted: #95a1ae; --accent: #3fbf7f; --accent-text: #06140d; --accent-weak: #16301f;
   --pos: #4cc38a; --neg: #ff7b6b; --warn: #e3a948;
   --hm-1: #4a1f1c; --hm-2: #3a2622; --hm-3: transparent; --hm-4: #1d3a28; --hm-5: #23573a;
+  --c1: #4cc38a; --c2: #6ea0ff; --c3: #f0a050; --c4: #b38cff; --c5: #ff8a5c; --c6: #3cc6d1;
 }
 
 * { box-sizing: border-box; }
@@ -159,4 +163,66 @@ table.t { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-
   .tile b { font-size: 17px; }
   .mrow .opt { display: none; }
   .vs .tn { font-size: 16px; }
+}
+
+/* --- grafici --- */
+.chart { width: 100%; height: auto; display: block; }
+.chart .grid { stroke: var(--line); stroke-dasharray: 3 4; }
+.chart .axis { stroke: var(--line); }
+.chart .tick { font-size: 11px; fill: var(--muted); }
+.chart .line { fill: none; stroke: currentColor; stroke-width: 2.6; stroke-linejoin: round; stroke-linecap: round; }
+.chart .dot { fill: currentColor; stroke: var(--surface); stroke-width: 1.5; }
+.chart .end-label { font-size: 12px; font-weight: 750; fill: currentColor; }
+.chart .zone { opacity: .09; }
+.chart .zone.top { fill: var(--zone-top); } .chart .zone.mid { fill: var(--zone-mid); } .chart .zone.low { fill: var(--zone-low); }
+.legend { display: flex; flex-wrap: wrap; gap: 6px 14px; font-size: 12px; color: var(--muted); margin: 4px 0 8px; }
+.legend i { display: inline-block; width: 10px; height: 10px; border-radius: 3px; margin-right: 6px; vertical-align: -1px; }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; margin: 4px 0 10px; }
+.chip { border: 1px solid var(--line); background: var(--surface); border-radius: 999px; padding: 3px 10px; font-size: 12px; font-weight: 600; color: var(--muted); }
+.chip.on { color: var(--text); border-color: currentColor; }
+.chip i { display: inline-block; width: 8px; height: 8px; border-radius: 50%; margin-right: 6px; }
+.split { display: flex; height: 22px; border-radius: 6px; overflow: hidden; font-size: 11px; font-weight: 700; color: #fff; }
+.split.empty { color: var(--muted); }
+.split .s1 { background: var(--c2); display: grid; place-items: center; } .split .s2 { background: var(--c3); display: grid; place-items: center; }
+.pbar { display: grid; grid-template-columns: 1fr 42px; align-items: center; gap: 8px; }
+.pbar-track { position: relative; height: 8px; border-radius: 4px; background: var(--surface-2); }
+.pbar-fill { height: 100%; border-radius: 4px; }
+.pbar-ref { position: absolute; top: -3px; width: 2px; height: 14px; background: var(--text); opacity: .55; }
+.pbar-val { font-variant-numeric: tabular-nums; font-weight: 650; text-align: right; font-size: 13px; }
+.delta { font-size: 10.5px; font-weight: 600; margin-left: 4px; color: var(--muted); }
+.delta.up { color: var(--pos); } .delta.down { color: var(--neg); }
+.t th.ref, .t td.ref { background: var(--surface-2); color: var(--muted); }
+
+/* --- gol e tempi --- */
+.half-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+.half-card h3 { display: flex; justify-content: space-between; align-items: baseline; }
+.half-rows { display: grid; gap: 7px; }
+.half-row { display: grid; grid-template-columns: 150px 1fr; gap: 10px; align-items: center; font-size: 13px; }
+.kpis { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px; margin: 8px 0 12px; }
+.kpi { background: var(--surface-2); border-radius: 8px; padding: 8px 10px; }
+.kpi b { display: block; font-size: 18px; font-variant-numeric: tabular-nums; }
+.kpi span { font-size: 11.5px; color: var(--muted); }
+.big-prob { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; }
+.big-prob .kpi b { font-size: 22px; }
+.htft { border-collapse: collapse; font-variant-numeric: tabular-nums; font-size: 13px; }
+.htft th, .htft td { padding: 4px 8px; border: 1px solid var(--line); text-align: center; }
+.htft th { color: var(--muted); font-weight: 600; background: var(--surface-2); }
+
+/* --- mercato --- */
+.mkt-head { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin-bottom: 10px; }
+.mkt input.q { width: 72px; padding: 4px 6px; border: 1px solid var(--line); border-radius: 6px; background: var(--surface); text-align: right; font-variant-numeric: tabular-nums; }
+.mkt .grp td { background: var(--surface-2); font-weight: 650; text-align: left; font-size: 12px; color: var(--muted); }
+.pill { display: inline-block; padding: 2px 8px; border-radius: 999px; font-size: 11.5px; font-weight: 700; white-space: nowrap; }
+.pill.linea { background: var(--surface-2); color: var(--muted); }
+.pill.back { background: var(--hm-4); color: var(--pos); }
+.pill.lay { background: var(--hm-2); color: var(--neg); }
+.agree { display: flex; gap: 12px; align-items: center; padding: 10px 12px; border-radius: 10px; background: var(--surface-2); margin: 10px 0; }
+.agree b { font-size: 16px; }
+.snap { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; padding: 6px 0; border-bottom: 1px solid var(--line); font-size: 13px; }
+.mini-btn { border: 1px solid var(--line); background: var(--surface); border-radius: 6px; padding: 1px 8px; font-size: 12px; }
+
+@media (max-width: 900px) {
+  .half-grid, .big-prob { grid-template-columns: 1fr; }
+  .kpis { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .half-row { grid-template-columns: 120px 1fr; }
 }

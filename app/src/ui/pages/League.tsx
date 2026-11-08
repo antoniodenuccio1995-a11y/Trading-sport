@@ -6,8 +6,11 @@ import { formTable, standings } from "../../stats/standings";
 import { avg, leagueAgg, pct, teamAgg, teamMatches, type Agg, type Venue } from "../../stats/team";
 import { Card, Form, PctTd, Seg, Tabs, TeamLink, fmtNum, fmtPct, useSort, useStore, usePref } from "../components/common";
 import { href, type Route } from "../router";
+import { PALETTE } from "../components/charts";
+import { SeasonRankChart } from "../sections/RankCharts";
+import { halfLeague, halfTeam } from "../../stats/halves";
 
-const TABS: [string, string][] = [["classifica", "Classifica"], ["gol", "Statistiche gol"], ["forma", "Forma"], ["risultati", "Risultati"], ["calendario", "Calendario"]];
+const TABS: [string, string][] = [["classifica", "Classifica"], ["andamento", "Classifica nel tempo"], ["gol", "Statistiche gol"], ["tempi", "Gol e tempi"], ["forma", "Forma"], ["risultati", "Risultati"], ["calendario", "Calendario"]];
 
 export function League({ route }: { route: Route }) {
   const s = useStore();
@@ -42,7 +45,9 @@ export function League({ route }: { route: Route }) {
       </div>
       <Tabs tabs={TABS} active={tab} link={(k) => href(["lega", code], { s: season, tab: k })} />
       {tab === "classifica" && <Standings list={list} season={season} />}
+      {tab === "andamento" && <Trend code={code} list={list} season={season} />}
       {tab === "gol" && <GoalStats list={list} season={season} />}
+      {tab === "tempi" && <LeagueHalves list={list} season={season} />}
       {tab === "forma" && <FormTable list={list} season={season} />}
       {tab === "risultati" && <Results list={list.filter(played).slice(-60).reverse()} />}
       {tab === "calendario" && <Results list={list.filter((m) => !played(m) && m.d >= todayDay() - 3).slice(0, 80)} upcoming />}
@@ -121,6 +126,55 @@ export function Results({ list, upcoming, title }: { list: Match[]; upcoming?: b
             <td class="c"><a href={href(["partita", m.id])}><b>{played(m) ? `${m.fh}–${m.fa}` : m.oh ? `${m.oh.toFixed(2)} ${m.od?.toFixed(2)} ${m.oa?.toFixed(2)}` : "analisi"}</b></a></td>
             <td class="l" style="font-weight:600"><TeamLink id={m.a} season={m.s} /></td>{!upcoming && <td class="muted">{m.hh !== null ? `${m.hh}–${m.ha}` : "—"}</td>}</tr>))}
         </tbody></table></div>
+    </Card>
+  );
+}
+
+/** Classifica nel tempo: scegli le squadre da confrontare (fino a 6). */
+function Trend({ code, list, season }: { code: string; list: Match[]; season: string }) {
+  const table = useMemo(() => standings(list, "all", undefined, teamName), [list]);
+  const [sel, setSel] = useState<number[]>(() => table.slice(0, 4).map((r) => r.team));
+  const toggle = (t: number) => setSel(sel.includes(t) ? sel.filter((x) => x !== t) : sel.length >= 6 ? [...sel.slice(1), t] : [...sel, t]);
+  return (
+    <Card title={`Posizione in classifica nel corso della stagione ${season}`}>
+      <p class="muted" style="margin-top:0">Tocca le squadre per aggiungerle o toglierle dal grafico (massimo 6).</p>
+      <div class="chips">{table.map((r) => {
+        const i = sel.indexOf(r.team);
+        return <button type="button" key={r.team} class={`chip${i >= 0 ? " on" : ""}`} style={i >= 0 ? `color:${PALETTE[i % PALETTE.length]}` : ""} aria-pressed={i >= 0} onClick={() => toggle(r.team)}>
+          {i >= 0 && <i style={`background:${PALETTE[i % PALETTE.length]}`} />}{r.pos}. {teamName(r.team)}</button>;
+      })}</div>
+      {sel.length ? <SeasonRankChart key={sel.join(",")} lg={code} season={season} teams={sel} /> : <p class="muted">Nessuna squadra selezionata.</p>}
+    </Card>
+  );
+}
+
+/** Gol per tempo di tutte le squadre: dove cadono i gol, in casa e in trasferta. */
+function LeagueHalves({ list, season }: { list: Match[]; season: string }) {
+  const [venue, setVenue] = useState<Venue>("all");
+  const [key, desc, sortBy] = useSort<"g1" | "g2" | "s1" | "s2" | "c1" | "c2" | "more2" | "share">("g1");
+  const teams = useMemo(() => [...new Set(list.flatMap((m) => [m.h, m.a]))], [list]);
+  const L = halfLeague(list, venue);
+  const rows = useMemo(() => teams.map((t) => ({ t, g: halfTeam(teamMatches(list, t, venue), t) })), [teams, list, venue]);
+  const val = (g: ReturnType<typeof halfTeam>, k: typeof key): number | null => k === "share" ? pct(g.f1 + g.a1, g.f1 + g.a1 + g.f2 + g.a2) : pct(g[k], g.n);
+  const sorted = [...rows].sort((a, b) => ((val(b.g, key) ?? -1) - (val(a.g, key) ?? -1)) * (desc ? 1 : -1));
+  const H = ({ k, children, title }: { k: typeof key; children: string; title?: string }) =>
+    <th class={`sortable${k === key ? " sorted" : ""}`} title={title} onClick={() => sortBy(k)}>{children}{k === key ? (desc ? " ↓" : " ↑") : ""}</th>;
+  if (!L.n) return <Card><p class="empty">Questo campionato non ha i risultati all'intervallo.</p></Card>;
+  return (
+    <Card flush title="Gol per tempo, squadra per squadra" right={<Seg label="Sede" value={venue} onChange={setVenue} options={[["all", "Totale"], ["home", "Casa"], ["away", "Trasferta"]]} />}>
+      <div class="tw"><table class="t">
+        <thead><tr><th class="l">Squadra</th><th>G</th><H k="g1" title="Partite con almeno un gol nel 1° tempo">Gol 1T</H><H k="g2" title="Partite con almeno un gol nel 2° tempo">Gol 2T</H>
+          <H k="share" title="Quota dei gol delle sue partite segnati nel 1° tempo">% gol nel 1T</H><H k="s1">Segna 1T</H><H k="c1">Subisce 1T</H><H k="s2">Segna 2T</H><H k="c2">Subisce 2T</H><H k="more2" title="Partite con più gol nel 2° tempo che nel 1°">2T &gt; 1T</H></tr></thead>
+        <tbody>
+          {sorted.map(({ t, g }) => (
+            <tr key={t}><td class="team"><TeamLink id={t} season={season} /></td><td>{g.n}</td>
+              <PctTd v={pct(g.g1, g.n)} /><PctTd v={pct(g.g2, g.n)} /><td>{fmtPct(val(g, "share"))}</td>
+              <PctTd v={pct(g.s1, g.n)} /><PctTd v={pct(g.c1, g.n)} /><PctTd v={pct(g.s2, g.n)} /><PctTd v={pct(g.c2, g.n)} /><PctTd v={pct(g.more2, g.n)} /></tr>))}
+          <tr class="hl"><td class="team">Media campionato</td><td>{L.n}</td><td>{fmtPct(pct(L.g1, L.n))}</td><td>{fmtPct(pct(L.g2, L.n))}</td><td>{fmtPct(pct(L.f1 + L.a1, L.f1 + L.a1 + L.f2 + L.a2))}</td>
+            <td>{fmtPct(pct(L.s1, L.n))}</td><td>{fmtPct(pct(L.c1, L.n))}</td><td>{fmtPct(pct(L.s2, L.n))}</td><td>{fmtPct(pct(L.c2, L.n))}</td><td>{fmtPct(pct(L.more2, L.n))}</td></tr>
+        </tbody>
+      </table></div>
+      <p class="note" style="padding:0 14px 12px">Dal risultato all'intervallo e finale (2° tempo = finale − intervallo). Clicca le intestazioni per ordinare.</p>
     </Card>
   );
 }

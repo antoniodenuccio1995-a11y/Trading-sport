@@ -90,10 +90,17 @@ select public.ta_call_sync('{"mode":"publish"}'::jsonb);
 - `supabase/migrations`: schema, funzioni, pianificazione (già applicati al progetto)
 - `supabase/functions/ta-sync`: Edge Function (`parse.ts` è testato in `app/tests`)
 
+## Analisi disponibili (v1.1)
+
+- **Partita** (schede): panoramica con Poisson e quote; confronto con il mercato (quote Betfair, Betflag o bookmaker inserite a mano, commissione, probabilità senza margine, valore back/lay, soglie, quote salvate per momento); statistiche con media della lega per sede; gol e tempi (profilo 1°/2° tempo, incrocio attacco/difesa, Poisson per tempo, intervallo → finale); classifica nel tempo e posizioni per stagione; forma e precedenti.
+- **Squadra:** statistiche con media lega, posizione nella stagione, gol e tempi, posizioni per stagione.
+- **Campionato:** classifica, classifica nel tempo (fino a 6 squadre), statistiche gol, gol per tempo squadra per squadra, forma, risultati, calendario.
+
 ## Cosa manca (prossime fasi)
 
 - Inserimento e chiusura dei trade nell'app; ora il registro è in sola lettura.
 - Scanner dei mercati, strategie e backtest, validazione cronologica.
 - Sezione Temi con scelta dei colori: i colori sono già variabili CSS e ora si possono scegliere chiaro, scuro o automatico.
+- Scanner dei mercati, giudizi 0–100, diario di prova, registro automatico delle previsioni, comparatore libero tra due squadre, forza degli avversari affrontati.
 - Minuti dei gol: tabella `ta_goal_events` predisposta, nessuna fonte collegata per scelta.
 - Champions League e HNL hanno solo la stagione in corso: Open Matchday non ha lo storico e football-data non le copre.

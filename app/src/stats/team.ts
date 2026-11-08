@@ -91,3 +91,15 @@ export function scorelines(list: Match[], team: number, top = 8) {
 export function h2h(all: Match[], a: number, b: number, before?: number, last = 10) {
   return all.filter((m) => played(m) && ((m.h === a && m.a === b) || (m.h === b && m.a === a)) && (before === undefined || m.d < before)).slice(-last).reverse();
 }
+
+/** "Squadra media" del campionato (stesse statistiche di teamAgg): riferimento per i confronti. */
+export function leagueTeamAgg(list: Match[], venue: Venue = "all"): Agg {
+  const g = emptyAgg();
+  for (const m of list) {
+    if (!played(m)) continue;
+    if (venue !== "away") addMatch(g, m, "home");
+    if (venue !== "home") addMatch(g, m, "away");
+  }
+  g.form = [];
+  return g;
+}

@@ -2,49 +2,13 @@ import { useMemo } from "preact/hooks";
 import { todayDay } from "../../data/dates";
 import { leagueName } from "../../data/store";
 import { played } from "../../data/types";
-import { avg, pct, scorelines, teamAgg, teamMatches, type Agg } from "../../stats/team";
+import { avg, leagueTeamAgg, pct, scorelines, teamAgg, teamMatches, type Agg } from "../../stats/team";
 import { Card, Form, PctTd, fmtNum, fmtPct, useStore } from "../components/common";
+import { TeamHalves } from "../sections/Halves";
+import { HistoryRankChart, SeasonRankChart } from "../sections/RankCharts";
+import { StatTable } from "../sections/StatTable";
 import { href, type Route } from "../router";
 import { Results } from "./League";
-
-export function StatRows({ cols, labels }: { cols: Agg[]; labels: string[] }) {
-  const R = ({ t, f, pc, inv }: { t: string; f: (g: Agg) => number | null; pc?: boolean; inv?: boolean }) => (
-    <tr><td class="l">{t}</td>{cols.map((g, i) => pc ? <PctTd key={i} v={f(g)} invert={inv} /> : <td key={i}>{fmtNum(f(g))}</td>)}</tr>
-  );
-  return (
-    <div class="tw"><table class="t">
-      <thead><tr><th class="l">Statistica</th>{labels.map((l) => <th key={l}>{l}</th>)}</tr></thead>
-      <tbody>
-        <tr><td class="l">Partite</td>{cols.map((g, i) => <td key={i}>{g.n}</td>)}</tr>
-        <R t="Punti a partita" f={(g) => avg(g.pts, g.n)} />
-        <R t="Vittorie" f={(g) => pct(g.w, g.n)} pc />
-        <tr><td class="l">Pareggi</td>{cols.map((g, i) => <td key={i}>{fmtPct(pct(g.d, g.n))}</td>)}</tr>
-        <R t="Sconfitte" f={(g) => pct(g.l, g.n)} pc inv />
-        <R t="Gol fatti (media)" f={(g) => avg(g.gf, g.n)} />
-        <R t="Gol subiti (media)" f={(g) => avg(g.ga, g.n)} />
-        <R t="Gol totali (media)" f={(g) => avg(g.gf + g.ga, g.n)} />
-        <R t="Over 0,5" f={(g) => pct(g.o05, g.n)} pc />
-        <R t="Over 1,5" f={(g) => pct(g.o15, g.n)} pc />
-        <R t="Over 2,5" f={(g) => pct(g.o25, g.n)} pc />
-        <R t="Over 3,5" f={(g) => pct(g.o35, g.n)} pc />
-        <R t="Entrambe segnano (GG)" f={(g) => pct(g.btts, g.n)} pc />
-        <R t="Porta inviolata" f={(g) => pct(g.cs, g.n)} pc />
-        <R t="Non ha segnato" f={(g) => pct(g.fts, g.n)} pc inv />
-        <R t="1° tempo: gol medi" f={(g) => avg(g.htGf + g.htGa, g.htN)} />
-        <R t="1° tempo: Over 0,5" f={(g) => pct(g.ht05, g.htN)} pc />
-        <R t="1° tempo: Over 1,5" f={(g) => pct(g.ht15, g.htN)} pc />
-        <R t="In vantaggio all'intervallo" f={(g) => pct(g.htW, g.htN)} pc />
-        <R t="2° tempo: Over 0,5" f={(g) => pct(g.sh05, g.htN)} pc />
-        <R t="2° tempo: Over 1,5" f={(g) => pct(g.sh15, g.htN)} pc />
-        <R t="Corner a favore (media)" f={(g) => avg(g.coF, g.coN)} />
-        <R t="Corner contro (media)" f={(g) => avg(g.coA, g.coN)} />
-        <R t="Tiri in porta a favore" f={(g) => avg(g.soF, g.soN)} />
-        <R t="Tiri in porta contro" f={(g) => avg(g.soA, g.soN)} />
-        <R t="Cartellini gialli (media)" f={(g) => avg(g.yeF, g.yeN)} />
-      </tbody>
-    </table></div>
-  );
-}
 
 export function Team({ route }: { route: Route }) {
   const s = useStore();
@@ -59,6 +23,8 @@ export function Team({ route }: { route: Route }) {
   const domestic = leagues.find((l) => l !== "CL") ?? leagues[0];
   const dom = inSeason.filter((m) => m.lg === domestic);
   const tot = teamAgg(teamMatches(dom, id, "all"), id), home = teamAgg(teamMatches(dom, id, "home"), id), away = teamAgg(teamMatches(dom, id, "away"), id);
+  const leagueList = s.byLeagueSeason.get(`${domestic}|${season}`) ?? [];
+  const L = leagueTeamAgg(leagueList, "all"), LH = leagueTeamAgg(leagueList, "home"), LA = leagueTeamAgg(leagueList, "away");
   const last = teamAgg(teamMatches(all, id, "all", { last: 10 }), id);
   const trend = seasons.map((x) => {
     const lgOf = all.find((m) => m.s === x && m.lg !== "CL")?.lg;
@@ -88,7 +54,10 @@ export function Team({ route }: { route: Route }) {
         <div class="tile"><b>{fmtPct(pct(tot.btts, tot.n))}</b><span>Entrambe segnano</span></div>
       </div>
       <div class="grid2">
-        <Card title={`Statistiche ${season}`}><StatRows cols={[tot, home, away]} labels={["Totale", "Casa", "Trasferta"]} /></Card>
+        <Card title={`Statistiche ${season}`}>
+          <StatTable cols={[{ label: "Totale", agg: tot, ref: L }, { label: "Casa", agg: home, ref: LH }, { label: "Trasferta", agg: away, ref: LA }]} refCol={{ label: "Media lega", agg: L }} />
+          <p class="note">Le frecce ▲▼ indicano la differenza dalla media del campionato nella stessa sede (casa con casa, trasferta con trasferta).</p>
+        </Card>
         <div>
           <Results title="Prossime partite" list={next} upcoming />
           <Card title="Risultati esatti più frequenti">
@@ -97,7 +66,10 @@ export function Team({ route }: { route: Route }) {
           </Card>
         </div>
       </div>
+      {domestic && domestic !== "CL" && <Card title={`Posizione nel corso della stagione · ${leagueName(domestic)}`}><SeasonRankChart lg={domestic} season={season} teams={[id]} /></Card>}
+      <Card title="Gol e tempi"><TeamHalves team={id} list={dom} leagueList={leagueList} /></Card>
       <Results title="Ultimi risultati" list={results} />
+      <Card title="Posizioni per stagione"><HistoryRankChart teams={[id]} /></Card>
       <Card title="Andamento per stagione" flush>
         <div class="tw"><table class="t">
           <thead><tr><th class="l">Stagione</th><th class="l">Campionato</th><th>G</th><th>Pt/G</th><th>GF</th><th>GS</th><th>O2,5</th><th>GG</th><th>CS</th><th>1T O0,5</th></tr></thead>
