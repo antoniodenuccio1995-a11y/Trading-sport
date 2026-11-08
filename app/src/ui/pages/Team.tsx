@@ -8,6 +8,7 @@ import { PeriodSeg, periodLabel, periodSeasons, type Period } from "../component
 import { TeamHalves } from "../sections/Halves";
 import { HistoryRankChart, SeasonRankChart } from "../sections/RankCharts";
 import { StatTable } from "../sections/StatTable";
+import { TeamBadge } from "../components/badge";
 import { href, type Route } from "../router";
 import { Results } from "./League";
 
@@ -50,6 +51,7 @@ export function Team({ route }: { route: Route }) {
   return (
     <>
       <div class="page-head">
+        <TeamBadge id={id} size={48} />
         <h1>{team.name}</h1>
         <span class="sub">{leagues.map((l) => leagueName(l)).join(" · ")}</span>
         <select class="input" aria-label="Stagione" value={season} onChange={(e) => { location.hash = href(["squadra", id], { s: (e.target as HTMLSelectElement).value }); }}>

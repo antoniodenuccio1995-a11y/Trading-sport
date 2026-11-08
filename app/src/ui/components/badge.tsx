@@ -37,7 +37,7 @@ export function TeamBadge({ id, size = 22 }: { id: number; size?: number }) {
       onError={() => setFailed(true)} />;
   }
   return (
-    <span class="crest fallback" style={`width:${size}px;height:${size}px;background:${flagGradient(t.country)};font-size:${Math.round(size * 0.38)}px`} aria-hidden="true">
+    <span class="crest fallback" style={`width:${size}px;height:${size}px;background:${flagGradient(t.country)};font-size:${Math.max(8, Math.round(size * 0.42))}px`} aria-hidden="true">
       <b>{initials(t.name)}</b>
     </span>
   );

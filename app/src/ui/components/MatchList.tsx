@@ -5,6 +5,8 @@ import { leagueAll, matchForecast } from "../../stats/derived";
 import { pct, teamAgg, teamMatches } from "../../stats/team";
 import { href } from "../router";
 import { fmtPct, heat } from "./common";
+import { Flag, TeamBadge } from "./badge";
+import { getStore } from "../../data/store";
 
 /** Percentuale combinata stile soccerstats: casa (in casa) + ospite (in trasferta), stagione corrente. */
 function combined(m: Match) {
@@ -27,11 +29,11 @@ export function MatchRow({ m }: { m: Match }) {
   return (
     <a class="mrow" href={link} aria-label={`${teamName(m.h)} contro ${teamName(m.a)}`}>
       <span class="num muted">{kickoffTime(m.ko)}</span>
-      <span class="home">{teamName(m.h)}</span>
+      <span class="home"><span>{teamName(m.h)}</span><TeamBadge id={m.h} size={20} /></span>
       {done
         ? <span><div class="score ft">{m.fh}–{m.fa}</div>{m.hh !== null && <div class="ht">1T {m.hh}–{m.ha}</div>}</span>
         : <span class="score">{m.oh ? `${m.oh.toFixed(2)}` : "vs"}</span>}
-      <span class="away">{teamName(m.a)}</span>
+      <span class="away"><TeamBadge id={m.a} size={20} /><span>{teamName(m.a)}</span></span>
       {(["home", "draw", "away"] as const).map((k) => {
         const best = fc && fc[k] === Math.max(fc.home, fc.draw, fc.away);
         return <span key={k} class={`q opt${best ? " best" : ""}`} title={`Probabilità ${k === "home" ? "vittoria casa" : k === "draw" ? "pareggio" : "vittoria ospite"} (modello)`}>{fc ? fmtPct(fc[k] * 100) : "—"}</span>;
@@ -60,7 +62,7 @@ export function MatchGroups({ matches, order }: { matches: Match[]; order: strin
     <>
       {keys.map((lg) => (
         <section key={lg} class="card flush mgroup">
-          <div class="card-h"><a href={href(["lega", lg])}>{leagueName(lg)}</a><span class="spacer" /><span class="muted" style="font-weight:400;font-size:12px">{groups.get(lg)!.length} partite</span></div>
+          <div class="card-h"><Flag country={getStore().leagueByCode.get(lg)?.country ?? ""} size={14} /><a href={href(["lega", lg])}>{leagueName(lg)}</a><span class="spacer" /><span class="muted" style="font-weight:400;font-size:12px">{groups.get(lg)!.length} partite</span></div>
           <MatchHead />
           {groups.get(lg)!.map((m) => <MatchRow key={m.id} m={m} />)}
         </section>

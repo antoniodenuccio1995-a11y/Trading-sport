@@ -101,9 +101,14 @@ select public.ta_call_sync('{"mode":"publish"}'::jsonb);
 - Storico per stagione e categoria: la nazione come piramide (Serie A sopra, Serie B sotto), con promozioni e retrocessioni (↑ ↓), zone dentro ogni fascia e riepilogo per stagione.
 - Periodo di analisi (stagione, stagione precedente, ultime 3, tutto lo storico) nelle statistiche e in Gol e tempi; tabella "questa stagione rispetto allo storico" con frecce ▲▼.
 
+### v1.3
+- **Registro trade** (menu "📒 Registro trade", solo dopo l'accesso: i trade stanno nell'account Supabase, tabella `ta_user_data`, tipo `trade`). Nuovo trade, modifica, chiusura con un clic quando la partita è finita (esito proposto dal risultato), capitale e limiti (stake consigliato, perdita massima giornaliera), profitto cumulato, CLV con la quota di chiusura dell'archivio, riepilogo per mercato e campionato, esportazione CSV. Il pulsante "＋ Trade" nella scheda mercato della partita apre il modulo già compilato.
+- **Stemmi**: cercati su TheSportsDB (gratuito) dalla funzione `ta-sync` in modalità `logos`, a piccoli blocchi (`ta_logos_tick`, ogni 2–3 minuti finché ci sono squadre da controllare, poi una volta al giorno alle 04:20 UTC). Se manca lo stemma: cerchio con i colori della nazione e le iniziali.
+- **Pulsante "↻ Aggiorna"** nella barra in alto: chiama `ta_request_refresh` (al massimo una volta ogni 10 minuti per tutti), che scarica le fonti e ripubblica i dati; l'app controlla il manifest ogni 10 secondi e si aggiorna da sola. Gli aggiornamenti automatici restano due al giorno.
+- Grafici che si adattano alla larghezza (leggibili da telefono), nessuno scorrimento orizzontale della pagina su schermi stretti, numeri con la virgola nel registro.
+
 ## Cosa manca (prossime fasi)
 
-- Inserimento e chiusura dei trade nell'app; ora il registro è in sola lettura.
 - Scanner dei mercati, strategie e backtest, validazione cronologica.
 - Sezione Temi con scelta dei colori: i colori sono già variabili CSS e ora si possono scegliere chiaro, scuro o automatico.
 - Scanner dei mercati, giudizi 0–100, diario di prova, registro automatico delle previsioni, comparatore libero tra due squadre, forza degli avversari affrontati.

@@ -13,6 +13,7 @@ import { MatchHalves } from "../sections/Halves";
 import { MarketCompare } from "../sections/Market";
 import { HistoryRankChart, SeasonRankChart } from "../sections/RankCharts";
 import { StandingsTable } from "../sections/StandingsTable";
+import { TeamBadge } from "../components/badge";
 import { StatTable } from "../sections/StatTable";
 
 const TABS: [string, string][] = [["panoramica", "Panoramica e mercato"], ["statistiche", "Statistiche"], ["tempi", "Gol e tempi"], ["classifica", "Classifica"], ["forma", "Forma e precedenti"]];
@@ -37,9 +38,9 @@ function Analysis({ m, tab }: { m: M; tab: string }) {
       <p class="muted" style="margin:0 0 8px"><a href={href(["lega", m.lg], { s: m.s })}>{leagueName(m.lg)}</a> · {m.s} · {dayLong(m.d)} · ore {kickoffTime(m.ko)}</p>
       <Card>
         <div class="vs">
-          <div><div class="tn"><TeamLink id={m.h} season={m.s} /></div><div class="muted">{posH ? `${posH.pos}° · ${posH.pts} pt` : ""} <Form list={posH?.form ?? []} /></div></div>
+          <div><TeamBadge id={m.h} size={64} /><div class="tn"><TeamLink id={m.h} season={m.s} badge={false} /></div><div class="muted">{posH ? `${posH.pos}° · ${posH.pts} pt` : ""} <Form list={posH?.form ?? []} /></div></div>
           <div class="big">{done ? `${m.fh} – ${m.fa}` : "vs"}{done && m.hh !== null && <div class="muted" style="font-size:13px;font-weight:600">1° tempo {m.hh}–{m.ha}</div>}</div>
-          <div><div class="tn"><TeamLink id={m.a} season={m.s} /></div><div class="muted">{posA ? `${posA.pos}° · ${posA.pts} pt` : ""} <Form list={posA?.form ?? []} /></div></div>
+          <div><TeamBadge id={m.a} size={64} /><div class="tn"><TeamLink id={m.a} season={m.s} badge={false} /></div><div class="muted">{posA ? `${posA.pos}° · ${posA.pts} pt` : ""} <Form list={posA?.form ?? []} /></div></div>
         </div>
         {fc && (
           <div class="bar3" style="margin-top:14px" role="img" aria-label={`Modello: 1 ${fmtPct(fc.home * 100)}, X ${fmtPct(fc.draw * 100)}, 2 ${fmtPct(fc.away * 100)}`}>

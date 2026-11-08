@@ -6,7 +6,7 @@ import { pyramid, type Pyramid } from "../../stats/pyramid";
 import { rankTimeline } from "../../stats/timeline";
 import type { Venue } from "../../stats/team";
 import { ZONE_NOTE, zones } from "../../stats/zones";
-import { Legend, PALETTE, RankChart, ZoneLegend } from "../components/charts";
+import { Legend, PALETTE, RankChart, ZoneLegend, useChartWidth } from "../components/charts";
 import { Seg } from "../components/common";
 
 /** Posizione settimana per settimana nella stagione, per le squadre indicate. */
@@ -46,13 +46,16 @@ export function HistoryRankChart({ teams }: { teams: number[] }) {
 }
 
 function PyramidChart({ p, colorOf }: { p: Pyramid; colorOf: (team: number) => string }) {
-  const W = 720, H = Math.max(220, Math.min(420, 120 + p.max * 5.2)), m = { l: 92, r: 40, t: 12, b: 26 };
+  const [box, W] = useChartWidth();
+  const narrow = W < 480;
+  const H = Math.max(220, Math.min(420, 120 + p.max * 5.2)), m = { l: 92, r: narrow ? 24 : 40, t: 12, b: 26 };
   const iw = W - m.l - m.r, ih = H - m.t - m.b;
   const X = (i: number) => m.l + (p.seasons.length <= 1 ? iw / 2 : (iw * i) / (p.seasons.length - 1));
   const Y = (y: number) => m.t + ((y - 1) / Math.max(1, p.max - 1)) * ih;
   return (
     <div>
       <Legend items={p.teams.map((t) => ({ name: teamName(t.team), color: colorOf(t.team) }))} />
+      <div ref={box} class="chart-box">
       <svg class="chart" viewBox={`0 0 ${W} ${H}`} role="img" aria-label="Posizione per stagione nelle categorie nazionali">
         {p.bands.map((b, i) => {
           const half = (ih / p.max) / 2, y0 = Y(b.from) - half, y1 = Y(b.to) + half;
@@ -75,7 +78,7 @@ function PyramidChart({ p, colorOf }: { p: Pyramid; colorOf: (team: number) => s
             </g>
           );
         })}
-        {p.seasons.map((s, i) => <text key={s} x={X(i)} y={H - 8} text-anchor="middle" class="tick">{s}</text>)}
+        {p.seasons.map((s, i) => <text key={s} x={X(i)} y={H - 8} text-anchor="middle" class="tick">{narrow && /^\d{4}\//.test(s) ? s.slice(2) : s}</text>)}
         {p.teams.map((t) => {
           const pts = t.cells.map((c, i) => (c.y === null ? null : [X(i), Y(c.y)] as const));
           const segs: string[] = [];
@@ -95,6 +98,7 @@ function PyramidChart({ p, colorOf }: { p: Pyramid; colorOf: (team: number) => s
           );
         })}
       </svg>
+      </div>
       <ZoneLegend zones={p.bands.flatMap((b) => zones(b.lg, b.size))} />
       <SeasonStrip p={p} colorOf={colorOf} />
       <p class="note">Ogni fascia è una categoria della stessa nazione: una linea che scende di fascia è una retrocessione, una che sale una promozione (↑ ↓). Stagione in corso: posizione attuale. "Non in archivio" indica una categoria che non seguiamo (es. Serie C).</p>

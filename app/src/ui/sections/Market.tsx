@@ -5,6 +5,11 @@ import type { Match } from "../../data/types";
 import { agreement, evBack, evLay, marketProbs, maxLay, minBack, verdict, type Quote } from "../../stats/market";
 import type { Forecast } from "../../stats/poisson";
 import { Card, Seg, fmtOdd, fmtPct, usePref } from "../components/common";
+import { hasStoredSession } from "../../data/personal";
+import { DEFAULT_SETTINGS, loadTrades, marketLabel, saveTrade, type Trade } from "../../data/trades";
+import { dayToIso } from "../../data/dates";
+import { leagueName, teamName } from "../../data/store";
+import { TradeForm, newTrade } from "../pages/Trades";
 
 type Ex = "betfair" | "betflag" | "book";
 const EX: Record<Ex, { name: string; comm: number }> = {
@@ -62,6 +67,20 @@ export function MarketCompare({ m, fc }: { m: Match; fc: Forecast }) {
   };
   const remove = async (i: number) => { const next = { ...data, snaps: data.snaps.filter((_, k) => k !== i) }; setData(next); await saveQuotes(m.id, next); };
 
+  const [adding, setAdding] = useState<Trade | null>(null);
+  const [tradeMsg, setTradeMsg] = useState("");
+  const startTrade = async (key: string, p: number | null) => {
+    if (!hasStoredSession()) { setTradeMsg("login"); return; }
+    const b = q[key]?.b ?? null, l = q[key]?.l ?? null;
+    const side: "back" | "lay" = !b && l ? "lay" : "back";
+    const set = await loadTrades().then((r) => r.settings).catch(() => DEFAULT_SETTINGS);
+    setTradeMsg("");
+    setAdding(newTrade(set, {
+      mid: m.id, mkey: key, mk: marketLabel(key), d: dayToIso(m.d), lg: leagueName(m.lg), m: `${teamName(m.h)} – ${teamName(m.a)}`,
+      side, q: (side === "lay" ? l : b) ?? (p ? Math.round((1 / p) * 100) / 100 : 2), comm: ex === "book" ? 0 : (comms[ex] ?? 5),
+      n: p ? `Modello ${Math.round(p * 100)}% · ${EX[ex].name}` : EX[ex].name,
+    }));
+  };
   const G = groups(fc);
   const diffs: number[] = [];
   return (
@@ -77,12 +96,12 @@ export function MarketCompare({ m, fc }: { m: Match; fc: Forecast }) {
         {m.bh && <button type="button" class="btn" onClick={() => fill({ "1": m.bh, X: m.bd, "2": m.ba })}>Usa Betfair (chiusura)</button>}
       </div>
       <div class="tw mkt"><table class="t">
-        <thead><tr><th class="l">Mercato</th><th>Modello</th><th>Quota equa</th><th>Back</th><th>Lay</th><th>Mercato</th><th>Differenza</th><th class="l">Lettura</th><th title="Valore atteso per 1 € a rischio, al netto della commissione">EV back</th><th title="Valore atteso per 1 € a rischio, al netto della commissione">EV lay</th></tr></thead>
+        <thead><tr><th class="l">Mercato</th><th>Modello</th><th>Quota equa</th><th>Back</th><th>Lay</th><th>Mercato</th><th>Differenza</th><th class="l">Lettura</th><th title="Valore atteso per 1 € a rischio, al netto della commissione">EV back</th><th title="Valore atteso per 1 € a rischio, al netto della commissione">EV lay</th><th></th></tr></thead>
         <tbody>
           {G.map((g) => {
             const mp = marketProbs(g.rows.map((r) => (q[r.key] ?? {}) as Quote));
             return [
-              <tr class="grp" key={g.title}><td colSpan={10}>{g.title}{mp.margin !== null ? ` · margine ${(mp.margin * 100).toFixed(1)}%` : ""}</td></tr>,
+              <tr class="grp" key={g.title}><td colSpan={11}>{g.title}{mp.margin !== null ? ` · margine ${(mp.margin * 100).toFixed(1)}%` : ""}</td></tr>,
               ...g.rows.map((r, i) => {
                 const b = q[r.key]?.b ?? null, l = q[r.key]?.l ?? null, mk = mp.probs[i];
                 const vd = r.p !== null && mk !== null ? verdict(r.p, mk) : null;
@@ -99,6 +118,7 @@ export function MarketCompare({ m, fc }: { m: Match; fc: Forecast }) {
                     <td class="l">{vd ? <Reading v={vd.v} p={r.p!} c={c} /> : r.p !== null ? <span class="muted" title="Quota minima back / massima lay perché il modello veda valore">back da {fmtOdd(minBack(r.p, c))} · lay fino a {fmtOdd(maxLay(r.p, c))}</span> : <span class="muted">dati 1° tempo assenti</span>}</td>
                     <td class={b && r.p !== null ? (evBack(r.p, b, c) >= 0 ? "pos" : "neg") : ""}>{b && r.p !== null ? ev(evBack(r.p, b, c)) : "—"}</td>
                     <td class={l && r.p !== null ? (evLay(r.p, l, c) >= 0 ? "pos" : "neg") : ""}>{l && r.p !== null && ex !== "book" ? ev(evLay(r.p, l, c)) : "—"}</td>
+                    <td><button type="button" class="mini-btn add" title="Registra questo trade" onClick={() => startTrade(r.key, r.p)}>＋ Trade</button></td>
                   </tr>
                 );
               }),
@@ -106,6 +126,12 @@ export function MarketCompare({ m, fc }: { m: Match; fc: Forecast }) {
           })}
         </tbody>
       </table></div>
+      {tradeMsg === "login" && <div class="banner">Per registrare un trade accedi dall'<a href="#/personale"><b>Area personale</b></a>: il registro trade è riservato al tuo account.</div>}
+      {tradeMsg && tradeMsg !== "login" && <div class="banner" role="status">{tradeMsg} <a href="#/registro"><b>Apri il registro trade →</b></a></div>}
+      {adding && <TradeForm isNew value={adding} onCancel={() => setAdding(null)} onSave={async (t) => {
+        try { await saveTrade(t); setAdding(null); setTradeMsg(`Trade registrato: ${t.mk}, ${t.side} a ${t.q}.`); }
+        catch (e) { setTradeMsg(`Non salvato: ${(e as Error).message}`); }
+      }} />}
       <Agreement diffs={diffs} />
       <div class="row" style="margin-top:8px">
         <label class="row" style="gap:6px">Momento

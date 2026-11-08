@@ -9,10 +9,13 @@ import {
 } from "../../data/trades";
 import { played } from "../../data/types";
 import { TeamBadge } from "../components/badge";
+import { useChartWidth } from "../components/charts";
 import { Card, Seg, fmtOdd, usePref } from "../components/common";
 import { Login, useSession } from "../components/session";
 import { href } from "../router";
 
+/** Percentuale con la virgola (0.123 → "12,3%"). */
+const pc = (v: number) => `${(v * 100).toFixed(1).replace(".", ",")}%`;
 export const eur = (v: number) => `${v >= 0 ? "+" : "−"}${Math.abs(v).toFixed(2).replace(".", ",")} €`;
 const RES: Record<string, string> = { open: "Aperto", won: "Vinto", lost: "Perso", void: "Annullato", exit: "Chiuso in anticipo" };
 
@@ -83,9 +86,9 @@ function Register() {
       <div class="tiles">
         <div class="tile accent"><b>{(set.cap + summarize(all.filter((t) => !t.sim)).pl).toFixed(2).replace(".", ",")} €</b><span>capitale attuale (iniziale {set.cap} €)</span></div>
         <div class="tile"><b class={sum.pl >= 0 ? "pos" : "neg"}>{eur(sum.pl)}</b><span>profitto netto{shown.length !== all.length ? " (filtrati)" : ""}</span></div>
-        <div class="tile"><b>{sum.risk ? `${((sum.pl / sum.risk) * 100).toFixed(1)}%` : "—"}</b><span>rendimento sul rischio</span></div>
+        <div class="tile"><b>{sum.risk ? pc(sum.pl / sum.risk) : "—"}</b><span>rendimento sul rischio</span></div>
         <div class="tile"><b>{sum.closed ? `${Math.round((sum.won / sum.closed) * 100)}%` : "—"}</b><span>trade vinti ({sum.won} su {sum.closed})</span></div>
-        <div class="tile"><b class={sum.clvAvg === null ? "" : sum.clvAvg >= 0 ? "pos" : "neg"}>{sum.clvAvg === null ? "—" : `${sum.clvAvg >= 0 ? "+" : ""}${(sum.clvAvg * 100).toFixed(1)}%`}</b><span>CLV medio ({sum.clvN} trade)</span></div>
+        <div class="tile"><b class={sum.clvAvg === null ? "" : sum.clvAvg >= 0 ? "pos" : "neg"}>{sum.clvAvg === null ? "—" : `${sum.clvAvg >= 0 ? "+" : ""}${pc(sum.clvAvg)}`}</b><span>CLV medio ({sum.clvN} trade)</span></div>
         <div class="tile"><b>{((set.cap * set.pct) / 100).toFixed(2).replace(".", ",")} €</b><span>stake consigliato ({set.pct}% del capitale)</span></div>
       </div>
       {sim.n > 0 && <p class="muted" style="margin-top:-6px">Simulati (esclusi dai totali): {sim.n} trade, {eur(sim.pl)}.</p>}
@@ -125,8 +128,8 @@ function Register() {
                   <div class="muted" style="font-size:11px">{m ? leagueName(m.lg) : t.lg}{t.sim ? " · simulato" : ""}{t.n || t.st ? ` · ${t.n || t.st}` : ""}</div></td>
                 <td class="l">{marketLabel(t.mkey, t.mk)}</td>
                 <td class="l"><span class={`pill ${t.side === "lay" ? "lay" : "back"}`}>{t.side}</span></td>
-                <td>{fmtOdd(t.q)}</td><td>{Number(t.s).toFixed(2)}</td><td>{fmtOdd(t.cl ?? null)}</td>
-                <td class={c === null ? "" : c >= 0 ? "pos" : "neg"}>{c === null ? "—" : `${c >= 0 ? "+" : ""}${(c * 100).toFixed(1)}%`}</td>
+                <td>{fmtOdd(t.q)}</td><td>{Number(t.s).toFixed(2).replace(".", ",")}</td><td>{fmtOdd(t.cl ?? null)}</td>
+                <td class={c === null ? "" : c >= 0 ? "pos" : "neg"}>{c === null ? "—" : `${c >= 0 ? "+" : ""}${pc(c)}`}</td>
                 <td class="l">
                   <select class="input slim" value={t.res} onChange={(e) => persist({ ...t, res: (e.target as HTMLSelectElement).value, exitpl: (e.target as HTMLSelectElement).value === "exit" ? (t.exitpl ?? 0) : t.exitpl })} aria-label="Esito">
                     {Object.entries(RES).map(([k, v]) => <option key={k} value={k}>{v}</option>)}
@@ -149,7 +152,7 @@ export function newTrade(set: TradeSettings, base: Partial<Trade> = {}): Trade {
 }
 
 /** Modulo nuovo trade / modifica. Si può collegare una partita dell'archivio. */
-export function TradeForm({ value, onSave, onCancel }: { value: Trade; onSave: (t: Trade) => void | Promise<void>; onCancel: () => void }) {
+export function TradeForm({ value, onSave, onCancel, isNew }: { value: Trade; onSave: (t: Trade) => void | Promise<void>; onCancel: () => void; isNew?: boolean }) {
   const [t, setT] = useState<Trade>(value);
   const [search, setSearch] = useState("");
   const [busy, setBusy] = useState(false);
@@ -170,7 +173,7 @@ export function TradeForm({ value, onSave, onCancel }: { value: Trade; onSave: (
   const num = (s: string) => Number(s.replace(",", "."));
   const pl = tradePL(t);
   return (
-    <Card title={value.m ? "Modifica trade" : "Nuovo trade"}>
+    <Card title={isNew ?? !value.m ? "Nuovo trade" : "Modifica trade"}>
       <div class="form-grid">
         <label class="span2">Partita
           {m ? <div class="row"><span class="team-link"><TeamBadge id={m.h} /><TeamBadge id={m.a} /><b>{teamName(m.h)} – {teamName(m.a)}</b></span><span class="muted">{dateShort(m.d)} · {leagueName(m.lg)}{played(m) ? ` · ${m.fh}–${m.fa}` : ""}</span><button type="button" class="mini-btn" onClick={() => upd({ mid: undefined })}>cambia</button></div>
@@ -190,7 +193,7 @@ export function TradeForm({ value, onSave, onCancel }: { value: Trade; onSave: (
         </label>
         <label>Lato<Seg<"back" | "lay"> label="Lato" value={t.side} onChange={(v) => upd({ side: v })} options={[["back", "Back (punta)"], ["lay", "Lay (banca)"]]} /></label>
         <label>Quota<input class="input" inputMode="decimal" value={String(t.q)} onInput={(e) => upd({ q: num((e.target as HTMLInputElement).value) })} /></label>
-        <label>Stake (€){t.side === "lay" && <small class="muted"> · rischio {(risk(t) || 0).toFixed(2)} €</small>}<input class="input" inputMode="decimal" value={String(t.s)} onInput={(e) => upd({ s: num((e.target as HTMLInputElement).value) })} /></label>
+        <label>Stake (€){t.side === "lay" && <small class="muted"> · rischio {(risk(t) || 0).toFixed(2).replace(".", ",")} €</small>}<input class="input" inputMode="decimal" value={String(t.s)} onInput={(e) => upd({ s: num((e.target as HTMLInputElement).value) })} /></label>
         <label>Commissione %<input class="input" inputMode="decimal" value={String(t.comm)} onInput={(e) => upd({ comm: num((e.target as HTMLInputElement).value) })} /></label>
         <label>Esito<select class="input" value={t.res} onChange={(e) => upd({ res: (e.target as HTMLSelectElement).value })}>{Object.entries(RES).map(([k, v]) => <option key={k} value={k}>{v}</option>)}</select></label>
         {t.res === "exit" && <label>P/L chiusura anticipata (€)<input class="input" inputMode="decimal" value={String(t.exitpl ?? 0)} onInput={(e) => upd({ exitpl: num((e.target as HTMLInputElement).value) })} /></label>}
@@ -223,25 +226,28 @@ function Settings({ value, onSave }: { value: TradeSettings; onSave: (v: TradeSe
 }
 
 function PLChart({ list }: { list: Trade[] }) {
+  const [box, W] = useChartWidth(1200);
   const closed = list.filter((t) => tradePL(t) !== null).sort((a, b) => a.d.localeCompare(b.d) || a.id - b.id);
   if (closed.length < 2) return <p class="muted">Il grafico compare dopo almeno due trade chiusi.</p>;
   let acc = 0;
   const pts = closed.map((t) => (acc += tradePL(t)!));
-  const W = 720, H = 200, m = { l: 46, r: 12, t: 10, b: 24 }, iw = W - m.l - m.r, ih = H - m.t - m.b;
+  const H = 200, m = { l: 58, r: 12, t: 10, b: 24 }, iw = W - m.l - m.r, ih = H - m.t - m.b;
   const lo = Math.min(0, ...pts), hi = Math.max(0, ...pts), span = hi - lo || 1;
   const X = (i: number) => m.l + (iw * i) / (pts.length - 1), Y = (v: number) => m.t + ((hi - v) / span) * ih;
   const line = pts.map((v, i) => `${X(i).toFixed(1)},${Y(v).toFixed(1)}`).join(" ");
   const area = `${X(0)},${Y(0)} ${line} ${X(pts.length - 1)},${Y(0)}`;
   const last = pts[pts.length - 1];
   return (
+    <div ref={box} class="chart-box">
     <svg class="chart" viewBox={`0 0 ${W} ${H}`} role="img" aria-label={`Profitto cumulato ${eur(last)}`}>
-      {[hi, (hi + lo) / 2, lo].map((v, i) => <g key={i}><line x1={m.l} x2={W - m.r} y1={Y(v)} y2={Y(v)} class="grid" /><text x={m.l - 6} y={Y(v) + 4} text-anchor="end" class="tick">{v.toFixed(0)} €</text></g>)}
+      {[hi, (hi + lo) / 2, lo].map((v, i) => <g key={i}><line x1={m.l} x2={W - m.r} y1={Y(v)} y2={Y(v)} class="grid" /><text x={m.l - 6} y={Y(v) + 4} text-anchor="end" class="tick">{(Math.abs(v) < 0.005 ? 0 : v).toFixed(span < 20 ? 2 : 0).replace(".", ",")} €</text></g>)}
       <line x1={m.l} x2={W - m.r} y1={Y(0)} y2={Y(0)} class="axis" />
       <polygon points={area} class={`pl-area ${last >= 0 ? "up" : "down"}`} />
       <polyline points={line} class={`line pl-line ${last >= 0 ? "up" : "down"}`} />
       <text x={X(0)} y={H - 6} class="tick">{closed[0].d.split("-").reverse().join("/")}</text>
       <text x={X(pts.length - 1)} y={H - 6} text-anchor="end" class="tick">{closed[closed.length - 1].d.split("-").reverse().join("/")}</text>
     </svg>
+    </div>
   );
 }
 
@@ -254,7 +260,7 @@ function Breakdown({ list }: { list: Trade[] }) {
   const T = ({ title, rows }: { title: string; rows: { k: string; s: ReturnType<typeof summarize> }[] }) => (
     <Card flush title={title}><div class="tw"><table class="t">
       <thead><tr><th class="l">{title === "Per mercato" ? "Mercato" : "Campionato"}</th><th>Trade</th><th>Vinti</th><th>P/L</th><th>Rendimento</th></tr></thead>
-      <tbody>{rows.map(({ k, s }) => <tr key={k}><td class="l">{k}</td><td>{s.n}</td><td>{s.closed ? `${Math.round((s.won / s.closed) * 100)}%` : "—"}</td><td class={s.pl >= 0 ? "pos" : "neg"}>{eur(s.pl)}</td><td>{s.risk ? `${((s.pl / s.risk) * 100).toFixed(1)}%` : "—"}</td></tr>)}</tbody>
+      <tbody>{rows.map(({ k, s }) => <tr key={k}><td class="l">{k}</td><td>{s.n}</td><td>{s.closed ? `${Math.round((s.won / s.closed) * 100)}%` : "—"}</td><td class={s.pl >= 0 ? "pos" : "neg"}>{eur(s.pl)}</td><td>{s.risk ? pc(s.pl / s.risk) : "—"}</td></tr>)}</tbody>
     </table></div></Card>
   );
   return <div class="grid2"><T title="Per mercato" rows={group((t) => marketLabel(t.mkey, t.mk))} /><T title="Per campionato" rows={group((t) => t.lg)} /></div>;

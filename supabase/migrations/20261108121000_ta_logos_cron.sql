@@ -16,3 +16,10 @@ end $$;
 revoke execute on function public.ta_logos_tick() from public, anon, authenticated;
 
 select cron.schedule('ta-logos', '*/2 * * * *', $$select public.ta_logos_tick()$$);
+
+-- 2026-11-08: TheSportsDB indica i Paesi Bassi come "The Netherlands" e le gallesi come "Wales":
+-- stemmi olandesi recuperati a mano, gli altri rimessi in coda (la funzione ora conosce i nomi alternativi).
+-- update public.ta_teams set logo_checked_at = null where logo is null;
+-- select cron.schedule('ta-logos', '*/3 * * * *', $$select public.ta_logos_tick()$$);
+-- 2026-11-08 (2): le risposte di blocco del servizio (403/5xx, pagina HTML) venivano lette come "stemma assente";
+-- funzione corretta (ora riprova più tardi) e squadre senza stemma rimesse in coda con lo stesso comando qui sopra.

@@ -183,36 +183,46 @@ async function publish(force = false) {
 }
 
 // --- loghi delle squadre (TheSportsDB, servizio gratuito: poche richieste al minuto) ---
-const COUNTRY: Record<string, string> = {
-  ITA: "Italy", ENG: "England", ESP: "Spain", FRA: "France", GER: "Germany", NED: "Netherlands", POR: "Portugal",
-  DNK: "Denmark", ROU: "Romania", CRO: "Croatia", GRE: "Greece", NOR: "Norway", BEL: "Belgium", TUR: "Turkey",
-  AUT: "Austria", SVK: "Slovakia", AZE: "Azerbaijan", UKR: "Ukraine", CZE: "Czech Republic", SCO: "Scotland",
+// Nomi dei paesi usati da TheSportsDB (alcune squadre giocano nel campionato di un altro paese: Galles, Monaco, Andorra).
+const COUNTRY: Record<string, string[]> = {
+  ITA: ["Italy"], ENG: ["England", "Wales"], ESP: ["Spain", "Andorra"], FRA: ["France", "Monaco"], GER: ["Germany"],
+  NED: ["The Netherlands", "Netherlands", "Holland"], POR: ["Portugal"], DNK: ["Denmark"], ROU: ["Romania"], CRO: ["Croatia"],
+  GRE: ["Greece"], NOR: ["Norway"], BEL: ["Belgium"], TUR: ["Turkey"], AUT: ["Austria"], SVK: ["Slovakia"], AZE: ["Azerbaijan"],
+  UKR: ["Ukraine"], CZE: ["Czech Republic", "Czechia"], SCO: ["Scotland"],
 };
 const TSDB_KEYS = ["123", "3"];
+// Nomi con cui TheSportsDB conosce squadre che le fonti abbreviano (solo per la ricerca dello stemma).
+const SEARCH_AS: Record<string, string[]> = {
+  "Univ. Craiova": ["Universitatea Craiova"], "FC Rapid Bucuresti": ["Rapid Bucuresti"], "Concordia": ["Concordia Chiajna"],
+  "Metaloglobus Bucharest": ["Metaloglobus"], "Ferrol": ["Racing Ferrol"], "Gorica": ["HNK Gorica"], "Horsens": ["AC Horsens"],
+  "Midtjylland": ["FC Midtjylland"], "Nacional": ["CD Nacional"],
+};
 const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));
 const norm = (x: string) => x.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
 
 type TsdbTeam = { strTeam?: string; strAlternate?: string; strSport?: string; strCountry?: string; strBadge?: string; strTeamBadge?: string };
 async function tsdbSearch(name: string): Promise<{ teams: TsdbTeam[]; limited: boolean }> {
   for (const key of TSDB_KEYS) {
-    const res = await fetch(`https://www.thesportsdb.com/api/v1/json/${key}/searchteams.php?t=${encodeURIComponent(name)}`);
-    if (res.status === 429) return { teams: [], limited: true };
+    const res = await fetch(`https://www.thesportsdb.com/api/v1/json/${key}/searchteams.php?t=${encodeURIComponent(name)}`).catch(() => null);
+    // 429 o pagina di blocco (Cloudflare 1015 risponde 403/503 con HTML): riprovare più tardi, non "stemma assente".
+    if (!res || res.status === 429 || res.status === 403 || res.status >= 500) return { teams: [], limited: true };
     if (!res.ok) continue;
     const j = await res.json().catch(() => null) as { teams?: TsdbTeam[] | null } | null;
     if (j && "teams" in j) return { teams: j.teams ?? [], limited: false };
+    if (!j) return { teams: [], limited: true };
   }
   return { teams: [], limited: false };
 }
 
 function pickBadge(cands: TsdbTeam[], name: string, country: string): string | null {
-  const want = COUNTRY[country], n = norm(name);
+  const want = COUNTRY[country] ?? [], n = norm(name);
   let best: { s: number; url: string } | null = null;
   for (const t of cands) {
     const url = t.strBadge || t.strTeamBadge;
     if (!url || (t.strSport && t.strSport !== "Soccer")) continue;
     const tn = norm(t.strTeam ?? "");
     if (/(women|femen|femin|ladies|u1[0-9]|u2[0-3]|reserves|youth)/.test(tn)) continue;
-    let s = want && t.strCountry === want ? 10 : 0;
+    let s = t.strCountry && want.includes(t.strCountry) ? 10 : 0;
     const alts = [tn, ...(t.strAlternate ?? "").split(",").map(norm)].filter(Boolean);
     if (alts.includes(n)) s += 5; else if (alts.some((a) => a.includes(n) || n.includes(a))) s += 2;
     if (s >= 10 && (!best || s > best.s)) best = { s, url };
@@ -228,7 +238,8 @@ async function syncLogos(limit = 12) {
   let found = 0, checked = 0, limited = false;
   for (const t of teams ?? []) {
     const { data: al } = await db.from("ta_team_aliases").select("alias").eq("team_country", t.country).eq("team_name", t.name);
-    const names = [...new Set([t.name, ...(al ?? []).map((a: { alias: string }) => a.alias)])].sort((a, b) => b.length - a.length).slice(0, 3);
+    const known = [...new Set([t.name, ...(al ?? []).map((a: { alias: string }) => a.alias)])].sort((a, b) => b.length - a.length);
+    const names = [...new Set([...(SEARCH_AS[t.name] ?? []), ...known])].slice(0, 3);
     let logo: string | null = null;
     for (const n of names) {
       const r = await tsdbSearch(n);

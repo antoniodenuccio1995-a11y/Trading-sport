@@ -1,6 +1,26 @@
 // Grafici SVG leggeri: seguono i colori del tema (variabili CSS) e si adattano alla larghezza.
 import type { ComponentChildren } from "preact";
+import { useLayoutEffect, useState } from "preact/hooks";
 import type { Zone } from "../../stats/zones";
+
+/**
+ * Larghezza reale del contenitore, così sul telefono il grafico non viene rimpicciolito
+ * (le scritte restano della loro dimensione). Oltre `max` il disegno viene solo ingrandito.
+ */
+export function useChartWidth(max = 720): [(el: HTMLDivElement | null) => void, number] {
+  const [el, setEl] = useState<HTMLDivElement | null>(null);
+  const [w, setW] = useState(max);
+  useLayoutEffect(() => {
+    if (!el) return;
+    const upd = () => { const cw = el.clientWidth; if (cw > 0) setW(Math.max(300, Math.min(max, Math.round(cw)))); };
+    upd();
+    if (typeof ResizeObserver === "undefined") return;
+    const ro = new ResizeObserver(upd);
+    ro.observe(el);
+    return () => ro.disconnect();
+  }, [el, max]);
+  return [setEl, w];
+}
 
 export const PALETTE = ["var(--c1)", "var(--c2)", "var(--c3)", "var(--c4)", "var(--c5)", "var(--c6)"];
 
@@ -10,7 +30,8 @@ export interface Series { name: string; color: string; values: (number | null)[]
 export function RankChart({ x, series, max, zones = [], height = 260, label }: {
   x: string[]; series: Series[]; max: number; zones?: Zone[]; height?: number; label: string;
 }) {
-  const W = 720, H = height, m = { l: 34, r: 30, t: 12, b: 26 };
+  const [box, W] = useChartWidth();
+  const H = height, m = { l: 34, r: 30, t: 12, b: 26 };
   const iw = W - m.l - m.r, ih = H - m.t - m.b, top = Math.max(2, max);
   const X = (i: number) => m.l + (x.length <= 1 ? iw / 2 : (iw * i) / (x.length - 1));
   const Y = (r: number) => m.t + ((r - 1) / (top - 1)) * ih;
@@ -22,10 +43,11 @@ export function RankChart({ x, series, max, zones = [], height = 260, label }: {
     ticks.push(top);
   }
   const xt = new Set<number>();
-  const nx = Math.min(6, x.length);
+  const nx = Math.min(W < 480 ? 4 : 6, x.length);
   for (let k = 0; k < nx; k++) xt.add(Math.round((k * (x.length - 1)) / Math.max(1, nx - 1)));
   const band = ih / (top - 1);
   return (
+    <div ref={box} class="chart-box">
     <svg class="chart" viewBox={`0 0 ${W} ${H}`} role="img" aria-label={label}>
       {zones.map((z) => {
         const y0 = Math.max(m.t - band / 2, Y(z.from) - band / 2), y1 = Math.min(m.t + ih + band / 2, Y(z.to) + band / 2);
@@ -63,6 +85,7 @@ export function RankChart({ x, series, max, zones = [], height = 260, label }: {
         );
       })}
     </svg>
+    </div>
   );
 }
 

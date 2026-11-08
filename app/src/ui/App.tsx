@@ -8,7 +8,7 @@ import { Personal } from "./pages/Personal";
 import { Team } from "./pages/Team";
 import { TradesPage } from "./pages/Trades";
 import { requestServerRefresh } from "../data/store";
-import { Flag } from "./components/badge";
+import { Flag, TeamBadge } from "./components/badge";
 import { go, href, useRoute } from "./router";
 
 type Theme = "auto" | "light" | "dark";
@@ -95,8 +95,8 @@ function Search() {
     const n = norm(q.trim());
     if (n.length < 2) return [];
     const teams = [...s.teams.values()].filter((t) => s.byTeam.has(t.id) && norm(t.name).includes(n)).slice(0, 8)
-      .map((t) => ({ label: t.name, sub: t.country, to: href(["squadra", t.id]) }));
-    const lgs = s.leagues.filter((l) => norm(l.name).includes(n)).slice(0, 4).map((l) => ({ label: l.name, sub: l.countryName, to: href(["lega", l.code]) }));
+      .map((t) => ({ label: t.name, sub: t.country, to: href(["squadra", t.id]), team: t.id }));
+    const lgs = s.leagues.filter((l) => norm(l.name).includes(n)).slice(0, 4).map((l) => ({ label: l.name, sub: l.countryName, to: href(["lega", l.code]), team: 0 }));
     return [...lgs, ...teams];
   }, [q, s.teams, s.leagues]);
   const open = (to: string) => { setQ(""); location.hash = to; };
@@ -110,7 +110,7 @@ function Search() {
           else if (e.key === "Enter" && hits[sel]) open(hits[sel].to);
           else if (e.key === "Escape") setQ("");
         }} />
-      {hits.length > 0 && <ul role="listbox">{hits.map((h, i) => <li key={h.to}><a class={i === sel ? "sel" : ""} href={h.to} onClick={() => setQ("")}>{h.label}<span class="muted">{h.sub}</span></a></li>)}</ul>}
+      {hits.length > 0 && <ul role="listbox">{hits.map((h, i) => <li key={h.to}><a class={i === sel ? "sel" : ""} href={h.to} onClick={() => setQ("")}><span class="team-link">{h.team ? <TeamBadge id={h.team} size={18} /> : null}<span>{h.label}</span></span><span class="muted">{h.sub}</span></a></li>)}</ul>}
     </div>
   );
 }
