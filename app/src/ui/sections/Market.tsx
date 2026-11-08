@@ -78,7 +78,7 @@ export function MarketCompare({ m, fc }: { m: Match; fc: Forecast }) {
     setAdding(newTrade(set, {
       mid: m.id, mkey: key, mk: marketLabel(key), d: dayToIso(m.d), lg: leagueName(m.lg), m: `${teamName(m.h)} – ${teamName(m.a)}`,
       side, q: (side === "lay" ? l : b) ?? (p ? Math.round((1 / p) * 100) / 100 : 2), comm: ex === "book" ? 0 : (comms[ex] ?? 5),
-      n: p ? `Modello ${Math.round(p * 100)}% · ${EX[ex].name}` : EX[ex].name,
+      st: "Da analisi partita", n: p ? `Modello ${Math.round(p * 100)}% · ${EX[ex].name}` : EX[ex].name,
     }));
   };
   const G = groups(fc);

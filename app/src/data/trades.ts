@@ -107,6 +107,65 @@ export function summarize(list: Trade[]): Summary {
   };
 }
 
+/** Calo massimo del profitto cumulato (dal punto più alto al più basso successivo), in euro. */
+export function maxDrawdown(list: Trade[]): number {
+  let cum = 0, peak = 0, dd = 0;
+  for (const t of [...list].filter((x) => tradePL(x) !== null).sort((a, b) => a.d.localeCompare(b.d) || a.id - b.id)) {
+    cum += tradePL(t)!;
+    peak = Math.max(peak, cum);
+    dd = Math.max(dd, peak - cum);
+  }
+  return dd;
+}
+
+// --- filtri del registro (gli stessi della v0.3, più lato e periodo) ---
+export const NO_STRATEGY = "(senza strategia)";
+export const strategyOf = (t: Trade) => (t.st ?? "").trim() || NO_STRATEGY;
+export const marketOf = (t: Trade) => marketLabel(t.mkey, t.mk) || "—";
+
+export type Period = "all" | "7" | "30" | "month" | "year" | "custom";
+export interface TradeFilter {
+  stato: "all" | "open" | "closed"; res: string; tipo: "" | "real" | "sim"; side: "" | "back" | "lay";
+  lg: string; st: string; mk: string; per: Period; from: string; to: string; q: string;
+}
+export const NO_FILTER: TradeFilter = { stato: "all", res: "", tipo: "", side: "", lg: "", st: "", mk: "", per: "all", from: "", to: "", q: "" };
+export const PERIODS: [Period, string][] = [["all", "Tutto"], ["7", "Ultimi 7 giorni"], ["30", "Ultimi 30 giorni"], ["month", "Mese corrente"], ["year", "Anno corrente"], ["custom", "Date a scelta"]];
+
+/** Intervallo di date (yyyy-mm-dd, estremi inclusi) del periodo; stringa vuota = nessun limite. */
+export function periodRange(f: Pick<TradeFilter, "per" | "from" | "to">, today: string): [string, string] {
+  const back = (n: number) => new Date(Date.parse(`${today}T12:00:00Z`) - n * 86400000).toISOString().slice(0, 10);
+  switch (f.per) {
+    case "7": return [back(6), ""];
+    case "30": return [back(29), ""];
+    case "month": return [`${today.slice(0, 7)}-01`, ""];
+    case "year": return [`${today.slice(0, 4)}-01-01`, ""];
+    case "custom": return [f.from, f.to];
+    default: return ["", ""];
+  }
+}
+
+/** Filtri senza lo stato (aperti/chiusi): servono anche per contare i trade di ogni stato. */
+export function filterTrades(list: Trade[], f: TradeFilter, today: string, withState = true): Trade[] {
+  const [lo, hi] = periodRange(f, today);
+  const q = f.q.trim().toLowerCase();
+  return list.filter((t) => {
+    const closed = tradePL(t) !== null;
+    if (withState && f.stato !== "all" && (f.stato === "closed") !== closed) return false;
+    if (f.res && t.res !== f.res) return false;
+    if (f.tipo && (f.tipo === "sim") !== !!t.sim) return false;
+    if (f.side && t.side !== f.side) return false;
+    if (f.lg && t.lg !== f.lg) return false;
+    if (f.st && strategyOf(t) !== f.st) return false;
+    if (f.mk && marketOf(t) !== f.mk) return false;
+    if (lo && t.d < lo) return false;
+    if (hi && t.d > hi) return false;
+    return !q || `${t.m} ${t.lg} ${t.mk} ${t.n ?? ""} ${t.st ?? ""}`.toLowerCase().includes(q);
+  });
+}
+/** Quanti filtri sono attivi (lo stato aperti/chiusi non conta: è sempre visibile). */
+export const activeFilters = (f: TradeFilter) =>
+  (["res", "tipo", "side", "lg", "st", "mk", "q"] as const).filter((k) => f[k]).length + (f.per !== "all" ? 1 : 0);
+
 // --- persistenza (solo account) ---
 async function uid() {
   const s = await getSession();
@@ -142,8 +201,8 @@ export async function saveSettings(v: TradeSettings) {
 }
 
 export function tradesCsv(list: Trade[]): string {
-  const head = ["data", "campionato", "partita", "mercato", "lato", "quota", "stake", "commissione_pct", "esito", "pl_netto", "quota_chiusura", "clv_pct", "simulato", "note"];
+  const head = ["data", "campionato", "partita", "mercato", "lato", "quota", "stake", "commissione_pct", "esito", "pl_netto", "quota_chiusura", "clv_pct", "simulato", "strategia", "note"];
   const q = (x: unknown) => `"${String(x ?? "").replace(/"/g, '""')}"`;
-  const rows = list.map((t) => [t.d, t.lg, t.m, t.mk, t.side, t.q, t.s, t.comm, t.res, tradePL(t)?.toFixed(2) ?? "", t.cl ?? "", clv(t) === null ? "" : (clv(t)! * 100).toFixed(1), t.sim ? "sì" : "", t.n || t.st || ""]);
+  const rows = list.map((t) => [t.d, t.lg, t.m, t.mk, t.side, t.q, t.s, t.comm, t.res, tradePL(t)?.toFixed(2) ?? "", t.cl ?? "", clv(t) === null ? "" : (clv(t)! * 100).toFixed(1), t.sim ? "sì" : "", t.st ?? "", t.n ?? ""]);
   return [head, ...rows].map((r) => r.map(q).join(";")).join("\r\n");
 }

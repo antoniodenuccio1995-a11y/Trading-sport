@@ -18,6 +18,7 @@ html = html
   .replace(/<script type="module"[^>]*src="[^"]+"[^>]*><\/script>/, () => "")
   .replace(/<link rel="stylesheet"[^>]*href="[^"]+"[^>]*>/g, () => "")
   .replace(/<link rel="manifest"[^>]*>/, "")
+  .replace(/<link rel="apple-touch-icon"[^>]*>/, "")
   .replace(/<link rel="modulepreload"[^>]*>/g, "")
   .replace(/href="\.\/icon\.svg"/, () => `href="${icon}"`)
   .replace("</head>", () => `<style>${style}</style>\n</head>`)

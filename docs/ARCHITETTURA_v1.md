@@ -106,6 +106,7 @@ select public.ta_call_sync('{"mode":"publish"}'::jsonb);
 - **Stemmi**: cercati su TheSportsDB (gratuito) dalla funzione `ta-sync` in modalità `logos`, a piccoli blocchi (`ta_logos_tick`, ogni 2–3 minuti finché ci sono squadre da controllare, poi una volta al giorno alle 04:20 UTC). Se manca lo stemma: cerchio con i colori della nazione e le iniziali.
 - **Pulsante "↻ Aggiorna"** nella barra in alto: chiama `ta_request_refresh` (al massimo una volta ogni 10 minuti per tutti), che scarica le fonti e ripubblica i dati; l'app controlla il manifest ogni 10 secondi e si aggiorna da sola. Gli aggiornamenti automatici restano due al giorno.
 - Grafici che si adattano alla larghezza (leggibili da telefono), nessuno scorrimento orizzontale della pagina su schermi stretti, numeri con la virgola nel registro.
+- 1.3.1 · Filtri del registro come nella v0.3, più lato e date a scelta: periodo, esito, tipo (reali/simulati), lato, campionato, strategia, mercato, ricerca, aperti/chiusi con i conteggi. Valgono per riepilogo, grafico, elenco, tabelle ed esportazione CSV e restano salvati sul dispositivo. Curva per strategia, calo massimo, riepilogo per strategia e per lato; strategia e note di nuovo separate. Icone PNG per installare l'app sulla schermata Home (iPhone e Android).
 
 ## Cosa manca (prossime fasi)
 

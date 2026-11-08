@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 import type { Match } from "../src/data/types";
-import { clv, guessMarket, selectionWon, summarize, tradesCsv } from "../src/data/trades";
+import { NO_FILTER, activeFilters, clv, filterTrades, guessMarket, maxDrawdown, periodRange, selectionWon, strategyOf, summarize, tradesCsv } from "../src/data/trades";
 import type { Trade } from "../src/data/personal";
 
 const m = (fh: number, fa: number, hh: number | null, ha: number | null): Match => ({
@@ -48,5 +48,47 @@ describe("trade", () => {
     expect([s.n, s.open, s.closed, s.won]).toEqual([3, 1, 2, 1]);
     expect(s.pl).toBeCloseTo(9.5 - 10);
     expect(tradesCsv(list).split("\r\n").length).toBe(4);
+  });
+});
+
+describe("filtri del registro", () => {
+  const list = [
+    t({ id: 1, d: "2026-11-08", res: "won", lg: "Serie A", st: "Over HT", mk: "Over 0,5 1° tempo", mkey: "o05h1" }),
+    t({ id: 2, d: "2026-11-02", res: "lost", lg: "Serie B", side: "lay", sim: 1 }),
+    t({ id: 3, d: "2026-10-01", res: "open", lg: "Serie A", m: "Inter – Milan", n: "derby" }),
+    t({ id: 4, d: "2025-12-31", res: "void", lg: "Premier League", st: "Over HT" }),
+  ];
+  const ids = (f: Partial<typeof NO_FILTER>, withState = true) => filterTrades(list, { ...NO_FILTER, ...f }, "2026-11-08", withState).map((x) => x.id);
+  it("stato, esito, tipo, lato", () => {
+    expect(ids({})).toEqual([1, 2, 3, 4]);
+    expect(ids({ stato: "open" })).toEqual([3]);
+    expect(ids({ stato: "closed" })).toEqual([1, 2, 4]);
+    expect(ids({ stato: "open" }, false)).toEqual([1, 2, 3, 4]);
+    expect(ids({ res: "won" })).toEqual([1]);
+    expect(ids({ tipo: "sim" })).toEqual([2]);
+    expect(ids({ tipo: "real" })).toEqual([1, 3, 4]);
+    expect(ids({ side: "lay" })).toEqual([2]);
+  });
+  it("campionato, strategia, mercato, ricerca", () => {
+    expect(ids({ lg: "Serie A" })).toEqual([1, 3]);
+    expect(ids({ st: "Over HT" })).toEqual([1, 4]);
+    expect(ids({ st: strategyOf(list[1]) })).toEqual([2, 3]);
+    expect(ids({ mk: "Over 0,5 1° tempo" })).toEqual([1]);
+    expect(ids({ q: "derby" })).toEqual([3]);
+    expect(ids({ q: "inter" })).toEqual([3]);
+  });
+  it("periodi", () => {
+    expect(periodRange({ per: "7", from: "", to: "" }, "2026-11-08")).toEqual(["2026-11-02", ""]);
+    expect(ids({ per: "7" })).toEqual([1, 2]);
+    expect(ids({ per: "month" })).toEqual([1, 2]);
+    expect(ids({ per: "year" })).toEqual([1, 2, 3]);
+    expect(ids({ per: "custom", from: "2025-01-01", to: "2026-10-31" })).toEqual([3, 4]);
+    expect(activeFilters({ ...NO_FILTER, stato: "open" })).toBe(0);
+    expect(activeFilters({ ...NO_FILTER, lg: "Serie A", per: "30" })).toBe(2);
+  });
+  it("calo massimo", () => {
+    const l = [t({ id: 1, d: "2026-11-01", res: "won" }), t({ id: 2, d: "2026-11-02", res: "lost" }), t({ id: 3, d: "2026-11-03", res: "lost" }), t({ id: 4, d: "2026-11-04", res: "won" })];
+    expect(maxDrawdown(l)).toBeCloseTo(20);
+    expect(maxDrawdown([])).toBe(0);
   });
 });
