@@ -3,6 +3,8 @@
 //   {mode:'league', league:'I1', scope:'current'|'all'}  risultati + calendario di una lega
 //   {mode:'fixtures'}                                     quote pre-partita da football-data (fixtures.csv)
 //   {mode:'publish'}                                      pubblica le istantanee per l'app nello storage
+//   {mode:'refresh'}                                      tutte le leghe (stagione corrente) + quote + pubblicazione
+//   {mode:'logos', limit?:12}                             cerca gli stemmi mancanti su TheSportsDB
 import { createClient } from "npm:@supabase/supabase-js@2.49.1";
 import { decode, fdExtraSeason, fdRow, MatchRow, omRow, parseCsv, seasonCode, seasonOf } from "./parse.ts";
 
@@ -180,6 +182,84 @@ async function publish(force = false) {
   return { changed, removed: stale.length, manifest: manifest.seasons.length };
 }
 
+// --- loghi delle squadre (TheSportsDB, servizio gratuito: poche richieste al minuto) ---
+const COUNTRY: Record<string, string> = {
+  ITA: "Italy", ENG: "England", ESP: "Spain", FRA: "France", GER: "Germany", NED: "Netherlands", POR: "Portugal",
+  DNK: "Denmark", ROU: "Romania", CRO: "Croatia", GRE: "Greece", NOR: "Norway", BEL: "Belgium", TUR: "Turkey",
+  AUT: "Austria", SVK: "Slovakia", AZE: "Azerbaijan", UKR: "Ukraine", CZE: "Czech Republic", SCO: "Scotland",
+};
+const TSDB_KEYS = ["123", "3"];
+const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));
+const norm = (x: string) => x.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
+
+type TsdbTeam = { strTeam?: string; strAlternate?: string; strSport?: string; strCountry?: string; strBadge?: string; strTeamBadge?: string };
+async function tsdbSearch(name: string): Promise<{ teams: TsdbTeam[]; limited: boolean }> {
+  for (const key of TSDB_KEYS) {
+    const res = await fetch(`https://www.thesportsdb.com/api/v1/json/${key}/searchteams.php?t=${encodeURIComponent(name)}`);
+    if (res.status === 429) return { teams: [], limited: true };
+    if (!res.ok) continue;
+    const j = await res.json().catch(() => null) as { teams?: TsdbTeam[] | null } | null;
+    if (j && "teams" in j) return { teams: j.teams ?? [], limited: false };
+  }
+  return { teams: [], limited: false };
+}
+
+function pickBadge(cands: TsdbTeam[], name: string, country: string): string | null {
+  const want = COUNTRY[country], n = norm(name);
+  let best: { s: number; url: string } | null = null;
+  for (const t of cands) {
+    const url = t.strBadge || t.strTeamBadge;
+    if (!url || (t.strSport && t.strSport !== "Soccer")) continue;
+    const tn = norm(t.strTeam ?? "");
+    if (/(women|femen|femin|ladies|u1[0-9]|u2[0-3]|reserves|youth)/.test(tn)) continue;
+    let s = want && t.strCountry === want ? 10 : 0;
+    const alts = [tn, ...(t.strAlternate ?? "").split(",").map(norm)].filter(Boolean);
+    if (alts.includes(n)) s += 5; else if (alts.some((a) => a.includes(n) || n.includes(a))) s += 2;
+    if (s >= 10 && (!best || s > best.s)) best = { s, url };
+  }
+  return best?.url ?? null;
+}
+
+async function syncLogos(limit = 12) {
+  const { data: teams, error } = await db.from("ta_teams").select("id,country,name")
+    .is("logo", null).or(`logo_checked_at.is.null,logo_checked_at.lt.${new Date(Date.now() - 30 * 86400000).toISOString()}`)
+    .order("id").limit(limit);
+  if (error) throw new Error(error.message);
+  let found = 0, checked = 0, limited = false;
+  for (const t of teams ?? []) {
+    const { data: al } = await db.from("ta_team_aliases").select("alias").eq("team_country", t.country).eq("team_name", t.name);
+    const names = [...new Set([t.name, ...(al ?? []).map((a: { alias: string }) => a.alias)])].sort((a, b) => b.length - a.length).slice(0, 3);
+    let logo: string | null = null;
+    for (const n of names) {
+      const r = await tsdbSearch(n);
+      await sleep(1300);
+      if (r.limited) { limited = true; break; }
+      logo = pickBadge(r.teams, n, t.country);
+      if (logo) break;
+    }
+    if (limited) break;
+    checked++;
+    if (logo) found++;
+    await db.from("ta_teams").update({ logo, logo_checked_at: new Date().toISOString() }).eq("id", t.id);
+  }
+  const { count } = await db.from("ta_teams").select("id", { count: "exact", head: true }).is("logo_checked_at", null);
+  const pub = found ? await publish() : null;
+  return { checked, found, limited, remaining: count ?? null, published: !!pub };
+}
+
+/** Aggiornamento completo su richiesta: tutte le leghe in sequenza, quote, pubblicazione. */
+async function refreshAll(leagues: League[]) {
+  const t0 = Date.now(), out: Record<string, unknown> = {};
+  for (const lg of [...leagues].sort((a, b) => (a.code === "CL" ? 1 : 0) - (b.code === "CL" ? 1 : 0))) {
+    const steps = await syncLeague(lg, "current");
+    out[lg.code] = steps.map((x) => (x as { error?: string }).error ? `errore: ${(x as { error: string }).error}` : `${(x as { updated?: number }).updated ?? 0}+${(x as { inserted?: number }).inserted ?? 0}`).join(" ");
+  }
+  out.fixtures = Object.keys(await syncFixturesOdds(leagues)).length;
+  out.publish = await publish();
+  out.ms = Date.now() - t0;
+  return out;
+}
+
 Deno.serve(async (req) => {
   const json = (body: unknown, status = 200) =>
     new Response(JSON.stringify(body), { status, headers: { "content-type": "application/json" } });
@@ -188,7 +268,7 @@ Deno.serve(async (req) => {
   const { data: ok } = await db.rpc("ta_check_sync_token", { p_token: token });
   if (!ok) return json({ error: "non autorizzato" }, 401);
 
-  let body: { mode?: string; league?: string; scope?: "current" | "all"; force?: boolean } = {};
+  let body: { mode?: string; league?: string; scope?: "current" | "all"; force?: boolean; limit?: number; name?: string } = {};
   try { body = await req.json(); } catch { /* corpo vuoto */ }
   const t0 = Date.now();
   try {
@@ -201,6 +281,12 @@ Deno.serve(async (req) => {
     }
     if (body.mode === "fixtures") return json({ fixtures: await syncFixturesOdds(leagues as League[]), ms: Date.now() - t0 });
     if (body.mode === "publish") return json({ publish: await publish(!!body.force), ms: Date.now() - t0 });
+    if (body.mode === "refresh") return json({ refresh: await refreshAll(leagues as League[]) });
+    if (body.mode === "logos") return json({ logos: await syncLogos(body.limit ?? 12), ms: Date.now() - t0 });
+    if (body.mode === "probe-logos") {
+      const r = await tsdbSearch(body.name ?? "Arsenal");
+      return json({ n: r.teams.length, limited: r.limited, sample: r.teams.slice(0, 3).map((t) => ({ team: t.strTeam, country: t.strCountry, badge: t.strBadge ?? t.strTeamBadge })) });
+    }
     return json({ error: "mode sconosciuto" }, 400);
   } catch (e) {
     await logError(body.league ?? null, null, "sync", body.mode ?? "?", (e as Error).message);

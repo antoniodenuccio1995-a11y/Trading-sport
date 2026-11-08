@@ -74,6 +74,10 @@ export async function loadPersonal(kind?: string): Promise<UserRow[]> {
 export interface Trade {
   id: number; d: string; lg: string; m: string; mk: string; side: "back" | "lay"; q: number; s: number; comm: number;
   res: string; exitpl: number | null; st?: string; n?: string; sim?: number;
+  /** quota di chiusura (per il CLV) */
+  cl?: number | null;
+  /** partita e mercato collegati (versione 1.3+) */
+  mid?: number; mkey?: string; upd?: number;
 }
 /**
  * Profitto netto di un trade chiuso, stessa formula della v0.3:
