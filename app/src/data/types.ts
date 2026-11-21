@@ -1,7 +1,7 @@
 export interface League {
   code: string; name: string; country: string; countryName: string; tier: number; sort: number;
 }
-export interface Team { id: number; country: string; name: string; status: string }
+export interface Team { id: number; country: string; name: string; status: string; logo?: string | null }
 
 /** Una partita. Valori assenti = null. */
 export interface Match {
@@ -27,7 +27,7 @@ export interface SeasonSnapshot {
   [col: string]: unknown;
 }
 export interface RefSnapshot {
-  v: number; leagues: League[]; teams: [number, string, string, string][];
+  v: number; leagues: League[]; teams: ([number, string, string, string] | [number, string, string, string, string | null])[];
 }
 export interface Manifest {
   v: number; generatedAt: string; ref: { path: string };

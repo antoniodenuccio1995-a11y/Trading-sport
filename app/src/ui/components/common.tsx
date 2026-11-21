@@ -2,6 +2,7 @@ import type { ComponentChildren } from "preact";
 import { useEffect, useState } from "preact/hooks";
 import { getStore, leagueName, subscribe, teamName } from "../../data/store";
 import { href } from "../router";
+import { TeamBadge } from "./badge";
 
 export function useStore() {
   const [, force] = useState(0);
@@ -36,8 +37,8 @@ export function Form({ list, n = 5 }: { list: ("V" | "N" | "P")[]; n?: number })
   return <span class="form" aria-label={`Forma: ${l.join(" ")}`}>{l.map((x, i) => <i key={i} class={x}>{x}</i>)}</span>;
 }
 
-export const TeamLink = ({ id, season }: { id: number; season?: string }) =>
-  <a href={href(["squadra", id], { s: season })}>{teamName(id)}</a>;
+export const TeamLink = ({ id, season, badge = true }: { id: number; season?: string; badge?: boolean }) =>
+  <a class="team-link" href={href(["squadra", id], { s: season })}>{badge && <TeamBadge id={id} size={18} />}<span>{teamName(id)}</span></a>;
 export const LeagueLink = ({ code }: { code: string }) => <a href={href(["lega", code])}>{leagueName(code)}</a>;
 
 export function Seg<T extends string>({ value, options, onChange, label }: { value: T; options: [T, string][]; onChange: (v: T) => void; label: string }) {

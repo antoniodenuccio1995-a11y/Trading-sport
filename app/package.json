@@ -1,13 +1,14 @@
 {
   "name": "trading-analytics",
   "private": true,
-  "version": "1.0.0",
+  "version": "1.4.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc --noEmit && vite build",
     "preview": "vite preview",
-    "test": "vitest run"
+    "test": "vitest run",
+    "build:file": "tsc --noEmit && vite build --mode file && node scripts/single-file.mjs"
   },
   "dependencies": {
     "@supabase/supabase-js": "2.118.0",

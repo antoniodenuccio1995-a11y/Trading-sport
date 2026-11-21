@@ -1,18 +1,11 @@
-import type { Session } from "@supabase/supabase-js";
 import { useEffect, useState } from "preact/hooks";
-import { extractPersonal, getSession, loadPersonal, supa, tradePL, uploadPersonal, type Trade, type UserRow } from "../../data/personal";
-import { Card, fmtOdd } from "../components/common";
+import { extractPersonal, loadPersonal, supa, uploadPersonal, type Trade, type UserRow } from "../../data/personal";
+import { Card } from "../components/common";
+import { Login, useSession } from "../components/session";
 
-const eur = (v: number) => `${v >= 0 ? "+" : "−"}${Math.abs(v).toFixed(2).replace(".", ",")} €`;
 
 export function Personal() {
-  const [session, setSession] = useState<Session | null | undefined>(undefined);
-  useEffect(() => {
-    let unsub = () => {};
-    getSession().then(setSession).catch(() => setSession(null));
-    supa().then((sb) => { const { data } = sb.auth.onAuthStateChange((_e, s) => setSession(s)); unsub = () => data.subscription.unsubscribe(); });
-    return () => unsub();
-  }, []);
+  const session = useSession();
   if (session === undefined) return <Card><p class="empty">Controllo dell'accesso…</p></Card>;
   return (
     <>
@@ -21,32 +14,6 @@ export function Personal() {
       </div>
       {session ? <Signed /> : <Login />}
     </>
-  );
-}
-
-function Login() {
-  const [email, setEmail] = useState(""), [pw, setPw] = useState(""), [msg, setMsg] = useState(""), [busy, setBusy] = useState(false);
-  const act = async (kind: "in" | "up") => {
-    setBusy(true); setMsg("");
-    try {
-      const auth = (await supa()).auth;
-      const redirect = location.origin + location.pathname + "#/personale";
-      if (kind === "in") { const { error } = await auth.signInWithPassword({ email, password: pw }); if (error) throw new Error(error.message === "Invalid login credentials" ? "Email o password non corretti." : error.message); }
-      else if (kind === "up") { const { error } = await auth.signUp({ email, password: pw, options: { emailRedirectTo: redirect } }); if (error) throw error; setMsg("Registrazione inviata: conferma dal link che ricevi per email, poi accedi."); }
-    } catch (e) { setMsg((e as Error).message); } finally { setBusy(false); }
-  };
-  return (
-    <Card title="Accedi">
-      <form class="row" style="max-width:520px" onSubmit={(e) => { e.preventDefault(); act("in"); }}>
-        <input class="input" type="email" autocomplete="email" required placeholder="Email" value={email} onInput={(e) => setEmail((e.target as HTMLInputElement).value)} />
-        <input class="input" type="password" autocomplete="current-password" placeholder="Password (min. 6 caratteri)" value={pw} onInput={(e) => setPw((e.target as HTMLInputElement).value)} />
-        <button class="btn primary" disabled={busy || !email || pw.length < 6}>Accedi</button>
-        <button class="btn" type="button" disabled={busy || !email || pw.length < 6} onClick={() => act("up")}>Registrati</button>
-      </form>
-      {msg && <p class="note" role="status">{msg}</p>}
-      <p class="note"><b>Hai già un account:</b> usa la stessa email e password dell'altra app che hai su questo progetto Supabase. "Registrati" serve solo per creare un account nuovo.</p>
-      <p class="note">Le statistiche delle partite sono consultabili senza accesso. L'accesso serve solo per i tuoi dati personali, salvati su Supabase e protetti da regole che li rendono leggibili solo al tuo account.</p>
-    </Card>
   );
 }
 
@@ -65,7 +32,7 @@ function Signed() {
         {rows === null ? <p class="muted">Caricamento…</p> : rows.length === 0 ? <p class="muted">Nessun dato personale ancora. Importa il backup della v0.3 qui sopra.</p> :
           <div class="tiles">{[...counts].map(([k, n]) => <div class="tile" key={k}><b>{n}</b><span>{LABELS[k] ?? k}</span></div>)}</div>}
       </Card>
-      <Trades list={trades} />
+      {trades.length > 0 && <Card title="Registro trade"><p style="margin:0">Hai {trades.length} trade salvati. <a class="btn primary" href="#/registro">Apri il registro trade →</a></p></Card>}
     </>
   );
 }
@@ -98,28 +65,3 @@ function ImportBackup({ onDone }: { onDone: () => void }) {
   );
 }
 
-function Trades({ list }: { list: Trade[] }) {
-  if (!list.length) return null;
-  const closed = list.filter((t) => tradePL(t) !== null);
-  const pl = closed.reduce((s, t) => s + tradePL(t)!, 0), stake = closed.reduce((s, t) => s + (t.side === "lay" ? t.s * (t.q - 1) : t.s), 0);
-  const won = closed.filter((t) => t.res === "won").length;
-  return (
-    <Card title="Registro trade" flush>
-      <div class="tiles" style="padding:12px 14px 0">
-        <div class="tile"><b>{list.length}</b><span>trade ({list.length - closed.length} aperti)</span></div>
-        <div class="tile"><b class={pl >= 0 ? "pos" : "neg"}>{eur(pl)}</b><span>profitto netto</span></div>
-        <div class="tile"><b>{stake ? `${((pl / stake) * 100).toFixed(1)}%` : "—"}</b><span>rendimento sul rischio</span></div>
-        <div class="tile"><b>{closed.length ? `${Math.round((won / closed.length) * 100)}%` : "—"}</b><span>trade vinti</span></div>
-      </div>
-      <div class="tw"><table class="t">
-        <thead><tr><th class="l">Data</th><th class="l">Campionato</th><th class="l">Partita</th><th class="l">Mercato</th><th class="l">Lato</th><th>Quota</th><th>Stake</th><th class="l">Esito</th><th>P/L</th><th class="l">Note</th></tr></thead>
-        <tbody>{list.map((t) => { const p = tradePL(t); return (
-          <tr key={t.id}><td class="l">{t.d}</td><td class="l">{t.lg}</td><td class="l">{t.m}</td><td class="l">{t.mk}</td><td class="l">{t.side}</td>
-            <td>{fmtOdd(t.q)}</td><td>{t.s}</td><td class="l">{RES[t.res] ?? t.res}</td>
-            <td class={p === null ? "muted" : p >= 0 ? "pos" : "neg"}>{p === null ? "aperto" : eur(p)}</td><td class="l muted">{t.st ?? ""}</td></tr>); })}
-        </tbody></table></div>
-      <p class="note" style="padding:0 14px 12px">Sola lettura in questa versione: inserimento e chiusura dei trade arriveranno nella prossima fase.</p>
-    </Card>
-  );
-}
-const RES: Record<string, string> = { won: "vinto", lost: "perso", void: "annullato", open: "aperto", exit: "chiuso in anticipo" };

@@ -43,7 +43,7 @@ function emit(patch: Partial<Store>) { store = { ...store, ...patch }; listeners
 export function buildStore(ref: RefSnapshot, snaps: SeasonSnapshot[]): Pick<Store,
   "leagues" | "leagueByCode" | "teams" | "matches" | "byTeam" | "byLeagueSeason" | "byDay" | "byId" | "seasons"> {
   const leagues = [...ref.leagues].sort((a, b) => a.sort - b.sort);
-  const teams = new Map<number, Team>(ref.teams.map(([id, country, name, status]) => [id, { id, country, name, status }]));
+  const teams = new Map<number, Team>(ref.teams.map(([id, country, name, status, logo]) => [id, { id, country, name, status, logo: logo ?? null }]));
   const matches: Match[] = [];
   for (const s of snaps) {
     const col = (k: string) => (s[k] as (number | null)[]) ?? [];
@@ -133,3 +133,31 @@ export const currentSeasonOf = (lg: string) => {
   return s[s.length - 1] ?? store.seasons[store.seasons.length - 1];
 };
 export const matchById = (id: number) => store.byId.get(id);
+
+/**
+ * Pulsante "Aggiorna": chiede al server di riscaricare subito i risultati da tutte le fonti
+ * (al massimo una volta ogni 10 minuti per tutti), poi controlla la pubblicazione finché arriva.
+ */
+export async function requestServerRefresh(onStatus: (msg: string) => void): Promise<void> {
+  const { SUPABASE_URL, SUPABASE_KEY } = await import("../config");
+  const before = store.generatedAt;
+  onStatus("Richiesta inviata: scarico i risultati da tutte le fonti…");
+  let started = true, wait = 0;
+  try {
+    const res = await fetch(`${SUPABASE_URL}/rest/v1/rpc/ta_request_refresh`, {
+      method: "POST", headers: { apikey: SUPABASE_KEY, "content-type": "application/json" }, body: "{}",
+    });
+    const j = await res.json();
+    started = !!j.ok; wait = j.wait_seconds ?? 0;
+  } catch { started = false; }
+  if (!started && wait) onStatus(`Aggiornamento già fatto da poco: controllo se ci sono dati nuovi (prossimo tra ${Math.ceil(wait / 60)} min).`);
+  for (let i = 0; i < (started ? 12 : 1); i++) {
+    if (started) await new Promise((r) => setTimeout(r, 10000));
+    try {
+      const man = await fetchJson<Manifest>("v1/manifest.json", true);
+      if (man.generatedAt !== before) { await fromNetwork(); onStatus("Dati aggiornati."); return; }
+    } catch { /* riprova */ }
+    if (started) onStatus(`Aggiornamento in corso… (${(i + 1) * 10} s)`);
+  }
+  onStatus(started ? "Nessuna novità: i dati erano già aggiornati." : "Dati già aggiornati.");
+}
