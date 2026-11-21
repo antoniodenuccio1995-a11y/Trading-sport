@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <title>Trading Analytics</title>
   <meta name="description" content="Statistiche e analisi delle partite di calcio per il trading sportivo." />
-  <meta name="theme-color" content="#1d7a4d" />
+  <meta name="theme-color" content="#1b6b43" />
   <link rel="manifest" href="./manifest.webmanifest" />
   <link rel="icon" href="./icon.svg" type="image/svg+xml" />
   <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
@@ -14,7 +14,10 @@
   <link rel="preconnect" href="https://cqfxjvrpspvycocvxghv.supabase.co" crossorigin />
   <script>
     // tema scelto applicato prima del primo disegno (evita lampi di colore)
-    try { var t = JSON.parse(localStorage.getItem("ta.theme") || '"auto"'); if (t !== "auto") document.documentElement.setAttribute("data-theme", t); } catch (e) {}
+    // tema prima del primo disegno (niente lampo di colori sbagliati)
+    try { var t = JSON.parse(localStorage.getItem("ta.theme") || '"auto"'); t = { light: "diurna", dark: "notturna" }[t] || t;
+      if (["diurna", "notturna", "azzurri", "classica"].indexOf(t) < 0) t = matchMedia("(prefers-color-scheme: dark)").matches ? "notturna" : "diurna";
+      document.documentElement.setAttribute("data-theme", t); } catch (e) { document.documentElement.setAttribute("data-theme", "diurna"); }
   </script>
 </head>
 <body>

@@ -6,6 +6,7 @@ import { avg, leagueTeamAgg, pct, scorelines, teamAgg, teamMatches, type Agg } f
 import { Card, Form, PctTd, fmtNum, fmtPct, usePref, useStore } from "../components/common";
 import { PeriodSeg, periodLabel, periodSeasons, type Period } from "../components/period";
 import { TeamHalves } from "../sections/Halves";
+import { GoalMinutes } from "../sections/GoalMinutes";
 import { HistoryRankChart, SeasonRankChart } from "../sections/RankCharts";
 import { StatTable } from "../sections/StatTable";
 import { TeamBadge } from "../components/badge";
@@ -94,6 +95,7 @@ export function Team({ route }: { route: Route }) {
         ) : <p class="muted">Nessuna stagione precedente di questa squadra in {leagueName(domestic ?? "")} nell'archivio.</p>}
       </Card>
       <Card title="Gol e tempi"><TeamHalves team={id} list={domP} leagueList={leagueListP} label={periodLabel(period, season, lgSeasons)} /></Card>
+      <GoalMinutes title={`Minuti dei gol · ${season}`} cols={[{ label: team.name, list: inSeason }, { label: leagueName(domestic ?? ""), list: s.byLeagueSeason.get(`${domestic}|${season}`) ?? [] }]} />
       <Results title="Ultimi risultati" list={results} />
       <Card title="Storico per stagione e categoria"><HistoryRankChart teams={[id]} /></Card>
       <Card title="Andamento per stagione" flush>

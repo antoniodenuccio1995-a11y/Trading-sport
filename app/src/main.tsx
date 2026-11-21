@@ -1,6 +1,7 @@
 import { render } from "preact";
 import { startStore } from "./data/store";
 import { App } from "./ui/App";
+import "./fonts.css";
 import "./styles.css";
 
 render(<App />, document.getElementById("app")!);

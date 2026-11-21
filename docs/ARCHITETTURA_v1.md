@@ -113,6 +113,12 @@ select public.ta_call_sync('{"mode":"publish"}'::jsonb);
 - **Partite**: tra le squadre "vs" (prima c'era la quota 1); nelle colonne 1, X, 2 la probabilità del modello e sotto la quota media dei bookmaker.
 - **2. Bundesliga** attivata (storico dal 2021/22, stagione in corso, calendario, quote, zone di classifica, piramide Germania a due fasce). Migrazione `20261121120000_ta_bundesliga2.sql`.
 
+### v1.5
+- **Grafica a tema calcio**: temi Notturna, Diurna, Azzurri e Classica (più "automatico" che segue il dispositivo), scelti dalla barra laterale. Sullo sfondo un campo regolamentare disegnato in SVG (`ui/components/Stadium.tsx`), in prospettiva e sfocato, con i riflettori; i colori vengono dalle variabili CSS del tema. Caratteri Barlow e Barlow Condensed inclusi nell'app (`src/fonts.css`, licenza OFL). Su telefono le partite stanno su due righe.
+- **Minuti dei gol**: colonna `goal_min` in `ta_matches` (migrazione `20261121130000_ta_goal_minutes.sql`), letta da Open Matchday (`goalMinutes` in `parse.ts`) e pubblicata nelle istantanee (`gm`). Statistiche in `stats/minutes.ts`: si usano solo partite con tutti i minuti; il 1° tempo si assegna con il risultato all'intervallo (i recuperi finiscono nel tempo giusto). Sezione "Minuti dei gol" in partita, squadra e campionato; linea del tempo dei gol nelle partite giocate.
+- **Punti chiave** (`stats/insights.ts`): nella panoramica delle partite da giocare, confronto modello/mercato con soglie di quota (commissione 5%), primo e secondo tempo, forma, minuti dei gol, avviso sul campione piccolo.
+- Roadmap in `docs/ROADMAP.md`.
+
 ## Cosa manca (prossime fasi)
 
 - Scanner dei mercati, strategie e backtest, validazione cronologica.

@@ -19,6 +19,8 @@ export interface Match {
   oh: number | null; od: number | null; oa: number | null; oo: number | null; ou: number | null;
   ch: number | null; cd: number | null; ca: number | null; co: number | null; cu: number | null;
   bh: number | null; bd: number | null; ba: number | null;
+  /** minuti dei gol in ordine ("12,49,93"; "" = 0-0), solo dove la fonte li dà */
+  gm?: string | null;
 }
 
 /** Istantanea colonnare di una stagione (prodotta da ta_snapshot). */

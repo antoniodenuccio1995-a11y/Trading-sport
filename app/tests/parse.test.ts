@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { fdDate, fdExtraSeason, fdRow, omKickoff, omRow, parseCsv, seasonCode, seasonOf, zonedToUtc } from "../../supabase/functions/ta-sync/parse";
+import { fdDate, fdExtraSeason, fdRow, goalMinutes, omKickoff, omRow, parseCsv, seasonCode, seasonOf, zonedToUtc } from "../../supabase/functions/ta-sync/parse";
 
 describe("CSV", () => {
   it("gestisce BOM, virgolette e a-capo", () => {
@@ -58,5 +58,22 @@ describe("righe partite", () => {
     const r = omRow({ date: "2026-08-22", time: "", home: "X", away: "Y", ft_home: "1", ft_away: "0", home_corners: "7", away_corners: "3" })!;
     expect(r).toMatchObject({ fthg: 1, ftag: 0, co_h: 7, co_a: 3 });
     expect(r.kickoff).toBeUndefined();
+  });
+});
+
+describe("minuti dei gol (Open Matchday)", () => {
+  it("normalizza recuperi e casi limite", () => {
+    expect(goalMinutes("12,49,90+3", 3)).toBe("12,49,93");
+    expect(goalMinutes("", 0)).toBe("");
+    expect(goalMinutes("", 2)).toBeUndefined();
+    expect(goalMinutes(undefined, 2)).toBeUndefined();
+    expect(goalMinutes("12,abc", 2)).toBeUndefined();
+    expect(goalMinutes("29", 2)).toBe("29"); // incompleto: lo decide l'app
+  });
+  it("omRow aggiunge goal_min solo se la colonna esiste", () => {
+    const base = { date: "2026-11-08", time: "15:30", home: "A", away: "B", ft_home: "2", ft_away: "1", ht_home: "1", ht_away: "0" };
+    expect(omRow({ ...base, goal_minutes: "5,60,88" })!.goal_min).toBe("5,60,88");
+    expect(omRow(base)!.goal_min).toBeUndefined();
+    expect(omRow({ ...base, ft_home: "0", ft_away: "0", goal_minutes: "" })!.goal_min).toBe("");
   });
 });

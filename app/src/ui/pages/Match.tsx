@@ -15,6 +15,10 @@ import { HistoryRankChart, SeasonRankChart } from "../sections/RankCharts";
 import { StandingsTable } from "../sections/StandingsTable";
 import { TeamBadge } from "../components/badge";
 import { StatTable } from "../sections/StatTable";
+import { GoalMinutes, GoalTimeline } from "../sections/GoalMinutes";
+import { matchInsights } from "../../stats/insights";
+import { minuteLeagues } from "../../stats/minutes";
+import { getStore } from "../../data/store";
 
 const TABS: [string, string][] = [["panoramica", "Panoramica e mercato"], ["statistiche", "Statistiche"], ["tempi", "Gol e tempi"], ["classifica", "Classifica"], ["forma", "Forma e precedenti"]];
 
@@ -42,6 +46,7 @@ function Analysis({ m, tab }: { m: M; tab: string }) {
           <div class="big">{done ? `${m.fh} – ${m.fa}` : "vs"}{done && m.hh !== null && <div class="muted" style="font-size:13px;font-weight:600">1° tempo {m.hh}–{m.ha}</div>}</div>
           <div><TeamBadge id={m.a} size={64} /><div class="tn"><TeamLink id={m.a} season={m.s} badge={false} /></div><div class="muted">{posA ? `${posA.pos}° · ${posA.pts} pt` : ""} <Form list={posA?.form ?? []} /></div></div>
         </div>
+        {done && <GoalTimeline m={m} />}
         {fc && (
           <div class="bar3" style="margin-top:14px" role="img" aria-label={`Modello: 1 ${fmtPct(fc.home * 100)}, X ${fmtPct(fc.draw * 100)}, 2 ${fmtPct(fc.away * 100)}`}>
             <div class="b1" style={`width:${fc.home * 100}%`}>1 · {fmtPct(fc.home * 100)}</div>
@@ -53,7 +58,7 @@ function Analysis({ m, tab }: { m: M; tab: string }) {
       <Tabs tabs={TABS} active={tab} link={(k) => href(["partita", m.id], { tab: k })} />
       {tab === "panoramica" && <Overview m={m} fc={fc} />}
       {tab === "statistiche" && <Stats m={m} all={all} />}
-      {tab === "tempi" && <MatchHalves m={m} leagueAll={all} model={fc?.halves ?? null} />}
+      {tab === "tempi" && <><MatchHalves m={m} leagueAll={all} model={fc?.halves ?? null} /><MatchMinutes m={m} /></>}
       {tab === "classifica" && <StandingsTab m={m} season={season} />}
       {tab === "forma" && <FormTab m={m} />}
     </>
@@ -64,6 +69,7 @@ function Overview({ m, fc }: { m: M; fc: Forecast | null }) {
   const imp = implied(m.oh, m.od, m.oa);
   return (
     <>
+      {!played(m) && <KeyPoints m={m} fc={fc} />}
       <div class="grid2">
         <Card title="Previsione statistica (Poisson)">
           {fc ? (
@@ -194,6 +200,29 @@ function LastMatches({ title, list, team }: { title: string; list: M[]; team: nu
           <td class="l"><TeamLink id={x.h === team ? x.a : x.h} season={x.s} /></td>
           <td><a href={href(["partita", x.id])}><b>{f}–{a}</b></a></td><td class="muted">{x.hh !== null ? `1T ${x.h === team ? x.hh : x.ha}–${x.h === team ? x.ha : x.hh}` : ""}</td><td><span class="form"><i class={r}>{r}</i></span></td></tr>;
       })}</tbody></table></div> : <p class="empty">Nessuna partita precedente.</p>}
+    </Card>
+  );
+}
+
+/** Minuti dei gol nelle partite precedenti delle due squadre e del campionato (stessa stagione). */
+function MatchMinutes({ m }: { m: M }) {
+  const s = getStore();
+  const before = (id: number) => (s.byTeam.get(id) ?? []).filter((x) => x.s === m.s && x.d < m.d);
+  const lg = (s.byLeagueSeason.get(`${m.lg}|${m.s}`) ?? []).filter((x) => x.d < m.d);
+  return <GoalMinutes title="Minuti dei gol (stagione)" cols={[{ label: teamName(m.h), list: before(m.h) }, { label: teamName(m.a), list: before(m.a) }, { label: leagueName(m.lg), list: lg }]} />;
+}
+
+/** Punti chiave: lettura automatica di modello, quote, tempi, forma e minuti dei gol. */
+function KeyPoints({ m, fc }: { m: M; fc: Forecast | null }) {
+  const s = getStore();
+  const lgs = useMemo(() => minuteLeagues(s.matches), [s.matches]);
+  const list = leagueAll(m.lg);
+  const pts = matchInsights(m, fc, list, { h: teamName(m.h), a: teamName(m.a) }, lgs);
+  if (!pts.length) return null;
+  return (
+    <Card title="Punti chiave">
+      <ul class="keypts">{pts.map((p, i) => <li key={i} class={p.tone}>{p.text}</li>)}</ul>
+      <p class="note">Lettura automatica dei numeri, non una certezza. Le soglie di quota usano la commissione Betfair del 5% e le quote medie dei bookmaker: confrontale con quelle che trovi davvero, anche nella sezione mercato qui sotto.</p>
     </Card>
   );
 }
