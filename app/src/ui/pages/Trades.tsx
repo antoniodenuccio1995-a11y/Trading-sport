@@ -226,7 +226,7 @@ export function TradeForm({ value, onSave, onCancel, isNew, strategies = [] }: {
   useEffect(() => { box.current?.scrollIntoView({ behavior: "smooth", block: "start" }); }, []);
   return (
     <div ref={box} class="form-anchor">
-    <Card title={isNew ?? !value.m ? "Nuovo trade" : t.res === "exit" && value.res !== "exit" ? "Chiusura parziale" : "Modifica trade"}>
+    <Card title={isNew ?? !value.m ? "Nuovo trade" : value.res === "exit" && tradePL(value) === null ? `Chiusura parziale · ${value.m}` : "Modifica trade"}>
       <div class="form-grid">
         <label class="span2">Partita
           {m ? <div class="row"><span class="team-link"><TeamBadge id={m.h} /><TeamBadge id={m.a} /><b>{teamName(m.h)} – {teamName(m.a)}</b></span><span class="muted">{dateShort(m.d)} · {leagueName(m.lg)}{played(m) ? ` · ${m.fh}–${m.fa}` : ""}</span><button type="button" class="mini-btn" onClick={() => upd({ mid: undefined })}>cambia</button></div>

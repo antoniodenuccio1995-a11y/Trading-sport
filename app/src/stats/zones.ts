@@ -18,6 +18,7 @@ const RULES: Record<string, (size: number) => Zone[]> = {
   E1: (n) => [Z(1, 2, "promo", "Promozione"), Z(3, 6, "playoff", "Playoff promozione"), Z(n - 2, n, "releg", "Retrocessione")],
   E2: (n) => [Z(1, 2, "promo", "Promozione"), Z(3, 6, "playoff", "Playoff promozione"), Z(n - 3, n, "releg", "Retrocessione")],
   SP2: (n) => [Z(1, 2, "promo", "Promozione"), Z(3, 6, "playoff", "Playoff promozione"), Z(n - 3, n, "releg", "Retrocessione")],
+  D2: (n) => [Z(1, 2, "promo", "Promozione"), Z(3, 3, "playoff", "Spareggio promozione"), Z(n - 2, n - 2, "playout", "Spareggio salvezza"), Z(n - 1, n, "releg", "Retrocessione")],
   F2: (n) => [Z(1, 2, "promo", "Promozione"), Z(3, 5, "playoff", "Playoff promozione"), Z(n - 2, n - 2, "playout", "Spareggio salvezza"), Z(n - 1, n, "releg", "Retrocessione")],
   DNK: () => [Z(1, 6, "split", "Gruppo per il titolo"), Z(11, 12, "releg", "Zona retrocessione")],
   ROU: () => [Z(1, 6, "split", "Playoff per il titolo"), Z(15, 16, "releg", "Zona retrocessione")],

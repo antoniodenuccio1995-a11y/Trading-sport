@@ -68,12 +68,12 @@ La funzione sposta le partite, elimina le copie e salva il vecchio nome come ali
 
 ## Aggiungere un campionato
 
-I campionati sono in `ta_leagues`. Alcuni sono già predisposti e disattivati: 2. Bundesliga, Scozia, Belgio, Turchia, Grecia.
+I campionati sono in `ta_leagues`. Alcuni sono già predisposti e disattivati: Scozia, Belgio, Turchia, Grecia (la 2. Bundesliga è attiva dalla v1.4). Prima di attivarne uno, controllare che i nomi delle squadre di Open Matchday abbiano un alias verso quelli di football-data (vedi la migrazione della 2. Bundesliga), altrimenti nascono squadre doppie.
 
 ```sql
-update public.ta_leagues set active = true where code = 'D2';
+update public.ta_leagues set active = true where code = 'B1';
 select public.ta_schedule_leagues();
-select public.ta_call_sync('{"mode":"league","league":"D2","scope":"all"}'::jsonb);
+select public.ta_call_sync('{"mode":"league","league":"B1","scope":"all"}'::jsonb);
 ```
 
 Dopo qualche secondo:
@@ -107,6 +107,11 @@ select public.ta_call_sync('{"mode":"publish"}'::jsonb);
 - **Pulsante "↻ Aggiorna"** nella barra in alto: chiama `ta_request_refresh` (al massimo una volta ogni 10 minuti per tutti), che scarica le fonti e ripubblica i dati; l'app controlla il manifest ogni 10 secondi e si aggiorna da sola. Gli aggiornamenti automatici restano due al giorno.
 - Grafici che si adattano alla larghezza (leggibili da telefono), nessuno scorrimento orizzontale della pagina su schermi stretti, numeri con la virgola nel registro.
 - 1.3.1 · Filtri del registro come nella v0.3, più lato e date a scelta: periodo, esito, tipo (reali/simulati), lato, campionato, strategia, mercato, ricerca, aperti/chiusi con i conteggi. Valgono per riepilogo, grafico, elenco, tabelle ed esportazione CSV e restano salvati sul dispositivo. Curva per strategia, calo massimo, riepilogo per strategia e per lato; strategia e note di nuovo separate. Icone PNG per installare l'app sulla schermata Home (iPhone e Android).
+
+### v1.4
+- **Chiusura parziale dei trade** (cash out): esito "Parziale (importo)" con scelta Vincita/Perdita e importo netto; si apre dal menu Esito della tabella, da "Parziale…" nei trade da chiudere o dal modulo. Finché l'importo non è scritto il trade resta aperto. I trade vinti contano anche le chiusure parziali in attivo.
+- **Partite**: tra le squadre "vs" (prima c'era la quota 1); nelle colonne 1, X, 2 la probabilità del modello e sotto la quota media dei bookmaker.
+- **2. Bundesliga** attivata (storico dal 2021/22, stagione in corso, calendario, quote, zone di classifica, piramide Germania a due fasce). Migrazione `20261121120000_ta_bundesliga2.sql`.
 
 ## Cosa manca (prossime fasi)
 
