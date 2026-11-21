@@ -16,6 +16,8 @@ import { StandingsTable } from "../sections/StandingsTable";
 import { TeamBadge } from "../components/badge";
 import { StatTable } from "../sections/StatTable";
 import { GoalMinutes, GoalTimeline } from "../sections/GoalMinutes";
+import { matchInsights } from "../../stats/insights";
+import { minuteLeagues } from "../../stats/minutes";
 import { getStore } from "../../data/store";
 
 const TABS: [string, string][] = [["panoramica", "Panoramica e mercato"], ["statistiche", "Statistiche"], ["tempi", "Gol e tempi"], ["classifica", "Classifica"], ["forma", "Forma e precedenti"]];
@@ -67,6 +69,7 @@ function Overview({ m, fc }: { m: M; fc: Forecast | null }) {
   const imp = implied(m.oh, m.od, m.oa);
   return (
     <>
+      {!played(m) && <KeyPoints m={m} fc={fc} />}
       <div class="grid2">
         <Card title="Previsione statistica (Poisson)">
           {fc ? (
@@ -207,4 +210,19 @@ function MatchMinutes({ m }: { m: M }) {
   const before = (id: number) => (s.byTeam.get(id) ?? []).filter((x) => x.s === m.s && x.d < m.d);
   const lg = (s.byLeagueSeason.get(`${m.lg}|${m.s}`) ?? []).filter((x) => x.d < m.d);
   return <GoalMinutes title="Minuti dei gol (stagione)" cols={[{ label: teamName(m.h), list: before(m.h) }, { label: teamName(m.a), list: before(m.a) }, { label: leagueName(m.lg), list: lg }]} />;
+}
+
+/** Punti chiave: lettura automatica di modello, quote, tempi, forma e minuti dei gol. */
+function KeyPoints({ m, fc }: { m: M; fc: Forecast | null }) {
+  const s = getStore();
+  const lgs = useMemo(() => minuteLeagues(s.matches), [s.matches]);
+  const list = leagueAll(m.lg);
+  const pts = matchInsights(m, fc, list, { h: teamName(m.h), a: teamName(m.a) }, lgs);
+  if (!pts.length) return null;
+  return (
+    <Card title="Punti chiave">
+      <ul class="keypts">{pts.map((p, i) => <li key={i} class={p.tone}>{p.text}</li>)}</ul>
+      <p class="note">Lettura automatica dei numeri, non una certezza. Le soglie di quota usano la commissione Betfair del 5% e le quote medie dei bookmaker: confrontale con quelle che trovi davvero, anche nella sezione mercato qui sotto.</p>
+    </Card>
+  );
 }

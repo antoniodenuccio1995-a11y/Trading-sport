@@ -37,7 +37,7 @@ export function Home({ route }: { route: Route }) {
       {list.length
         ? <MatchGroups matches={list} order={order} />
         : <Card><p class="empty">Nessuna partita in archivio per questo giorno{onlyFav && all.length ? " nei campionati preferiti" : ""}.</p></Card>}
-      <p class="note">1 / X / 2: probabilità del modello di Poisson calcolate solo con partite precedenti. O2,5 e GG: media tra la squadra di casa (gare in casa) e l'ospite (gare in trasferta) nella stagione. Quota 1: media dei bookmaker (football-data).</p>
+      <p class="note">1 / X / 2: probabilità del modello di Poisson calcolate solo con partite precedenti. Sotto, la quota media dei bookmaker (football-data). O2,5 e GG: media tra la squadra di casa (gare in casa) e l'ospite (gare in trasferta) nella stagione.</p>
     </>
   );
 }
