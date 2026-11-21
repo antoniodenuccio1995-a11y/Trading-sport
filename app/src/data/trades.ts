@@ -102,7 +102,7 @@ export function summarize(list: Trade[]): Summary {
   return {
     n: list.length, open: list.length - closed.length, closed: closed.length,
     pl: closed.reduce((s, t) => s + tradePL(t)!, 0), risk: closed.reduce((s, t) => s + risk(t), 0),
-    won: closed.filter((t) => t.res === "won").length,
+    won: closed.filter((t) => tradePL(t)! > 0).length, // comprese le chiusure parziali in attivo
     clvAvg: clvs.length ? clvs.reduce((a, b) => a + b, 0) / clvs.length : null, clvN: clvs.length,
   };
 }
@@ -200,9 +200,16 @@ export async function saveSettings(v: TradeSettings) {
   if (error) throw new Error(error.message);
 }
 
+export const RES_LABEL: Record<string, string> = { open: "Aperto", won: "Vinto", lost: "Perso", void: "Annullato (rimborso)", exit: "Parziale (importo)" };
+
+/** Vincita e perdita "piene" del trade, per orientarsi quando si chiude in parte. */
+export function fullOutcomes(t: Trade): { win: number; loss: number } {
+  return { win: tradePL({ ...t, res: "won" }) ?? 0, loss: tradePL({ ...t, res: "lost" }) ?? 0 };
+}
+
 export function tradesCsv(list: Trade[]): string {
   const head = ["data", "campionato", "partita", "mercato", "lato", "quota", "stake", "commissione_pct", "esito", "pl_netto", "quota_chiusura", "clv_pct", "simulato", "strategia", "note"];
   const q = (x: unknown) => `"${String(x ?? "").replace(/"/g, '""')}"`;
-  const rows = list.map((t) => [t.d, t.lg, t.m, t.mk, t.side, t.q, t.s, t.comm, t.res, tradePL(t)?.toFixed(2) ?? "", t.cl ?? "", clv(t) === null ? "" : (clv(t)! * 100).toFixed(1), t.sim ? "sì" : "", t.st ?? "", t.n ?? ""]);
+  const rows = list.map((t) => [t.d, t.lg, t.m, t.mk, t.side, t.q, t.s, t.comm, RES_LABEL[t.res] ?? t.res, tradePL(t)?.toFixed(2) ?? "", t.cl ?? "", clv(t) === null ? "" : (clv(t)! * 100).toFixed(1), t.sim ? "sì" : "", t.st ?? "", t.n ?? ""]);
   return [head, ...rows].map((r) => r.map(q).join(";")).join("\r\n");
 }

@@ -305,3 +305,15 @@ table.t { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-
 .filters .input { width: 100%; min-width: 0; color: var(--text); font-weight: 400; }
 .filters .input.on { border-color: var(--accent); box-shadow: inset 0 0 0 1px var(--accent); }
 @media (max-width: 600px) { .filters { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.mrow .score.vs { background: none; color: var(--muted); font-weight: 600; font-size: 12px; }
+.mrow .q.x12 { display: flex; flex-direction: column; line-height: 1.15; }
+.mrow .q.x12 b { font-weight: 500; }
+.mrow .q.x12.best b { font-weight: 750; }
+.mrow .q.x12 small { font-size: 10.5px; color: var(--muted); }
+.partial { display: flex; flex-direction: column; gap: 6px; padding: 10px 12px; border: 1px dashed var(--line); border-radius: 10px; background: var(--surface-2); }
+.partial .lbl { font-size: 12.5px; color: var(--muted); font-weight: 600; }
+.partial .amount { display: flex; flex-direction: row !important; align-items: center; gap: 6px; }
+.partial .amount .input { width: 150px; font-size: 16px; }
+.partial .eur { color: var(--text); font-weight: 600; }
+.sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.form-anchor { scroll-margin-top: 70px; }

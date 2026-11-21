@@ -1,11 +1,11 @@
 // Registro trade: riservato a chi ha fatto l'accesso (dati nel proprio account Supabase).
-import { useEffect, useMemo, useState } from "preact/hooks";
+import { useEffect, useMemo, useRef, useState } from "preact/hooks";
 import { dateShort, dayToIso, todayDay } from "../../data/dates";
 import { tradePL } from "../../data/personal";
 import { getStore, leagueName, teamName } from "../../data/store";
 import {
   DEFAULT_SETTINGS, MARKETS, NO_FILTER, NO_STRATEGY, PERIODS, activeFilters, archiveClosing, clv, deleteTrade, enrich, filterTrades, loadTrades,
-  marketLabel, marketOf, maxDrawdown, risk, saveSettings, saveTrade, strategyOf, suggestedResult, summarize, tradesCsv,
+  RES_LABEL, fullOutcomes, marketLabel, marketOf, maxDrawdown, risk, saveSettings, saveTrade, strategyOf, suggestedResult, summarize, tradesCsv,
   type Trade, type TradeFilter, type TradeSettings,
 } from "../../data/trades";
 import { played } from "../../data/types";
@@ -18,7 +18,7 @@ import { href } from "../router";
 /** Percentuale con la virgola (0.123 → "12,3%"). */
 const pc = (v: number) => `${(v * 100).toFixed(1).replace(".", ",")}%`;
 export const eur = (v: number) => `${v >= 0 ? "+" : "−"}${Math.abs(v).toFixed(2).replace(".", ",")} €`;
-const RES: Record<string, string> = { open: "Aperto", won: "Vinto", lost: "Perso", void: "Annullato", exit: "Chiuso in anticipo" };
+const RES = RES_LABEL;
 
 export function TradesPage() {
   const session = useSession();
@@ -146,10 +146,11 @@ function Register() {
                 <b>{t.m}</b><span class="muted">{marketLabel(t.mkey, t.mk)} · {t.side} {fmtOdd(t.q)} · finale {m.fh}–{m.fa}{m.hh !== null ? ` (1T ${m.hh}–${m.ha})` : ""}</span>
                 <span class="spacer" />
                 <button type="button" class={`btn ${r === "won" ? "primary" : ""}`} onClick={() => persist({ ...t, res: r, cl: t.cl ?? archiveClosing(t) })}>Chiudi come {r === "won" ? "vinto" : "perso"} ({eur(tradePL({ ...t, res: r })!)})</button>
+                <button type="button" class="btn" onClick={() => setEdit({ ...t, res: "exit", exitpl: null, cl: t.cl ?? archiveClosing(t) })}>Parziale…</button>
               </div>
             );
           })}
-          <p class="note">Esito calcolato dal risultato in archivio; la quota di chiusura, se manca, viene presa dall'archivio (Betfair Exchange o media bookmaker).</p>
+          <p class="note">Esito calcolato dal risultato in archivio; la quota di chiusura, se manca, viene presa dall'archivio (Betfair Exchange o media bookmaker). Se sei uscito prima (cash out) usa "Parziale…" e scrivi l'importo.</p>
         </Card>
       )}
 
@@ -173,11 +174,17 @@ function Register() {
                 <td>{fmtOdd(t.q)}</td><td>{Number(t.s).toFixed(2).replace(".", ",")}</td><td>{fmtOdd(t.cl ?? null)}</td>
                 <td class={c === null ? "" : c >= 0 ? "pos" : "neg"}>{c === null ? "—" : `${c >= 0 ? "+" : ""}${pc(c)}`}</td>
                 <td class="l">
-                  <select class="input slim" value={t.res} onChange={(e) => persist({ ...t, res: (e.target as HTMLSelectElement).value, exitpl: (e.target as HTMLSelectElement).value === "exit" ? (t.exitpl ?? 0) : t.exitpl })} aria-label="Esito">
+                  <select class="input slim" value={t.res} aria-label="Esito" onChange={(e) => {
+                    const v = (e.target as HTMLSelectElement).value;
+                    if (v === "exit") { (e.target as HTMLSelectElement).value = t.res; setEdit({ ...t, res: "exit", exitpl: t.res === "exit" ? t.exitpl : null }); }
+                    else persist({ ...t, res: v });
+                  }}>
                     {Object.entries(RES).map(([k, v]) => <option key={k} value={k}>{v}</option>)}
                   </select>
                 </td>
-                <td class={p === null ? "muted" : p >= 0 ? "pos" : "neg"}><b>{p === null ? "aperto" : eur(p)}</b></td>
+                <td class={p === null ? "muted" : p >= 0 ? "pos" : "neg"}>{p === null && t.res === "exit"
+                  ? <button type="button" class="mini-btn" onClick={() => setEdit(t)}>scrivi importo</button>
+                  : <b>{p === null ? "aperto" : eur(p)}</b>}</td>
                 <td class="nowrap"><button class="mini-btn" type="button" onClick={() => setEdit(t)} aria-label="Modifica">✎</button> <button class="mini-btn" type="button" onClick={() => remove(t)} aria-label="Elimina">🗑</button></td>
               </tr>
             );
@@ -215,8 +222,11 @@ export function TradeForm({ value, onSave, onCancel, isNew, strategies = [] }: {
   };
   const num = (s: string) => Number(s.replace(",", "."));
   const pl = tradePL(t);
+  const box = useRef<HTMLDivElement>(null);
+  useEffect(() => { box.current?.scrollIntoView({ behavior: "smooth", block: "start" }); }, []);
   return (
-    <Card title={isNew ?? !value.m ? "Nuovo trade" : "Modifica trade"}>
+    <div ref={box} class="form-anchor">
+    <Card title={isNew ?? !value.m ? "Nuovo trade" : t.res === "exit" && value.res !== "exit" ? "Chiusura parziale" : "Modifica trade"}>
       <div class="form-grid">
         <label class="span2">Partita
           {m ? <div class="row"><span class="team-link"><TeamBadge id={m.h} /><TeamBadge id={m.a} /><b>{teamName(m.h)} – {teamName(m.a)}</b></span><span class="muted">{dateShort(m.d)} · {leagueName(m.lg)}{played(m) ? ` · ${m.fh}–${m.fa}` : ""}</span><button type="button" class="mini-btn" onClick={() => upd({ mid: undefined })}>cambia</button></div>
@@ -239,7 +249,7 @@ export function TradeForm({ value, onSave, onCancel, isNew, strategies = [] }: {
         <label>Stake (€){t.side === "lay" && <small class="muted"> · rischio {(risk(t) || 0).toFixed(2).replace(".", ",")} €</small>}<input class="input" inputMode="decimal" value={String(t.s)} onInput={(e) => upd({ s: num((e.target as HTMLInputElement).value) })} /></label>
         <label>Commissione %<input class="input" inputMode="decimal" value={String(t.comm)} onInput={(e) => upd({ comm: num((e.target as HTMLInputElement).value) })} /></label>
         <label>Esito<select class="input" value={t.res} onChange={(e) => upd({ res: (e.target as HTMLSelectElement).value })}>{Object.entries(RES).map(([k, v]) => <option key={k} value={k}>{v}</option>)}</select></label>
-        {t.res === "exit" && <label>P/L chiusura anticipata (€)<input class="input" inputMode="decimal" value={String(t.exitpl ?? 0)} onInput={(e) => upd({ exitpl: num((e.target as HTMLInputElement).value) })} /></label>}
+        {t.res === "exit" && <Partial t={t} onChange={(v) => upd({ exitpl: v })} />}
         <label>Quota di chiusura<input class="input" inputMode="decimal" placeholder="per il CLV" value={t.cl ? String(t.cl) : ""} onInput={(e) => upd({ cl: num((e.target as HTMLInputElement).value) || null })} /></label>
         <label>Strategia<input class="input" list="ta-strategies" placeholder="es. Over 1° tempo" value={t.st ?? ""} onInput={(e) => upd({ st: (e.target as HTMLInputElement).value })} />
           <datalist id="ta-strategies">{strategies.map((x) => <option key={x} value={x} />)}</datalist></label>
@@ -252,6 +262,36 @@ export function TradeForm({ value, onSave, onCancel, isNew, strategies = [] }: {
         {pl !== null && <span class={pl >= 0 ? "pos" : "neg"}>Risultato: {eur(pl)}</span>}
       </div>
     </Card>
+    </div>
+  );
+}
+
+/** Chiusura parziale (cash out): vincita o perdita e importo netto in euro. */
+function Partial({ t, onChange }: { t: Trade; onChange: (v: number | null) => void }) {
+  const cur = t.exitpl === null || t.exitpl === undefined || String(t.exitpl) === "" ? null : Number(t.exitpl);
+  const [sign, setSign] = useState<1 | -1>(cur !== null && cur < 0 ? -1 : 1);
+  const [txt, setTxt] = useState(cur === null ? "" : String(Math.abs(cur)).replace(".", ","));
+  const full = fullOutcomes(t);
+  const apply = (sg: 1 | -1, s: string) => {
+    const n = Number(s.replace(",", ".").replace(/[^0-9.]/g, ""));
+    onChange(s.trim() === "" || !Number.isFinite(n) ? null : Math.round(sg * n * 100) / 100);
+  };
+  const ref = useRef<HTMLInputElement>(null);
+  useEffect(() => { ref.current?.focus(); }, []);
+  return (
+    <div class="partial span2">
+      <span class="lbl">Chiusura parziale</span>
+      <div class="row">
+        <Seg<"1" | "-1"> label="Vincita o perdita" value={sign === 1 ? "1" : "-1"} onChange={(v) => { const sg = v === "1" ? 1 : -1; setSign(sg); apply(sg, txt); }}
+          options={[["1", "Vincita"], ["-1", "Perdita"]]} />
+        <label class="amount"><span class="sr">Importo netto in euro</span>
+          <input ref={ref} class="input" inputMode="decimal" placeholder="importo, es. 3,20" value={txt}
+            onInput={(e) => { const v = (e.target as HTMLInputElement).value; setTxt(v); apply(sign, v); }} />
+          <span class="eur">€</span>
+        </label>
+      </div>
+      <small class="muted">Netto, già tolta la commissione. Per confronto: vincita piena {eur(full.win)}, perdita piena {eur(full.loss)}.</small>
+    </div>
   );
 }
 

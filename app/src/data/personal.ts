@@ -89,7 +89,8 @@ export function tradePL(t: Trade): number | null {
   if (t.res === "won") return t.side === "lay" ? s * (1 - c) : s * (q - 1) * (1 - c);
   if (t.res === "lost") return t.side === "lay" ? -s * (q - 1) : -s;
   if (t.res === "void") return 0;
-  if (t.res === "exit" && Number.isFinite(Number(t.exitpl))) return Number(t.exitpl);
+  // chiusura parziale (cash out): conta solo quando l'importo è stato scritto
+  if (t.res === "exit" && t.exitpl !== null && t.exitpl !== undefined && String(t.exitpl) !== "" && Number.isFinite(Number(t.exitpl))) return Number(t.exitpl);
   return null;
 }
 

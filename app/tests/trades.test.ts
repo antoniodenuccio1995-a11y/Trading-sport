@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vitest";
 import type { Match } from "../src/data/types";
-import { NO_FILTER, activeFilters, clv, filterTrades, guessMarket, maxDrawdown, periodRange, selectionWon, strategyOf, summarize, tradesCsv } from "../src/data/trades";
-import type { Trade } from "../src/data/personal";
+import { NO_FILTER, activeFilters, fullOutcomes, clv, filterTrades, guessMarket, maxDrawdown, periodRange, selectionWon, strategyOf, summarize, tradesCsv } from "../src/data/trades";
+import { tradePL, type Trade } from "../src/data/personal";
 
 const m = (fh: number, fa: number, hh: number | null, ha: number | null): Match => ({
   i: 0, id: 1, lg: "I1", s: "2026/27", d: 0, ko: null, h: 1, a: 2, fh, fa, hh, ha,
@@ -90,5 +90,21 @@ describe("filtri del registro", () => {
     const l = [t({ id: 1, d: "2026-11-01", res: "won" }), t({ id: 2, d: "2026-11-02", res: "lost" }), t({ id: 3, d: "2026-11-03", res: "lost" }), t({ id: 4, d: "2026-11-04", res: "won" })];
     expect(maxDrawdown(l)).toBeCloseTo(20);
     expect(maxDrawdown([])).toBe(0);
+  });
+});
+
+describe("chiusura parziale", () => {
+  it("conta solo con l'importo scritto, vincita o perdita", () => {
+    expect(tradePL(t({ res: "exit", exitpl: null }))).toBeNull();
+    expect(tradePL(t({ res: "exit", exitpl: 3.2 }))).toBeCloseTo(3.2);
+    expect(tradePL(t({ res: "exit", exitpl: -2 }))).toBeCloseTo(-2);
+    const s = summarize([t({ id: 1, res: "exit", exitpl: 3.2 }), t({ id: 2, res: "exit", exitpl: -2 }), t({ id: 3, res: "exit", exitpl: null })]);
+    expect([s.closed, s.won, s.open]).toEqual([2, 1, 1]);
+    expect(s.pl).toBeCloseTo(1.2);
+  });
+  it("vincita e perdita piene come riferimento", () => {
+    expect(fullOutcomes(t({ q: 2, s: 10 }))).toEqual({ win: 9.5, loss: -10 });
+    const lay = fullOutcomes(t({ side: "lay", q: 3, s: 10 }));
+    expect(lay.win).toBeCloseTo(9.5); expect(lay.loss).toBeCloseTo(-20);
   });
 });
