@@ -9,19 +9,43 @@ import { Team } from "./pages/Team";
 import { TradesPage } from "./pages/Trades";
 import { requestServerRefresh } from "../data/store";
 import { Flag, TeamBadge } from "./components/badge";
+import { BrandMark, Stadium } from "./components/Stadium";
 import { go, href, useRoute } from "./router";
 
-type Theme = "auto" | "light" | "dark";
+type Theme = "auto" | "diurna" | "notturna" | "azzurri" | "classica";
+const THEMES: { key: Theme; label: string; preview: string }[] = [
+  { key: "auto", label: "Auto", preview: "linear-gradient(135deg, #5aa463 0 50%, #10301d 50%)" },
+  { key: "diurna", label: "Diurna", preview: "linear-gradient(180deg, rgba(255,255,255,.1), rgba(255,255,255,.55)), repeating-linear-gradient(90deg, #4f9a57 0 6px, #468f4e 6px 12px)" },
+  { key: "notturna", label: "Notturna", preview: "radial-gradient(circle at 18% 0, rgba(255,240,200,.75), transparent 55%), linear-gradient(rgba(0,0,0,.35), rgba(0,0,0,.35)), repeating-linear-gradient(90deg, #1d6b3a 0 6px, #175c31 6px 12px)" },
+  { key: "azzurri", label: "Azzurri", preview: "linear-gradient(180deg, rgba(10,40,120,.45), rgba(8,30,90,.8)), repeating-linear-gradient(90deg, #1f6a43 0 6px, #195c39 6px 12px)" },
+  { key: "classica", label: "Classica", preview: "linear-gradient(135deg, #f4f6f8 0 55%, #1d7a4d 55%)" },
+];
+/** Tema effettivo: "auto" segue il telefono o il computer (chiaro → Diurna, scuro → Notturna). */
+export function resolveTheme(t: string): Exclude<Theme, "auto"> {
+  const v = t === "light" ? "diurna" : t === "dark" ? "notturna" : t;
+  if (v === "diurna" || v === "notturna" || v === "azzurri" || v === "classica") return v;
+  return typeof matchMedia === "function" && matchMedia("(prefers-color-scheme: dark)").matches ? "notturna" : "diurna";
+}
 
 export function App() {
   const s = useStore();
   const route = useRoute();
   const [menu, setMenu] = useState(false);
-  const [theme, setTheme] = usePref<Theme>("theme", "auto");
+  const [themePref, setTheme] = usePref<string>("theme", "auto");
+  const theme: Theme = themePref === "light" ? "diurna" : themePref === "dark" ? "notturna" : (themePref as Theme);
   const [fav] = usePref<string[]>("favLeagues", []);
   useEffect(() => {
-    if (theme === "auto") document.documentElement.removeAttribute("data-theme");
-    else document.documentElement.setAttribute("data-theme", theme);
+    const apply = () => {
+      const t = resolveTheme(theme);
+      document.documentElement.setAttribute("data-theme", t);
+      const meta = document.querySelector('meta[name="theme-color"]');
+      if (meta) meta.setAttribute("content", t === "notturna" ? "#06120c" : t === "azzurri" ? "#04102a" : t === "classica" ? "#1d7a4d" : "#1b6b43");
+    };
+    apply();
+    if (theme !== "auto" || typeof matchMedia !== "function") return;
+    const mq = matchMedia("(prefers-color-scheme: dark)");
+    mq.addEventListener?.("change", apply);
+    return () => mq.removeEventListener?.("change", apply);
   }, [theme]);
   useEffect(() => setMenu(false), [route]);
 
@@ -46,8 +70,9 @@ export function App() {
   const active = (p: string, code?: string) => (page === p && (!code || route.path[1] === code) ? "active" : "");
   return (
     <div class="layout">
+      <Stadium />
       <aside class={`side${menu ? " open" : ""}`} aria-label="Menu">
-        <div class="brand"><span class="brand-mark">↗</span>Trading Analytics</div>
+        <div class="brand"><span class="brand-mark"><BrandMark /></span><span>Trading Analytics<small>Statistiche, modello e quote</small></span></div>
         <nav class="nav">
           <a class={page === "" ? "active" : ""} href="#/"><span class="ico">⚽</span>Partite</a>
           <a class={active("registro")} href="#/registro"><span class="ico">📒</span>Registro trade</a>
@@ -64,11 +89,16 @@ export function App() {
           ))}
         </nav>
         <div class="side-foot">
-          <label class="row" style="gap:6px">Tema
-            <select class="input" value={theme} onChange={(e) => setTheme((e.target as HTMLSelectElement).value as Theme)}>
-              <option value="auto">Automatico</option><option value="light">Chiaro</option><option value="dark">Scuro</option>
-            </select>
-          </label>
+          <div class="theme-pick">
+            <span>Tema: <b>{theme === "auto" ? `automatico (${THEMES.find((x) => x.key === resolveTheme("auto"))!.label})` : THEMES.find((x) => x.key === theme)?.label}</b></span>
+            <div role="radiogroup" aria-label="Tema" class="themes">
+              {THEMES.map((x) => (
+                <button key={x.key} type="button" role="radio" aria-checked={theme === x.key} aria-label={x.label} class="theme-sw" title={x.key === "auto" ? "Automatico: segue il telefono o il computer (chiaro → Diurna, scuro → Notturna)" : x.label} onClick={() => setTheme(x.key)}>
+                  <i style={`background:${x.preview}`} />
+                </button>
+              ))}
+            </div>
+          </div>
           <span class="muted">Strumento di studio: le statistiche passate non garantiscono risultati futuri. Il gioco può causare dipendenza.</span>
         </div>
       </aside>

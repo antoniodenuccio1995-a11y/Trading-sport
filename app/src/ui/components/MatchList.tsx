@@ -28,11 +28,11 @@ export function MatchRow({ m }: { m: Match }) {
   const link = href(["partita", m.id]);
   return (
     <a class="mrow" href={link} aria-label={`${teamName(m.h)} contro ${teamName(m.a)}`}>
-      <span class="num muted">{kickoffTime(m.ko)}</span>
+      <span class="num muted ko">{kickoffTime(m.ko)}</span>
       <span class="home"><span>{teamName(m.h)}</span><TeamBadge id={m.h} size={20} /></span>
       {done
-        ? <span><div class="score ft">{m.fh}–{m.fa}</div>{m.hh !== null && <div class="ht">1T {m.hh}–{m.ha}</div>}</span>
-        : <span class="score vs">vs</span>}
+        ? <span class="mid"><div class="score ft">{m.fh}–{m.fa}</div>{m.hh !== null && <div class="ht">1T {m.hh}–{m.ha}</div>}</span>
+        : <span class="mid score vs">vs</span>}
       <span class="away"><TeamBadge id={m.a} size={20} /><span>{teamName(m.a)}</span></span>
       {(["home", "draw", "away"] as const).map((k) => {
         const best = fc && fc[k] === Math.max(fc.home, fc.draw, fc.away);
@@ -44,8 +44,8 @@ export function MatchRow({ m }: { m: Match }) {
           </span>
         );
       })}
-      <span class={`q ${heat(cb.o25)}`} title={`Over 2,5 combinato (${cb.n} partite min.)`}>{fmtPct(cb.o25)}</span>
-      <span class={`q ${heat(cb.btts)}`} title="Entrambe segnano combinato">{fmtPct(cb.btts)}</span>
+      <span class={`q o25 ${heat(cb.o25)}`} title={`Over 2,5 combinato (${cb.n} partite min.)`}>{fmtPct(cb.o25)}</span>
+      <span class={`q gg ${heat(cb.btts)}`} title="Entrambe segnano combinato">{fmtPct(cb.btts)}</span>
     </a>
   );
 }

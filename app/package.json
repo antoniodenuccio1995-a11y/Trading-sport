@@ -11,6 +11,8 @@
     "build:file": "tsc --noEmit && vite build --mode file && node scripts/single-file.mjs"
   },
   "dependencies": {
+    "@fontsource/barlow": "5.3.0",
+    "@fontsource/barlow-condensed": "5.3.0",
     "@supabase/supabase-js": "2.118.0",
     "preact": "10.29.8"
   },

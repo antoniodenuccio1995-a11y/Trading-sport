@@ -8,7 +8,9 @@ export default defineConfig(({ mode }) => ({
   base: "./",
   plugins: [preact()],
   build: {
-    target: "es2022", sourcemap: false, assetsInlineLimit: 0,
+    target: "es2022", sourcemap: false,
+    // sito: caratteri come file a parte (in cache); file unico: tutto incorporato
+    assetsInlineLimit: mode === "file" ? 1_000_000 : 0,
     outDir: mode === "file" ? "dist-file" : "dist",
     rollupOptions: mode === "file" ? { output: { inlineDynamicImports: true } } : undefined,
   },
