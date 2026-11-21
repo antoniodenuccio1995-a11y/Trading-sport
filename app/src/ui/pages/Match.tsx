@@ -15,6 +15,8 @@ import { HistoryRankChart, SeasonRankChart } from "../sections/RankCharts";
 import { StandingsTable } from "../sections/StandingsTable";
 import { TeamBadge } from "../components/badge";
 import { StatTable } from "../sections/StatTable";
+import { GoalMinutes, GoalTimeline } from "../sections/GoalMinutes";
+import { getStore } from "../../data/store";
 
 const TABS: [string, string][] = [["panoramica", "Panoramica e mercato"], ["statistiche", "Statistiche"], ["tempi", "Gol e tempi"], ["classifica", "Classifica"], ["forma", "Forma e precedenti"]];
 
@@ -42,6 +44,7 @@ function Analysis({ m, tab }: { m: M; tab: string }) {
           <div class="big">{done ? `${m.fh} – ${m.fa}` : "vs"}{done && m.hh !== null && <div class="muted" style="font-size:13px;font-weight:600">1° tempo {m.hh}–{m.ha}</div>}</div>
           <div><TeamBadge id={m.a} size={64} /><div class="tn"><TeamLink id={m.a} season={m.s} badge={false} /></div><div class="muted">{posA ? `${posA.pos}° · ${posA.pts} pt` : ""} <Form list={posA?.form ?? []} /></div></div>
         </div>
+        {done && <GoalTimeline m={m} />}
         {fc && (
           <div class="bar3" style="margin-top:14px" role="img" aria-label={`Modello: 1 ${fmtPct(fc.home * 100)}, X ${fmtPct(fc.draw * 100)}, 2 ${fmtPct(fc.away * 100)}`}>
             <div class="b1" style={`width:${fc.home * 100}%`}>1 · {fmtPct(fc.home * 100)}</div>
@@ -53,7 +56,7 @@ function Analysis({ m, tab }: { m: M; tab: string }) {
       <Tabs tabs={TABS} active={tab} link={(k) => href(["partita", m.id], { tab: k })} />
       {tab === "panoramica" && <Overview m={m} fc={fc} />}
       {tab === "statistiche" && <Stats m={m} all={all} />}
-      {tab === "tempi" && <MatchHalves m={m} leagueAll={all} model={fc?.halves ?? null} />}
+      {tab === "tempi" && <><MatchHalves m={m} leagueAll={all} model={fc?.halves ?? null} /><MatchMinutes m={m} /></>}
       {tab === "classifica" && <StandingsTab m={m} season={season} />}
       {tab === "forma" && <FormTab m={m} />}
     </>
@@ -196,4 +199,12 @@ function LastMatches({ title, list, team }: { title: string; list: M[]; team: nu
       })}</tbody></table></div> : <p class="empty">Nessuna partita precedente.</p>}
     </Card>
   );
+}
+
+/** Minuti dei gol nelle partite precedenti delle due squadre e del campionato (stessa stagione). */
+function MatchMinutes({ m }: { m: M }) {
+  const s = getStore();
+  const before = (id: number) => (s.byTeam.get(id) ?? []).filter((x) => x.s === m.s && x.d < m.d);
+  const lg = (s.byLeagueSeason.get(`${m.lg}|${m.s}`) ?? []).filter((x) => x.d < m.d);
+  return <GoalMinutes title="Minuti dei gol (stagione)" cols={[{ label: teamName(m.h), list: before(m.h) }, { label: teamName(m.a), list: before(m.a) }, { label: leagueName(m.lg), list: lg }]} />;
 }

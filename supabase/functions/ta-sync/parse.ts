@@ -126,14 +126,32 @@ export function fdRow(r: Row): MatchRow | undefined {
   } as MatchRow);
 }
 
+/**
+ * Minuti dei gol di Open Matchday ("12,49,90+3") → "12,49,93", nell'ordine della fonte (cronologico).
+ * "" se la partita è finita 0-0; undefined se la colonna manca, è vuota con gol segnati o contiene valori strani.
+ */
+export function goalMinutes(raw: string | undefined, goals: number | undefined): string | undefined {
+  if (raw === undefined || goals === undefined) return undefined;
+  const toks = raw.split(/[,;\s]+/).filter(Boolean);
+  if (!toks.length) return goals === 0 ? "" : undefined;
+  const mins = toks.map((t) => {
+    const m = /^(\d{1,3})(?:\+(\d{1,2}))?'?$/.exec(t);
+    return m ? Number(m[1]) + Number(m[2] ?? 0) : NaN;
+  });
+  if (mins.some((x) => !Number.isFinite(x) || x < 1 || x > 135)) return undefined;
+  return mins.join(",");
+}
+
 /** Riga Open Matchday (results_*.csv o fixtures_*.csv). */
 export function omRow(r: Row): MatchRow | undefined {
   const { home, away } = r, match_date = r.date;
   if (!home || !away || !/^\d{4}-\d{2}-\d{2}$/.test(match_date ?? "")) return undefined;
+  const fh = int(r.ft_home), fa = int(r.ft_away);
   return clean({
     home, away, match_date,
     kickoff: r.time ? omKickoff(match_date, r.time) : undefined,
-    fthg: int(r.ft_home), ftag: int(r.ft_away), hthg: int(r.ht_home), htag: int(r.ht_away),
+    fthg: fh, ftag: fa, hthg: int(r.ht_home), htag: int(r.ht_away),
+    goal_min: "goal_minutes" in r ? goalMinutes(r.goal_minutes, fh === undefined || fa === undefined ? undefined : fh + fa) : undefined,
     sh_h: int(r.home_shots), sh_a: int(r.away_shots), sot_h: int(r.home_target), sot_a: int(r.away_target),
     fo_h: int(r.home_fouls), fo_a: int(r.away_fouls), co_h: int(r.home_corners), co_a: int(r.away_corners),
     ye_h: int(r.home_yellow), ye_a: int(r.away_yellow), re_h: int(r.home_red), re_a: int(r.away_red),
