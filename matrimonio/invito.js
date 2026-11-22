@@ -1,7 +1,7 @@
 // Partecipazione digitale di Antonio e Giulia.
-// Due ante in carta goffrata chiuse da un fiocco: al tocco il fiocco si scioglie, le ante si aprono,
-// parte la musica e compare il cielo ad acquerello con i nomi. Poi il cartoncino si dispiega,
-// le conferme finiscono nel database degli sposi, il conto alla rovescia scorre.
+// Due ante in carta goffrata chiuse da un fiocco: al tocco il nastro si scioglie, le ante si aprono,
+// parte la musica e i nomi si scrivono a mano. Scorrendo, il cartoncino si dispiega, le foto si
+// sviluppano, i biglietti si posano. Animazioni con GSAP e ScrollTrigger (cartella vendor/).
 (() => {
   "use strict";
 
@@ -18,6 +18,9 @@
   const html = document.documentElement;
   const scena = $("#scena"), fiocco = $("#fiocco"), copertina = $("#copertina"), partecipazione = $("#partecipazione");
   const riduci = matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const G = window.gsap, ST = window.ScrollTrigger;
+  const effetti = !!(G && ST) && !riduci;
+  if (effetti) G.registerPlugin(ST);
   const dopo = (ms, fn) => setTimeout(fn, ms);
   const memoria = {
     leggi(k) { try { return localStorage.getItem(k); } catch (e) { return null; } },
@@ -34,12 +37,10 @@
     "anta-sx": (w, h) => [[[0, 0], [w, 0], [w, h], [0, h]], [0, 1, 0, 0]],
     "anta-dx": (w, h) => [[[0, 0], [w, 0], [w, h], [0, h]], [0, 0, 0, 1]],
   };
-
   function casuale(seme) {
     let s = (seme * 9301 + 49297) % 233280 || 1;
     return () => { s = (s * 16807) % 2147483647; return s / 2147483647; };
   }
-
   function sfrangia(el) {
     const w = el.offsetWidth, h = el.offsetHeight;
     if (!w || !h) return;
@@ -52,7 +53,7 @@
       out.push([ax, ay]);
       if (!ruvidi[i]) continue;
       const dx = bx - ax, dy = by - ay, L = Math.hypot(dx, dy), n = Math.max(2, Math.round(L / 2.6));
-      const nx = -dy / L, ny = dx / L; // verso l'interno (poligoni in senso orario)
+      const nx = -dy / L, ny = dx / L;
       let o = 0;
       for (let k = 1; k < n; k++) {
         o += (rnd() - .5) * amp * .9;
@@ -66,11 +67,9 @@
     el.style.clipPath = poli;
     el.style.webkitClipPath = poli;
   }
-
   const sagome = $$("[data-forma]");
   const osserva = "ResizeObserver" in window ? new ResizeObserver((voci) => voci.forEach((v) => sfrangia(v.target))) : null;
   sagome.forEach((el) => { sfrangia(el); osserva && osserva.observe(el); });
-  if (document.fonts && document.fonts.ready) document.fonts.ready.then(() => sagome.forEach(sfrangia));
 
   // ---------- nome dell'invitato dal link: ...?per=Famiglia%20Rossi ----------
   const per = (new URLSearchParams(location.search).get("per") || "").trim().slice(0, 60);
@@ -78,6 +77,27 @@
     $$("[data-per]").forEach((p) => { p.textContent = `per ${per}`; p.hidden = false; });
     fiocco.setAttribute("aria-label", `Sciogli il fiocco e apri l'invito per ${per}`);
   }
+
+  // ---------- scrittura a mano: una maschera che segue il tratto della penna ----------
+  function scrittura(contenitore) {
+    const tl = G.timeline({ paused: true });
+    const parole = $$(".parola", contenitore);
+    parole.forEach((svg, i) => {
+      const tratti = $$(".penna path", svg);
+      const lun = tratti.map((p) => p.getTotalLength());
+      const tot = lun.reduce((a, b) => a + b, 0) || 1;
+      const durata = svg.classList.contains("p-e") ? .45 : 1.25;
+      tratti.forEach((p, k) => {
+        const L = lun[k];
+        G.set(p, { strokeDasharray: `${L} ${L * 2 + 60}`, strokeDashoffset: L + 8 }); // nascosto, senza puntini
+        tl.to(p, { strokeDashoffset: 0, duration: Math.max(.03, durata * L / tot), ease: "none" });
+      });
+      if (i < parole.length - 1) tl.to({}, { duration: .1 });
+    });
+    return tl;
+  }
+  const scrittaCopertina = effetti ? scrittura($(".copertina [data-scritta]")) : null;
+  const scrittaFirma = effetti ? scrittura($(".piede [data-scritta]")) : null;
 
   // ---------- musica (musica/brano.mp3): parte al tocco del fiocco ----------
   const brano = $("#brano"), pulsanteMusica = $("#musica");
@@ -96,6 +116,7 @@
     pulsanteMusica.setAttribute("aria-pressed", String(musicaVoluta));
     pulsanteMusica.setAttribute("aria-label", musicaVoluta ? "Spegni la musica" : "Accendi la musica");
   }
+  function mostraPulsanteMusica() { dopo(400, () => { if (musicaPronta) { aggiornaPulsante(); pulsanteMusica.hidden = false; } }); }
   pulsanteMusica.addEventListener("click", () => {
     musicaVoluta = !musicaVoluta;
     if (musicaVoluta) suona(); else brano.pause();
@@ -108,31 +129,31 @@
   });
 
   // ---------- apertura ----------
-  let avviata = false;
   const blocca = (si) => html.classList.toggle("bloccato", si);
+  const copertinaParti = [".c-intro", ".c-data", ".c-luogo", ".c-scorri"];
+  let avviata = false;
 
-  function chiudi() {
-    blocca(true);
-    scena.hidden = false;
-    scena.classList.add("senza-transizioni");
-    scena.classList.remove("slega", "apri");
-    html.classList.remove("aperto");
-    copertina.classList.remove("rivelata");
-    void scena.offsetWidth;
-    scena.classList.remove("senza-transizioni");
-    avviata = false;
-  }
-
-  function mostraSubito() {
+  function finale() {
+    // stato aperto senza animazioni (seconda visita nella stessa sessione, o movimento ridotto)
     scena.hidden = true;
     blocca(false);
-    html.classList.add("aperto");
-    copertina.classList.add("rivelata");
+    if (scrittaCopertina) scrittaCopertina.progress(1);
+    if (effetti) attivaScorrimento();
   }
 
   let giaAperto = false;
   try { giaAperto = sessionStorage.getItem("invito-aperto") === "1"; } catch (e) { /* niente */ }
-  if (giaAperto) mostraSubito(); else blocca(true);
+  if (giaAperto) finale();
+  else {
+    blocca(true);
+    if (effetti) {
+      G.set(fiocco, { xPercent: -48.5, yPercent: -43 });
+      G.set(".mazzo.basso", { rotation: 180 });
+      G.set(copertinaParti, { autoAlpha: 0, y: 14 });
+      G.set(".mazzo", { autoAlpha: 0 });
+      G.set(".cielo", { scale: 1.06 });
+    }
+  }
 
   fiocco.addEventListener("click", apri);
 
@@ -141,42 +162,116 @@
     avviata = true;
     try { sessionStorage.setItem("invito-aperto", "1"); } catch (e) { /* niente */ }
     window.scrollTo(0, 0);
+    if (navigator.vibrate) navigator.vibrate(12);
     if (musicaVoluta) suona();
-    if (riduci) { mostraSubito(); mostraPulsanteMusica(); return; }
+    if (!effetti) { finale(); mostraPulsanteMusica(); return; }
+
     scena.classList.add("slega");
-    dopo(650, () => { scena.classList.add("apri"); html.classList.add("aperto"); });
-    dopo(1700, () => copertina.classList.add("rivelata"));
-    dopo(3000, () => { scena.hidden = true; blocca(false); mostraPulsanteMusica(); });
-  }
-  function mostraPulsanteMusica() {
-    // il pulsante compare solo se il brano esiste ed è partito
-    dopo(400, () => { if (musicaPronta) { aggiornaPulsante(); pulsanteMusica.hidden = false; } });
+    const tl = G.timeline({ defaults: { ease: "power2.out" } });
+    tl.to(".a-tocca", { autoAlpha: 0, duration: .3 }, 0)
+      // il fiocco viene tirato, si scioglie e scivola via
+      .to(".fiocco svg", { scale: 1.07, duration: .2, ease: "power1.out", transformOrigin: "48.5% 43%" }, 0)
+      .to(".fiocco svg", { scale: .92, duration: .5, ease: "power2.in" }, .2)
+      .to(fiocco, { y: () => innerHeight * .75, rotation: -18, duration: 1.05, ease: "power2.in" }, .22)
+      .to(fiocco, { autoAlpha: 0, duration: .45, ease: "none" }, .75)
+      .to(".f-sx", { xPercent: -104, duration: .95, ease: "power3.in" }, .12)
+      .to(".f-dx", { xPercent: 104, duration: .95, ease: "power3.in" }, .12)
+      .to(".fascia span", { autoAlpha: 0, duration: .45, ease: "none" }, .6)
+      // le ante si aprono verso chi guarda
+      .addLabel("ante", .62)
+      .to(".anta.sx", { rotationY: -112, duration: 2.1, ease: "power3.inOut" }, "ante")
+      .to(".anta.dx", { rotationY: 112, duration: 2.1, ease: "power3.inOut" }, "ante")
+      .to(".anta-ombra", { backgroundColor: "rgba(96, 82, 68, .14)", duration: 1.6, ease: "none" }, "ante")
+      .to(scena, { "--velo": 0, duration: 1.3, ease: "power1.out" }, "ante+=.7")
+      .to(".cielo", { scale: 1, duration: 3.2, ease: "power2.out" }, "ante+=.3")
+      // copertina: fiori dagli angoli, poi i nomi scritti a mano
+      .fromTo(".mazzo.alto", { autoAlpha: 0, x: -70, y: -60, rotation: -10 }, { autoAlpha: 1, x: 0, y: 0, rotation: 0, duration: 2, ease: "power3.out" }, "ante+=.95")
+      .fromTo(".mazzo.basso", { autoAlpha: 0, x: 70, y: 60, rotation: 190 }, { autoAlpha: 1, x: 0, y: 0, rotation: 180, duration: 2, ease: "power3.out" }, "ante+=.95")
+      .to(".c-intro", { autoAlpha: 1, y: 0, duration: 1.2 }, "ante+=1.15")
+      .add(() => scrittaCopertina.play(), "ante+=1.55")
+      .to(".c-data", { autoAlpha: 1, y: 0, duration: 1.1 }, `ante+=${1.55 + scrittaCopertina.duration() - .2}`)
+      .to(".c-luogo", { autoAlpha: 1, y: 0, duration: 1.1 }, "<+.25")
+      .to(".c-scorri", { autoAlpha: 1, y: 0, duration: 1 }, "<+.5")
+      .add(() => { scena.hidden = true; blocca(false); mostraPulsanteMusica(); }, "ante+=2.2")
+      .add(attivaScorrimento);
   }
 
-  $("#rivedi").addEventListener("click", () => { window.scrollTo(0, 0); brano.pause(); chiudi(); });
+  $("#rivedi").addEventListener("click", () => {
+    try { sessionStorage.removeItem("invito-aperto"); } catch (e) { /* niente */ }
+    brano.pause();
+    window.scrollTo(0, 0);
+    location.reload();
+  });
 
-  // ---------- il cartoncino si dispiega quando arriva sullo schermo ----------
-  if (!riduci && "IntersectionObserver" in window) {
-    partecipazione.classList.add("piegata");
-    const io = new IntersectionObserver((voci) => {
-      if (!voci.some((v) => v.isIntersecting)) return;
-      io.disconnect();
-      partecipazione.classList.add("dispiega");
-      requestAnimationFrame(() => partecipazione.classList.remove("piegata"));
-    }, { rootMargin: "0px 0px -30% 0px" });
-    io.observe(partecipazione);
+  // ---------- effetti allo scorrimento ----------
+  let scorrimentoAttivo = false;
+  function attivaScorrimento() {
+    if (!effetti || scorrimentoAttivo) return;
+    scorrimentoAttivo = true;
+
+    // copertina: i fiori scorrono più veloci dei nomi, i nomi sfumano
+    G.timeline({ scrollTrigger: { trigger: copertina, start: "top top", end: "bottom top", scrub: true } })
+      .to(".c-testo", { y: -80, autoAlpha: .2, ease: "none" }, 0)
+      .to(".mazzo.alto", { y: -150, rotation: -8, ease: "none" }, 0)
+      .to(".mazzo.basso", { y: 110, ease: "none" }, 0)
+      .to(".c-scorri", { autoAlpha: 0, ease: "none", duration: .3 }, 0);
+
+    // il cartoncino si dispiega seguendo il dito
+    G.fromTo(".p-centro", { rotationX: -92 }, { rotationX: 0, ease: "power1.out",
+      scrollTrigger: { trigger: ".faccia-centro", start: "top 92%", end: "top 38%", scrub: .7 } });
+    G.fromTo(".p-basso", { rotationX: -150 }, { rotationX: 0, ease: "power1.out",
+      scrollTrigger: { trigger: ".p-basso", start: "top 96%", end: "top 48%", scrub: .7 } });
+
+    // titoli in corsivo: si scrivono da sinistra a destra
+    $$(".a-mano").forEach((h) => G.fromTo(h, { "--p": "-15%" }, { "--p": "120%", duration: 1.6, ease: "power2.inOut",
+      scrollTrigger: { trigger: h, start: "top 86%", once: true } }));
+
+    // foto: le colonne scorrono a velocità diverse, ogni stampa si posa e si sviluppa
+    $$(".colonna").forEach((col) => {
+      const v = +col.dataset.velocita || 0;
+      G.fromTo(col, { y: -v }, { y: v, ease: "none", scrollTrigger: { trigger: ".collage", start: "top bottom", end: "bottom top", scrub: true } });
+    });
+    $$(".stampa").forEach((fig) => {
+      const r = parseFloat(getComputedStyle(fig).getPropertyValue("--r")) || 0;
+      const img = $("img", fig);
+      const tl = G.timeline({ scrollTrigger: { trigger: fig, start: "top 88%", once: true } });
+      tl.fromTo(fig, { autoAlpha: 0, y: 50, rotation: r + (r > 0 ? 6 : -6) }, { autoAlpha: 1, y: 0, rotation: r, duration: 1.1, ease: "power3.out" })
+        .fromTo(img, { filter: "brightness(1.8) contrast(.55) saturate(0) blur(3px)" }, { filter: "brightness(1) contrast(1) saturate(1) blur(0px)", duration: 2.4, ease: "power2.out" }, .2);
+    });
+
+    // biglietti: si posano come carta sul tavolo
+    $$(".biglietto").forEach((b) => G.fromTo(b, { autoAlpha: 0, y: 70, rotation: -2.5 }, { autoAlpha: 1, y: 0, rotation: 0, duration: 1.2, ease: "power3.out",
+      scrollTrigger: { trigger: b, start: "top 90%", once: true } }));
+
+    // conto alla rovescia: le cifre salgono fino al valore vero
+    ST.create({ trigger: "#conto", start: "top 88%", once: true, onEnter: () => {
+      contoAnimato = true;
+      const vero = tempoMancante(), o = { g: 0, h: 0, m: 0, s: 0 };
+      G.to(o, { g: vero.g, h: vero.h, m: vero.m, s: vero.s, duration: 1.8, ease: "power3.out",
+        onUpdate: () => scriviConto({ g: Math.round(o.g), h: Math.round(o.h), m: Math.round(o.m), s: Math.round(o.s) }),
+        onComplete: () => { contoAnimato = false; conta(); } });
+    } });
+
+    // firma in fondo: Antonio & Giulia si scrivono di nuovo
+    ST.create({ trigger: ".piede", start: "top 90%", once: true, onEnter: () => scrittaFirma.play() });
+
+    ST.refresh();
   }
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(() => { sagome.forEach(sfrangia); if (scorrimentoAttivo) ST.refresh(); });
 
   // ---------- conto alla rovescia ----------
   const cifre = { g: $("#c-giorni"), o: $("#c-ore"), m: $("#c-minuti"), s: $("#c-secondi") };
   const due = (n) => String(n).padStart(2, "0");
-  function conta() {
+  let contoAnimato = false;
+  function tempoMancante() {
     let r = Math.max(0, Math.floor((DATI.inizio - Date.now()) / 1000));
     const g = Math.floor(r / 86400); r -= g * 86400;
-    const o = Math.floor(r / 3600); r -= o * 3600;
-    const m = Math.floor(r / 60), s = r - m * 60;
-    cifre.g.textContent = String(g); cifre.o.textContent = due(o); cifre.m.textContent = due(m); cifre.s.textContent = due(s);
+    const h = Math.floor(r / 3600); r -= h * 3600;
+    const m = Math.floor(r / 60);
+    return { g, h, m, s: r - m * 60 };
   }
+  function scriviConto(t) { cifre.g.textContent = String(t.g); cifre.o.textContent = due(t.h); cifre.m.textContent = due(t.m); cifre.s.textContent = due(t.s); }
+  function conta() { if (!contoAnimato) scriviConto(tempoMancante()); }
   conta();
   setInterval(conta, 1000);
 
@@ -235,6 +330,7 @@
     collegaWhatsapp(r, grazie);
     form.hidden = true;
     grazie.hidden = false;
+    if (effetti && !giaInviata) G.fromTo(grazie, { autoAlpha: 0, y: 16 }, { autoAlpha: 1, y: 0, duration: .9, ease: "power2.out" });
   }
   $("#cambia-risposta").addEventListener("click", () => {
     grazie.hidden = true; form.hidden = false; stato.textContent = ""; ripiego.hidden = true;

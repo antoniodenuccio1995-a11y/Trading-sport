@@ -1,10 +1,12 @@
 # Partecipazione digitale di Antonio e Giulia
 
-Pagina statica (nessuna compilazione) in avorio, rosa cipria e bianco, come la partecipazione stampata.
+Pagina statica (nessuna compilazione) in avorio e bianco, col rosa solo nel nastro e nei fiori, come la partecipazione stampata. Animazioni con [GSAP](https://gsap.com) 3.13 e ScrollTrigger, copiati in `vendor/` (licenza standard gratuita di GSAP).
 
 1. **Invito chiuso:** due ante in carta goffrata con i nomi nella ghirlanda, chiuse da un fiocco di chiffon rosa.
-2. **Al tocco del fiocco:** il nastro si scioglie, le ante si aprono, parte la musica (se c'è il file) e compare il cielo ad acquerello con i nomi.
-3. **Scorrendo:** il cartoncino a punta col monogramma si dispiega (testi della stampa, mappe, telefoni, IBAN da copiare), poi le foto "Noi due", la conferma della presenza e "Salva la data" con il conto alla rovescia.
+2. **Al tocco del fiocco:** il fiocco viene tirato e scivola via, il nastro si apre, le ante si aprono verso chi guarda, parte la musica (se c'è il file), i fiori entrano dagli angoli e **Antonio & Giulia si scrivono a mano**.
+3. **Scorrendo:** il cartoncino a punta si dispiega seguendo il dito, i titoli in corsivo si scrivono, le foto "Noi due" si posano in un collage a due colonne e si sviluppano come polaroid, i biglietti di conferma e "Salva la data" si appoggiano, il conto alla rovescia sale, in fondo la firma si scrive di nuovo.
+
+La scrittura a mano usa i contorni del carattere Alex Brush e, come maschera, le linee centrali dei tratti (calcolate una volta sola dalle lettere): ogni tratto si disegna nell'ordine in cui lo farebbe una penna.
 
 - **Link:** https://antoniodenuccio1995-a11y.github.io/Trading-sport/matrimonio/ (si pubblica insieme all'app a ogni modifica su `main`).
 - **Link personalizzato:** con `?per=` il nome compare sulle ante e nel modulo di conferma, per esempio
@@ -29,13 +31,14 @@ Mettete il brano in `musica/brano.mp3` (meglio sotto i 4 MB). Parte quando si to
 
 | File | Contenuto |
 | --- | --- |
-| `index.html` | Testi dell'invito, ante, fiocco (SVG), disegni di monogramma, rametto e fiori (simboli SVG in cima al `body`) |
+| `index.html` | Testi dell'invito, ante, fiocco (SVG), nomi scritti a mano (SVG), disegni di monogramma, rametto e fiori (simboli SVG in cima al `body`) |
 | `stile.css` | Carta, colori, caratteri, tempi delle animazioni |
-| `invito.js` | Apertura, bordi sfrangiati, musica, conto alla rovescia, conferme (database con riserva WhatsApp), copia IBAN |
+| `invito.js` | Apertura e scrittura a mano, effetti allo scorrimento, bordi sfrangiati, musica, conto alla rovescia, conferme (database con riserva WhatsApp), copia IBAN |
 | `conferme.html` | Pagina riservata agli sposi con l'elenco delle risposte |
 | `matrimonio.ics` | Evento per il calendario del telefono |
 | `font/` | Alex Brush (nomi) e Libre Baskerville (testi), licenza SIL OFL |
-| `img/` | Carta goffrata delle ante, cielo ad acquerello, anteprima per WhatsApp, icona |
+| `img/` | Carta goffrata delle ante, anteprima per WhatsApp, icona |
+| `vendor/` | GSAP e ScrollTrigger |
 | `foto/` | Foto "Noi due" (ritagliate 4:5 e uniformate nei toni) |
 
 ## Da completare

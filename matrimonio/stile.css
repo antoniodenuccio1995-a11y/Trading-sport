@@ -39,8 +39,6 @@ button, input, textarea { font: inherit; color: inherit; }
   background: var(--grana), radial-gradient(120% 80% at 50% 18%, #FFFDF9 0%, #F8F3EB 42%, #EFE7DB 100%);
   transform-origin: 50% 40%;
 }
-.js .cielo { transform: scale(1.04); }
-.aperto .cielo, .no-js .cielo { transform: none; transition: transform 3s cubic-bezier(.2, .6, .2, 1); }
 
 /* ---------- carta con bordi sfrangiati (la forma la calcola invito.js) ---------- */
 .carta-ombra {
@@ -53,14 +51,13 @@ button, input, textarea { font: inherit; color: inherit; }
 }
 
 /* ---------- invito chiuso: due ante in carta goffrata con il fiocco ---------- */
-.scena { position: fixed; inset: 0; z-index: 10; }
+.scena { position: fixed; inset: 0; z-index: 10; --velo: 1; }
 .no-js .scena, .scena[hidden] { display: none; }
 .scena::before {
   content: ""; position: absolute; inset: 0;
   background: var(--grana), radial-gradient(120% 80% at 50% 18%, #FFFDF9 0%, #F8F3EB 42%, #EFE7DB 100%);
-  transition: opacity 1.2s ease .5s;
+  opacity: var(--velo);
 }
-.apri.scena::before { opacity: 0; }
 .cancello {
   position: absolute; top: 0; bottom: 0; left: 50%;
   width: min(100%, 50svh); transform: translateX(-50%);
@@ -69,19 +66,16 @@ button, input, textarea { font: inherit; color: inherit; }
 .anta {
   position: absolute; top: 0; bottom: 0; width: 50%; overflow: hidden;
   -webkit-backface-visibility: hidden; backface-visibility: hidden;
-  transition: transform 2.1s cubic-bezier(.45, .05, .25, 1);
+  will-change: transform;
 }
 .anta.sx { left: 0; transform-origin: 0 50%; }
 .anta.dx { right: 0; transform-origin: 100% 50%; }
-.apri .anta.sx { transform: rotateY(-112deg); }
-.apri .anta.dx { transform: rotateY(112deg); }
 .anta-tela { position: absolute; top: 0; bottom: 0; width: 200%; background: #F8F3EA url(img/ante.jpg) center / 100% 100%; }
 .anta.sx .anta-tela { left: 0; }
 .anta.dx .anta-tela { right: 0; }
-.anta-ombra { position: absolute; inset: 0; pointer-events: none; transition: background-color 1.7s ease; }
+.anta-ombra { position: absolute; inset: 0; pointer-events: none; }
 .anta.sx .anta-ombra { background-image: linear-gradient(to left, rgba(var(--ombra), .2), rgba(var(--ombra), 0) 9%); }
 .anta.dx .anta-ombra { background-image: linear-gradient(to right, rgba(var(--ombra), .2), rgba(var(--ombra), 0) 9%); }
-.apri .anta-ombra { background-color: rgba(var(--ombra), .1); }
 
 .anta-scritte { position: absolute; inset: 0; color: #6A5D59; text-align: center; }
 .anta-scritte p { position: absolute; left: 0; right: 0; margin: 0; }
@@ -93,8 +87,7 @@ button, input, textarea { font: inherit; color: inherit; }
 .a-nomi .e { font-size: .62em; line-height: 1.1; }
 .a-data { top: 34.8%; font-style: italic; font-size: 3.6cqw; letter-spacing: .02em; }
 .a-per { top: 44%; font-family: var(--script); font-size: 7cqw; color: #5F5350; }
-.a-tocca { top: 94.2%; font-style: italic; font-size: 3.3cqw; letter-spacing: .03em; color: #8B7D78; transition: opacity .4s; }
-.slega .a-tocca { opacity: 0; }
+.a-tocca { top: 94.2%; font-style: italic; font-size: 3.3cqw; letter-spacing: .03em; color: #8B7D78; }
 
 .fascia { position: absolute; left: 0; right: 0; top: 54%; height: 8cqw; pointer-events: none; }
 .fascia span {
@@ -103,24 +96,19 @@ button, input, textarea { font: inherit; color: inherit; }
     repeating-linear-gradient(100deg, rgba(255, 255, 255, .2) 0 1px, transparent 1px 3px),
     linear-gradient(180deg, #E3A6B0 0%, #F3CACF 45%, #EDB9BF 70%, #E0A2AC 100%);
   opacity: .9; box-shadow: 0 2px 5px rgba(107, 74, 62, .22);
-  transition: transform .9s cubic-bezier(.5, 0, .75, .3), opacity .6s ease .3s;
 }
 .f-sx { left: 0; }
 .f-dx { right: 0; }
-.slega .f-sx { transform: translateX(-104%); opacity: 0; }
-.slega .f-dx { transform: translateX(104%); opacity: 0; }
 
 .fiocco {
   position: absolute; left: 50%; top: calc(54% + 4cqw);
   width: 64cqw; padding: 0; border: 0; background: none; cursor: pointer;
   transform: translate(-48.5%, -43%);
   -webkit-tap-highlight-color: transparent;
-  transition: transform 1.05s cubic-bezier(.55, 0, .8, .45), opacity .5s ease .55s;
 }
 .fiocco svg { display: block; width: 100%; height: auto; overflow: visible; animation: respiro 3.4s ease-in-out 1s infinite; transform-origin: 48.5% 43%; }
 .fiocco:focus-visible { outline: 2px solid var(--rosa-scuro); outline-offset: 6px; border-radius: 12px; }
 @keyframes respiro { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.035); } }
-.slega .fiocco { transform: translate(-48.5%, 70svh) rotate(-16deg) scale(.9); opacity: 0; }
 .slega .fiocco svg { animation: none; }
 
 .senza-transizioni, .senza-transizioni * { transition: none !important; animation: none !important; }
@@ -139,7 +127,7 @@ button, input, textarea { font: inherit; color: inherit; }
 .musica[aria-pressed="false"] .nota { opacity: .45; }
 .musica:focus-visible { outline: 2px solid var(--rosa-scuro); outline-offset: 3px; }
 
-/* ---------- copertina ad acquerello ---------- */
+/* ---------- copertina con i nomi scritti a mano ---------- */
 .invito { padding: 0 14px 56px; overflow-x: hidden; overflow-x: clip; }
 .copertina {
   position: relative; min-height: 100svh; margin: 0 -14px;
@@ -151,12 +139,14 @@ button, input, textarea { font: inherit; color: inherit; }
 .mazzo.basso { bottom: -18px; right: -22px; transform: rotate(180deg); }
 .c-testo { position: relative; }
 .c-intro { margin: 0 0 18px; font-style: italic; font-size: clamp(15px, 4.1vw, 18px); line-height: 1.7; color: var(--testo); }
-.c-nomi {
-  margin: 0; display: flex; flex-direction: column; align-items: center;
-  font-family: var(--script); font-weight: 400; color: var(--inchiostro);
-  font-size: clamp(66px, 21vw, 128px); line-height: .98;
-}
-.c-nomi .e { font-size: .5em; line-height: 1.15; color: var(--tenue); }
+.c-nomi { margin: 0; font-weight: 400; color: var(--inchiostro); }
+.sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.scritta { display: flex; flex-direction: column; align-items: center; }
+.scritta .parola { display: block; width: auto; height: clamp(78px, 23vw, 150px); overflow: visible; }
+.scritta .p-e { height: clamp(46px, 13vw, 84px); margin: -6px 0 -2px; color: var(--tenue); }
+.scritta.in-riga { flex-direction: row; align-items: flex-end; justify-content: center; gap: 6px; }
+.scritta.in-riga .parola { height: 46px; }
+.scritta.in-riga .p-e { height: 30px; margin: 0 0 4px; }
 .c-data { margin: 22px 0 4px; font-style: italic; font-size: clamp(17px, 4.6vw, 21px); color: var(--inchiostro); }
 .c-luogo { margin: 0; font-size: clamp(13.5px, 3.6vw, 15px); letter-spacing: .04em; color: var(--tenue); }
 .c-scorri {
@@ -167,18 +157,12 @@ button, input, textarea { font: inherit; color: inherit; }
 }
 .c-scorri span { display: block; width: 1px; height: 34px; background: linear-gradient(var(--tenue), transparent); transform-origin: top; animation: scorri 2.2s ease-in-out infinite; }
 @keyframes scorri { 0% { transform: scaleY(0); opacity: 0; } 30% { opacity: 1; } 100% { transform: scaleY(1); opacity: 0; } }
-.js .copertina [style*="--i"] { opacity: 0; filter: blur(10px); transform: translateY(8px); }
-.js .copertina.rivelata [style*="--i"] {
-  opacity: 1; filter: blur(0); transform: none;
-  transition: opacity 1.3s ease, filter 1.5s ease, transform 1.5s cubic-bezier(.2, .7, .2, 1);
-  transition-delay: calc(var(--i) * 230ms);
-}
 
 /* ---------- pannello alto a punta, con monogramma ---------- */
 .pentagono { position: relative; display: block; aspect-ratio: 5 / 2; }
 .pentagono .mono { position: absolute; left: 11%; top: 12%; width: 38%; height: auto; overflow: visible; }
 
-/* ---------- partecipazione: si dispiega quando arriva sullo schermo ---------- */
+/* ---------- partecipazione: si dispiega seguendo lo scorrimento ---------- */
 .partecipazione {
   position: relative; width: min(100%, 540px); margin: 8px auto 0;
   perspective: 1300px; perspective-origin: 50% 0;
@@ -186,10 +170,6 @@ button, input, textarea { font: inherit; color: inherit; }
 .p-centro { position: relative; transform-style: preserve-3d; transform-origin: 50% 0; }
 .faccia-centro, .p-basso { position: relative; }
 .p-basso { transform-origin: 50% 0; -webkit-backface-visibility: hidden; backface-visibility: hidden; }
-.js .partecipazione.piegata .p-centro { transform: rotateX(-92deg); }
-.js .partecipazione.piegata .p-basso { transform: rotateX(-150deg); }
-.partecipazione.dispiega .p-centro { transition: transform 1.3s cubic-bezier(.22, .68, .28, 1); }
-.partecipazione.dispiega .p-basso { transition: transform 1.3s cubic-bezier(.22, .68, .28, 1) .55s; }
 
 .faccia-centro .carta, .p-basso .carta {
   background: linear-gradient(180deg, rgba(120, 100, 80, .16) 0, rgba(255, 255, 255, .5) 1.5px, rgba(120, 100, 80, .05) 6px, transparent 14px), var(--grana), linear-gradient(170deg, #FFFFFD 0%, #FDFBF6 55%, #F8F4EC 100%);
@@ -235,32 +215,32 @@ button, input, textarea { font: inherit; color: inherit; }
 .p-basso .testo { padding-bottom: 104px; }
 .rametto { position: absolute; left: 4px; bottom: 10px; width: min(62%, 300px); height: auto; overflow: visible; pointer-events: none; }
 
-/* ---------- noi due: stampe fotografiche ---------- */
-.noi { margin: 60px auto 0; max-width: 720px; text-align: center; }
+/* ---------- noi due: collage di stampe ---------- */
+.noi { margin: 70px auto 0; max-width: 620px; text-align: center; }
 .noi h2, .biglietto h2 {
   margin: 0 0 6px; font-family: var(--script); font-weight: 400;
   font-size: clamp(38px, 10.5vw, 52px); line-height: 1.15; color: var(--inchiostro);
 }
-.stampe {
-  display: flex; gap: 20px; overflow-x: auto; overscroll-behavior-x: contain;
-  scroll-snap-type: x mandatory; scrollbar-width: none;
-  margin: 0 -14px; padding: 22px max(14vw, calc(50% - 180px)) 30px;
+/* titoli in corsivo che si scrivono da sinistra a destra (GSAP muove --p) */
+.a-mano {
+  --p: 120%;
+  -webkit-mask-image: linear-gradient(90deg, #000 calc(var(--p) - 16%), transparent var(--p));
+  mask-image: linear-gradient(90deg, #000 calc(var(--p) - 16%), transparent var(--p));
 }
-.stampe::-webkit-scrollbar { display: none; }
-.stampe:focus-visible { outline: 2px solid var(--rosa-scuro); outline-offset: -4px; }
+.collage { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; align-items: start; margin-top: 26px; }
+.colonna { display: grid; gap: 22px; }
+.colonna.due { margin-top: 84px; }
 .stampa {
-  flex: 0 0 min(72vw, 340px); margin: 0; scroll-snap-align: center;
-  padding: 12px 12px 46px; background: #FFFEFB;
-  box-shadow: 0 14px 28px -14px rgba(var(--ombra), .45), 0 1px 3px rgba(var(--ombra), .18);
+  margin: 0; padding: 8px 8px 30px; background: #FFFEFB;
+  box-shadow: 0 16px 30px -16px rgba(var(--ombra), .5), 0 1px 3px rgba(var(--ombra), .18);
   transform: rotate(var(--r, 0deg));
 }
-.stampa:nth-child(1) { --r: -1.8deg; }
-.stampa:nth-child(2) { --r: 1.4deg; }
-.stampa:nth-child(3) { --r: -1deg; }
-.stampa:nth-child(4) { --r: 1.8deg; }
-.stampa:nth-child(5) { --r: -1.4deg; }
-.stampa img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; background: #EFE5DC; }
-.noi-scorri { margin: 0; font-style: italic; font-size: 13.5px; color: var(--tenue); }
+.stampa:nth-child(1) { --r: -2.2deg; }
+.stampa:nth-child(2) { --r: 1.6deg; }
+.stampa:nth-child(3) { --r: -1.2deg; }
+.colonna.due .stampa:nth-child(1) { --r: 2deg; }
+.colonna.due .stampa:nth-child(2) { --r: -1.6deg; }
+.stampa img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; background: #EFE7DC; }
 
 /* ---------- biglietti: conferma e data ---------- */
 .biglietto { position: relative; width: min(100%, 500px); margin: 48px auto 0; }
@@ -344,6 +324,5 @@ button, input, textarea { font: inherit; color: inherit; }
 }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
-  .anta, .fiocco, .fiocco svg, .fascia span, .cielo, .p-centro, .p-basso, .c-scorri span, .copertina [style*="--i"] { transition: none !important; animation: none !important; }
-  .js .copertina [style*="--i"] { filter: none; transform: none; }
+  .fiocco svg, .c-scorri span { animation: none !important; }
 }
