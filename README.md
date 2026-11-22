@@ -4,6 +4,7 @@ Gestionale di analisi statistica delle partite di calcio per il trading sportivo
 
 - **App (v1):** **https://antoniodenuccio1995-a11y.github.io/Trading-sport/** (codice nella cartella [`app/`](app/); si ripubblica da sola a ogni modifica su `main`).
 - **Dati:** Supabase (progetto principale, tabelle `ta_*`), aggiornati in automatico due volte al giorno.
+- **Partecipazione di nozze:** **https://antoniodenuccio1995-a11y.github.io/Trading-sport/matrimonio/** (cartella [`matrimonio/`](matrimonio/), istruzioni in [`matrimonio/LEGGIMI.md`](matrimonio/LEGGIMI.md)).
 - **Versioni precedenti:** [`legacy/`](legacy/) (v0.3-rc4) e i file `Trading_Analytics_v0.2*.html` nella radice, conservati invariati.
 
 Documenti:

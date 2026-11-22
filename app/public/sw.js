@@ -7,6 +7,7 @@ self.addEventListener("activate", (e) => e.waitUntil(
 self.addEventListener("fetch", (e) => {
   const url = new URL(e.request.url);
   if (e.request.method !== "GET" || url.origin !== location.origin) return;
+  if (url.pathname.includes("/matrimonio/")) return; // la partecipazione di nozze non fa parte dell'app
   if (url.pathname.includes("/assets/")) {
     e.respondWith(caches.open(CACHE).then(async (c) => (await c.match(e.request)) || fetch(e.request).then((r) => { if (r.ok) c.put(e.request, r.clone()); return r; })));
   } else if (e.request.mode === "navigate") {

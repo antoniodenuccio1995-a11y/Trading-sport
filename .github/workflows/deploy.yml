@@ -1,11 +1,12 @@
 # Compila l'app (cartella app/), esegue i test e la pubblica sul ramo gh-pages
+# insieme alla partecipazione di nozze (cartella matrimonio/).
 # (GitHub Pages: https://antoniodenuccio1995-a11y.github.io/Trading-sport/).
 name: Pubblica app
 
 on:
   push:
     branches: [main]
-    paths: ["app/**", "supabase/functions/**", ".github/workflows/deploy.yml"]
+    paths: ["app/**", "matrimonio/**", "supabase/functions/**", ".github/workflows/deploy.yml"]
   workflow_dispatch:
 
 permissions:
@@ -32,6 +33,8 @@ jobs:
         working-directory: app
       - run: npm run build
         working-directory: app
+      # partecipazione di nozze: pagina statica pubblicata in /Trading-sport/matrimonio/
+      - run: cp -r matrimonio app/dist/matrimonio
       - uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
