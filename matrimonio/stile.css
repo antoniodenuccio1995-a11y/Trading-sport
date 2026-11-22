@@ -1,5 +1,5 @@
 /* Partecipazione digitale di Antonio e Giulia.
-   Carta avorio con bordi sfrangiati, nastro di chiffon rosa cipria, tavolo in noce. */
+   Avorio, rosa cipria e bianco: carta in rilievo, nastro di chiffon, cielo ad acquerello. */
 
 @font-face { font-family: "Alex Brush"; src: url(font/alex-brush.woff2) format("woff2"); font-display: swap; }
 @font-face { font-family: "Libre Baskerville"; src: url(font/libre-baskerville-400-normal.woff2) format("woff2"); font-weight: 400; font-display: swap; }
@@ -9,139 +9,179 @@
 
 :root {
   color-scheme: light;
-  --legno: #2A1810;
   --carta: #FBF8F1;
-  --carta-busta: #F5EFE4;
-  --carta-dentro: #E6DDCB;
+  --avorio: #F6EEE6;
   --inchiostro: #3E3937;
   --testo: #4A4442;
-  --tenue: #6F6663;
+  --tenue: #75696A;
   --rosa: #E8B4B9;
   --rosa-scuro: #9A5A66;
-  --crema: #F1E8DA;
+  --ombra: 120, 78, 70;
   --script: "Alex Brush", "Snell Roundhand", cursive;
   --serif: "Libre Baskerville", Baskerville, "Baskerville Old Face", Georgia, serif;
   --grana: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .35 0 0 0 0 .3 0 0 0 0 .25 0 0 0 .08 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
 }
 
 *, *::before, *::after { box-sizing: border-box; }
-html { background: var(--legno); -webkit-text-size-adjust: 100%; }
+html { background: var(--avorio); -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
 html.bloccato { overflow: hidden; }
 body {
-  margin: 0;
-  min-height: 100svh;
-  font-family: var(--serif);
-  color: var(--testo);
-  background: transparent;
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
+  margin: 0; min-height: 100svh;
+  font-family: var(--serif); color: var(--testo); background: transparent;
+  -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility;
 }
 button, input, textarea { font: inherit; color: inherit; }
 .arte { position: absolute; width: 0; height: 0; overflow: hidden; }
 
-/* ---------- tavolo ---------- */
-.tavolo {
+/* ---------- cielo ad acquerello, fisso dietro a tutta la pagina ---------- */
+.cielo {
   position: fixed; inset: 0; z-index: -1;
-  background: var(--legno) url(img/legno.jpg) center / cover;
+  background: var(--avorio) url(img/acquerello.jpg) center / cover;
+  transform-origin: 50% 40%;
 }
-.tavolo::after {
-  content: ""; position: absolute; inset: 0;
-  background: radial-gradient(120% 85% at 50% 38%, transparent 35%, rgba(12, 6, 3, .55) 100%);
-}
+.js .cielo { transform: scale(1.08); }
+.aperto .cielo, .no-js .cielo { transform: none; transition: transform 3s cubic-bezier(.2, .6, .2, 1); }
 
 /* ---------- carta con bordi sfrangiati (la forma la calcola invito.js) ---------- */
 .carta-ombra {
   position: absolute; inset: 0; display: block;
-  filter: drop-shadow(0 0 .7px rgba(255, 253, 247, .95)) drop-shadow(0 8px 14px rgba(10, 5, 2, .42)) drop-shadow(0 1px 2px rgba(10, 5, 2, .3));
+  filter: drop-shadow(0 0 .7px rgba(255, 255, 255, .95)) drop-shadow(0 10px 16px rgba(var(--ombra), .22)) drop-shadow(0 1px 2px rgba(var(--ombra), .22));
 }
 .carta {
   position: absolute; inset: 0; display: block;
-  background: var(--grana), linear-gradient(170deg, #FDFBF6 0%, var(--carta) 55%, #F6F1E6 100%);
+  background: var(--grana), linear-gradient(170deg, #FFFDF8 0%, var(--carta) 55%, #F7F1E8 100%);
 }
 
-/* ---------- scena della busta ---------- */
-.scena {
-  position: fixed; inset: 0; z-index: 5;
-  display: flex; align-items: center; justify-content: center;
-  padding: 0 16px;
-}
+/* ---------- invito chiuso: due ante in carta goffrata con il fiocco ---------- */
+.scena { position: fixed; inset: 0; z-index: 10; }
 .no-js .scena, .scena[hidden] { display: none; }
-.scena-centro {
-  display: flex; flex-direction: column; align-items: center; gap: clamp(52px, 9vh, 84px);
-  transform: translateY(7vh);
+.scena::before {
+  content: ""; position: absolute; inset: 0;
+  background: var(--avorio) url(img/acquerello.jpg) center / cover;
+  filter: blur(6px) brightness(.97); transform: scale(1.05);
+  transition: opacity 1.2s ease .5s;
 }
-.busta {
-  position: relative; display: block;
-  width: min(88vw, 520px); aspect-ratio: 17 / 10;
-  padding: 0; border: 0; background: none; cursor: pointer;
+.apri.scena::before { opacity: 0; }
+.cancello {
+  position: absolute; top: 0; bottom: 0; left: 50%;
+  width: min(100%, 50svh); transform: translateX(-50%);
+  perspective: 1800px; container-type: size;
+}
+.anta {
+  position: absolute; top: 0; bottom: 0; width: 50%; overflow: hidden;
+  -webkit-backface-visibility: hidden; backface-visibility: hidden;
+  transition: transform 2.1s cubic-bezier(.45, .05, .25, 1);
+}
+.anta.sx { left: 0; transform-origin: 0 50%; }
+.anta.dx { right: 0; transform-origin: 100% 50%; }
+.apri .anta.sx { transform: rotateY(-112deg); }
+.apri .anta.dx { transform: rotateY(112deg); }
+.anta-tela { position: absolute; top: 0; bottom: 0; width: 200%; background: #F8F3EA url(img/ante.jpg) center / 100% 100%; }
+.anta.sx .anta-tela { left: 0; }
+.anta.dx .anta-tela { right: 0; }
+.anta-ombra { position: absolute; inset: 0; pointer-events: none; transition: background-color 1.7s ease; }
+.anta.sx .anta-ombra { background-image: linear-gradient(to left, rgba(var(--ombra), .2), rgba(var(--ombra), 0) 9%); }
+.anta.dx .anta-ombra { background-image: linear-gradient(to right, rgba(var(--ombra), .2), rgba(var(--ombra), 0) 9%); }
+.apri .anta-ombra { background-color: rgba(var(--ombra), .1); }
+
+.anta-scritte { position: absolute; inset: 0; color: #6A5D59; text-align: center; }
+.anta-scritte p { position: absolute; left: 0; right: 0; margin: 0; }
+.a-nomi {
+  top: 17.6%; display: flex; flex-direction: column; align-items: center;
+  font-family: var(--script); font-size: 10.6cqw; line-height: 1.02;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, .8), 0 -1px 0 rgba(var(--ombra), .12);
+}
+.a-nomi .e { font-size: .62em; line-height: 1.1; }
+.a-data { top: 34.8%; font-style: italic; font-size: 3.6cqw; letter-spacing: .02em; }
+.a-per { top: 44%; font-family: var(--script); font-size: 7cqw; color: #5F5350; }
+.a-tocca { top: 94.2%; font-style: italic; font-size: 3.3cqw; letter-spacing: .03em; color: #8B7D78; transition: opacity .4s; }
+.slega .a-tocca { opacity: 0; }
+
+.fascia { position: absolute; left: 0; right: 0; top: 54%; height: 8cqw; pointer-events: none; }
+.fascia span {
+  position: absolute; top: 0; bottom: 0; width: 50%;
+  background:
+    repeating-linear-gradient(100deg, rgba(255, 255, 255, .2) 0 1px, transparent 1px 3px),
+    linear-gradient(180deg, #E3A6B0 0%, #F3CACF 45%, #EDB9BF 70%, #E0A2AC 100%);
+  opacity: .9; box-shadow: 0 2px 5px rgba(107, 74, 62, .22);
+  transition: transform .9s cubic-bezier(.5, 0, .75, .3), opacity .6s ease .3s;
+}
+.f-sx { left: 0; }
+.f-dx { right: 0; }
+.slega .f-sx { transform: translateX(-104%); opacity: 0; }
+.slega .f-dx { transform: translateX(104%); opacity: 0; }
+
+.fiocco {
+  position: absolute; left: 50%; top: calc(54% + 4cqw);
+  width: 64cqw; padding: 0; border: 0; background: none; cursor: pointer;
+  transform: translate(-48.5%, -43%);
   -webkit-tap-highlight-color: transparent;
-  opacity: 0; transform: translateY(22px);
-  transition: opacity .9s ease, transform 1s cubic-bezier(.2, .7, .2, 1);
+  transition: transform 1.05s cubic-bezier(.55, 0, .8, .45), opacity .5s ease .55s;
 }
-.pronta .busta { opacity: 1; transform: none; }
-.busta:focus-visible { outline: 2px solid var(--crema); outline-offset: 10px; border-radius: 2px; }
-.busta > span { position: absolute; inset: 0; display: block; }
-
-.b-ombra { box-shadow: 0 26px 40px -16px rgba(0, 0, 0, .7), 0 6px 12px rgba(0, 0, 0, .35); inset: 2% 1% 1% !important; }
-.b-dietro { z-index: 0; background: var(--grana), linear-gradient(180deg, #DDD2BE, var(--carta-dentro) 40%); }
-.b-tasca { z-index: 3; background: var(--grana), linear-gradient(160deg, #F8F3EA 0%, var(--carta-busta) 50%, #EEE6D7 100%); }
-.busta > .b-biglietto {
-  z-index: 2; inset: auto; left: 6%; top: 10%; width: 88%;
-  transition: transform 1.05s cubic-bezier(.33, 0, .15, 1);
-}
-.busta > .b-destinatario {
-  z-index: 3; inset: auto; right: 7%; bottom: 10%;
-  font-family: var(--script); font-size: clamp(21px, 6.2vw, 36px); line-height: 1.1;
-  color: #4F4744; text-align: right; max-width: 50%;
-}
-.b-lembo-ombra { z-index: 4; filter: blur(2.5px); opacity: .32; transform: translateY(3px); transition: opacity .3s; }
-.b-lembo-ombra > span { position: absolute; inset: 0; background: #4A3426; }
-.b-lembo {
-  z-index: 5; transform-style: preserve-3d; transform-origin: 50% 0;
-  transform: perspective(1400px) rotateX(0deg);
-  transition: transform .95s cubic-bezier(.5, .05, .25, 1), z-index 0s linear;
-}
-.b-lembo .faccia { position: absolute; inset: 0; display: block; -webkit-backface-visibility: hidden; backface-visibility: hidden; }
-.b-lembo .fuori { background: var(--grana), linear-gradient(180deg, #F9F5EC 0%, #F2EBDF 100%); }
-.b-lembo .dentro { transform: rotateX(180deg); background: var(--grana), linear-gradient(0deg, #E9E0CF, #DFD4C0); }
-.b-nastro { position: absolute; inset: 0; z-index: 6; width: 100%; height: 100%; overflow: visible; pointer-events: none; }
-.b-nastro .fascia, .b-nastro .fiocco { transform-box: fill-box; transform-origin: 50% 40%; }
-.b-nastro .fascia { transition: opacity .55s ease .15s, transform .8s cubic-bezier(.5, 0, .7, .4); }
-.b-nastro .fiocco { transition: opacity .5s ease .2s, transform .75s cubic-bezier(.5, 0, .7, .4); }
-
-.scena-invito {
-  margin: 0; font-style: italic; font-size: 15px; letter-spacing: .01em;
-  color: var(--crema); opacity: 0; transition: opacity .8s ease .6s;
-}
-.pronta .scena-invito { opacity: .85; }
-
-/* respiro leggero del fiocco finché nessuno lo tocca */
+.fiocco svg { display: block; width: 100%; height: auto; overflow: visible; animation: respiro 3.4s ease-in-out 1s infinite; transform-origin: 48.5% 43%; }
+.fiocco:focus-visible { outline: 2px solid var(--rosa-scuro); outline-offset: 6px; border-radius: 12px; }
 @keyframes respiro { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.035); } }
-.pronta:not(.slega) .b-nastro .fiocco { animation: respiro 3.2s ease-in-out 1.2s infinite; }
+.slega .fiocco { transform: translate(-48.5%, 70svh) rotate(-16deg) scale(.9); opacity: 0; }
+.slega .fiocco svg { animation: none; }
 
-/* sequenza: slega, apri, estrai, congeda */
-.slega .b-nastro .fiocco { opacity: 0; transform: translate(-6%, 14%) scale(.55) rotate(-16deg); }
-.slega .b-nastro .fascia { opacity: 0; transform: translateY(10%) scaleY(1.04); }
-.slega .scena-invito { opacity: 0; transition-delay: 0s; }
-.apri .b-lembo { transform: perspective(1400px) rotateX(180deg); z-index: 1; transition: transform .95s cubic-bezier(.5, .05, .25, 1), z-index 0s linear .47s; }
-.apri .b-lembo-ombra { opacity: 0; }
-.estrai .busta > .b-biglietto { transform: translateY(-122%); }
-.congeda .busta { opacity: 0; transform: translateY(70vh) rotate(-5deg); transition: transform 1.05s cubic-bezier(.6, 0, .4, 1), opacity .7s ease .3s; }
-.congeda .busta > .b-biglietto { visibility: hidden; }
 .senza-transizioni, .senza-transizioni * { transition: none !important; animation: none !important; }
+
+/* ---------- pulsante musica ---------- */
+.musica {
+  position: fixed; z-index: 30; top: max(14px, env(safe-area-inset-top)); right: 14px;
+  width: 44px; height: 44px; padding: 11px; border-radius: 50%;
+  border: 1px solid rgba(62, 57, 55, .18); background: rgba(251, 248, 241, .8);
+  -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px);
+  box-shadow: 0 4px 12px rgba(var(--ombra), .18); cursor: pointer;
+}
+.musica svg { display: block; width: 100%; height: 100%; fill: none; stroke: var(--inchiostro); stroke-width: 1.4; stroke-linecap: round; stroke-linejoin: round; }
+.musica .muto { opacity: 0; }
+.musica[aria-pressed="false"] .muto { opacity: 1; }
+.musica[aria-pressed="false"] .nota { opacity: .45; }
+.musica:focus-visible { outline: 2px solid var(--rosa-scuro); outline-offset: 3px; }
+
+/* ---------- copertina ad acquerello ---------- */
+.invito { padding: 0 14px 56px; overflow-x: hidden; overflow-x: clip; }
+.copertina {
+  position: relative; min-height: 100svh; margin: 0 -14px;
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  padding: 90px 24px 110px; text-align: center; overflow: hidden;
+}
+.mazzo { position: absolute; width: min(56vw, 330px); height: auto; overflow: visible; pointer-events: none; }
+.mazzo.alto { top: -18px; left: -22px; }
+.mazzo.basso { bottom: -18px; right: -22px; transform: rotate(180deg); }
+.c-testo { position: relative; }
+.c-intro { margin: 0 0 18px; font-style: italic; font-size: clamp(15px, 4.1vw, 18px); line-height: 1.7; color: var(--testo); }
+.c-nomi {
+  margin: 0; display: flex; flex-direction: column; align-items: center;
+  font-family: var(--script); font-weight: 400; color: var(--inchiostro);
+  font-size: clamp(66px, 21vw, 128px); line-height: .98;
+}
+.c-nomi .e { font-size: .5em; line-height: 1.15; color: var(--rosa-scuro); }
+.c-data { margin: 22px 0 4px; font-style: italic; font-size: clamp(17px, 4.6vw, 21px); color: var(--inchiostro); }
+.c-luogo { margin: 0; font-size: clamp(13.5px, 3.6vw, 15px); letter-spacing: .04em; color: var(--tenue); }
+.c-scorri {
+  position: absolute; left: 0; right: 0; bottom: max(22px, env(safe-area-inset-bottom)); width: max-content; margin: 0 auto;
+  display: flex; flex-direction: column; align-items: center; gap: 8px;
+  font-style: italic; font-size: 14px; color: var(--tenue); text-decoration: none; white-space: nowrap; z-index: 1;
+  text-shadow: 0 0 6px var(--avorio), 0 0 12px var(--avorio);
+}
+.c-scorri span { display: block; width: 1px; height: 34px; background: linear-gradient(var(--tenue), transparent); transform-origin: top; animation: scorri 2.2s ease-in-out infinite; }
+@keyframes scorri { 0% { transform: scaleY(0); opacity: 0; } 30% { opacity: 1; } 100% { transform: scaleY(1); opacity: 0; } }
+.js .copertina [style*="--i"] { opacity: 0; filter: blur(10px); transform: translateY(8px); }
+.js .copertina.rivelata [style*="--i"] {
+  opacity: 1; filter: blur(0); transform: none;
+  transition: opacity 1.3s ease, filter 1.5s ease, transform 1.5s cubic-bezier(.2, .7, .2, 1);
+  transition-delay: calc(var(--i) * 230ms);
+}
 
 /* ---------- pannello alto a punta, con monogramma ---------- */
 .pentagono { position: relative; display: block; aspect-ratio: 5 / 2; }
 .pentagono .mono { position: absolute; left: 11%; top: 12%; width: 38%; height: auto; overflow: visible; }
 
-/* ---------- invito ---------- */
-.invito { padding: max(18px, env(safe-area-inset-top)) 14px 56px; }
-.js .invito { visibility: hidden; }
-.js .invito.visibile { visibility: visible; }
-
+/* ---------- partecipazione: si dispiega quando arriva sullo schermo ---------- */
 .partecipazione {
-  position: relative;
-  width: min(100%, 540px); margin: 0 auto;
+  position: relative; width: min(100%, 540px); margin: 8px auto 0;
   perspective: 1300px; perspective-origin: 50% 0;
 }
 .p-centro { position: relative; transform-style: preserve-3d; transform-origin: 50% 0; }
@@ -149,28 +189,24 @@ button, input, textarea { font: inherit; color: inherit; }
 .p-basso { transform-origin: 50% 0; -webkit-backface-visibility: hidden; backface-visibility: hidden; }
 .js .partecipazione.piegata .p-centro { transform: rotateX(-92deg); }
 .js .partecipazione.piegata .p-basso { transform: rotateX(-150deg); }
-.partecipazione.dispiega .p-centro { transition: transform 1.15s cubic-bezier(.22, .68, .28, 1); }
-.partecipazione.dispiega .p-basso { transition: transform 1.2s cubic-bezier(.22, .68, .28, 1) .5s; }
+.partecipazione.dispiega .p-centro { transition: transform 1.3s cubic-bezier(.22, .68, .28, 1); }
+.partecipazione.dispiega .p-basso { transition: transform 1.3s cubic-bezier(.22, .68, .28, 1) .55s; }
 
-/* piega tra i pannelli */
 .faccia-centro .carta, .p-basso .carta {
-  background: linear-gradient(180deg, rgba(120, 100, 80, .16) 0, rgba(255, 255, 255, .5) 1.5px, rgba(120, 100, 80, .05) 6px, transparent 14px), var(--grana), linear-gradient(170deg, #FDFBF6 0%, var(--carta) 55%, #F6F1E6 100%);
+  background: linear-gradient(180deg, rgba(120, 100, 80, .16) 0, rgba(255, 255, 255, .5) 1.5px, rgba(120, 100, 80, .05) 6px, transparent 14px), var(--grana), linear-gradient(170deg, #FFFDF8 0%, var(--carta) 55%, #F7F1E8 100%);
 }
 
 .testo {
   position: relative;
   padding: 30px clamp(20px, 6vw, 44px) 34px;
-  text-align: center;
-  font-style: italic;
-  font-size: clamp(15px, 4.05vw, 17.5px);
-  line-height: 1.75;
+  text-align: center; font-style: italic;
+  font-size: clamp(15px, 4.05vw, 17.5px); line-height: 1.75;
 }
 .testo p { margin: 0; }
 .nomi {
   margin: 6px 0 14px;
   font-family: var(--script); font-weight: 400; font-style: normal;
-  font-size: clamp(36px, 11vw, 66px); line-height: 1.1; white-space: nowrap;
-  color: var(--inchiostro);
+  font-size: clamp(36px, 11vw, 66px); line-height: 1.1; white-space: nowrap; color: var(--inchiostro);
 }
 .riga, .luogo, .sotto { text-wrap: balance; }
 .riga { color: var(--testo); }
@@ -183,10 +219,7 @@ button, input, textarea { font: inherit; color: inherit; }
 .data .tratto { flex: 0 0 auto; width: clamp(22px, 9vw, 46px); height: 1.4px; background: currentColor; }
 .chiesa { display: block; width: 40px; height: auto; margin: 22px auto 14px; color: var(--testo); }
 .luogo { font-weight: 600; color: var(--inchiostro); }
-.mappa, .contatti a {
-  color: var(--rosa-scuro);
-  text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px;
-}
+.mappa, .contatti a { color: var(--rosa-scuro); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }
 .mappa { display: inline-block; margin-top: 6px; font-size: .86em; padding: 6px 4px; }
 .contatti a { white-space: nowrap; }
 .stacco { margin-top: 26px !important; }
@@ -203,15 +236,37 @@ button, input, textarea { font: inherit; color: inherit; }
 .p-basso .testo { padding-bottom: 104px; }
 .rametto { position: absolute; left: 4px; bottom: 10px; width: min(62%, 300px); height: auto; overflow: visible; pointer-events: none; }
 
-/* ---------- biglietti aggiuntivi ---------- */
-.biglietto { position: relative; width: min(100%, 500px); margin: 44px auto 0; }
-.biglietto .testo { padding: 34px clamp(20px, 6vw, 40px) 36px; font-style: normal; }
-.biglietto h2 {
-  margin: 0 0 6px;
-  font-family: var(--script); font-weight: 400;
-  font-size: clamp(36px, 10vw, 48px); line-height: 1.15; color: var(--inchiostro);
+/* ---------- noi due: stampe fotografiche ---------- */
+.noi { margin: 60px auto 0; max-width: 720px; text-align: center; }
+.noi h2, .biglietto h2 {
+  margin: 0 0 6px; font-family: var(--script); font-weight: 400;
+  font-size: clamp(38px, 10.5vw, 52px); line-height: 1.15; color: var(--inchiostro);
 }
-.sotto { margin: 0 auto 24px !important; max-width: 30em; font-style: italic; font-size: .92em; color: var(--tenue); }
+.stampe {
+  display: flex; gap: 20px; overflow-x: auto; overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory; scrollbar-width: none;
+  margin: 0 -14px; padding: 22px max(14vw, calc(50% - 180px)) 30px;
+}
+.stampe::-webkit-scrollbar { display: none; }
+.stampe:focus-visible { outline: 2px solid var(--rosa-scuro); outline-offset: -4px; }
+.stampa {
+  flex: 0 0 min(72vw, 340px); margin: 0; scroll-snap-align: center;
+  padding: 12px 12px 46px; background: #FFFEFB;
+  box-shadow: 0 14px 28px -14px rgba(var(--ombra), .45), 0 1px 3px rgba(var(--ombra), .18);
+  transform: rotate(var(--r, 0deg));
+}
+.stampa:nth-child(1) { --r: -1.8deg; }
+.stampa:nth-child(2) { --r: 1.4deg; }
+.stampa:nth-child(3) { --r: -1deg; }
+.stampa:nth-child(4) { --r: 1.8deg; }
+.stampa:nth-child(5) { --r: -1.4deg; }
+.stampa img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; background: #EFE5DC; }
+.noi-scorri { margin: 0; font-style: italic; font-size: 13.5px; color: var(--tenue); }
+
+/* ---------- biglietti: conferma e data ---------- */
+.biglietto { position: relative; width: min(100%, 500px); margin: 48px auto 0; }
+.biglietto .testo { padding: 34px clamp(20px, 6vw, 40px) 36px; font-style: normal; }
+.sotto { margin: 0 auto 24px !important; max-width: 30em; font-style: italic; font-size: .95em; color: var(--tenue); }
 
 #rsvp { text-align: left; }
 .campo { margin: 0 0 22px; padding: 0; border: 0; min-width: 0; }
@@ -243,8 +298,6 @@ button, input, textarea { font: inherit; color: inherit; }
 }
 .contatore output { min-width: 48px; text-align: center; font-size: 1.25em; color: var(--inchiostro); }
 .errore { margin: 8px 0 0 !important; font-size: .88em; color: #9B2C3A; }
-.etichetta-invio { margin: 30px 0 10px !important; text-align: center; font-style: italic; font-size: .95em; color: var(--testo); }
-.invia { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
 .pulsante {
   display: inline-flex; align-items: center; justify-content: center; text-align: center;
   min-height: 48px; padding: 12px 14px;
@@ -253,33 +306,45 @@ button, input, textarea { font: inherit; color: inherit; }
   font-size: .95em; line-height: 1.3; text-decoration: none; cursor: pointer;
 }
 .pulsante:hover { background: #2C2826; }
+.pulsante[disabled] { opacity: .6; cursor: progress; }
 .pulsante.chiaro { background: transparent; color: var(--inchiostro); }
 .pulsante.chiaro:hover { background: rgba(232, 180, 185, .22); }
-.pulsante:focus-visible, .copia:focus-visible, .contatore button:focus-visible, .mappa:focus-visible, .rivedi:focus-visible { outline: 2px solid var(--rosa-scuro); outline-offset: 3px; }
-.stato { margin: 16px 0 0 !important; min-height: 1.5em; font-style: italic; font-size: .92em; color: var(--tenue); text-align: center; }
+.invia-risposta { display: flex; width: 100%; margin-top: 30px; }
+.invia { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 12px; }
+.invia[hidden] { display: none; }
+.pulsante:focus-visible, .copia:focus-visible, .contatore button:focus-visible, .mappa:focus-visible, .rivedi:focus-visible, .cambia:focus-visible { outline: 2px solid var(--rosa-scuro); outline-offset: 3px; }
+.stato { margin: 14px 0 0 !important; min-height: 1.2em; font-style: italic; font-size: .92em; color: var(--tenue); text-align: center; }
+.stato.errore-invio { color: #9B2C3A; }
 
-.conto { margin: 2px 0 22px !important; font-style: italic; font-size: 1.08em; color: var(--testo); }
-.calendari { display: grid; grid-template-columns: 1fr; gap: 10px; max-width: 320px; margin: 0 auto; }
-
-.piede { margin: 56px auto 0; text-align: center; color: var(--crema); }
-.firma { margin: 0 0 10px; font-family: var(--script); font-size: 38px; line-height: 1.2; opacity: .9; }
-.rivedi {
-  padding: 10px 12px; border: 0; background: none; cursor: pointer;
-  font-style: italic; font-size: 14px; color: var(--crema); opacity: .75;
-  text-decoration: underline; text-underline-offset: 4px; text-decoration-thickness: 1px;
+.grazie { text-align: center; outline: none; }
+.grazie-titolo { margin: 4px 0 6px !important; font-family: var(--script); font-size: clamp(34px, 9vw, 44px); line-height: 1.2; color: var(--inchiostro); }
+.grazie-testo { font-style: italic; line-height: 1.7; }
+.grazie-whatsapp { margin-top: 22px !important; font-style: italic; font-size: .92em; color: var(--tenue); }
+.cambia {
+  margin-top: 18px; padding: 8px 10px; border: 0; background: none; cursor: pointer;
+  font-style: italic; font-size: .9em; color: var(--rosa-scuro);
+  text-decoration: underline; text-underline-offset: 3px; text-decoration-thickness: 1px;
 }
 
-/* i biglietti sotto la partecipazione compaiono dopo che si è aperta */
-.js .extra { opacity: 0; transform: translateY(16px); }
-.js .mostra .extra { opacity: 1; transform: none; transition: opacity .9s ease, transform .9s cubic-bezier(.2, .7, .2, 1); }
-.js .mostra .extra:nth-of-type(2) { transition-delay: .12s; }
+.conto { display: grid; grid-template-columns: repeat(4, 1fr); gap: 6px; margin: 4px 0 28px; }
+.conto div { display: flex; flex-direction: column; align-items: center; gap: 2px; }
+.conto .n { font-size: clamp(28px, 8.5vw, 40px); line-height: 1.1; color: var(--inchiostro); font-variant-numeric: tabular-nums lining-nums; }
+.conto .u { font-style: italic; font-size: 13px; color: var(--tenue); }
+.calendari { display: grid; grid-template-columns: 1fr; gap: 10px; max-width: 320px; margin: 0 auto; }
+
+.piede { margin: 60px auto 0; text-align: center; }
+.firma { margin: 0 0 8px; font-family: var(--script); font-size: 40px; line-height: 1.2; color: var(--inchiostro); }
+.rivedi {
+  padding: 10px 12px; border: 0; background: none; cursor: pointer;
+  font-style: italic; font-size: 14px; color: var(--tenue);
+  text-decoration: underline; text-underline-offset: 4px; text-decoration-thickness: 1px;
+}
 
 @media (max-width: 330px) {
   .invia { grid-template-columns: 1fr; }
 }
-@media (min-width: 700px) {
-  .invito { padding-top: 48px; }
-}
 @media (prefers-reduced-motion: reduce) {
-  .busta, .scena-invito, .b-lembo, .b-biglietto, .b-nastro *, .extra, .p-centro, .p-basso { transition: none !important; animation: none !important; }
+  html { scroll-behavior: auto; }
+  .anta, .fiocco, .fiocco svg, .fascia span, .cielo, .p-centro, .p-basso, .c-scorri span, .copertina [style*="--i"] { transition: none !important; animation: none !important; }
+  .js .copertina [style*="--i"] { filter: none; transform: none; }
 }

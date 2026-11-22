@@ -1,25 +1,45 @@
 # Partecipazione digitale di Antonio e Giulia
 
-Pagina statica (nessuna compilazione): busta avorio con fiocco rosa che si apre, cartoncino che si dispiega, conferma su WhatsApp, IBAN da copiare, data da salvare nel calendario.
+Pagina statica (nessuna compilazione) in avorio, rosa cipria e bianco, come la partecipazione stampata.
+
+1. **Invito chiuso:** due ante in carta goffrata con i nomi nella ghirlanda, chiuse da un fiocco di chiffon rosa.
+2. **Al tocco del fiocco:** il nastro si scioglie, le ante si aprono, parte la musica (se c'è il file) e compare il cielo ad acquerello con i nomi.
+3. **Scorrendo:** il cartoncino a punta col monogramma si dispiega (testi della stampa, mappe, telefoni, IBAN da copiare), poi le foto "Noi due", la conferma della presenza e "Salva la data" con il conto alla rovescia.
 
 - **Link:** https://antoniodenuccio1995-a11y.github.io/Trading-sport/matrimonio/ (si pubblica insieme all'app a ogni modifica su `main`).
-- **Link personalizzato:** aggiungendo `?per=` il nome compare scritto sulla busta e nel modulo di conferma, per esempio
+- **Link personalizzato:** con `?per=` il nome compare sulle ante e nel modulo di conferma, per esempio
   `https://antoniodenuccio1995-a11y.github.io/Trading-sport/matrimonio/?per=Famiglia%20Rossi` (gli spazi diventano `%20`).
 - **Anteprima su WhatsApp:** titolo, descrizione e immagine (`img/anteprima.jpg`) sono nei tag `og:` in testa a `index.html`. WhatsApp tiene in memoria l'anteprima di un link: se la cambiate, controllatela su un link nuovo (per esempio con `?v=2`).
-- **La pagina non va sui motori di ricerca** (`noindex`), ma chiunque abbia il link può vederla: dentro ci sono telefoni e IBAN.
+- **Riservatezza:** la pagina non va sui motori di ricerca (`noindex`), ma chiunque abbia il link la vede, compresi telefoni, IBAN e foto.
+
+## Conferme
+
+Le risposte del modulo finiscono nel database Supabase del progetto (lo stesso dell'app, tabelle `nozze_*`, migrazione `supabase/migrations/20261122120000_nozze_conferme.sql`).
+
+- Gli invitati possono solo **scrivere** una risposta (funzione `nozze_conferma`), non leggere quelle degli altri.
+- Gli sposi le leggono su **`conferme.html`** (https://antoniodenuccio1995-a11y.github.io/Trading-sport/matrimonio/conferme.html) inserendo il **codice degli sposi**. Il codice non è salvato nel repository: nel database c'è solo la sua impronta. Per cambiarlo:
+  `insert into public.nozze_impostazioni values ('codice', extensions.crypt('<nuovo codice>', extensions.gen_salt('bf'))) on conflict (chiave) do update set valore = excluded.valore;`
+- Se il database non risponde, il modulo propone di mandare la risposta su WhatsApp ad Antonio o a Giulia.
+
+## Musica
+
+Mettete il brano in `musica/brano.mp3` (meglio sotto i 4 MB). Parte quando si tocca il fiocco; in alto a destra compare un pulsante per spegnerla. Se il file manca, il pulsante non compare.
 
 ## File
 
 | File | Contenuto |
 | --- | --- |
-| `index.html` | Testi dell'invito, busta, fiocco (SVG) e disegni del monogramma e del rametto (simboli SVG in cima al `body`) |
+| `index.html` | Testi dell'invito, ante, fiocco (SVG), disegni di monogramma, rametto e fiori (simboli SVG in cima al `body`) |
 | `stile.css` | Carta, colori, caratteri, tempi delle animazioni |
-| `invito.js` | Apertura della busta, bordi sfrangiati, conferma su WhatsApp (numeri in `DATI`), copia IBAN, giorni che mancano |
+| `invito.js` | Apertura, bordi sfrangiati, musica, conto alla rovescia, conferme (database con riserva WhatsApp), copia IBAN |
+| `conferme.html` | Pagina riservata agli sposi con l'elenco delle risposte |
 | `matrimonio.ics` | Evento per il calendario del telefono |
 | `font/` | Alex Brush (nomi) e Libre Baskerville (testi), licenza SIL OFL |
-| `img/` | Legno del tavolo, anteprima per WhatsApp, icona |
+| `img/` | Carta goffrata delle ante, cielo ad acquerello, anteprima per WhatsApp, icona |
+| `foto/` | Foto "Noi due" (ritagliate 4:5 e uniformate nei toni) |
 
 ## Da completare
 
 - IBAN vero (ora `IT00 X 0000 0000 0000 0000 000`, come sulla bozza stampata): in `index.html`, elemento `#iban`.
 - Ora di fine della festa: il calendario ora segna dalle 10:00 alle 18:00 (in `index.html`, link Google Calendar, e in `matrimonio.ics`).
+- Brano per la musica (`musica/brano.mp3`).

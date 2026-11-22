@@ -1,20 +1,29 @@
 // Partecipazione digitale di Antonio e Giulia.
-// Apre la busta (fiocco, lembo, biglietto), dispiega il cartoncino e gestisce conferma, IBAN e calendario.
+// Due ante in carta goffrata chiuse da un fiocco: al tocco il fiocco si scioglie, le ante si aprono,
+// parte la musica e compare il cielo ad acquerello con i nomi. Poi il cartoncino si dispiega,
+// le conferme finiscono nel database degli sposi, il conto alla rovescia scorre.
 (() => {
   "use strict";
 
   const DATI = {
-    data: "2027-05-27",
     dataTesto: "27 maggio 2027",
+    inizio: Date.UTC(2027, 4, 27, 8, 0, 0), // 10:00 ora italiana
     whatsapp: { antonio: { nome: "Antonio", numero: "393203142984" }, giulia: { nome: "Giulia", numero: "393209549565" } },
   };
+  // chiave pubblica ("publishable"): fatta per stare nel browser; il database accetta solo nozze_conferma()
+  const SUPABASE = { url: "https://cqfxjvrpspvycocvxghv.supabase.co", chiave: "sb_publishable_VQS48ywRaUafRirZIyo5EQ_8KMjSDfm" };
 
   const $ = (s, r = document) => r.querySelector(s);
+  const $$ = (s, r = document) => [...r.querySelectorAll(s)];
   const html = document.documentElement;
-  const scena = $("#scena"), busta = $("#busta"), biglietto = $("#biglietto");
-  const invito = $("#invito"), partecipazione = $("#partecipazione"), pAlto = $("#p-alto");
+  const scena = $("#scena"), fiocco = $("#fiocco"), copertina = $("#copertina"), partecipazione = $("#partecipazione");
   const riduci = matchMedia("(prefers-reduced-motion: reduce)").matches;
   const dopo = (ms, fn) => setTimeout(fn, ms);
+  const memoria = {
+    leggi(k) { try { return localStorage.getItem(k); } catch (e) { return null; } },
+    scrivi(k, v) { try { localStorage.setItem(k, v); } catch (e) { /* navigazione privata */ } },
+    togli(k) { try { localStorage.removeItem(k); } catch (e) { /* niente */ } },
+  };
 
   // ---------- bordi sfrangiati: poligono calcolato sulle misure reali ----------
   const forme = {
@@ -22,9 +31,8 @@
     centro: (w, h) => [[[0, 0], [w, 0], [w, h], [0, h]], [0, 1, 0, 1]],
     basso: (w, h) => [[[0, 0], [w, 0], [w, h], [0, h]], [0, 1, 1, 1]],
     biglietto: (w, h) => [[[0, 0], [w, 0], [w, h], [0, h]], [1, 1, 1, 1]],
-    dietro: (w, h) => [[[0, 0], [w, 0], [w, h], [0, h]], [0, 1, 0, 1]],
-    tasca: (w, h) => [[[0, 0], [.41 * w, .6 * h], [w, 0], [w, h], [0, h]], [0, 0, 1, 0, 1]],
-    lembo: (w, h) => [[[0, 0], [w, 0], [.41 * w, .6 * h]], [0, 1, 1]],
+    "anta-sx": (w, h) => [[[0, 0], [w, 0], [w, h], [0, h]], [0, 1, 0, 0]],
+    "anta-dx": (w, h) => [[[0, 0], [w, 0], [w, h], [0, h]], [0, 0, 0, 1]],
   };
 
   function casuale(seme) {
@@ -35,8 +43,7 @@
   function sfrangia(el) {
     const w = el.offsetWidth, h = el.offsetHeight;
     if (!w || !h) return;
-    const nome = el.dataset.forma, specchio = nome === "lembo-dentro";
-    const [punti, ruvidi] = forme[specchio ? "lembo" : nome](w, h);
+    const [punti, ruvidi] = forme[el.dataset.forma](w, h);
     const rnd = casuale(+el.dataset.seme || 1);
     const amp = Math.min(2.6, Math.max(1.3, w / 200));
     const out = [];
@@ -55,113 +62,123 @@
         out.push([ax + dx * t + nx * o * fine, ay + dy * t + ny * o * fine]);
       }
     }
-    const poli = "polygon(" + out.map(([x, y]) => `${x.toFixed(1)}px ${(specchio ? h - y : y).toFixed(1)}px`).join(",") + ")";
+    const poli = "polygon(" + out.map(([x, y]) => `${x.toFixed(1)}px ${y.toFixed(1)}px`).join(",") + ")";
     el.style.clipPath = poli;
     el.style.webkitClipPath = poli;
   }
 
-  const sagome = [...document.querySelectorAll("[data-forma]")];
+  const sagome = $$("[data-forma]");
   const osserva = "ResizeObserver" in window ? new ResizeObserver((voci) => voci.forEach((v) => sfrangia(v.target))) : null;
   sagome.forEach((el) => { sfrangia(el); osserva && osserva.observe(el); });
   if (document.fonts && document.fonts.ready) document.fonts.ready.then(() => sagome.forEach(sfrangia));
 
-  // ---------- destinatario dal link: ...?per=Famiglia%20Rossi ----------
+  // ---------- nome dell'invitato dal link: ...?per=Famiglia%20Rossi ----------
   const per = (new URLSearchParams(location.search).get("per") || "").trim().slice(0, 60);
   if (per) {
-    const d = $("#destinatario");
-    d.textContent = per;
-    d.hidden = false;
-    busta.setAttribute("aria-label", `Apri la busta per ${per} e leggi l'invito`);
+    $$("[data-per]").forEach((p) => { p.textContent = `per ${per}`; p.hidden = false; });
+    fiocco.setAttribute("aria-label", `Sciogli il fiocco e apri l'invito per ${per}`);
   }
+
+  // ---------- musica (musica/brano.mp3): parte al tocco del fiocco ----------
+  const brano = $("#brano"), pulsanteMusica = $("#musica");
+  let musicaVoluta = true, musicaPronta = false;
+  function sfuma(da, a, ms) {
+    const t0 = performance.now();
+    const passo = (t) => { const k = Math.min(1, (t - t0) / ms); brano.volume = da + (a - da) * k; if (k < 1) requestAnimationFrame(passo); };
+    requestAnimationFrame(passo);
+  }
+  function suona() {
+    brano.volume = 0;
+    const p = brano.play();
+    if (p && p.then) p.then(() => { musicaPronta = true; sfuma(0, .6, 2500); }).catch(() => { musicaPronta = false; });
+  }
+  function aggiornaPulsante() {
+    pulsanteMusica.setAttribute("aria-pressed", String(musicaVoluta));
+    pulsanteMusica.setAttribute("aria-label", musicaVoluta ? "Spegni la musica" : "Accendi la musica");
+  }
+  pulsanteMusica.addEventListener("click", () => {
+    musicaVoluta = !musicaVoluta;
+    if (musicaVoluta) suona(); else brano.pause();
+    aggiornaPulsante();
+  });
+  brano.addEventListener("error", () => { musicaPronta = false; pulsanteMusica.hidden = true; });
+  document.addEventListener("visibilitychange", () => {
+    if (!musicaPronta) return;
+    if (document.hidden) brano.pause(); else if (musicaVoluta) brano.play().catch(() => {});
+  });
 
   // ---------- apertura ----------
   let avviata = false;
+  const blocca = (si) => html.classList.toggle("bloccato", si);
 
-  function blocca(si) { html.classList.toggle("bloccato", si); }
-
-  function preparaScena() {
+  function chiudi() {
     blocca(true);
     scena.hidden = false;
-    invito.classList.remove("visibile", "mostra");
-    partecipazione.classList.add("piegata");
-    partecipazione.classList.remove("dispiega");
-    requestAnimationFrame(() => requestAnimationFrame(() => scena.classList.add("pronta")));
+    scena.classList.add("senza-transizioni");
+    scena.classList.remove("slega", "apri");
+    html.classList.remove("aperto");
+    copertina.classList.remove("rivelata");
+    void scena.offsetWidth;
+    scena.classList.remove("senza-transizioni");
+    avviata = false;
   }
 
   function mostraSubito() {
     scena.hidden = true;
     blocca(false);
-    partecipazione.classList.remove("piegata");
-    invito.classList.add("visibile", "mostra");
+    html.classList.add("aperto");
+    copertina.classList.add("rivelata");
   }
 
-  let giaAperta = false;
-  try { giaAperta = sessionStorage.getItem("invito-aperto") === "1"; } catch (e) { /* navigazione privata */ }
-  if (giaAperta) mostraSubito(); else preparaScena();
+  let giaAperto = false;
+  try { giaAperto = sessionStorage.getItem("invito-aperto") === "1"; } catch (e) { /* niente */ }
+  if (giaAperto) mostraSubito(); else blocca(true);
 
-  busta.addEventListener("click", apri);
+  fiocco.addEventListener("click", apri);
 
   function apri() {
     if (avviata) return;
     avviata = true;
     try { sessionStorage.setItem("invito-aperto", "1"); } catch (e) { /* niente */ }
     window.scrollTo(0, 0);
-    if (riduci) { mostraSubito(); return; }
+    if (musicaVoluta) suona();
+    if (riduci) { mostraSubito(); mostraPulsanteMusica(); return; }
     scena.classList.add("slega");
-    dopo(620, () => scena.classList.add("apri"));
-    dopo(1450, () => scena.classList.add("estrai"));
-    dopo(2600, porgiBiglietto);
+    dopo(650, () => { scena.classList.add("apri"); html.classList.add("aperto"); });
+    dopo(1700, () => copertina.classList.add("rivelata"));
+    dopo(3000, () => { scena.hidden = true; blocca(false); mostraPulsanteMusica(); });
+  }
+  function mostraPulsanteMusica() {
+    // il pulsante compare solo se il brano esiste ed è partito
+    dopo(400, () => { if (musicaPronta) { aggiornaPulsante(); pulsanteMusica.hidden = false; } });
   }
 
-  // il biglietto uscito dalla busta vola al suo posto in cima all'invito
-  function porgiBiglietto() {
-    const da = biglietto.getBoundingClientRect();
-    const a = pAlto.getBoundingClientRect();
-    const copia = pAlto.cloneNode(true);
-    copia.removeAttribute("id");
-    Object.assign(copia.style, {
-      position: "fixed", left: a.left + "px", top: a.top + "px", width: a.width + "px", height: a.height + "px",
-      margin: "0", zIndex: "20", transformOrigin: "0 0", pointerEvents: "none",
-    });
-    document.body.appendChild(copia);
-    scena.classList.add("congeda");
-    const s = da.width / a.width;
-    const volo = copia.animate(
-      [{ transform: `translate(${da.left - a.left}px, ${da.top - a.top}px) scale(${s})` }, { transform: "none" }],
-      { duration: 1000, easing: "cubic-bezier(.5, 0, .2, 1)", fill: "forwards" },
-    );
-    volo.onfinish = () => {
-      invito.classList.add("visibile");
-      requestAnimationFrame(() => {
-        copia.remove();
-        scena.hidden = true;
-        blocca(false);
-        partecipazione.classList.add("dispiega");
-        requestAnimationFrame(() => partecipazione.classList.remove("piegata"));
-        dopo(1500, () => invito.classList.add("mostra"));
-      });
-    };
+  $("#rivedi").addEventListener("click", () => { window.scrollTo(0, 0); brano.pause(); chiudi(); });
+
+  // ---------- il cartoncino si dispiega quando arriva sullo schermo ----------
+  if (!riduci && "IntersectionObserver" in window) {
+    partecipazione.classList.add("piegata");
+    const io = new IntersectionObserver((voci) => {
+      if (!voci.some((v) => v.isIntersecting)) return;
+      io.disconnect();
+      partecipazione.classList.add("dispiega");
+      requestAnimationFrame(() => partecipazione.classList.remove("piegata"));
+    }, { rootMargin: "0px 0px -30% 0px" });
+    io.observe(partecipazione);
   }
 
-  $("#rivedi").addEventListener("click", () => {
-    scena.classList.add("senza-transizioni");
-    scena.classList.remove("pronta", "slega", "apri", "estrai", "congeda");
-    void scena.offsetWidth;
-    scena.classList.remove("senza-transizioni");
-    avviata = false;
-    window.scrollTo(0, 0);
-    preparaScena();
-  });
-
-  // ---------- giorni che mancano ----------
-  const conto = $("#conto");
-  if (conto) {
-    const oggi = new Date(), giorno = new Date(DATI.data + "T00:00:00");
-    const diff = Math.round((giorno - new Date(oggi.getFullYear(), oggi.getMonth(), oggi.getDate())) / 864e5);
-    if (diff > 1) conto.textContent = `Mancano ${diff} giorni`;
-    else if (diff === 1) conto.textContent = "Manca un giorno";
-    else if (diff === 0) conto.textContent = "È oggi";
+  // ---------- conto alla rovescia ----------
+  const cifre = { g: $("#c-giorni"), o: $("#c-ore"), m: $("#c-minuti"), s: $("#c-secondi") };
+  const due = (n) => String(n).padStart(2, "0");
+  function conta() {
+    let r = Math.max(0, Math.floor((DATI.inizio - Date.now()) / 1000));
+    const g = Math.floor(r / 86400); r -= g * 86400;
+    const o = Math.floor(r / 3600); r -= o * 3600;
+    const m = Math.floor(r / 60), s = r - m * 60;
+    cifre.g.textContent = String(g); cifre.o.textContent = due(o); cifre.m.textContent = due(m); cifre.s.textContent = due(s);
   }
+  conta();
+  setInterval(conta, 1000);
 
   // ---------- copia IBAN ----------
   const copiaIban = $("#copia-iban");
@@ -179,28 +196,57 @@
     dopo(2600, () => { copiaIban.textContent = "Copia IBAN"; });
   });
 
-  // ---------- conferma su WhatsApp ----------
+  // ---------- conferma della presenza ----------
   const form = $("#rsvp"), soloSi = $("#solo-si"), persone = $("#persone"), stato = $("#stato-rsvp");
-  const nome = $("#rsvp-nome");
+  const nome = $("#rsvp-nome"), invia = $("#invia-risposta"), ripiego = $("#ripiego"), grazie = $("#grazie");
   if (per) nome.value = per;
   let n = 1;
   const aggiornaPersone = () => { persone.textContent = String(n); };
   $(".meno", form).addEventListener("click", () => { n = Math.max(1, n - 1); aggiornaPersone(); });
   $(".piu", form).addEventListener("click", () => { n = Math.min(12, n + 1); aggiornaPersone(); });
   form.addEventListener("change", (e) => {
-    if (e.target.name === "presenza") {
-      soloSi.hidden = e.target.value === "no";
-      $("#errore-presenza").hidden = true;
-    }
+    if (e.target.name === "presenza") { soloSi.hidden = e.target.value === "no"; $("#errore-presenza").hidden = true; }
   });
   nome.addEventListener("input", () => { $("#errore-nome").hidden = true; });
 
-  let destinatario = "antonio";
-  form.querySelectorAll('button[name="a"]').forEach((b) => b.addEventListener("click", () => { destinatario = b.value; }));
+  function testoWhatsapp(r, sposo) {
+    let t;
+    if (r.presenza) {
+      t = `Ciao ${sposo.nome}! Sono ${r.nome} e confermo la mia presenza al vostro matrimonio del ${DATI.dataTesto}.`;
+      if (r.persone > 1) t += ` Saremo in ${r.persone}.`;
+      t += r.allergie ? ` Allergie o intolleranze: ${r.allergie}.` : " Nessuna allergia o intolleranza.";
+    } else {
+      t = `Ciao ${sposo.nome}! Sono ${r.nome}: purtroppo non potrò essere presente al vostro matrimonio del ${DATI.dataTesto}.`;
+    }
+    if (r.messaggio) t += `\n\n${r.messaggio}`;
+    return t;
+  }
+  function collegaWhatsapp(r, contenitore) {
+    $$("[data-wa]", contenitore).forEach((a) => {
+      const sposo = DATI.whatsapp[a.dataset.wa];
+      a.href = `https://wa.me/${sposo.numero}?text=${encodeURIComponent(testoWhatsapp(r, sposo))}`;
+    });
+  }
+  function mostraGrazie(r, giaInviata) {
+    $("#grazie-titolo").textContent = `Grazie, ${r.nome}!`;
+    $("#grazie-testo").textContent = r.presenza
+      ? `${giaInviata ? "Hai già confermato" : "Abbiamo ricevuto la tua conferma"}${r.persone > 1 ? ` per ${r.persone} persone` : ""}. Ci vediamo il 27 maggio!`
+      : `${giaInviata ? "Ci hai già fatto sapere" : "Abbiamo ricevuto la tua risposta"}: ci mancherai, grazie per avercelo detto.`;
+    collegaWhatsapp(r, grazie);
+    form.hidden = true;
+    grazie.hidden = false;
+  }
+  $("#cambia-risposta").addEventListener("click", () => {
+    grazie.hidden = true; form.hidden = false; stato.textContent = ""; ripiego.hidden = true;
+    memoria.togli("invito-risposta");
+    nome.focus();
+  });
 
-  form.addEventListener("submit", (e) => {
+  const salvata = memoria.leggi("invito-risposta");
+  if (salvata) { try { mostraGrazie(JSON.parse(salvata), true); } catch (e) { memoria.togli("invito-risposta"); } }
+
+  form.addEventListener("submit", async (e) => {
     e.preventDefault();
-    if (e.submitter && e.submitter.value) destinatario = e.submitter.value;
     const chi = nome.value.trim();
     const scelta = form.querySelector('input[name="presenza"]:checked');
     $("#errore-nome").hidden = !!chi;
@@ -208,19 +254,35 @@
     if (!chi) { nome.focus(); return; }
     if (!scelta) { form.querySelector('input[name="presenza"]').focus(); return; }
 
-    const sposo = DATI.whatsapp[destinatario];
-    const allergie = $("#rsvp-allergie").value.trim();
-    const pensiero = $("#rsvp-messaggio").value.trim();
-    let testo;
-    if (scelta.value === "si") {
-      testo = `Ciao ${sposo.nome}! Sono ${chi} e confermo la mia presenza al vostro matrimonio del ${DATI.dataTesto}.`;
-      if (n > 1) testo += ` Saremo in ${n}.`;
-      testo += allergie ? ` Allergie o intolleranze: ${allergie}.` : " Nessuna allergia o intolleranza.";
-    } else {
-      testo = `Ciao ${sposo.nome}! Sono ${chi}: purtroppo non potrò essere presente al vostro matrimonio del ${DATI.dataTesto}.`;
+    const r = {
+      nome: chi, presenza: scelta.value === "si", persone: scelta.value === "si" ? n : 0,
+      allergie: scelta.value === "si" ? $("#rsvp-allergie").value.trim() : "", messaggio: $("#rsvp-messaggio").value.trim(),
+    };
+    invia.disabled = true; invia.textContent = "Invio in corso…";
+    stato.classList.remove("errore-invio"); stato.textContent = ""; ripiego.hidden = true;
+    const ctrl = new AbortController();
+    const scade = setTimeout(() => ctrl.abort(), 12000);
+    try {
+      const risposta = await fetch(`${SUPABASE.url}/rest/v1/rpc/nozze_conferma`, {
+        method: "POST", signal: ctrl.signal,
+        headers: { "Content-Type": "application/json", apikey: SUPABASE.chiave },
+        body: JSON.stringify({
+          p_nome: r.nome, p_presenza: r.presenza, p_persone: r.persone || 1,
+          p_allergie: r.allergie || null, p_messaggio: r.messaggio || null, p_per: per || null,
+        }),
+      });
+      if (!risposta.ok) throw new Error(String(risposta.status));
+      memoria.scrivi("invito-risposta", JSON.stringify(r));
+      mostraGrazie(r, false);
+      grazie.focus();
+    } catch (err) {
+      stato.classList.add("errore-invio");
+      stato.textContent = "Non siamo riusciti a registrare la risposta. Mandala direttamente agli sposi su WhatsApp:";
+      collegaWhatsapp(r, ripiego);
+      ripiego.hidden = false;
+    } finally {
+      clearTimeout(scade);
+      invia.disabled = false; invia.textContent = "Invia la risposta";
     }
-    if (pensiero) testo += `\n\n${pensiero}`;
-    stato.textContent = "Si è aperto WhatsApp con la risposta già scritta: premi invio per mandarla.";
-    location.href = `https://wa.me/${sposo.numero}?text=${encodeURIComponent(testo)}`;
   });
 })();
