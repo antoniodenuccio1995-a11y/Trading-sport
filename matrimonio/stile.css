@@ -1,5 +1,5 @@
 /* Partecipazione digitale di Antonio e Giulia.
-   Avorio, rosa cipria e bianco: carta in rilievo, nastro di chiffon, cielo ad acquerello. */
+   Avorio e bianco carta, rosa solo nel nastro e nei fiori, come la partecipazione stampata. */
 
 @font-face { font-family: "Alex Brush"; src: url(font/alex-brush.woff2) format("woff2"); font-display: swap; }
 @font-face { font-family: "Libre Baskerville"; src: url(font/libre-baskerville-400-normal.woff2) format("woff2"); font-weight: 400; font-display: swap; }
@@ -10,13 +10,13 @@
 :root {
   color-scheme: light;
   --carta: #FBF8F1;
-  --avorio: #F6EEE6;
+  --avorio: #F3EDE3;
   --inchiostro: #3E3937;
   --testo: #4A4442;
   --tenue: #75696A;
   --rosa: #E8B4B9;
   --rosa-scuro: #9A5A66;
-  --ombra: 120, 78, 70;
+  --ombra: 96, 82, 68;
   --script: "Alex Brush", "Snell Roundhand", cursive;
   --serif: "Libre Baskerville", Baskerville, "Baskerville Old Face", Georgia, serif;
   --grana: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .35 0 0 0 0 .3 0 0 0 0 .25 0 0 0 .08 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
@@ -33,13 +33,13 @@ body {
 button, input, textarea { font: inherit; color: inherit; }
 .arte { position: absolute; width: 0; height: 0; overflow: hidden; }
 
-/* ---------- cielo ad acquerello, fisso dietro a tutta la pagina ---------- */
+/* ---------- fondo di carta avorio, fisso dietro a tutta la pagina ---------- */
 .cielo {
   position: fixed; inset: 0; z-index: -1;
-  background: var(--avorio) url(img/acquerello.jpg) center / cover;
+  background: var(--grana), radial-gradient(120% 80% at 50% 18%, #FFFDF9 0%, #F8F3EB 42%, #EFE7DB 100%);
   transform-origin: 50% 40%;
 }
-.js .cielo { transform: scale(1.08); }
+.js .cielo { transform: scale(1.04); }
 .aperto .cielo, .no-js .cielo { transform: none; transition: transform 3s cubic-bezier(.2, .6, .2, 1); }
 
 /* ---------- carta con bordi sfrangiati (la forma la calcola invito.js) ---------- */
@@ -49,7 +49,7 @@ button, input, textarea { font: inherit; color: inherit; }
 }
 .carta {
   position: absolute; inset: 0; display: block;
-  background: var(--grana), linear-gradient(170deg, #FFFDF8 0%, var(--carta) 55%, #F7F1E8 100%);
+  background: var(--grana), linear-gradient(170deg, #FFFFFD 0%, #FDFBF6 55%, #F8F4EC 100%);
 }
 
 /* ---------- invito chiuso: due ante in carta goffrata con il fiocco ---------- */
@@ -57,8 +57,7 @@ button, input, textarea { font: inherit; color: inherit; }
 .no-js .scena, .scena[hidden] { display: none; }
 .scena::before {
   content: ""; position: absolute; inset: 0;
-  background: var(--avorio) url(img/acquerello.jpg) center / cover;
-  filter: blur(6px) brightness(.97); transform: scale(1.05);
+  background: var(--grana), radial-gradient(120% 80% at 50% 18%, #FFFDF9 0%, #F8F3EB 42%, #EFE7DB 100%);
   transition: opacity 1.2s ease .5s;
 }
 .apri.scena::before { opacity: 0; }
@@ -157,7 +156,7 @@ button, input, textarea { font: inherit; color: inherit; }
   font-family: var(--script); font-weight: 400; color: var(--inchiostro);
   font-size: clamp(66px, 21vw, 128px); line-height: .98;
 }
-.c-nomi .e { font-size: .5em; line-height: 1.15; color: var(--rosa-scuro); }
+.c-nomi .e { font-size: .5em; line-height: 1.15; color: var(--tenue); }
 .c-data { margin: 22px 0 4px; font-style: italic; font-size: clamp(17px, 4.6vw, 21px); color: var(--inchiostro); }
 .c-luogo { margin: 0; font-size: clamp(13.5px, 3.6vw, 15px); letter-spacing: .04em; color: var(--tenue); }
 .c-scorri {
@@ -193,7 +192,7 @@ button, input, textarea { font: inherit; color: inherit; }
 .partecipazione.dispiega .p-basso { transition: transform 1.3s cubic-bezier(.22, .68, .28, 1) .55s; }
 
 .faccia-centro .carta, .p-basso .carta {
-  background: linear-gradient(180deg, rgba(120, 100, 80, .16) 0, rgba(255, 255, 255, .5) 1.5px, rgba(120, 100, 80, .05) 6px, transparent 14px), var(--grana), linear-gradient(170deg, #FFFDF8 0%, var(--carta) 55%, #F7F1E8 100%);
+  background: linear-gradient(180deg, rgba(120, 100, 80, .16) 0, rgba(255, 255, 255, .5) 1.5px, rgba(120, 100, 80, .05) 6px, transparent 14px), var(--grana), linear-gradient(170deg, #FFFFFD 0%, #FDFBF6 55%, #F8F4EC 100%);
 }
 
 .testo {
@@ -219,7 +218,7 @@ button, input, textarea { font: inherit; color: inherit; }
 .data .tratto { flex: 0 0 auto; width: clamp(22px, 9vw, 46px); height: 1.4px; background: currentColor; }
 .chiesa { display: block; width: 40px; height: auto; margin: 22px auto 14px; color: var(--testo); }
 .luogo { font-weight: 600; color: var(--inchiostro); }
-.mappa, .contatti a { color: var(--rosa-scuro); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+.mappa, .contatti a { color: #6B5A55; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }
 .mappa { display: inline-block; margin-top: 6px; font-size: .86em; padding: 6px 4px; }
 .contatti a { white-space: nowrap; }
 .stacco { margin-top: 26px !important; }
@@ -322,7 +321,7 @@ button, input, textarea { font: inherit; color: inherit; }
 .grazie-whatsapp { margin-top: 22px !important; font-style: italic; font-size: .92em; color: var(--tenue); }
 .cambia {
   margin-top: 18px; padding: 8px 10px; border: 0; background: none; cursor: pointer;
-  font-style: italic; font-size: .9em; color: var(--rosa-scuro);
+  font-style: italic; font-size: .9em; color: #6B5A55;
   text-decoration: underline; text-underline-offset: 3px; text-decoration-thickness: 1px;
 }
 
