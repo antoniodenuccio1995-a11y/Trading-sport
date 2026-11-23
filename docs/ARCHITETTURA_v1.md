@@ -119,6 +119,11 @@ select public.ta_call_sync('{"mode":"publish"}'::jsonb);
 - **Punti chiave** (`stats/insights.ts`): nella panoramica delle partite da giocare, confronto modello/mercato con soglie di quota (commissione 5%), primo e secondo tempo, forma, minuti dei gol, avviso sul campione piccolo.
 - Roadmap in `docs/ROADMAP.md`.
 
+### v1.6
+- **Grafici**: profilo a esagono (`stats/profile.ts`, `Radar` in `charts.tsx`): sei qualità in percentile rispetto alle squadre dello stesso campionato e stagione; ciambelle (`Donut`) per esiti, gol per tempo e Over/Under in squadra e campionato (`sections/Profiles.tsx`).
+- **Movimenti di quota** (`stats/moves.ts`, `sections/OddsMoves.tsx`): apertura → chiusura per 1X2 e Over/Under 2,5 con probabilità senza margine; storico delle rilevazioni per le partite da giocare letto via REST dalla tabella pubblica `ta_odds_hist`, riempita da un trigger su `ta_matches` a ogni cambio di quota (migrazione `20261123120000_ta_odds_history.sql`); scheda "Movimenti quote" nel campionato con lo studio per fasce di movimento.
+- Corretto il "vs" nella lista partite (la classe `vs` della testata lo trasformava in una griglia).
+
 ## Cosa manca (prossime fasi)
 
 - Scanner dei mercati, strategie e backtest, validazione cronologica.

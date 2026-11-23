@@ -502,3 +502,9 @@ body { background: transparent; }
 .dn-legend i { width: 10px; height: 10px; border-radius: 3px; flex: none; }
 .dn-legend em { font-style: normal; margin-left: auto; padding-left: 10px; font-weight: 600; }
 @media (max-width: 900px) { .profile-grid { grid-template-columns: minmax(0, 1fr); } }
+/* movimenti di quota */
+.t tr.mv-strong td { background: var(--gold-weak); }
+.mv-down { color: var(--pos); font-weight: 600; }
+.mv-up { color: var(--neg); font-weight: 600; }
+.lead-line { margin: 12px 14px 4px; font-size: 15px; line-height: 1.45; }
+.t.snaps td, .t.snaps th { font-size: 13px; }
