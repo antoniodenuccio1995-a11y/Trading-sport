@@ -32,7 +32,7 @@ export function MatchRow({ m }: { m: Match }) {
       <span class="home"><span>{teamName(m.h)}</span><TeamBadge id={m.h} size={20} /></span>
       {done
         ? <span class="mid"><div class="score ft">{m.fh}–{m.fa}</div>{m.hh !== null && <div class="ht">1T {m.hh}–{m.ha}</div>}</span>
-        : <span class="mid score vs">vs</span>}
+        : <span class="mid score vs-chip">vs</span>}
       <span class="away"><TeamBadge id={m.a} size={20} /><span>{teamName(m.a)}</span></span>
       {(["home", "draw", "away"] as const).map((k) => {
         const best = fc && fc[k] === Math.max(fc.home, fc.draw, fc.away);

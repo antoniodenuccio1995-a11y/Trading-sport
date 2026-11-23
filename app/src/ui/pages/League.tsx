@@ -11,6 +11,7 @@ import { SeasonRankChart } from "../sections/RankCharts";
 import { StandingsTable } from "../sections/StandingsTable";
 import { halfLeague, halfTeam } from "../../stats/halves";
 import { GoalMinutes } from "../sections/GoalMinutes";
+import { LeagueDonuts } from "../sections/Profiles";
 
 const TABS: [string, string][] = [["classifica", "Classifica"], ["andamento", "Classifica nel tempo"], ["gol", "Statistiche gol"], ["tempi", "Gol e tempi"], ["forma", "Forma"], ["risultati", "Risultati"], ["calendario", "Calendario"]];
 
@@ -48,7 +49,7 @@ export function League({ route }: { route: Route }) {
       <Tabs tabs={TABS} active={tab} link={(k) => href(["lega", code], { s: season, tab: k })} />
       {tab === "classifica" && <Standings code={code} list={list} season={season} />}
       {tab === "andamento" && <Trend code={code} list={list} season={season} />}
-      {tab === "gol" && <GoalStats list={list} season={season} />}
+      {tab === "gol" && <><LeagueDonuts list={list} /><GoalStats list={list} season={season} /></>}
       {tab === "tempi" && <><LeagueHalves list={list} season={season} /><GoalMinutes title={`Minuti dei gol · ${season}`} cols={[{ label: "Campionato", list }]} /></>}
       {tab === "forma" && <FormTable list={list} season={season} />}
       {tab === "risultati" && <Results list={list.filter(played).slice(-60).reverse()} />}

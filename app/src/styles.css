@@ -339,7 +339,7 @@ table.t { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-
 .filters .input { width: 100%; min-width: 0; color: var(--text); font-weight: 400; }
 .filters .input.on { border-color: var(--accent); box-shadow: inset 0 0 0 1px var(--accent); }
 @media (max-width: 600px) { .filters { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
-.mrow .score.vs { background: none; color: var(--muted); font-weight: 600; font-size: 12px; }
+.mrow .score.vs-chip { background: none; color: var(--muted); font-weight: 600; font-size: 12px; }
 .mrow .q.x12 { display: flex; flex-direction: column; line-height: 1.15; }
 .mrow .q.x12 b { font-weight: 500; }
 .mrow .q.x12.best b { font-weight: 750; }
@@ -413,7 +413,7 @@ table.t { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-
 .mrow .home, .mrow .away { font-size: 15px; }
 .mrow .score { font: 700 19px/1.15 var(--font-display); letter-spacing: .06em; border-radius: 7px; padding: 3px 0 2px; }
 .mrow .score.ft { background: var(--board); color: var(--board-text); box-shadow: inset 0 -2px 0 rgba(255, 255, 255, .07), 0 1px 2px rgba(0, 0, 0, .25); }
-.mrow .score.vs { font: 600 15px var(--font-display); letter-spacing: .04em; }
+.mrow .score.vs-chip { font: 600 15px var(--font-display); letter-spacing: .04em; }
 .mhead { background: var(--surface-2); }
 .mrow .q.x12 b { font-family: var(--font-display); font-size: 15px; font-weight: 600; }
 .mrow .q.x12.best b { color: var(--accent); font-weight: 700; }
@@ -481,3 +481,24 @@ body { background: transparent; }
 .keypts li.value::before { content: "◆"; color: var(--gold); }
 .keypts li.info::before { content: "●"; color: var(--accent); font-size: 11px; top: 11px; }
 .keypts li.warn::before { content: "!"; color: var(--warn); }
+/* radar e ciambelle */
+.radar { max-width: 460px; margin: 0 auto; }
+.radar .rd-ring { fill: none; stroke: var(--line); }
+.radar .rd-mid { stroke: var(--muted); stroke-dasharray: 3 4; opacity: .7; }
+.radar .rd-axis { stroke: var(--line); }
+.radar .rd-label { font: 600 14px var(--font-display); fill: var(--text); letter-spacing: .01em; }
+.radar .rd-area { fill: currentColor; fill-opacity: .2; stroke: currentColor; stroke-width: 2.5; stroke-linejoin: round; }
+.profile-grid { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); gap: 16px; align-items: center; }
+.donuts { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 14px; }
+.donut { display: flex; align-items: center; gap: 12px; min-width: 0; }
+.donut svg { width: 112px; height: 112px; flex: none; }
+.donut .dn-track { fill: none; stroke: var(--surface-2); stroke-width: 15; }
+.donut .dn-seg { fill: none; stroke-width: 15; }
+.donut .dn-center { font: 700 22px var(--font-display); fill: var(--text); }
+.donut .dn-sub { font-size: 10.5px; fill: var(--muted); }
+.dn-legend { display: grid; gap: 3px; font-size: 13px; min-width: 0; }
+.dn-legend b { font: 600 16px var(--font-display); margin-bottom: 2px; }
+.dn-legend span { display: flex; align-items: center; gap: 6px; }
+.dn-legend i { width: 10px; height: 10px; border-radius: 3px; flex: none; }
+.dn-legend em { font-style: normal; margin-left: auto; padding-left: 10px; font-weight: 600; }
+@media (max-width: 900px) { .profile-grid { grid-template-columns: minmax(0, 1fr); } }

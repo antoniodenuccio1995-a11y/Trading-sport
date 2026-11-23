@@ -17,6 +17,7 @@ import { TeamBadge } from "../components/badge";
 import { StatTable } from "../sections/StatTable";
 import { GoalMinutes, GoalTimeline } from "../sections/GoalMinutes";
 import { matchInsights } from "../../stats/insights";
+import { MatchProfiles } from "../sections/Profiles";
 import { minuteLeagues } from "../../stats/minutes";
 import { getStore } from "../../data/store";
 
@@ -70,6 +71,7 @@ function Overview({ m, fc }: { m: M; fc: Forecast | null }) {
   return (
     <>
       {!played(m) && <KeyPoints m={m} fc={fc} />}
+      <MatchProfiles m={m} />
       <div class="grid2">
         <Card title="Previsione statistica (Poisson)">
           {fc ? (
