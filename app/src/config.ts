@@ -4,4 +4,4 @@ export const SUPABASE_URL = import.meta.env.VITE_SUPABASE_URL ?? "https://cqfxjv
 export const SUPABASE_KEY = import.meta.env.VITE_SUPABASE_KEY ?? "sb_publishable_VQS48ywRaUafRirZIyo5EQ_8KMjSDfm";
 /** Cartella con manifest e istantanee delle stagioni (sovrascrivibile per i test). */
 export const DATA_BASE = import.meta.env.VITE_DATA_BASE ?? `${SUPABASE_URL}/storage/v1/object/public/ta-data`;
-export const APP_VERSION = "1.5.0";
+export const APP_VERSION = "1.6.0";

@@ -127,3 +127,63 @@ export function ZoneLegend({ zones }: { zones: Zone[] }) {
   if (!items.length) return null;
   return <div class="legend zones">{items.map((z) => <span key={z.label}><i class={`z-${z.tone}`} />{z.label} ({z.from === z.to ? `${z.from}°` : `${z.from}°–${z.to}°`})</span>)}</div>;
 }
+
+/** Radar (esagono "abilità"): valori da 0 a 1 su ogni asse; l'anello tratteggiato a metà è la squadra media. */
+export function Radar({ axes, series, label }: { axes: readonly string[]; series: { name: string; color: string; values: (number | null)[] }[]; label: string }) {
+  const W = 430, H = 300, cx = W / 2, cy = H / 2 + 4, R = 104, n = axes.length;
+  const pt = (i: number, r: number) => {
+    const ang = -Math.PI / 2 + (2 * Math.PI * i) / n;
+    return [cx + Math.cos(ang) * r, cy + Math.sin(ang) * r] as const;
+  };
+  const ring = (f: number) => axes.map((_, i) => pt(i, R * f).map((v) => v.toFixed(1)).join(",")).join(" ");
+  return (
+    <svg class="chart radar" viewBox={`0 0 ${W} ${H}`} role="img" aria-label={label}>
+      {[1, 0.75, 0.25].map((f) => <polygon key={f} points={ring(f)} class="rd-ring" />)}
+      <polygon points={ring(0.5)} class="rd-ring rd-mid" />
+      {axes.map((a, i) => {
+        const [x, y] = pt(i, R), [lx, ly] = pt(i, R + 18);
+        const anchor = Math.abs(lx - cx) < 8 ? "middle" : lx > cx ? "start" : "end";
+        return (
+          <g key={a}>
+            <line x1={cx} y1={cy} x2={x} y2={y} class="rd-axis" />
+            <text x={lx} y={ly + (ly < cy - 10 ? -2 : ly > cy + 10 ? 10 : 4)} text-anchor={anchor} class="rd-label">{a}</text>
+          </g>
+        );
+      })}
+      {series.map((s) => {
+        const pts = s.values.map((v, i) => pt(i, R * Math.max(0.04, v ?? 0)));
+        return (
+          <g key={s.name} style={`color:${s.color}`}>
+            <polygon points={pts.map(([x, y]) => `${x.toFixed(1)},${y.toFixed(1)}`).join(" ")} class="rd-area" />
+            {pts.map(([x, y], i) => s.values[i] !== null && <circle key={i} cx={x} cy={y} r={3.5} class="dot"><title>{`${s.name} · ${axes[i]}: ${Math.round((s.values[i] ?? 0) * 100)}° percentile`}</title></circle>)}
+          </g>
+        );
+      })}
+    </svg>
+  );
+}
+
+/** Ciambella con al centro un numero e sotto la legenda. */
+export function Donut({ parts, center, sub, label }: { parts: { label: string; value: number; color: string }[]; center?: string; sub?: string; label: string }) {
+  const tot = parts.reduce((s, p) => s + p.value, 0);
+  const r = 42, C = 2 * Math.PI * r;
+  let off = 0;
+  return (
+    <div class="donut">
+      <svg viewBox="0 0 110 110" role="img" aria-label={`${label}: ${parts.map((p) => `${p.label} ${tot ? Math.round((100 * p.value) / tot) : 0}%`).join(", ")}`}>
+        <circle cx="55" cy="55" r={r} class="dn-track" />
+        {tot > 0 && parts.map((p) => {
+          const len = (C * p.value) / tot, el = <circle key={p.label} cx="55" cy="55" r={r} class="dn-seg" style={`stroke:${p.color}`} stroke-dasharray={`${Math.max(0, len - 1.5)} ${C}`} stroke-dashoffset={-off} transform="rotate(-90 55 55)" />;
+          off += len;
+          return el;
+        })}
+        {center && <text x="55" y={sub ? 56 : 61} text-anchor="middle" class="dn-center">{center}</text>}
+        {sub && <text x="55" y="72" text-anchor="middle" class="dn-sub">{sub}</text>}
+      </svg>
+      <div class="dn-legend">
+        <b>{label}</b>
+        {parts.map((p) => <span key={p.label}><i style={`background:${p.color}`} />{p.label}<em>{tot ? `${Math.round((100 * p.value) / tot)}%` : "—"}</em></span>)}
+      </div>
+    </div>
+  );
+}

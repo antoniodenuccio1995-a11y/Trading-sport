@@ -7,6 +7,7 @@ import { Card, Form, PctTd, fmtNum, fmtPct, usePref, useStore } from "../compone
 import { PeriodSeg, periodLabel, periodSeasons, type Period } from "../components/period";
 import { TeamHalves } from "../sections/Halves";
 import { GoalMinutes } from "../sections/GoalMinutes";
+import { TeamOverview } from "../sections/Profiles";
 import { HistoryRankChart, SeasonRankChart } from "../sections/RankCharts";
 import { StatTable } from "../sections/StatTable";
 import { TeamBadge } from "../components/badge";
@@ -68,6 +69,7 @@ export function Team({ route }: { route: Route }) {
         <div class="tile"><b>{fmtPct(pct(tot.o25, tot.n))}</b><span>Over 2,5</span></div>
         <div class="tile"><b>{fmtPct(pct(tot.btts, tot.n))}</b><span>Entrambe segnano</span></div>
       </div>
+      <TeamOverview team={id} list={dom} league={s.byLeagueSeason.get(`${domestic}|${season}`) ?? []} />
       <div class="grid2">
         <Card title="Statistiche" right={<PeriodSeg value={period} onChange={setPeriod} />}>
           <p class="muted" style="margin-top:0">{periodLabel(period, season, lgSeasons)} · {leagueName(domestic ?? "")}</p>
