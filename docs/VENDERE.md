@@ -10,6 +10,19 @@ Sì, si può vendere, ma **non così com'è**. La parte tecnica è già quasi pr
 3. **Quote Betfair.** La chiave gratuita vale solo per uso personale. Per vendere serve la licenza "Software Vendor" di Betfair.
 4. **Regole italiane sul gioco.** Niente pubblicità di bookmaker e niente affiliazioni: va presentato come strumento di analisi statistica.
 
+## Come fanno SoccerStats e Goal Profits (verificato il 23/11/2026)
+- **SoccerSTATS**: sito di statistiche attivo dal 1998 (dominio registrato a maggio 1998), firmato da una "redazione" senza nomi; secondo ZoomInfo (dato non verificato) ha sede in Spagna. Si regge sulla pubblicità e sugli abbonamenti gestiti da Steady Media (Berlino): 5,99 / 9,99 / 14,99 € al mese, che danno sito senza pubblicità, contenuti riservati ed esportazione CSV. Sul sito non è dichiarato da dove arrivano i dati.
+- **Goal Profits**: servizio britannico di trading sul calcio che vende soprattutto **metodo e comunità**: corsi dal livello base all'avanzato, strategie, forum e chat durante le partite, più strumenti (statistiche squadre, modulo live). Prezzo indicativo dalle recensioni: circa 39,95 £ al mese o 365 £ l'anno, con una prova da 1 £. Fornitore dei dati non dichiarato nelle fonti trovate.
+
+Cosa li rende vendibili:
+1. Il valore venduto non sono i dati grezzi ma il servizio: lettura delle statistiche (SoccerStats), metodo, comunità e strumenti (Goal Profits). I risultati delle partite sono fatti; ciò che va rispettato è la **banca dati da cui li prendi** (diritto sui database europeo, condizioni d'uso delle fonti). Per questo chi vende usa fonti con licenza o raccoglie i dati in proprio.
+2. Operano in paesi dove la pubblicità del gioco è regolata ma non vietata (Regno Unito, Spagna), quindi possono anche avere banner e affiliazioni. In Italia vendere un abbonamento di analisi è possibile; è la pubblicità degli operatori a essere vietata.
+3. Abbonamento con prova, prezzo chiaro, valore che cresce col tempo (storico, comunità, strumenti).
+
+Per Trading Analytics il modello più adatto è quello di Goal Profits (strumenti più metodo, abbonamento) e non quello a pubblicità di SoccerStats, perché in Italia la pubblicità legata alle scommesse non è possibile e quella generica rende poco.
+
+Fonti: [FAQ SoccerSTATS](https://soccerstats.com/en-gb/info/faq), [pagina Steady di SoccerSTATS](https://steady.page/it/soccerstatscom), [chi siamo SoccerSTATS](https://www.soccerstats.com/nodeweb/en-gb/info/about-us), [ZoomInfo](https://www.zoominfo.com/c/soccerstats/351503991), [recensione Caanberry](https://caanberry.com/goal-profits-reviewed/), [recensione Tipster Reviews 2026](https://tipsterreviews.co.uk/goal-profits-review/), [codici Goal Profits ottobre 2026](https://goalprofits.startupworld.com/), [Football DataCo FAQ](https://www.football-dataco.com/faqs).
+
 ## 1. Dati: cosa si può usare oggi e cosa servirebbe
 
 | Fonte attuale | Uso | Per vendere |
