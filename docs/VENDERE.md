@@ -51,7 +51,7 @@ Stemmi e loghi: per l'uso commerciale serve il permesso di leghe e club (lo dice
 - Aggiornamento automatico dei dati due volte al giorno.
 
 ## 4. Cosa manca tecnicamente
-1. **Progetto Supabase dedicato.** Oggi il progetto è condiviso con altre app (tabelle "nozze" e "quadra"): per un prodotto venduto serve un progetto separato, a pagamento (Supabase Pro), con backup.
+1. **Progetto Supabase dedicato.** Oggi il progetto è condiviso con altre app: per un prodotto venduto serve un progetto separato, a pagamento (Supabase Pro), con backup.
 2. **Registrazione e account**: iscrizione, recupero password, protezione dalle password compromesse (oggi segnalata come disattivata), cancellazione dell'account.
 3. **Abbonamenti**: pagamenti con Stripe; piani Free/Pro gestiti nel database, con le funzioni Pro riservate agli abbonati.
 4. **Sito di presentazione** con prezzi, domande frequenti, privacy e termini.
