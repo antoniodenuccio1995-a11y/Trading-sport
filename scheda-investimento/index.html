@@ -1,0 +1,792 @@
+<title>Scheda investimento DiSalento</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600;700&display=swap">
+<style>
+/* LAYOUT: barra comandi in alto; a sinistra i dati, a destra i fogli A4 (su telefono due schede: Modifica / Anteprima).
+   I fogli sono carta bianca fissa con la palette DiSalento; l'interfaccia segue il tema chiaro o scuro. */
+:root{
+  --bg:#ECE6DE;--panel:#FBF9F6;--ink:#2A2724;--mute:#6B645B;--line:#DCD2C6;--field:#FFFFFF;
+  --accent:#A0583F;--accent-ink:#FFFFFF;--accent-text:#8E4A33;--sage:#5B6B55;
+  --warn-bg:#F6EBDD;--warn:#7E4410;--ok-bg:#E7EEE3;--ok:#3E5236;--bad:#B03A2E;--chip:#F1EBE3;
+  --serif:'Noto Serif',Georgia,'Times New Roman',serif;--sans:Inter,system-ui,-apple-system,'Segoe UI',Arial,sans-serif;
+  /* carta: sempre chiara */
+  --p-ink:#2B2724;--p-mute:#6A625A;--p-line:#E4D8CD;--p-rule:#CDBBAA;--p-sand:#F5F0EA;--p-terra:#A0583F;--p-terra-dk:#8E4A34;
+  --p-sage:#5B6B55;--p-clay:#CDB49B;--p-grey:#ABA59D;--p-bad:#B03A2E;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#1C1A18;--panel:#262320;--ink:#EDE7DF;--mute:#A9A095;--line:#3B3631;--field:#1F1D1B;
+  --accent:#A0583F;--accent-ink:#FFFFFF;--accent-text:#E3A184;--sage:#9DB094;
+  --warn-bg:#33291F;--warn:#F0B27A;--ok-bg:#232B21;--ok:#A9C79B;--bad:#F08A7E;--chip:#2F2B27;color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#1C1A18;--panel:#262320;--ink:#EDE7DF;--mute:#A9A095;--line:#3B3631;--field:#1F1D1B;
+  --accent:#A0583F;--accent-ink:#FFFFFF;--accent-text:#E3A184;--sage:#9DB094;
+  --warn-bg:#33291F;--warn:#F0B27A;--ok-bg:#232B21;--ok:#A9C79B;--bad:#F08A7E;--chip:#2F2B27;color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 var(--sans);overflow-x:clip}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--panel)}
+button,.btn{font:600 14px var(--sans);min-height:42px;padding:0 14px;border-radius:9px;border:1px solid var(--line);background:var(--panel);color:var(--ink);cursor:pointer;display:inline-flex;align-items:center;justify-content:center;gap:6px;text-decoration:none;white-space:nowrap}
+button:hover,.btn:hover{border-color:var(--mute)}
+button.main{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+button.main:hover{filter:brightness(1.08)}
+button:disabled{opacity:.55;cursor:progress}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+
+/* barra */
+.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:6;background:var(--panel);border-bottom:1px solid var(--line);
+  display:flex;flex-wrap:wrap;gap:10px 16px;align-items:center;justify-content:space-between;
+  padding-block:10px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.bar h1{font:500 19px/1.15 var(--serif);margin:0}
+.bar small{display:block;color:var(--mute);font-size:12.5px}
+.acts{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.menu{position:relative}
+.menu>summary{list-style:none}.menu>summary::-webkit-details-marker{display:none}
+.menu>summary::after{content:"";width:7px;height:7px;border-right:2px solid currentColor;border-bottom:2px solid currentColor;transform:translateY(-2px) rotate(45deg);margin-left:4px}
+.pop{position:absolute;right:0;top:calc(100% + 6px);z-index:8;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:6px;min-width:230px;display:flex;flex-direction:column;gap:2px;box-shadow:0 10px 30px rgba(0,0,0,.18)}
+.pop button,.pop .btn{border:0;justify-content:flex-start;font-weight:500;background:transparent;width:100%}
+.pop button:hover,.pop .btn:hover{background:var(--chip)}
+.pop hr{border:0;border-top:1px solid var(--line);margin:4px 6px}
+.tabs{display:none}
+.m-only{display:none}
+
+.wrap{display:grid;grid-template-columns:minmax(0,430px) minmax(0,1fr);gap:22px;align-items:start;
+  padding-block:18px 40px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+
+/* editor */
+.ed{display:flex;flex-direction:column;gap:10px;min-width:0}
+.sum{display:flex;flex-wrap:wrap;gap:4px 14px;align-items:baseline;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:10px 14px;font-size:13px;color:var(--mute)}
+.sum b{font:600 15px var(--sans);color:var(--ink);font-variant-numeric:tabular-nums}
+.sum .neg{color:var(--bad)}
+#status{font-size:13px;color:var(--mute);min-height:0}
+#status:not(:empty){padding:8px 12px;background:var(--chip);border-radius:9px;color:var(--ink)}
+details.sec{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:0 14px}
+details.sec>summary{font-weight:600;cursor:pointer;padding:12px 0;display:flex;align-items:center;gap:10px;list-style:none}
+details.sec>summary::-webkit-details-marker{display:none}
+details.sec>summary::before{content:"";width:7px;height:7px;border-right:2px solid var(--mute);border-bottom:2px solid var(--mute);transform:rotate(-45deg);transition:transform .15s;flex:none}
+details.sec[open]>summary::before{transform:rotate(45deg)}
+details.sec>summary .cnt{margin-left:auto;font-size:12px;font-weight:600;color:var(--warn);background:var(--warn-bg);border-radius:20px;padding:1px 9px}
+details.sec>summary .cnt.ok{color:var(--ok);background:var(--ok-bg)}
+details.sec>.in{padding-bottom:14px}
+label.f{display:block;font-size:13px;color:var(--mute);margin:10px 0 4px}
+input,textarea,select{width:100%;font:16px var(--sans);padding:9px 10px;border:1px solid var(--line);border-radius:8px;background:var(--field);color:var(--ink);min-height:42px}
+textarea{min-height:72px;resize:vertical;line-height:1.45}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:0 10px;align-items:end}
+.row{display:grid;grid-template-columns:minmax(0,1fr) 112px 42px;gap:6px;margin-top:6px;align-items:center}
+.row.cv{grid-template-columns:26px minmax(0,1fr) 78px 62px 42px}
+.row.pp{grid-template-columns:minmax(0,130px) minmax(0,1fr) 42px}
+input[type=checkbox]{width:20px;height:20px;min-height:0;padding:0;accent-color:var(--accent)}
+.x{min-height:42px;width:42px;padding:0;font-size:20px;line-height:1;color:var(--mute)}
+.add{margin-top:10px;width:100%}
+.num{text-align:right;font-variant-numeric:tabular-nums}
+.hint{font-size:13px;color:var(--mute);margin:0 0 6px}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
+.chips button{min-height:34px;font-size:13px;font-weight:500;padding:0 11px;border-radius:17px;background:var(--chip);border-color:transparent}
+.comp{border:1px solid var(--line);border-radius:10px;padding:8px;margin-top:8px}
+.comp .l1{display:grid;grid-template-columns:minmax(0,1fr) 42px;gap:6px}
+.comp .l2{display:grid;grid-template-columns:repeat(3,minmax(0,1fr)) auto;gap:6px;margin-top:6px;align-items:end}
+.comp .l2 label{display:block;margin:0 0 2px;font-size:12px;color:var(--mute)}
+.comp .cop{display:flex;gap:6px;align-items:center;font-size:12.5px;color:var(--ink);padding-bottom:11px}
+.comp .val{font-size:13px;color:var(--mute);margin-top:4px;text-align:right;font-variant-numeric:tabular-nums}
+.tot{font-size:13px;color:var(--ink);margin:10px 0 0;font-weight:500}
+.checks{display:flex;flex-direction:column;gap:6px;margin:0;padding:0;list-style:none}
+.checks li{font-size:14px;padding:9px 11px;border-radius:9px;background:var(--warn-bg);color:var(--warn)}
+.checks li.ok{background:var(--ok-bg);color:var(--ok)}
+
+/* foto */
+.slot{border:1.5px dashed var(--line);border-radius:12px;background:var(--field);display:flex;align-items:center;gap:12px;padding:10px;margin-top:8px;position:relative}
+.slot.drag{border-color:var(--accent);background:var(--chip)}
+.slot .th{width:88px;height:62px;border-radius:7px;background:var(--chip) center/cover no-repeat;flex:none;display:flex;align-items:center;justify-content:center;color:var(--mute);font-size:22px}
+.slot.logo .th{background-size:contain;background-color:#fff}
+.slot .meta{flex:1;min-width:0;display:flex;flex-direction:column;gap:6px}
+.slot .meta b{font-size:14px;font-weight:600}
+.slot .meta input{min-height:38px;font-size:15px;padding:6px 9px}
+.slot .bt{display:flex;gap:6px;flex-wrap:wrap}
+.slot .bt button{min-height:36px;font-size:13px;padding:0 10px}
+.slot .pick{position:absolute;inset:0;opacity:0;cursor:pointer;min-height:0;border:0;background:transparent}
+
+/* moduli */
+.mods{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:6px}
+.mods h4{margin:12px 0 2px;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--mute)}
+.mod{display:grid;grid-template-columns:24px minmax(0,1fr) auto auto auto auto;gap:6px;align-items:center;background:var(--field);border:1px solid var(--line);border-radius:10px;padding:5px 6px 5px 10px}
+.mod.off{opacity:.55}
+.mod .nm{font-size:14px;line-height:1.25}
+.mod select{width:auto;min-height:36px;padding:4px 6px;font-size:14px}
+.mod button{min-height:36px;min-width:36px;padding:0 8px;font-size:13px}
+.mod button.w{min-width:58px}
+
+/* anteprima */
+.view{min-width:0;position:sticky;top:calc(var(--hdr,64px) + 12px);max-height:calc(100vh - var(--hdr,64px) - 24px);overflow:auto;border-radius:12px;overscroll-behavior:contain}
+.vtools{display:flex;justify-content:space-between;align-items:center;gap:10px;margin:0 0 10px;font-size:13px;color:var(--mute)}
+.vtools .bad{color:var(--bad);font-weight:600}
+.vtools button{min-height:36px;font-size:13px}
+.stagebox{position:relative}
+.stagebox.zoom{overflow-x:auto}
+.stage{transform-origin:top left;width:794px}
+.view.drag{outline:2px dashed var(--accent);outline-offset:-2px}
+
+/* ---------- FOGLIO A4 ---------- */
+.page{width:794px;height:1123px;background:#fff;color:var(--p-ink);position:relative;display:flex;flex-direction:column;padding:36px 56px 0;margin:0 0 22px;box-shadow:0 1px 3px rgba(0,0,0,.12),0 8px 28px rgba(0,0,0,.12);font:11.5px/1.5 var(--sans);overflow:hidden;font-variant-numeric:lining-nums}
+.page *{box-sizing:border-box}
+.ph{display:flex;justify-content:space-between;align-items:flex-end;gap:20px;padding-bottom:12px;border-bottom:1px solid var(--p-rule);flex:none}
+.ph .brand{display:flex;flex-direction:column;gap:3px}
+.ph .bn{font:400 25px/1 var(--serif);color:var(--p-ink);letter-spacing:-.005em}
+.ph .bs{font-size:9px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--p-mute)}
+.ph img.logo{max-height:46px;max-width:220px;width:auto;height:auto;display:block}
+.ph .r{text-align:right;font-size:10px;color:var(--p-mute);line-height:1.45}
+.ph .r .lb{font-size:9px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--p-terra)}
+.ph .r .nm{font:500 14px/1.3 var(--serif);color:var(--p-ink)}
+.pg-body{flex:1;min-height:0;overflow:hidden;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:18px 24px;align-content:start;padding-top:18px}
+.blk{grid-column:span 2;min-width:0}
+.blk.half{grid-column:span 1}
+.pf{flex:none;display:flex;justify-content:space-between;gap:20px;border-top:1px solid var(--p-line);padding:9px 0 0;height:50px;font-size:9px;color:var(--p-mute);letter-spacing:.02em}
+.k{display:flex;align-items:center;gap:10px;font-size:9.5px;font-weight:700;letter-spacing:.13em;text-transform:uppercase;color:var(--p-terra);margin:0 0 9px}
+.k::after{content:"";flex:1;height:1px;background:var(--p-line)}
+.k.g{color:var(--p-sage)}
+.k.plain::after{display:none}
+.neg{color:var(--p-bad)!important}
+
+.cover{height:236px;border-radius:2px;background-color:#EFE8E0;background-size:cover;background-repeat:no-repeat}
+.cap{font-size:9px;color:var(--p-mute);margin-top:5px;letter-spacing:.02em}
+.hero .eyebrow{font-size:9.5px;font-weight:700;letter-spacing:.13em;text-transform:uppercase;color:var(--p-terra)}
+.hero .t1{font:400 38px/1.05 var(--serif);margin:8px 0 6px;letter-spacing:-.012em;color:var(--p-ink)}
+.hero .t2{font:italic 400 16px/1.3 var(--serif);color:var(--p-mute)}
+.hero .lead{font-size:11.5px;line-height:1.6;color:#4A443E;margin:12px 0 0;max-width:470px}
+.dati{margin:0;display:grid;grid-template-columns:1fr;align-content:start}
+.dati>div{display:flex;justify-content:space-between;align-items:baseline;gap:14px;padding:8px 0;border-bottom:1px solid var(--p-line)}
+.dati>div:first-child{border-top:1px solid var(--p-rule)}
+.dati dt{font-size:9px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--p-mute);flex:none;max-width:48%}
+.dati dd{margin:0;font:500 13px/1.3 var(--serif);text-align:right;color:var(--p-ink)}
+.blk.full .dati{grid-template-columns:repeat(var(--n,4),minmax(0,1fr));gap:0 18px;border-top:1px solid var(--p-rule);border-bottom:1px solid var(--p-rule);padding:10px 0}
+.blk.full .dati>div{display:flex;flex-direction:column-reverse;justify-content:flex-end;gap:2px;border:0;padding:0}
+.blk.full .dati dd{text-align:left;font-size:14px}
+
+.opbox{background:var(--p-sand);border-radius:3px;padding:16px 18px 14px;height:100%;display:flex;flex-direction:column}
+.opbox .k::after{background:#E2D5C8}
+.ln{display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding:7px 0;border-bottom:1px solid #E6DACE;font-variant-numeric:tabular-nums}
+.ln>span:first-child{color:#4F4842}
+.ln.top b{font:500 22px/1.1 var(--serif);color:var(--p-ink)}
+.ln.top>span:first-child{color:var(--p-ink);font-weight:600}
+.ln .m{color:#4F4842}
+.ln.res{border-top:1.5px solid var(--p-ink);border-bottom:0;margin-top:4px;padding-top:9px}
+.ln.res>span:first-child{color:var(--p-ink);font-weight:600}
+.ln.res b{font:500 22px/1.1 var(--serif);color:var(--p-terra)}
+.ln.sm{border:0;padding:4px 0;font-size:11px}
+.ln.sm b{font-weight:600}
+.invbox{background:var(--p-terra-dk);color:#fff;border-radius:3px;padding:16px 18px 14px;height:100%;display:flex;flex-direction:column}
+.invbox .k{color:#F4D5C6}.invbox .k::after{background:rgba(255,255,255,.25)}
+.invbox .lbl{font-size:11px;color:#F7E2D8}
+.invbox .big{font:500 36px/1.05 var(--serif);letter-spacing:-.01em;margin:2px 0 0;font-variant-numeric:tabular-nums}
+.invbox .pair{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:12px 0 10px;padding:9px 0;border-top:1px solid rgba(255,255,255,.28);border-bottom:1px solid rgba(255,255,255,.28)}
+.invbox .pair b{display:block;font:500 17px/1.2 var(--serif);font-variant-numeric:tabular-nums}
+.invbox .pair span{display:block;font-size:9.5px;line-height:1.35;color:#F7E2D8;margin-top:2px}
+.invbox .rr{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+.invbox .rr b{font:500 24px/1.1 var(--serif);color:#FFE6D9}
+.invbox .rr span{font-size:10.5px;color:#F7E2D8}
+.invbox .fine{font-size:9.5px;line-height:1.5;color:rgba(255,255,255,.88);margin:auto 0 0;padding-top:10px}
+.invbox .neg{color:#FFD0C8!important}
+.blk.full .invbox{display:grid;grid-template-columns:1.1fr 1fr 1fr;gap:0 24px;align-items:start}
+.blk.full .invbox .k,.blk.full .invbox .fine{grid-column:1/-1}
+.blk.full .invbox .pair{margin:0}
+.why{display:grid;grid-template-columns:1fr 1fr;gap:12px 28px}
+.blk.half .why{grid-template-columns:1fr}
+.why>div{padding-top:8px;position:relative}
+.why>div::before{content:"";position:absolute;left:0;top:0;width:22px;height:2px;background:var(--p-sage)}
+.why b{display:block;font-size:11.5px;font-weight:600;color:var(--p-ink);margin-bottom:2px}
+.why span{font-size:10.5px;color:#5A534C;line-height:1.5}
+.note{font-size:9.5px;line-height:1.55;color:var(--p-mute);margin:0;max-width:600px}
+
+.t-p2{font:400 28px/1.1 var(--serif);margin:0 0 8px;letter-spacing:-.01em;color:var(--p-ink)}
+.intro .lead{font-size:11.5px;line-height:1.6;color:#4A443E;margin:0;max-width:580px}
+table.tb{width:100%;border-collapse:collapse;font-size:10.8px;font-variant-numeric:tabular-nums}
+table.tb td,table.tb th{padding:5px 0;border-bottom:1px solid var(--p-line);vertical-align:baseline;font-size:10.8px}
+table.tb td+td,table.tb th+th{padding-left:10px}
+table.tb th{font-size:8.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--p-sage);text-align:left;border-bottom:1px solid var(--p-rule)}
+table.tb .v{text-align:right;white-space:nowrap}
+table.tb tr.tot td{font-weight:700;font-size:11.5px;border-top:1.5px solid var(--p-ink);border-bottom:0;padding-top:8px}
+table.tb.g tr.tot td{color:var(--p-sage)}
+.sbar{display:flex;height:26px;gap:2px;margin:4px 0 12px}
+.sbar>div{height:100%;display:flex;align-items:center;justify-content:center;font-size:9px;font-weight:600;color:#fff;overflow:hidden;white-space:nowrap}
+.steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.st{display:grid;grid-template-columns:20px minmax(0,1fr);gap:0 9px;align-items:start;align-content:start}
+.st i{font-style:normal;width:20px;height:20px;border-radius:50%;color:#fff;font-size:10px;font-weight:700;display:flex;align-items:center;justify-content:center}
+.st p{margin:1px 0 0;font-size:10.5px;line-height:1.5;color:#4A443E}
+.st p b{color:var(--p-ink);font-weight:600;white-space:nowrap}
+.st ul{grid-column:2;margin:4px 0 0;padding:0;list-style:none;font-size:9.5px;color:var(--p-mute)}
+.st .split{grid-column:2;display:flex;flex-direction:column;gap:2px;margin-top:5px;font-size:9.5px;color:var(--p-mute)}
+.st .split em{display:inline-block;width:8px;height:8px;border-radius:2px;margin-right:5px;vertical-align:0}
+table.sc{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}
+table.sc th,table.sc td{font-size:10.8px;padding:5px 8px;text-align:right;border-bottom:1px solid var(--p-line);white-space:nowrap}
+table.sc th{font-size:8.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--p-sage);border-bottom:1.5px solid var(--p-ink)}
+table.sc th:first-child,table.sc td:first-child{text-align:left;padding-left:0}
+table.sc tr.base td{background:var(--p-sand);font-weight:700}
+table.sc tr.base td:first-child{padding-left:8px}
+table.sc tr.pe td{color:var(--p-mute);font-style:italic}
+.scs{font-size:10px;color:var(--p-mute);margin:8px 0 0}
+.gal{display:grid;grid-template-columns:repeat(var(--n,3),minmax(0,1fr));gap:12px}
+.gal .gi{aspect-ratio:16/9;border-radius:2px;background-color:#EFE8E0;background-size:cover;background-position:center;background-repeat:no-repeat}
+.gal .cap{margin-top:5px}
+.cont{display:flex;flex-wrap:wrap;gap:6px 28px;align-items:baseline;font-size:11px;color:#4A443E}
+.cont .who{font:500 15px/1.2 var(--serif);color:var(--p-ink)}
+.cont .who small{display:block;font:400 10px var(--sans);color:var(--p-mute);margin-top:2px}
+.phbox{border:1.5px dashed #CDBBAA;border-radius:3px;background:#FAF7F3;display:flex;align-items:center;justify-content:center;color:#857A6F;font-size:12px;line-height:1.5;cursor:pointer;text-align:center;padding:12px}
+.phbox:hover{border-color:var(--p-terra);color:var(--p-terra)}
+.over-flag{position:absolute;left:56px;right:56px;bottom:52px;background:#FCE9E6;color:#8F2C22;border:1px solid #F0B9B1;border-radius:6px;padding:7px 10px;font-size:11px;font-weight:600;z-index:2}
+.page.over{box-shadow:0 0 0 3px #E0796C,0 8px 28px rgba(0,0,0,.12)}
+
+/* telefono */
+@media (max-width:900px){
+  .wrap{grid-template-columns:minmax(0,1fr);padding-top:12px}
+  .view{position:static;max-height:none;overflow:visible}
+  .tabs{display:flex;width:100%;background:var(--chip);border-radius:11px;padding:3px;gap:3px;order:3}
+  .tabs button{flex:1;min-height:38px;border:0;background:transparent;font-weight:600;color:var(--mute)}
+  .tabs button[aria-selected="true"]{background:var(--panel);color:var(--ink);box-shadow:0 1px 3px rgba(0,0,0,.12)}
+  .wrap[data-tab="ed"] .view{display:none}
+  .wrap[data-tab="pv"] .ed{display:none}
+  .d-only{display:none}
+  .m-only{display:flex}
+  .bar small{display:none}
+  .bar>div:first-child{flex:1;min-width:0}
+  .bar h1{font-size:17px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .tabs{order:3}
+  .sum{position:sticky;top:calc(var(--hdr,110px) + 6px);z-index:4;box-shadow:0 4px 14px rgba(0,0,0,.08)}
+  .page{margin-bottom:14px}
+}
+@media (max-width:420px){
+  .bar h1{font-size:17px}
+  .row.cv{grid-template-columns:24px minmax(0,1fr) 70px 58px 42px}
+  .mod{grid-template-columns:24px minmax(0,1fr) auto auto auto;row-gap:4px}
+  .mod .nm{grid-column:2/-1}
+  .mod select{grid-column:2}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+
+<header class="bar" id="bar">
+  <div><h1>Scheda investimento</h1><small>Valori al lordo delle imposte · la scheda si ricalcola mentre scrivi</small></div>
+  <div class="acts">
+    <button class="main" id="bPdf" type="button"><span class="d-only">Scarica</span>PDF</button>
+    <button id="bXls" class="d-only" type="button">Excel</button>
+    <button id="bZip" class="d-only" type="button">Tutto (.zip)</button>
+    <details class="menu" id="mDati"><summary class="btn" aria-label="Altri comandi">Dati</summary>
+      <div class="pop">
+        <button id="bXls2" class="m-only" type="button">Scarica Excel</button>
+        <button id="bZip2" class="m-only" type="button">Scarica tutto (.zip)</button>
+        <hr class="m-only">
+        <button id="bSave" type="button">Salva i dati (.json)</button>
+        <label class="btn" for="fLoad">Carica dati salvati…</label>
+        <hr>
+        <button id="bReset" type="button">Ripristina l’esempio</button>
+      </div>
+    </details>
+  </div>
+  <div class="tabs" role="tablist" aria-label="Vista">
+    <button role="tab" id="tEd" aria-selected="true" type="button">Modifica</button>
+    <button role="tab" id="tPv" aria-selected="false" type="button">Anteprima</button>
+  </div>
+</header>
+<input type="file" id="fLoad" accept=".json,application/json" hidden>
+<input type="file" id="fImg" accept="image/*" hidden>
+<input type="file" id="fImgs" accept="image/*" multiple hidden>
+
+<div class="wrap" id="wrap" data-tab="ed">
+  <div class="ed" id="ed">
+    <div class="sum" id="sum" aria-live="polite"></div>
+    <div id="status" role="status"></div>
+
+    <details class="sec" id="secChecks" open><summary>Da sistemare prima di inviarla <span class="cnt" id="cntChecks"></span></summary><div class="in"><ul class="checks" id="checks"></ul></div></details>
+
+    <details class="sec" open><summary>Immobile e testi principali</summary><div class="in">
+      <label class="f" for="nome">Nome dell’immobile</label><input id="nome" data-k="nome">
+      <label class="f" for="claim">Occhiello sopra il titolo</label><input id="claim" data-k="claim">
+      <label class="f" for="titolo">Titolo</label><input id="titolo" data-k="titolo">
+      <label class="f" for="sottotitolo">Sottotitolo</label><input id="sottotitolo" data-k="sottotitolo">
+      <label class="f" for="descr">Descrizione</label><textarea id="descr" data-k="descr"></textarea>
+      <div class="two"><div><label class="f" for="data">Data</label><input id="data" data-k="data"></div><div><label class="f" for="footer">Piè di pagina</label><input id="footer" data-k="footer"></div></div>
+    </div></details>
+
+    <details class="sec" id="secFoto" open><summary>Foto, planimetria e logo</summary><div class="in">
+      <p class="hint">Tocca un riquadro per scegliere un’immagine, trascinala qui sopra oppure incollala (Ctrl+V). Le immagini vengono ridotte in automatico.</p>
+      <div id="slots"></div>
+      <label class="f" for="fotoPos">Inquadratura della copertina</label>
+      <select id="fotoPos" data-k="fotoPos"><option value="50% 20%">Parte alta</option><option value="50% 50%">Centro</option><option value="50% 80%">Parte bassa</option></select>
+      <label class="f" for="fotoCap">Didascalia della copertina (facoltativa)</label><input id="fotoCap" data-k="fotoCap" placeholder="Es. Render del progetto">
+      <div class="two"><div><label class="f" for="brand">Marchio (se manca il logo)</label><input id="brand" data-k="brand"></div><div><label class="f" for="brandSub">Sotto il marchio</label><input id="brandSub" data-k="brandSub"></div></div>
+    </div></details>
+
+    <details class="sec"><summary>Dati in evidenza</summary><div class="in">
+      <p class="hint">Superficie coperta e totale si aggiungono da sole quando inserisci i m² nella composizione del prezzo.</p>
+      <div id="lDati"></div><button class="add" data-add="dati" type="button">+ Aggiungi un dato</button>
+    </div></details>
+
+    <details class="sec"><summary>Impiego del capitale</summary><div class="in">
+      <div id="lCap"></div><button class="add" data-add="capitale" type="button">+ Aggiungi una voce</button>
+      <div class="chips" id="chipsK"></div><p class="tot" id="totK"></p>
+    </div></details>
+
+    <details class="sec"><summary>Prezzo di rivendita</summary><div class="in">
+      <p class="hint">Ogni voce vale m² × €/m². Se lasci vuoti i m², conta l’importo a corpo. “Coperta” serve per la superficie coperta.</p>
+      <div id="lVen"></div><div class="chips" id="chipsC"></div><p class="tot" id="totC"></p>
+    </div></details>
+
+    <details class="sec"><summary>Costi alla vendita</summary><div class="in">
+      <p class="hint">Si pagano prima di dividere l’utile. Spunta per includerli; scegli importo fisso (€) o percentuale del prezzo (%).</p>
+      <div id="lCv"></div><button class="add" data-add="costiVendita" type="button">+ Aggiungi un costo</button>
+    </div></details>
+
+    <details class="sec"><summary>Quote e tempi</summary><div class="in">
+      <div class="two">
+        <div><label class="f" for="quota">Quota investitore (%)</label><input id="quota" data-k="quotaInv" data-n="1" class="num" inputmode="decimal"></div>
+        <div><label class="f" for="mesi">Durata (mesi)</label><input id="mesi" data-k="mesi" data-n="1" class="num" inputmode="decimal"></div>
+      </div>
+      <label class="f" for="scen">Scenari: variazione del prezzo ± (%)</label><input id="scen" data-k="scenPct" data-n="1" class="num" inputmode="decimal">
+      <label class="f" style="display:flex;gap:8px;align-items:center;color:var(--ink)"><input type="checkbox" id="optAnnuo" data-o="annuo"> Mostra il rendimento su base annua (se la durata non è 12 mesi)</label>
+    </div></details>
+
+    <details class="sec"><summary>Perché questa operazione</summary><div class="in">
+      <div id="lWhy"></div><button class="add" data-add="perche" type="button">+ Aggiungi un punto</button>
+    </div></details>
+
+    <details class="sec"><summary>Note e contatti</summary><div class="in">
+      <label class="f" for="nota">Nota sotto i conti (pagina 1)</label><textarea id="nota" data-k="nota"></textarea>
+      <label class="f" for="intro2">Introduzione di pagina 2</label><textarea id="intro2" data-k="intro2"></textarea>
+      <label class="f" for="nota2">Nota finale</label><textarea id="nota2" data-k="nota2"></textarea>
+      <div class="two">
+        <div><label class="f" for="cNome">Referente</label><input id="cNome" data-k="contatti.nome" placeholder="Nome e cognome"></div>
+        <div><label class="f" for="cRuolo">Ruolo</label><input id="cRuolo" data-k="contatti.ruolo" placeholder="Es. Amministrazione"></div>
+        <div><label class="f" for="cTel">Telefono</label><input id="cTel" data-k="contatti.tel" inputmode="tel"></div>
+        <div><label class="f" for="cMail">Email</label><input id="cMail" data-k="contatti.email" inputmode="email"></div>
+      </div>
+    </div></details>
+
+    <details class="sec" id="secMod"><summary>Moduli e impaginazione</summary><div class="in">
+      <p class="hint">Accendi o spegni i moduli, cambia l’ordine con le frecce, spostali di pagina e scegli se occupano mezza riga o la riga intera. Due moduli “½” consecutivi stanno affiancati.</p>
+      <div id="mods"></div>
+      <button class="add" id="bLayout" type="button">Ripristina l’impaginazione</button>
+    </div></details>
+  </div>
+
+  <main class="view" id="view" aria-label="Anteprima della scheda">
+    <div class="vtools"><span id="pgInfo"></span><button id="bZoom" type="button">Ingrandisci</button></div>
+    <div class="stagebox" id="stagebox"><div class="stage" id="stage"></div></div>
+  </main>
+</div>
+
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+<script>
+{
+const KEY='scheda-investimento-v2',OLDKEY='scheda-investimento-v1';
+
+/* ---------- etichette fisse della scheda ---------- */
+const L={
+  p1Etichetta:'Proposta di investimento',p2Etichetta:'Dettaglio dei conti',
+  opTitolo:'I conti dell’operazione',opRivendita:'Rivendita prevista',opCapitale:'Capitale investito',opCosti:'Costi di vendita',
+  opUtile:'Utile stimato',opRend:'Rendimento sul capitale',opDurata:'Durata prevista',opPareggio:'Prezzo di pareggio',
+  invTitolo:'La parte dell’investitore',invInveste:'Capitale da versare',invRiceve:'Riceve alla vendita',invGuadagno:'Guadagno stimato',
+  invGuadagnoNota:'{quota}% dell’utile, al lordo delle imposte',invRend:'rendimento in {mesi} mesi',invAnnuo:'{annuo} su base annua',
+  invPareggio:'Il capitale torna per intero se la casa si vende ad almeno {pareggio}, cioè {calo} in meno del prezzo previsto.',
+  invPrimo:'Pagata l’agenzia, il capitale torna all’investitore prima che si divida l’utile.',
+  percheTitolo:'Perché la proponiamo così',
+  p2Titolo:'Come funziona l’operazione',
+  capTitolo:'Dove va il capitale',capTotale:'Capitale totale',
+  compTitolo:'Come stimiamo il prezzo',compTotale:'Prezzo di vendita stimato',compVoce:'Voce',compSup:'Superficie',compPm:'€/m²',compVal:'Valore',compCorpo:'a corpo',
+  ripTitolo:'Come si divide una vendita a {prezzo}',
+  rip1:'Si pagano i costi di vendita: {cv}.',rip2:'L’investitore riprende il capitale: {cap}.',
+  rip3:'L’utile di {utile} si divide {quota}/{quotaR}: {qi} all’investitore, {qr} a Riquality.',
+  barCosti:'Costi di vendita',barCapitale:'Capitale restituito',barInv:'Utile investitore',barRiq:'Utile Riquality',
+  scenTitolo:'Se il prezzo cambia',scenScenario:'Scenario',scenPrezzo:'Prezzo di vendita',scenUtile:'Utile totale',scenInv:'All’investitore',scenRend:'Rendimento',
+  scenPrudente:'Prudente ({pct}% in meno)',scenPrevisto:'Previsto',scenFavorevole:'Favorevole ({pct}% in più)',scenPareggio:'Pareggio',
+  scenSotto:'Sotto {pareggio} il ricavato non basta più a restituire tutto il capitale.',
+  galTitolo:'La casa e il progetto',contTitolo:'Per parlarne',
+  perditaMsg:'Al prezzo previsto la vendita non copre il capitale: la perdita stimata è di {perdita}.'
+};
+
+/* ---------- moduli ---------- */
+const BLOCKS={foto:'Foto di copertina',hero:'Titolo e descrizione',dati:'Dati in evidenza',operazione:'I conti dell’operazione',investitore:'Riquadro dell’investitore',
+  perche:'Perché questa operazione',nota:'Nota sotto i conti',intro:'Titolo e introduzione (pag. 2)',capitale:'Dove va il capitale',composizione:'Come stimiamo il prezzo',
+  ripartizione:'Come si divide il ricavato',scenari:'Scenari e pareggio',galleria:'Altre foto e planimetria',contatti:'Contatti',nota2:'Nota finale'};
+const LAYOUT=[{id:'foto',p:1,w:'full',on:true},{id:'hero',p:1,w:'half',on:true},{id:'dati',p:1,w:'half',on:true},{id:'operazione',p:1,w:'half',on:true},
+  {id:'investitore',p:1,w:'half',on:true},{id:'perche',p:1,w:'full',on:true},{id:'nota',p:1,w:'full',on:true},
+  {id:'intro',p:2,w:'full',on:true},{id:'capitale',p:2,w:'half',on:true},{id:'composizione',p:2,w:'half',on:true},{id:'ripartizione',p:2,w:'full',on:true},
+  {id:'scenari',p:2,w:'full',on:true},{id:'galleria',p:2,w:'full',on:true},{id:'contatti',p:2,w:'full',on:true},{id:'nota2',p:2,w:'full',on:true}];
+
+/* ---------- esempio ---------- */
+const ESEMPIO={brand:'DiSalento',brandSub:'Case tipiche e di design',logo:'',nome:'Casa Ruggiano',titolo:'Casa Ruggiano',
+  claim:'Ruggiano, frazione di Salve (Lecce)',sottotitolo:'Acquisto, lavori e rivendita in circa 12 mesi',
+  descr:'Proponiamo l’acquisto di una casa da sistemare a Ruggiano, a pochi chilometri dalle spiagge di Pescoluse e Torre Pali. Dopo demolizioni e ricostruzioni, la casa si rivende non finita, con il progetto pronto.',
+  data:'29 ottobre 2026',footer:'Riquality S.r.l.s. · Proposta preliminare',
+  quotaInv:50,mesi:12,scenPct:15,foto:'',fotoPos:'50% 50%',fotoCap:'',
+  galleria:[{src:'',cap:'La casa oggi'},{src:'',cap:'Il progetto'},{src:'',cap:'La planimetria'}],
+  dati:[{l:'Località',v:'Ruggiano, Salve (LE)'},{l:'Spiagge a pochi km',v:'Pescoluse e Torre Pali'},{l:'Alla vendita',v:'Non finita, con progetto'}],
+  capitale:[{l:'Acquisto dell’immobile',v:32000},{l:'Demolizioni e ricostruzioni',v:30000},{l:'Progetto',v:5000},{l:'Intermediazione',v:3000},{l:'Atto',v:3000}],
+  composizione:[{l:'Immobile oggetto dell’operazione',mq:0,pm:0,corpo:120000,cop:true}],
+  costiVendita:[{l:'Provvigione agenzia (3% + IVA)',t:'pct',v:3.66,on:true}],
+  perche:[{l:'Casa a nome dell’investitore',v:'L’investitore compra a proprio nome e resta proprietario della casa fino alla vendita.'},
+    {l:'Seguiamo noi progetto e lavori',v:'Coordiniamo il progetto, le demolizioni e le ricostruzioni fino a quando la casa è pronta per la vendita.'},
+    {l:'Finiture scelte da chi compra',v:'La casa si vende con il progetto pronto. Le finiture le sceglie e le paga chi la compra.'},
+    {l:'La nostra quota viene dopo',v:'Riceviamo la nostra metà dell’utile dopo che l’investitore ha ripreso il capitale, e solo se un utile c’è.'}],
+  nota:'Le cifre sono stime al lordo delle imposte. Il prezzo di vendita e la durata reali possono essere diversi.',
+  intro2:'L’investitore compra la casa a proprio nome, paga acquisto, lavori e progetto e resta proprietario fino alla vendita. Noi seguiamo il progetto e coordiniamo i lavori. La vendita passa da un’agenzia immobiliare.',
+  nota2:'Con il ricavato si pagano prima i costi di vendita, poi si restituisce il capitale all’investitore e infine si divide l’utile. Le condizioni definitive saranno nel contratto. Tutti i valori sono stime al lordo delle imposte.',
+  contatti:{nome:'',ruolo:'',tel:'',email:''},
+  opt:{annuo:true},layout:LAYOUT};
+/* testi dell’esempio precedente: se trovati invariati vengono aggiornati ai nuovi */
+const OLD_TXT={sottotitolo:'Proposta di acquisto, lavori e rivendita',claim:'Proposta di investimento · Ruggiano di Salve',
+  descr:'Compriamo la casa, demoliamo e ricostruiamo le parti da rifare e la rimettiamo in vendita con il progetto pronto. Le finiture le sceglie chi la compra.',
+  footer:'Riquality • Proposta preliminare',
+  nota:'Stime preliminari, al lordo delle imposte. Gli importi finali dipendono dal prezzo di vendita e dai costi effettivi.',
+  intro2:'L’investitore mette il capitale. Riquality, con il marchio DiSalento, segue progetto e lavori. La casa si vende tramite agenzia o contatti diretti.',
+  nota2:'Alla vendita si rimborsa per primo il capitale dell’investitore; quello che resta si divide secondo le quote indicate. Le condizioni definitive saranno scritte nel contratto.'};
+const OLD_DATI='[{"l":"Località","v":"Ruggiano di Salve (LE)"},{"l":"Mare","v":"Pescoluse, pochi km"},{"l":"Stato alla vendita","v":"Non finito"}]';
+const OLD_PERCHE_START='La casa è intestata a te';
+
+const TIPI=[{l:'Abitazione',pm:1000,cop:true},{l:'Locale accessorio / magazzino',pm:500,cop:true},{l:'Terrazzo / lastrico',pm:300,cop:false},{l:'Veranda / porticato',pm:400,cop:false},{l:'Giardino',pm:250,cop:false},{l:'Corte / cortile',pm:200,cop:false},{l:'Parcheggio / posto auto',pm:0,cop:false,corpo:15000},{l:'Piscina (autorizzata)',pm:0,cop:false,corpo:0},{l:'Terreno agricolo',pm:5,cop:false}];
+const COSTI=['Riserva imprevisti 10%','Notaio e imposte','Pratiche edilizie e tecnici','Allacci e utenze','Home staging','IMU e assicurazione','Rilievo e sondaggi'];
+
+const clone=o=>JSON.parse(JSON.stringify(o));
+const $=id=>document.getElementById(id);
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const grp=n=>String(Math.round(Math.abs(n))).replace(/\B(?=(\d{3})+(?!\d))/g,'.');
+const eur=n=>(Math.round(n)<0?'− ':'')+grp(n)+' €';
+const pct=n=>(n>=0?'+':'−')+Math.abs(n*100).toLocaleString('it-IT',{minimumFractionDigits:1,maximumFractionDigits:1})+'%';
+const num=s=>{s=String(s??'').replace(/[€\s%]/g,'');if(s.includes(','))s=s.replace(/\./g,'').replace(',','.');else if(/^-?\d{1,3}(\.\d{3})+$/.test(s))s=s.replace(/\./g,'');const n=parseFloat(s);return isFinite(n)?n:0};
+const mq=n=>n.toLocaleString('it-IT',{maximumFractionDigits:1})+' m²';
+const fmtIn=n=>Number.isInteger(+n)?(n<0?'-':'')+grp(n):Number(n).toLocaleString('it-IT',{maximumFractionDigits:2});
+const IMG_RE=/^data:image\/(png|jpeg|webp|gif|svg\+xml);base64,[A-Za-z0-9+/=]+$/;
+const okImg=s=>typeof s==='string'&&IMG_RE.test(s)?s:'';
+let statusT;const status=t=>{$('status').textContent=t;clearTimeout(statusT);if(t)statusT=setTimeout(()=>{$('status').textContent=''},7000)};
+
+/* ---------- stato ---------- */
+function normalize(o){
+  o=o&&typeof o==='object'?o:{};
+  if(o.vendita&&!o.composizione){o.composizione=o.vendita.map(r=>({l:r.l,mq:0,pm:0,corpo:r.v,cop:true}));delete o.vendita}
+  for(const k in OLD_TXT)if(o[k]===OLD_TXT[k])delete o[k];
+  if(o.dati&&JSON.stringify(o.dati)===OLD_DATI)delete o.dati;
+  if(Array.isArray(o.perche)&&o.perche[0]&&o.perche[0].l===OLD_PERCHE_START)delete o.perche;
+  const s=Object.assign(clone(ESEMPIO),o);
+  if(o.show&&!o.layout){s.layout=clone(LAYOUT);const map={foto:'foto',dati:'dati',scenari:'scenari',perche:'perche'};
+    for(const k in map)if(o.show[k]===false)s.layout.find(b=>b.id===map[k]).on=false;
+    s.opt={annuo:o.show.annuo!==false}}
+  delete s.show;
+  s.opt=Object.assign({annuo:true},s.opt||{});
+  s.contatti=Object.assign({nome:'',ruolo:'',tel:'',email:''},s.contatti||{});
+  const g=Array.isArray(s.galleria)?s.galleria:[];s.galleria=[0,1,2].map(i=>({src:okImg(g[i]&&g[i].src),cap:String((g[i]&&g[i].cap)??ESEMPIO.galleria[i].cap)}));
+  s.foto=okImg(s.foto);s.logo=okImg(s.logo);
+  let lay=Array.isArray(s.layout)?s.layout.filter(b=>b&&BLOCKS[b.id]):[];
+  for(const d of LAYOUT)if(!lay.some(b=>b.id===d.id))lay.push(clone(d));
+  s.layout=lay.map(b=>({id:b.id,p:Math.min(3,Math.max(1,+b.p||1)),w:b.w==='half'?'half':'full',on:b.on!==false}));
+  for(const k of ['dati','capitale','composizione','costiVendita','perche'])if(!Array.isArray(s[k]))s[k]=clone(ESEMPIO[k]);
+  return s;
+}
+let S;
+try{const raw=localStorage.getItem(KEY)||localStorage.getItem(OLDKEY);S=normalize(raw?JSON.parse(raw):null)}catch(e){S=normalize(null)}
+let saveT;
+const save=()=>{clearTimeout(saveT);saveT=setTimeout(()=>{try{localStorage.setItem(KEY,JSON.stringify(S))}catch(e){status('Le foto sono troppo pesanti per la memoria del browser: usa “Salva i dati (.json)” per non perderle.')}},350)};
+
+/* ---------- calcoli ---------- */
+function calc(prezzoOverride){
+  const cap=S.capitale.reduce((a,r)=>a+num(r.v),0);
+  const val=r=>num(r.mq)>0?num(r.mq)*num(r.pm):num(r.corpo);
+  const base=S.composizione.reduce((a,r)=>a+val(r),0);
+  const mqCop=S.composizione.reduce((a,r)=>a+(r.cop?num(r.mq):0),0),mqTot=S.composizione.reduce((a,r)=>a+num(r.mq),0);
+  const prezzo=prezzoOverride??base;
+  let fix=0,pp=0;for(const r of S.costiVendita){if(!r.on)continue;if(r.t==='pct')pp+=num(r.v);else fix+=num(r.v)}
+  const cv=fix+prezzo*pp/100,utile=prezzo-cap-cv,q=num(S.quotaInv)/100,qi=utile*q,qr=utile-qi,mesi=Math.max(1,num(S.mesi));
+  return{val,mqCop,mqTot,cap,prezzo,base,cv,fix,pp,utile,rend:cap?utile/cap:0,qi,qr,rientro:cap+qi,rendInv:cap?qi/cap:0,annuo:cap?qi/cap*12/mesi:0,mesi,
+    pareggio:pp<100?(cap+fix)/(1-pp/100):0};
+}
+function vars(c){const q=num(S.quotaInv);return{prezzo:eur(c.prezzo),cap:eur(c.cap),cv:eur(c.cv),utile:eur(c.utile),rend:pct(c.rend),qi:eur(c.qi),qr:eur(c.qr),
+  rientro:eur(c.rientro),rendInv:pct(c.rendInv),annuo:pct(c.annuo),mesi:fmtIn(c.mesi),quota:fmtIn(q),quotaR:fmtIn(100-q),pareggio:eur(c.pareggio),
+  calo:c.prezzo>0?Math.max(0,Math.round((1-c.pareggio/c.prezzo)*100))+'%':'—',perdita:eur(-c.utile),pct:fmtIn(num(S.scenPct)),nome:S.nome}}
+const fill=(t,v)=>esc(t).replace(/\{(\w+)\}/g,(m,k)=>k in v?esc(v[k]):m);
+const fillB=(t,v)=>esc(t).replace(/\{(\w+)\}/g,(m,k)=>k in v?(/^(mesi|quota|quotaR|pct)$/.test(k)?esc(v[k]):'<b>'+esc(v[k])+'</b>'):m);
+
+/* immagini: data URL salvati, blob URL in anteprima */
+const urlCache=new Map();
+function imgURL(d){if(!d)return'';let u=urlCache.get(d);if(!u){try{const [h,b64]=d.split(',');const bin=atob(b64),a=new Uint8Array(bin.length);for(let i=0;i<bin.length;i++)a[i]=bin.charCodeAt(i);u=URL.createObjectURL(new Blob([a],{type:h.slice(5).split(';')[0]}))}catch(e){u=d}urlCache.set(d,u)}return u}
+
+/* ---------- moduli della scheda ---------- */
+const COL={costi:'#ABA59D',cap:'#5B6B55',inv:'#A0583F',riq:'#CDB49B'};
+const R={
+  foto(){return S.foto?`<div class="cover" style="background-image:url('${imgURL(S.foto)}');background-position:${esc(S.fotoPos)}"></div>${S.fotoCap?`<div class="cap">${esc(S.fotoCap)}</div>`:''}`:{ph:`<div class="cover phbox" data-pick="cover">Tocca qui o trascina la foto di copertina.<br>Senza foto, nel PDF questo spazio resta vuoto.</div>`}},
+  hero(){return`<div class="hero">${S.claim?`<div class="eyebrow">${esc(S.claim)}</div>`:''}<h2 class="t1">${esc(S.titolo)}</h2>${S.sottotitolo?`<div class="t2">${esc(S.sottotitolo)}</div>`:''}${S.descr?`<p class="lead">${esc(S.descr)}</p>`:''}</div>`},
+  dati(c){const d=[...(c.mqCop?[{l:'Superficie coperta',v:mq(c.mqCop)}]:[]),...(c.mqTot>c.mqCop?[{l:'Superficie totale',v:mq(c.mqTot)}]:[]),...S.dati.filter(x=>x.l||x.v)].slice(0,8);
+    return d.length?`<dl class="dati" style="--n:${Math.min(4,d.length)}">${d.map(x=>`<div><dt>${esc(x.l)}</dt><dd>${esc(x.v)}</dd></div>`).join('')}</dl>`:''},
+  operazione(c){return`<div class="opbox"><div class="k plain">${esc(L.opTitolo)}</div>
+    <div class="ln top"><span>${esc(L.opRivendita)}</span><b>${eur(c.prezzo)}</b></div>
+    <div class="ln"><span>${esc(L.opCapitale)}</span><span class="m">${eur(-c.cap)}</span></div>
+    <div class="ln"><span>${esc(L.opCosti)}</span><span class="m">${eur(-c.cv)}</span></div>
+    <div class="ln res"><span>${esc(L.opUtile)}</span><b class="${c.utile<0?'neg':''}">${eur(c.utile)}</b></div>
+    <div class="ln sm"><span>${esc(L.opRend)}</span><b class="${c.utile<0?'neg':''}">${pct(c.rend)}</b></div>
+    <div class="ln sm"><span>${esc(L.opDurata)}</span><b>${fmtIn(c.mesi)} mesi</b></div>
+    <div class="ln sm"><span>${esc(L.opPareggio)}</span><b>${c.pareggio?eur(c.pareggio):'—'}</b></div></div>`},
+  investitore(c,v){const neg=c.utile<0;return`<div class="invbox"><div class="k plain">${esc(L.invTitolo)}</div>
+    <div><div class="lbl">${esc(L.invRiceve)}</div><div class="big">${eur(c.rientro)}</div></div>
+    <div class="pair"><div><b>${eur(c.cap)}</b><span>${esc(L.invInveste)}</span></div><div><b class="${neg?'neg':''}">${neg?'':'+ '}${eur(c.qi)}</b><span>${esc(L.invGuadagno)}<br>${fill(L.invGuadagnoNota,v)}</span></div></div>
+    <div class="rr"><b class="${neg?'neg':''}">${pct(c.rendInv)}</b><span>${fill(L.invRend,v)}${S.opt.annuo&&c.mesi!==12?` · ${fill(L.invAnnuo,v)}`:''}</span></div>
+    <p class="fine">${neg?fill(L.perditaMsg,v):esc(L.invPrimo)+' '+fill(L.invPareggio,v)}</p></div>`},
+  perche(){const p=S.perche.filter(x=>x.l||x.v);return p.length?`<div class="k">${esc(L.percheTitolo)}</div><div class="why">${p.map(w=>`<div><b>${esc(w.l)}</b><span>${esc(w.v)}</span></div>`).join('')}</div>`:''},
+  nota(){return S.nota?`<p class="note">${esc(S.nota)}</p>`:''},
+  intro(){return`<div class="intro"><h2 class="t-p2">${esc(L.p2Titolo)}</h2>${S.intro2?`<p class="lead">${esc(S.intro2)}</p>`:''}</div>`},
+  capitale(c){return`<div class="k">${esc(L.capTitolo)}</div><table class="tb">${S.capitale.map(r=>`<tr><td>${esc(r.l)}</td><td class="v">${eur(num(r.v))}</td></tr>`).join('')}<tr class="tot"><td>${esc(L.capTotale)}</td><td class="v">${eur(c.cap)}</td></tr></table>`},
+  composizione(c){const m=c.mqTot>0;return`<div class="k g">${esc(L.compTitolo)}</div><table class="tb g">${m?`<tr><th>${esc(L.compVoce)}</th><th class="v">${esc(L.compSup)}</th><th class="v">${esc(L.compPm)}</th><th class="v">${esc(L.compVal)}</th></tr>`:''}
+    ${S.composizione.map(r=>`<tr><td>${esc(r.l)}</td>${m?`<td class="v">${num(r.mq)>0?mq(num(r.mq)):esc(L.compCorpo)}</td><td class="v">${num(r.mq)>0?eur(num(r.pm)):''}</td>`:''}<td class="v">${eur(c.val(r))}</td></tr>`).join('')}
+    <tr class="tot"><td>${esc(L.compTotale)}</td>${m?`<td class="v">${mq(c.mqTot)}</td><td></td>`:''}<td class="v">${eur(c.prezzo)}</td></tr></table>`},
+  ripartizione(c,v){const neg=c.utile<0,tot=Math.max(c.prezzo,c.cap+c.cv)||1;
+    const segs=neg?[[c.cv,COL.costi,L.barCosti],[Math.max(0,c.prezzo-c.cv),COL.cap,L.barCapitale]]:[[c.cv,COL.costi,L.barCosti],[c.cap,COL.cap,L.barCapitale],[c.qi,COL.inv,L.barInv],[c.qr,COL.riq,L.barRiq]];
+    const cvRows=S.costiVendita.filter(r=>r.on);
+    return`<div class="k">${fill(L.ripTitolo,v)}</div>
+    <div class="sbar">${segs.filter(s=>s[0]>0).map(s=>{const w=s[0]/tot*100;return`<div style="width:${w}%;background:${s[1]};color:${s[1]===COL.riq?'#3D352D':'#fff'}" title="${esc(s[2])}">${w>11?eur(s[0]):''}</div>`}).join('')}</div>
+    <div class="steps">
+      <div class="st"><i style="background:${COL.costi}">1</i><p>${fillB(L.rip1,v)}</p>${cvRows.length>1||(cvRows[0]&&cvRows[0].l)?`<ul>${cvRows.map(r=>`<li>${esc(r.l)}</li>`).join('')}</ul>`:''}</div>
+      <div class="st"><i style="background:${COL.cap}">2</i><p>${fillB(L.rip2,v)}</p></div>
+      <div class="st"><i style="background:${COL.inv}">3</i>${neg?`<p class="neg">${fill(L.perditaMsg,v)}</p>`:`<p>${fillB(L.rip3,v)}</p><div class="split"><span><em style="background:${COL.inv}"></em>${esc(L.barInv)}</span><span><em style="background:${COL.riq}"></em>${esc(L.barRiq)}</span></div>`}</div>
+    </div>`},
+  scenari(c,v){const sc=num(S.scenPct)/100,rows=[[c.base*(1-sc),fill(L.scenPrudente,v)],[c.base,esc(L.scenPrevisto)],[c.base*(1+sc),fill(L.scenFavorevole,v)]];
+    return`<div class="k">${esc(L.scenTitolo)}</div><table class="sc"><tr><th>${esc(L.scenScenario)}</th><th>${esc(L.scenPrezzo)}</th><th>${esc(L.scenUtile)}</th><th>${esc(L.scenInv)}</th><th>${esc(L.scenRend)}</th></tr>
+    ${rows.map(([p,l],i)=>{const k=calc(p);return`<tr class="${i===1?'base':''}"><td>${l}</td><td>${eur(p)}</td><td class="${k.utile<0?'neg':''}">${eur(k.utile)}</td><td class="${k.qi<0?'neg':''}">${eur(k.qi)}</td><td class="${k.qi<0?'neg':''}">${pct(k.rendInv)}</td></tr>`}).join('')}
+    <tr class="pe"><td>${esc(L.scenPareggio)}</td><td>${eur(c.pareggio)}</td><td>0 €</td><td>0 €</td><td>0,0%</td></tr></table>
+    <p class="scs">${fill(L.scenSotto,v)}</p>`},
+  galleria(){const g=S.galleria.filter(x=>x.src);if(!g.length)return{ph:`<div class="k">${esc(L.galTitolo)}</div><div class="gal" style="--n:3">${S.galleria.map((x,i)=>`<div><div class="gi phbox" data-pick="gal" data-i="${i}">+ ${esc(x.cap||'Foto')}</div></div>`).join('')}</div>`};return g.length?`<div class="k">${esc(L.galTitolo)}</div><div class="gal" style="--n:${g.length===1?2:g.length}">${g.map(x=>`<div><div class="gi" style="background-image:url('${imgURL(x.src)}')"></div>${x.cap?`<div class="cap">${esc(x.cap)}</div>`:''}</div>`).join('')}</div>`:''},
+  contatti(){const k=S.contatti;if(!k.nome&&!k.tel&&!k.email)return'';return`<div class="k">${esc(L.contTitolo)}</div><div class="cont">${k.nome?`<div class="who">${esc(k.nome)}${k.ruolo?`<small>${esc(k.ruolo)}</small>`:''}</div>`:''}${k.tel?`<div>Tel. ${esc(k.tel)}</div>`:''}${k.email?`<div>${esc(k.email)}</div>`:''}</div>`},
+  nota2(){return S.nota2?`<p class="note">${esc(S.nota2)}</p>`:''}
+};
+
+function head(p){const r=p===1?L.p1Etichetta:L.p2Etichetta;
+  return`<div class="ph"><div class="brand">${S.logo?`<img class="logo" src="${imgURL(S.logo)}" alt="${esc(S.brand)}">`:`<div class="bn">${esc(S.brand)}</div>`}${S.brandSub?`<div class="bs">${esc(S.brandSub)}</div>`:''}</div>
+  <div class="r"><div class="lb">${esc(r)}</div><div class="nm">${esc(S.nome)}</div>${esc(S.data)}</div></div>`}
+
+/* ---------- disegno ---------- */
+let lastC;
+function render(){
+  const c=calc(),v=vars(c);lastC=c;
+  const used=[...new Set(S.layout.filter(b=>b.on).map(b=>b.p))].sort();
+  const pages=used.length?used:[1];
+  $('stage').innerHTML=pages.map((p,i)=>{
+    const body=S.layout.filter(b=>b.on&&b.p===p).map(b=>{const h=R[b.id](c,v);if(!h)return'';const ph=typeof h==='object';return`<section class="blk ${b.w}${ph?' ph-only':''}" data-b="${b.id}">${ph?h.ph:h}</section>`}).join('');
+    return`<div class="page" data-p="${p}">${head(i+1)}<div class="pg-body">${body}</div><div class="pf"><span>${esc(S.footer)}${S.data?' · '+esc(S.data):''}</span><span>Pagina ${i+1} di ${pages.length}</span></div></div>`}).join('');
+  const over=[];
+  $('stage').querySelectorAll('.page').forEach((pg,i)=>{const b=pg.querySelector('.pg-body');if(b.scrollHeight>b.clientHeight+2){over.push(i+1);pg.classList.add('over');
+    pg.insertAdjacentHTML('beforeend','<div class="over-flag ph-only">Questa pagina è troppo piena e il fondo non si vede. Sposta un modulo nell’altra pagina o accorcia un testo.</div>')}});
+  fit();checks(c,over);summary(c,over,pages.length);
+  for(const el of document.querySelectorAll('[data-val]')){const r=S.composizione[+el.dataset.val];if(r)el.textContent=eur(c.val(r))}
+  $('totC').textContent=`Prezzo di rivendita: ${eur(c.base)}`+(c.mqTot?` · ${mq(c.mqTot)} in tutto, di cui ${mq(c.mqCop)} coperti`+(c.mqCop?` · ${eur(c.base/c.mqCop)} per m² coperto`:''):'');
+  $('totK').textContent=`Capitale totale: ${eur(c.cap)}`;
+}
+let rT;const later=()=>{clearTimeout(rT);rT=setTimeout(render,90)};
+
+function summary(c,over,n){
+  $('sum').innerHTML=`<span>Utile <b class="${c.utile<0?'neg':''}">${eur(c.utile)}</b></span><span>All’investitore <b class="${c.qi<0?'neg':''}">${eur(c.rientro)}</b> (${pct(c.rendInv)})</span><span>Pareggio <b>${eur(c.pareggio)}</b></span>`;
+  $('pgInfo').innerHTML=over.length?`<span class="bad">Pagina ${over.join(' e ')} troppo piena</span>`:`${n} ${n===1?'pagina':'pagine'} A4 · tutto entra`;
+}
+
+function checks(c,over){const X=[];
+  for(const p of over)X.push(`La pagina ${p} è troppo piena: in “Moduli e impaginazione” sposta un modulo o mettilo a mezza riga, oppure accorcia un testo.`);
+  if(!S.costiVendita.some(r=>r.on))X.push('Nessun costo di vendita incluso: la provvigione d’agenzia (circa 3% + IVA) riduce l’utile.');
+  if(!S.foto)X.push('Manca la foto di copertina: è la prima cosa che l’investitore guarda.');
+  if(S.dati.some(d=>/\[.*\]/.test(d.v))||S.perche.some(d=>/\[.*\]/.test(d.v)))X.push('Ci sono ancora testi tra parentesi quadre da completare.');
+  if(!c.mqTot)X.push('Inserisci i m² per tipologia (abitazione, giardino, parcheggio…) in “Prezzo di rivendita”: l’investitore vuole vedere da dove viene il prezzo.');
+  if(c.utile<0)X.push('Al prezzo previsto l’operazione è in perdita.');
+  else if(c.pareggio&&c.prezzo&&c.pareggio>c.prezzo*.85)X.push(`Margine di sicurezza basso: basta un ribasso del ${Math.round((1-c.pareggio/c.prezzo)*100)}% per arrivare al pareggio.`);
+  if(!S.capitale.some(r=>/imprevist/i.test(r.l)))X.push('Nessuna riserva per imprevisti nel capitale: su demolizioni e ricostruzioni si mette di solito il 10–15%.');
+  if(!S.contatti.nome&&!S.contatti.tel&&!S.contatti.email)X.push('Aggiungi un referente con telefono o email in “Note e contatti”: chi legge deve sapere chi chiamare.');
+  $('checks').innerHTML=X.length?X.map(t=>`<li>${esc(t)}</li>`).join(''):'<li class="ok">Tutto a posto: la scheda è pronta.</li>';
+  const n=$('cntChecks');n.textContent=X.length?X.length:'✓';n.className='cnt'+(X.length?'':' ok');
+}
+
+/* adatta i fogli alla larghezza */
+let zoom=false;
+function fit(){const v=$('stagebox'),st=$('stage');if(!v.clientWidth)return;const k=zoom?1:Math.min(1,v.clientWidth/794);st.style.transform=`scale(${k})`;v.style.height=st.scrollHeight*k+'px'}
+new ResizeObserver(fit).observe($('stagebox'));
+const hdr=()=>document.documentElement.style.setProperty('--hdr',$('bar').offsetHeight+'px');
+new ResizeObserver(hdr).observe($('bar'));hdr();
+
+/* ---------- editor ---------- */
+function slotHTML(kind,i,src,title,extra){
+  return`<div class="slot ${kind==='logo'?'logo':''}" data-slot="${kind}" data-i="${i}">
+   <div class="th" style="${src?`background-image:url('${imgURL(src)}')`:''}">${src?'':'＋'}</div>
+   <div class="meta"><b>${esc(title)}</b>${extra||''}
+   <div class="bt">${src?`<button type="button" data-img-pick="${kind}" data-i="${i}">Sostituisci</button><button type="button" data-img-del="${kind}" data-i="${i}">Rimuovi</button>`:`<button type="button" data-img-pick="${kind}" data-i="${i}">Scegli immagine</button>`}</div></div></div>`}
+function slots(){
+  $('slots').innerHTML=slotHTML('cover',0,S.foto,'Foto di copertina')+
+    S.galleria.map((g,i)=>slotHTML('gal',i,g.src,'Foto '+(i+1)+' (pagina 2)',`<input aria-label="Didascalia foto ${i+1}" data-l="galleria.${i}.cap" value="${esc(g.cap)}" placeholder="Didascalia">`)).join('')+
+    slotHTML('logo',0,S.logo,'Logo (sostituisce il nome del marchio)');
+}
+function mods(){
+  const pages=[1,2,3];
+  $('mods').innerHTML=pages.map(p=>{const items=S.layout.map((b,i)=>({...b,i})).filter(b=>b.p===p);if(!items.length&&p===3)return'';
+    return`<h4>Pagina ${p}</h4><ul class="mods">${items.length?items.map((b,k)=>`<li class="mod ${b.on?'':'off'}">
+      <input type="checkbox" aria-label="Mostra ${esc(BLOCKS[b.id])}" data-mod-on="${b.i}" ${b.on?'checked':''}>
+      <span class="nm">${esc(BLOCKS[b.id])}</span>
+      <select aria-label="Pagina di ${esc(BLOCKS[b.id])}" data-mod-p="${b.i}">${pages.map(q=>`<option value="${q}" ${q===b.p?'selected':''}>Pag. ${q}</option>`).join('')}</select>
+      <button type="button" class="w" data-mod-w="${b.i}" aria-label="Larghezza">${b.w==='half'?'½ riga':'Intera'}</button>
+      <button type="button" data-mod-up="${b.i}" aria-label="Sposta su" ${k===0?'disabled':''}>↑</button>
+      <button type="button" data-mod-dn="${b.i}" aria-label="Sposta giù" ${k===items.length-1?'disabled':''}>↓</button></li>`).join(''):'<li class="hint">Nessun modulo: sposta qui un modulo per usare questa pagina.</li>'}</ul>`}).join('');
+}
+function lists(){
+  const Lx=(id,key,cols)=>{$(id).innerHTML=S[key].map((r,i)=>cols(r,i)).join('')};
+  Lx('lDati','dati',(r,i)=>`<div class="row pp"><input aria-label="Etichetta" data-l="dati.${i}.l" value="${esc(r.l)}"><input aria-label="Valore" data-l="dati.${i}.v" value="${esc(r.v)}"><button class="x" type="button" data-del="dati.${i}" aria-label="Rimuovi">×</button></div>`);
+  Lx('lCap','capitale',(r,i)=>`<div class="row"><input aria-label="Voce" data-l="capitale.${i}.l" value="${esc(r.l)}"><input aria-label="Importo in euro" class="num" inputmode="decimal" data-l="capitale.${i}.v" data-n="1" value="${fmtIn(num(r.v))}"><button class="x" type="button" data-del="capitale.${i}" aria-label="Rimuovi">×</button></div>`);
+  const cc=calc();
+  Lx('lVen','composizione',(r,i)=>`<div class="comp"><div class="l1"><input aria-label="Tipologia" data-l="composizione.${i}.l" value="${esc(r.l)}"><button class="x" type="button" data-del="composizione.${i}" aria-label="Rimuovi">×</button></div><div class="l2"><div><label>m²</label><input class="num" inputmode="decimal" data-n="1" data-l="composizione.${i}.mq" value="${num(r.mq)?fmtIn(num(r.mq)):''}"></div><div><label>€/m²</label><input class="num" inputmode="decimal" data-n="1" data-l="composizione.${i}.pm" value="${num(r.pm)?fmtIn(num(r.pm)):''}"></div><div><label>€ a corpo</label><input class="num" inputmode="decimal" data-n="1" data-l="composizione.${i}.corpo" value="${num(r.corpo)?fmtIn(num(r.corpo)):''}"></div><label class="cop"><input type="checkbox" data-c="composizione.${i}.cop" ${r.cop?'checked':''}>coperta</label></div><div class="val" data-val="${i}">${eur(cc.val(r))}</div></div>`);
+  $('chipsC').innerHTML=TIPI.map((t,i)=>`<button type="button" data-tipo="${i}">+ ${esc(t.l)}</button>`).join('');
+  $('chipsK').innerHTML=COSTI.map((t,i)=>`<button type="button" data-costo="${i}">+ ${esc(t)}</button>`).join('');
+  Lx('lCv','costiVendita',(r,i)=>`<div class="row cv"><input type="checkbox" aria-label="Includi" data-c="costiVendita.${i}.on" ${r.on?'checked':''}><input aria-label="Costo" data-l="costiVendita.${i}.l" value="${esc(r.l)}"><input aria-label="Valore" class="num" inputmode="decimal" data-n="1" data-l="costiVendita.${i}.v" value="${fmtIn(num(r.v))}"><select aria-label="Tipo" data-l="costiVendita.${i}.t"><option value="pct" ${r.t==='pct'?'selected':''}>%</option><option value="eur" ${r.t!=='pct'?'selected':''}>€</option></select><button class="x" type="button" data-del="costiVendita.${i}" aria-label="Rimuovi">×</button></div>`);
+  Lx('lWhy','perche',(r,i)=>`<div class="row pp"><input aria-label="Titolo" data-l="perche.${i}.l" value="${esc(r.l)}"><input aria-label="Testo" data-l="perche.${i}.v" value="${esc(r.v)}"><button class="x" type="button" data-del="perche.${i}" aria-label="Rimuovi">×</button></div>`);
+  for(const el of document.querySelectorAll('[data-k]')){const val=getK(el.dataset.k);el.value=el.dataset.n?fmtIn(num(val)):(val??'')}
+  $('optAnnuo').checked=!!S.opt.annuo;
+  slots();mods();
+}
+const getK=p=>p.split('.').reduce((o,k)=>o==null?o:o[k],S);
+const setK=(p,val)=>{const a=p.split('.');let o=S;for(let i=0;i<a.length-1;i++)o=o[a[i]];o[a[a.length-1]]=val};
+const setPath=(p,val)=>{const a=p.split('.');S[a[0]][+a[1]][a[2]]=val};
+const all=()=>{save();lists();render()};
+
+$('ed').addEventListener('input',e=>{const t=e.target;
+  if(t.dataset.k&&t.tagName!=='SELECT')setK(t.dataset.k,t.dataset.n?num(t.value):t.value);
+  else if(t.dataset.l&&t.tagName!=='SELECT')setPath(t.dataset.l,t.dataset.n?num(t.value):t.value);
+  else return;save();later();});
+$('ed').addEventListener('change',e=>{const t=e.target;
+  if(t.dataset.c)setPath(t.dataset.c,t.checked);
+  else if(t.dataset.o)S.opt[t.dataset.o]=t.checked;
+  else if(t.tagName==='SELECT'&&t.dataset.k)setK(t.dataset.k,t.value);
+  else if(t.tagName==='SELECT'&&t.dataset.l)setPath(t.dataset.l,t.value);
+  else if(t.dataset.modOn!=null){S.layout[+t.dataset.modOn].on=t.checked;save();mods();render();return}
+  else if(t.dataset.modP!=null){const i=+t.dataset.modP,b=S.layout.splice(i,1)[0];b.p=+t.value;let at=-1;S.layout.forEach((x,j)=>{if(x.p===b.p)at=j});S.layout.splice(at+1,0,b);save();mods();render();return}
+  else return;save();render();});
+$('ed').addEventListener('click',e=>{const t=e.target.closest('button');if(!t)return;const d=t.dataset;
+  if(d.del){const[a,i]=d.del.split('.');S[a].splice(+i,1)}
+  else if(d.tipo){const p=TIPI[+d.tipo];S.composizione.push({l:p.l,mq:0,pm:p.pm,corpo:p.corpo||0,cop:p.cop})}
+  else if(d.costo){const n=COSTI[+d.costo];let v=0;if(/imprevisti/i.test(n))v=Math.round(S.capitale.filter(r=>/demoliz|ricostr|opere|lavori/i.test(r.l)).reduce((a,r)=>a+num(r.v),0)*.1);S.capitale.push({l:n.replace(' 10%',''),v})}
+  else if(d.add){const a=d.add;S[a].push(a==='costiVendita'?{l:'Nuovo costo',t:'eur',v:0,on:true}:a==='dati'||a==='perche'?{l:'Titolo',v:'Testo'}:{l:'Nuova voce',v:0})}
+  else if(d.modW!=null){const b=S.layout[+d.modW];b.w=b.w==='half'?'full':'half'}
+  else if(d.modUp!=null||d.modDn!=null){const i=+(d.modUp??d.modDn),dir=d.modUp!=null?-1:1,p=S.layout[i].p;let j=i+dir;while(j>=0&&j<S.layout.length&&S.layout[j].p!==p)j+=dir;if(j<0||j>=S.layout.length)return;[S.layout[i],S.layout[j]]=[S.layout[j],S.layout[i]]}
+  else if(d.imgPick){pickTarget={kind:d.imgPick,i:+d.i};$('fImg').value='';$('fImg').click();return}
+  else if(d.imgDel){setImg(d.imgDel,+d.i,'');return}
+  else return;
+  all();});
+$('bLayout').onclick=()=>{S.layout=clone(LAYOUT);all();status('Impaginazione ripristinata.')};
+
+/* ---------- immagini ---------- */
+let pickTarget=null;
+function readImg(file,maxW,png){return new Promise((res,rej)=>{
+  if(!file||!/^image\//.test(file.type))return rej(new Error('tipo'));
+  if(file.type==='image/svg+xml'&&png){const r=new FileReader();r.onload=()=>res(r.result);r.onerror=rej;r.readAsDataURL(file);return}
+  const url=URL.createObjectURL(file),img=new Image();
+  img.onload=()=>{const k=Math.min(1,maxW/img.naturalWidth),cv=document.createElement('canvas');cv.width=Math.round(img.naturalWidth*k);cv.height=Math.round(img.naturalHeight*k);
+    const g=cv.getContext('2d');if(!png){g.fillStyle='#fff';g.fillRect(0,0,cv.width,cv.height)}g.drawImage(img,0,0,cv.width,cv.height);URL.revokeObjectURL(url);
+    res(cv.toDataURL(png?'image/png':'image/jpeg',.84))};
+  img.onerror=()=>{URL.revokeObjectURL(url);rej(new Error('lettura'))};img.src=url})}
+function setImg(kind,i,src){if(kind==='cover')S.foto=src;else if(kind==='logo')S.logo=src;else S.galleria[i].src=src;all();
+  status(src?(kind==='logo'?'Logo inserito.':'Foto inserita.'):'Immagine rimossa.')}
+async function putFiles(files,target){
+  files=[...files].filter(f=>/^image\//.test(f.type));if(!files.length){status('Nessuna immagine trovata: usa JPG, PNG o WebP.');return}
+  try{
+    if(target&&target.kind==='logo'){setImg('logo',0,await readImg(files[0],700,true));return}
+    if(target&&target.kind==='cover'){setImg('cover',0,await readImg(files[0],1800));files=files.slice(1)}
+    else if(target&&target.kind==='gal'){S.galleria[target.i].src=await readImg(files[0],1200);files=files.slice(1)}
+    for(const f of files){
+      if(!S.foto){S.foto=await readImg(f,1800);continue}
+      const free=S.galleria.find(g=>!g.src);if(!free){status('Copertina e 3 foto già inserite: rimuovine una per aggiungerne altre.');break}
+      free.src=await readImg(f,1200)}
+    all();status('Immagini inserite.');
+  }catch(err){status('Non riesco a leggere questa immagine. Prova con un JPG o un PNG.')}
+}
+$('fImg').addEventListener('change',e=>{if(e.target.files.length)putFiles(e.target.files,pickTarget)});
+$('slots').addEventListener('dragover',e=>{const s=e.target.closest('.slot');if(!s)return;e.preventDefault();s.classList.add('drag')});
+$('slots').addEventListener('dragleave',e=>{const s=e.target.closest('.slot');if(s)s.classList.remove('drag')});
+$('slots').addEventListener('drop',e=>{const s=e.target.closest('.slot');if(!s)return;e.preventDefault();s.classList.remove('drag');putFiles(e.dataTransfer.files,{kind:s.dataset.slot,i:+s.dataset.i})});
+$('slots').addEventListener('click',e=>{if(e.target.closest('button,input'))return;const s=e.target.closest('.slot');if(!s)return;pickTarget={kind:s.dataset.slot,i:+s.dataset.i};$('fImg').value='';$('fImg').click()});
+$('stage').addEventListener('click',e=>{const t=e.target.closest('[data-pick]');if(!t)return;pickTarget={kind:t.dataset.pick,i:+(t.dataset.i||0)};$('fImg').value='';$('fImg').click()});
+const view=$('view');
+view.addEventListener('dragover',e=>{if([...e.dataTransfer.types].includes('Files')){e.preventDefault();view.classList.add('drag')}});
+view.addEventListener('dragleave',e=>{if(e.target===view)view.classList.remove('drag')});
+view.addEventListener('drop',e=>{e.preventDefault();view.classList.remove('drag');putFiles(e.dataTransfer.files,null)});
+document.addEventListener('paste',e=>{const f=[...(e.clipboardData?.files||[])].filter(x=>/^image\//.test(x.type));if(!f.length)return;e.preventDefault();putFiles(f,null)});
+
+/* ---------- vista telefono ---------- */
+function tab(t){$('wrap').dataset.tab=t;$('tEd').setAttribute('aria-selected',t==='ed');$('tPv').setAttribute('aria-selected',t==='pv');requestAnimationFrame(fit);window.scrollTo({top:0})}
+$('tEd').onclick=()=>tab('ed');$('tPv').onclick=()=>tab('pv');
+$('bZoom').onclick=()=>{zoom=!zoom;$('stagebox').classList.toggle('zoom',zoom);$('bZoom').textContent=zoom?'Adatta alla larghezza':'Ingrandisci';fit()};
+document.addEventListener('click',e=>{const m=$('mDati');if(m.open&&!m.contains(e.target))m.open=false;else if(m.open&&e.target.closest('.pop button,.pop .btn'))m.open=false});
+
+/* ---------- salvataggi e download ---------- */
+let dl=null,dlReady=null;
+if(window.claude&&claude.use)dlReady=claude.use('downloads').then(d=>{dl=d}).catch(()=>{});
+const base=()=>((S.nome||'Scheda').replace(/[\\/:*?"<>|]+/g,'').trim()||'Scheda');
+async function offer(filename,data){
+  if(window.claude&&claude.use){
+    if(!dl&&dlReady)await dlReady;
+    if(!dl){status('Il download non è disponibile in questa vista: apri la scheda da claude.ai in un browser.');return false}
+    try{await dl.save({filename,data});status('File pronto: '+filename);return true}
+    catch(err){const c=err&&err.code;status(c==='declined'?'Download annullato.':c==='host_unavailable'?'Questa app non salva file: apri la scheda in un browser.':c==='rate_limited'?'C’è già un salvataggio in attesa: confermalo o riprova tra poco.':'Download non riuscito ('+(c||'errore')+').');return false}
+  }
+  const blob=data instanceof Blob?data:new Blob([data]);const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download=filename;document.body.appendChild(a);a.click();
+  setTimeout(()=>{URL.revokeObjectURL(a.href);a.remove()},4000);status('File scaricato: '+filename);return true;
+}
+function busy(on){for(const id of ['bPdf','bXls','bZip','bXls2','bZip2'])$(id).disabled=on}
+const need=(...g)=>g.every(n=>window[n]);
+
+async function buildPdf(){
+  const box=document.createElement('div');box.style.cssText='position:fixed;left:-10000px;top:0;width:794px';
+  box.innerHTML=$('stage').innerHTML;box.querySelectorAll('.ph-only').forEach(x=>x.remove());document.body.appendChild(box);
+  try{
+    await document.fonts.ready;
+    await Promise.all([...box.querySelectorAll('img')].map(i=>i.complete?0:new Promise(r=>{i.onload=i.onerror=r})));
+    const pdf=new jspdf.jsPDF({unit:'mm',format:'a4',compress:true});const pages=box.querySelectorAll('.page');
+    for(let i=0;i<pages.length;i++){pages[i].classList.remove('over');pages[i].style.boxShadow='none';pages[i].style.margin='0';
+      const cv=await html2canvas(pages[i],{scale:2,backgroundColor:'#ffffff',logging:false,width:794,height:1123,windowWidth:1200});
+      if(i)pdf.addPage();pdf.addImage(cv.toDataURL('image/jpeg',.9),'JPEG',0,0,210,297,undefined,'FAST')}
+    pdf.setProperties({title:'Scheda investimento – '+S.nome,subject:S.titolo,creator:S.brand});
+    return pdf.output('blob');
+  }finally{box.remove()}
+}
+function buildXlsx(){
+  const c=calc(),ws={},E='#,##0 "€"',P='0.0%',M='#,##0.0 "m²"';let r=0;const A=(col,row)=>XLSX.utils.encode_cell({c:col,r:row});
+  const put=(col,v,f,z)=>{const o=typeof v==='number'?{t:'n',v}:{t:'s',v:String(v??'')};if(f)o.f=f;if(z)o.z=z;ws[A(col,r)]=o};
+  put(0,S.brand+' – Scheda investimento: '+S.nome);r++;put(0,S.data+' · valori al lordo delle imposte');r+=2;
+  put(0,'COMPOSIZIONE DEL PREZZO');r++;['Voce','m²','€/m²','€ a corpo','Valore','Coperta (SI/NO)'].forEach((h,i)=>put(i,h));r++;const c0=r;
+  for(const x of S.composizione){const rr=r+1;put(0,x.l);put(1,num(x.mq),'',M);put(2,num(x.pm),'',E);put(3,num(x.corpo),'',E);put(4,c.val(x),`IF(B${rr}>0,B${rr}*C${rr},D${rr})`,E);put(5,x.cop?'SI':'NO');r++}
+  const c1=r;put(0,'Totale / prezzo di rivendita');put(1,c.mqTot,`SUM(B${c0+1}:B${Math.max(c1,c0+1)})`,M);put(4,c.base,`SUM(E${c0+1}:E${Math.max(c1,c0+1)})`,E);const PREZZO=`$E$${r+1}`;r++;
+  put(0,'Superficie coperta');put(1,c.mqCop,`SUMIF(F${c0+1}:F${Math.max(c1,c0+1)},"SI",B${c0+1}:B${Math.max(c1,c0+1)})`,M);r+=2;
+  put(0,'IMPIEGO DEL CAPITALE');r++;put(0,'Voce');put(1,'Importo');r++;const k0=r;
+  for(const x of S.capitale){put(0,x.l);put(1,num(x.v),'',E);r++}
+  const k1=r;put(0,'Totale capitale');put(1,c.cap,`SUM(B${k0+1}:B${Math.max(k1,k0+1)})`,E);const CAP=`$B$${r+1}`;r+=2;
+  put(0,'COSTI ALLA VENDITA');r++;['Voce','Tipo (% o €)','Valore','Incluso (SI/NO)','Importo'].forEach((h,i)=>put(i,h));r++;const v0=r;
+  for(const x of S.costiVendita){const rr=r+1;put(0,x.l);put(1,x.t==='pct'?'%':'€');put(2,num(x.v));put(3,x.on?'SI':'NO');put(4,x.on?(x.t==='pct'?c.prezzo*num(x.v)/100:num(x.v)):0,`IF(D${rr}="SI",IF(B${rr}="%",${PREZZO}*C${rr}/100,C${rr}),0)`,E);r++}
+  const v1=Math.max(r,v0+1);put(0,'Totale costi alla vendita');put(4,c.cv,`SUM(E${v0+1}:E${v1})`,E);const CV=`$E$${r+1}`;
+  const FIX=`SUMIFS(C${v0+1}:C${v1},B${v0+1}:B${v1},"€",D${v0+1}:D${v1},"SI")`,PCT=`SUMIFS(C${v0+1}:C${v1},B${v0+1}:B${v1},"%",D${v0+1}:D${v1},"SI")`;r+=2;
+  put(0,'PARAMETRI');r++;put(0,'Quota investitore (%)');put(1,num(S.quotaInv));const Q=`$B$${r+1}`;r++;put(0,'Durata (mesi)');put(1,c.mesi);const MS=`$B$${r+1}`;r++;put(0,'Variazione scenari (%)');put(1,num(S.scenPct));const SC=`$B$${r+1}`;r+=2;
+  put(0,'RISULTATI (al lordo delle imposte)');r++;
+  const res=[['Prezzo di rivendita',c.prezzo,PREZZO,E],['Capitale investito',c.cap,CAP,E],['Costi alla vendita',c.cv,CV,E],['Utile complessivo',c.utile,`${PREZZO}-${CAP}-${CV}`,E,'U'],['Rendimento sul capitale',c.rend,'UTILE/'+CAP,P],['Quota investitore',c.qi,`UTILE*${Q}/100`,E,'QI'],['Quota Riquality',c.qr,'UTILE-QI',E],['Rientro totale investitore',c.rientro,CAP+'+QI',E],['Rendimento investitore',c.rendInv,'QI/'+CAP,P],['Rendimento investitore annuo',c.annuo,`QI/${CAP}*12/${MS}`,P],['Prezzo di pareggio',c.pareggio,`(${CAP}+${FIX})/(1-${PCT}/100)`,E]];
+  let U='',QI='';for(const[l,v,f,z,tag]of res){const ff=f.replace(/UTILE/g,U).replace(/QI/g,QI);put(0,l);put(1,v,ff,z);if(tag==='U')U=`$B$${r+1}`;if(tag==='QI')QI=`$B$${r+1}`;r++}
+  r++;put(0,'SCENARI');r++;['Scenario','Prezzo','Utile totale','Quota investitore','Rendimento investitore'].forEach((h,i)=>put(i,h));r++;
+  const sc=num(S.scenPct)/100;[['Prudente',-1],['Previsto',0],['Favorevole',1]].forEach(([l,d])=>{const rr=r+1,pz=c.base*(1+d*sc),k=calc(pz);put(0,l);put(1,pz,`${PREZZO}*(1+${d}*${SC}/100)`,E);put(2,k.utile,`B${rr}-${CAP}-(${FIX}+B${rr}*${PCT}/100)`,E);put(3,k.qi,`C${rr}*${Q}/100`,E);put(4,k.rendInv,`D${rr}/${CAP}`,P);r++});
+  ws['!ref']=XLSX.utils.encode_range({s:{c:0,r:0},e:{c:5,r}});ws['!cols']=[{wch:38},{wch:16},{wch:16},{wch:16},{wch:18},{wch:16}];
+  const wb=XLSX.utils.book_new();XLSX.utils.book_append_sheet(wb,ws,'Scheda');
+  const t=XLSX.utils.aoa_to_sheet([['Campo','Testo'],['Titolo',S.titolo],['Sottotitolo',S.sottotitolo],['Occhiello',S.claim],['Descrizione',S.descr],...S.dati.map(d=>[d.l,d.v]),...S.perche.map(d=>[d.l,d.v]),['Nota',S.nota],['Introduzione pagina 2',S.intro2],['Nota finale',S.nota2],['Referente',[S.contatti.nome,S.contatti.ruolo,S.contatti.tel,S.contatti.email].filter(Boolean).join(' · ')]]);
+  t['!cols']=[{wch:28},{wch:100}];XLSX.utils.book_append_sheet(wb,t,'Testi');
+  return new Blob([XLSX.write(wb,{bookType:'xlsx',type:'array'})],{type:'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'});
+}
+const json=()=>JSON.stringify(S,null,1);
+async function run(label,fn){busy(true);status(label);try{await fn()}catch(err){status('Qualcosa non ha funzionato: '+(err&&err.message||err)+'. Ricarica la pagina e riprova.')}finally{busy(false)}}
+const doPdf=()=>run('Preparo il PDF…',async()=>{if(!need('html2canvas','jspdf'))throw new Error('librerie per il PDF non ancora caricate');await offer('Scheda investimento '+base()+'.pdf',await buildPdf())});
+const doXls=()=>run('Preparo il file Excel…',async()=>{if(!need('XLSX'))throw new Error('libreria Excel non ancora caricata');await offer('Scheda investimento '+base()+'.xlsx',buildXlsx())});
+const doZip=()=>run('Preparo PDF, Excel, dati e foto…',async()=>{if(!need('html2canvas','jspdf','XLSX','JSZip'))throw new Error('librerie non ancora caricate');
+  const z=new JSZip(),b=base();z.file(`Scheda investimento ${b}.pdf`,await buildPdf());z.file(`Scheda investimento ${b}.xlsx`,buildXlsx());z.file(`${b} - dati.json`,json());
+  const add=(n,d)=>{if(!d)return;const ext=d.slice(11,d.indexOf(';')).replace('jpeg','jpg').replace('svg+xml','svg');z.file('foto/'+n+'.'+ext,d.split(',')[1],{base64:true})};
+  add('copertina',S.foto);S.galleria.forEach((g,i)=>add(`${i+1} ${(g.cap||'foto').replace(/[\\/:*?"<>|]+/g,'')}`,g.src));add('logo',S.logo);
+  await offer(`${b} - scheda completa.zip`,await z.generateAsync({type:'blob',compression:'DEFLATE'}))});
+$('bPdf').onclick=doPdf;$('bXls').onclick=doXls;$('bXls2').onclick=doXls;$('bZip').onclick=doZip;$('bZip2').onclick=doZip;
+$('bSave').onclick=()=>offer(base()+' - dati.json',json());
+$('fLoad').addEventListener('change',e=>{const f=e.target.files[0];if(!f)return;f.text().then(t=>{try{S=normalize(JSON.parse(t));all();status('Dati caricati.')}catch(x){status('Questo file non contiene dati della scheda.')}e.target.value=''})});
+$('bReset').onclick=()=>{const b=$('bReset');if(b.dataset.sure){S=normalize(null);delete b.dataset.sure;b.textContent='Ripristina l’esempio';all();status('Esempio ripristinato.')}
+  else{b.dataset.sure=1;b.textContent='Tocca di nuovo per confermare';$('mDati').open=true;setTimeout(()=>{delete b.dataset.sure;b.textContent='Ripristina l’esempio'},4000)}};
+$('bReset').addEventListener('click',e=>e.stopPropagation());
+
+lists();render();
+if(document.fonts&&document.fonts.ready)document.fonts.ready.then(render);
+}
+</script>
