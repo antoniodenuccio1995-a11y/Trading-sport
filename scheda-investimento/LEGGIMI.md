@@ -1,29 +1,13 @@
-# Scheda investimento DiSalento
+# Scheda investimento DiSalento: spostata
 
-Generatore della scheda A4 (3 pagine, o 2 nella versione compatta) da proporre all'investitore (caso d'esempio: Casa Ruggiano).
+Lo strumento ora vive nel repository **antoniodenuccio1995-a11y/disalento.schedeint**:
 
-- **Strumento (sito):** https://antoniodenuccio1995-a11y.github.io/Trading-sport/scheda/ (pubblicato da `main` con GitHub Pages; le schede condivise sono su Supabase, tabella `sc_schede`)
-- **Copia su claude.ai:** https://claude.ai/artifact/TMGgnVNhbhrXBM3uCiTr9T (senza condivisione: claude.ai non permette di collegarsi a Supabase)
-- **Sorgente:** [`index.html`](index.html). È il corpo della pagina: la pubblicazione come artifact aggiunge `<!doctype html>`, `<head>` e `<body>`.
-- **Versione precedente:** [`versione-1.html`](versione-1.html), conservata invariata.
-- **Roadmap:** [`ROADMAP.md`](ROADMAP.md).
+- **Strumento:** https://antoniodenuccio1995-a11y.github.io/disalento.schedeint/
+- **Codice, roadmap e documentazione:** nel nuovo repository.
 
-## Cosa fa
+In questa cartella restano:
 
-- Scheda in due pagine: foto, titolo e dati in evidenza; i conti dell'operazione (rivendita prevista, capitale, costi, utile); il riquadro dell'investitore (quanto versa, quanto riceve, guadagno, rendimento, pareggio); il dettaglio dei conti, la divisione del ricavato, gli scenari, le foto e i contatti.
-- Moduli: ogni blocco si accende o si spegne, si sposta su o giù, cambia pagina e occupa mezza riga o la riga intera.
-- Grafici spegnibili: dal prezzo all'utile, quanto riceve l'investitore al variare del prezzo, dove va il capitale (colori a scelta), prezzo al m² rispetto alla zona (con media modificabile).
-- Immagini: copertina, 3 foto per pagina 2 (per esempio stato attuale, progetto, planimetria) e logo. Si scelgono dal telefono, si trascinano o si incollano; vengono ridotte in automatico.
-- Download: PDF, Excel con formule vive, dati (.json) e "Tutto (.zip)" con PDF, Excel, dati e foto.
-- Su telefono: schede "Modifica" e "Anteprima", riepilogo dei numeri sempre visibile, anteprima ingrandibile.
-- Controlli automatici: pagina troppo piena, foto mancante, m² mancanti, nessuna riserva imprevisti, margine di sicurezza basso, referente mancante.
+- [`index.html`](index.html): rinvio automatico dal vecchio indirizzo `/Trading-sport/scheda/` al nuovo, che mantiene la scheda aperta e l'eventuale chiave di modifica.
+- [`versione-1.html`](versione-1.html): la prima versione del generatore, conservata invariata.
 
-Tutti i valori sono al lordo delle imposte.
-
-## Calcoli
-
-- prezzo = somma della composizione (m² × €/m², oppure importo a corpo)
-- costi di vendita = costi fissi + prezzo × somma delle percentuali
-- utile = prezzo − capitale − costi di vendita
-- quota investitore = utile × quota %; rientro = capitale + quota investitore
-- pareggio = (capitale + costi fissi) / (1 − percentuali / 100)
+Le funzioni del database (`sc_*`) restano nelle migrazioni di questo repository (`supabase/migrations/`), perché sono applicate allo stesso progetto Supabase dell'app.
