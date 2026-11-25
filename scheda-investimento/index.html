@@ -136,7 +136,7 @@ input[type=checkbox]{width:20px;height:20px;min-height:0;padding:0;accent-color:
 .ph .r{text-align:right;font-size:10px;color:var(--p-mute);line-height:1.45}
 .ph .r .lb{font-size:9px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--p-terra)}
 .ph .r .nm{font:500 14px/1.3 var(--serif);color:var(--p-ink)}
-.pg-body{flex:1;min-height:0;overflow:hidden;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:18px 24px;align-content:start;padding-top:18px}
+.pg-body{flex:1;min-height:0;overflow:hidden;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:16px 24px;align-content:start;padding-top:16px}
 .blk{grid-column:span 2;min-width:0}
 .blk.half{grid-column:span 1}
 .pf{flex:none;display:flex;justify-content:space-between;gap:20px;border-top:1px solid var(--p-line);padding:9px 0 0;height:50px;font-size:9.5px;color:var(--p-mute);letter-spacing:.02em}
@@ -196,7 +196,7 @@ input[type=checkbox]{width:20px;height:20px;min-height:0;padding:0;accent-color:
 .why span{font-size:10.5px;color:#5A534C;line-height:1.5}
 .note{font-size:10px;line-height:1.55;color:var(--p-mute);margin:0;max-width:600px}
 
-.t-p2{font:400 28px/1.1 var(--serif);margin:0 0 8px;letter-spacing:-.01em;color:var(--p-ink)}
+.t-p2{font:400 26px/1.1 var(--serif);margin:0 0 6px;letter-spacing:-.01em;color:var(--p-ink)}
 .intro .lead{font-size:11.5px;line-height:1.6;color:#4A443E;margin:0;max-width:580px}
 table.tb{width:100%;border-collapse:collapse;font-size:10.8px;font-variant-numeric:tabular-nums}
 table.tb td,table.tb th{padding:5px 0;border-bottom:1px solid var(--p-line);vertical-align:baseline;font-size:10.8px}
@@ -223,7 +223,7 @@ table.sc tr.base td{background:var(--p-sand);font-weight:700}
 table.sc tr.pe td{color:var(--p-mute);font-style:italic}
 .scs{font-size:10px;color:var(--p-mute);margin:8px 0 0}
 .gal{display:grid;grid-template-columns:repeat(var(--n,3),minmax(0,1fr));gap:12px}
-.gal .gi{aspect-ratio:3/2;border-radius:2px;background-color:#EFE8E0;background-size:cover;background-position:center;background-repeat:no-repeat}
+.gal .gi{aspect-ratio:16/9;border-radius:2px;background-color:#EFE8E0;background-size:cover;background-position:center;background-repeat:no-repeat}
 .gal .cap{margin-top:5px}
 .gal .gi.fit{background-size:contain;background-color:#fff;border:1px solid var(--p-line)}
 .cont{display:flex;flex-wrap:wrap;gap:6px 28px;align-items:baseline;font-size:11px;color:#4A443E}
@@ -233,6 +233,7 @@ table.sc tr.pe td{color:var(--p-mute);font-style:italic}
 .phbox{border:1.5px dashed #CDBBAA;border-radius:3px;background:#FAF7F3;display:flex;align-items:center;justify-content:center;color:#857A6F;font-size:12px;line-height:1.5;cursor:pointer;text-align:center;padding:12px}
 .phbox:hover{border-color:var(--p-terra);color:var(--p-terra)}
 .cmpw{margin-top:14px}
+.gr svg{display:block;max-width:none}
 .ver{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px 24px;font-size:10.8px}
 .ver>div{display:flex;gap:8px;align-items:baseline}
 .pill{flex:none;font-size:8.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;border-radius:20px;padding:2px 7px;border:1px solid var(--p-rule);color:var(--p-mute);min-width:58px;text-align:center}
@@ -348,6 +349,9 @@ table.sc tr.sep td{border-top:1px solid var(--p-rule)}
     <details class="sec"><summary>Impiego del capitale</summary><div class="in">
       <div id="lCap"></div><button class="add" data-add="capitale" type="button">+ Aggiungi una voce</button>
       <div class="chips" id="chipsK"></div><p class="tot" id="totK"></p>
+      <label class="f" for="capPal">Colori del grafico “dove va il capitale”</label>
+      <select id="capPal" data-k="opt.capPal"><option value="salvia">Sfumatura salvia</option><option value="terracotta">Sfumatura terracotta</option><option value="sabbia">Sfumatura sabbia</option><option value="misto">Colori diversi</option></select>
+      <p class="hint" style="margin-top:6px">Puoi anche scegliere il colore di ogni voce con il quadratino colorato. <button type="button" id="bColReset" style="min-height:32px;font-size:12.5px;padding:0 10px">Torna alla sfumatura</button></p>
     </div></details>
 
     <details class="sec"><summary>Prezzo di rivendita</summary><div class="in">
@@ -358,6 +362,9 @@ table.sc tr.sep td{border-top:1px solid var(--p-rule)}
     <details class="sec"><summary>Comparabili di zona</summary><div class="in">
       <p class="hint">Case simili in vendita o vendute nella zona. Compaiono sotto la stima del prezzo, con il prezzo al m² a confronto con il nostro.</p>
       <div id="lCmp"></div><button class="add" data-add="comparabili" type="button">+ Aggiungi un comparabile</button>
+      <label class="chk" style="margin-top:12px"><input type="checkbox" data-o="cmpGrafico"> Mostra i comparabili come grafico (prezzo al m²)</label>
+      <div class="two"><div><label class="f" for="mediaZona">Media della zona (€/m², facoltativa)</label><input id="mediaZona" data-k="mediaZona" data-n="1" class="num" inputmode="decimal"></div>
+      <div><label class="f" for="fonteZona">Fonte della media</label><input id="fonteZona" data-k="fonteZona" placeholder="Es. annunci, nov. 2026"></div></div>
     </div></details>
     <details class="sec"><summary>Costi alla vendita</summary><div class="in">
       <p class="hint">Si pagano prima di dividere l’utile. Spunta per includerli; scegli importo fisso (€) o percentuale del prezzo (%).</p>
@@ -442,7 +449,7 @@ const L={
   scenSotto:'Sotto {pareggio} il ricavato non basta più a restituire tutto il capitale.',
   galTitolo:'La casa e il progetto',contTitolo:'Per parlarne',capColl:'Di cui a {soc} o a parti collegate, prima della vendita',capCollTag:'collegata a {soc}',
   verTitolo:'Verifiche sulla casa',verDoc:'Documenti',
-  cmpTitolo:'Prezzi richiesti a Ruggiano',cmpNostra:'La nostra stima',cmpCoperti:'coperti',cmpNota:'Prezzi chiesti negli annunci, non prezzi di vendita.',
+  cmpTitolo:'Prezzi richiesti a Ruggiano',grafATit:'Dal prezzo all’utile',grafBTit:'Quanto riceve l’investitore se il prezzo cambia',cmpNostra:'La nostra stima',cmpCoperti:'coperti',cmpNota:'Prezzi chiesti negli annunci, non prezzi di vendita.',
   scenLavori:'Lavori più cari del {lav}%',scenRitardo:'Vendita dopo {mesiR} mesi',scenRitardoRend:'{annuoR} su base annua',
   destLabel:'Riservata a',bozza:'BOZZA',
   perditaMsg:'Al prezzo previsto la vendita non copre il capitale: la perdita stimata è di {perdita}.'
@@ -451,11 +458,11 @@ const L={
 /* ---------- moduli ---------- */
 const BLOCKS={foto:'Foto di copertina',hero:'Titolo e descrizione',dati:'Dati in evidenza',operazione:'I conti dell’operazione',investitore:'Riquadro dell’investitore',
   perche:'Perché questa operazione',nota:'Nota sotto i conti',intro:'Titolo e introduzione (pag. 2)',capitale:'Dove va il capitale',composizione:'Come stimiamo il prezzo',
-  ripartizione:'Come si divide il ricavato',scenari:'Scenari e pareggio',galleria:'Altre foto e planimetria',verifiche:'Verifiche e documenti',contatti:'Contatti',nota2:'Nota finale'};
+  grafA:'Grafico: dal prezzo all’utile',ripartizione:'Come si divide il ricavato',grafB:'Grafico: quanto riceve l’investitore',scenari:'Tabella scenari e prove',grafC:'Grafico: dove va il capitale',galleria:'Altre foto e planimetria',verifiche:'Verifiche e documenti',contatti:'Contatti',nota2:'Nota finale'};
 const LAYOUT=[{id:'foto',p:1,w:'full',on:true},{id:'hero',p:1,w:'half',on:true},{id:'dati',p:1,w:'half',on:true},{id:'operazione',p:1,w:'half',on:true},
   {id:'investitore',p:1,w:'half',on:true},{id:'perche',p:1,w:'full',on:true},{id:'nota',p:1,w:'full',on:true},
-  {id:'intro',p:2,w:'full',on:true},{id:'capitale',p:2,w:'half',on:true},{id:'composizione',p:2,w:'half',on:true},{id:'ripartizione',p:2,w:'full',on:true},
-  {id:'scenari',p:2,w:'full',on:true},{id:'galleria',p:2,w:'full',on:true},{id:'contatti',p:2,w:'full',on:false},{id:'verifiche',p:2,w:'full',on:false},{id:'nota2',p:2,w:'full',on:true}];
+  {id:'intro',p:2,w:'full',on:true},{id:'capitale',p:2,w:'half',on:true},{id:'composizione',p:2,w:'half',on:true},{id:'grafA',p:2,w:'full',on:false},{id:'ripartizione',p:2,w:'full',on:true},
+  {id:'grafB',p:2,w:'full',on:true},{id:'scenari',p:2,w:'full',on:false},{id:'grafC',p:2,w:'half',on:false},{id:'galleria',p:2,w:'full',on:true},{id:'contatti',p:2,w:'full',on:false},{id:'verifiche',p:2,w:'full',on:false},{id:'nota2',p:2,w:'full',on:true}];
 
 /* ---------- esempio ---------- */
 const ESEMPIO={societa:'Riquality',brand:'DiSalento',brandSub:'Case tipiche e di design',logo:'',nome:'Casa Ruggiano',titolo:'Casa Ruggiano',
@@ -477,9 +484,9 @@ const ESEMPIO={societa:'Riquality',brand:'DiSalento',brandSub:'Case tipiche e di
   nota2:'Le condizioni definitive saranno scritte nel contratto. Tutti i valori sono stime al lordo delle imposte.',
   contatti:{nome:'',ruolo:'',tel:'',email:''},destinatario:'',
   comparabili:[{l:'Casa indipendente con giardino',mq:210,prezzo:125000},{l:'Casa ristrutturata con piscina',mq:116,prezzo:270000}],
-  stress:{lavori:20,mesi:18},
+  stress:{lavori:20,mesi:18},mediaZona:0,fonteZona:'',
   verifiche:[{l:'Titolo edilizio (permesso o SCIA)',s:'da fare'},{l:'Conformità urbanistica e catastale',s:'da fare'},{l:'Provenienza e ipoteche',s:'da fare'},{l:'Vincoli paesaggistici',s:'da fare'},{l:'Preventivo dei lavori firmato',s:'da fare'},{l:'Bozza di contratto',s:'da fare'}],documenti:'',
-  opt:{annuo:true,bozza:false},layout:LAYOUT};
+  opt:{annuo:true,bozza:false,cmpGrafico:true,capPal:'salvia'},layout:LAYOUT};
 /* testi dell’esempio precedente: se trovati invariati vengono aggiornati ai nuovi */
 const OLD_TXT={sottotitolo:'Proposta di acquisto, lavori e rivendita',claim:'Proposta di investimento · Ruggiano di Salve',
   descr:'Compriamo la casa, demoliamo e ricostruiamo le parti da rifare e la rimettiamo in vendita con il progetto pronto. Le finiture le sceglie chi la compra.',
@@ -518,7 +525,7 @@ function normalize(o){
     for(const k in map)if(o.show[k]===false)s.layout.find(b=>b.id===map[k]).on=false;
     s.opt={annuo:o.show.annuo!==false}}
   delete s.show;
-  s.opt=Object.assign({annuo:true,bozza:false},s.opt||{});
+  s.opt=Object.assign({annuo:true,bozza:false,cmpGrafico:true,capPal:'salvia'},s.opt||{});if(!['salvia','terracotta','sabbia','misto'].includes(s.opt.capPal))s.opt.capPal='salvia';
   s.stress=Object.assign({lavori:20,mesi:18},s.stress||{});
   if(typeof s.destinatario!=='string')s.destinatario='';
   s.contatti=Object.assign({nome:'',ruolo:'',tel:'',email:''},s.contatti||{});
@@ -559,6 +566,371 @@ const fillB=(t,v)=>esc(t).replace(/\{(\w+)\}/g,(m,k)=>k in v?(/^(mesi|quota|quot
 /* immagini: data URL salvati, blob URL in anteprima */
 const urlCache=new Map();
 function imgURL(d){if(!d)return'';let u=urlCache.get(d);if(!u){try{const [h,b64]=d.split(',');const bin=atob(b64),a=new Uint8Array(bin.length);for(let i=0;i<bin.length;i++)a[i]=bin.charCodeAt(i);u=URL.createObjectURL(new Blob([a],{type:h.slice(5).split(';')[0]}))}catch(e){u=d}urlCache.set(d,u)}return u}
+
+/* ---------- grafici (SVG con colori espliciti, così html2canvas li copia uguali nel PDF) ---------- */
+const GR=(function(){
+/* ---------- palette e caratteri della scheda ---------- */
+var COL = {
+  ink: '#2B2724', mute: '#6A625A', line: '#E4D8CD', rule: '#CDBBAA',
+  grid: '#EFE8E1', sand: '#F5F0EA', terra: '#A0583F', terraDk: '#8E4A34',
+  sage: '#5B6B55', clay: '#CDB49B', grey: '#ABA59D', bad: '#B03A2E'
+};
+/* rampa ordinale di salvia per le voci del capitale (validata: L monotona,
+   passi >= 0,06, estremo chiaro 2,2:1 sul bianco) */
+var SANS = 'Inter, Arial, sans-serif';
+var SERIF = "'Noto Serif', Georgia, serif";
+var NUM = 'font-variant-numeric:tabular-nums';
+
+/* ---------- piccoli helper ---------- */
+
+// 1234567 -> "1.234.567" (formattazione italiana scritta a mano: non dipende dal locale del browser)
+function migliaia(n) {
+  var s = String(Math.round(Math.abs(n)));
+  return s.replace(/\B(?=(\d{3})+(?!\d))/g, '.');
+}
+// importo in euro: "4.392 €", "−5.562 €"; con segno=true anche "+21.304 €"
+function euro(n, segno) {
+  var r = Math.round(n);
+  var pre = r < 0 ? '−' : (segno && r > 0 ? '+' : '');
+  return pre + migliaia(r) + ' €';
+}
+// percentuale: 0.2918 -> "29,2%"; con segno=true "+29,2%"
+function pct(x, dec, segno) {
+  var v = x * 100, d = dec == null ? 1 : dec;
+  var s = Math.abs(v).toFixed(d).replace('.', ',');
+  var pre = v < 0 && Number(s.replace(',', '.')) !== 0 ? '−' : (segno && v > 0 ? '+' : '');
+  return pre + s + '%';
+}
+function esc(s) {
+  return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+}
+function chiaro(h) { var m = /^#?([0-9a-f]{6})$/i.exec(h || ''); if (!m) return false; var n = parseInt(m[1], 16);
+  return (0.2126 * ((n >> 16) & 255) + 0.7152 * ((n >> 8) & 255) + 0.0722 * (n & 255)) / 255 > 0.6; }
+function r1(n) { return Math.round(n * 10) / 10; }
+// larghezza stimata di un testo Inter (per evitare sovrapposizioni senza misurare il DOM)
+function largTesto(s, size, k) { return String(s).length * size * (k || 0.56); }
+
+// i conti a un dato prezzo, presi dal calcolo dello strumento (costi fissi e percentuali compresi)
+function conti(d, prezzo) {
+  var k = d.calc(prezzo);
+  return { prezzo: prezzo, capitale: k.cap, costi: k.cv, utile: k.utile, investitore: k.qi, riquality: k.qr,
+    riceve: k.rientro, rendimento: k.rendInv, pareggio: k.pareggio };
+}
+
+// barra orizzontale con angoli arrotondati solo dove serve (rS = lato sinistro, rD = lato destro)
+function barraH(x0, x1, y, h, rS, rD, fill, titolo) {
+  var w = Math.max(0, x1 - x0);
+  if (w <= 0) return '';
+  rS = Math.min(rS, w / 2, h / 2); rD = Math.min(rD, w / 2, h / 2);
+  var p = 'M' + r1(x0 + rS) + ',' + r1(y) +
+    'H' + r1(x1 - rD) + (rD ? 'Q' + r1(x1) + ',' + r1(y) + ' ' + r1(x1) + ',' + r1(y + rD) : '') +
+    'V' + r1(y + h - rD) + (rD ? 'Q' + r1(x1) + ',' + r1(y + h) + ' ' + r1(x1 - rD) + ',' + r1(y + h) : '') +
+    'H' + r1(x0 + rS) + (rS ? 'Q' + r1(x0) + ',' + r1(y + h) + ' ' + r1(x0) + ',' + r1(y + h - rS) : '') +
+    'V' + r1(y + rS) + (rS ? 'Q' + r1(x0) + ',' + r1(y) + ' ' + r1(x0 + rS) + ',' + r1(y) : '') + 'Z';
+  return '<path d="' + p + '" fill="' + fill + '">' + (titolo ? '<title>' + esc(titolo) + '</title>' : '') + '</path>';
+}
+
+// <text> con attributi espliciti; `o` = {size, fill, weight, anchor, font, style}
+function testo(x, y, contenuto, o) {
+  o = o || {};
+  return '<text x="' + r1(x) + '" y="' + r1(y) + '"' +
+    ' font-family="' + (o.font || SANS) + '" font-size="' + (o.size || 11) + '"' +
+    ' fill="' + (o.fill || COL.ink) + '"' +
+    (o.weight ? ' font-weight="' + o.weight + '"' : '') +
+    (o.anchor ? ' text-anchor="' + o.anchor + '"' : '') +
+    (o.style ? ' style="' + o.style + '"' : '') + '>' + contenuto + '</text>';
+}
+function linea(x1, y1, x2, y2, stroke, w) {
+  return '<line x1="' + r1(x1) + '" y1="' + r1(y1) + '" x2="' + r1(x2) + '" y2="' + r1(y2) +
+    '" stroke="' + stroke + '" stroke-width="' + (w || 1) + '"/>';
+}
+function apriSvg(w, h, etichetta) {
+  return '<svg xmlns="http://www.w3.org/2000/svg" width="' + w + '" height="' + h +
+    '" viewBox="0 0 ' + w + ' ' + h + '" role="img" aria-label="' + esc(etichetta) +
+    '" font-family="' + SANS + '" style="display:block;overflow:visible">';
+}
+
+/* =====================================================================
+ * B. Quanto riceve l'investitore al variare del prezzo.
+ *    Linea del guadagno (o perdita) dell'investitore per ogni prezzo di
+ *    vendita; sopra, le etichette di pareggio e dei tre scenari, allineate
+ *    ai loro prezzi. Default 682 x 198 px.
+ * ===================================================================== */
+function graficoPrezzi(d) {
+  var W = d.larghezza || 682, H = 198, bg = d.sfondo || '#FFFFFF';
+  var pMin = d.prezzoMin || 70000, pMax = d.prezzoMax || 150000;
+  var ml = 66, mr = 30, yT = 58, yB = 158;
+  var base = conti(d, d.prezzo), pareggio = base.pareggio;
+  var g = function (p) { return conti(d, p).investitore; };
+
+  // scala verticale "pulita" a passi di 10.000 (o 20.000 se serve)
+  var lo = Math.min(0, g(pMin)), hi = Math.max(0, g(pMax));
+  var step = (hi - lo) / 10000 > 6 ? 20000 : 10000;
+  var yMin = Math.floor(lo / step) * step, yMax = Math.ceil(hi / step) * step;
+  if (yMin === lo && lo < 0) yMin -= step;
+  var sx = function (p) { return ml + (p - pMin) / (pMax - pMin) * (W - ml - mr); };
+  var sy = function (v) { return yB - (v - yMin) / (yMax - yMin) * (yB - yT); };
+
+  var o = [];
+  o.push('<rect x="0" y="0" width="' + W + '" height="' + H + '" fill="' + bg + '"/>');
+  // fascia leggera tra scenario prudente e favorevole
+  var pPru = d.prezzo * (1 - d.scarto), pFav = d.prezzo * (1 + d.scarto);
+  o.push('<rect x="' + r1(sx(pPru)) + '" y="' + yT + '" width="' + r1(sx(pFav) - sx(pPru)) + '" height="' + (yB - yT) + '" fill="' + COL.sand + '"/>');
+  // didascalia della fascia, sotto lo zero dove la curva non passa
+  if (sy(0) + 14 < yB) o.push(testo(sx(d.prezzo), yB - 6, esc('fascia ±' + pct(d.scarto, 0) + ' sul prezzo previsto'),
+    { size: 9.5, fill: COL.mute, anchor: 'middle' }));
+  // griglia orizzontale e asse y
+  for (var v = yMin; v <= yMax + 1; v += step) {
+    o.push(linea(ml, sy(v), W - mr, sy(v), v === 0 ? COL.rule : COL.grid, 1));
+    o.push(testo(ml - 8, sy(v) + 3.5, v === 0 ? '0 €' : esc(euro(v, true)), { size: 10, fill: COL.mute, anchor: 'end', style: NUM }));
+  }
+  // asse x: un'etichetta ogni 10.000 euro
+  for (var p = Math.ceil(pMin / 10000) * 10000; p <= pMax; p += 10000) {
+    o.push(linea(sx(p), yB, sx(p), yB + 4, COL.rule, 1));
+    o.push(testo(sx(p), yB + 16, esc(euro(p)), { size: 10, fill: COL.mute, anchor: 'middle', style: NUM }));
+  }
+
+  // la curva: lineare a tratti, con il gomito al pareggio
+  var punti = [pMin, pMax];
+  if (pareggio > pMin && pareggio < pMax) punti.splice(1, 0, pareggio);
+  var perd = punti.filter(function (p) { return p <= pareggio; });
+  var guad = punti.filter(function (p) { return p >= pareggio; });
+  var pts = function (arr) { return arr.map(function (p) { return r1(sx(p)) + ',' + r1(sy(g(p))); }).join(' '); };
+  if (perd.length > 1) {
+    // area della perdita (velo rosso al 10%) e tratto rosso
+    o.push('<polygon points="' + pts(perd) + ' ' + r1(sx(perd[perd.length - 1])) + ',' + r1(sy(0)) + ' ' + r1(sx(perd[0])) + ',' + r1(sy(0)) +
+      '" fill="' + COL.bad + '" fill-opacity="0.1"/>');
+    o.push('<polyline points="' + pts(perd) + '" fill="none" stroke="' + COL.bad + '" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>');
+  }
+  if (guad.length > 1) {
+    o.push('<polyline points="' + pts(guad) + '" fill="none" stroke="' + COL.terra + '" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>');
+  }
+
+  // etichette in alto, una per punto notevole, centrate sul proprio prezzo
+  var et = [
+    { p: pareggio, tipo: 'par', righe: ['Pareggio · ' + euro(pareggio), 'sotto, l’investitore perde'] },
+    { p: pPru, tipo: 'sc', nome: 'Prudente' },
+    { p: d.prezzo, tipo: 'sc', nome: 'Previsto', forte: true },
+    { p: pFav, tipo: 'sc', nome: 'Favorevole' }
+  ].filter(function (e) { return e.p >= pMin && e.p <= pMax; })
+   .sort(function (a, b) { return a.p - b.p; });
+  et.forEach(function (e) {
+    var c = conti(d, e.p);
+    if (e.tipo === 'sc') {
+      e.r1 = e.nome + ' · ' + euro(e.p);
+      e.r2a = euro(c.investitore, true); e.r2b = pct(c.rendimento, 1, true);
+      e.r3 = 'riceve ' + euro(c.riceve);
+      e.w = Math.max(largTesto(e.r1, 10), largTesto(e.r2a, e.forte ? 15 : 13.5, 0.6) + 6 + largTesto(e.r2b, 10), largTesto(e.r3, 10));
+    } else {
+      e.w = Math.max(largTesto(e.righe[0], 10), largTesto(e.righe[1], 10));
+    }
+    e.cx = sx(e.p);
+  });
+  // risolve sovrapposizioni: spinge a destra, poi rientra nei bordi
+  var gap = 14;
+  for (var i = 1; i < et.length; i++) {
+    var min = et[i - 1].cx + et[i - 1].w / 2 + gap + et[i].w / 2;
+    if (et[i].cx < min) et[i].cx = min;
+  }
+  for (var j = et.length - 1; j >= 0; j--) {
+    var maxX = j === et.length - 1 ? W - et[j].w / 2 : et[j + 1].cx - et[j + 1].w / 2 - gap - et[j].w / 2;
+    if (et[j].cx > maxX) et[j].cx = maxX;
+    if (et[j].cx - et[j].w / 2 < 0) et[j].cx = et[j].w / 2;
+  }
+  et.forEach(function (e) {
+    var x = e.cx, c = conti(d, e.p), px = sx(e.p), py = sy(c.investitore);
+    if (e.tipo === 'par') {
+      o.push(linea(px, 31, px, yB, COL.mute, 1));
+      o.push(testo(x, 12, esc(e.righe[0]), { size: 10, weight: 600, anchor: 'middle', style: NUM }));
+      o.push(testo(x, 25, esc(e.righe[1]), { size: 10, fill: COL.mute, anchor: 'middle' }));
+      o.push('<circle cx="' + r1(px) + '" cy="' + r1(py) + '" r="4" fill="' + COL.ink + '" stroke="' + bg + '" stroke-width="2"><title>' +
+        esc('Pareggio: ' + euro(e.p)) + '</title></circle>');
+    } else {
+      o.push(linea(px, 47, px, py - (e.forte ? 8 : 7), COL.rule, 1));
+      o.push(testo(x, 12, esc(e.r1), { size: 10, weight: e.forte ? 600 : 400, fill: e.forte ? COL.ink : COL.mute, anchor: 'middle', style: NUM }));
+      o.push(testo(x, 29,
+        '<tspan font-family="' + SERIF + '" font-size="' + (e.forte ? 15 : 13.5) + '" fill="' + COL.ink + '">' + esc(e.r2a) + '</tspan>' +
+        '<tspan dx="6" font-size="10" fill="' + COL.mute + '">' + esc(e.r2b) + '</tspan>', { size: 10, anchor: 'middle', style: NUM }));
+      o.push(testo(x, 42, esc(e.r3), { size: 10, fill: COL.mute, anchor: 'middle', style: NUM }));
+      o.push('<circle cx="' + r1(px) + '" cy="' + r1(py) + '" r="' + (e.forte ? 5.5 : 4.5) + '" fill="' + COL.terra + '" stroke="' + bg + '" stroke-width="2"><title>' +
+        esc(e.nome + ': prezzo ' + euro(e.p) + ', guadagno ' + euro(c.investitore, true) + ' (' + e.r2b + ')') + '</title></circle>');
+    }
+  });
+
+  // riga in basso: chiave della linea e del velo rosso
+  var yK = H - 6;
+  o.push(linea(ml, yK - 3.5, ml + 16, yK - 3.5, COL.terra, 2));
+  o.push(testo(ml + 22, yK, 'Guadagno dell’investitore', { size: 10, fill: COL.mute }));
+  var xk2 = ml + 22 + largTesto('Guadagno dell’investitore', 10) + 18;
+  o.push(linea(xk2, yK - 3.5, xk2 + 16, yK - 3.5, COL.bad, 2));
+  o.push(testo(xk2 + 22, yK, 'Perdita, tutta a suo carico', { size: 10, fill: COL.mute }));
+  o.push(testo(W - mr, yK, 'Prezzo di vendita della casa →', { size: 10, fill: COL.mute, anchor: 'end' }));
+
+  return apriSvg(W, H, 'Guadagno o perdita dell’investitore per prezzi di vendita da ' + euro(pMin) + ' a ' + euro(pMax) +
+      '. Pareggio a ' + euro(pareggio) + '; al prezzo previsto di ' + euro(d.prezzo) + ' guadagna ' + euro(base.investitore) + '.') +
+    o.join('') + '</svg>';
+}
+
+/* =====================================================================
+ * C. Dove va il capitale - barra segmentata + elenco.
+ *    Barra alta 24 px con le cinque voci (percentuale scritta dentro solo
+ *    dove ci sta), sotto un elenco con colore, voce, importo e quota.
+ *    Default 330 px di larghezza.
+ * ===================================================================== */
+function graficoCapitale(d) {
+  var W = d.larghezza || 330, bg = d.sfondo || '#FFFFFF';
+  var voci = d.voci.slice().sort(function (a, b) { return b.importo - a.importo; });
+  var tot = voci.reduce(function (a, v) { return a + v.importo; }, 0);
+  var gapPx = 2, barH = 24, n = voci.length;
+  var utile = W - gapPx * (n - 1);
+  var o = ['<rect x="0" y="0" width="' + W + '" height="400" fill="' + bg + '"/>'];
+  var x = 0;
+  voci.forEach(function (v, i) {
+    var w = v.importo / tot * utile, col = v.col;
+    var quota = pct(v.importo / tot, 1);
+    o.push(barraH(x, x + w, 0, barH, 4, 4, col, v.nome + ': ' + euro(v.importo) + ' (' + quota + ')'));
+    // percentuale dentro il blocco solo se ci sta con margine
+    if (w >= largTesto(quota, 10.5, 0.6) + 16) {
+      o.push(testo(x + 8, barH / 2 + 3.8, esc(quota), { size: 10.5, weight: 600, fill: chiaro(col) ? COL.ink : '#FFFFFF', style: NUM }));
+    }
+    x += w + gapPx;
+  });
+  // elenco: colore, voce, importo, quota
+  var y = barH + 14, rowH = 22, xImp = W - 50;
+  voci.forEach(function (v, i) {
+    var cy = y + rowH / 2;
+    o.push('<rect x="0" y="' + r1(cy - 5) + '" width="10" height="10" rx="2" fill="' + v.col + '"/>');
+    o.push(testo(18, cy + 4, esc(v.nome), { size: 11 }));
+    o.push(testo(xImp, cy + 4, esc(euro(v.importo)), { size: 11, anchor: 'end', style: NUM }));
+    o.push(testo(W, cy + 4, esc(pct(v.importo / tot, 1)), { size: 10.5, fill: COL.mute, anchor: 'end', style: NUM }));
+    y += rowH;
+    o.push(linea(0, y, W, y, i === n - 1 ? COL.ink : COL.line, 1));
+  });
+  y += rowH / 2 + 6;
+  o.push(testo(0, y + 4, 'Capitale totale', { size: 11, weight: 600 }));
+  o.push(testo(xImp, y + 4, esc(euro(tot)), { size: 11, weight: 600, anchor: 'end', style: NUM }));
+  o.push(testo(W, y + 4, '100%', { size: 10.5, fill: COL.mute, anchor: 'end', style: NUM }));
+  // lettura in una riga: quanto pesano le prime due voci
+  if (n > 2) {
+    y += 24;
+    var due = (voci[0].importo + voci[1].importo) / tot;
+    var b0 = voci[0].breve || voci[0].nome, b1 = voci[1].breve || voci[1].nome;
+    o.push(testo(0, y, esc(b0.charAt(0).toUpperCase() + b0.slice(1) + ' e ' + b1 + ': ') +
+      '<tspan font-weight="600" fill="' + COL.ink + '">' + esc(pct(due, 1)) + '</tspan>' + esc(' del capitale'), { size: 10, fill: COL.mute, style: NUM }));
+  }
+  var H = Math.ceil(y + 6);
+  o[0] = '<rect x="0" y="0" width="' + W + '" height="' + H + '" fill="' + bg + '"/>';
+  return apriSvg(W, H, 'Dove va il capitale di ' + euro(tot) + ': ' + voci.map(function (v) {
+    return v.nome + ' ' + euro(v.importo) + ' (' + pct(v.importo / tot, 1) + ')';
+  }).join(', ') + '.') + o.join('') + '</svg>';
+}
+
+/* =====================================================================
+ * D. Prezzo al m2 rispetto alla zona - dot plot.
+ *    Una riga per casa, ordinate per euro al m2, tutte sulla stessa scala;
+ *    la nostra stima e' evidenziata. Default 330 px di larghezza.
+ * ===================================================================== */
+function graficoMetroQuadro(d) {
+  var W = d.larghezza || 330, bg = d.sfondo || '#FFFFFF';
+  var case_ = d.comparabili.map(function (c) {
+    return { nome: c.nome, det: c.mq + ' m² · ' + euro(c.prezzo), v: c.prezzo / c.mq, nostra: false };
+  });
+  if (d.mq > 0) case_.push({ nome: 'La nostra casa', det: migliaia(d.mq) + ' m² · ' + euro(d.prezzo), v: d.prezzo / d.mq, nostra: true });
+  case_.sort(function (a, b) { return a.v - b.v; });
+
+  var max = Math.ceil(Math.max.apply(null, case_.map(function (c) { return c.v; }).concat([d.media || 0])) / 500) * 500;
+  var px0 = 8, px1 = W - 18, rowH = 34, top = 2;
+  var sx = function (v) { return px0 + v / max * (px1 - px0); };
+  var yAx = top + case_.length * rowH + 4;
+  var o = [];
+  // riga della nostra casa su fondo sabbia
+  case_.forEach(function (c, i) {
+    if (c.nostra) o.push('<rect x="0" y="' + (top + i * rowH) + '" width="' + W + '" height="' + (rowH - 2) + '" rx="4" fill="' + COL.sand + '"/>');
+  });
+  // asse con tacche (niente griglia verticale: attraverserebbe i nomi delle case)
+  for (var t = 0; t <= max; t += 500) {
+    o.push(linea(sx(t), yAx, sx(t), yAx + 4, COL.rule, 1));
+    o.push(testo(sx(t), yAx + 15, esc(migliaia(t)), { size: 10, fill: COL.mute, anchor: 'middle', style: NUM }));
+  }
+  o.push(linea(px0, yAx, px1, yAx, COL.rule, 1));
+  case_.forEach(function (c, i) {
+    var y0 = top + i * rowH, ty = y0 + 24, x = sx(c.v);
+    o.push(linea(px0, ty, px1, ty, c.nostra ? COL.line : COL.grid, 1));   // binario della riga
+    var nomeX = c.nostra ? 8 : 0;
+    o.push(testo(nomeX, y0 + 13, esc(c.nome) + '<tspan dx="6" font-size="10" font-weight="400" fill="' + COL.mute + '">' + esc(c.det) + '</tspan>',
+      { size: 11, weight: c.nostra ? 600 : 500, style: NUM }));
+    var lab = migliaia(c.v) + ' €/m²', lw = largTesto(lab, 10.5, 0.58);
+    var destra = x + 10 + lw <= W;
+    // il binario si interrompe sotto l'etichetta del valore
+    o.push('<rect x="' + r1(destra ? x + 7 : x - 11 - lw - 4) + '" y="' + (ty - 7) + '" width="' + r1(lw + 8) + '" height="14" fill="' +
+      (c.nostra ? COL.sand : bg) + '"/>');
+    o.push('<circle cx="' + r1(x) + '" cy="' + ty + '" r="' + (c.nostra ? 6 : 5) + '" fill="' + (c.nostra ? COL.terra : COL.grey) +
+      '" stroke="' + (c.nostra ? COL.sand : bg) + '" stroke-width="2"><title>' + esc(c.nome + ': ' + lab) + '</title></circle>');
+    o.push(testo(destra ? x + 11 : x - 11, ty + 3.8, esc(lab), { size: 10.5, weight: c.nostra ? 600 : 400,
+      fill: c.nostra ? COL.ink : COL.mute, anchor: destra ? 'start' : 'end', style: NUM }));
+  });
+  if (d.media > 0) {
+    var mx = sx(d.media);
+    case_.forEach(function (c, i) { var ty = top + i * rowH + 24;
+      o.push('<line x1="' + r1(mx) + '" y1="' + (ty - 9) + '" x2="' + r1(mx) + '" y2="' + (ty + 9) + '" stroke="' + COL.sage + '" stroke-width="1.5" stroke-dasharray="3 2"/>'); });
+    o.push('<line x1="' + r1(mx) + '" y1="' + (yAx - 4) + '" x2="' + r1(mx) + '" y2="' + (yAx + 4) + '" stroke="' + COL.sage + '" stroke-width="2"/>');
+  }
+  var y = yAx + 30;
+  o.push(testo(0, y, 'Euro al m² · prezzi richiesti negli annunci', { size: 10, fill: COL.mute }));
+  if (d.media > 0) {
+    y += 14;
+    o.push(testo(0, y, '<tspan fill="' + COL.sage + '" font-weight="600">- - -</tspan> ' + esc(d.mediaLab + ': ' + migliaia(d.media) + ' €/m²'), { size: 10, fill: COL.mute }));
+  }
+  if (!(d.mq > 0)) {
+    y += 14;
+    o.push(testo(0, y, 'Inserisci i m² della casa per vedere la nostra stima', { size: 10, fill: COL.mute }));
+  }
+  var H = Math.ceil(y + 6);
+  return apriSvg(W, H, 'Prezzo al metro quadro rispetto alla zona: ' + case_.map(function (c) {
+    return c.nome + ' ' + migliaia(c.v) + ' euro al metro quadro';
+  }).join(', ') + '.') + '<rect x="0" y="0" width="' + W + '" height="' + H + '" fill="' + bg + '"/>' + o.join('') + '</svg>';
+}
+
+/* A. Dal prezzo all'utile, in una riga: colonne a cascata con importo e nome sotto. */
+function cascataCompatta(d) {
+  var W = d.larghezza || 682, c = conti(d, d.prezzo), perdita = c.utile <= 0;
+  var cols = [
+    { lab: 'Rivendita prevista', a: 0, b: c.prezzo, fill: COL.ink, val: euro(c.prezzo) },
+    { lab: 'Capitale', a: c.prezzo - c.capitale, b: c.prezzo, fill: COL.sage, val: '− ' + euro(c.capitale) },
+    { lab: 'Costi di vendita', a: c.prezzo - c.capitale - c.costi, b: c.prezzo - c.capitale, fill: COL.grey, val: '− ' + euro(c.costi) },
+    { lab: perdita ? 'Perdita' : 'Utile', a: Math.min(0, c.utile), b: Math.max(0, c.utile), fill: perdita ? COL.bad : COL.ink, val: euro(c.utile) },
+    { lab: 'All’investitore', a: Math.min(0, c.investitore), b: Math.max(0, c.investitore), fill: perdita ? COL.bad : COL.terra, val: euro(c.investitore) },
+    { lab: 'A ' + d.soc, a: Math.max(0, c.investitore), b: Math.max(0, c.investitore) + c.riquality, fill: COL.clay, val: euro(c.riquality) }
+  ];
+  var top = 3, ph = 46, gap = 12, n = cols.length, cw = (W - gap * (n - 1)) / n, bw = Math.min(cw * 0.46, 44);
+  var lo = Math.min(0, c.utile), hi = Math.max(c.prezzo, 1);
+  var sy = function (v) { return top + ph - (v - lo) / (hi - lo) * ph; };
+  var cx = function (i) { return i * (cw + gap) + cw / 2; };
+  var o = ['<rect x="0" y="0" width="' + W + '" height="90" fill="#FFFFFF"/>', linea(0, sy(0), W, sy(0), COL.rule, 1)];
+  [[0, 1, c.prezzo], [1, 2, c.prezzo - c.capitale], [2, 3, c.utile], [4, 5, Math.max(0, c.investitore)]].forEach(function (k) {
+    if (k[0] === 4 && perdita) return;
+    o.push('<line x1="' + r1(cx(k[0]) + bw / 2) + '" y1="' + r1(sy(k[2])) + '" x2="' + r1(cx(k[1]) - bw / 2) + '" y2="' + r1(sy(k[2])) + '" stroke="' + COL.rule + '" stroke-width="1" stroke-dasharray="3 2"/>');
+  });
+  cols.forEach(function (k, i) {
+    var y0 = sy(k.b), h = Math.max(1.5, sy(k.a) - sy(k.b));
+    o.push('<rect x="' + r1(cx(i) - bw / 2) + '" y="' + r1(y0) + '" width="' + r1(bw) + '" height="' + r1(h) + '" rx="2" fill="' + k.fill + '"><title>' + esc(k.lab + ': ' + k.val) + '</title></rect>');
+    o.push(testo(cx(i), top + ph + 17, esc(k.val), { size: 11.5, weight: 600, anchor: 'middle', fill: i === 4 && !perdita ? COL.terra : COL.ink, style: NUM }));
+    o.push(testo(cx(i), top + ph + 31, esc(k.lab), { size: 9.5, anchor: 'middle', fill: COL.mute }));
+  });
+  return apriSvg(W, 86, 'Dal prezzo all’utile: rivendita ' + euro(c.prezzo) + ', meno capitale ' + euro(c.capitale) + ' e costi ' + euro(c.costi) +
+    ', utile ' + euro(c.utile) + ', all’investitore ' + euro(c.investitore)) + o.join('') + '</svg>';
+}
+
+return {cascata:cascataCompatta,prezzi:graficoPrezzi,capitale:graficoCapitale,mq:graficoMetroQuadro};
+})();
+const PAL={salvia:['#3E4D38','#596953','#72836C','#8C9A86','#A4B39F'],terracotta:['#6E3424','#8E4A34','#A0583F','#BE7D63','#D9A891'],sabbia:['#6F5C47','#8F7860','#AD957B','#C9B39A','#E0CDB8'],misto:['#5B6B55','#A0583F','#CDB49B','#6E8496','#ABA59D']};
+const capCol=(r,i)=>/^#[0-9a-f]{6}$/i.test(r.col||'')?r.col:(PAL[S.opt.capPal]||PAL.salvia)[i%5];
+const gdati=c=>({calc,prezzo:c.base,soc:S.societa||'Riquality',scarto:num(S.scenPct)/100,
+  prezzoMin:Math.max(0,Math.floor(Math.min(c.base*.6,c.pareggio*.9)/10000)*10000),prezzoMax:Math.ceil(c.base*1.25/10000)*10000,
+  voci:S.capitale.map((r,i)=>({nome:r.l,breve:r.l.toLowerCase(),importo:num(r.v),col:capCol(r,i)})).filter(v=>v.importo>0),
+  comparabili:S.comparabili.filter(x=>num(x.mq)>0&&num(x.prezzo)>0).map(x=>({nome:x.l,mq:num(x.mq),prezzo:num(x.prezzo)})),
+  mq:c.mqCop,media:num(S.mediaZona)||0,mediaLab:S.fonteZona?'Media della zona ('+S.fonteZona+')':'Media della zona'});
+const W_FULL=682,W_HALF=329;
 
 /* ---------- moduli della scheda ---------- */
 const COL={costi:'#ABA59D',cap:'#5B6B55',inv:'#A0583F',riq:'#CDB49B'};
@@ -603,6 +975,9 @@ const R={
     ${rows.map(([p,l],i)=>{const k=calc(p);return`<tr class="${i===1?'base':''}"><td>${l}</td><td>${eur(p)}</td><td class="${k.utile<0?'neg':''}">${eur(k.utile)}</td><td class="${k.qi<0?'neg':''}">${eur(k.qi)}</td><td class="${k.qi<0?'neg':''}">${pct(k.rendInv)}</td></tr>`}).join('')}
     <tr class="pe"><td>${esc(L.scenPareggio)}</td><td>${eur(c.pareggio)}</td><td>0 €</td><td>0 €</td><td>0,0%</td></tr>${stressRows(c,v)}</table>
     <p class="scs">${fill(L.scenSotto,v)}</p>`},
+  grafA(c){return`<div class="k">${esc(L.grafATit)}</div><div class="gr">${GR.cascata(Object.assign(gdati(c),{larghezza:W_FULL}))}</div>`},
+  grafB(c){return`<div class="k">${esc(L.grafBTit)}</div><div class="gr">${GR.prezzi(Object.assign(gdati(c),{larghezza:W_FULL}))}</div>`},
+  grafC(c,v,w){const d=gdati(c);return d.voci.length?`<div class="k">${esc(L.capTitolo)}</div><div class="gr">${GR.capitale(Object.assign(d,{larghezza:w==='half'?W_HALF:W_FULL}))}</div>`:''},
   galleria(){const g=S.galleria.filter(x=>x.src);if(!g.length)return{ph:`<div class="k">${esc(L.galTitolo)}</div><div class="gal" style="--n:3">${S.galleria.map((x,i)=>`<div><div class="gi phbox" data-pick="gal" data-i="${i}">+ ${esc(x.cap||'Foto')}</div></div>`).join('')}</div>`};return g.length?`<div class="k">${esc(L.galTitolo)}</div><div class="gal" style="--n:${g.length===1?2:g.length}">${g.map(x=>`<div><div class="gi${x.fit?' fit':''}" style="background-image:url('${imgURL(x.src)}')"></div>${x.cap?`<div class="cap">${esc(x.cap)}</div>`:''}</div>`).join('')}</div>`:''},
   contatti(){const k=S.contatti;if(!k.nome&&!k.tel&&!k.email)return'';return`<div class="k">${esc(L.contTitolo)}</div><div class="cont">${k.nome?`<div class="who">${esc(k.nome)}${k.ruolo?`<small>${esc(k.ruolo)}</small>`:''}</div>`:''}${k.tel?`<div>Tel. ${esc(k.tel)}</div>`:''}${k.email?`<div>${esc(k.email)}</div>`:''}</div>`},
   verifiche(){const it=S.verifiche.filter(x=>x.l);if(!it.length&&!S.documenti)return'';const lab={fatto:'Fatto','in corso':'In corso','da fare':'Da fare'};
@@ -618,6 +993,7 @@ function stressRows(c,v){let h='',first=' sep';
   return h}
 function cmpHTML(c){
   const k=S.comparabili.filter(x=>num(x.mq)>0&&num(x.prezzo)>0);if(!k.length)return'';
+  if(S.opt.cmpGrafico)return`<div class="cmpw"><div class="k g">${esc(L.cmpTitolo)}</div><div class="gr">${GR.mq(Object.assign(gdati(c),{larghezza:W_HALF}))}</div></div>`;
   const ours=c.mqCop>0?c.base/c.mqCop:0,mx=Math.max(ours,...k.map(x=>num(x.prezzo)/num(x.mq)));
   const bar=v=>`<span class="mb"><i style="width:${Math.round(v/mx*100)}%"></i></span>`;
   return`<div class="cmpw"><div class="k g">${esc(L.cmpTitolo)}</div><table class="tb cmp">
@@ -637,8 +1013,8 @@ function render(){
   const k=S.contatti,tel=String(k.tel||'').replace(/[^\d+]/g,''),mail=/^[^\s@<>"']+@[^\s@<>"']+\.[^\s@<>"']+$/.test(k.email||'')?k.email:'';
   const foot=[k.nome?esc(k.nome):'',k.tel?`<span data-href="tel:${esc(tel)}">${esc(k.tel)}</span>`:'',k.email?`<span${mail?` data-href="mailto:${esc(mail)}"`:''}>${esc(k.email)}</span>`:''].filter(Boolean).join(' · ');
   $('stage').innerHTML=pages.map((p,i)=>{
-    const items=S.layout.filter(b=>b.on&&b.p===p).map(b=>({b,h:R[b.id](c,v)})).filter(x=>x.h);
-    for(let j=0;j<items.length;j++){const x=items[j];x.w=x.b.w;if(x.w==='half'){const nx=items[j+1];if(nx&&nx.b.w==='half'){nx.w='half';j++}else x.w='full'}}
+    const FULL=['grafA','grafB'];const items=S.layout.filter(b=>b.on&&b.p===p).map(b=>({b,h:R[b.id](c,v,FULL.includes(b.id)?'full':b.w)})).filter(x=>x.h);
+    for(let j=0;j<items.length;j++){const x=items[j];x.w=FULL.includes(x.b.id)?'full':x.b.w;if(x.w==='half'){const nx=items[j+1];if(nx&&nx.b.w==='half'&&!FULL.includes(nx.b.id)){nx.w='half';j++}else x.w='full'}if(x.w!==x.b.w&&x.b.id==='grafC')x.h=R.grafC(c,v,x.w)}
     const body=items.map(({b,h,w})=>{const ph=typeof h==='object';return`<section class="blk ${w}${ph?' ph-only':''}" data-b="${b.id}">${ph?h.ph:h}</section>`}).join('');
     return`<div class="page" data-p="${p}">${head(i+1)}<div class="pg-body">${body}</div><div class="pf"><span>${esc(S.footer)}${S.data?' · '+esc(S.data):''}</span>${foot?`<span class="fc">${foot}</span>`:''}<span>Pagina ${i+1} di ${pages.length}</span></div>${S.opt.bozza?`<div class="wm"><span>${esc(L.bozza)}</span></div>`:''}</div>`}).join('');
   const over=[];
@@ -700,14 +1076,14 @@ function mods(){
       <input type="checkbox" id="mod-${b.id}" data-mod-on="${b.i}" ${b.on?'checked':''}>
       <label class="nm" for="mod-${b.id}">${esc(BLOCKS[b.id])}</label>
       <select aria-label="Pagina di ${esc(BLOCKS[b.id])}" data-mod-p="${b.i}">${pages.map(q=>`<option value="${q}" ${q===b.p?'selected':''}>Pag. ${q}</option>`).join('')}</select>
-      <select aria-label="Larghezza di ${esc(BLOCKS[b.id])}" data-mod-wsel="${b.i}"><option value="full" ${b.w!=='half'?'selected':''}>Riga intera</option><option value="half" ${b.w==='half'?'selected':''}>Mezza riga</option></select>
+      <select aria-label="Larghezza di ${esc(BLOCKS[b.id])}" data-mod-wsel="${b.i}" ${['grafA','grafB'].includes(b.id)?'disabled':''}><option value="full" ${b.w!=='half'?'selected':''}>Riga intera</option><option value="half" ${b.w==='half'?'selected':''}>Mezza riga</option></select>
       <button type="button" data-mod-up="${b.i}" aria-label="Sposta su" ${k===0?'disabled':''}>↑</button>
       <button type="button" data-mod-dn="${b.i}" aria-label="Sposta giù" ${k===items.length-1?'disabled':''}>↓</button></li>`).join(''):'<li class="hint">Nessun modulo: sposta qui un modulo per usare questa pagina.</li>'}</ul>`}).join('');
 }
 function lists(){
   const Lx=(id,key,cols)=>{$(id).innerHTML=S[key].map((r,i)=>cols(r,i)).join('')};
   Lx('lDati','dati',(r,i)=>`<div class="row pp"><input aria-label="Etichetta" data-l="dati.${i}.l" value="${esc(r.l)}"><input aria-label="Valore" data-l="dati.${i}.v" value="${esc(r.v)}"><button class="x" type="button" data-del="dati.${i}" aria-label="Rimuovi">×</button></div>`);
-  Lx('lCap','capitale',(r,i)=>`<div class="comp"><div class="row" style="margin:0"><input aria-label="Voce" data-l="capitale.${i}.l" value="${esc(r.l)}"><input aria-label="Importo in euro" class="num" inputmode="decimal" data-l="capitale.${i}.v" data-n="1" value="${fmtIn(num(r.v))}"><button class="x" type="button" data-del="capitale.${i}" aria-label="Rimuovi">×</button></div><div class="row" style="grid-template-columns:minmax(0,1fr) auto"><input aria-label="Chi incassa" data-l="capitale.${i}.chi" value="${esc(r.chi||'')}" placeholder="Chi incassa (facoltativo)"><label class="cop" style="padding:0"><input type="checkbox" data-c="capitale.${i}.coll" ${r.coll?'checked':''}> collegata a noi</label></div></div>`);
+  Lx('lCap','capitale',(r,i)=>`<div class="comp"><div class="row" style="margin:0"><input aria-label="Voce" data-l="capitale.${i}.l" value="${esc(r.l)}"><input aria-label="Importo in euro" class="num" inputmode="decimal" data-l="capitale.${i}.v" data-n="1" value="${fmtIn(num(r.v))}"><button class="x" type="button" data-del="capitale.${i}" aria-label="Rimuovi">×</button></div><div class="row" style="grid-template-columns:minmax(0,1fr) auto auto"><input aria-label="Chi incassa" data-l="capitale.${i}.chi" value="${esc(r.chi||'')}" placeholder="Chi incassa (facoltativo)"><label class="cop" style="padding:0"><input type="checkbox" data-c="capitale.${i}.coll" ${r.coll?'checked':''}> collegata a noi</label><input type="color" aria-label="Colore nel grafico" data-l="capitale.${i}.col" value="${capCol(r,i)}" style="width:42px;min-height:36px;padding:2px"></div></div>`);
   const cc=calc();
   Lx('lVen','composizione',(r,i)=>`<div class="comp"><div class="l1"><input aria-label="Tipologia" data-l="composizione.${i}.l" value="${esc(r.l)}"><button class="x" type="button" data-del="composizione.${i}" aria-label="Rimuovi">×</button></div><div class="l2"><div><label>m²</label><input class="num" inputmode="decimal" data-n="1" data-l="composizione.${i}.mq" value="${num(r.mq)?fmtIn(num(r.mq)):''}"></div><div><label>€/m²</label><input class="num" inputmode="decimal" data-n="1" data-l="composizione.${i}.pm" value="${num(r.pm)?fmtIn(num(r.pm)):''}"></div><div><label>€ a corpo</label><input class="num" inputmode="decimal" data-n="1" data-l="composizione.${i}.corpo" value="${num(r.corpo)?fmtIn(num(r.corpo)):''}"></div><label class="cop"><input type="checkbox" data-c="composizione.${i}.cop" ${r.cop?'checked':''}>coperta</label></div><div class="val" data-val="${i}">${eur(cc.val(r))}</div></div>`);
   $('chipsC').innerHTML=TIPI.map((t,i)=>`<button type="button" data-tipo="${i}">+ ${esc(t.l)}</button>`).join('');
@@ -732,7 +1108,7 @@ $('ed').addEventListener('input',e=>{const t=e.target;
 $('ed').addEventListener('change',e=>{const t=e.target;
   if(t.dataset.c)setPath(t.dataset.c,t.checked);
   else if(t.dataset.o)S.opt[t.dataset.o]=t.checked;
-  else if(t.tagName==='SELECT'&&t.dataset.k)setK(t.dataset.k,t.value);
+  else if(t.tagName==='SELECT'&&t.dataset.k){setK(t.dataset.k,t.value);if(t.id==='capPal'){all();return}}
   else if(t.tagName==='SELECT'&&t.dataset.l)setPath(t.dataset.l,t.value);
   else if(t.dataset.modOn!=null){S.layout[+t.dataset.modOn].on=t.checked;save();mods();render();return}
   else if(t.dataset.modWsel!=null){S.layout[+t.dataset.modWsel].w=t.value==='half'?'half':'full';save();mods();render();return}
@@ -748,6 +1124,7 @@ $('ed').addEventListener('click',e=>{const t=e.target.closest('button');if(!t)re
   else if(d.imgDel){setImg(d.imgDel,+d.i,'');return}
   else return;
   all();});
+$('bColReset').onclick=()=>{S.capitale.forEach(r=>delete r.col);all();status('Colori riportati alla sfumatura.')};
 $('bLayout').onclick=()=>{S.layout=clone(LAYOUT);all();status('Impaginazione ripristinata.')};
 
 /* ---------- immagini ---------- */
