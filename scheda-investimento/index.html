@@ -144,9 +144,13 @@ input[type=checkbox]{width:20px;height:20px;min-height:0;padding:0;accent-color:
 .cp{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:6px}
 .cp input{font-size:14px}
 .modal .acts{margin-top:8px}
+.arow{display:grid;grid-template-columns:minmax(0,1fr) auto auto;gap:6px;align-items:center;padding:9px 0;border-bottom:1px solid var(--line)}
+.arow b{display:block;font-size:15px}.arow small{color:var(--mute);font-size:12.5px}
+.arow.cur b::after{content:" · aperta ora";font-weight:500;color:var(--accent-text);font-size:12.5px}
+.arow .btn,.arow button{min-height:38px;font-size:13px;padding:0 10px}
 .cl{margin-left:auto;font-size:12px;color:var(--mute)}
 .cl.ok{color:var(--ok)}.cl.err{color:var(--bad)}
-body.viewer .ed,body.viewer .tabs,body.viewer #mDati,body.viewer #bXls,body.viewer #bZip,body.viewer #bShare,body.viewer .ph-only,body.viewer .over-flag{display:none!important}
+body.viewer .ed,body.viewer .tabs,body.viewer #mDati,body.viewer #bArch,body.viewer #bXls,body.viewer #bZip,body.viewer #bShare,body.viewer .ph-only,body.viewer .over-flag{display:none!important}
 body.viewer .wrap{grid-template-columns:minmax(0,1fr);max-width:900px;margin:0 auto}
 body.viewer .wrap .view{display:block!important;position:static;max-height:none;overflow:visible}
 body.viewer .page.over{box-shadow:0 1px 3px rgba(0,0,0,.12),0 8px 28px rgba(0,0,0,.12)}
@@ -322,10 +326,15 @@ table.sc tr.sep td{border-top:1px solid var(--p-rule)}
   <div class="acts">
     <button class="main" id="bPdf" type="button"><span class="d-only">Scarica</span>PDF</button>
     <button id="bShare" type="button">Condividi</button>
+    <button id="bArch" class="d-only" type="button">Le mie schede</button>
     <button id="bXls" class="d-only" type="button">Excel</button>
     <button id="bZip" class="d-only" type="button">Tutto (.zip)</button>
     <details class="menu" id="mDati"><summary class="btn" aria-label="Altri comandi">Dati</summary>
       <div class="pop">
+        <button id="bNuova" type="button">Nuova scheda</button>
+        <button id="bDup" type="button">Duplica questa scheda</button>
+        <button id="bArch2" class="m-only" type="button">Le mie schede</button>
+        <hr>
         <button id="bXls2" class="m-only" type="button">Scarica Excel</button>
         <button id="bZip2" class="m-only" type="button">Scarica tutto (.zip)</button>
         <button id="bJpg" type="button">Pagina 1 come immagine (per WhatsApp)</button>
@@ -343,6 +352,17 @@ table.sc tr.sep td{border-top:1px solid var(--p-rule)}
   </div>
 </header>
 <input type="file" id="fLoad" accept=".json,application/json" hidden>
+<div class="modal" id="mArch" hidden role="dialog" aria-modal="true" aria-labelledby="mArchT">
+  <div class="box">
+    <h2 id="mArchT">Le mie schede</h2>
+    <div id="archCode">
+      <p class="hint">Scegli un codice dell’archivio (almeno 8 caratteri) e usa lo stesso su tutti i tuoi dispositivi: con il codice vedi l’elenco delle tue schede e le modifichi da qualsiasi telefono o computer. Non darlo agli investitori.</p>
+      <div class="cp"><input id="codice" type="password" autocomplete="current-password" placeholder="Codice dell’archivio"><button type="button" id="bCodice">Apri l’archivio</button></div>
+    </div>
+    <div id="archList"></div>
+    <div class="acts" style="margin-top:12px"><button type="button" id="bNuova2">+ Nuova scheda</button><button type="button" id="bCodEsci">Cambia codice</button><button type="button" id="bArchClose">Chiudi</button></div>
+  </div>
+</div>
 <div class="modal" id="mShare" hidden role="dialog" aria-modal="true" aria-labelledby="mShareT">
   <div class="box">
     <h2 id="mShareT">Condividi la scheda</h2>
@@ -618,6 +638,7 @@ const IN_CLAUDE=!!(window.claude&&window.claude.use);
 const QS=new URLSearchParams(location.search);
 let SID=/^[0-9a-f-]{36}$/i.test(QS.get('s')||'')?QS.get('s').toLowerCase():null,EKEY=null,VER=0,MODE='local',dirty=false,saving=false,cloudT=null;
 const chiavi=()=>{try{return JSON.parse(localStorage.getItem('sc-chiavi')||'{}')||{}}catch(e){return{}}};
+let CODICE=(()=>{try{return localStorage.getItem('sc-codice')||''}catch(e){return''}})();
 const ricordaChiave=(id,k)=>{try{const o=chiavi();o[id]=k;localStorage.setItem('sc-chiavi',JSON.stringify(o))}catch(e){}};
 if(SID){const m=/[#&]k=([0-9a-f]{20,80})/i.exec(location.hash);
   if(m){EKEY=m[1].toLowerCase();ricordaChiave(SID,EKEY);try{history.replaceState(null,'',location.pathname+location.search)}catch(e){}}else EKEY=chiavi()[SID]||null;
@@ -630,7 +651,7 @@ let cloudTxt='',cloudCls='';
 function setCloud(t,c){cloudTxt=t;cloudCls=c||'';if(MODE==='view')$('pgInfo').textContent=t;const el=document.querySelector('#sum .cl');if(el){el.textContent=t;el.className='cl '+cloudCls}}
 const ora=()=>new Date().toLocaleTimeString('it-IT',{hour:'2-digit',minute:'2-digit'});
 async function salvaCloud(){if(MODE!=='edit'||saving||!dirty)return;saving=true;dirty=false;setCloud('Salvataggio…');
-  try{VER=await rpc('sc_salva',{p_id:SID,p_chiave:EKEY,p_dati:S,p_versione:VER});setCloud('Salvata alle '+ora(),'ok')}
+  try{VER=await rpc('sc_salva',{p_id:SID,p_chiave:EKEY,p_dati:S,p_versione:VER,p_codice:CODICE||null});setCloud('Salvata alle '+ora(),'ok')}
   catch(err){if(err.code==='40001'){await caricaCloud(true);status('La scheda era stata cambiata da un altro dispositivo: ho caricato l’ultima versione.')}
     else if(err.code==='42501'){MODE='view';document.body.classList.add('viewer');status('Questo browser non ha più la chiave di modifica: la scheda è in sola lettura.')}
     else{dirty=true;setCloud('Non salvata: riprovo','err');clearTimeout(cloudT);cloudT=setTimeout(salvaCloud,8000)}}
@@ -1406,7 +1427,7 @@ $('bShare').onclick=async()=>{
   if(IN_CLAUDE||location.protocol==='file:'){status('La condivisione funziona dal sito dello strumento: antoniodenuccio1995-a11y.github.io/Trading-sport/scheda/ — aprila da lì, carica i dati con “Carica dati salvati” e premi Condividi.');return}
   if(SID&&MODE==='edit'){if(dirty)await salvaCloud();apriShare();return}
   $('bShare').disabled=true;status('Preparo il link…');
-  try{const r=await rpc('sc_crea',{p_dati:S});const row=Array.isArray(r)?r[0]:r;SID=row.id;EKEY=row.chiave;VER=1;MODE='edit';ricordaChiave(SID,EKEY);
+  try{const r=await rpc('sc_crea',{p_dati:S,p_codice:CODICE||null});const row=Array.isArray(r)?r[0]:r;SID=row.id;EKEY=row.chiave;VER=1;MODE='edit';ricordaChiave(SID,EKEY);
     history.replaceState(null,'',location.pathname+'?s='+SID);setCloud('Salvata alle '+ora(),'ok');render();status('Scheda salvata online: da ora ogni modifica si salva da sola.');apriShare()}
   catch(err){status('Non riesco a creare il link ('+(err.message||err)+'). Controlla la connessione e riprova.')}
   finally{$('bShare').disabled=false}};
@@ -1415,10 +1436,56 @@ $('mShare').addEventListener('click',e=>{if(e.target===$('mShare'))$('mShare').h
   (navigator.clipboard?navigator.clipboard.writeText(inp.value):Promise.reject()).then(()=>{b.textContent='Copiato';setTimeout(()=>{b.textContent='Copia'},1500)}).catch(()=>{inp.select()})});
 document.addEventListener('keydown',e=>{if(e.key==='Escape')$('mShare').hidden=true});
 
+/* ---------- nuova scheda, duplica, archivio ---------- */
+function vuota(){const s=normalize(null),k=S;
+  Object.assign(s,{nome:'Nuova scheda',titolo:'Nome dell’immobile',claim:'Località',sottotitolo:'',descr:'',destinatario:'',foto:'',fotoCap:'',
+    dati:[{l:'Località',v:''},{l:'Alla vendita',v:''}],capitale:[{l:'Acquisto dell’immobile',v:0},{l:'Lavori',v:0},{l:'Progetto',v:0},{l:'Atto',v:0}],
+    composizione:[{l:'Abitazione',mq:0,pm:1000,corpo:0,cop:true}],comparabili:[],cmpTitolo:'Prezzi richiesti in zona',mediaZona:0,fonteZona:'',
+    galleria:s.galleria.map(g=>({...g,src:''})),verifiche:s.verifiche.map(v=>({...v,s:'da fare'})),
+    societa:k.societa,brand:k.brand,brandSub:k.brandSub,logo:k.logo,footer:k.footer,contatti:clone(k.contatti),colori:clone(k.colori),font:clone(k.font),gap:k.gap,layout:clone(k.layout),opt:clone(k.opt)});
+  return s}
+const online=()=>!IN_CLAUDE&&location.protocol!=='file:';
+async function nuova(dup){
+  const base=dup?clone(S):vuota();if(dup){base.nome=(S.nome||'Scheda')+' (copia)';base.destinatario=''}
+  if(online()&&CODICE){status(dup?'Creo la copia nel tuo archivio…':'Creo la nuova scheda nel tuo archivio…');
+    try{const r=await rpc('sc_crea',{p_dati:base,p_codice:CODICE});const row=Array.isArray(r)?r[0]:r;ricordaChiave(row.id,row.chiave);location.href=location.pathname+'?s='+row.id;return}
+    catch(err){status('Non riesco a creare la scheda online ('+(err.message||err)+').');return}}
+  try{localStorage.setItem(KEY,JSON.stringify(base))}catch(e){}
+  if(SID){location.href=location.pathname;return}
+  S=normalize(base);all();window.scrollTo({top:0});status((dup?'Copia creata':'Nuova scheda creata')+' in questo browser. Per salvarla online e condividerla premi Condividi.'+(online()?' Con il codice dell’archivio (“Le mie schede”) le nuove schede vanno subito online.':''))}
+function conferma(btn,testo,fn){if(btn.dataset.sure||(online()&&CODICE)){delete btn.dataset.sure;fn();return}
+  const t=btn.textContent;btn.dataset.sure=1;btn.textContent=testo;$('mDati').open=true;setTimeout(()=>{delete btn.dataset.sure;btn.textContent=t},4000)}
+$('bNuova').addEventListener('click',e=>{e.stopPropagation();conferma($('bNuova'),'Sostituisce la scheda di questo browser: tocca di nuovo',()=>nuova(false))});
+$('bDup').addEventListener('click',e=>{e.stopPropagation();conferma($('bDup'),'Sostituisce la scheda di questo browser: tocca di nuovo',()=>nuova(true))});
+$('bNuova2').onclick=()=>{$('mArch').hidden=true;nuova(false)};
+async function archivio(){$('mArch').hidden=false;const L2=$('archList');$('archCode').hidden=!!CODICE;$('bCodEsci').hidden=!CODICE;
+  if(!online()){L2.innerHTML='<p class="hint">L’archivio funziona dal sito dello strumento: antoniodenuccio1995-a11y.github.io/Trading-sport/scheda/</p>';$('archCode').hidden=true;return}
+  if(!CODICE){L2.innerHTML='';$('codice').focus();return}
+  L2.innerHTML='<p class="hint">Carico le tue schede…</p>';
+  try{const r=await rpc('sc_elenco',{p_codice:CODICE})||[];const fmt=d=>new Date(d).toLocaleString('it-IT',{day:'numeric',month:'short',year:'numeric',hour:'2-digit',minute:'2-digit'});
+    let h=r.length?r.map(x=>`<div class="arow ${x.id===SID?'cur':''}"><div><b>${esc(x.nome||x.titolo||'Scheda senza nome')}</b><small>${x.destinatario?'Per '+esc(x.destinatario)+' · ':''}aggiornata ${fmt(x.aggiornata)}</small></div><a class="btn" href="?s=${x.id}">Apri</a><button type="button" data-link="${x.id}">Copia link</button></div>`).join(''):'<p class="hint">Nessuna scheda in questo archivio. Premi “+ Nuova scheda” oppure, su una scheda già condivisa, “Aggiungi all’archivio”.</p>';
+    if(SID&&EKEY&&!r.some(x=>x.id===SID))h=`<div class="arow"><div><b>${esc(S.nome)}</b><small>La scheda aperta ora non è nell’archivio</small></div><button type="button" id="bCollega">Aggiungi all’archivio</button><span></span></div>`+h;
+    if(!SID)h=`<p class="hint">La scheda aperta ora è solo in questo browser: premi Condividi per salvarla online e metterla nell’archivio.</p>`+h;
+    L2.innerHTML=h}
+  catch(err){L2.innerHTML=`<p class="hint">Non riesco a leggere l’archivio (${esc(err.message||err)}).</p>`}}
+$('bArch').onclick=archivio;$('bArch2').onclick=archivio;
+$('bArchClose').onclick=()=>{$('mArch').hidden=true};
+$('bCodice').onclick=async()=>{const c=$('codice').value.trim();if(c.length<8){status('Il codice dell’archivio deve avere almeno 8 caratteri.');$('codice').focus();return}
+  CODICE=c;try{localStorage.setItem('sc-codice',c)}catch(e){}$('codice').value='';
+  if(SID&&MODE==='view'){try{if(await rpc('sc_verifica',{p_id:SID,p_chiave:null,p_codice:CODICE}))abilitaModifica()}catch(e){}}
+  archivio()};
+$('codice').addEventListener('keydown',e=>{if(e.key==='Enter')$('bCodice').click()});
+$('bCodEsci').onclick=()=>{CODICE='';try{localStorage.removeItem('sc-codice')}catch(e){}archivio()};
+$('mArch').addEventListener('click',async e=>{if(e.target===$('mArch')){$('mArch').hidden=true;return}
+  const l=e.target.closest('[data-link]');if(l){const u=location.origin+location.pathname+'?s='+l.dataset.link;(navigator.clipboard?navigator.clipboard.writeText(u):Promise.reject()).then(()=>{l.textContent='Copiato';setTimeout(()=>{l.textContent='Copia link'},1500)}).catch(()=>status('Link: '+u));return}
+  if(e.target.id==='bCollega'){try{await rpc('sc_collega',{p_id:SID,p_chiave:EKEY,p_codice:CODICE});status('Scheda aggiunta all’archivio.');archivio()}catch(err){status('Non riesco ad aggiungerla ('+(err.message||err)+').')}}});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')$('mArch').hidden=true});
+function abilitaModifica(){MODE='edit';document.body.classList.remove('viewer');$('wrap').dataset.tab='ed';$('tEd').setAttribute('aria-selected','true');$('tPv').setAttribute('aria-selected','false');lists();render();status('Questa scheda è nel tuo archivio: puoi modificarla.')}
+
 if(MODE==='view'){document.body.classList.add('viewer');$('wrap').dataset.tab='pv'}
 lists();render();
 if(document.fonts&&document.fonts.ready)document.fonts.ready.then(render);
-if(SID){status('Carico la scheda…');caricaCloud(true).then(()=>status('')).catch(err=>status(err.message||'Non riesco a caricare la scheda.'));
+if(SID){status('Carico la scheda…');caricaCloud(true).then(async()=>{status('');if(MODE==='view'&&CODICE){try{if(await rpc('sc_verifica',{p_id:SID,p_chiave:null,p_codice:CODICE}))abilitaModifica()}catch(e){}}}).catch(err=>status(err.message||'Non riesco a caricare la scheda.'));
   setInterval(controllaCloud,8000);document.addEventListener('visibilitychange',()=>{if(!document.hidden)controllaCloud()});
   window.addEventListener('beforeunload',e=>{if(MODE==='edit'&&(dirty||saving)){salvaCloud();e.preventDefault();e.returnValue=''}})}
 }

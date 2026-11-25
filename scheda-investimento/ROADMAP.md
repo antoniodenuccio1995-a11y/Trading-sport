@@ -16,6 +16,9 @@ Aggiornata al 25 novembre 2026. Fonti: richieste di Antonio, handoff, revisione 
 - Telefono: schede Modifica/Anteprima, riepilogo fisso, comandi grandi.
 - Perdita: resta all'investitore, la società prende la sua quota solo se c'è utile (da confermare nel contratto).
 
+- Condivisione: tasto Condividi, schede online su Supabase, link per l'investitore (sola lettura, si aggiorna da solo) e link per modificare.
+- Archivio "Le mie schede" con un codice personale valido su tutti i dispositivi; Nuova scheda e Duplica.
+
 ## Dati da completare per Casa Ruggiano (non dipendono dallo strumento)
 
 1. m² per tipologia (abitazione, giardino, parcheggio…).
@@ -27,7 +30,7 @@ Aggiornata al 25 novembre 2026. Fonti: richieste di Antonio, handoff, revisione 
 
 ## Prossimi sviluppi dello strumento (in ordine)
 
-1. **Archivio di più operazioni, sincronizzato tra telefono e computer.** Oggi i dati restano nel browser del dispositivo. Elenco delle schede, duplica, confronto tra operazioni. È anche la base dati del software 3D.
+1. **Permessi e cronologia (venerdì).** Accesso con password o account al posto del codice, più persone che modificano, cronologia delle versioni, eliminare o archiviare una scheda, sapere quando l'investitore apre il link. Confronto tra operazioni. È anche la base del software 3D.
 2. **"Chi siamo".** Profilo della società riutilizzabile: ragione sociale, sede, partita IVA, legame con DiSalento, studio di architettura collegato, operazioni concluse.
 3. **Linea del tempo e versamenti.** Fasi in mesi (compromesso, rogito, permessi, lavori, vendita), quando l'investitore paga cosa e a chi, cosa succede a 12, 18 e 24 mesi senza vendita.
 4. **Riserva imprevisti e "capitale massimo"** nel riquadro dell'investitore.
