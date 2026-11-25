@@ -367,9 +367,9 @@ table.sc tr.sep td{border-top:1px solid var(--p-rule)}
   <div class="box">
     <h2 id="mShareT">Condividi la scheda</h2>
     <p class="hint" id="shareInfo">Chi apre il link vede sempre l’ultima versione, su qualsiasi dispositivo.</p>
-    <label class="f" for="lnkView">Link per l’investitore: vede la scheda e scarica il PDF, non può modificarla</label>
+    <label class="f" for="lnkView">Link per l’investitore: vede la scheda e scarica il PDF, non può modificarla (nemmeno tu, se lo apri: è la sua vista)</label>
     <div class="cp"><input id="lnkView" readonly><button type="button" data-copy="lnkView">Copia</button></div>
-    <div class="acts"><a class="btn" id="waView" target="_blank" rel="noopener">Invia con WhatsApp</a><a class="btn" id="mailView">Invia per email</a></div>
+    <div class="acts"><a class="btn" id="waView" target="_blank" rel="noopener">Invia con WhatsApp</a><a class="btn" id="mailView">Invia per email</a><a class="btn" id="tryView" target="_blank" rel="noopener">Prova come l’investitore</a></div>
     <label class="f" for="lnkEdit">Link per modificare: solo per te, per esempio per lavorarci dal telefono</label>
     <div class="cp"><input id="lnkEdit" readonly><button type="button" data-copy="lnkEdit">Copia</button></div>
     <p class="hint" style="margin-top:6px">Chi ha il link per modificare può cambiare la scheda: non mandarlo agli investitori.</p>
@@ -643,6 +643,8 @@ const ricordaChiave=(id,k)=>{try{const o=chiavi();o[id]=k;localStorage.setItem('
 if(SID){const m=/[#&]k=([0-9a-f]{20,80})/i.exec(location.hash);
   if(m){EKEY=m[1].toLowerCase();ricordaChiave(SID,EKEY);try{history.replaceState(null,'',location.pathname+location.search)}catch(e){}}else EKEY=chiavi()[SID]||null;
   MODE=EKEY?'edit':'view'}
+/* link dell'investitore (&v=1): sempre in sola lettura, anche nel browser di chi ha la chiave */
+const SOLO=!!SID&&QS.get('v')==='1';if(SOLO)MODE='view';
 async function rpc(fn,body){const ctrl=new AbortController(),t=setTimeout(()=>ctrl.abort(),20000);
   try{const r=await fetch(`${CLOUD.url}/rest/v1/rpc/${fn}`,{method:'POST',signal:ctrl.signal,headers:{'Content-Type':'application/json',apikey:CLOUD.key},body:JSON.stringify(body)});
     const txt=await r.text();let j=null;try{j=txt?JSON.parse(txt):null}catch(e){}
@@ -1418,7 +1420,7 @@ $('bReset').onclick=()=>{const b=$('bReset');if(b.dataset.sure){S=normalize(null
   else{b.dataset.sure=1;b.textContent='Tocca di nuovo per confermare';$('mDati').open=true;setTimeout(()=>{delete b.dataset.sure;b.textContent='Ripristina l’esempio'},4000)}};
 $('bReset').addEventListener('click',e=>e.stopPropagation());
 
-function apriShare(){const base=location.origin+location.pathname,view=`${base}?s=${SID}`,edit=`${view}#k=${EKEY}`;
+function apriShare(){const base=location.origin+location.pathname,view=`${base}?s=${SID}&v=1`,edit=`${base}?s=${SID}#k=${EKEY}`;$('tryView').href=view;
   $('lnkView').value=view;$('lnkEdit').value=edit;
   const testo=`${S.titolo||S.nome}: la proposta di investimento. ${view}`;
   $('waView').href='https://wa.me/?text='+encodeURIComponent(testo);$('mailView').href='mailto:?subject='+encodeURIComponent('Proposta di investimento: '+(S.nome||''))+'&body='+encodeURIComponent(testo);
@@ -1463,7 +1465,7 @@ async function archivio(){$('mArch').hidden=false;const L2=$('archList');$('arch
   if(!CODICE){L2.innerHTML='';$('codice').focus();return}
   L2.innerHTML='<p class="hint">Carico le tue schede…</p>';
   try{const r=await rpc('sc_elenco',{p_codice:CODICE})||[];const fmt=d=>new Date(d).toLocaleString('it-IT',{day:'numeric',month:'short',year:'numeric',hour:'2-digit',minute:'2-digit'});
-    let h=r.length?r.map(x=>`<div class="arow ${x.id===SID?'cur':''}"><div><b>${esc(x.nome||x.titolo||'Scheda senza nome')}</b><small>${x.destinatario?'Per '+esc(x.destinatario)+' · ':''}aggiornata ${fmt(x.aggiornata)}</small></div><a class="btn" href="?s=${x.id}">Apri</a><button type="button" data-link="${x.id}">Copia link</button></div>`).join(''):'<p class="hint">Nessuna scheda in questo archivio. Premi “+ Nuova scheda” oppure, su una scheda già condivisa, “Aggiungi all’archivio”.</p>';
+    let h=r.length?r.map(x=>`<div class="arow ${x.id===SID?'cur':''}"><div><b>${esc(x.nome||x.titolo||'Scheda senza nome')}</b><small>${x.destinatario?'Per '+esc(x.destinatario)+' · ':''}aggiornata ${fmt(x.aggiornata)}</small></div><a class="btn" href="?s=${x.id}">Apri</a><button type="button" data-link="${x.id}">Copia link investitore</button></div>`).join(''):'<p class="hint">Nessuna scheda in questo archivio. Premi “+ Nuova scheda” oppure, su una scheda già condivisa, “Aggiungi all’archivio”.</p>';
     if(SID&&EKEY&&!r.some(x=>x.id===SID))h=`<div class="arow"><div><b>${esc(S.nome)}</b><small>La scheda aperta ora non è nell’archivio</small></div><button type="button" id="bCollega">Aggiungi all’archivio</button><span></span></div>`+h;
     if(!SID)h=`<p class="hint">La scheda aperta ora è solo in questo browser: premi Condividi per salvarla online e metterla nell’archivio.</p>`+h;
     L2.innerHTML=h}
@@ -1472,12 +1474,12 @@ $('bArch').onclick=archivio;$('bArch2').onclick=archivio;
 $('bArchClose').onclick=()=>{$('mArch').hidden=true};
 $('bCodice').onclick=async()=>{const c=$('codice').value.trim();if(c.length<8){status('Il codice dell’archivio deve avere almeno 8 caratteri.');$('codice').focus();return}
   CODICE=c;try{localStorage.setItem('sc-codice',c)}catch(e){}$('codice').value='';
-  if(SID&&MODE==='view'){try{if(await rpc('sc_verifica',{p_id:SID,p_chiave:null,p_codice:CODICE}))abilitaModifica()}catch(e){}}
+  if(SID&&MODE==='view'&&!SOLO){try{if(await rpc('sc_verifica',{p_id:SID,p_chiave:null,p_codice:CODICE}))abilitaModifica()}catch(e){}}
   archivio()};
 $('codice').addEventListener('keydown',e=>{if(e.key==='Enter')$('bCodice').click()});
 $('bCodEsci').onclick=()=>{CODICE='';try{localStorage.removeItem('sc-codice')}catch(e){}archivio()};
 $('mArch').addEventListener('click',async e=>{if(e.target===$('mArch')){$('mArch').hidden=true;return}
-  const l=e.target.closest('[data-link]');if(l){const u=location.origin+location.pathname+'?s='+l.dataset.link;(navigator.clipboard?navigator.clipboard.writeText(u):Promise.reject()).then(()=>{l.textContent='Copiato';setTimeout(()=>{l.textContent='Copia link'},1500)}).catch(()=>status('Link: '+u));return}
+  const l=e.target.closest('[data-link]');if(l){const u=location.origin+location.pathname+'?s='+l.dataset.link+'&v=1';(navigator.clipboard?navigator.clipboard.writeText(u):Promise.reject()).then(()=>{l.textContent='Copiato';setTimeout(()=>{l.textContent='Copia link investitore'},1500)}).catch(()=>status('Link: '+u));return}
   if(e.target.id==='bCollega'){try{await rpc('sc_collega',{p_id:SID,p_chiave:EKEY,p_codice:CODICE});status('Scheda aggiunta all’archivio.');archivio()}catch(err){status('Non riesco ad aggiungerla ('+(err.message||err)+').')}}});
 document.addEventListener('keydown',e=>{if(e.key==='Escape')$('mArch').hidden=true});
 function abilitaModifica(){MODE='edit';document.body.classList.remove('viewer');$('wrap').dataset.tab='ed';$('tEd').setAttribute('aria-selected','true');$('tPv').setAttribute('aria-selected','false');lists();render();status('Questa scheda è nel tuo archivio: puoi modificarla.')}
@@ -1485,7 +1487,7 @@ function abilitaModifica(){MODE='edit';document.body.classList.remove('viewer');
 if(MODE==='view'){document.body.classList.add('viewer');$('wrap').dataset.tab='pv'}
 lists();render();
 if(document.fonts&&document.fonts.ready)document.fonts.ready.then(render);
-if(SID){status('Carico la scheda…');caricaCloud(true).then(async()=>{status('');if(MODE==='view'&&CODICE){try{if(await rpc('sc_verifica',{p_id:SID,p_chiave:null,p_codice:CODICE}))abilitaModifica()}catch(e){}}}).catch(err=>status(err.message||'Non riesco a caricare la scheda.'));
+if(SID){status('Carico la scheda…');caricaCloud(true).then(async()=>{status('');if(MODE==='view'&&CODICE&&!SOLO){try{if(await rpc('sc_verifica',{p_id:SID,p_chiave:null,p_codice:CODICE}))abilitaModifica()}catch(e){}}}).catch(err=>status(err.message||'Non riesco a caricare la scheda.'));
   setInterval(controllaCloud,8000);document.addEventListener('visibilitychange',()=>{if(!document.hidden)controllaCloud()});
   window.addEventListener('beforeunload',e=>{if(MODE==='edit'&&(dirty||saving)){salvaCloud();e.preventDefault();e.returnValue=''}})}
 }
