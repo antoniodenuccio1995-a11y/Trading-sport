@@ -4,12 +4,14 @@ Aggiornata al 25 novembre 2026. Fonti: richieste di Antonio, handoff, revisione 
 
 ## Fatto (versione attuale)
 
-- Impaginazione in 2 pagine A4: conti dell'operazione con la rivendita in testa, riquadro dell'investitore, motivi, dettaglio dei conti, divisione del ricavato, foto.
+- Impaginazione predefinita in 3 pagine A4, ariosa (pagina 1 proposta, pagina 2 conti e grafici, pagina 3 foto grandi e scenari); in alternativa 2 pagine più fitte.
+- Colori della scheda tutti modificabili (accento, riquadro investitore, secondo colore, quota società, costi, sfondo riquadri, testo), più i colori delle voci del capitale.
+- Titolo dei comparabili modificabile (non più fisso su Ruggiano).
 - Moduli: accendi/spegni, ordine, pagina 1–3, riga intera o mezza riga; avviso di pagina troppo piena. Impaginazioni pronte: 2 pagine compatta, 3 pagine con grafici accesi e foto grandi a pagina 3.
 - Grafici, tutti spegnibili: A dal prezzo all'utile (una riga, spento), B quanto riceve l'investitore al variare del prezzo (acceso), C dove va il capitale (spento; sfumatura salvia, terracotta, sabbia, colori diversi, o colore per voce), D prezzo al m² rispetto alla zona (dentro "Come stimiamo il prezzo", con media della zona e fonte modificabili).
 - Comparabili di zona, prove di stress (lavori più cari, vendita in ritardo) nella tabella scenari.
 - Chi incassa ogni voce del capitale e parti collegate; modulo "Verifiche e documenti".
-- Foto: copertina in pagina 1, galleria di 3 in fondo a pagina 2, planimetria senza ritaglio; logo.
+- Foto: copertina in pagina 1, galleria di 3 foto grandi a pagina 3 (o piccole in fondo a pagina 2 nella versione a 2 pagine), planimetria senza ritaglio; logo.
 - Download: PDF, Excel con formule, JSON, ZIP completo, pagina 1 in JPG per WhatsApp.
 - Telefono: schede Modifica/Anteprima, riepilogo fisso, comandi grandi.
 - Perdita: resta all'investitore, la società prende la sua quota solo se c'è utile (da confermare nel contratto).
