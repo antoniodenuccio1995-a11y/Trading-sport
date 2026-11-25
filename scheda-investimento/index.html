@@ -136,7 +136,7 @@ input[type=checkbox]{width:20px;height:20px;min-height:0;padding:0;accent-color:
 .page *{box-sizing:border-box}
 .ph{display:flex;justify-content:space-between;align-items:flex-end;gap:20px;padding-bottom:12px;border-bottom:1px solid var(--p-rule);flex:none}
 .ph .brand{display:flex;flex-direction:column;gap:3px}
-.ph .bn{font:400 25px/1 var(--serif);color:var(--p-ink);letter-spacing:-.005em}
+.ph .bn{font:400 25px/1 var(--serif);color:var(--p-title,var(--p-ink));letter-spacing:-.005em}
 .ph .bs{font-size:9px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--p-mute)}
 .ph img.logo{max-height:46px;max-width:220px;width:auto;height:auto;display:block}
 .ph .r{text-align:right;font-size:10px;color:var(--p-mute);line-height:1.45}
@@ -155,7 +155,7 @@ input[type=checkbox]{width:20px;height:20px;min-height:0;padding:0;accent-color:
 .cover{height:210px;border-radius:2px;background-color:#EFE8E0;background-size:cover;background-repeat:no-repeat}
 .cap{font-size:9.5px;color:var(--p-mute);margin-top:5px;letter-spacing:.02em}
 .hero .eyebrow{font-size:9.5px;font-weight:700;letter-spacing:.13em;text-transform:uppercase;color:var(--p-terra)}
-.hero .t1{font:400 38px/1.05 var(--serif);margin:8px 0 6px;letter-spacing:-.012em;color:var(--p-ink)}
+.hero .t1{font:400 38px/1.05 var(--serif);margin:8px 0 6px;letter-spacing:-.012em;color:var(--p-title,var(--p-ink))}
 .hero .t2{font:italic 400 16px/1.3 var(--serif);color:var(--p-mute)}
 .hero .lead{font-size:11.5px;line-height:1.6;color:#4A443E;margin:12px 0 0;max-width:470px}
 .dati{margin:0;display:grid;grid-template-columns:1fr;align-content:start}
@@ -202,7 +202,7 @@ input[type=checkbox]{width:20px;height:20px;min-height:0;padding:0;accent-color:
 .why span{font-size:10.5px;color:#5A534C;line-height:1.5}
 .note{font-size:10px;line-height:1.55;color:var(--p-mute);margin:0;max-width:600px}
 
-.t-p2{font:400 28px/1.1 var(--serif);margin:0 0 8px;letter-spacing:-.01em;color:var(--p-ink)}
+.t-p2{font:400 28px/1.1 var(--serif);margin:0 0 8px;letter-spacing:-.01em;color:var(--p-title,var(--p-ink))}
 .intro .lead{font-size:11.5px;line-height:1.6;color:#4A443E;margin:0;max-width:580px}
 table.tb{width:100%;border-collapse:collapse;font-size:10.8px;font-variant-numeric:tabular-nums}
 table.tb td,table.tb th{padding:5px 0;border-bottom:1px solid var(--p-line);vertical-align:baseline;font-size:10.8px}
@@ -417,10 +417,12 @@ table.sc tr.sep td{border-top:1px solid var(--p-rule)}
       </div>
     </div></details>
 
-    <details class="sec"><summary>Colori della scheda</summary><div class="in">
-      <p class="hint">Valgono per testi, riquadri, barre e grafici. I colori delle voci del capitale si scelgono in “Impiego del capitale”.</p>
+    <details class="sec"><summary>Colori e caratteri</summary><div class="in">
+      <div class="two"><div><label class="f" for="fTit">Carattere dei titoli e dei numeri</label><select id="fTit" data-k="font.titoli"></select></div>
+      <div><label class="f" for="fTxt">Carattere del testo</label><select id="fTxt" data-k="font.testo"></select></div></div>
+      <p class="hint" style="margin-top:10px">I colori valgono per testi, riquadri, barre e grafici. I colori delle voci del capitale si scelgono in “Impiego del capitale”.</p>
       <div class="cols" id="lCol"></div>
-      <button class="add" id="bColDef" type="button">Torna ai colori DiSalento</button>
+      <button class="add" id="bColDef" type="button">Torna a colori e caratteri DiSalento</button>
     </div></details>
     <details class="sec" id="secMod"><summary>Moduli e impaginazione</summary><div class="in">
       <p class="hint">Accendi o spegni i moduli e cambia l’ordine con le frecce: dal primo modulo di una pagina ↑ lo porta in fondo alla pagina precedente, dall’ultimo ↓ in cima alla successiva. “Spazio sopra” lo stacca da quello prima. Due moduli a mezza riga di seguito stanno affiancati.</p>
@@ -510,7 +512,7 @@ const ESEMPIO={societa:'Riquality',brand:'DiSalento',brandSub:'Case tipiche e di
   comparabili:[{l:'Casa indipendente con giardino',mq:210,prezzo:125000},{l:'Casa ristrutturata con piscina',mq:116,prezzo:270000}],
   stress:{lavori:20,mesi:18},mediaZona:0,fonteZona:'',gap:20,
   verifiche:[{l:'Titolo edilizio (permesso o SCIA)',s:'da fare'},{l:'Conformità urbanistica e catastale',s:'da fare'},{l:'Provenienza e ipoteche',s:'da fare'},{l:'Vincoli paesaggistici',s:'da fare'},{l:'Preventivo dei lavori firmato',s:'da fare'},{l:'Bozza di contratto',s:'da fare'}],documenti:'',
-  colori:{terra:'#A0583F',terraDk:'#8E4A34',sage:'#5B6B55',clay:'#CDB49B',grey:'#ABA59D',sand:'#F5F0EA',ink:'#2B2724'},cmpTitolo:'Prezzi richiesti a Ruggiano',
+  colori:{terra:'#A0583F',terraDk:'#8E4A34',sage:'#5B6B55',clay:'#CDB49B',grey:'#ABA59D',sand:'#F5F0EA',ink:'#2B2724',title:'#2B2724',mute:'#6A625A'},font:{titoli:'Noto Serif',testo:'Inter'},cmpTitolo:'Prezzi richiesti a Ruggiano',
   opt:{annuo:true,bozza:false,cmpGrafico:true,capPal:'salvia',galGrande:true},layout:LAYOUT3,layoutVer:3};
 /* testi dell’esempio precedente: se trovati invariati vengono aggiornati ai nuovi */
 const OLD_TXT={sottotitolo:'Proposta di acquisto, lavori e rivendita',claim:'Proposta di investimento · Ruggiano di Salve',
@@ -561,6 +563,8 @@ function normalize(o){
   for(const d of LAYOUT)if(!lay.some(b=>b.id===d.id))lay.push(clone(d));
   const HEX=/^#[0-9a-f]{6}$/i,dc=ESEMPIO.colori,uc=s.colori||{};s.colori={};for(const k in dc)s.colori[k]=HEX.test(uc[k]||'')?uc[k]:dc[k];
   if(typeof s.cmpTitolo!=='string')s.cmpTitolo=ESEMPIO.cmpTitolo;
+  const FN=['Noto Serif','Playfair Display','Cormorant Garamond','Lora','Libre Baskerville','DM Serif Display','Inter','Lato','Montserrat','Source Sans 3','Nunito Sans','Open Sans'],uf=s.font||{};
+  s.font={titoli:FN.includes(uf.titoli)?uf.titoli:'Noto Serif',testo:FN.includes(uf.testo)?uf.testo:'Inter'};
   if(o.layoutVer!==3){lay=clone(LAYOUT3);s.opt.galGrande=true;s.layoutVer=3}
   s.layout=lay.map(b=>({id:b.id,p:Math.min(3,Math.max(1,+b.p||1)),w:b.w==='half'?'half':'full',on:b.on!==false,sp:Math.min(3,Math.max(0,+b.sp||0))}));
   s.gap=Math.min(40,Math.max(10,+s.gap||20));
@@ -955,7 +959,7 @@ function cascataCompatta(d) {
     ', utile ' + euro(c.utile) + ', all’investitore ' + euro(c.investitore)) + o.join('') + '</svg>';
 }
 
-return {cascata:cascataCompatta,prezzi:graficoPrezzi,capitale:graficoCapitale,mq:graficoMetroQuadro,set:function(o){for(var k in o)COL[k]=o[k]}};
+return {cascata:cascataCompatta,prezzi:graficoPrezzi,capitale:graficoCapitale,mq:graficoMetroQuadro,set:function(o){for(var k in o)COL[k]=o[k]},font:function(serif,sans){SERIF=serif;SANS=sans}};
 })();
 const PAL={salvia:['#3E4D38','#596953','#72836C','#8C9A86','#A4B39F'],terracotta:['#6E3424','#8E4A34','#A0583F','#BE7D63','#D9A891'],sabbia:['#6F5C47','#8F7860','#AD957B','#C9B39A','#E0CDB8'],misto:['#5B6B55','#A0583F','#CDB49B','#6E8496','#ABA59D']};
 const capCol=(r,i)=>/^#[0-9a-f]{6}$/i.test(r.col||'')?r.col:(PAL[S.opt.capPal]||PAL.salvia)[i%5];
@@ -968,11 +972,21 @@ const W_FULL=682,W_HALF=329;
 
 /* ---------- moduli della scheda ---------- */
 const COL={costi:'#ABA59D',cap:'#5B6B55',inv:'#A0583F',riq:'#CDB49B'};
-const COLORI={terra:'#A0583F',terraDk:'#8E4A34',sage:'#5B6B55',clay:'#CDB49B',grey:'#ABA59D',sand:'#F5F0EA',ink:'#2B2724'};
-const COLORI_NOMI={terra:'Accento (titoletti, utile investitore)',terraDk:'Riquadro dell’investitore',sage:'Secondo colore (capitale, linee)',clay:'Quota della società',grey:'Costi di vendita',sand:'Sfondo dei riquadri',ink:'Testo e numeri'};
+const COLORI={terra:'#A0583F',terraDk:'#8E4A34',sage:'#5B6B55',clay:'#CDB49B',grey:'#ABA59D',sand:'#F5F0EA',ink:'#2B2724',title:'#2B2724',mute:'#6A625A'};
+const COLORI_NOMI={terra:'Accento (titoletti, utile investitore)',terraDk:'Riquadro dell’investitore',sage:'Secondo colore (capitale, linee)',clay:'Quota della società',grey:'Costi di vendita',sand:'Sfondo dei riquadri',ink:'Testo e numeri',title:'Titoli',mute:'Testo secondario e note'};
 function applyColors(){const k=S.colori;Object.assign(COL,{costi:k.grey,cap:k.sage,inv:k.terra,riq:k.clay});
-  GR.set({ink:k.ink,terra:k.terra,terraDk:k.terraDk,sage:k.sage,clay:k.clay,grey:k.grey,sand:k.sand});
-  return`--p-ink:${k.ink};--p-terra:${k.terra};--p-terra-dk:${k.terraDk};--p-sage:${k.sage};--p-clay:${k.clay};--p-grey:${k.grey};--p-sand:${k.sand}`}
+  GR.set({ink:k.ink,terra:k.terra,terraDk:k.terraDk,sage:k.sage,clay:k.clay,grey:k.grey,sand:k.sand,mute:k.mute});
+  const fs=FONTS[S.font.titoli]||FONTS['Noto Serif'],ft=FONTS[S.font.testo]||FONTS.Inter;loadFont(S.font.titoli);loadFont(S.font.testo);
+  GR.font(`'${S.font.titoli}', ${fs.f}`,`'${S.font.testo}', ${ft.f}`);
+  return`--p-ink:${k.ink};--p-terra:${k.terra};--p-terra-dk:${k.terraDk};--p-sage:${k.sage};--p-clay:${k.clay};--p-grey:${k.grey};--p-sand:${k.sand};--p-title:${k.title};--p-mute:${k.mute};--serif:'${S.font.titoli}', ${fs.f};--sans:'${S.font.testo}', ${ft.f}`}
+const FONTS={'Noto Serif':{q:'Noto+Serif:ital,wght@0,400;0,500;0,600;1,400',f:'Georgia, serif'},'Playfair Display':{q:'Playfair+Display:ital,wght@0,400;0,500;0,600;1,400',f:'Georgia, serif'},
+  'Cormorant Garamond':{q:'Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400',f:'Georgia, serif'},'Lora':{q:'Lora:ital,wght@0,400;0,500;0,600;1,400',f:'Georgia, serif'},
+  'Libre Baskerville':{q:'Libre+Baskerville:ital,wght@0,400;0,700;1,400',f:'Georgia, serif'},'DM Serif Display':{q:'DM+Serif+Display:ital@0;1',f:'Georgia, serif'},
+  'Inter':{q:'Inter:wght@400;500;600;700',f:'Arial, sans-serif'},'Lato':{q:'Lato:wght@400;700',f:'Arial, sans-serif'},'Montserrat':{q:'Montserrat:wght@400;500;600;700',f:'Arial, sans-serif'},
+  'Source Sans 3':{q:'Source+Sans+3:wght@400;500;600;700',f:'Arial, sans-serif'},'Nunito Sans':{q:'Nunito+Sans:wght@400;600;700',f:'Arial, sans-serif'},'Open Sans':{q:'Open+Sans:wght@400;500;600;700',f:'Arial, sans-serif'}};
+const fontLoaded=new Set(['Noto Serif','Inter']);
+function loadFont(n){if(fontLoaded.has(n)||!FONTS[n])return;fontLoaded.add(n);const l=document.createElement('link');l.rel='stylesheet';l.href='https://fonts.googleapis.com/css2?family='+FONTS[n].q+'&display=swap';
+  l.onload=()=>{document.fonts.ready.then(()=>later())};document.head.appendChild(l)}
 const R={
   foto(){return S.foto?`<div class="cover" style="background-image:url('${imgURL(S.foto)}');background-position:${esc(S.fotoPos)}"></div>${S.fotoCap?`<div class="cap">${esc(S.fotoCap)}</div>`:''}`:{ph:`<div class="cover phbox" data-pick="cover">Tocca qui o trascina la foto di copertina.<br>Senza foto, nel PDF questo spazio resta vuoto.</div>`}},
   hero(){return`<div class="hero">${S.claim?`<div class="eyebrow">${esc(S.claim)}</div>`:''}<h2 class="t1">${esc(S.titolo)}</h2>${S.sottotitolo?`<div class="t2">${esc(S.sottotitolo)}</div>`:''}${S.descr?`<p class="lead">${esc(S.descr)}</p>`:''}</div>`},
@@ -1139,6 +1153,8 @@ function lists(){
   Lx('lWhy','perche',(r,i)=>`<div class="row pp"><input aria-label="Titolo" data-l="perche.${i}.l" value="${esc(r.l)}"><input aria-label="Testo" data-l="perche.${i}.v" value="${esc(r.v)}"><button class="x" type="button" data-del="perche.${i}" aria-label="Rimuovi">×</button></div>`);
   for(const el of document.querySelectorAll('[data-k]')){const val=getK(el.dataset.k);el.value=el.dataset.n?fmtIn(num(val)):(val??'')}
   for(const el of document.querySelectorAll('[data-o]'))el.checked=!!S.opt[el.dataset.o];
+  $('fTit').innerHTML=Object.keys(FONTS).map(n=>`<option ${S.font.titoli===n?'selected':''}>${n}</option>`).join('');
+  $('fTxt').innerHTML=Object.keys(FONTS).map(n=>`<option ${S.font.testo===n?'selected':''}>${n}</option>`).join('');
   $('gapV').textContent=S.gap+' px';
   $('lCol').innerHTML=Object.keys(COLORI_NOMI).map(k=>`<label class="colr"><input type="color" data-k="colori.${k}" value="${esc(S.colori[k])}"><span>${esc(COLORI_NOMI[k])}</span></label>`).join('');
   slots();mods();
@@ -1173,7 +1189,7 @@ $('ed').addEventListener('click',e=>{const t=e.target.closest('button');if(!t)re
   else if(d.imgDel){setImg(d.imgDel,+d.i,'');return}
   else return;
   all();});
-$('bColDef').onclick=()=>{S.colori=clone(ESEMPIO.colori);all();status('Colori DiSalento ripristinati.')};
+$('bColDef').onclick=()=>{S.colori=clone(ESEMPIO.colori);S.font=clone(ESEMPIO.font);all();status('Colori e caratteri DiSalento ripristinati.')};
 $('bColReset').onclick=()=>{S.capitale.forEach(r=>delete r.col);all();status('Colori riportati alla sfumatura.')};
 $('bLayout').onclick=()=>{S.layout=clone(LAYOUT);S.opt.galGrande=false;all();status('Impaginazione a 2 pagine.')};
 $('bLayout3').onclick=()=>{S.layout=clone(LAYOUT3);S.opt.galGrande=true;all();status('Impaginazione a 3 pagine: grafici accesi e foto grandi a pagina 3.')};
