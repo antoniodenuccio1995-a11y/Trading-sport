@@ -2,7 +2,8 @@
 
 Generatore della scheda A4 (3 pagine, o 2 nella versione compatta) da proporre all'investitore (caso d'esempio: Casa Ruggiano).
 
-- **Strumento pubblicato:** https://claude.ai/artifact/TMGgnVNhbhrXBM3uCiTr9T
+- **Strumento (sito):** https://antoniodenuccio1995-a11y.github.io/Trading-sport/scheda/ (pubblicato da `main` con GitHub Pages; le schede condivise sono su Supabase, tabella `sc_schede`)
+- **Copia su claude.ai:** https://claude.ai/artifact/TMGgnVNhbhrXBM3uCiTr9T (senza condivisione: claude.ai non permette di collegarsi a Supabase)
 - **Sorgente:** [`index.html`](index.html). È il corpo della pagina: la pubblicazione come artifact aggiunge `<!doctype html>`, `<head>` e `<body>`.
 - **Versione precedente:** [`versione-1.html`](versione-1.html), conservata invariata.
 - **Roadmap:** [`ROADMAP.md`](ROADMAP.md).

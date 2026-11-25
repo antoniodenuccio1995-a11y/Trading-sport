@@ -1,3 +1,9 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex">
 <title>Scheda investimento DiSalento</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,6 +29,9 @@
   --accent:#A0583F;--accent-ink:#FFFFFF;--accent-text:#E3A184;--sage:#9DB094;
   --warn-bg:#33291F;--warn:#F0B27A;--ok-bg:#232B21;--ok:#A9C79B;--bad:#F08A7E;--chip:#2F2B27;color-scheme:dark}
 *{box-sizing:border-box}
+[hidden]{display:none!important}
+img{max-width:100%}
+:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
 body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 var(--sans);overflow-x:clip}
 body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--panel)}
 button,.btn{font:600 14px var(--sans);min-height:42px;padding:0 14px;border-radius:9px;border:1px solid var(--line);background:var(--panel);color:var(--ink);cursor:pointer;display:inline-flex;align-items:center;justify-content:center;gap:6px;text-decoration:none;white-space:nowrap}
@@ -129,6 +138,18 @@ input[type=checkbox]{width:20px;height:20px;min-height:0;padding:0;accent-color:
 .stagebox{position:relative}
 .stagebox.zoom{overflow-x:auto}
 .stage{transform-origin:top left;width:794px}
+.modal{position:fixed;inset:0;z-index:20;background:rgba(20,16,12,.45);display:flex;align-items:center;justify-content:center;padding:16px}
+.modal .box{background:var(--panel);color:var(--ink);border-radius:14px;max-width:540px;width:100%;padding:18px 18px 14px;box-shadow:0 20px 60px rgba(0,0,0,.3);max-height:calc(100vh - 32px);overflow:auto}
+.modal h2{font:500 20px/1.2 var(--serif);margin:0 0 6px}
+.cp{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:6px}
+.cp input{font-size:14px}
+.modal .acts{margin-top:8px}
+.cl{margin-left:auto;font-size:12px;color:var(--mute)}
+.cl.ok{color:var(--ok)}.cl.err{color:var(--bad)}
+body.viewer .ed,body.viewer .tabs,body.viewer #mDati,body.viewer #bXls,body.viewer #bZip,body.viewer #bShare,body.viewer .ph-only,body.viewer .over-flag{display:none!important}
+body.viewer .wrap{grid-template-columns:minmax(0,1fr);max-width:900px;margin:0 auto}
+body.viewer .wrap .view{display:block!important;position:static;max-height:none;overflow:visible}
+body.viewer .page.over{box-shadow:0 1px 3px rgba(0,0,0,.12),0 8px 28px rgba(0,0,0,.12)}
 .view.drag{outline:2px dashed var(--accent);outline-offset:-2px}
 
 /* ---------- FOGLIO A4 ---------- */
@@ -293,11 +314,14 @@ table.sc tr.sep td{border-top:1px solid var(--p-rule)}
 }
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
 </style>
+</head>
+<body>
 
 <header class="bar" id="bar">
   <div><h1>Scheda investimento</h1><small>Valori al lordo delle imposte · la scheda si ricalcola mentre scrivi</small></div>
   <div class="acts">
     <button class="main" id="bPdf" type="button"><span class="d-only">Scarica</span>PDF</button>
+    <button id="bShare" type="button">Condividi</button>
     <button id="bXls" class="d-only" type="button">Excel</button>
     <button id="bZip" class="d-only" type="button">Tutto (.zip)</button>
     <details class="menu" id="mDati"><summary class="btn" aria-label="Altri comandi">Dati</summary>
@@ -319,6 +343,19 @@ table.sc tr.sep td{border-top:1px solid var(--p-rule)}
   </div>
 </header>
 <input type="file" id="fLoad" accept=".json,application/json" hidden>
+<div class="modal" id="mShare" hidden role="dialog" aria-modal="true" aria-labelledby="mShareT">
+  <div class="box">
+    <h2 id="mShareT">Condividi la scheda</h2>
+    <p class="hint" id="shareInfo">Chi apre il link vede sempre l’ultima versione, su qualsiasi dispositivo.</p>
+    <label class="f" for="lnkView">Link per l’investitore: vede la scheda e scarica il PDF, non può modificarla</label>
+    <div class="cp"><input id="lnkView" readonly><button type="button" data-copy="lnkView">Copia</button></div>
+    <div class="acts"><a class="btn" id="waView" target="_blank" rel="noopener">Invia con WhatsApp</a><a class="btn" id="mailView">Invia per email</a></div>
+    <label class="f" for="lnkEdit">Link per modificare: solo per te, per esempio per lavorarci dal telefono</label>
+    <div class="cp"><input id="lnkEdit" readonly><button type="button" data-copy="lnkEdit">Copia</button></div>
+    <p class="hint" style="margin-top:6px">Chi ha il link per modificare può cambiare la scheda: non mandarlo agli investitori.</p>
+    <button class="add" id="bShareClose" type="button">Chiudi</button>
+  </div>
+</div>
 <input type="file" id="fImg" accept="image/*" hidden>
 <input type="file" id="fImgs" accept="image/*" multiple hidden>
 
@@ -572,10 +609,42 @@ function normalize(o){
   for(const k of ['dati','capitale','composizione','costiVendita','perche','comparabili','verifiche'])if(!Array.isArray(s[k]))s[k]=clone(ESEMPIO[k]);
   return s;
 }
+/* ---------- dove stanno i dati ----------
+   senza ?s= nel link: scheda di lavoro nel browser (come prima);
+   con ?s=<id>: scheda su Supabase. Chi ha la chiave di modifica (link con #k=, poi ricordata nel browser) modifica
+   e salva da solo; tutti gli altri vedono la scheda in sola lettura e ricevono gli aggiornamenti. */
+const CLOUD={url:'https://cqfxjvrpspvycocvxghv.supabase.co',key:'sb_publishable_VQS48ywRaUafRirZIyo5EQ_8KMjSDfm'};
+const IN_CLAUDE=!!(window.claude&&window.claude.use);
+const QS=new URLSearchParams(location.search);
+let SID=/^[0-9a-f-]{36}$/i.test(QS.get('s')||'')?QS.get('s').toLowerCase():null,EKEY=null,VER=0,MODE='local',dirty=false,saving=false,cloudT=null;
+const chiavi=()=>{try{return JSON.parse(localStorage.getItem('sc-chiavi')||'{}')||{}}catch(e){return{}}};
+const ricordaChiave=(id,k)=>{try{const o=chiavi();o[id]=k;localStorage.setItem('sc-chiavi',JSON.stringify(o))}catch(e){}};
+if(SID){const m=/[#&]k=([0-9a-f]{20,80})/i.exec(location.hash);
+  if(m){EKEY=m[1].toLowerCase();ricordaChiave(SID,EKEY);try{history.replaceState(null,'',location.pathname+location.search)}catch(e){}}else EKEY=chiavi()[SID]||null;
+  MODE=EKEY?'edit':'view'}
+async function rpc(fn,body){const ctrl=new AbortController(),t=setTimeout(()=>ctrl.abort(),20000);
+  try{const r=await fetch(`${CLOUD.url}/rest/v1/rpc/${fn}`,{method:'POST',signal:ctrl.signal,headers:{'Content-Type':'application/json',apikey:CLOUD.key},body:JSON.stringify(body)});
+    const txt=await r.text();let j=null;try{j=txt?JSON.parse(txt):null}catch(e){}
+    if(!r.ok){const e=new Error((j&&j.message)||('errore '+r.status));e.code=j&&j.code;throw e}return j}finally{clearTimeout(t)}}
+let cloudTxt='',cloudCls='';
+function setCloud(t,c){cloudTxt=t;cloudCls=c||'';if(MODE==='view')$('pgInfo').textContent=t;const el=document.querySelector('#sum .cl');if(el){el.textContent=t;el.className='cl '+cloudCls}}
+const ora=()=>new Date().toLocaleTimeString('it-IT',{hour:'2-digit',minute:'2-digit'});
+async function salvaCloud(){if(MODE!=='edit'||saving||!dirty)return;saving=true;dirty=false;setCloud('Salvataggio…');
+  try{VER=await rpc('sc_salva',{p_id:SID,p_chiave:EKEY,p_dati:S,p_versione:VER});setCloud('Salvata alle '+ora(),'ok')}
+  catch(err){if(err.code==='40001'){await caricaCloud(true);status('La scheda era stata cambiata da un altro dispositivo: ho caricato l’ultima versione.')}
+    else if(err.code==='42501'){MODE='view';document.body.classList.add('viewer');status('Questo browser non ha più la chiave di modifica: la scheda è in sola lettura.')}
+    else{dirty=true;setCloud('Non salvata: riprovo','err');clearTimeout(cloudT);cloudT=setTimeout(salvaCloud,8000)}}
+  finally{saving=false;if(dirty){clearTimeout(cloudT);cloudT=setTimeout(salvaCloud,1200)}}}
+async function caricaCloud(force){const r=await rpc('sc_leggi',{p_id:SID});const row=Array.isArray(r)?r[0]:r;
+  if(!row)throw new Error('Scheda non trovata: controlla il link.');
+  if(!force&&row.versione===VER)return false;S=normalize(row.dati);VER=row.versione;dirty=false;lists();render();
+  setCloud((MODE==='edit'?'Salvata':'Aggiornata')+' alle '+new Date(row.aggiornata).toLocaleTimeString('it-IT',{hour:'2-digit',minute:'2-digit'}),'ok');return true}
+async function controllaCloud(){if(!SID||document.hidden||saving||dirty)return;try{const v=await rpc('sc_versione',{p_id:SID});if(typeof v==='number'&&v!==VER){await caricaCloud(true);if(MODE==='view')status('Scheda aggiornata.')}}catch(e){}}
 let S;
-try{const raw=localStorage.getItem(KEY)||localStorage.getItem(OLDKEY);S=normalize(raw?JSON.parse(raw):null)}catch(e){S=normalize(null)}
+try{const raw=SID?null:(localStorage.getItem(KEY)||localStorage.getItem(OLDKEY));S=normalize(raw?JSON.parse(raw):null)}catch(e){S=normalize(null)}
 let saveT;
-const save=()=>{clearTimeout(saveT);saveT=setTimeout(()=>{try{localStorage.setItem(KEY,JSON.stringify(S))}catch(e){status('Le foto sono troppo pesanti per la memoria del browser: usa “Salva i dati (.json)” per non perderle.')}},350)};
+const save=()=>{if(SID){if(MODE==='edit'){dirty=true;setCloud('Modifiche da salvare…');clearTimeout(cloudT);cloudT=setTimeout(salvaCloud,1500)}return}
+  clearTimeout(saveT);saveT=setTimeout(()=>{try{localStorage.setItem(KEY,JSON.stringify(S))}catch(e){status('Le foto sono troppo pesanti per la memoria del browser: usa “Salva i dati (.json)” per non perderle.')}},350)};
 
 /* ---------- calcoli ---------- */
 const LAV_RE=/demoliz|ricostr|lavori|opere|ristruttur/i;
@@ -1082,7 +1151,8 @@ function render(){
 let rT;const later=()=>{clearTimeout(rT);rT=setTimeout(render,90)};
 
 function summary(c,over,n){
-  $('sum').innerHTML=`<span>Utile <b class="${c.utile<0?'neg':''}">${eur(c.utile)}</b></span><span>All’investitore <b class="${c.qi<0?'neg':''}">${eur(c.rientro)}</b> (${pct(c.rendInv)})</span><span>Pareggio <b>${eur(c.pareggio)}</b></span>`;
+  $('sum').innerHTML=`<span>Utile <b class="${c.utile<0?'neg':''}">${eur(c.utile)}</b></span><span>All’investitore <b class="${c.qi<0?'neg':''}">${eur(c.rientro)}</b> (${pct(c.rendInv)})</span><span>Pareggio <b>${eur(c.pareggio)}</b></span>${cloudTxt?`<span class="cl ${cloudCls}">${esc(cloudTxt)}</span>`:''}`;
+  if(MODE==='view'){$('pgInfo').textContent=cloudTxt;document.querySelector('.bar h1').textContent=S.nome||'Scheda investimento';return}
   $('pgInfo').innerHTML=over.length?`<span class="bad">Pagina ${over.join(' e ')} troppo piena</span>`:`${n} ${n===1?'pagina':'pagine'} A4 · tutto entra`;
 }
 
@@ -1327,7 +1397,31 @@ $('bReset').onclick=()=>{const b=$('bReset');if(b.dataset.sure){S=normalize(null
   else{b.dataset.sure=1;b.textContent='Tocca di nuovo per confermare';$('mDati').open=true;setTimeout(()=>{delete b.dataset.sure;b.textContent='Ripristina l’esempio'},4000)}};
 $('bReset').addEventListener('click',e=>e.stopPropagation());
 
+function apriShare(){const base=location.origin+location.pathname,view=`${base}?s=${SID}`,edit=`${view}#k=${EKEY}`;
+  $('lnkView').value=view;$('lnkEdit').value=edit;
+  const testo=`${S.titolo||S.nome}: la proposta di investimento. ${view}`;
+  $('waView').href='https://wa.me/?text='+encodeURIComponent(testo);$('mailView').href='mailto:?subject='+encodeURIComponent('Proposta di investimento: '+(S.nome||''))+'&body='+encodeURIComponent(testo);
+  $('mShare').hidden=false;$('lnkView').select()}
+$('bShare').onclick=async()=>{
+  if(IN_CLAUDE||location.protocol==='file:'){status('La condivisione funziona dal sito dello strumento: antoniodenuccio1995-a11y.github.io/Trading-sport/scheda/ — aprila da lì, carica i dati con “Carica dati salvati” e premi Condividi.');return}
+  if(SID&&MODE==='edit'){if(dirty)await salvaCloud();apriShare();return}
+  $('bShare').disabled=true;status('Preparo il link…');
+  try{const r=await rpc('sc_crea',{p_dati:S});const row=Array.isArray(r)?r[0]:r;SID=row.id;EKEY=row.chiave;VER=1;MODE='edit';ricordaChiave(SID,EKEY);
+    history.replaceState(null,'',location.pathname+'?s='+SID);setCloud('Salvata alle '+ora(),'ok');render();status('Scheda salvata online: da ora ogni modifica si salva da sola.');apriShare()}
+  catch(err){status('Non riesco a creare il link ('+(err.message||err)+'). Controlla la connessione e riprova.')}
+  finally{$('bShare').disabled=false}};
+$('bShareClose').onclick=()=>{$('mShare').hidden=true};
+$('mShare').addEventListener('click',e=>{if(e.target===$('mShare'))$('mShare').hidden=true;const b=e.target.closest('[data-copy]');if(!b)return;const inp=$(b.dataset.copy);
+  (navigator.clipboard?navigator.clipboard.writeText(inp.value):Promise.reject()).then(()=>{b.textContent='Copiato';setTimeout(()=>{b.textContent='Copia'},1500)}).catch(()=>{inp.select()})});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')$('mShare').hidden=true});
+
+if(MODE==='view'){document.body.classList.add('viewer');$('wrap').dataset.tab='pv'}
 lists();render();
 if(document.fonts&&document.fonts.ready)document.fonts.ready.then(render);
+if(SID){status('Carico la scheda…');caricaCloud(true).then(()=>status('')).catch(err=>status(err.message||'Non riesco a caricare la scheda.'));
+  setInterval(controllaCloud,8000);document.addEventListener('visibilitychange',()=>{if(!document.hidden)controllaCloud()});
+  window.addEventListener('beforeunload',e=>{if(MODE==='edit'&&(dirty||saving)){salvaCloud();e.preventDefault();e.returnValue=''}})}
 }
 </script>
+</body>
+</html>
