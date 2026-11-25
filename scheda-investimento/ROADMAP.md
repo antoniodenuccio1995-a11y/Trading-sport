@@ -5,7 +5,7 @@ Aggiornata al 25 novembre 2026. Fonti: richieste di Antonio, handoff, revisione 
 ## Fatto (versione attuale)
 
 - Impaginazione in 2 pagine A4: conti dell'operazione con la rivendita in testa, riquadro dell'investitore, motivi, dettaglio dei conti, divisione del ricavato, foto.
-- Moduli: accendi/spegni, ordine, pagina 1–3, riga intera o mezza riga; avviso di pagina troppo piena.
+- Moduli: accendi/spegni, ordine, pagina 1–3, riga intera o mezza riga; avviso di pagina troppo piena. Impaginazioni pronte: 2 pagine compatta, 3 pagine con grafici accesi e foto grandi a pagina 3.
 - Grafici, tutti spegnibili: A dal prezzo all'utile (una riga, spento), B quanto riceve l'investitore al variare del prezzo (acceso), C dove va il capitale (spento; sfumatura salvia, terracotta, sabbia, colori diversi, o colore per voce), D prezzo al m² rispetto alla zona (dentro "Come stimiamo il prezzo", con media della zona e fonte modificabili).
 - Comparabili di zona, prove di stress (lavori più cari, vendita in ritardo) nella tabella scenari.
 - Chi incassa ogni voce del capitale e parti collegate; modulo "Verifiche e documenti".

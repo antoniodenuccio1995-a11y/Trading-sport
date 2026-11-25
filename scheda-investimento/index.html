@@ -225,6 +225,10 @@ table.sc tr.pe td{color:var(--p-mute);font-style:italic}
 .gal{display:grid;grid-template-columns:repeat(var(--n,3),minmax(0,1fr));gap:12px}
 .gal .gi{aspect-ratio:16/9;border-radius:2px;background-color:#EFE8E0;background-size:cover;background-position:center;background-repeat:no-repeat}
 .gal .cap{margin-top:5px}
+.gal.big{grid-template-columns:1fr 1fr;gap:14px}
+.gal.big .gi{aspect-ratio:4/3}
+.gal.big .wide{grid-column:1/-1}
+.gal.big .wide .gi{aspect-ratio:21/9}
 .gal .gi.fit{background-size:contain;background-color:#fff;border:1px solid var(--p-line)}
 .cont{display:flex;flex-wrap:wrap;gap:6px 28px;align-items:baseline;font-size:11px;color:#4A443E}
 .cont .who{font:500 15px/1.2 var(--serif);color:var(--p-ink)}
@@ -334,6 +338,7 @@ table.sc tr.sep td{border-top:1px solid var(--p-rule)}
     <details class="sec" id="secFoto" open><summary>Foto, planimetria e logo</summary><div class="in">
       <p class="hint">Tocca un riquadro per scegliere un’immagine, trascinala qui sopra oppure incollala (Ctrl+V). Le immagini vengono ridotte in automatico.</p>
       <div id="slots"></div>
+      <label class="chk" style="margin-top:12px"><input type="checkbox" data-o="galGrande"> Galleria con foto grandi (adatta a una pagina dedicata)</label>
       <label class="f" for="fotoPos">Inquadratura della copertina</label>
       <select id="fotoPos" data-k="fotoPos"><option value="50% 20%">Parte alta</option><option value="50% 50%">Centro</option><option value="50% 80%">Parte bassa</option></select>
       <label class="f" for="fotoCap">Didascalia della copertina (facoltativa)</label><input id="fotoCap" data-k="fotoCap" placeholder="Es. Render del progetto">
@@ -409,7 +414,7 @@ table.sc tr.sep td{border-top:1px solid var(--p-rule)}
     <details class="sec" id="secMod"><summary>Moduli e impaginazione</summary><div class="in">
       <p class="hint">Accendi o spegni i moduli, cambia l’ordine con le frecce, spostali di pagina e scegli riga intera o mezza riga. Due moduli a mezza riga uno dopo l’altro stanno affiancati; uno da solo occupa la riga intera.</p>
       <div id="mods"></div>
-      <button class="add" id="bLayout" type="button">Ripristina l’impaginazione</button>
+      <div class="two"><button class="add" id="bLayout" type="button">2 pagine (compatta)</button><button class="add" id="bLayout3" type="button">3 pagine (grafici e foto grandi)</button></div>
     </div></details>
   </div>
 
@@ -429,7 +434,7 @@ const KEY='scheda-investimento-v2',OLDKEY='scheda-investimento-v1';
 
 /* ---------- etichette fisse della scheda ---------- */
 const L={
-  p1Etichetta:'Proposta di investimento',p2Etichetta:'Dettaglio dei conti',
+  p1Etichetta:'Proposta di investimento',p2Etichetta:'Dettaglio dei conti',p3Etichetta:'Foto e approfondimenti',
   opTitolo:'I conti dell’operazione',opRivendita:'Rivendita prevista',opCapitale:'Capitale investito',opCosti:'Costi di vendita',
   opUtile:'Utile stimato',opRend:'Rendimento totale, prima della divisione',opDurata:'Durata prevista',opPareggio:'Prezzo di pareggio',
   invTitolo:'La parte dell’investitore',invInveste:'Capitale da versare',invRiceve:'Riceve alla vendita',invGuadagno:'Guadagno stimato',
@@ -464,6 +469,13 @@ const LAYOUT=[{id:'foto',p:1,w:'full',on:true},{id:'hero',p:1,w:'half',on:true},
   {id:'intro',p:2,w:'full',on:true},{id:'capitale',p:2,w:'half',on:true},{id:'composizione',p:2,w:'half',on:true},{id:'grafA',p:2,w:'full',on:false},{id:'ripartizione',p:2,w:'full',on:true},
   {id:'grafB',p:2,w:'full',on:true},{id:'scenari',p:2,w:'full',on:false},{id:'grafC',p:2,w:'half',on:false},{id:'galleria',p:2,w:'full',on:true},{id:'contatti',p:2,w:'full',on:false},{id:'verifiche',p:2,w:'full',on:false},{id:'nota2',p:2,w:'full',on:true}];
 
+const LAYOUT3=[{id:'foto',p:1,w:'full',on:true},{id:'hero',p:1,w:'half',on:true},{id:'dati',p:1,w:'half',on:true},{id:'operazione',p:1,w:'half',on:true},
+  {id:'investitore',p:1,w:'half',on:true},{id:'perche',p:1,w:'full',on:true},{id:'nota',p:1,w:'full',on:true},
+  {id:'intro',p:2,w:'full',on:true},{id:'capitale',p:2,w:'half',on:true},{id:'composizione',p:2,w:'half',on:true},{id:'grafA',p:2,w:'full',on:true},
+  {id:'ripartizione',p:2,w:'full',on:true},{id:'grafB',p:2,w:'full',on:true},
+  {id:'galleria',p:3,w:'full',on:true},{id:'scenari',p:3,w:'full',on:true},{id:'grafC',p:3,w:'half',on:false},{id:'verifiche',p:3,w:'half',on:false},
+  {id:'contatti',p:3,w:'full',on:false},{id:'nota2',p:3,w:'full',on:true}];
+
 /* ---------- esempio ---------- */
 const ESEMPIO={societa:'Riquality',brand:'DiSalento',brandSub:'Case tipiche e di design',logo:'',nome:'Casa Ruggiano',titolo:'Casa Ruggiano',
   claim:'Ruggiano, frazione di Salve (Lecce)',sottotitolo:'Acquisto, lavori e rivendita in circa 12 mesi',
@@ -486,7 +498,7 @@ const ESEMPIO={societa:'Riquality',brand:'DiSalento',brandSub:'Case tipiche e di
   comparabili:[{l:'Casa indipendente con giardino',mq:210,prezzo:125000},{l:'Casa ristrutturata con piscina',mq:116,prezzo:270000}],
   stress:{lavori:20,mesi:18},mediaZona:0,fonteZona:'',
   verifiche:[{l:'Titolo edilizio (permesso o SCIA)',s:'da fare'},{l:'Conformità urbanistica e catastale',s:'da fare'},{l:'Provenienza e ipoteche',s:'da fare'},{l:'Vincoli paesaggistici',s:'da fare'},{l:'Preventivo dei lavori firmato',s:'da fare'},{l:'Bozza di contratto',s:'da fare'}],documenti:'',
-  opt:{annuo:true,bozza:false,cmpGrafico:true,capPal:'salvia'},layout:LAYOUT};
+  opt:{annuo:true,bozza:false,cmpGrafico:true,capPal:'salvia',galGrande:false},layout:LAYOUT};
 /* testi dell’esempio precedente: se trovati invariati vengono aggiornati ai nuovi */
 const OLD_TXT={sottotitolo:'Proposta di acquisto, lavori e rivendita',claim:'Proposta di investimento · Ruggiano di Salve',
   descr:'Compriamo la casa, demoliamo e ricostruiamo le parti da rifare e la rimettiamo in vendita con il progetto pronto. Le finiture le sceglie chi la compra.',
@@ -525,7 +537,7 @@ function normalize(o){
     for(const k in map)if(o.show[k]===false)s.layout.find(b=>b.id===map[k]).on=false;
     s.opt={annuo:o.show.annuo!==false}}
   delete s.show;
-  s.opt=Object.assign({annuo:true,bozza:false,cmpGrafico:true,capPal:'salvia'},s.opt||{});if(!['salvia','terracotta','sabbia','misto'].includes(s.opt.capPal))s.opt.capPal='salvia';
+  s.opt=Object.assign({annuo:true,bozza:false,cmpGrafico:true,capPal:'salvia',galGrande:false},s.opt||{});if(!['salvia','terracotta','sabbia','misto'].includes(s.opt.capPal))s.opt.capPal='salvia';
   s.stress=Object.assign({lavori:20,mesi:18},s.stress||{});
   if(typeof s.destinatario!=='string')s.destinatario='';
   s.contatti=Object.assign({nome:'',ruolo:'',tel:'',email:''},s.contatti||{});
@@ -978,7 +990,7 @@ const R={
   grafA(c){return`<div class="k">${esc(L.grafATit)}</div><div class="gr">${GR.cascata(Object.assign(gdati(c),{larghezza:W_FULL}))}</div>`},
   grafB(c){return`<div class="k">${esc(L.grafBTit)}</div><div class="gr">${GR.prezzi(Object.assign(gdati(c),{larghezza:W_FULL}))}</div>`},
   grafC(c,v,w){const d=gdati(c);return d.voci.length?`<div class="k">${esc(L.capTitolo)}</div><div class="gr">${GR.capitale(Object.assign(d,{larghezza:w==='half'?W_HALF:W_FULL}))}</div>`:''},
-  galleria(){const g=S.galleria.filter(x=>x.src);if(!g.length)return{ph:`<div class="k">${esc(L.galTitolo)}</div><div class="gal" style="--n:3">${S.galleria.map((x,i)=>`<div><div class="gi phbox" data-pick="gal" data-i="${i}">+ ${esc(x.cap||'Foto')}</div></div>`).join('')}</div>`};return g.length?`<div class="k">${esc(L.galTitolo)}</div><div class="gal" style="--n:${g.length===1?2:g.length}">${g.map(x=>`<div><div class="gi${x.fit?' fit':''}" style="background-image:url('${imgURL(x.src)}')"></div>${x.cap?`<div class="cap">${esc(x.cap)}</div>`:''}</div>`).join('')}</div>`:''},
+  galleria(){const g=S.galleria.filter(x=>x.src);if(!g.length)return{ph:`<div class="k">${esc(L.galTitolo)}</div><div class="gal" style="--n:3">${S.galleria.map((x,i)=>`<div><div class="gi phbox" data-pick="gal" data-i="${i}">+ ${esc(x.cap||'Foto')}</div></div>`).join('')}</div>`};const big=S.opt.galGrande;return g.length?`<div class="k">${esc(L.galTitolo)}</div><div class="gal${big?' big':''}" style="--n:${g.length===1?2:g.length}">${g.map((x,i)=>`<div class="${big&&i===0&&g.length%2?'wide':''}"><div class="gi${x.fit?' fit':''}" style="background-image:url('${imgURL(x.src)}')"></div>${x.cap?`<div class="cap">${esc(x.cap)}</div>`:''}</div>`).join('')}</div>`:''},
   contatti(){const k=S.contatti;if(!k.nome&&!k.tel&&!k.email)return'';return`<div class="k">${esc(L.contTitolo)}</div><div class="cont">${k.nome?`<div class="who">${esc(k.nome)}${k.ruolo?`<small>${esc(k.ruolo)}</small>`:''}</div>`:''}${k.tel?`<div>Tel. ${esc(k.tel)}</div>`:''}${k.email?`<div>${esc(k.email)}</div>`:''}</div>`},
   verifiche(){const it=S.verifiche.filter(x=>x.l);if(!it.length&&!S.documenti)return'';const lab={fatto:'Fatto','in corso':'In corso','da fare':'Da fare'};
     return`<div class="k">${esc(L.verTitolo)}</div><div class="ver">${it.map(x=>`<div><span class="pill ${x.s==='fatto'?'ok':x.s==='in corso'?'wip':''}">${lab[x.s]||'Da fare'}</span>${esc(x.l)}</div>`).join('')}</div>${S.documenti?`<p class="note" style="margin-top:8px"><b>${esc(L.verDoc)}:</b> ${esc(S.documenti)}</p>`:''}`},
@@ -1000,7 +1012,7 @@ function cmpHTML(c){
   ${k.map(x=>{const pm=num(x.prezzo)/num(x.mq);return`<tr><td>${esc(x.l)}<small>${eur(num(x.prezzo))} · ${mq(num(x.mq))}</small></td><td class="v">${eur(pm)}/m²${bar(pm)}</td></tr>`}).join('')}
   ${ours?`<tr class="ours"><td>${esc(L.cmpNostra)}<small>${eur(c.base)} · ${mq(c.mqCop)} ${esc(L.cmpCoperti)}</small></td><td class="v">${eur(ours)}/m²${bar(ours)}</td></tr>`:''}
   </table><p class="note" style="margin-top:5px">${esc(L.cmpNota)}</p></div>`}
-function head(p){const r=p===1?L.p1Etichetta:L.p2Etichetta;
+function head(p){const r=p===1?L.p1Etichetta:p===2?L.p2Etichetta:L.p3Etichetta;
   return`<div class="ph"><div class="brand">${S.logo?`<img class="logo" src="${imgURL(S.logo)}" alt="${esc(S.brand)}">`:`<div class="bn">${esc(S.brand)}</div>`}${S.brandSub?`<div class="bs">${esc(S.brandSub)}</div>`:''}</div>
   <div class="r"><div class="lb">${esc(r)}</div><div class="nm">${esc(S.nome)}</div>${S.destinatario?`<div>${esc(L.destLabel)} <span class="to">${esc(S.destinatario)}</span></div>`:''}${esc(S.data)}</div></div>`}
 
@@ -1034,7 +1046,7 @@ function summary(c,over,n){
 }
 
 function checks(c,over){const X=[];
-  for(const p of over)X.push(`La pagina ${p} è troppo piena: in “Moduli e impaginazione” sposta un modulo o mettilo a mezza riga, oppure accorcia un testo.`);
+  for(const p of over)X.push(`La pagina ${p} è troppo piena: in “Moduli e impaginazione” sposta un modulo, spegni un grafico o scegli l’impaginazione a 3 pagine.`);
   if(!S.costiVendita.some(r=>r.on))X.push('Nessun costo di vendita incluso: la provvigione d’agenzia (circa 3% + IVA) riduce l’utile.');
   if(!S.foto)X.push('Manca la foto di copertina: è la prima cosa che l’investitore guarda.');
   if(S.dati.some(d=>/\[.*\]/.test(d.v))||S.perche.some(d=>/\[.*\]/.test(d.v)))X.push('Ci sono ancora testi tra parentesi quadre da completare.');
@@ -1125,7 +1137,8 @@ $('ed').addEventListener('click',e=>{const t=e.target.closest('button');if(!t)re
   else return;
   all();});
 $('bColReset').onclick=()=>{S.capitale.forEach(r=>delete r.col);all();status('Colori riportati alla sfumatura.')};
-$('bLayout').onclick=()=>{S.layout=clone(LAYOUT);all();status('Impaginazione ripristinata.')};
+$('bLayout').onclick=()=>{S.layout=clone(LAYOUT);S.opt.galGrande=false;all();status('Impaginazione a 2 pagine.')};
+$('bLayout3').onclick=()=>{S.layout=clone(LAYOUT3);S.opt.galGrande=true;all();status('Impaginazione a 3 pagine: grafici accesi e foto grandi a pagina 3.')};
 
 /* ---------- immagini ---------- */
 let pickTarget=null;
