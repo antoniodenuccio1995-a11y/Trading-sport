@@ -1,0 +1,23 @@
+{
+  "name": "finanza-personale",
+  "private": true,
+  "version": "4.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "build:file": "tsc --noEmit && vite build --mode file && node scripts/single-file.mjs"
+  },
+  "dependencies": {
+    "preact": "10.29.8",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "@preact/preset-vite": "2.10.6",
+    "typescript": "5.9.3",
+    "vite": "7.3.7",
+    "vitest": "3.2.7"
+  }
+}
