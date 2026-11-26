@@ -5,13 +5,17 @@ import * as A from "../state/actions.ts";
 import { Icon } from "./icons.tsx";
 import { Toasts } from "./components/common.tsx";
 import { Dashboard } from "./views/Dashboard.tsx";
-import { Analysis } from "./views/Analysis.tsx";
-import { Movements } from "./views/Movements.tsx";
-import { BudgetView } from "./views/Budget.tsx";
-import { Accounts } from "./views/Accounts.tsx";
-import { ImportView } from "./views/Import.tsx";
-import { Rules } from "./views/Rules.tsx";
-import { SettingsView } from "./views/Settings.tsx";
+import { lazy, prefetchAll } from "./lazy.tsx";
+
+// Solo la Panoramica è nel pacchetto iniziale; le altre pagine arrivano a richiesta
+// e vengono comunque prescaricate appena il browser è libero.
+const Analysis = lazy(() => import("./views/Analysis.tsx"), "Analysis");
+const Movements = lazy<{ initialStatus?: "review" }>(() => import("./views/Movements.tsx"), "Movements");
+const BudgetView = lazy(() => import("./views/Budget.tsx"), "BudgetView");
+const Accounts = lazy(() => import("./views/Accounts.tsx"), "Accounts");
+const ImportView = lazy(() => import("./views/Import.tsx"), "ImportView");
+const Rules = lazy(() => import("./views/Rules.tsx"), "Rules");
+const SettingsView = lazy(() => import("./views/Settings.tsx"), "SettingsView");
 
 interface R { id: string; label: string; icon: string; title: string; sub?: string }
 const ROUTES: R[] = [
@@ -43,6 +47,7 @@ export function App() {
   const [save, setSave] = useState<{ state: string; message?: string; at?: Date }>({ state: "saved" });
   useEffect(() => subscribe(() => force((x) => x + 1)), []);
   useEffect(() => onSave(setSave), []);
+  useEffect(() => prefetchAll(), []);
   useEffect(() => {
     const h = () => { setRoute(routeOf()); window.scrollTo({ top: 0 }); };
     addEventListener("hashchange", h);

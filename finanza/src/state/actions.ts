@@ -5,9 +5,8 @@ import { applyRules, reprocess, rematchTransfers, ruleTextFrom, type BaseClassif
 import { isTransfer } from "../domain/categories.ts";
 import { getSnap, mutate, replace } from "./store.ts";
 import { emptySnapshot } from "./defaults.ts";
-import { parseBankFile, baseClassify as bankBase, dedupeKeys } from "../import/index.ts";
+import { baseClassify as bankBase } from "../import/base-classify.ts";
 import type { XLSXLike } from "../import/index.ts";
-import { fromLegacy, isLegacyBackup } from "../storage/legacy.ts";
 
 const base: BaseClassifier = (m, owners) => bankBase(m, owners);
 
@@ -27,7 +26,7 @@ export function loadXlsx(): Promise<XLSXLike> {
     if (embedded) w.XLSX ? resolve(w.XLSX) : reject(new Error("Lettore Excel non disponibile"));
   }));
 }
-export const prefetchXlsx = () => { void loadXlsx().catch(() => {}); };
+export const prefetchXlsx = () => { void import("../import/index.ts"); void loadXlsx().catch(() => {}); };
 
 // ---------- importazione estratti conto ----------
 export interface FileReport { file: string; account: string; added: number; dups: number; skipped: number; notes: string[]; error?: string }
@@ -41,21 +40,28 @@ function rowOf(m: Movement): ImportedRow {
 export async function importBankFiles(files: File[]): Promise<FileReport[]> {
   const s = getSnap();
   const needsXlsx = files.some((f) => /\.xlsx?$/i.test(f.name));
-  const xlsx = needsXlsx ? await loadXlsx() : undefined;
-  const known = new Set<string>();
-  for (const m of s.movements) for (const k of dedupeKeys(rowOf(m))) known.add(k);
+  // importatori caricati solo ora: non pesano sull'avvio
+  const [{ parseBankFile, dedupeKeys }, xlsx] = await Promise.all([import("../import/index.ts"), needsXlsx ? loadXlsx() : Promise.resolve(undefined)]);
+  // Conteggio per chiave: una riga è doppia solo se l'archivio ha già almeno tante righe
+  // con la stessa chiave quante ne ha visto finora questo file (due caffè uguali restano due).
+  const known = new Map<string, number>();
+  const bump = (m: Map<string, number>, k: string) => m.set(k, (m.get(k) ?? 0) + 1);
+  for (const m of s.movements) for (const k of dedupeKeys(rowOf(m))) bump(known, k);
   const reports: FileReport[] = [];
   const fresh: Movement[] = [];
   for (const f of files) {
     try {
       const res = await parseBankFile(f, { xlsx, ownerNames: s.settings.ownerNames });
       const importId = uid();
+      const seen = new Map<string, number>();
       let added = 0, dups = 0;
       for (const row of res.rows) {
         const keys = dedupeKeys(row);
-        if (keys.some((k) => known.has(k))) { dups++; continue; }
-        keys.forEach((k) => known.add(k));
-        const m = makeMovement({ ...row, ruleStatus: row.type || row.categoryId ? "import" : row.ruleStatus }, importId);
+        const dup = keys.some((k) => (seen.get(k) ?? 0) < (known.get(k) ?? 0));
+        keys.forEach((k) => bump(seen, k));
+        if (dup) { dups++; continue; }
+        keys.forEach((k) => bump(known, k));
+        const m = makeMovement({ ...row }, importId);
         applyRules(m, s.rules, base, s.settings.ownerNames);
         fresh.push(m); added++;
       }
@@ -171,9 +177,26 @@ export async function readBackup(file: File): Promise<{ snapshot: Snapshot; sour
   const data = JSON.parse(await file.text());
   if (data?.app === "finanza-personale" && data.snapshot?.schema === 4) return { snapshot: data.snapshot, source: "v4", report: [`${data.snapshot.movements.length} movimenti`] };
   if (data?.schema === 4 && Array.isArray(data.movements)) return { snapshot: data, source: "v4", report: [`${data.movements.length} movimenti`] };
+  const { fromLegacy, isLegacyBackup } = await import("../storage/legacy.ts");
   if (isLegacyBackup(data)) { const r = fromLegacy(data); return { snapshot: r.snapshot, source: "v3.10", report: r.report }; }
   throw new Error("File non riconosciuto: serve un backup JSON di Finanza Personale (v3.x o v4).");
 }
 export const applyBackup = (s: Snapshot) => replace(s);
+export const loadDemo = async () => { const { demoSnapshot } = await import("./demo.ts"); replace(demoSnapshot()); };
 export const resetAll = () => replace(emptySnapshot());
 export function updateSettings(patch: Partial<Snapshot["settings"]>) { mutate((s) => Object.assign(s.settings, patch)); }
+
+// ---------- budget e conti ----------
+/** Imposta il budget di una categoria: per un mese preciso oppure come valore predefinito di tutti i mesi. */
+export function setBudget(categoryId: string, value: number | null, month?: string) {
+  mutate((s) => {
+    const target = month ? (s.budgets.months[month] ??= {}) : s.budgets.default;
+    if (value == null || !Number.isFinite(value)) delete target[categoryId]; else target[categoryId] = Math.max(0, Math.round(value * 100) / 100);
+  });
+}
+export function copyBudgetMonth(from: string, to: string) {
+  mutate((s) => { s.budgets.months[to] = { ...s.budgets.default, ...(s.budgets.months[from] ?? {}) }; });
+}
+export function updateAccount(id: string, patch: Partial<import("../domain/types.ts").Account>) {
+  mutate((s) => { const a = s.accounts.find((x) => x.id === id); if (a) Object.assign(a, patch); });
+}

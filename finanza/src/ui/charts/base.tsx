@@ -49,7 +49,8 @@ export function niceTicks(min: number, max: number, count = 4): number[] {
   const mag = Math.pow(10, Math.floor(Math.log10(step0)));
   const step = [1, 2, 2.5, 5, 10].map((f) => f * mag).find((s) => s >= step0) ?? 10 * mag;
   const out: number[] = [];
-  for (let v = Math.floor(min / step) * step; v <= max + step * 0.001; v += step) out.push(Math.round(v * 1e6) / 1e6);
+  const lo = Math.floor(min / step + 1e-9) * step, hi = Math.ceil(max / step - 1e-9) * step;
+  for (let v = lo; v <= hi + step * 0.001; v += step) out.push(Math.round(v * 1e6) / 1e6);
   return out;
 }
 

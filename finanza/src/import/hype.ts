@@ -1,11 +1,10 @@
 // Hype: export CSV (a volte con estensione .xls) — importHypeCsv della v3.10.
-import type { ImportResult } from "../domain/types.ts";
 import { fnv, norm } from "../domain/movement.ts";
 import { parseBankAmount } from "./amounts.ts";
 import { parseDelimited } from "./csv.ts";
 import { dateOnly } from "./dates.ts";
 import { mentionsOwner } from "./owner.ts";
-import { at, finishRow, keepDate, noClass, outsideYearLabel, rawFrom, str, type ImportContext, type LegacyClass, type ParsedRow } from "./shared.ts";
+import { at, finishRow, hasValidDate, noClass, rawFrom, str, type ImportContext, type ParsedImport, type LegacyClass, type ParsedRow } from "./shared.ts";
 
 export const HYPE_ACCOUNT = "Hype";
 
@@ -13,7 +12,7 @@ export const HYPE_ACCOUNT = "Hype";
 export const isHypeHead = (h: string) =>
   h.includes("DATA OPERAZIONE") && h.includes("DATA CONTABILE") && h.includes("IBAN") && h.includes("TIPOLOGIA") && h.includes("NOME") && h.includes("DESCRIZIONE");
 
-export function parseHypeCsv(txt: string, ctx: ImportContext): ImportResult {
+export function parseHypeCsv(txt: string, ctx: ImportContext): ParsedImport {
   const rows = parseDelimited(txt, ",");
   if (!rows.length) throw new Error("CSV Hype vuoto");
   const heads = rows[0].map((x) => String(x).trim()), h = heads.map(norm);
@@ -29,7 +28,7 @@ export function parseHypeCsv(txt: string, ctx: ImportContext): ImportResult {
   for (const r of rows.slice(1)) {
     if (!r.some((x) => String(x ?? "").trim())) continue;
     const date = dateOnly(at(r, iOp) || "");
-    if (!keepDate(date, ctx)) { skipped++; continue; }
+    if (!hasValidDate(date)) { skipped++; continue; }
     const valueDate = dateOnly(at(r, iCont) || "");
     const type = str(at(r, iType));
     const name = str(at(r, iName));
@@ -75,6 +74,6 @@ export function parseHypeCsv(txt: string, ctx: ImportContext): ImportResult {
   }
 
   const notes = [`Diagnostica Hype · righe lette ${out.length} · candidati giroconto ${transferCandidates} · prelievi ${withdrawals} · anomalie input ${issues}`];
-  if (skipped) notes.push(`${skipped} righe escluse (${outsideYearLabel(ctx)}).`);
+  if (skipped) notes.push(`${skipped} righe escluse (senza data valida).`);
   return { account: HYPE_ACCOUNT, file: ctx.file, rows: out, skipped, notes };
 }

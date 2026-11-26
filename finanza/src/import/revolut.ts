@@ -1,11 +1,10 @@
 // Revolut: estratto conto CSV in italiano (importRevolutCsv della v3.10).
-import type { ImportResult } from "../domain/types.ts";
 import { norm } from "../domain/movement.ts";
 import { parseBankAmount } from "./amounts.ts";
 import { baseClassify } from "./base-classify.ts";
 import { parseCsv } from "./csv.ts";
 import { dateOnly } from "./dates.ts";
-import { at, finishRow, plural, type ImportContext, type ParsedRow } from "./shared.ts";
+import { at, finishRow, plural, type ImportContext, type ParsedImport, type ParsedRow } from "./shared.ts";
 
 export const REVOLUT_ACCOUNT = "Revolut";
 
@@ -13,7 +12,7 @@ export const REVOLUT_ACCOUNT = "Revolut";
 export const isRevolutHeader = (h: readonly string[]) =>
   h.includes("TIPO") && h.includes("DATA DI INIZIO") && h.includes("DESCRIZIONE") && h.includes("IMPORTO") && h.includes("STATE");
 
-export function parseRevolutCsv(txt: string, ctx: ImportContext): ImportResult {
+export function parseRevolutCsv(txt: string, ctx: ImportContext): ParsedImport {
   const rows = parseCsv(txt);
   if (!rows.length) throw new Error("CSV vuoto");
   const h = rows[0].map(norm);

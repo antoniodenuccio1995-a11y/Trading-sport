@@ -1,10 +1,9 @@
 // Trade Republic: export CSV delle transazioni (importTradeRepublicCsv della v3.10).
-import type { ImportResult } from "../domain/types.ts";
 import { norm } from "../domain/movement.ts";
 import { parseBankAmount } from "./amounts.ts";
 import { parseCsv } from "./csv.ts";
 import { dateOnly } from "./dates.ts";
-import { at, finishRow, keepDate, noClass, outsideYearLabel, rawFrom, str, type ImportContext, type LegacyClass, type ParsedRow } from "./shared.ts";
+import { at, finishRow, hasValidDate, noClass, rawFrom, str, type ImportContext, type ParsedImport, type LegacyClass, type ParsedRow } from "./shared.ts";
 
 export const TR_ACCOUNT = "Trade Republic";
 const REQUIRED = ["datetime", "date", "category", "type", "amount", "fee", "tax", "currency", "description", "transaction_id"];
@@ -21,7 +20,7 @@ export function trOptionalAmount(v: unknown): number {
   return Number.isFinite(p.value) ? p.value : 0;
 }
 
-export function parseTradeRepublicCsv(txt: string, ctx: ImportContext): ImportResult {
+export function parseTradeRepublicCsv(txt: string, ctx: ImportContext): ParsedImport {
   const rows = parseCsv(txt);
   if (!rows.length) throw new Error("CSV Trade Republic vuoto");
   const heads = rows[0].map((x) => String(x).trim()), h = heads.map(norm);
@@ -34,7 +33,7 @@ export function parseTradeRepublicCsv(txt: string, ctx: ImportContext): ImportRe
   for (const r of rows.slice(1)) {
     if (!r.some((x) => String(x ?? "").trim())) continue;
     const date = dateOnly(at(r, ix("date")) || at(r, ix("datetime")) || "");
-    if (!keepDate(date, ctx)) { skipped++; continue; }
+    if (!hasValidDate(date)) { skipped++; continue; }
 
     const sourceType = str(at(r, ix("type")));
     const sourceCategory = str(at(r, ix("category")));
@@ -90,6 +89,6 @@ export function parseTradeRepublicCsv(txt: string, ctx: ImportContext): ImportRe
     `Diagnostica Trade Republic · righe lette ${out.length} · giroconti ${transfers} · acquisti ${buys} · vendite ${sells} · dividendi ${dividends} · interessi ${interests} · fiscali ${taxes} · anomalie ${issues}`,
   ];
   if (unknown) notes.push(`${unknown} righe con tipo operazione non riconosciuto: da classificare.`);
-  if (skipped) notes.push(`${skipped} righe escluse (${outsideYearLabel(ctx)}).`);
+  if (skipped) notes.push(`${skipped} righe escluse (senza data valida).`);
   return { account: TR_ACCOUNT, file: ctx.file, rows: out, skipped, notes };
 }

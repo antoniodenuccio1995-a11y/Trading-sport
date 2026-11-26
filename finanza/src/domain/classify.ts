@@ -74,8 +74,7 @@ export function rematchTransfers(movements: Movement[]) {
     const k = x.type + "|" + Math.round(Math.abs(amountOf(x)) * 100);
     (idx.get(k) ?? idx.set(k, []).get(k)!).push(x);
   }
-  for (const m of transfers) {
-    if (used.has(m.id)) continue;
+  const cands = (m: Movement): Movement[] => {
     const target: MovementType = m.type === "transfer_in" ? "transfer_out" : "transfer_in";
     const t = day(dateOf(m));
     let c = (idx.get(target + "|" + Math.round(Math.abs(amountOf(m)) * 100)) ?? []).filter((x) =>
@@ -83,12 +82,23 @@ export function rematchTransfers(movements: Movement[]) {
       norm(x.account) !== norm(m.account) && Math.abs(day(dateOf(x)) - t) <= 5);
     if (m.counterparty) c = c.filter((x) => norm(x.account) === norm(m.counterparty));
     else c = c.filter((x) => !x.counterparty || norm(x.counterparty) === norm(m.account));
-    if (c.length === 1) {
-      const x = c[0];
+    return c;
+  };
+  // Abbinamento reciproco: solo se ciascuno è l'unico candidato dell'altro (indipendente dall'ordine).
+  // Si ripete finché nascono nuove coppie, perché abbinarne una può rendere univoche le altre.
+  for (let changed = true; changed;) {
+    changed = false;
+    for (const m of transfers) {
+      if (used.has(m.id)) continue;
+      const c = cands(m);
+      if (c.length !== 1) continue;
+      const x = c[0], back = cands(x);
+      if (back.length !== 1 || back[0].id !== m.id) continue;
       m.matchedTo = x.id; x.matchedTo = m.id; m.manualMatch = false; x.manualMatch = false;
       if (!m.counterparty) { m.counterparty = x.account; if (!m.lock) m.ruleStatus = "auto-match"; }
       if (!x.counterparty) { x.counterparty = m.account; if (!x.lock) x.ruleStatus = "auto-match"; }
       used.add(m.id); used.add(x.id);
+      changed = true;
     }
   }
 }

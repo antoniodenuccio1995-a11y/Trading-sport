@@ -1,12 +1,12 @@
 // Tinaba: export CSV separato da punto e virgola (importTinabaCsv della v3.10).
-import type { ImportResult, Split } from "../domain/types.ts";
+import type { Split } from "../domain/types.ts";
 import { norm, uid } from "../domain/movement.ts";
 import { parseItalianFormattedAmount, type ParsedAmount } from "./amounts.ts";
 import { parseDelimited } from "./csv.ts";
 import { dateOnly, isIsoDate } from "./dates.ts";
 import { categoryIdFromLegacy } from "./legacy-category.ts";
 import { mentionsOwner, ownerAfter } from "./owner.ts";
-import { at, finishRow, keepDate, noClass, outsideYearLabel, rawFrom, type ImportContext, type LegacyClass, type ParsedRow } from "./shared.ts";
+import { at, finishRow, hasValidDate, noClass, rawFrom, type ImportContext, type ParsedImport, type LegacyClass, type ParsedRow } from "./shared.ts";
 
 export const TINABA_ACCOUNT = "Tinaba";
 
@@ -37,7 +37,7 @@ const isDepositReturn = (amount: number, cat: string, desc: string) => {
 const round2 = (x: number) => Math.round(x * 100) / 100;
 const validSplit = (principal: number, interest: number) => principal > 0 && interest >= 0 && interest <= principal * 0.2;
 
-export function parseTinabaCsv(txt: string, ctx: ImportContext): ImportResult {
+export function parseTinabaCsv(txt: string, ctx: ImportContext): ParsedImport {
   const rows = parseDelimited(txt, ";");
   if (!rows.length) throw new Error("CSV Tinaba vuoto");
   const heads = rows[0].map((x) => String(x).trim()), h = heads.map(norm);
@@ -47,9 +47,10 @@ export function parseTinabaCsv(txt: string, ctx: ImportContext): ImportResult {
   const body = rows.slice(1);
 
   // Capitale del conto deposito, ricostruito dalle sottoscrizioni presenti nello stesso export.
-  // Con l'anno (come la v3.10): somma delle sottoscrizioni precedenti a quell'anno, che non
-  // vengono importate. Senza anno: per ogni rientro, sottoscrizioni precedenti meno il
-  // capitale già rientrato con i rientri precedenti.
+  // La v3.10 sommava le sottoscrizioni precedenti al 2026 (anno cablato). Qui, senza anno:
+  // per ogni rientro (in ordine di data) capitale disponibile = sottoscrizioni con data
+  // precedente − capitale già rientrato con i rientri precedenti. Con un solo ciclo
+  // sottoscrizione → rientro il risultato è lo stesso della v3.10.
   const subs: { date: string; amount: number }[] = [];
   for (const r of body) {
     const dt = dateOnly(at(r, ix("Data")) || "");
@@ -59,27 +60,21 @@ export function parseTinabaCsv(txt: string, ctx: ImportContext): ImportResult {
     }
   }
   const principalFor = new Map<string[], number>();
-  if (ctx.onlyYear !== undefined) {
-    const cutoff = `${ctx.onlyYear}-01-01`;
-    const fixed = subs.filter((s) => s.date < cutoff).reduce((t, s) => t + s.amount, 0);
-    for (const r of body) principalFor.set(r, fixed);
-  } else {
-    const returns = body
-      .map((r, i) => {
-        const date = dateOnly(at(r, ix("Data")) || ""), desc = at(r, ix("Descrizione")) || "", cat = at(r, ix("Categoria")) || "";
-        const msg = iMsg >= 0 ? at(r, iMsg) || "" : "";
-        const value = tinabaSignedAmount(at(r, ix("Importo")), desc, cat, msg).value;
-        return { r, i, date, value, ok: isIsoDate(date) && isDepositReturn(value, String(cat), String(desc)) };
-      })
-      .filter((x) => x.ok)
-      .sort((a, b) => (a.date < b.date ? -1 : a.date > b.date ? 1 : a.i - b.i));
-    let consumed = 0;
-    for (const x of returns) {
-      const available = Math.max(0, subs.filter((s) => s.date < x.date).reduce((t, s) => t + s.amount, 0) - consumed);
-      principalFor.set(x.r, available);
-      const principal = Math.min(available, x.value);
-      if (validSplit(principal, round2(x.value - principal))) consumed += principal;
-    }
+  const returns = body
+    .map((r, i) => {
+      const date = dateOnly(at(r, ix("Data")) || ""), desc = at(r, ix("Descrizione")) || "", cat = at(r, ix("Categoria")) || "";
+      const msg = iMsg >= 0 ? at(r, iMsg) || "" : "";
+      const value = tinabaSignedAmount(at(r, ix("Importo")), desc, cat, msg).value;
+      return { r, i, date, value, ok: isIsoDate(date) && isDepositReturn(value, String(cat), String(desc)) };
+    })
+    .filter((x) => x.ok)
+    .sort((a, b) => (a.date < b.date ? -1 : a.date > b.date ? 1 : a.i - b.i));
+  let consumed = 0;
+  for (const x of returns) {
+    const available = Math.max(0, subs.filter((s) => s.date < x.date).reduce((t, s) => t + s.amount, 0) - consumed);
+    principalFor.set(x.r, available);
+    const principal = Math.min(available, x.value);
+    if (validSplit(principal, round2(x.value - principal))) consumed += principal;
   }
 
   const out: ParsedRow[] = [];
@@ -89,7 +84,7 @@ export function parseTinabaCsv(txt: string, ctx: ImportContext): ImportResult {
     if (!r.some((x) => String(x ?? "").trim())) continue;
     const dtRaw = at(r, ix("Data")) || "";
     const date = dateOnly(dtRaw);
-    if (!keepDate(date, ctx)) { skipped++; continue; }
+    if (!hasValidDate(date)) { skipped++; continue; }
 
     const desc = at(r, ix("Descrizione")) || "";
     const cat = at(r, ix("Categoria")) || "";
@@ -120,8 +115,9 @@ export function parseTinabaCsv(txt: string, ctx: ImportContext): ImportResult {
       const principal = Math.min(principalFor.get(r) ?? 0, a);
       const interest = round2(a - principal);
       if (validSplit(principal, interest)) {
+        // Le quote sommano esattamente all'importo: capitale = importo − interessi (in centesimi).
         splits = [
-          { id: uid(), amount: principal, type: "transfer_in", categoryId: "", counterparty: "Tinaba Conto deposito", description: "Rientro capitale Conto deposito" },
+          { id: uid(), amount: round2(a - interest), type: "transfer_in", categoryId: "", counterparty: "Tinaba Conto deposito", description: "Rientro capitale Conto deposito" },
           { id: uid(), amount: interest, type: "income", categoryId: categoryIdFromLegacy("Investimenti / Dividendi", { type: "income" }), counterparty: "", description: "Interessi netti Conto deposito" },
         ];
         cls.status = "Tinaba: capitale + interessi";
@@ -143,6 +139,6 @@ export function parseTinabaCsv(txt: string, ctx: ImportContext): ImportResult {
   }
 
   const notes = [`Diagnostica Tinaba · righe lette ${out.length} · rientri deposito divisi in capitale e interessi ${depositSplits} · anomalie input ${issues}`];
-  if (skipped) notes.push(`${skipped} righe escluse (${outsideYearLabel(ctx)}).`);
+  if (skipped) notes.push(`${skipped} righe escluse (senza data valida).`);
   return { account: TINABA_ACCOUNT, file: ctx.file, rows: out, skipped, notes };
 }

@@ -1,10 +1,9 @@
 // Easy Bank: export .xlsx dei movimenti (importEasyBankXlsx della v3.10).
-import type { ImportResult } from "../domain/types.ts";
 import { fnv, norm } from "../domain/movement.ts";
 import { parseBankAmount } from "./amounts.ts";
 import { dateOnly } from "./dates.ts";
 import { mentionsOwner } from "./owner.ts";
-import { finishRow, isBlankRow, keepDate, outsideYearLabel, rawFrom, str, type ImportContext, type LegacyClass, type ParsedRow } from "./shared.ts";
+import { finishRow, isBlankRow, hasValidDate, rawFrom, str, type ImportContext, type ParsedImport, type LegacyClass, type ParsedRow } from "./shared.ts";
 import type { SheetInput } from "./workbook.ts";
 
 export const EASYBANK_ACCOUNT = "Easy Bank";
@@ -13,7 +12,7 @@ export const EASYBANK_ACCOUNT = "Easy Bank";
 export const isEasyBankProbe = (p: string) =>
   p.includes("CONTO O CARTA") && p.includes("CONTABILIZZAZIONE") && p.includes("OPERAZIONE") && p.includes("DETTAGLI") && p.includes("IMPORTO");
 
-export function parseEasyBankSheet({ matrix }: SheetInput, ctx: ImportContext): ImportResult {
+export function parseEasyBankSheet({ matrix }: SheetInput, ctx: ImportContext): ParsedImport {
   let hr = -1;
   for (let i = 0; i < Math.min(35, matrix.length); i++) {
     const n = matrix[i].map(norm);
@@ -35,7 +34,7 @@ export function parseEasyBankSheet({ matrix }: SheetInput, ctx: ImportContext): 
     const r = matrix[idx];
     if (isBlankRow(r)) continue;
     const date = dateOnly(r[iDate]);
-    if (!keepDate(date, ctx)) { skipped++; continue; }
+    if (!hasValidDate(date)) { skipped++; continue; }
 
     const op = str(r[iOp]), details = str(r[iDet]), bankCat = str(r[iCat]), account = str(r[iAcc]);
     const currency = String(r[iCur] || "EUR");
@@ -74,6 +73,6 @@ export function parseEasyBankSheet({ matrix }: SheetInput, ctx: ImportContext): 
   }
 
   const notes = [`Diagnostica Easy Bank · righe lette ${out.length} · giroconti ${selfTransfers} · scommesse ${gamePayments} · costi carta ${fees} · anomalie ${issues}`];
-  if (skipped) notes.push(`${skipped} righe escluse (${outsideYearLabel(ctx)}).`);
+  if (skipped) notes.push(`${skipped} righe escluse (senza data valida).`);
   return { account: EASYBANK_ACCOUNT, file: ctx.file, rows: out, skipped, notes };
 }

@@ -1,9 +1,8 @@
 // Poste Italiane: lista movimenti .xlsx (importPosteXlsx della v3.10).
-import type { ImportResult } from "../domain/types.ts";
 import { norm } from "../domain/movement.ts";
 import { parseBankAmount } from "./amounts.ts";
 import { dateOnly } from "./dates.ts";
-import { finishRow, isBlankRow, noClass, rawFrom, str, type ImportContext, type LegacyClass, type ParsedRow } from "./shared.ts";
+import { finishRow, isBlankRow, noClass, rawFrom, str, type ImportContext, type ParsedImport, type LegacyClass, type ParsedRow } from "./shared.ts";
 import type { SheetInput } from "./workbook.ts";
 
 export const POSTE_ACCOUNT = "Poste Italiane";
@@ -11,7 +10,7 @@ export const POSTE_ACCOUNT = "Poste Italiane";
 /** Riconoscimento sulle prime 30 righe (importOne). */
 export const isPosteProbe = (p: string) => p.includes("DATA VALUTA") && p.includes("DATA CONTABILE") && p.includes("IMPORTO (EURO)");
 
-export function parsePosteSheet({ matrix }: SheetInput, ctx: ImportContext): ImportResult {
+export function parsePosteSheet({ matrix }: SheetInput, ctx: ImportContext): ParsedImport {
   let hr = -1;
   for (let i = 0; i < Math.min(30, matrix.length); i++) {
     const n = matrix[i].map(norm);

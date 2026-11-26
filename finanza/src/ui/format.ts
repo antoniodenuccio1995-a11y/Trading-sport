@@ -42,7 +42,8 @@ export const addMonths = (ym: string, n: number) => {
 };
 /** Testo italiano → numero (accetta "1.234,56", "-12,5", "12.5"). */
 export const parseAmount = (s: string) => {
-  let t = String(s).trim().replace(/[€\s]/g, "");
+  let t = String(s ?? "").trim().replace(/[€\s]/g, "");
+  if (!t) return NaN;
   if (t.includes(",")) t = t.replace(/\./g, "").replace(",", ".");
   const n = Number(t);
   return Number.isFinite(n) ? n : NaN;

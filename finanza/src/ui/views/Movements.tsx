@@ -81,8 +81,8 @@ export function Movements({ initialStatus }: { initialStatus?: Status }) {
   return (
     <div class="stack enter">
       <div class="card flat" style={{ padding: "14px" }}>
-        <div class="row wrap" style={{ gap: "8px" }}>
-          <div style={{ position: "relative", flex: "1 1 260px" }}>
+        <div class="filters">
+          <div class="search" style={{ position: "relative" }}>
             <span style={{ position: "absolute", left: "11px", top: "9px", color: "var(--text-3)" }}><Icon name="search" size={17} /></span>
             <input class="input" style={{ width: "100%", paddingLeft: "36px" }} type="search" placeholder="Cerca descrizione, esercente, categoria o importo…"
               value={f.q} onInput={(e) => set({ q: (e.target as HTMLInputElement).value })} aria-label="Cerca movimenti" />
@@ -113,12 +113,13 @@ export function Movements({ initialStatus }: { initialStatus?: Status }) {
             </div>
           </details>
         </div>
-        <div class="row wrap" style={{ gap: "6px", marginTop: "10px" }}>
+        <div class="chips" style={{ marginTop: "10px" }}>
           {([["all", "Tutti"], ["review", "Da controllare"], ["uncat", "Senza categoria"], ["transfer", "Giroconti da abbinare"], ["split", "Divisi"], ["manual", "Modificati a mano"], ["trash", "Cestino"]] as [Status, string][]).map(([k, l]) => (
             <button key={k} class="chip" aria-pressed={f.status === k} onClick={() => set({ status: k })}>{l} <span class="n">{counts[k]}</span></button>
           ))}
           {active.length > 0 && <button class="chip" onClick={() => setF({ ...F0, q: f.q, status: f.status })}><Icon name="x" size={13} />Azzera filtri ({active.length})</button>}
-          <span class="spacer" style={{ flex: 1 }} />
+        </div>
+        <div class="row" style={{ marginTop: "8px", justifyContent: "flex-end" }}>
           <span class="faint" style={{ fontSize: "12px" }}>{list.length} movimenti · <span class="in money">+{eur(total.in)}</span> · <span class="money">−{eur(total.out)}</span></span>
         </div>
       </div>

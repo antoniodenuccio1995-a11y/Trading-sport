@@ -28,7 +28,7 @@ export function demoSnapshot(today = new Date()): Snapshot {
 
   for (let t = new Date(start); t <= end; t = D(t.getUTCFullYear(), t.getUTCMonth() + 1, 1)) {
     const y = t.getUTCFullYear(), m = t.getUTCMonth(), idx = (y - start.getUTCFullYear()) * 12 + m - start.getUTCMonth();
-    add("Banca Sella", D(y, m, 27), "STIPENDIO ACME SRL EMOLUMENTI MESE", 1890 + (idx > 8 ? 70 : 0), "income", "inc.salary");
+    add("Banca Sella", D(y, m, 27), "STIPENDIO ACME SRL EMOLUMENTI MESE", 2190 + (idx > 8 ? 90 : 0), "income", "inc.salary");
     if (m === 11) add("Banca Sella", D(y, m, 18), "TREDICESIMA ACME SRL", 1750, "income", "inc.salary");
     add("Banca Sella", D(y, m, 2), "BONIFICO AFFITTO APPARTAMENTO VIA ROMA", -520, "expense", "exp.housing");
     add("Banca Sella", D(y, m, 6), "ADDEBITO SDD WIND TRE MOBILE", -12.99, "expense", "exp.utilities");
@@ -39,8 +39,8 @@ export function demoSnapshot(today = new Date()): Snapshot {
     add("Banca Sella", D(y, m, 4), "PALESTRA FIT CLUB QUOTA MENSILE", -39, "expense", "exp.personal_care");
     if (m === 3) add("Revolut", D(y, m, 21), "AMAZON PRIME RINNOVO ANNUALE", -49.9, "expense", "exp.leisure");
     // giroconti e investimenti
-    for (const d of [3, 17]) {
-      const v = Math.round(220 + r() * 120);
+    for (const d of [5, 19]) {
+      const v = Math.round(470 + r() * 110);
       add("Banca Sella", D(y, m, d), "RICARICA REVOLUT CARTA", -v, "transfer_out", "", "Revolut");
       add("Revolut", D(y, m, d), "RICARICA DA MARIO ROSSI", v, "transfer_in", "", "Banca Sella");
     }
@@ -70,7 +70,8 @@ export function demoSnapshot(today = new Date()): Snapshot {
       add("Revolut", D(y, m, 6), "BOOKING.COM HOTEL", -412, "expense", "exp.travel");
     }
     if (m === 5 || m === 10) add("Banca Sella", D(y, m, 16), "PAGAMENTO F24 AGENZIA ENTRATE", amt(120, 260), "expense", "exp.taxes");
-    if (m === 9) add("Banca Sella", D(y, m, 12), "OFFICINA AUTO RIPARAZIONE FRIZIONE", -684, "expense", "exp.vehicle");
+    if (m === 9 && y === end.getUTCFullYear()) add("Banca Sella", D(y, m, 12), "OFFICINA AUTO RIPARAZIONE FRIZIONE", -684, "expense", "exp.vehicle");
+    if (m === 2 && y === end.getUTCFullYear()) add("Banca Sella", D(y, m, 20), "ASSICURAZIONE AUTO RCA", -412, "expense", "exp.vehicle");
     if (idx % 4 === 1) {
       add("Revolut", D(y, m, 13), "CENA ANTICIPATA PER LUCA", -64, "advance_out", "", "Luca");
       add("Revolut", D(y, m, 20), "PAGAMENTO DA LUCA BIANCHI", 64, "refund_in", "", "Luca");
@@ -81,6 +82,7 @@ export function demoSnapshot(today = new Date()): Snapshot {
   add("Banca Sella", new Date(end.getTime() - 6 * 86400000), "BONIFICO DA SIG. VERDI", 150, "");
   add("Revolut", new Date(end.getTime() - 2 * 86400000), "CENA ANTICIPATA PER LUCA", -48, "advance_out", "", "Luca");
 
+  s.budgets = { default: { "exp.housing": 520, "exp.groceries": 520, "exp.dining": 280, "exp.mobility": 140, "exp.utilities": 110, "exp.leisure": 70, "exp.clothing": 50, "exp.health": 40, "exp.personal_care": 45, "exp.travel": 80 }, months: {} };
   s.movements = out;
   rematchTransfers(s.movements);
   for (const a of s.accounts) a.initialBalance = ({ "Banca Sella": 3400, Revolut: 120, Cassa: 60, "Trade Republic": 0 } as Record<string, number>)[a.id] ?? 0;

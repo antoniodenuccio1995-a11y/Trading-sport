@@ -155,6 +155,8 @@ export interface ImportedRow {
   categoryId: string;
   counterparty: string;
   ruleStatus: RuleStatus;
+  /** Quote proposte dall'importatore (es. rientro deposito Tinaba = capitale + interessi). */
+  splits?: Split[];
 }
 
 export interface ImportResult {

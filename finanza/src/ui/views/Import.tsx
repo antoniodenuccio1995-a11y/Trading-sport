@@ -3,7 +3,6 @@ import type { MovementType, Snapshot } from "../../domain/types.ts";
 import { TYPE_LABEL } from "../../domain/categories.ts";
 import { getSnap } from "../../state/store.ts";
 import * as A from "../../state/actions.ts";
-import { demoSnapshot } from "../../state/demo.ts";
 import { CategoryPicker, Dialog, toast } from "../components/common.tsx";
 import { Icon } from "../icons.tsx";
 import { fullDate, parseAmount, todayIso } from "../format.ts";
@@ -71,7 +70,7 @@ export function ImportView() {
             <input ref={backupIn} type="file" accept=".json" hidden onChange={(e) => { const t = e.target as HTMLInputElement; if (t.files?.[0]) void openBackup(t.files[0]); t.value = ""; }} />
           </div>
           <p class="faint" style={{ fontSize: "12px", marginTop: "12px" }}>I dati restano solo in questo browser (IndexedDB). Esporta un backup ogni tanto e conservalo fuori dal computer.</p>
-          {!s.movements.length && <button class="btn sm" style={{ marginTop: "6px" }} onClick={() => { A.applyBackup(demoSnapshot()); toast("Dati dimostrativi caricati"); location.hash = "#/"; }}><Icon name="sparkles" />Prova con dati dimostrativi</button>}
+          {!s.movements.length && <button class="btn sm" style={{ marginTop: "6px" }} onClick={() => { void A.loadDemo().then(() => { toast("Dati dimostrativi caricati"); location.hash = "#/"; }); }}><Icon name="sparkles" />Prova con dati dimostrativi</button>}
         </div>
       </div>
 

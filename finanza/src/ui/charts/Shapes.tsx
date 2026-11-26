@@ -35,7 +35,7 @@ export function Donut({ segs, size = 190, thickness = 20, center, format }: { se
 }
 
 // ---------- sparkline ----------
-export function Spark({ values, color = "var(--accent)", height = 44, width = 140, area = true }: { values: number[]; color?: string; height?: number; width?: number; area?: boolean }) {
+export function Spark({ values, color = "var(--accent)", height = 44, width = 140, area = true, fluid = false }: { values: number[]; color?: string; height?: number; width?: number; area?: boolean; fluid?: boolean }) {
   if (values.length < 2) return <svg width={width} height={height} />;
   const min = Math.min(...values), max = Math.max(...values), span = max - min || 1;
   const X = (i: number) => (i / (values.length - 1)) * (width - 4) + 2;
@@ -43,11 +43,11 @@ export function Spark({ values, color = "var(--accent)", height = 44, width = 14
   const d = values.map((v, i) => (i ? "L" : "M") + X(i).toFixed(1) + "," + Y(v).toFixed(1)).join("");
   const id = "sp" + Math.abs(values.reduce((h, v) => (h * 31 + Math.round(v)) | 0, 7));
   return (
-    <svg class="chart" width={width} height={height} aria-hidden="true">
+    <svg class="chart" style={{ width: fluid ? "100%" : width + "px" }} width={fluid ? "100%" : width} height={height} viewBox={`0 0 ${width} ${height}`} preserveAspectRatio="none" aria-hidden="true">
       <defs><linearGradient id={id} x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color={color} stop-opacity=".28" /><stop offset="1" stop-color={color} stop-opacity="0" /></linearGradient></defs>
       {area && <path d={d + `L${X(values.length - 1)},${height}L${X(0)},${height}Z`} fill={`url(#${id})`} class="area-in" />}
-      <path d={d} fill="none" stroke={color} stroke-width="2" stroke-linecap="round" stroke-linejoin="round" pathLength={1} class="draw" />
-      <circle cx={X(values.length - 1)} cy={Y(values.at(-1)!)} r="3" fill={color} />
+      <path d={d} fill="none" stroke={color} stroke-width="2" stroke-linecap="round" stroke-linejoin="round" pathLength={1} class="draw" vector-effect="non-scaling-stroke" />
+      {!fluid && <circle cx={X(values.length - 1)} cy={Y(values.at(-1)!)} r="3" fill={color} />}
     </svg>
   );
 }
@@ -113,6 +113,7 @@ export function Heatmap({ days, end, weeks = 26, format, levels }: { days: Map<s
 
 // ---------- Sankey ----------
 export interface SNode { id: string; label: string; color: string; col?: number }
+const short = (s: string, n = 24) => (s.length > n ? s.slice(0, n - 1).trimEnd() + "…" : s);
 export interface SLink { source: string; target: string; value: number }
 export function Sankey({ nodes, links, height = 380, format }: { nodes: SNode[]; links: SLink[]; height?: number; format: (v: number) => string }) {
   const [ref, w] = useWidth<HTMLDivElement>();
@@ -133,7 +134,8 @@ export function Sankey({ nodes, links, height = 380, format }: { nodes: SNode[];
     const gap = 10, padT = 4;
     const k = Math.min(...cols.map((c) => (height - padT * 2 - gap * Math.max(0, c.length - 1)) / Math.max(1, c.reduce((s, n) => s + val(n.id), 0))));
     const pos = new Map<string, { x: number; y: number; h: number; c: number }>();
-    const nodeW = 12, labelRoom = w < 560 ? 70 : 140;
+    const lastChars = Math.max(8, ...cols[ncol - 1].map((n) => short(n.label).length + 8));
+    const nodeW = 12, labelRoom = Math.min(w < 560 ? 110 : 250, lastChars * 6.3 + 12);
     cols.forEach((c, ci) => {
       const total = c.reduce((s, n) => s + val(n.id), 0) * k + gap * Math.max(0, c.length - 1);
       let y = padT + (height - padT * 2 - total) / 2;
@@ -166,9 +168,9 @@ export function Sankey({ nodes, links, height = 380, format }: { nodes: SNode[];
           return (
             <g key={n.id} onPointerEnter={() => setHover({ kind: "n", id: n.id, x: p.x + 6, y: p.y })}>
               <rect x={p.x} y={p.y} width={layout.nodeW} height={p.h} rx="3" fill={n.color} style={{ animation: "fade 400ms var(--ease-out) both" }} />
-              {p.h >= 11 && (
+              {p.h >= 11 && (w >= 600 || last || p.c === 0) && (
                 <text x={last ? p.x + layout.nodeW + 6 : p.x + layout.nodeW + 6} y={p.y + p.h / 2 + 4} style={{ fill: "var(--text)", fontWeight: 600, paintOrder: "stroke", stroke: "var(--surface-1)", strokeWidth: 3 }}>
-                  {n.label} <tspan style={{ fill: "var(--text-3)", fontWeight: 500 }}>{format(layout.val(n.id))}</tspan>
+                  {short(n.label, last ? 24 : 18)} <tspan style={{ fill: "var(--text-3)", fontWeight: 500 }}>{format(layout.val(n.id))}</tspan>
                 </text>
               )}
             </g>

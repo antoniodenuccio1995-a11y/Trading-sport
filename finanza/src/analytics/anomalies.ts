@@ -143,10 +143,13 @@ export function findAnomalies(lines: readonly Line[], month: string, opts: Anoma
     }
   }
 
-  // Categorie con un totale mensile molto sopra la propria mediana.
+  // Categorie con un totale mensile molto sopra la propria mediana
+  // (non ripetute se il totale è spiegato per metà o più da righe già segnalate).
+  const flagged = new Map<string, number>();
+  for (const a of out) flagged.set(a.categoryId, (flagged.get(a.categoryId) ?? 0) + a.amount);
   if (available >= 3) {
     for (const [id, total] of catCurrent) {
-      if (total < 50) continue;
+      if (total < 50 || (flagged.get(id) ?? 0) >= 0.5 * total) continue;
       const hist = catMonthly.get(id);
       const months = Array.from({ length: available }, (_, i) => (hist ? hist[i] : 0));
       const med = median(months);

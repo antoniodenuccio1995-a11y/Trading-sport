@@ -1,20 +1,19 @@
 // Pezzi comuni agli importatori: contesto, accesso alle colonne, costruzione della riga.
-import type { ImportedRow, MovementType, RuleStatus, Split } from "../domain/types.ts";
+import type { ImportedRow, ImportResult, MovementType, RuleStatus, Split } from "../domain/types.ts";
 import { applySavePlan, importCategoryId } from "./legacy-category.ts";
 import { isIsoDate } from "./dates.ts";
 
-/** Riga prodotta dagli importatori. `splits` e `deferredWallet` passano a makeMovement così come sono. */
-export type ParsedRow = ImportedRow & { splits?: Split[]; deferredWallet?: boolean };
+/**
+ * Riga prodotta dagli importatori. `deferredWallet` (deposito Betfair/Sisal, come la migrazione
+ * v3.8.2 al salvataggio) non è in ImportedRow: passa a makeMovement con lo spread della riga.
+ */
+export type ParsedRow = ImportedRow & { deferredWallet?: boolean };
+/** ImportResult con le righe tipizzate come ParsedRow (assegnabile a ImportResult). */
+export interface ParsedImport extends ImportResult { rows: ParsedRow[] }
 
 export interface ImportContext {
   file: string;
   ownerNames: string[];
-  /**
-   * Se impostato, Trade Republic, Hype, Tinaba ed Easy Bank importano solo quell'anno
-   * (la v3.10 aveva il 2026 scritto nel codice). Se assente importano tutte le righe con
-   * una data valida.
-   */
-  onlyYear?: number;
 }
 
 /** Campi della riga che vengono dal file (sono quelli della firma e del dettaglio). */
@@ -35,12 +34,12 @@ export function rawFrom(heads: readonly string[], r: readonly unknown[]): Record
   return Object.fromEntries(heads.map((k, i) => [k || "COL_" + i, r[i] ?? ""]));
 }
 
-/** Filtro data degli importatori con anno (TR, Hype, Tinaba, Easy Bank). */
-export function keepDate(date: string, ctx: ImportContext): boolean {
-  return ctx.onlyYear !== undefined ? date.startsWith(ctx.onlyYear + "-") : isIsoDate(date);
-}
-export const outsideYearLabel = (ctx: ImportContext) =>
-  ctx.onlyYear !== undefined ? `fuori dal ${ctx.onlyYear} o senza data` : "senza data valida";
+/**
+ * Trade Republic, Hype, Tinaba ed Easy Bank: la v3.10 teneva solo le righe del 2026
+ * (anno scritto nel codice). Qui valgono tutti gli anni; restano escluse, e contate,
+ * solo le righe senza una data YYYY-MM-DD leggibile (che la v3.10 escludeva comunque).
+ */
+export const hasValidDate = (date: string) => isIsoDate(date);
 
 /**
  * Riga finale: categoria v3.8.2 dall'etichetta legacy, poi il piano di salvataggio v3.8.2

@@ -2,17 +2,16 @@
 // L'importo si legge dalla cella del foglio (valore .v E testo visualizzato .w)
 // per correggere il vecchio .xls Sella in cui 1.000,00 arriva come 1.
 import type { CellObject } from "xlsx";
-import type { ImportResult } from "../domain/types.ts";
 import { norm } from "../domain/movement.ts";
 import { parseSellaAmountCell, SELLA_UNREADABLE, SELLA_XLS_CORRECTED, SELLA_XLS_FROM_TEXT } from "./amounts.ts";
 import { baseClassify } from "./base-classify.ts";
 import { dateOnly } from "./dates.ts";
-import { finishRow, isBlankRow, rawFrom, str, type ImportContext, type ParsedRow } from "./shared.ts";
+import { finishRow, isBlankRow, rawFrom, str, type ImportContext, type ParsedImport, type ParsedRow } from "./shared.ts";
 import type { SheetInput } from "./workbook.ts";
 
 export const SELLA_ACCOUNT = "Banca Sella";
 
-export function parseSellaSheet({ xlsx, ws, matrix }: SheetInput, ctx: ImportContext): ImportResult {
+export function parseSellaSheet({ xlsx, ws, matrix }: SheetInput, ctx: ImportContext): ParsedImport {
   let hr = -1;
   for (let i = 0; i < Math.min(30, matrix.length); i++) {
     const n = matrix[i].map(norm);

@@ -1,6 +1,6 @@
 // Riconoscimento di abbonamenti, bollette e stipendi: stesso esercente, intervalli regolari, importi stabili.
 import type { Line } from "../domain/types.ts";
-import { addDays, addMonthsToDate, dayNum } from "./dates.ts";
+import { addDays, addMonthsToDate, dayNum, daysInMonth } from "./dates.ts";
 import { isExpenseLine, isIncomeLine } from "./common.ts";
 import { displayName } from "./format.ts";
 import { median, robustScale, round2 } from "./stats.ts";
@@ -120,15 +120,17 @@ function mostFrequent(values: readonly string[]): string {
   return best;
 }
 
-/** Unisce gli addebiti dello stesso giorno (occorrenze già ordinate per data). */
-function mergeSameDay(occs: Occ[]): Occ[] {
+/** Unisce gli addebiti dello stesso giorno (occorrenze già ordinate per data); copia solo ciò che modifica. */
+function mergeSameDay(occs: readonly Occ[]): Occ[] {
   const out: Occ[] = [];
+  let copied = -1;
   for (const o of occs) {
-    const last = out[out.length - 1];
-    if (last && last.date === o.date) {
-      last.amount += o.amount;
-      last.lineIds = last.lineIds.concat(o.lineIds);
-    } else out.push({ ...o });
+    const i = out.length - 1;
+    if (i >= 0 && out[i].day === o.day) {
+      if (copied !== i) { out[i] = { ...out[i], lineIds: out[i].lineIds.slice() }; copied = i; }
+      out[i].amount += o.amount;
+      for (const id of o.lineIds) out[i].lineIds.push(id);
+    } else out.push(o);
   }
   return out;
 }
@@ -179,7 +181,7 @@ function analyze(all: Occ[], merchant: string, direction: "in" | "out", today: s
   const lastOcc = occs[occs.length - 1];
   const last = lastOcc.amount;
   const recent = amounts.slice(-6);
-  const expectedAmount = strictOk ? last : median(recent);
+  const expectedAmount = strictOk && direction === "out" ? last : median(recent);
 
   let priceChange: PriceChange | null = null;
   if (direction === "out" && strictOk && n >= 3) {
@@ -192,7 +194,7 @@ function analyze(all: Occ[], merchant: string, direction: "in" | "out", today: s
     }
   }
 
-  const nextExpected = nextByCadence(lastOcc.date, best.id);
+  const nextExpected = nextDate(occs, best);
   const daysOverdue = dayNum(today) - dayNum(nextExpected);
   const status = daysOverdue <= best.grace ? "active" : daysOverdue <= best.endAfter ? "late" : "ended";
   const annualized = expectedAmount * best.perYear;
@@ -230,21 +232,43 @@ function analyze(all: Occ[], merchant: string, direction: "in" | "out", today: s
   };
 }
 
+/**
+ * Prossima data attesa. Per le cadenze a mesi il giorno è la mediana dei giorni del mese degli
+ * ultimi 3 addebiti (31/08, 30/09 -> 31/10; un addebito slittato dall'1 al 3 non sposta il successivo).
+ */
+function nextDate(occs: readonly Occ[], c: CadenceSpec): string {
+  const lastDate = occs[occs.length - 1].date;
+  const plain = nextByCadence(lastDate, c.id);
+  if (!c.months || occs.length < 3) return plain;
+  const anchor = Math.round(median(occs.slice(-3).map((o) => +o.date.slice(8, 10))));
+  const y = +plain.slice(0, 4), m = +plain.slice(5, 7);
+  const day = Math.min(anchor, daysInMonth(y, m));
+  const anchored = `${plain.slice(0, 8)}${day < 10 ? "0" : ""}${day}`;
+  return Math.abs(dayNum(anchored) - dayNum(plain)) <= Math.min(10, c.days / 3) ? anchored : plain;
+}
+
 /** Prova a separare per fascia di importo un esercente misto (es. abbonamento + acquisti sporadici). */
-function clusters(perParent: Occ[]): Occ[][] {
+function clusters(perParent: readonly Occ[]): Occ[][] {
   const byAmount = [...perParent].sort((a, b) => a.amount - b.amount);
   const out: Occ[][] = [];
   let cur: Occ[] = [];
+  const flush = () => {
+    // Fasce troppo ampie (catene di importi vicini) non possono essere un prezzo stabile.
+    if (cur.length >= 3 && cur[cur.length - 1].amount <= cur[0].amount * 1.35 + 0.5) out.push(cur);
+    cur = [];
+  };
   for (const o of byAmount) {
     const prev = cur[cur.length - 1];
-    if (prev && o.amount > prev.amount * 1.08 + 0.3) { out.push(cur); cur = []; }
+    if (prev && o.amount > prev.amount * 1.08 + 0.3) flush();
     cur.push(o);
   }
-  if (cur.length) out.push(cur);
-  return out.filter((c) => c.length >= 3);
+  flush();
+  return out;
 }
 
 const STATUS_ORDER = { active: 0, late: 1, ended: 2 } as const;
+
+interface Bucket { occs: Occ[]; split: Map<string, Occ> | null }
 
 /**
  * Abbonamenti, bollette e stipendi: raggruppa per esercente e segno, riconosce la
@@ -252,41 +276,49 @@ const STATUS_ORDER = { active: 0, late: 1, ended: 2 } as const;
  * Considera solo le righe con data ≤ today.
  */
 export function detectRecurring(lines: readonly Line[], today: string): RecurringItem[] {
-  const groups = new Map<string, Map<string, Occ>>();
+  // esercente -> [uscite, entrate]; le quote di uno stesso movimento diventano un solo addebito.
+  const groups = new Map<string, [Bucket | null, Bucket | null]>();
   for (const l of lines) {
     if (!l.merchant || l.date > today) continue;
     if (!isExpenseLine(l) && !isIncomeLine(l)) continue;
     if (Math.abs(l.amount) < 0.005) continue;
-    const key = l.merchant + (l.amount < 0 ? "|-" : "|+");
-    let g = groups.get(key);
-    if (!g) { g = new Map(); groups.set(key, g); }
-    const pid = l.parentId || l.id;
-    const o = g.get(pid);
+    let pair = groups.get(l.merchant);
+    if (!pair) { pair = [null, null]; groups.set(l.merchant, pair); }
+    const side = l.amount < 0 ? 0 : 1;
+    const b = pair[side] ?? (pair[side] = { occs: [], split: null });
     const part = Math.abs(l.amount);
-    if (o) {
-      if (part > o.maxPart) { o.maxPart = part; o.categoryId = l.categoryId; } // categoria della quota più grande
-      o.amount += part;
-      o.lineIds.push(l.id);
+    if (l.isSplit) {
+      const split = b.split ?? (b.split = new Map());
+      const pid = l.parentId || l.id;
+      const o = split.get(pid);
+      if (o) {
+        if (part > o.maxPart) { o.maxPart = part; o.categoryId = l.categoryId; } // categoria della quota più grande
+        o.amount += part;
+        o.lineIds.push(l.id);
+        continue;
+      }
+      const occ: Occ = { date: l.date, day: dayNum(l.date), amount: part, maxPart: part, lineIds: [l.id], categoryId: l.categoryId, account: l.account };
+      split.set(pid, occ);
+      b.occs.push(occ);
     } else {
-      g.set(pid, { date: l.date, day: 0, amount: part, maxPart: part, lineIds: [l.id], categoryId: l.categoryId, account: l.account });
+      b.occs.push({ date: l.date, day: dayNum(l.date), amount: part, maxPart: part, lineIds: [l.id], categoryId: l.categoryId, account: l.account });
     }
   }
   const out: RecurringItem[] = [];
-  const byDate = (a: Occ, b: Occ) => (a.date < b.date ? -1 : a.date > b.date ? 1 : 0);
-  for (const [key, g] of groups) {
-    if (g.size < 2) continue;
-    const merchant = key.slice(0, -2);
-    const direction = key.endsWith("+") ? "in" : "out";
-    const perParent = [...g.values()];
-    for (const o of perParent) o.day = dayNum(o.date);
-    const sorted = mergeSameDay([...perParent].sort(byDate));
-    const item = analyze(sorted, merchant, direction, today, null);
-    if (item) { out.push(item); continue; }
-    if (perParent.length < 6) continue;
-    for (const c of clusters(perParent)) {
-      const sub = mergeSameDay(c.sort(byDate));
-      const hit = analyze(sub, merchant, direction, today, String(Math.round(median(c.map((o) => o.amount)))));
-      if (hit) out.push(hit);
+  const byDay = (a: Occ, b: Occ) => a.day - b.day;
+  for (const [merchant, pair] of groups) {
+    for (let side = 0; side < 2; side++) {
+      const b = pair[side];
+      if (!b || b.occs.length < 2) continue;
+      const direction = side === 0 ? "out" : "in";
+      const perParent = b.occs;
+      const item = analyze(mergeSameDay([...perParent].sort(byDay)), merchant, direction, today, null);
+      if (item) { out.push(item); continue; }
+      if (perParent.length < 6) continue;
+      for (const c of clusters(perParent)) {
+        const hit = analyze(mergeSameDay(c.sort(byDay)), merchant, direction, today, String(Math.round(median(c.map((o) => o.amount)))));
+        if (hit) out.push(hit);
+      }
     }
   }
   out.sort((a, b) => STATUS_ORDER[a.status] - STATUS_ORDER[b.status] || b.monthly - a.monthly || a.merchant.localeCompare(b.merchant));
