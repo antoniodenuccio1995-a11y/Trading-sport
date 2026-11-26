@@ -15,16 +15,24 @@ let xlsxPromise: Promise<XLSXLike> | null = null;
 export function loadXlsx(): Promise<XLSXLike> {
   const w = globalThis as unknown as { XLSX?: XLSXLike };
   if (w.XLSX) return Promise.resolve(w.XLSX);
-  return (xlsxPromise ??= new Promise<XLSXLike>((resolve, reject) => {
+  const embedded = document.getElementById("xlsx-src");
+  if (embedded) { // file unico: libreria incorporata come testo, eseguita solo ora
     const s = document.createElement("script");
-    const embedded = document.getElementById("xlsx-src");
-    if (embedded) s.textContent = embedded.textContent; // file unico: libreria incorporata come testo, eseguita solo ora
-    else s.src = "./vendor/xlsx.full.min.js";
-    s.onload = () => (w.XLSX ? resolve(w.XLSX) : reject(new Error("Lettore Excel non disponibile")));
-    s.onerror = () => { xlsxPromise = null; reject(new Error("Impossibile caricare il lettore Excel")); };
+    s.textContent = embedded.textContent;
     document.head.appendChild(s);
-    if (embedded) w.XLSX ? resolve(w.XLSX) : reject(new Error("Lettore Excel non disponibile"));
-  }));
+    return w.XLSX ? Promise.resolve(w.XLSX) : Promise.reject(new Error("Lettore Excel non disponibile"));
+  }
+  const load = (src: string) => new Promise<XLSXLike>((resolve, reject) => {
+    const s = document.createElement("script");
+    s.src = src;
+    s.onload = () => (w.XLSX ? resolve(w.XLSX) : reject(new Error("Lettore Excel non disponibile")));
+    s.onerror = () => { s.remove(); reject(new Error("Impossibile caricare il lettore Excel")); };
+    document.head.appendChild(s);
+  });
+  // copia locale (sito); in una pagina ospitata senza la cartella vendor, la stessa versione da cdnjs
+  return (xlsxPromise ??= load("./vendor/xlsx.full.min.js")
+    .catch(() => load("https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"))
+    .catch((e) => { xlsxPromise = null; throw e; }));
 }
 export const prefetchXlsx = () => { void import("../import/index.ts"); void loadXlsx().catch(() => {}); };
 

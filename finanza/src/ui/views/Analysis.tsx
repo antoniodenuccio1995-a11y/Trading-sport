@@ -18,7 +18,7 @@ export function Analysis() {
   const setRange = (r: R) => { setRangeS(r); try { localStorage.setItem(KEY, r); } catch { /* ignora */ } };
   const [end, setEnd] = useState(D.currentMonth());
   const [cat, setCat] = useState<string | null>(null);
-  if (!s.movements.length) return <Empty icon="📊" title="Nessun dato da analizzare"><a class="btn primary" href="#/importa">Importa i movimenti</a></Empty>;
+  if (!s.movements.length) return <Empty icon="📊" title="Nessun dato da analizzare"><a class="btn primary" href="#importa">Importa i movimenti</a></Empty>;
   const sd = s.settings.monthStartDay || 1;
   const first = ms[0] ?? end;
   const startMonth = range === "all" ? first : range === "ytd" ? end.slice(0, 4) + "-01" : (() => { const i = ms.indexOf(end); return ms[Math.max(0, i - Number(range) + 1)] ?? first; })();

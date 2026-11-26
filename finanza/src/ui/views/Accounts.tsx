@@ -18,7 +18,7 @@ export function Accounts() {
   const [edit, setEdit] = useState<string | null>(null);
   const b = memo("balances.m", () => accountBalances(lines(), s.accounts, { granularity: "month", monthStartDay: 1 }));
   const adv = memo("advances", () => openAdvances(lines()));
-  if (!s.movements.length) return <Empty icon="🏦" title="Nessun conto con movimenti"><a class="btn primary" href="#/importa">Importa un estratto conto</a></Empty>;
+  if (!s.movements.length) return <Empty icon="🏦" title="Nessun conto con movimenti"><a class="btn primary" href="#importa">Importa un estratto conto</a></Empty>;
   const n = range === "all" ? b.keys.length : Math.min(b.keys.length, Number(range));
   const k0 = b.keys.length - n;
   const keys = b.keys.slice(k0);

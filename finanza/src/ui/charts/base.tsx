@@ -32,7 +32,7 @@ export function CountUp({ value, format, duration = 700, class: cls }: { value: 
     let raf = 0;
     const ease = (t: number) => 1 - Math.pow(2, -10 * t); // ease-out-expo
     const tick = (t: number) => {
-      const k = Math.min(1, (t - t0) / duration);
+      const k = Math.min(1, Math.max(0, (t - t0) / duration));
       el.textContent = format(from + (value - from) * (k >= 1 ? 1 : ease(k)));
       if (k < 1) raf = requestAnimationFrame(tick);
     };

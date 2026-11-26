@@ -30,10 +30,13 @@ const ROUTES: R[] = [
 ];
 const MOBILE = ["", "analisi", "movimenti", "budget", "importa"];
 
-const routeOf = () => location.hash.replace(/^#\/?/, "").split("?")[0];
+// Indirizzi semplici "#analisi" (accettati anche i vecchi "#/analisi"); "#panoramica" = pagina iniziale.
+const routeOf = () => { const r = location.hash.replace(/^#\/?/, "").split("?")[0]; return r === "panoramica" ? "" : r; };
+// Tema impostato da chi ospita la pagina (es. anteprima): con "automatico" lo si rispetta.
+const hostTheme = document.documentElement.dataset.theme;
 
 function go(id: string) {
-  const next = "#/" + id;
+  const next = "#" + (id || "panoramica");
   if (location.hash === next) return;
   const doc = document as Document & { startViewTransition?: (cb: () => void) => unknown };
   const reduce = document.documentElement.dataset.motion === "off" || matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -56,7 +59,9 @@ export function App() {
   const s = getSnap(), st = s.settings;
   useEffect(() => {
     const root = document.documentElement;
-    if (st.theme === "auto") delete root.dataset.theme; else root.dataset.theme = st.theme;
+    if (st.theme !== "auto") root.dataset.theme = st.theme;
+    else if (hostTheme) root.dataset.theme = hostTheme;
+    else delete root.dataset.theme;
     if (st.accent === "indaco") delete root.dataset.accent; else root.dataset.accent = st.accent;
     if (st.reduceMotion === "on") root.dataset.motion = "off"; else delete root.dataset.motion;
     document.body.classList.toggle("hide-amounts", st.hideAmounts);
@@ -100,7 +105,7 @@ export function App() {
         <header class="topbar">
           <div>
             <h1>{r.title}</h1>
-            {s.meta.demo && id === "" && <div class="sub">Dati dimostrativi · <a href="#/importa">importa i tuoi</a></div>}
+            {s.meta.demo && id === "" && <div class="sub">Dati dimostrativi · <a href="#importa">importa i tuoi</a></div>}
           </div>
           <span class="spacer" />
           {review > 0 && id !== "movimenti" && <button class="chip" onClick={() => go("controllo")}><Icon name="alert" size={14} />{review} da controllare</button>}

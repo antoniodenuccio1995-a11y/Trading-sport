@@ -37,6 +37,17 @@ src/ui         interfaccia Preact, grafici SVG scritti a mano, pagine
 
 Scelte per la velocità: solo la Panoramica è nel pacchetto iniziale, le altre pagine si scaricano quando il browser è libero; SheetJS (lettura Excel) si carica solo all'import; i calcoli si rifanno solo quando cambiano i dati; l'elenco movimenti disegna solo le righe visibili; nessun font da scaricare; grafici SVG senza librerie.
 
+### Velocità (Chromium, file unico aperto da disco)
+
+| | v3.10 | v4 |
+|---|---|---|
+| Apertura con 3.000 movimenti | 7,4 s | 0,12 s |
+| Apertura con 10.000 movimenti | 36 s | 0,20 s |
+| Ricerca nei movimenti (10.000) | 8,3 s | 0,02 s |
+| Cambio pagina (10.000) | 0,4–3,3 s | 30–75 ms |
+| Elementi nella pagina Movimenti (10.000) | 305.000 | ~400 |
+| JavaScript all'avvio | 713 KB + 882 KB di SheetJS bloccante | 45 KB compressi (sito) |
+
 Specifica e misure della v3.10: [docs/SPEC_v3.10.md](docs/SPEC_v3.10.md).
 
 ## Sviluppo

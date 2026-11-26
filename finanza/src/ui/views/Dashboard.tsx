@@ -28,7 +28,7 @@ export function Dashboard() {
     <div class="stack enter">
       <div class="grid g-hero">
         <div class="card hero">
-          <div class="row between"><span class="eyebrow">Patrimonio netto</span><a class="faint" href="#/conti" style={{ fontSize: "12px" }}>Conti →</a></div>
+          <div class="row between"><span class="eyebrow">Patrimonio netto</span><a class="faint" href="#conti" style={{ fontSize: "12px" }}>Conti →</a></div>
           <div class="big"><CountUp value={k.netWorth} format={eur} /></div>
           <div class="row wrap" style={{ gap: "8px", marginBottom: "6px" }}>
             <span class={"delta " + (k.netWorth >= nw12 ? "up" : "down")}>{k.netWorth >= nw12 ? "▲" : "▼"} {eur(Math.abs(k.netWorth - nw12))} in 12 mesi</span>
@@ -140,7 +140,7 @@ function WhereCard({ month }: { month: string }) {
   return (
     <div class="card">
       <div class="card-head"><div><h2>Dove vanno i soldi</h2><p class="hint">Uscite di {monthLabel(month)} per gruppo e prime categorie. Il segno verticale è la media degli ultimi 6 mesi.</p></div>
-        <a class="faint" href="#/analisi" style={{ fontSize: "12px", whiteSpace: "nowrap" }}>Analisi →</a></div>
+        <a class="faint" href="#analisi" style={{ fontSize: "12px", whiteSpace: "nowrap" }}>Analisi →</a></div>
       {b.total <= 0 ? <p class="faint">Nessuna uscita classificata in questo mese.</p> : (
         <div class="row wrap" style={{ gap: "20px", alignItems: "flex-start" }}>
           <Donut segs={segs} format={eur} size={176} center={<div><div class="faint" style={{ fontSize: "11.5px" }}>Uscite</div><div class="mid money" style={{ fontSize: "19px" }}>{eur(b.total)}</div></div>} />
@@ -170,8 +170,8 @@ function BudgetCard({ month }: { month: string }) {
   const items = [...b.items].sort((x, y) => y.pct - x.pct).slice(0, 5);
   return (
     <div class="card">
-      <div class="card-head"><div><h2>Budget</h2><p class="hint">{b.daysElapsed} giorni su {b.daysTotal}</p></div><a class="faint" href="#/budget" style={{ fontSize: "12px" }}>Gestisci →</a></div>
-      {!b.items.length ? <p class="faint">Nessun budget impostato per questo mese. <a href="#/budget">Imposta</a></p> : (
+      <div class="card-head"><div><h2>Budget</h2><p class="hint">{b.daysElapsed} giorni su {b.daysTotal}</p></div><a class="faint" href="#budget" style={{ fontSize: "12px" }}>Gestisci →</a></div>
+      {!b.items.length ? <p class="faint">Nessun budget impostato per questo mese. <a href="#budget">Imposta</a></p> : (
         <>
           <div class="row" style={{ gap: "14px", marginBottom: "14px" }}>
             <Ring pct={b.totals.pct ?? 0} size={58} stroke={7} color={color(b.totals.status)} />
@@ -200,7 +200,7 @@ function RecurringCard() {
   const next = [...rec].sort((a, b) => a.nextExpected.localeCompare(b.nextExpected)).slice(0, 6);
   return (
     <div class="card">
-      <div class="card-head"><div><h2>Ricorrenti</h2><p class="hint">{rec.length} addebiti periodici · circa {eur(monthly)} al mese</p></div><a class="faint" href="#/analisi?ricorrenti" style={{ fontSize: "12px" }}>Tutti →</a></div>
+      <div class="card-head"><div><h2>Ricorrenti</h2><p class="hint">{rec.length} addebiti periodici · circa {eur(monthly)} al mese</p></div><a class="faint" href="#analisi" style={{ fontSize: "12px" }}>Tutti →</a></div>
       {!next.length ? <p class="faint">Nessun addebito periodico riconosciuto (servono almeno 3 ripetizioni regolari).</p> : (
         <div class="list">
           {next.map((r) => (
@@ -244,7 +244,7 @@ function AccountsStrip() {
   const color = (id: string) => s.accounts.find((a) => a.id === id)?.color ?? "var(--s0)";
   return (
     <div class="card">
-      <div class="card-head"><h2>Conti</h2><a class="faint" href="#/conti" style={{ fontSize: "12px" }}>Dettagli →</a></div>
+      <div class="card-head"><h2>Conti</h2><a class="faint" href="#conti" style={{ fontSize: "12px" }}>Dettagli →</a></div>
       <div class="grid g-4" style={{ gap: "10px" }}>
         {acc.map((a) => (
           <div key={a.id} class="row between" style={{ padding: "10px 12px", borderRadius: "14px", background: "var(--surface-2)" }}>
@@ -267,7 +267,7 @@ function Welcome() {
       <div class="big" style={{ maxWidth: "680px" }}>Tutti i tuoi conti, in un colpo d'occhio.</div>
       <p class="muted" style={{ maxWidth: "620px", lineHeight: 1.6 }}>Importa gli estratti conto delle tue banche o il backup della versione precedente. I dati restano su questo dispositivo: nessun server, nessun account.</p>
       <div class="row wrap" style={{ gap: "10px", marginTop: "18px" }}>
-        <a class="btn primary" href="#/importa"><Icon name="upload" />Importa i tuoi dati</a>
+        <a class="btn primary" href="#importa"><Icon name="upload" />Importa i tuoi dati</a>
         <button class="btn" onClick={() => void A.loadDemo()}><Icon name="sparkles" />Esplora con dati dimostrativi</button>
       </div>
     </div>

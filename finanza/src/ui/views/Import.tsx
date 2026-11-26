@@ -70,7 +70,7 @@ export function ImportView() {
             <input ref={backupIn} type="file" accept=".json" hidden onChange={(e) => { const t = e.target as HTMLInputElement; if (t.files?.[0]) void openBackup(t.files[0]); t.value = ""; }} />
           </div>
           <p class="faint" style={{ fontSize: "12px", marginTop: "12px" }}>I dati restano solo in questo browser (IndexedDB). Esporta un backup ogni tanto e conservalo fuori dal computer.</p>
-          {!s.movements.length && <button class="btn sm" style={{ marginTop: "6px" }} onClick={() => { void A.loadDemo().then(() => { toast("Dati dimostrativi caricati"); location.hash = "#/"; }); }}><Icon name="sparkles" />Prova con dati dimostrativi</button>}
+          {!s.movements.length && <button class="btn sm" style={{ marginTop: "6px" }} onClick={() => { void A.loadDemo().then(() => { toast("Dati dimostrativi caricati"); location.hash = "#panoramica"; }); }}><Icon name="sparkles" />Prova con dati dimostrativi</button>}
         </div>
       </div>
 
@@ -108,7 +108,7 @@ export function ImportView() {
           {s.movements.length > 0 && !s.meta.demo && <p class="warn" style={{ fontSize: "13px" }}>I {s.movements.length} movimenti attuali verranno sostituiti. Esporta prima un backup se ti servono.</p>}
           <div class="row" style={{ gap: "8px", justifyContent: "flex-end" }}>
             {s.movements.length > 0 && !s.meta.demo && <button class="btn" onClick={A.exportBackup}>Esporta prima i dati attuali</button>}
-            <button class="btn primary" onClick={() => { const keepOwner = s.settings.ownerNames; A.applyBackup(backup.snapshot); if (keepOwner.length && !backup.snapshot.settings.ownerNames.length) A.updateSettings({ ownerNames: keepOwner }); setBackup(null); toast("Backup caricato"); location.hash = "#/"; }}>Carica</button>
+            <button class="btn primary" onClick={() => { const keepOwner = s.settings.ownerNames; A.applyBackup(backup.snapshot); if (keepOwner.length && !backup.snapshot.settings.ownerNames.length) A.updateSettings({ ownerNames: keepOwner }); setBackup(null); toast("Backup caricato"); location.hash = "#panoramica"; }}>Carica</button>
           </div>
         </Dialog>
       )}

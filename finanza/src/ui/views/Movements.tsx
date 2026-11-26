@@ -127,7 +127,7 @@ export function Movements({ initialStatus }: { initialStatus?: Status }) {
       <div class="card" style={{ padding: "8px" }}>
         {list.length === 0 ? (
           <Empty icon={s.movements.length ? "🔍" : "📥"} title={s.movements.length ? "Nessun movimento con questi filtri" : "Ancora nessun movimento"}>
-            {s.movements.length ? <button class="btn sm" onClick={() => setF({ ...F0 })}>Mostra tutto</button> : <a class="btn primary" href="#/importa">Importa un estratto conto</a>}
+            {s.movements.length ? <button class="btn sm" onClick={() => setF({ ...F0 })}>Mostra tutto</button> : <a class="btn primary" href="#importa">Importa un estratto conto</a>}
           </Empty>
         ) : (
           <VirtualList items={list} selected={open} onOpen={setOpen} onCat={(id, rect, dir) => setPicker({ id, rect, dir })} accColor={(a) => accs.get(a)?.color ?? "var(--s0)"} />
