@@ -17,7 +17,7 @@ export function sum(xs: readonly number[]): number {
 export const mean = (xs: readonly number[]): number => (xs.length ? sum(xs) / xs.length : NaN);
 
 /** Quantile con interpolazione lineare su un array GIÀ ordinato (NaN se vuoto). */
-export function quantileSorted(sorted: readonly number[], q: number): number {
+export function quantileSorted(sorted: ArrayLike<number>, q: number): number {
   const n = sorted.length;
   if (!n) return NaN;
   if (n === 1) return sorted[0];
@@ -27,10 +27,10 @@ export function quantileSorted(sorted: readonly number[], q: number): number {
 }
 
 /** Copia ordinata in senso crescente. */
-export const sortedCopy = (xs: readonly number[]): number[] => Float64Array.from(xs).sort() as unknown as number[];
+export const sortedCopy = (xs: readonly number[]): number[] => Array.from(Float64Array.from(xs).sort());
 
 /** Quantile (NaN se vuoto). */
-export const quantile = (xs: readonly number[], q: number): number => quantileSorted(sortedCopy(xs), q);
+export const quantile = (xs: readonly number[], q: number): number => quantileSorted(Float64Array.from(xs).sort(), q);
 
 /** Mediana (NaN se vuoto). */
 export const median = (xs: readonly number[]): number => quantile(xs, 0.5);

@@ -8,7 +8,9 @@
     "build": "tsc --noEmit && vite build",
     "preview": "vite preview",
     "test": "vitest run",
-    "build:file": "tsc --noEmit && vite build --mode file && node scripts/single-file.mjs"
+    "build:file": "tsc --noEmit && vite build --mode file && node scripts/single-file.mjs",
+    "predev": "node scripts/copy-vendor.mjs",
+    "prebuild": "node scripts/copy-vendor.mjs"
   },
   "dependencies": {
     "preact": "10.29.8",

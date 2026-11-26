@@ -1,8 +1,10 @@
 // Formattazione italiana per le frasi generate (insight, anomalie).
 
-const EUR2 = new Intl.NumberFormat("it-IT", { style: "currency", currency: "EUR" });
-const EUR0 = new Intl.NumberFormat("it-IT", { style: "currency", currency: "EUR", minimumFractionDigits: 0, maximumFractionDigits: 0 });
-const NUM1 = new Intl.NumberFormat("it-IT", { maximumFractionDigits: 1 });
+// useGrouping "always": in it-IT le cifre a 4 cifre non verrebbero raggruppate ("1234 €" invece di "1.234 €").
+const GROUPING = { useGrouping: "always" } as unknown as Intl.NumberFormatOptions;
+const EUR2 = new Intl.NumberFormat("it-IT", { ...GROUPING, style: "currency", currency: "EUR" });
+const EUR0 = new Intl.NumberFormat("it-IT", { ...GROUPING, style: "currency", currency: "EUR", minimumFractionDigits: 0, maximumFractionDigits: 0 });
+const NUM1 = new Intl.NumberFormat("it-IT", { ...GROUPING, maximumFractionDigits: 1 });
 
 /** Importo in euro all'italiana, senza decimali da 100 € in su ("312 €", "41,50 €"). */
 export function formatEUR(v: number): string {
@@ -17,9 +19,8 @@ export function formatSignedEUR(v: number): string {
 
 /** Percentuale intera da una frazione (0.38 -> "38%", con segno -> "+38%"). */
 export function formatPct(p: number, signed = false): string {
-  const r = Math.round(p * 100);
-  if (!signed || r === 0) return `${Math.abs(r) === 0 ? 0 : r}%`.replace("-", "−");
-  return (r > 0 ? "+" : "−") + Math.abs(r) + "%";
+  const r = Math.round(p * 100) || 0;
+  return (r < 0 ? "−" : signed && r > 0 ? "+" : "") + Math.abs(r) + "%";
 }
 
 /** Numero con al massimo un decimale ("5,2"). */
