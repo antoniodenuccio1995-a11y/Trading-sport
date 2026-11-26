@@ -125,7 +125,7 @@ function OwnerPrompt() {
       <p class="faint" style={{ margin: "2px 0 8px", fontSize: "12px" }}>Serve a riconoscere i giroconti verso te stesso (es. “ricarica da …”). Resta solo in questo browser.</p>
       <div class="row" style={{ gap: "8px" }}>
         <input class="input" style={{ flex: 1 }} placeholder="Nome Cognome" value={v} onInput={(e) => setV((e.target as HTMLInputElement).value)} />
-        <button class="btn sm" disabled={v.trim().length < 3} onClick={() => { A.updateSettings({ ownerNames: [v.trim().toUpperCase()] }); toast("Salvato"); }}>Salva</button>
+        <button class="btn sm" disabled={v.trim().length < 3} onClick={() => { A.updateSettings({ ownerNames: [v.trim().toUpperCase()] }); A.reclassifyAll(); toast("Salvato: giroconti ricalcolati"); }}>Salva</button>
       </div>
     </div>
   );

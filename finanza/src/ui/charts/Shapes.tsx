@@ -170,7 +170,7 @@ export function Sankey({ nodes, links, height = 380, format }: { nodes: SNode[];
               <rect x={p.x} y={p.y} width={layout.nodeW} height={p.h} rx="3" fill={n.color} style={{ animation: "fade 400ms var(--ease-out) both" }} />
               {p.h >= 11 && (w >= 600 || last || p.c === 0) && (
                 <text x={last ? p.x + layout.nodeW + 6 : p.x + layout.nodeW + 6} y={p.y + p.h / 2 + 4} style={{ fill: "var(--text)", fontWeight: 600, paintOrder: "stroke", stroke: "var(--surface-1)", strokeWidth: 3 }}>
-                  {short(n.label, last ? 24 : 18)} <tspan style={{ fill: "var(--text-3)", fontWeight: 500 }}>{format(layout.val(n.id))}</tspan>
+                  {short(n.label, w < 600 ? 13 : last ? 24 : 18)} <tspan style={{ fill: "var(--text-3)", fontWeight: 500 }}>{format(layout.val(n.id))}</tspan>
                 </text>
               )}
             </g>
