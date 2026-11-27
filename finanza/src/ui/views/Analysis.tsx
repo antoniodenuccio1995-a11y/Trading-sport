@@ -7,6 +7,7 @@ import { Empty, Seg, catColor } from "../components/common.tsx";
 import { FlowBars, SimpleBars } from "../charts/Bars.tsx";
 import { Heatmap, Sankey, Spark } from "../charts/Shapes.tsx";
 import { LineChart } from "../charts/LineChart.tsx";
+import { CountUp } from "../charts/base.tsx";
 import { goMovements, type MovementFilter } from "../drill.ts";
 import { Icon } from "../icons.tsx";
 import { addMonths, cap, eur, eurShort, fullDate, monthLabel, pct, shortDate } from "../format.ts";
@@ -45,9 +46,9 @@ export function Analysis() {
       </div>
 
       <div class="grid g-4">
-        <Stat label="Entrate" v={eur(tot.income)} dot="var(--in)" onClick={() => goMovements({ ...pf, type: "income", label: `Entrate · ${label}` })} />
-        <Stat label="Uscite" v={eur(tot.expense)} dot="var(--out)" onClick={() => goMovements({ ...pf, type: "expense", label: `Uscite · ${label}` })} />
-        <Stat label="Risparmio" v={eur(tot.income - tot.expense)} dot="var(--text)" onClick={() => goMovements({ ...pf, label: `Movimenti · ${label}` })} />
+        <Stat label="Entrate" v={tot.income} dot="var(--in)" onClick={() => goMovements({ ...pf, type: "income", label: `Entrate · ${label}` })} />
+        <Stat label="Uscite" v={tot.expense} dot="var(--out)" onClick={() => goMovements({ ...pf, type: "expense", label: `Uscite · ${label}` })} />
+        <Stat label="Risparmio" v={tot.income - tot.expense} dot="var(--text)" onClick={() => goMovements({ ...pf, label: `Movimenti · ${label}` })} />
         <Stat label="Tasso di risparmio" v={tot.income > 0 ? ((tot.income - tot.expense) / tot.income < -1 ? "< −100%" : pct((tot.income - tot.expense) / tot.income)) : "—"} foot={label} />
       </div>
 
@@ -77,8 +78,8 @@ export function Analysis() {
   );
 }
 
-function Stat({ label, v, dot, foot, onClick }: { label: string; v: string; dot?: string; foot?: string; onClick?: () => void }) {
-  return <div class={"card" + (onClick ? " clickable" : "")} onClick={onClick} role={onClick ? "button" : undefined} tabIndex={onClick ? 0 : undefined}><div class="kpi"><span class="label">{dot && <i class="swatch" style={{ background: dot, borderRadius: "50%" }} />}{label}</span><span class="value money">{v}</span>{foot && <span class="foot">{foot}</span>}</div></div>;
+function Stat({ label, v, dot, foot, onClick }: { label: string; v: string | number; dot?: string; foot?: string; onClick?: () => void }) {
+  return <div class={"card" + (onClick ? " clickable" : "")} onClick={onClick} role={onClick ? "button" : undefined} tabIndex={onClick ? 0 : undefined}><div class="kpi"><span class="label">{dot && <i class="swatch" style={{ background: dot, borderRadius: "50%" }} />}{label}</span><span class="value money">{typeof v === "number" ? <CountUp value={v} format={eur} duration={650} /> : v}</span>{foot && <span class="foot">{foot}</span>}</div></div>;
 }
 
 function SankeyCard({ period, label, pf }: { period: Period; label: string; pf: MovementFilter }) {

@@ -24,6 +24,10 @@ export function Dashboard() {
   const isCurrent = month === D.currentMonth();
   const fc = isCurrent ? D.forecast(month) : null;
   const nw12 = nw.netWorth.length > 12 ? nw.netWorth[nw.netWorth.length - 13] : nw.netWorth[0] ?? 0;
+  const pfo = D.portfolio();
+  const hasPf = pfo.totals.open > 0;
+  // con un portafoglio registrato il patrimonio usa il valore di mercato degli investimenti, non il solo capitale versato
+  const netNow = hasPf ? k.liquidity + pfo.totals.marketValue : k.netWorth;
   const first = ms[0] ?? month, last = ms[ms.length - 1] ?? month;
 
   return (
@@ -31,7 +35,7 @@ export function Dashboard() {
       <div class="grid g-hero">
         <div class="card hero">
           <div class="row between"><span class="eyebrow">Patrimonio netto</span><a class="faint" href="#conti" style={{ fontSize: "12px" }}>Conti →</a></div>
-          <div class="big"><CountUp value={k.netWorth} format={eur} /></div>
+          <div class="big"><CountUp value={netNow} format={eur} /></div>
           <div class="row wrap" style={{ gap: "8px", marginBottom: "6px" }}>
             <span class={"delta " + (k.netWorth >= nw12 ? "up" : "down")}>{k.netWorth >= nw12 ? "▲" : "▼"} {eur(Math.abs(k.netWorth - nw12))} in 12 mesi</span>
             {k.emergencyFundMonths != null && <span class="delta" title="Liquidità divisa per la spesa media mensile degli ultimi 6 mesi">🛟 {k.emergencyFundMonths.toFixed(1).replace(".", ",")} mesi di spese coperti</span>}
@@ -39,7 +43,10 @@ export function Dashboard() {
           <Spark values={nw.netWorth.slice(-18)} width={560} height={78} fluid />
           <div class="grid g-3" style={{ marginTop: "12px", gap: "10px" }}>
             <div class="kpi"><span class="label">Liquidità</span><span class="value money" style={{ fontSize: "18px" }}>{eur(k.liquidity)}</span></div>
-            <div class="kpi"><span class="label">Investito (al costo)</span><span class="value money" style={{ fontSize: "18px" }}>{eur(k.investedNet)}</span></div>
+            {hasPf ? (
+              <a class="kpi clickable kpi-click" href="#investimenti" style={{ color: "inherit" }}><span class="label">Investimenti</span><span class="value money" style={{ fontSize: "18px" }}>{eur(pfo.totals.marketValue)}</span>
+                <span class="foot"><span class={pfo.totals.unrealized >= 0 ? "in" : "bad"}>{pfo.totals.unrealized >= 0 ? "+" : "−"}{eur(Math.abs(pfo.totals.unrealized))}{pfo.totals.unrealizedPct != null ? ` (${pct(pfo.totals.unrealizedPct)})` : ""}</span> sul versato</span></a>
+            ) : <div class="kpi"><span class="label">Investito (al costo)</span><span class="value money" style={{ fontSize: "18px" }}>{eur(k.investedNet)}</span></div>}
             <div class="kpi"><span class="label">Risparmio 12 mesi</span><span class="value money" style={{ fontSize: "18px" }}>{eur(k.last12.net)}</span><span class="foot">{k.last12.savingsRate != null ? pct(k.last12.savingsRate) + " delle entrate" : ""}</span></div>
           </div>
         </div>
@@ -140,6 +147,24 @@ function PaceCard({ month }: { month: string }) {
           ...(p.previous ? [{ id: "prev", label: cap(monthLabel(p.previousMonth)), color: "var(--text-3)", values: p.previous, dashed: true }] : []),
           { id: "cur", label: cap(monthLabel(month)), color: "var(--accent)", values: p.current, area: true, width: 2.5 },
         ]} />
+      <PaceStats month={month} />
+    </div>
+  );
+}
+
+function PaceStats({ month }: { month: string }) {
+  const p = D.pace(month);
+  const spent = p.current.filter((v) => v != null).at(-1) ?? 0;
+  const days = Math.max(1, p.day || p.days);
+  const fc = month === D.currentMonth() ? D.forecast(month) : null;
+  const avgEnd = p.average?.at(-1) ?? null;
+  const proj = fc ? fc.projected.expense : spent;
+  return (
+    <div class="mini-stats">
+      <div><span>Media al giorno</span><b class="money"><CountUp value={spent / days} format={eur} duration={600} /></b></div>
+      <div><span>{fc ? "Previsione a fine mese" : "Totale del mese"}</span><b class="money"><CountUp value={proj} format={eur} duration={600} /></b></div>
+      <div><span>Media 6 mesi, mese intero</span><b class="money">{avgEnd != null ? eur(avgEnd) : "—"}</b>
+        {avgEnd != null && avgEnd > 0 && <small class={proj > avgEnd ? "bad" : "in"}>{proj > avgEnd ? "+" : "−"}{eur(Math.abs(proj - avgEnd))}</small>}</div>
     </div>
   );
 }

@@ -1,6 +1,7 @@
 // Dati dimostrativi: inventati e deterministici, per provare grafici e analisi
 // senza toccare i dati veri. Contrassegnati con meta.demo = true.
 import type { Movement, MovementType, Snapshot } from "../domain/types.ts";
+import type { InvestData, Trade } from "../invest/types.ts";
 import { makeMovement } from "../domain/movement.ts";
 import { rematchTransfers } from "../domain/classify.ts";
 import { emptySnapshot } from "./defaults.ts";
@@ -85,7 +86,37 @@ export function demoSnapshot(today = new Date()): Snapshot {
   s.budgets = { default: { "exp.housing": 520, "exp.groceries": 520, "exp.dining": 280, "exp.mobility": 140, "exp.utilities": 110, "exp.leisure": 70, "exp.clothing": 50, "exp.health": 40, "exp.personal_care": 45, "exp.travel": 80 }, months: {} };
   s.movements = out;
   rematchTransfers(s.movements);
+  s.investments = demoPortfolio(out, r, iso(end));
   for (const a of s.accounts) a.initialBalance = ({ "Banca Sella": 3400, Revolut: 120, Cassa: 60, "Trade Republic": 0 } as Record<string, number>)[a.id] ?? 0;
   s.accounts = s.accounts.filter((a) => ["Banca Sella", "Revolut", "Cassa", "Trade Republic"].includes(a.id)).concat(s.accounts.filter((a) => !["Banca Sella", "Revolut", "Cassa", "Trade Republic"].includes(a.id)).map((a) => ({ ...a, archived: true })));
   return s;
+}
+
+/** Portafoglio dimostrativo: ETF in piano di accumulo (dai movimenti Trade Republic) e un po' di Bitcoin. Prezzi inventati. */
+function demoPortfolio(movs: Movement[], r: () => number, today: string): InvestData {
+  const etf = { id: "demo-etf", name: "iShares Core MSCI World (dimostrativo)", kind: "etf" as const, isin: "IE00B4L5Y983", symbol: "EUNL", currency: "EUR", manualPrice: true };
+  const btc = { id: "demo-btc", name: "Bitcoin (dimostrativo)", kind: "crypto" as const, symbol: "BTC", coingeckoId: "bitcoin", currency: "EUR", manualPrice: true };
+  const trades: Trade[] = [];
+  const hist: [string, number][] = [];
+  let price = 92;
+  for (const m of movs.filter((x) => x.type === "invest_buy").sort((a, b) => a.date.localeCompare(b.date))) {
+    price = Math.round(price * (1.006 + (r() - 0.45) * 0.035) * 100) / 100;
+    const qty = Math.floor((Math.abs(m.amount) / price) * 10000) / 10000;
+    trades.push({ id: "demo-t-" + m.id.slice(0, 8), date: m.date, instrumentId: etf.id, account: m.account, side: "buy", quantity: qty, price, fees: 0, amount: m.amount, movementId: m.id });
+    hist.push([m.date.slice(0, 7) + "-28", price]);
+  }
+  const btcHist: [string, number][] = [];
+  let bp = 58000;
+  for (let i = 0; i < hist.length; i++) { bp = Math.round(bp * (1.01 + (r() - 0.5) * 0.12)); btcHist.push([hist[i][0], bp]); }
+  const buyAt = [Math.max(0, hist.length - 9), Math.max(0, hist.length - 6), Math.max(0, hist.length - 3)];
+  for (const [k, i] of buyAt.entries()) {
+    const p = btcHist[i]?.[1] ?? bp;
+    trades.push({ id: "demo-b-" + k, date: hist[i]?.[0] ?? today, instrumentId: btc.id, account: "Binance", side: "buy", quantity: Math.round((150 / p) * 1e6) / 1e6, price: p, fees: 1.5, amount: -151.5 });
+  }
+  const at = today + "T09:00:00.000Z";
+  return {
+    instruments: [etf, btc], trades,
+    prices: { [etf.id]: { price: Math.round(price * 1.018 * 100) / 100, currency: "EUR", at, source: "manuale" }, [btc.id]: { price: Math.round(bp * 1.03), currency: "EUR", at, source: "manuale" } },
+    priceHistory: { [etf.id]: hist, [btc.id]: btcHist }, ignoredMovements: [], historyAt: {}, refreshedAt: at,
+  };
 }

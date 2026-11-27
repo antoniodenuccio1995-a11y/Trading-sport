@@ -1,6 +1,6 @@
 import { useMemo, useState } from "preact/hooks";
 import type { ComponentChildren } from "preact";
-import { Tip, useWidth } from "./base.tsx";
+import { Tip, useGrow, useWidth } from "./base.tsx";
 
 // ---------- ciambella ----------
 export interface Seg { id: string; label: string; value: number; color: string }
@@ -11,15 +11,17 @@ export function Donut({ segs, size = 190, thickness = 20, center, format, onPick
   let acc = 0;
   const gap = segs.length > 1 ? 0.7 : 0;
   const h = segs.find((s) => s.id === hover);
+  const k = useGrow(900);
   return (
     <div style={{ position: "relative", width: size, height: size, flex: "none" }}>
-      <svg width={size} height={size} viewBox={`0 0 ${size} ${size}`} style={{ transform: "rotate(-90deg)", animation: "pop-in 500ms var(--ease-out) both" }} role="img" aria-label="Ripartizione">
+      <svg width={size} height={size} viewBox={`0 0 ${size} ${size}`} style={{ transform: `rotate(${-90 - (1 - k) * 60}deg)` }} role="img" aria-label="Ripartizione">
         <circle cx={c} cy={c} r={r} fill="none" stroke="var(--surface-3)" stroke-width={thickness} />
         {segs.map((s) => {
-          const len = (Math.max(0, s.value) / total) * 100;
+          const len = (Math.max(0, s.value) / total) * 100 * k;
+          const shown = Math.max(0.01, len - gap);
           const el = (
             <circle key={s.id} cx={c} cy={c} r={r} fill="none" stroke={s.color} stroke-width={hover === s.id ? thickness + 4 : thickness}
-              pathLength={100} stroke-dasharray={`${Math.max(0.01, len - gap)} ${100 - Math.max(0.01, len - gap)}`} stroke-dashoffset={-acc}
+              pathLength={100} stroke-dasharray={`${shown} ${100 - shown}`} stroke-dashoffset={-acc}
               opacity={hover && hover !== s.id ? 0.35 : 1} style={{ transition: "opacity 150ms ease, stroke-width 150ms ease", cursor: onPick ? "pointer" : "default" }}
               onPointerEnter={() => setHover(s.id)} onPointerLeave={() => setHover(null)} onClick={() => onPick?.(s.id)} />
           );
@@ -54,12 +56,13 @@ export function Spark({ values, color = "var(--accent)", height = 44, width = 14
 
 // ---------- anello di avanzamento ----------
 export function Ring({ pct, size = 46, stroke = 5, color }: { pct: number; size?: number; stroke?: number; color: string }) {
-  const r = (size - stroke) / 2, p = Math.max(0, Math.min(1, pct));
+  const k = useGrow(1000, 150);
+  const r = (size - stroke) / 2, p = Math.max(0, Math.min(1, pct)) * k;
   return (
     <svg width={size} height={size} viewBox={`0 0 ${size} ${size}`} style={{ transform: "rotate(-90deg)", flex: "none" }} aria-hidden="true">
       <circle cx={size / 2} cy={size / 2} r={r} fill="none" stroke="var(--surface-3)" stroke-width={stroke} />
       <circle cx={size / 2} cy={size / 2} r={r} fill="none" stroke={color} stroke-width={stroke} stroke-linecap="round" pathLength={100}
-        stroke-dasharray={`${p * 100} 100`} class="ring-in" style={{ animation: "fade 600ms var(--ease-out) both" }} />
+        stroke-dasharray={`${p * 100} 100`} />
     </svg>
   );
 }

@@ -1,5 +1,6 @@
 // Analisi memorizzate per versione dei dati + parametri. Nessun calcolo a ogni render.
 import * as An from "../analytics/index.ts";
+import * as P from "../invest/portfolio.ts";
 import type { Period } from "../analytics/common.ts";
 import { getSnap, latestMonth, lines, memo, months } from "./store.ts";
 import { todayIso } from "../ui/format.ts";
@@ -47,3 +48,9 @@ export const daily = (p: Period) => memo("day" + pk(p), () => An.dailyTotals(lin
 export const weekdays = (p: Period) => memo("wd" + pk(p), () => An.weekdayPattern(lines(), p, opts()));
 export const merchants = (p: Period, n = 12) => memo("mer" + pk(p) + n, () => An.topMerchants(lines(), p, n));
 export const netWorth = () => memo("nw", () => An.netWorthSeries(lines(), getSnap().accounts, { granularity: "month" }));
+
+/** Portafoglio investimenti (posizioni e totali a valore di mercato), se ci sono strumenti. */
+export const portfolio = () => memo("pf", () => {
+  const pos = P.positions(getSnap().investments);
+  return { positions: pos, totals: P.totals(pos) };
+});

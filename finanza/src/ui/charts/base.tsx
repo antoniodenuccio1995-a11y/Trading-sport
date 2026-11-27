@@ -66,3 +66,21 @@ export function nearest(xs: number[], x: number): number {
   while (hi - lo > 1) { const mid = (lo + hi) >> 1; if (xs[mid] < x) lo = mid; else hi = mid; }
   return Math.abs(xs[lo] - x) <= Math.abs(xs[hi] - x) ? lo : hi;
 }
+
+/** Valore 0 → 1 che cresce una volta all'apertura (ease-out), per far "riempire" ciambelle e anelli. */
+export function useGrow(duration = 850, delay = 0): number {
+  const [k, setK] = useState(() => (typeof window !== "undefined" && motionOff() ? 1 : 0));
+  useEffect(() => {
+    if (k >= 1) return;
+    let raf = 0;
+    const t0 = performance.now() + delay;
+    const tick = (t: number) => {
+      const x = Math.min(1, Math.max(0, (t - t0) / duration));
+      setK(1 - Math.pow(1 - x, 3));
+      if (x < 1) raf = requestAnimationFrame(tick);
+    };
+    raf = requestAnimationFrame(tick);
+    return () => cancelAnimationFrame(raf);
+  }, []);
+  return k;
+}
