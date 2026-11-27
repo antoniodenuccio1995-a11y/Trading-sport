@@ -3,6 +3,7 @@ import type { Settings as S } from "../../domain/types.ts";
 import { getSnap } from "../../state/store.ts";
 import * as A from "../../state/actions.ts";
 import { Dialog, Seg, toast } from "../components/common.tsx";
+import { SyncBadge } from "../components/Sync.tsx";
 
 const ACCENTS: [string, string, string][] = [["indaco", "Indaco", "#8b7cf6"], ["oceano", "Oceano", "#38bdf8"], ["smeraldo", "Smeraldo", "#10b981"], ["ambra", "Ambra", "#f4ad2d"], ["corallo", "Corallo", "#fb7185"]];
 
@@ -26,6 +27,11 @@ export function SettingsView() {
           <div class="row between wrap"><span>Animazioni</span><Seg value={st.reduceMotion} onChange={(reduceMotion) => up({ reduceMotion })} options={[["auto", "Come il sistema"], ["off", "Attive"], ["on", "Ridotte"]]} /></div>
           <label class="row between"><span>Nascondi gli importi (per mostrare lo schermo)</span><input type="checkbox" checked={st.hideAmounts} onChange={(e) => up({ hideAmounts: (e.target as HTMLInputElement).checked })} /></label>
         </div>
+      </div>
+      <div class="card">
+        <h2>Sincronizzazione tra dispositivi</h2>
+        <p class="hint">Con l'accesso (stesso account di Trading Analytics) i dati si copiano sul tuo spazio Supabase e restano allineati tra PC e telefono. Senza accesso restano solo su questo dispositivo.</p>
+        <div style={{ maxWidth: "360px" }}><SyncBadge /></div>
       </div>
       <div class="card">
         <h2>Conti e mesi</h2>

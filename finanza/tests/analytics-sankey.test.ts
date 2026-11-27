@@ -35,7 +35,8 @@ describe("cashflowSankey", () => {
     expect(node(s, "dal_risparmio")).toBeUndefined();
     expect(node(s, "inc:inc.salary")).toMatchObject({ label: "Stipendio", kind: "income", value: 2000 });
     const food = groupOf("exp.groceries");
-    expect(node(s, "grp:" + food.id)).toMatchObject({ value: 400, slot: food.slot, kind: "group" });
+    expect(node(s, "grp:" + food.id)).toMatchObject({ value: 300, slot: food.slot, kind: "group" });
+    expect(node(s, "grp:svago")).toMatchObject({ value: 100, kind: "group" }); // Ristorazione
     expect(s.totals).toEqual({ income: 2100, expense: 1150, net: 950, invested: 200, saved: 750, fromSavings: 0 });
     expect(s.links.every((l) => l.value > 0)).toBe(true);
     expect(s.nodes.every((n) => n.value > 0)).toBe(true);

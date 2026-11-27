@@ -7,6 +7,7 @@ import { Icon } from "../icons.tsx";
 import { Ring } from "../charts/Shapes.tsx";
 import { CountUp } from "../charts/base.tsx";
 import { Seg, toast } from "../components/common.tsx";
+import { goMovements } from "../drill.ts";
 import { addMonths, cap, eur, monthLabel, parseAmount, pct } from "../format.ts";
 
 const C = (st: string) => (st === "sforato" ? "var(--bad)" : st === "attenzione" ? "var(--warn)" : "var(--good)");
@@ -44,7 +45,7 @@ export function BudgetView() {
               </div>
             </div>
             <div class="stack" style={{ gap: "6px", flex: 1, minWidth: "200px" }}>
-              <div><span class="mid"><CountUp value={b.totals.spent} format={eur} /></span> <span class="faint">di {eur(b.totals.budget)}</span></div>
+              <div class="clickable pad" style={{ alignSelf: "flex-start" }} onClick={() => goMovements({ month, type: "expense", label: `Uscite di ${monthLabel(month)}` })}><span class="mid"><CountUp value={b.totals.spent} format={eur} /></span> <span class="faint">di {eur(b.totals.budget)}</span></div>
               <div class="row wrap" style={{ gap: "6px" }}>
                 <span class={"tag " + (b.totals.status === "ok" ? "good" : b.totals.status === "attenzione" ? "warn" : "bad")}>{LBL[b.totals.status]}</span>
                 <span class="tag">Restano {eur(Math.max(0, b.totals.remaining))}</span>
@@ -77,7 +78,7 @@ export function BudgetView() {
                 const avg = spentBy.get(c.id)?.avg6?.base;
                 return (
                   <div key={c.id} style={{ display: "grid", gridTemplateColumns: "minmax(0,1fr) 120px", gap: "6px 14px", alignItems: "center" }}>
-                    <div class="row between" style={{ minWidth: 0 }}>
+                    <div class="row between clickable pad" style={{ minWidth: 0 }} title="Vedi i movimenti" onClick={() => goMovements({ cat: c.id, month, label: `${c.label} · ${monthLabel(month)}` })}>
                       <span style={{ fontWeight: 600, overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>{c.icon} {c.label}</span>
                       <span class="money faint" style={{ fontSize: "12.5px", whiteSpace: "nowrap" }}>{eur(sp)}{it ? ` / ${eur(it.budget)}` : ""}</span>
                     </div>

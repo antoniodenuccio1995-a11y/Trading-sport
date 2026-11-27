@@ -1,38 +1,61 @@
 import { useEffect, useMemo, useRef, useState } from "preact/hooks";
 import type { Movement } from "../../domain/types.ts";
-import { amountOf, dateOf, descOf, merchantOf, norm } from "../../domain/movement.ts";
-import { TYPE_LABEL, TYPES, isTransfer } from "../../domain/categories.ts";
+import { amountOf, dateOf, descOf, merchantOf, monthKey, norm } from "../../domain/movement.ts";
+import { GROUPS, TYPE_LABEL, TYPES, groupOf, isTransfer } from "../../domain/categories.ts";
+import { takePendingFilter, type MovementFilter } from "../drill.ts";
 import { accById, catById, getSnap, months, statuses } from "../../state/store.ts";
 import { setCategory } from "../../state/actions.ts";
 import { CategoryPicker, Empty, Money, catColor } from "../components/common.tsx";
 import { Icon } from "../icons.tsx";
-import { cap, dayLabel, eur, monthLabel, parseAmount } from "../format.ts";
+import { cap, dayLabel, eur, monthLabel, parseAmount, signed } from "../format.ts";
 import { MovementDrawer } from "./MovementDrawer.tsx";
 
 type Status = "all" | "review" | "uncat" | "transfer" | "split" | "manual" | "trash";
-interface F { q: string; account: string; month: string; type: string; cat: string; status: Status; sign: "" | "+" | "-"; min: string; max: string }
-const F0: F = { q: "", account: "", month: "", type: "", cat: "", status: "all", sign: "", min: "", max: "" };
+interface F {
+  q: string; account: string; month: string; type: string; cat: string; status: Status; sign: "" | "+" | "-"; min: string; max: string;
+  // filtri che arrivano da un clic su grafici ed elenchi (non ricordati tra una visita e l'altra)
+  from: string; to: string; group: string; weekday: number; merchant: string; ids: string[] | null; label: string;
+}
+const F0: F = { q: "", account: "", month: "", type: "", cat: "", status: "all", sign: "", min: "", max: "", from: "", to: "", group: "", weekday: -1, merchant: "", ids: null, label: "" };
+const DRILL0 = { from: "", to: "", group: "", weekday: -1, merchant: "", ids: null, label: "" };
 const KEY = "fp4.movfilters";
-const loadF = (): F => { try { return { ...F0, ...JSON.parse(localStorage.getItem(KEY) || "{}"), q: "" }; } catch { return F0; } };
+const loadF = (): F => { try { return { ...F0, ...JSON.parse(localStorage.getItem(KEY) || "{}"), q: "", ...DRILL0 }; } catch { return F0; } };
+const fromDrill = (d: MovementFilter): F => ({ ...F0, ...Object.fromEntries(Object.entries(d).filter(([, v]) => v !== undefined)), weekday: d.weekday ?? -1, ids: d.ids ?? null, label: d.label ?? "" } as F);
+const weekdayOf = (iso: string) => (new Date(iso + "T12:00:00Z").getUTCDay() + 6) % 7;
 
 export function Movements({ initialStatus }: { initialStatus?: Status }) {
-  const [f, setF] = useState<F>(() => ({ ...loadF(), ...(initialStatus ? { status: initialStatus } : {}) }));
+  const [f, setF] = useState<F>(() => { const d = takePendingFilter(); return d ? fromDrill(d) : { ...loadF(), ...(initialStatus ? { status: initialStatus } : {}) }; });
+  useEffect(() => {
+    const h = () => { const d = takePendingFilter(); if (d) setF(fromDrill(d)); };
+    addEventListener("hashchange", h);
+    return () => removeEventListener("hashchange", h);
+  }, []);
   const [open, setOpen] = useState<string | null>(null);
   const [picker, setPicker] = useState<{ id: string; rect: DOMRect; dir: "income" | "expense" | "" } | null>(null);
-  useEffect(() => { try { localStorage.setItem(KEY, JSON.stringify({ ...f, q: "" })); } catch { /* archivio del browser non disponibile */ } }, [f]);
+  useEffect(() => { try { localStorage.setItem(KEY, JSON.stringify({ ...f, q: "", ...DRILL0 })); } catch { /* archivio del browser non disponibile */ } }, [f]);
   const set = (p: Partial<F>) => setF((x) => ({ ...x, ...p }));
   const s = getSnap(), st = statuses(), cats = catById(), accs = accById();
 
   const base = useMemo(() => {
     const q = norm(f.q), min = parseAmount(f.min), max = parseAmount(f.max);
     const qNum = parseAmount(f.q);
+    const sd = s.settings.monthStartDay || 1;
+    const ids = f.ids ? new Set(f.ids) : null;
+    const catsOf = (m: Movement) => (m.splits.length ? m.splits.map((x) => x.categoryId) : [m.categoryId]);
     return s.movements.filter((m) => {
       if (f.status !== "trash" && m.deletedAt) return false;
+      if (ids && !ids.has(m.id)) return false;
       if (f.account && m.account !== f.account) return false;
       const d = dateOf(m);
-      if (f.month && !d.startsWith(f.month)) return false;
-      if (f.type && m.type !== f.type) return false;
-      if (f.cat && m.categoryId !== f.cat) return false;
+      if (f.month && monthKey(d, sd) !== f.month) return false;
+      if (f.from && d < f.from) return false;
+      if (f.to && d > f.to) return false;
+      if (f.weekday >= 0 && weekdayOf(d) !== f.weekday) return false;
+      if (f.type && m.type !== f.type && !m.splits.some((x) => x.type === f.type)) return false;
+      if (f.cat === "none") { if (m.categoryId || !(m.type === "expense" || m.type === "income" || !m.type)) return false; }
+      else if (f.cat && !catsOf(m).includes(f.cat)) return false;
+      if (f.group && !catsOf(m).some((c) => c.startsWith("exp.") && groupOf(c).id === f.group)) return false;
+      if (f.merchant && merchantOf(descOf(m)) !== f.merchant) return false;
       const a = amountOf(m);
       if (f.sign === "+" && !(a > 0)) return false;
       if (f.sign === "-" && !(a < 0)) return false;
@@ -44,7 +67,7 @@ export function Movements({ initialStatus }: { initialStatus?: Status }) {
       }
       return true;
     });
-  }, [s.movements, f.q, f.account, f.month, f.type, f.cat, f.sign, f.min, f.max, f.status === "trash", st]);
+  }, [s.movements, f.q, f.account, f.month, f.type, f.cat, f.sign, f.min, f.max, f.from, f.to, f.group, f.weekday, f.merchant, f.ids, f.status === "trash", st]);
 
   const counts = useMemo(() => {
     const c = { all: 0, review: 0, uncat: 0, transfer: 0, split: 0, manual: 0, trash: 0 };
@@ -76,10 +99,38 @@ export function Movements({ initialStatus }: { initialStatus?: Status }) {
 
   const total = useMemo(() => list.reduce((acc, m) => { const a = amountOf(m); if (a > 0) acc.in += a; else acc.out -= a; return acc; }, { in: 0, out: 0 }), [list]);
   const active = (["account", "month", "type", "cat", "sign", "min", "max"] as const).filter((k) => f[k]);
+  const drilled = !!(f.label || f.from || f.to || f.group || f.weekday >= 0 || f.merchant || f.ids);
   const ms = months();
 
+  const describe = () => {
+    if (f.label) return f.label;
+    const parts: string[] = [];
+    if (f.merchant) parts.push(cap(f.merchant.toLowerCase()));
+    if (f.group) parts.push(GROUPS.find((g) => g.id === f.group)?.label ?? f.group);
+    if (f.from || f.to) parts.push(f.from === f.to ? f.from : `${f.from || "…"} → ${f.to || "…"}`);
+    if (f.weekday >= 0) parts.push(["lunedì", "martedì", "mercoledì", "giovedì", "venerdì", "sabato", "domenica"][f.weekday]);
+    return parts.join(" · ") || "Selezione";
+  };
   return (
     <div class="stack enter">
+      {drilled && (
+        <div class="card drill">
+          <div class="row between wrap" style={{ gap: "10px" }}>
+            <div class="row" style={{ gap: "10px", minWidth: 0 }}>
+              <span class="drill-ico"><Icon name="filter" size={16} /></span>
+              <div style={{ minWidth: 0 }}>
+                <div class="eyebrow">Stai guardando</div>
+                <b style={{ overflowWrap: "anywhere" }}>{describe()}</b>
+              </div>
+            </div>
+            <div class="row" style={{ gap: "8px" }}>
+              <span class="faint" style={{ fontSize: "12.5px" }}>{list.length} movimenti · <span class="money">{signed(total.in - total.out)}</span></span>
+              <button class="btn sm" onClick={() => { history.length > 1 ? history.back() : setF({ ...F0 }); }}><Icon name="left" />Indietro</button>
+              <button class="btn sm ghost" onClick={() => setF({ ...F0 })}>Mostra tutti</button>
+            </div>
+          </div>
+        </div>
+      )}
       <div class="card flat" style={{ padding: "14px" }}>
         <div class="filters">
           <div class="search" style={{ position: "relative" }}>

@@ -70,12 +70,12 @@ export async function sendCode(email: string) {
 export async function verifyCode(email: string, code: string) {
   const { data, error } = await (await supa()).auth.verifyOtp({ email: email.trim(), token: code, type: "email" });
   if (error || !data.session) throw new Error(italian(error ?? "Codice non valido o scaduto."));
-  await start(data.session);
+  void start(data.session); // il collegamento prosegue in sottofondo: lo stato si vede nella barra laterale
 }
 export async function signInPassword(email: string, password: string) {
   const { data, error } = await (await supa()).auth.signInWithPassword({ email: email.trim(), password });
   if (error || !data.session) throw new Error(italian(error ?? "Accesso non riuscito"));
-  await start(data.session);
+  void start(data.session);
 }
 export async function signOut() {
   await (await supa()).auth.signOut().catch(() => {});

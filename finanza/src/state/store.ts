@@ -4,6 +4,7 @@
 import type { Line, Movement, Snapshot } from "../domain/types.ts";
 import { toLines } from "../domain/movement.ts";
 import { statusOf, type Status } from "../domain/classify.ts";
+import { configureCategories } from "../domain/categories.ts";
 import * as db from "../storage/db.ts";
 import { emptySnapshot, normalize } from "./defaults.ts";
 
@@ -20,7 +21,7 @@ const notify = () => listeners.forEach((fn) => fn());
 export async function boot(): Promise<{ fresh: boolean; error?: string }> {
   try {
     const s = await db.load();
-    if (s) { snap = normalize(s); version++; return { fresh: false }; }
+    if (s) { snap = normalize(s); configureCategories(snap.categories, snap.settings.groupLabels); version++; return { fresh: false }; }
     return { fresh: true };
   } catch (e) {
     persist = false; // archivio non disponibile (es. navigazione privata): l'app funziona in memoria
@@ -31,6 +32,7 @@ export async function boot(): Promise<{ fresh: boolean; error?: string }> {
 /** Modifica lo stato. `fn` muta l'istantanea; poi salvataggio accorpato e nuovo render. */
 export function mutate(fn: (s: Snapshot) => void) {
   fn(snap);
+  configureCategories(snap.categories, snap.settings.groupLabels);
   version++;
   if (persist) db.save(snap);
   notify();
@@ -38,6 +40,7 @@ export function mutate(fn: (s: Snapshot) => void) {
 
 export function replace(next: Snapshot) {
   snap = normalize(next);
+  configureCategories(snap.categories, snap.settings.groupLabels);
   version++;
   if (persist) db.save(snap);
   notify();

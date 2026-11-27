@@ -4,6 +4,7 @@ import { onSave } from "../storage/db.ts";
 import * as A from "../state/actions.ts";
 import { Icon } from "./icons.tsx";
 import { Toasts } from "./components/common.tsx";
+import { SyncBadge, SyncDialogHost, SyncPrompts } from "./components/Sync.tsx";
 import { Dashboard } from "./views/Dashboard.tsx";
 import { lazy, prefetchAll } from "./lazy.tsx";
 
@@ -99,6 +100,7 @@ export function App() {
           <span><i class={"save-dot " + save.state} />{save.state === "saving" ? "Salvataggio…" : save.state === "error" ? "Non salvato" : "Salvato sul dispositivo"}</span>
           {save.state === "error" && <span class="bad">{save.message}</span>}
           {s.meta.demo && <span class="warn">Dati dimostrativi</span>}
+          <SyncBadge />
         </div>
       </nav>
       <main class="main" data-v={getVersion()}>
@@ -109,6 +111,7 @@ export function App() {
           </div>
           <span class="spacer" />
           {review > 0 && id !== "movimenti" && <button class="chip" onClick={() => go("controllo")}><Icon name="alert" size={14} />{review} da controllare</button>}
+          <span class="mobile-only"><SyncBadge compact /></span>
           <button class="icon-btn" onClick={() => A.updateSettings({ hideAmounts: !st.hideAmounts })} aria-label={st.hideAmounts ? "Mostra importi" : "Nascondi importi"} title={st.hideAmounts ? "Mostra importi" : "Nascondi importi"}>
             <Icon name={st.hideAmounts ? "eyeOff" : "eye"} />
           </button>
@@ -126,6 +129,8 @@ export function App() {
         ); })}
       </nav>
       <Toasts />
+      <SyncDialogHost />
+      <SyncPrompts />
     </div>
   );
 }

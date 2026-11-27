@@ -63,11 +63,11 @@ export function budgetStatus(
   const b = monthBounds(month, msd);
   const daysElapsed = clamp(dayNum(today) - dayNum(b.start) + 1, 0, b.days);
   const frac = b.days ? daysElapsed / b.days : 1;
-  const group = groupLookup();
+  const group = groupLookup(categories);
 
   const budgeted = new Map<string, { cat: Category; budget: number }>();
   for (const c of categories) {
-    if (!c.budgetEligible || c.direction !== "expense") continue;
+    if (!c.budgetEligible || c.direction !== "expense" || c.status === "inactive") continue; // nascoste: fuori dal budget come nella pagina Budget
     const v = budgetFor(budgets, month, c.id);
     if (v > 0) budgeted.set(c.id, { cat: c, budget: v });
   }

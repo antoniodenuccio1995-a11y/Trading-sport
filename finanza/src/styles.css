@@ -342,3 +342,74 @@ label.field { display: grid; gap: 5px; font-size: 12px; color: var(--text-2); fo
 :root[data-motion="off"] .chart .draw { stroke-dashoffset: 0; }
 
 @media (forced-colors: active) { .card { border: 1px solid CanvasText; } }
+
+/* ---------- clic che porta ai movimenti ---------- */
+.drill { border-color: color-mix(in srgb, var(--accent) 45%, var(--line)); background: linear-gradient(120deg, color-mix(in srgb, var(--accent) 10%, var(--surface-1)), var(--surface-1) 60%); animation: enter 320ms var(--ease-out) both; }
+.drill-ico { width: 34px; height: 34px; border-radius: 11px; display: grid; place-items: center; background: color-mix(in srgb, var(--accent) 22%, transparent); color: var(--accent); flex: none; }
+.clickable { cursor: pointer; transition: background-color 150ms ease, transform 120ms ease, box-shadow 150ms ease; }
+@media (hover: hover) and (pointer: fine) {
+  .clickable:hover { background-color: var(--surface-2); }
+  .card.clickable:hover { box-shadow: 0 0 0 1px color-mix(in srgb, var(--accent) 40%, transparent), var(--shadow); }
+}
+.clickable:active { transform: scale(.985); }
+.chart .hit { cursor: pointer; }
+.go { display: inline-flex; align-items: center; gap: 4px; font-size: 12px; color: var(--accent); font-weight: 600; opacity: 0; transform: translateX(-4px); transition: opacity 150ms ease, transform 150ms ease; }
+.clickable:hover .go, .clickable:focus-visible .go { opacity: 1; transform: none; }
+.tip-hint { margin-top: 6px; padding-top: 6px; border-top: 1px solid var(--line); font-size: 11px; color: var(--accent); font-weight: 600; }
+.heat i.hit { cursor: pointer; transition: transform 120ms ease; }
+@media (hover: hover) and (pointer: fine) { .heat i.hit:hover { transform: scale(1.35); outline: 1.5px solid var(--text-2); outline-offset: 1px; } }
+.pad { padding: 6px 8px; margin: -6px -8px; border-radius: 12px; }
+.kpi-click { padding: 8px 10px; margin: -8px -10px; border-radius: 14px; }
+.li.clickable { padding-left: 8px; padding-right: 8px; margin: 0 -8px; border-radius: 12px; }
+.trend-btn { width: 26px; height: 26px; border-radius: 8px; font-size: 12px; opacity: .55; }
+.rank-row:hover .trend-btn { opacity: 1; }
+tr.clickable td { transition: background-color 120ms ease; }
+@media (hover: hover) and (pointer: fine) { tr.clickable:hover td { background: var(--surface-2); } }
+.trend-btn { width: 26px; height: 26px; border-radius: 8px; font-size: 12px; opacity: .55; }
+.rank-row:hover .trend-btn { opacity: 1; }
+tr.clickable td { transition: background-color 120ms ease; }
+@media (hover: hover) and (pointer: fine) { tr.clickable:hover td { background: var(--surface-2); } }
+
+/* ---------- sincronizzazione e accesso con codice ---------- */
+.cloud-line { display: flex; align-items: center; gap: 8px; width: 100%; padding: 8px 10px; border-radius: 11px; border: 1px solid var(--line); background: var(--surface-2); color: var(--text-2); font-size: 12px; font-weight: 600; cursor: pointer; text-align: left; transition: background-color 150ms ease, color 150ms ease; }
+.cloud-line span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.cloud-line:hover { background: var(--surface-hover); color: var(--text); }
+.cloud-line.ok, .icon-btn.cloud.ok { color: var(--good-ink); }
+.cloud-line.err, .icon-btn.cloud.err { color: var(--bad-ink); }
+.cloud-line.warn, .icon-btn.cloud.warn { color: var(--warn-ink); }
+.cloud-line.busy, .icon-btn.cloud.busy { color: var(--accent); }
+.cloud-ico { flex: none; }
+.cloud-ico .ck { stroke-dasharray: 1; stroke-dashoffset: 1; animation: draw 500ms var(--ease-out) forwards; }
+.cloud-ico.busy .ar { animation: float-y 900ms var(--ease-io) infinite alternate; }
+@keyframes float-y { from { transform: translateY(-1.5px); } to { transform: translateY(1.5px); } }
+.sync-hero { display: flex; align-items: center; gap: 12px; padding: 12px 14px; border-radius: 14px; background: var(--surface-2); }
+.sync-hero .cloud-ico { width: 30px; height: 30px; color: var(--accent); }
+.mail-anim { height: 64px; display: grid; place-items: center; overflow: hidden; }
+.mail-anim .env { font-size: 38px; animation: mail-in 700ms var(--ease-out) both; }
+@keyframes mail-in { 0% { transform: translate(-60px, 30px) rotate(-18deg) scale(.6); opacity: 0; } 60% { transform: translate(6px, -6px) rotate(6deg) scale(1.08); opacity: 1; } 100% { transform: none; } }
+.otp { display: flex; justify-content: center; gap: 8px; }
+.otp input {
+  width: 46px; height: 58px; padding: 0; text-align: center; font-size: 24px; font-weight: 750; font-variant-numeric: tabular-nums;
+  border-radius: 14px; border: 1.5px solid var(--line-2); background: var(--field); color: var(--text); caret-color: var(--accent);
+  transition: border-color 150ms ease, box-shadow 150ms ease, transform 150ms var(--ease-out), background-color 200ms ease;
+}
+.otp input:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 4px color-mix(in srgb, var(--accent) 22%, transparent); transform: translateY(-2px); }
+.otp input.filled { animation: otp-pop 180ms var(--ease-out); border-color: color-mix(in srgb, var(--accent) 55%, var(--line-2)); }
+.otp.busy input { animation: otp-wave 900ms var(--ease-io) infinite; animation-delay: calc(var(--i) * 80ms); }
+.otp.bad { animation: shake 380ms var(--ease-io); }
+.otp.bad input { border-color: var(--bad); background: color-mix(in srgb, var(--bad) 10%, var(--field)); }
+.otp.ok input { border-color: var(--good); background: color-mix(in srgb, var(--good) 14%, var(--field)); animation: otp-ok 420ms var(--ease-out) both; animation-delay: calc(var(--i) * 45ms); }
+.otp-msg { min-height: 20px; margin: 8px 0 0; text-align: center; font-size: 12.5px; color: var(--bad-ink); }
+@media (max-width: 400px) { .otp { gap: 6px; } .otp input { width: 42px; height: 54px; font-size: 22px; } }
+@keyframes otp-pop { from { transform: scale(.86); } }
+@keyframes otp-wave { 50% { transform: translateY(-4px); opacity: .7; } }
+@keyframes otp-ok { 45% { transform: translateY(-7px); } }
+@keyframes shake { 20% { transform: translateX(-9px); } 40% { transform: translateX(8px); } 60% { transform: translateX(-5px); } 80% { transform: translateX(4px); } }
+.success { display: grid; justify-items: center; gap: 6px; padding: 10px 0 6px; text-align: center; }
+.success .draw { stroke-dasharray: 1; stroke-dashoffset: 1; animation: draw 520ms var(--ease-out) forwards; }
+.success .d2 { animation-delay: 380ms; }
+.spin { width: 14px; height: 14px; border-radius: 50%; border: 2px solid currentColor; border-right-color: transparent; animation: spin 700ms linear infinite; display: inline-block; }
+@keyframes spin { to { transform: rotate(360deg); } }
+@media (prefers-reduced-motion: reduce) { .success .draw, .cloud-ico .ck { stroke-dashoffset: 0; } }
+.mobile-only { display: none; }
+@media (max-width: 860px) { .mobile-only { display: inline-flex; } }

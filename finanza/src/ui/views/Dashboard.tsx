@@ -1,10 +1,12 @@
 import { useState } from "preact/hooks";
 import { accountBalances } from "../../analytics/balances.ts";
-import { getSnap, lines, memo, months } from "../../state/store.ts";
+import { getSnap, lines, memo } from "../../state/store.ts";
 import * as D from "../../state/derived.ts";
 import * as A from "../../state/actions.ts";
 import { catColor } from "../components/common.tsx";
 import { Icon } from "../icons.tsx";
+import { goMovements } from "../drill.ts";
+import { monthBounds, addDays } from "../../analytics/dates.ts";
 import { CountUp } from "../charts/base.tsx";
 import { LineChart } from "../charts/LineChart.tsx";
 import { Donut, Ring, Spark } from "../charts/Shapes.tsx";
@@ -12,7 +14,7 @@ import { addMonths, cap, eur, eurShort, monthLabel, pct, shortDate } from "../fo
 
 export function Dashboard() {
   const s = getSnap();
-  const ms = months();
+  const ms = D.allMonths();
   const [month, setMonth] = useState(D.currentMonth());
   if (!s.movements.length) return <Welcome />;
   const k = D.kpis();
@@ -22,7 +24,7 @@ export function Dashboard() {
   const isCurrent = month === D.currentMonth();
   const fc = isCurrent ? D.forecast(month) : null;
   const nw12 = nw.netWorth.length > 12 ? nw.netWorth[nw.netWorth.length - 13] : nw.netWorth[0] ?? 0;
-  const i = ms.indexOf(month);
+  const first = ms[0] ?? month, last = ms[ms.length - 1] ?? month;
 
   return (
     <div class="stack enter">
@@ -44,15 +46,15 @@ export function Dashboard() {
 
         <div class="card">
           <div class="row between">
-            <button class="icon-btn" disabled={i <= 0} onClick={() => setMonth(ms[i - 1])} aria-label="Mese precedente"><Icon name="left" /></button>
+            <button class="icon-btn" disabled={month <= first} onClick={() => setMonth(addMonths(month, -1))} aria-label="Mese precedente"><Icon name="left" /></button>
             <div style={{ textAlign: "center" }}><div class="eyebrow">{isCurrent ? "Questo mese" : "Mese"}</div><b style={{ fontSize: "16px" }}>{cap(monthLabel(month))}</b></div>
-            <button class="icon-btn" disabled={i >= ms.length - 1} onClick={() => setMonth(ms[i + 1])} aria-label="Mese successivo"><Icon name="right" /></button>
+            <button class="icon-btn" disabled={month >= last} onClick={() => setMonth(addMonths(month, 1))} aria-label="Mese successivo"><Icon name="right" /></button>
           </div>
           <div class="grid g-2" style={{ gap: "14px", marginTop: "16px" }}>
-            <Kpi label="Entrate" dot="var(--in)" v={pt.income} prev={prevPt?.income} good="up" />
-            <Kpi label="Uscite" dot="var(--out)" v={pt.expense} prev={prevPt?.expense} good="down" />
-            <Kpi label="Risparmio" dot="var(--text)" v={pt.net} prev={prevPt?.net} good="up" />
-            <div class="kpi"><span class="label">Tasso di risparmio</span><span class="value">{pt.savingsRate != null ? pct(pt.savingsRate) : "—"}</span><span class="foot">{prevPt?.savingsRate != null ? "mese prima " + pct(prevPt.savingsRate) : ""}</span></div>
+            <Kpi label="Entrate" dot="var(--in)" v={pt.income} prev={prevPt?.income} good="up" onClick={() => goMovements({ month, type: "income", label: `Entrate di ${monthLabel(month)}` })} />
+            <Kpi label="Uscite" dot="var(--out)" v={pt.expense} prev={prevPt?.expense} good="down" onClick={() => goMovements({ month, type: "expense", label: `Uscite di ${monthLabel(month)}` })} />
+            <Kpi label="Risparmio" dot="var(--text)" v={pt.net} prev={prevPt?.net} good="up" onClick={() => goMovements({ month, label: `Tutti i movimenti di ${monthLabel(month)}` })} />
+            <div class="kpi"><span class="label">Tasso di risparmio</span><span class="value">{rateText(pt.income, pt.savingsRate)}</span><span class="foot">{pt.income > 0 && pt.savingsRate != null && pt.savingsRate < -1 ? "uscite molto oltre le entrate" : prevPt?.savingsRate != null && prevPt.income > 0 ? "mese prima " + rateText(prevPt.income, prevPt.savingsRate) : ""}</span></div>
           </div>
           {fc && (
             <div class="card flat" style={{ marginTop: "16px", padding: "12px", background: "var(--surface-2)" }}>
@@ -87,16 +89,24 @@ export function Dashboard() {
   );
 }
 
-function Kpi({ label, dot, v, prev, good }: { label: string; dot: string; v: number; prev?: number; good: "up" | "down" }) {
+function Kpi({ label, dot, v, prev, good, onClick }: { label: string; dot: string; v: number; prev?: number; good: "up" | "down"; onClick?: () => void }) {
   const d = prev != null ? v - prev : null;
   const better = d != null && (good === "up" ? d >= 0 : d <= 0);
   return (
-    <div class="kpi">
+    <div class={"kpi" + (onClick ? " clickable kpi-click" : "")} onClick={onClick} role={onClick ? "button" : undefined} tabIndex={onClick ? 0 : undefined}
+      onKeyDown={(e) => { if (onClick && e.key === "Enter") onClick(); }}>
       <span class="label"><i class="swatch" style={{ background: dot, borderRadius: "50%" }} />{label}</span>
       <span class="value"><CountUp value={v} format={eur} duration={600} /></span>
       {d != null && Math.abs(d) >= 1 && <span class="foot"><span class={better ? "in" : "bad"}>{d > 0 ? "+" : "−"}{eur(Math.abs(d))}</span> sul mese prima</span>}
     </div>
   );
+}
+
+/** Tasso di risparmio leggibile: oltre ±100% (entrate minime) non è un numero utile. */
+function rateText(income: number, rate: number | null): string {
+  if (rate == null || income <= 0) return "—";
+  if (rate < -1) return "< −100%";
+  return pct(rate);
 }
 
 function PaceCard({ month }: { month: string }) {
@@ -122,6 +132,8 @@ function PaceCard({ month }: { month: string }) {
         </div>
       )}
       <LineChart xLabels={labels} axisLabel={(i) => String(i + 1)} tickEvery={7} yFormat={eur} yTick={eurShort} height={262}
+        pickHint="Clicca per le uscite di quel giorno"
+        onPick={(i) => { const d = addDays(monthBounds(month).start, i); goMovements({ from: d, to: d, type: "expense", label: `Uscite del ${d.split("-").reverse().join("/")}` }); }}
         markers={p.day && p.day < n ? [{ x: p.day - 1, label: "oggi" }] : []}
         series={[
           ...(p.average ? [{ id: "avg", label: `Media ${p.averageMonths} mesi`, color: "var(--s1)", values: p.average, width: 1.5 }] : []),
@@ -141,12 +153,12 @@ function WhereCard({ month }: { month: string }) {
     <div class="card">
       <div class="card-head"><div><h2>Dove vanno i soldi</h2><p class="hint">Uscite di {monthLabel(month)} per gruppo e prime categorie. Il segno verticale è la media degli ultimi 6 mesi.</p></div>
         <a class="faint" href="#analisi" style={{ fontSize: "12px", whiteSpace: "nowrap" }}>Analisi →</a></div>
-      {b.total <= 0 ? <p class="faint">Nessuna uscita classificata in questo mese.</p> : (
+      {b.total <= 0 ? <UncatHint month={month} /> : (
         <div class="row wrap" style={{ gap: "20px", alignItems: "flex-start" }}>
-          <Donut segs={segs} format={eur} size={176} center={<div><div class="faint" style={{ fontSize: "11.5px" }}>Uscite</div><div class="mid money" style={{ fontSize: "19px" }}>{eur(b.total)}</div></div>} />
+          <Donut segs={segs} format={eur} size={176} onPick={(g) => goMovements({ group: g, month, type: "expense", label: `${segs.find((x) => x.id === g)?.label} · ${monthLabel(month)}` })} center={<div><div class="faint" style={{ fontSize: "11.5px" }}>Uscite</div><div class="mid money" style={{ fontSize: "19px" }}>{eur(b.total)}</div></div>} />
           <div class="rank" style={{ flex: "1 1 220px", minWidth: 0 }}>
             {top.map((c, i) => (
-              <div class="rank-row" key={c.id}>
+              <div class="rank-row clickable pad" key={c.id} onClick={() => goMovements({ cat: c.id || "none", month, label: `${c.label} · ${monthLabel(month)}` })}>
                 <div class="name"><span>{c.icon}</span><span>{c.label}</span></div>
                 <div class="v money">{eur(c.total)}</div>
                 <div class="track">
@@ -160,6 +172,18 @@ function WhereCard({ month }: { month: string }) {
         </div>
       )}
       {segs.length > 1 && <div class="legend">{segs.map((x) => <span key={x.id}><i style={{ background: x.color }} />{x.label}</span>)}</div>}
+    </div>
+  );
+}
+
+function UncatHint({ month }: { month: string }) {
+  const n = memo("uncat" + month, () => lines().filter((l) => l.month === month && l.amount < 0 && (!l.type || (l.type === "expense" && !l.categoryId))).length);
+  return (
+    <div class="empty" style={{ padding: "26px 10px" }}>
+      <div class="em">🧾</div>
+      <b>Nessuna uscita classificata in {monthLabel(month)}</b>
+      {n > 0 ? <button class="btn sm primary" onClick={() => goMovements({ month, status: "uncat", label: `Da classificare · ${monthLabel(month)}` })}>Classifica {n} uscite</button>
+        : <span class="faint">Importa gli estratti conto del mese per vederle qui.</span>}
     </div>
   );
 }
@@ -180,7 +204,7 @@ function BudgetCard({ month }: { month: string }) {
           </div>
           <div class="stack" style={{ gap: "10px" }}>
             {items.map((x, i) => (
-              <div key={x.categoryId}>
+              <div key={x.categoryId} class="clickable pad" onClick={() => goMovements({ cat: x.categoryId, month, label: `${x.label} · budget ${monthLabel(month)}` })}>
                 <div class="row between" style={{ fontSize: "12.5px", marginBottom: "4px" }}><span>{x.icon} {x.label}</span><span class="money faint">{eur(x.spent)} / {eur(x.budget)}</span></div>
                 <div class="bar" style={{ position: "relative" }}>
                   <span style={{ width: Math.min(100, x.pct * 100) + "%", background: color(x.status), animationDelay: i * 40 + "ms" }} />
@@ -204,7 +228,7 @@ function RecurringCard() {
       {!next.length ? <p class="faint">Nessun addebito periodico riconosciuto (servono almeno 3 ripetizioni regolari).</p> : (
         <div class="list">
           {next.map((r) => (
-            <div class="li" key={r.id}>
+            <div class="li clickable" key={r.id} onClick={() => goMovements({ ids: [...new Set(r.lineIds.map((x) => x.split("::")[0]))], label: `${r.label} · ${r.cadenceLabel}` })}>
               <div class="avatar" style={{ background: `color-mix(in srgb, ${catColor(r.categoryId)} 20%, var(--surface-3))` }}>{r.kind === "subscription" ? "🔁" : "🧾"}</div>
               <div><div class="t">{r.label}</div><div class="s">{r.cadenceLabel} · {r.status === "late" ? <span class="warn">in ritardo</span> : "prossimo " + shortDate(r.nextExpected)}{r.priceChange && <span class="bad"> · {r.priceChange.pct > 0 ? "+" : ""}{pct(r.priceChange.pct)}</span>}</div></div>
               <div class="money" style={{ fontWeight: 650 }}>{eur(r.expectedAmount)}</div>
@@ -247,7 +271,7 @@ function AccountsStrip() {
       <div class="card-head"><h2>Conti</h2><a class="faint" href="#conti" style={{ fontSize: "12px" }}>Dettagli →</a></div>
       <div class="grid g-4" style={{ gap: "10px" }}>
         {acc.map((a) => (
-          <div key={a.id} class="row between" style={{ padding: "10px 12px", borderRadius: "14px", background: "var(--surface-2)" }}>
+          <div key={a.id} class="row between clickable" style={{ padding: "10px 12px", borderRadius: "14px", background: "var(--surface-2)" }} onClick={() => goMovements({ account: a.id, label: `Conto ${a.name}` })}>
             <div style={{ minWidth: 0 }}>
               <div class="row" style={{ gap: "7px", fontSize: "12.5px", fontWeight: 600, whiteSpace: "nowrap" }}><i class="swatch" style={{ background: color(a.id), borderRadius: "50%" }} />{a.name}</div>
               <div class={"money " + (a.current < 0 ? "bad" : "")} style={{ fontWeight: 700, fontSize: "16px", marginTop: "2px" }}>{eur(a.current)}</div>

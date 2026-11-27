@@ -4,7 +4,7 @@ import { Tip, useWidth } from "./base.tsx";
 
 // ---------- ciambella ----------
 export interface Seg { id: string; label: string; value: number; color: string }
-export function Donut({ segs, size = 190, thickness = 20, center, format }: { segs: Seg[]; size?: number; thickness?: number; center?: ComponentChildren; format: (v: number) => string }) {
+export function Donut({ segs, size = 190, thickness = 20, center, format, onPick }: { segs: Seg[]; size?: number; thickness?: number; center?: ComponentChildren; format: (v: number) => string; onPick?: (id: string) => void }) {
   const [hover, setHover] = useState<string | null>(null);
   const total = segs.reduce((s, x) => s + Math.max(0, x.value), 0) || 1;
   const r = (size - thickness) / 2, c = size / 2;
@@ -20,8 +20,8 @@ export function Donut({ segs, size = 190, thickness = 20, center, format }: { se
           const el = (
             <circle key={s.id} cx={c} cy={c} r={r} fill="none" stroke={s.color} stroke-width={hover === s.id ? thickness + 4 : thickness}
               pathLength={100} stroke-dasharray={`${Math.max(0.01, len - gap)} ${100 - Math.max(0.01, len - gap)}`} stroke-dashoffset={-acc}
-              opacity={hover && hover !== s.id ? 0.35 : 1} style={{ transition: "opacity 150ms ease, stroke-width 150ms ease", cursor: "default" }}
-              onPointerEnter={() => setHover(s.id)} onPointerLeave={() => setHover(null)} />
+              opacity={hover && hover !== s.id ? 0.35 : 1} style={{ transition: "opacity 150ms ease, stroke-width 150ms ease", cursor: onPick ? "pointer" : "default" }}
+              onPointerEnter={() => setHover(s.id)} onPointerLeave={() => setHover(null)} onClick={() => onPick?.(s.id)} />
           );
           acc += len;
           return el;
@@ -65,7 +65,7 @@ export function Ring({ pct, size = 46, stroke = 5, color }: { pct: number; size?
 }
 
 // ---------- calendario (heatmap) ----------
-export function Heatmap({ days, end, weeks = 26, format, levels }: { days: Map<string, number>; end: string; weeks?: number; format: (v: number) => string; levels?: number[] }) {
+export function Heatmap({ days, end, weeks = 26, format, levels, onPick }: { days: Map<string, number>; end: string; weeks?: number; format: (v: number) => string; levels?: number[]; onPick?: (date: string) => void }) {
   const [tip, setTip] = useState<{ x: number; y: number; d: string; v: number } | null>(null);
   const cells = useMemo(() => {
     const e = new Date(end + "T00:00:00Z");
@@ -98,7 +98,8 @@ export function Heatmap({ days, end, weeks = 26, format, levels }: { days: Map<s
         </div>
         <div class="heat">
           {cells.map((c, i) => (
-            <i key={c.d} style={{ background: c.v < 0 ? "transparent" : `var(--seq-${lvl(c.v)})`, animationDelay: Math.floor(i / 7) * 12 + "ms" }}
+            <i key={c.d} class={onPick && c.v > 0 ? "hit" : undefined} onClick={() => { if (onPick && c.v > 0) onPick(c.d); }}
+              style={{ background: c.v < 0 ? "transparent" : `var(--seq-${lvl(c.v)})`, animationDelay: Math.floor(i / 7) * 12 + "ms" }}
               onPointerEnter={(e) => { if (c.v < 0) return; const r = (e.currentTarget as HTMLElement); setTip({ x: r.offsetLeft + 28, y: r.offsetTop + 16, d: c.d, v: c.v }); }} />
           ))}
         </div>
@@ -106,7 +107,7 @@ export function Heatmap({ days, end, weeks = 26, format, levels }: { days: Map<s
       <div class="legend" style={{ alignItems: "center" }}>
         <span>meno</span>{[0, 1, 2, 3, 4, 5].map((l) => <i key={l} style={{ background: `var(--seq-${l})`, width: "12px", height: "12px" }} />)}<span>più</span>
       </div>
-      {tip && <Tip x={tip.x} y={tip.y}><b>{new Date(tip.d + "T12:00:00Z").toLocaleDateString("it-IT", { weekday: "long", day: "numeric", month: "long" })}</b><div class="r"><span>Spese</span><span class="money">{format(tip.v)}</span></div></Tip>}
+      {tip && <Tip x={tip.x} y={tip.y}><b>{new Date(tip.d + "T12:00:00Z").toLocaleDateString("it-IT", { weekday: "long", day: "numeric", month: "long" })}</b><div class="r"><span>Spese</span><span class="money">{format(tip.v)}</span></div>{onPick && tip.v > 0 && <div class="tip-hint">Clicca per i movimenti</div>}</Tip>}
     </div>
   );
 }
@@ -115,7 +116,7 @@ export function Heatmap({ days, end, weeks = 26, format, levels }: { days: Map<s
 export interface SNode { id: string; label: string; color: string; col?: number }
 const short = (s: string, n = 24) => (s.length > n ? s.slice(0, n - 1).trimEnd() + "…" : s);
 export interface SLink { source: string; target: string; value: number }
-export function Sankey({ nodes, links, height = 380, format }: { nodes: SNode[]; links: SLink[]; height?: number; format: (v: number) => string }) {
+export function Sankey({ nodes, links, height = 380, format, onPick }: { nodes: SNode[]; links: SLink[]; height?: number; format: (v: number) => string; onPick?: (nodeId: string) => void }) {
   const [ref, w] = useWidth<HTMLDivElement>();
   const [hover, setHover] = useState<{ kind: "n" | "l"; id: string; x: number; y: number } | null>(null);
   const layout = useMemo(() => {
@@ -159,14 +160,15 @@ export function Sankey({ nodes, links, height = 380, format }: { nodes: SNode[];
       <svg class="chart" width={w} height={height} role="img" aria-label="Flusso di cassa">
         {layout.paths.map((p, i) => (
           <path key={i} d={p.d} fill="none" stroke={color(p.l.source === "in" ? p.l.target : p.l.source)} stroke-width={p.lw}
-            opacity={hl(p) ? 0.38 : 0.08} style={{ transition: "opacity 150ms ease", animation: `fade 700ms var(--ease-out) ${100 + i * 15}ms both` }}
+            opacity={hl(p) ? 0.38 : 0.08} style={{ transition: "opacity 150ms ease", animation: `fade 700ms var(--ease-out) ${100 + i * 15}ms both`, cursor: onPick ? "pointer" : "default" }}
+            onClick={() => onPick?.(p.l.target === "entrate" ? p.l.source : p.l.target)}
             onPointerMove={(e) => { const r = (e.currentTarget as SVGElement).ownerSVGElement!.getBoundingClientRect(); setHover({ kind: "l", id: p.l.source + ">" + p.l.target, x: e.clientX - r.left, y: e.clientY - r.top }); }} />
         ))}
         {layout.N.map((n) => {
           const p = layout.pos.get(n.id)!;
           const last = p.c === layout.ncol - 1;
           return (
-            <g key={n.id} onPointerEnter={() => setHover({ kind: "n", id: n.id, x: p.x + 6, y: p.y })}>
+            <g key={n.id} onPointerEnter={() => setHover({ kind: "n", id: n.id, x: p.x + 6, y: p.y })} onClick={() => onPick?.(n.id)} style={onPick ? { cursor: "pointer" } : undefined}>
               <rect x={p.x} y={p.y} width={layout.nodeW} height={p.h} rx="3" fill={n.color} style={{ animation: "fade 400ms var(--ease-out) both" }} />
               {p.h >= 11 && (w >= 600 || last || p.c === 0) && (
                 <text x={last ? p.x + layout.nodeW + 6 : p.x + layout.nodeW + 6} y={p.y + p.h / 2 + 4} style={{ fill: "var(--text)", fontWeight: 600, paintOrder: "stroke", stroke: "var(--surface-1)", strokeWidth: 3 }}>

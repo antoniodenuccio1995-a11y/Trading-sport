@@ -3,32 +3,77 @@ import type { Category, MovementType } from "./types.ts";
 /**
  * Gruppi di spesa: al massimo 7 colori categoriali fissi + "Altro" neutro.
  * Il colore segue il gruppo (non la posizione in classifica), così resta uguale
- * in ogni grafico e con ogni filtro.
+ * in ogni grafico e con ogni filtro. Id, colori e icone dei gruppi sono fissi;
+ * il titolare può cambiare il nome dei gruppi (Settings.groupLabels) e il gruppo
+ * di ogni categoria (Category.group): vedi configureCategories().
  */
 export interface Group { id: string; label: string; slot: number; icon: string }
+export const DEFAULT_GROUP_LABELS: Readonly<Record<string, string>> = {
+  casa: "Casa e bollette",
+  cibo: "Spesa alimentare",
+  svago: "Svago e uscite",
+  persona: "Salute e persona",
+  crescita: "Formazione e tecnologia",
+  mobilita: "Auto e trasporti",
+  altro: "Tasse, banche e altro",
+};
+/** Elenco ordinato dei gruppi. `label` riflette i nomi scelti dal titolare (aggiornato da configureCategories). */
 export const GROUPS: Group[] = [
-  { id: "casa", label: "Casa e utenze", slot: 1, icon: "🏠" },
-  { id: "cibo", label: "Cibo", slot: 2, icon: "🍝" },
-  { id: "svago", label: "Svago, viaggi e regali", slot: 4, icon: "🎟️" },
-  { id: "persona", label: "Salute e persona", slot: 5, icon: "🩺" },
-  { id: "crescita", label: "Formazione e tecnologia", slot: 6, icon: "🎓" },
-  { id: "mobilita", label: "Mobilità e auto", slot: 7, icon: "🚗" },
-  { id: "altro", label: "Tasse, servizi e altro", slot: 0, icon: "🧾" },
+  { id: "casa", label: DEFAULT_GROUP_LABELS.casa, slot: 1, icon: "🏠" },
+  { id: "cibo", label: DEFAULT_GROUP_LABELS.cibo, slot: 2, icon: "🛒" },
+  { id: "svago", label: DEFAULT_GROUP_LABELS.svago, slot: 4, icon: "🎟️" },
+  { id: "persona", label: DEFAULT_GROUP_LABELS.persona, slot: 5, icon: "🩺" },
+  { id: "crescita", label: DEFAULT_GROUP_LABELS.crescita, slot: 6, icon: "🎓" },
+  { id: "mobilita", label: DEFAULT_GROUP_LABELS.mobilita, slot: 7, icon: "🚗" },
+  { id: "altro", label: DEFAULT_GROUP_LABELS.altro, slot: 0, icon: "🧾" },
 ];
 // slot 3 (acqua) = Entrate e slot 8 (rosso) = Uscite in tutti i grafici: non usati dai gruppi.
+const GROUP_BY_ID = new Map(GROUPS.map((g) => [g.id, g]));
+export const GROUP_IDS: readonly string[] = GROUPS.map((g) => g.id);
+export const isGroupId = (id: unknown): id is string => typeof id === "string" && GROUP_BY_ID.has(id);
+/** Gruppo per id (undefined se l'id non è un gruppo). */
+export const findGroup = (id: string): Group | undefined => GROUP_BY_ID.get(id);
 
+/** Gruppo predefinito di ogni categoria di spesa (le categorie non elencate vanno in "altro"). */
 const G: Record<string, string> = {
   "exp.housing": "casa", "exp.utilities": "casa", "exp.home": "casa",
-  "exp.groceries": "cibo", "exp.dining": "cibo",
+  "exp.groceries": "cibo",
   "exp.mobility": "mobilita", "exp.vehicle": "mobilita",
-  "exp.leisure": "svago", "exp.travel": "svago", "exp.betting": "svago", "exp.gifts": "svago", "exp.events": "svago",
+  // Ristorazione: soprattutto uscite a mangiare fuori, quindi svago più che spesa alimentare.
+  "exp.dining": "svago", "exp.leisure": "svago", "exp.travel": "svago", "exp.betting": "svago", "exp.gifts": "svago", "exp.events": "svago",
   "exp.health": "persona", "exp.personal_care": "persona", "exp.clothing": "persona",
   "exp.education": "crescita", "exp.technology": "crescita",
   "exp.taxes": "altro", "exp.financial_services": "altro", "exp.rewards": "altro", "exp.other": "altro",
 };
+/** Id del gruppo predefinito di una categoria (senza le scelte del titolare). */
+export const defaultGroupId = (categoryId: string): string => G[categoryId] ?? "altro";
+/** Id del gruppo di una categoria: quello scelto dal titolare se valido, altrimenti il predefinito. */
+export const categoryGroupId = (c: Pick<Category, "id" | "group">): string => (isGroupId(c.group) ? c.group : defaultGroupId(c.id));
+/** Nome predefinito di un gruppo. */
+export const defaultGroupLabel = (groupId: string): string => DEFAULT_GROUP_LABELS[groupId] ?? groupId;
+
+// ---------- registro a runtime ----------
+// Lo stato (store.ts) chiama configureCategories() a ogni cambio dell'istantanea, così
+// groupOf(), GROUPS[].label e tutto ciò che ne dipende seguono le scelte del titolare.
+let overrides = new Map<string, string>();
+
+/**
+ * Ricostruisce il registro: gruppi scelti per le categorie (Category.group) e nomi dei gruppi
+ * (Settings.groupLabels). Aggiorna sul posto `label` degli oggetti di GROUPS.
+ */
+export function configureCategories(categories: readonly Pick<Category, "id" | "group">[] = [], groupLabels: Readonly<Record<string, string>> = {}): void {
+  const next = new Map<string, string>();
+  for (const c of categories) if (isGroupId(c.group) && c.group !== defaultGroupId(c.id)) next.set(c.id, c.group);
+  overrides = next;
+  for (const g of GROUPS) {
+    const custom = typeof groupLabels?.[g.id] === "string" ? groupLabels[g.id].trim() : "";
+    g.label = custom || DEFAULT_GROUP_LABELS[g.id];
+  }
+}
+
+/** Gruppo di spesa di una categoria, secondo il registro (scelta del titolare, poi predefinito). */
 export function groupOf(categoryId: string): Group {
-  const id = G[categoryId] ?? "altro";
-  return GROUPS.find((g) => g.id === id)!;
+  return GROUP_BY_ID.get(overrides.get(categoryId) ?? defaultGroupId(categoryId))!;
 }
 
 type Seed = [id: string, label: string, icon: string, status?: Category["status"], budgetEligible?: boolean, aliases?: string[]];
@@ -72,6 +117,9 @@ export function defaultCategories(): Category[] {
   });
   return [...INCOME.map(mk("income", 10)), ...EXPENSE.map(mk("expense", 110))];
 }
+const DEFAULT_IDS = new Set([...INCOME, ...EXPENSE].map((s) => s[0]));
+/** Categoria predefinita dell'app (non si elimina: normalize() la ricreerebbe; al massimo si nasconde). */
+export const isDefaultCategory = (id: string): boolean => DEFAULT_IDS.has(id);
 
 export const TYPE_LABEL: Record<MovementType, string> = {
   "": "Da classificare",

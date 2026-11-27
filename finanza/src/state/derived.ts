@@ -1,7 +1,7 @@
 // Analisi memorizzate per versione dei dati + parametri. Nessun calcolo a ogni render.
 import * as An from "../analytics/index.ts";
 import type { Period } from "../analytics/common.ts";
-import { getSnap, latestMonth, lines, memo } from "./store.ts";
+import { getSnap, latestMonth, lines, memo, months } from "./store.ts";
 import { todayIso } from "../ui/format.ts";
 
 const opts = () => ({ monthStartDay: getSnap().settings.monthStartDay || 1 });
@@ -26,6 +26,13 @@ export const refDate = (month: string) => {
   return b.end < t ? b.end : t;
 };
 
+/** Tutti i mesi dal primo movimento al mese corrente, senza buchi (per la navigazione e i periodi). */
+export const allMonths = () => memo("allmonths", () => {
+  const ms = months(), last = currentMonth();
+  const out: string[] = [];
+  for (let m = ms[0] ?? last; m <= last && out.length < 600; m = An.addMonths(m, 1)) out.push(m);
+  return out;
+});
 export const series = () => memo("series", () => An.monthlySeries(lines()));
 export const breakdown = (p: Period, kind: "expense" | "income" = "expense") => memo("bd" + pk(p) + kind, () => An.categoryBreakdown(lines(), p, getSnap().categories, { ...opts(), kind }));
 export const recurring = () => memo("rec", () => An.detectRecurring(lines(), today()));

@@ -111,7 +111,7 @@ export function categoryBreakdown(
   });
 
   const info = categoryLookup(categories);
-  const group = groupLookup();
+  const group = groupLookup(categories);
   let total = 0, count = 0, prevTotal = 0;
   for (const a of byCat.values()) { total += a.cur; count += a.count; prevTotal += a.prev; }
 

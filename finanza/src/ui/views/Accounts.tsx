@@ -5,6 +5,7 @@ import { openAdvances } from "../../analytics/advances.ts";
 import { getSnap, lines, memo } from "../../state/store.ts";
 import * as A from "../../state/actions.ts";
 import { Empty, Seg, toast } from "../components/common.tsx";
+import { goMovements } from "../drill.ts";
 import { LineChart } from "../charts/LineChart.tsx";
 import { CountUp } from "../charts/base.tsx";
 import { Spark } from "../charts/Shapes.tsx";
@@ -42,7 +43,7 @@ export function Accounts() {
           <div style={{ marginTop: "14px" }}>
             <div class="row between" style={{ marginBottom: "4px" }}><span class="faint" style={{ fontSize: "12px" }}>Andamento</span>
               <Seg value={range} onChange={setRange} options={[["12", "12 mesi"], ["24", "24 mesi"], ["all", "Tutto"]]} /></div>
-            <LineChart xLabels={keys.map((k) => cap(monthLabel(k)))} axisLabel={(i) => monthLabel(keys[i], true)} tickEvery={Math.max(1, Math.ceil(keys.length / 6))}
+            <LineChart onPick={(i) => goMovements({ month: keys[i], label: `Movimenti di ${monthLabel(keys[i])}` })} xLabels={keys.map((k) => cap(monthLabel(k)))} axisLabel={(i) => monthLabel(keys[i], true)} tickEvery={Math.max(1, Math.ceil(keys.length / 6))}
               yFormat={eur} yTick={eurShort} zero={false} height={230}
               series={[
                 { id: "nw", label: "Patrimonio", color: "var(--accent)", values: b.netWorth.slice(k0), area: true, width: 2.5 },
@@ -59,7 +60,7 @@ export function Accounts() {
               <div class="mid money" style={{ marginBottom: "10px" }}>{eur(adv.totals.outstanding)} <span class="faint" style={{ fontSize: "13px", fontWeight: 500 }}>da recuperare</span></div>
               <div class="list">
                 {adv.items.slice(0, 8).map((x) => (
-                  <div class="li" key={x.key}>
+                  <div class="li clickable" key={x.key} onClick={() => goMovements({ ids: [...new Set(x.lineIds.map((id) => id.split("::")[0]))], label: `Anticipi e rimborsi · ${x.counterparty || "senza nome"}` })}>
                     <div class="avatar">🤝</div>
                     <div><div class="t">{x.counterparty || "Senza nome"}</div><div class="s">{x.count} movimenti · ultimo {fullDate(x.lastDate)}</div></div>
                     <div style={{ textAlign: "right" }}><div class={"money " + (x.outstanding > 0.005 ? "warn" : "in")} style={{ fontWeight: 650 }}>{x.outstanding > 0.005 ? eur(x.outstanding) : "Saldato"}</div><div class="faint" style={{ fontSize: "11.5px" }}>anticipati {eur(x.advanced)}</div></div>
@@ -80,7 +81,7 @@ export function Accounts() {
                 <div class="row" style={{ gap: "9px" }}><i class="swatch" style={{ background: color(a.id), width: "11px", height: "11px", borderRadius: "50%" }} /><b>{a.name}</b></div>
                 <span class="faint" style={{ fontSize: "11.5px" }}>{KIND[a.kind]}</span>
               </div>
-              <div class="row between" style={{ alignItems: "flex-end", marginTop: "10px" }}>
+              <div class="row between clickable pad" style={{ alignItems: "flex-end", marginTop: "10px" }} title="Vedi i movimenti del conto" onClick={() => goMovements({ account: a.id, label: `Conto ${a.name}` })}>
                 <div>
                   <div class={"mid money " + (a.current < 0 ? "bad" : "")}>{eur(a.current)}</div>
                   <div class="faint" style={{ fontSize: "11.5px" }}>{lastDate.get(a.id) ? "ultimo movimento " + fullDate(lastDate.get(a.id)!) : "nessun movimento"}</div>

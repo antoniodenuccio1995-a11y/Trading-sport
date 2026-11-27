@@ -1,7 +1,7 @@
 // Predicati sulle righe, periodi e piccoli aiuti condivisi dai moduli di analisi.
 import type { Category, Line } from "../domain/types.ts";
 import { isEconomic, monthKey } from "../domain/movement.ts";
-import { GROUPS, groupOf, type Group } from "../domain/categories.ts";
+import { categoryGroupId, findGroup, groupOf, type Group } from "../domain/categories.ts";
 import { addDays, addMonths, dayNum, monthBounds } from "./dates.ts";
 
 /** Opzioni comuni: giorno di inizio del mese contabile (Settings.monthStartDay). */
@@ -87,7 +87,7 @@ export interface CategoryInfo { id: string; label: string; icon: string; color: 
 export function categoryLookup(categories: readonly Category[] = []): (id: string) => CategoryInfo {
   const byId = new Map<string, CategoryInfo>();
   for (const c of categories) {
-    byId.set(c.id, { id: c.id, label: c.label, icon: c.icon, color: c.color, groupId: groupOf(c.id).id, budgetEligible: c.budgetEligible });
+    byId.set(c.id, { id: c.id, label: c.label, icon: c.icon, color: c.color, groupId: categoryGroupId(c), budgetEligible: c.budgetEligible });
   }
   return (id) => {
     const hit = byId.get(id);
@@ -98,9 +98,14 @@ export function categoryLookup(categories: readonly Category[] = []): (id: strin
   };
 }
 
-/** Gruppo di spesa di una categoria, con mappa locale per evitare ricerche ripetute. */
-export function groupLookup(): (categoryId: string) => Group {
+/**
+ * Gruppo di spesa di una categoria, con mappa locale per evitare ricerche ripetute.
+ * Le categorie passate decidono da sole (Category.group, altrimenti il gruppo predefinito);
+ * gli id non elencati seguono il registro di groupOf() (scelte del titolare caricate nello stato).
+ */
+export function groupLookup(categories?: readonly Category[]): (categoryId: string) => Group {
   const cache = new Map<string, Group>();
+  if (categories) for (const c of categories) cache.set(c.id, findGroup(categoryGroupId(c))!);
   return (id) => {
     let g = cache.get(id);
     if (!g) { g = groupOf(id); cache.set(id, g); }
@@ -109,4 +114,4 @@ export function groupLookup(): (categoryId: string) => Group {
 }
 
 /** I gruppi definiti nel dominio, per id. */
-export const groupById = (id: string): Group | undefined => GROUPS.find((g) => g.id === id);
+export const groupById = (id: string): Group | undefined => findGroup(id);

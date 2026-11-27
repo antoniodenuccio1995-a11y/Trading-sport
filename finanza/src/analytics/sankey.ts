@@ -63,7 +63,7 @@ export function cashflowSankey(lines: readonly Line[], period: Period, categorie
   const cents = (v: number) => Math.round(v * 100);
   const eur = (c: number) => c / 100;
   const info = categoryLookup(categories);
-  const group = groupLookup();
+  const group = groupLookup(categories);
 
   const nodes: SankeyNode[] = [];
   const links: SankeyLink[] = [];

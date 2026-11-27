@@ -139,7 +139,7 @@ export interface Snapshot {
   settings: Settings;
   meta: { createdAt: string; migratedFrom?: string; demo?: boolean };
   /** Portafoglio investimenti (strumenti, operazioni, prezzi): vedi src/invest/types.ts. */
-  investments?: Record<string, unknown>;
+  investments?: import("../invest/types.ts").InvestData;
 }
 
 /** Riga prodotta da un importatore, prima di diventare Movement. */

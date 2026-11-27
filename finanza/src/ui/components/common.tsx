@@ -65,7 +65,8 @@ export function CategoryPicker({ anchor, value, direction, onPick, onClose }: {
     ref.current?.querySelector("input")?.focus();
     return () => removeEventListener("pointerdown", h);
   }, []);
-  const cats = getSnap().categories.filter((c) => c.status !== "inactive" && (!direction || c.direction === direction) && (!q || c.label.toLowerCase().includes(q.toLowerCase())));
+  // le categorie nascoste non si offrono, salvo quella già scelta (resta visibile finché non la si cambia)
+  const cats = getSnap().categories.filter((c) => (c.status !== "inactive" || c.id === value) && (!direction || c.direction === direction) && (!q || c.label.toLowerCase().includes(q.toLowerCase())));
   const top = Math.min(anchor.bottom + 6, innerHeight - 390), left = Math.min(anchor.left, innerWidth - 310);
   const groups: [string, Category[]][] = [];
   const inc = cats.filter((c) => c.direction === "income");
@@ -87,6 +88,10 @@ export function CategoryPicker({ anchor, value, direction, onPick, onClose }: {
           ))}
         </div>
       ))}
+      <a href="#categorie" onClick={onClose}
+        style={{ display: "flex", alignItems: "center", gap: "8px", marginTop: "6px", padding: "9px 9px 5px", borderTop: "1px solid var(--line)", fontSize: "12.5px", fontWeight: 600 }}>
+        <Icon name="settings" size={14} />Gestisci categorie
+      </a>
     </div>
   );
 }

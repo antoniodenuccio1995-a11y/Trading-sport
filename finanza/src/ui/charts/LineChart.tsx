@@ -23,9 +23,12 @@ interface Props {
   yTick?: (v: number) => string;
   zero?: boolean; // includi sempre lo zero
   markers?: { x: number; label: string }[];
+  /** Clic su un punto dell'asse x (es. apre i movimenti di quel giorno o mese). */
+  onPick?: (i: number) => void;
+  pickHint?: string;
 }
 
-export function LineChart({ xLabels, tickEvery = 1, axisLabel, series, band, height = 240, yFormat, yTick, zero = true, markers = [] }: Props) {
+export function LineChart({ xLabels, tickEvery = 1, axisLabel, series, band, height = 240, yFormat, yTick, zero = true, markers = [], onPick, pickHint = "Clicca per vedere i movimenti" }: Props) {
   const [ref, w] = useWidth<HTMLDivElement>();
   const [hover, setHover] = useState<number | null>(null);
   const n = xLabels.length;
@@ -70,7 +73,8 @@ export function LineChart({ xLabels, tickEvery = 1, axisLabel, series, band, hei
   return (
     <div class="chart-wrap" ref={ref}>
       <svg class="chart" width={w} height={height} role="img" aria-label={series.map((s) => s.label).join(", ")}
-        onPointerMove={onMove} onPointerLeave={() => setHover(null)}>
+        onPointerMove={onMove} onPointerLeave={() => setHover(null)} style={onPick ? { cursor: "pointer" } : undefined}
+        onClick={(e) => { if (!onPick) return; const r = (e.currentTarget as SVGElement).getBoundingClientRect(); onPick(nearest(xs, e.clientX - r.left)); }}>
         <defs>
           {series.filter((s) => s.area).map((s) => (
             <linearGradient id={gid + s.id} x1="0" x2="0" y1="0" y2="1" key={s.id}>
@@ -115,6 +119,7 @@ export function LineChart({ xLabels, tickEvery = 1, axisLabel, series, band, hei
             <div class="r" key={s.id}><span><i class="swatch" style={{ background: s.color }} />{s.label}</span><span class="money">{yFormat(v!)}</span></div>
           ))}
           {band && band.lo[hover] != null && <div class="r faint"><span>{band.label}</span><span class="money">{yFormat(band.lo[hover]!)} – {yFormat(band.hi[hover]!)}</span></div>}
+          {onPick && <div class="tip-hint">{pickHint}</div>}
         </Tip>
       )}
       {series.length > 1 && (

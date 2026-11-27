@@ -45,8 +45,10 @@ describe("categoryBreakdown", () => {
   it("gruppi da GROUPS, ordinati per totale", () => {
     const b = categoryBreakdown(lines, "2026-10", cats);
     const food = b.groups.find((x) => x.id === groupOf("exp.groceries").id)!;
-    expect(food.total).toBe(360);
-    expect(food.categoryIds).toEqual(["exp.groceries", "exp.dining"]);
+    expect(food.total).toBe(300);
+    expect(food.categoryIds).toEqual(["exp.groceries"]);
+    // Ristorazione è nel gruppo Svago per impostazione predefinita (uscite a mangiare fuori).
+    expect(b.groups.find((x) => x.id === "svago")).toMatchObject({ total: 60, categoryIds: ["exp.dining"] });
     expect(food.slot).toBe(GROUPS.find((x) => x.id === food.id)!.slot);
     expect(b.groups[0].id).toBe(food.id);
     expect(b.groups.every((x) => GROUPS.some((g) => g.id === x.id))).toBe(true);
