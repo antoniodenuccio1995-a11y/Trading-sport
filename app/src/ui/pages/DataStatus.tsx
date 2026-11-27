@@ -47,7 +47,7 @@ export function DataStatus() {
             <td>{r.rows_in ?? "—"}</td><td>{r.inserted ?? "—"}</td><td>{r.updated ?? "—"}</td><td>{r.removed ?? "—"}</td><td class={`l ${r.ok ? "pos" : "neg"}`}>{r.ok ? "ok" : r.message}</td></tr>)}</tbody>
         </table></div>}
       </Card>
-      <p class="note">Fonti: football-data.co.uk (storico, risultati e quote) e Open Matchday (stagione in corso, calendario, statistiche). Aggiornamento automatico ogni giorno tra le 7:30 e le 7:55 e tra le 18:30 e le 18:55 (ora italiana d’inverno). Versione app {APP_VERSION}.</p>
+      <p class="note">Fonti: football-data.co.uk (storico, risultati e quote) e Open Matchday (stagione in corso, calendario, statistiche). Aggiornamento automatico tre volte al giorno: 1:30–1:55, 7:30–7:55 e 18:30–18:55 (ora italiana d’inverno; d’estate un’ora dopo). Con l’app aperta i dati nuovi arrivano da soli entro mezz’ora, o subito con “Aggiorna”. Versione app {APP_VERSION}.</p>
     </>
   );
 }

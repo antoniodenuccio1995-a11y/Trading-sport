@@ -31,9 +31,9 @@ Misure (Chromium, archivio di 28.383 partite dal backup del 6/11):
 
 ## Aggiornamento automatico (ora italiana d'inverno)
 
-- 07:30–07:45 e 18:30–18:45: un campionato al minuto (`ta-sync-lg-<codice>`), risultati e calendario della stagione corrente. Uno alla volta perché le Edge Functions gratuite non reggono 16 richieste contemporanee.
-- 07:50 e 18:50: quote pre-partita da `fixtures.csv` di football-data.
-- 07:55 e 18:55: pubblicazione delle stagioni modificate.
+- 01:30–01:46, 07:30–07:46 e 18:30–18:46 (00:30, 06:30 e 17:30 UTC; il giro di notte dalla v1.7.3, migrazione `20261128120000_ta_cron_night.sql`): un campionato al minuto (`ta-sync-lg-<codice>`), risultati e calendario della stagione corrente. Uno alla volta perché le Edge Functions gratuite non reggono 16 richieste contemporanee.
+- 01:50, 07:50 e 18:50: quote pre-partita da `fixtures.csv` di football-data.
+- 01:55, 07:55 e 18:55: pubblicazione delle stagioni modificate.
 
 Il registro è nella tabella `ta_sync_runs` e nella pagina **Stato dei dati** dell'app.
 
@@ -41,7 +41,7 @@ Il registro è nella tabella `ta_sync_runs` e nella pagina **Stato dei dati** de
 
 Supabase mette in pausa i progetti gratuiti senza attività sul database per 7 giorni. Tre protezioni indipendenti:
 
-1. gli aggiornamenti automatici scrivono nel database due volte al giorno (`pg_cron` conta come attività);
+1. gli aggiornamenti automatici scrivono nel database tre volte al giorno (`pg_cron` conta come attività);
 2. il job `ta-heartbeat` scrive ogni giorno in `ta_meta` alle 13:07 (ora italiana);
 3. il workflow GitHub `Supabase attivo` legge dal database ogni giorno dall'esterno.
 
@@ -139,6 +139,11 @@ select public.ta_call_sync('{"mode":"publish"}'::jsonb);
 ### v1.7.2 · installazione
 - **Installa l'app** (`ui/components/Install.tsx`): pulsante nella barra laterale e avviso nella pagina delle partite ("Non ora" lo nasconde per 30 giorni). Su Chrome, Edge e Samsung Internet apre la finestra di installazione del browser (evento `beforeinstallprompt`); su iPhone/iPad e Safari per Mac mostra i passaggi (Condividi → Aggiungi alla schermata Home; File → Aggiungi al Dock). Nascosto se l'app è già installata, se il browser non può installarla o nel file unico.
 - Manifest con `id`, descrizione e categorie. Service worker: in cache solo la pagina dell'app, non le altre pagine pubblicate sullo stesso sito (cache `ta-shell-v2`).
+
+### v1.7.3 · aggiornamenti
+- **Giro notturno**: terzo aggiornamento automatico alle 00:30 UTC (01:30 italiane d'inverno), dopo le partite serali.
+- **Dati con l'app aperta** (`watchFreshness` in `data/store.ts`): il manifest si ricontrolla quando l'app torna in primo piano e ogni 30 minuti mentre è visibile; si scarica solo se è cambiato. `fromNetwork` non ricostruisce più l'archivio se i dati in memoria sono già gli ultimi.
+- **Nuova versione** (`ui/components/UpdateNotice.tsx`): con le stesse regole si confronta il file principale della pagina pubblicata con quello in uso; se è diverso compare l'avviso "Nuova versione disponibile · Aggiorna" (ricarica la pagina dopo averne rinfrescato la copia del browser). Non attivo nel file unico.
 
 ## Cosa manca (prossime fasi)
 

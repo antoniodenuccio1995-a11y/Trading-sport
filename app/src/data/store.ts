@@ -93,12 +93,16 @@ async function fromCache(): Promise<boolean> {
   return true;
 }
 
+let lastCheck = 0;
+
 async function fromNetwork() {
   emit({ syncing: true });
   const t0 = performance.now();
   const man = await fetchJson<Manifest>("v1/manifest.json", true);
   const old = await idbGet<Manifest>("manifest");
-  if (old && old.generatedAt === man.generatedAt && store.source === "cache") { emit({ syncing: false }); return; }
+  lastCheck = Date.now();
+  // niente di nuovo rispetto a quello che è già in memoria: non si ricostruisce nulla
+  if (old && old.generatedAt === man.generatedAt && store.generatedAt === man.generatedAt) { emit({ syncing: false }); return; }
   const need = [man.ref.path, ...man.seasons.map((s) => s.path)];
   const docs = await Promise.all(need.map(async (p) => (await idbGet(p)) ?? fetchJson(p).then(async (doc) => { await idbSet(p, doc); return doc; })));
   const [ref, ...snaps] = docs as [RefSnapshot, ...SeasonSnapshot[]];
@@ -125,6 +129,19 @@ export async function startStore() {
   }
 }
 export const refreshStore = () => fromNetwork().catch((e) => emit({ syncing: false, error: (e as Error).message }));
+
+/**
+ * Con l'app aperta a lungo (o in sottofondo) i dati nuovi arrivano da soli: si controlla il manifest
+ * quando l'app torna in primo piano e ogni 30 minuti mentre è visibile (scarica solo se è cambiato).
+ */
+export function watchFreshness(every = 30 * 60000) {
+  const check = () => {
+    if (document.visibilityState !== "visible" || store.syncing || Date.now() - lastCheck < every / 2) return;
+    fromNetwork().catch(() => emit({ syncing: false })); // in background: se la rete manca si riprova al giro dopo
+  };
+  document.addEventListener("visibilitychange", check);
+  setInterval(check, every);
+}
 
 // --- utilità di lettura ---
 export const teamName = (id: number) => store.teams.get(id)?.name ?? `#${id}`;

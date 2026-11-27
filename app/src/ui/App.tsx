@@ -11,6 +11,7 @@ import { requestServerRefresh } from "../data/store";
 import { Flag, TeamBadge } from "./components/badge";
 import { BrandMark, Stadium } from "./components/Stadium";
 import { InstallButton } from "./components/Install";
+import { UpdateNotice } from "./components/UpdateNotice";
 import { go, href, useRoute } from "./router";
 
 type Theme = "auto" | "diurna" | "notturna" | "azzurri" | "classica";
@@ -115,6 +116,7 @@ export function App() {
         </header>
         <main class="content">{body}</main>
       </div>
+      <UpdateNotice />
     </div>
   );
 }

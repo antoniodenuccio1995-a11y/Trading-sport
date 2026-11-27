@@ -547,3 +547,15 @@ body { background: transparent; }
 .inst-dlg ol { margin: 0 0 10px; padding-left: 20px; display: grid; gap: 8px; line-height: 1.45; }
 .inst-dlg .btn { width: 100%; padding: 10px; }
 .inst-ico { display: inline-grid; place-items: center; width: 24px; height: 24px; border-radius: 6px; background: var(--surface-2); color: #0a7aff; vertical-align: -5px; }
+
+/* avviso di nuova versione */
+.upd-toast { position: fixed; z-index: 90; left: 50%; bottom: calc(16px + env(safe-area-inset-bottom)); transform: translateX(-50%); width: min(560px, calc(100% - 32px));
+  display: flex; align-items: center; gap: 12px; padding: 12px 14px; border-radius: var(--radius); background: var(--surface-solid); color: var(--text);
+  border: 1px solid var(--line); box-shadow: 0 14px 40px rgba(0, 0, 0, .3); }
+.upd-toast > span { flex: 1; min-width: 0; line-height: 1.4; }
+.upd-actions { display: flex; gap: 8px; flex: none; }
+@media (max-width: 560px) {
+  .upd-toast { flex-wrap: wrap; }
+  .upd-actions { width: 100%; }
+  .upd-actions .btn { flex: 1; padding: 9px 12px; }
+}

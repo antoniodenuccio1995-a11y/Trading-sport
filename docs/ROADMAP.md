@@ -17,6 +17,7 @@ Aggiornata al 27 novembre 2026 (versione 1.7). Ordine = priorità proposta; si c
 | 1.7 | Chi ha segnato e punteggio dopo ogni gol nella linea dei gol (Germania completa, altri campionati quando è certo), forma con punteggi casa–ospite, riepilogo degli scontri diretti |
 | 1.7.1 | Controllo di tutte le percentuali sui dati reali; modello tarato per Over/Under, GG e 1° tempo |
 | 1.7.2 | Pulsante "Installa l'app" (Android, computer, iPhone con i passaggi) |
+| 1.7.3 | Terzo aggiornamento automatico di notte; dati nuovi e avviso di nuova versione anche con l'app aperta |
 
 ## Prossimi passi
 
