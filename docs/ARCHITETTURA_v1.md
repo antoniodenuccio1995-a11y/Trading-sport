@@ -136,6 +136,10 @@ select public.ta_call_sync('{"mode":"publish"}'::jsonb);
 - **Taratura del modello** (`stats/poisson.ts`), misurata su 4.520 partite (stagioni 2022/23–2025/26, solo dati precedenti a ogni partita): l'1X2 era già ben tarato; Over/Under, GG e gol nel 1° tempo erano troppo estremi (Over 2,5 dato al 74% usciva il 63%, dato al 26% usciva il 37%) e non facevano meglio della media del campionato. Ora il totale dei gol attesi è avvicinato a metà strada verso la media del campionato (anche per i singoli tempi) e i risultati bassi hanno la correzione di Dixon-Coles (rho −0,1). Verifica sulle stagioni 2024/25–2025/26, non usate per regolare: tutte le fasce entro pochi punti dalla realtà e punteggio di Brier migliore della media del campionato su 1X2, Over 1,5/2,5/3,5 e 1° tempo; sul GG il modello resta pari alla media del campionato (nessun vantaggio).
 - **Limiti della classifica** (invariati): a parità di punti si usano differenza reti e gol fatti, non gli scontri diretti; le penalizzazioni in punti non sono applicate.
 
+### v1.7.2 · installazione
+- **Installa l'app** (`ui/components/Install.tsx`): pulsante nella barra laterale e avviso nella pagina delle partite ("Non ora" lo nasconde per 30 giorni). Su Chrome, Edge e Samsung Internet apre la finestra di installazione del browser (evento `beforeinstallprompt`); su iPhone/iPad e Safari per Mac mostra i passaggi (Condividi → Aggiungi alla schermata Home; File → Aggiungi al Dock). Nascosto se l'app è già installata, se il browser non può installarla o nel file unico.
+- Manifest con `id`, descrizione e categorie. Service worker: in cache solo la pagina dell'app, non le altre pagine pubblicate sullo stesso sito (cache `ta-shell-v2`).
+
 ## Cosa manca (prossime fasi)
 
 - Scanner dei mercati, strategie e backtest, validazione cronologica.

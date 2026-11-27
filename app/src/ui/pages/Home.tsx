@@ -1,6 +1,7 @@
 import { dayLong, dayToIso, isoToDay, relativeDay, todayDay } from "../../data/dates";
 import { MatchGroups } from "../components/MatchList";
 import { Card, useStore, usePref } from "../components/common";
+import { InstallBanner } from "../components/Install";
 import { go, href, type Route } from "../router";
 
 export function Home({ route }: { route: Route }) {
@@ -25,6 +26,7 @@ export function Home({ route }: { route: Route }) {
         <h1>Partite</h1>
         <span class="sub">{dayLong(day)}</span>
       </div>
+      <InstallBanner />
       <div class="datebar" role="navigation" aria-label="Scegli il giorno">
         <a href={href([], { d: dayToIso(nextDay(-1)) })} aria-label="Giorno precedente con partite">‹</a>
         {days.map((d) => <a key={d} class={d === day ? "on" : ""} href={href([], { d: d === today ? undefined : dayToIso(d) })}>{relativeDay(d, today)} <span class="muted" style={d === day ? "color:inherit;opacity:.8" : ""}>{s.byDay.get(d)?.length ?? 0}</span></a>)}

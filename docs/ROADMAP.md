@@ -16,6 +16,7 @@ Aggiornata al 27 novembre 2026 (versione 1.7). Ordine = priorità proposta; si c
 | 1.6 | Profilo a esagono delle squadre, grafici a ciambella, movimenti di quota (apertura → chiusura, storico delle rilevazioni, studio "quando la quota si muove") |
 | 1.7 | Chi ha segnato e punteggio dopo ogni gol nella linea dei gol (Germania completa, altri campionati quando è certo), forma con punteggi casa–ospite, riepilogo degli scontri diretti |
 | 1.7.1 | Controllo di tutte le percentuali sui dati reali; modello tarato per Over/Under, GG e 1° tempo |
+| 1.7.2 | Pulsante "Installa l'app" (Android, computer, iPhone con i passaggi) |
 
 ## Prossimi passi
 
@@ -57,6 +58,9 @@ Peso maggiore alle ultime partite (forma), forza degli avversari affrontati, com
 
 ### 10. Altri campionati
 Seconda divisione olandese (solo stagione in corso, senza storico). Già predisposti e attivabili: Belgio, Turchia, Grecia, Scozia.
+
+### 10b. App negli store
+Passo 2: Google Play Store impacchettando l'app web (Trusted Web Activity, stesso codice). Serve un account sviluppatore Google e una verifica delle regole sulle app legate alle scommesse. Passo 3, più avanti: App Store di Apple, solo con funzioni del telefono (notifiche) e abbonati.
 
 ### 11. Prodotto vendibile
 Piano completo in [VENDERE.md](VENDERE.md): dati con licenza commerciale, stemmi, licenza Betfair, regole sulla pubblicità del gioco, progetto separato, abbonamenti.

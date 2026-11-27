@@ -10,6 +10,7 @@ import { TradesPage } from "./pages/Trades";
 import { requestServerRefresh } from "../data/store";
 import { Flag, TeamBadge } from "./components/badge";
 import { BrandMark, Stadium } from "./components/Stadium";
+import { InstallButton } from "./components/Install";
 import { go, href, useRoute } from "./router";
 
 type Theme = "auto" | "diurna" | "notturna" | "azzurri" | "classica";
@@ -89,6 +90,7 @@ export function App() {
           ))}
         </nav>
         <div class="side-foot">
+          <InstallButton />
           <div class="theme-pick">
             <span>Tema: <b>{theme === "auto" ? `automatico (${THEMES.find((x) => x.key === resolveTheme("auto"))!.label})` : THEMES.find((x) => x.key === theme)?.label}</b></span>
             <div role="radiogroup" aria-label="Tema" class="themes">

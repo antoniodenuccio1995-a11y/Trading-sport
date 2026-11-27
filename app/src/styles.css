@@ -526,3 +526,24 @@ body { background: transparent; }
 .mv-up { color: var(--neg); font-weight: 600; }
 .lead-line { margin: 12px 14px 4px; font-size: 15px; line-height: 1.45; }
 .t.snaps td, .t.snaps th { font-size: 13px; }
+
+/* installazione dell'app */
+.inst-btn { display: flex; align-items: center; justify-content: center; gap: 8px; width: 100%; padding: 9px 12px; }
+.inst-ok { margin: 0; color: var(--pos); font-weight: 600; }
+.inst-banner { display: flex; align-items: center; gap: 12px; padding: 12px 14px; margin: 0 0 14px; border-radius: var(--radius); background: var(--surface); border: 1px solid var(--line); box-shadow: var(--shadow); }
+.inst-banner > div:nth-child(2) { display: grid; gap: 2px; flex: 1; min-width: 0; }
+.inst-banner .muted { font-size: 13px; }
+.inst-ico-big { font-size: 26px; line-height: 1; }
+.inst-actions { display: flex; gap: 8px; flex: none; }
+@media (max-width: 560px) {
+  .inst-banner { flex-wrap: wrap; }
+  .inst-actions { width: 100%; }
+  .inst-actions .btn { flex: 1; padding: 9px 12px; }
+}
+.inst-back { position: fixed; inset: 0; z-index: 100; background: rgba(0, 0, 0, .45); display: grid; place-items: end center; padding: 16px; }
+@media (min-width: 561px) { .inst-back { place-items: center; } }
+.inst-dlg { width: min(420px, 100%); background: var(--surface-solid); color: var(--text); border-radius: 16px; padding: 18px 18px 16px; box-shadow: 0 18px 50px rgba(0, 0, 0, .35); }
+.inst-dlg h2 { margin: 0 0 10px; font-size: 19px; font-family: var(--font-display); }
+.inst-dlg ol { margin: 0 0 10px; padding-left: 20px; display: grid; gap: 8px; line-height: 1.45; }
+.inst-dlg .btn { width: 100%; padding: 10px; }
+.inst-ico { display: inline-grid; place-items: center; width: 24px; height: 24px; border-radius: 6px; background: var(--surface-2); color: #0a7aff; vertical-align: -5px; }
