@@ -18,6 +18,7 @@ Aggiornata al 27 novembre 2026 (versione 1.7). Ordine = priorità proposta; si c
 | 1.7.1 | Controllo di tutte le percentuali sui dati reali; modello tarato per Over/Under, GG e 1° tempo |
 | 1.7.2 | Pulsante "Installa l'app" (Android, computer, iPhone con i passaggi) |
 | 1.7.3 | Terzo aggiornamento automatico di notte; dati nuovi e avviso di nuova versione anche con l'app aperta |
+| 1.7.4 | Corretti i decimali (virgola) nei campi del registro trade e delle impostazioni |
 
 ## Prossimi passi
 

@@ -145,6 +145,9 @@ select public.ta_call_sync('{"mode":"publish"}'::jsonb);
 - **Dati con l'app aperta** (`watchFreshness` in `data/store.ts`): il manifest si ricontrolla quando l'app torna in primo piano e ogni 30 minuti mentre è visibile; si scarica solo se è cambiato. `fromNetwork` non ricostruisce più l'archivio se i dati in memoria sono già gli ultimi.
 - **Nuova versione** (`ui/components/UpdateNotice.tsx`): con le stesse regole si confronta il file principale della pagina pubblicata con quello in uso; se è diverso compare l'avviso "Nuova versione disponibile · Aggiorna" (ricarica la pagina dopo averne rinfrescato la copia del browser). Non attivo nel file unico.
 
+### v1.7.4 · numeri con la virgola
+- Corretto: nei campi numerici del registro (quota, stake, commissione, quota di chiusura), nelle impostazioni del capitale e nella commissione del confronto con il mercato non si riuscivano a scrivere i decimali, perché il testo veniva convertito in numero a ogni tasto ("2," diventava "2"). Nuovo campo `DecimalInput` (`ui/components/common.tsx`): tiene il testo come scritto, accetta virgola o punto, tastiera numerica con separatore sul telefono.
+
 ## Cosa manca (prossime fasi)
 
 - Scanner dei mercati, strategie e backtest, validazione cronologica.

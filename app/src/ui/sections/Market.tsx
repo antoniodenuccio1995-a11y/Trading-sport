@@ -4,7 +4,7 @@ import { localQuotes, remoteQuotes, saveQuotes, type MatchQuotes, type QuoteSnap
 import type { Match } from "../../data/types";
 import { agreement, evBack, evLay, marketProbs, maxLay, minBack, verdict, type Quote } from "../../stats/market";
 import type { Forecast } from "../../stats/poisson";
-import { Card, Seg, fmtOdd, fmtPct, usePref } from "../components/common";
+import { Card, DecimalInput, Seg, fmtOdd, fmtPct, usePref } from "../components/common";
 import { hasStoredSession } from "../../data/personal";
 import { DEFAULT_SETTINGS, loadTrades, marketLabel, saveTrade, type Trade } from "../../data/trades";
 import { dayToIso } from "../../data/dates";
@@ -88,8 +88,8 @@ export function MarketCompare({ m, fc }: { m: Match; fc: Forecast }) {
       <div class="mkt-head">
         <Seg<Ex> label="Mercato" value={ex} onChange={setEx} options={[["betfair", "Betfair"], ["betflag", "Betflag"], ["book", "Bookmaker"]]} />
         <label class="row" style="gap:6px">Commissione
-          <input class="q input" style="width:64px" type="number" min="0" max="20" step="0.5" value={comms[ex] ?? EX[ex].comm}
-            onInput={(e) => setComms({ ...comms, [ex]: Math.max(0, Math.min(20, Number((e.target as HTMLInputElement).value) || 0)) })} /> %
+          <DecimalInput key={ex} class="q input" style="width:64px" aria-label="Commissione in percentuale" value={comms[ex] ?? EX[ex].comm}
+            onValue={(n) => setComms({ ...comms, [ex]: Math.max(0, Math.min(20, n ?? 0)) })} /> %
         </label>
         <span class="spacer" />
         {(m.oh || m.oo) && <button type="button" class="btn" onClick={() => fill({ "1": m.oh, X: m.od, "2": m.oa, o25: m.oo, u25: m.ou })}>Usa quote medie bookmaker</button>}

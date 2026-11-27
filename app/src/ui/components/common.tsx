@@ -1,4 +1,4 @@
-import type { ComponentChildren } from "preact";
+import type { ComponentChildren, JSX } from "preact";
 import { useEffect, useState } from "preact/hooks";
 import { getStore, leagueName, subscribe, teamName } from "../../data/store";
 import { href } from "../router";
@@ -71,4 +71,36 @@ export function useSort<K extends string>(initial: K, desc = true): [K, boolean,
   const [key, setKey] = useState<K>(initial);
   const [d, setD] = useState(desc);
   return [key, d, (k: K) => { if (k === key) setD(!d); else { setKey(k); setD(true); } }];
+}
+
+/** "2,5" o "2.5" → 2.5; testo vuoto o non numerico → null. */
+export function parseDecimal(s: string): number | null {
+  const t = s.trim().replace(/\s/g, "").replace(",", ".");
+  if (t === "" || t === "." || t === "-") return null;
+  const n = Number(t);
+  return Number.isFinite(n) ? n : null;
+}
+const showDecimal = (n: number | null | undefined) => (n === null || n === undefined || !Number.isFinite(n) ? "" : String(n).replace(".", ","));
+
+/**
+ * Campo per numeri con la virgola (quote, importi, percentuali). Lascia il testo com'è mentre si scrive
+ * ("1," a metà resta "1,") e passa il numero; accetta virgola o punto. Tastiera numerica con il separatore sul telefono.
+ */
+export function DecimalInput({ value, onValue, ...rest }: { value: number | null | undefined; onValue: (n: number | null) => void }
+  & Omit<JSX.InputHTMLAttributes<HTMLInputElement>, "value" | "onInput" | "type" | "inputMode">) {
+  const [text, setText] = useState(() => showDecimal(value));
+  // se il valore cambia da fuori (es. modulo riempito da una partita) il testo si allinea
+  useEffect(() => {
+    const p = parseDecimal(text);
+    if (p === value || (p === null && !value)) return;
+    setText(showDecimal(value));
+  }, [value]);
+  return (
+    <input {...rest} type="text" inputMode="decimal" autoComplete="off" value={text}
+      onInput={(e) => {
+        const v = (e.target as HTMLInputElement).value.replace(/[^0-9.,\-\s]/g, "");
+        setText(v);
+        onValue(parseDecimal(v));
+      }} />
+  );
 }

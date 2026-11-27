@@ -108,3 +108,16 @@ describe("chiusura parziale", () => {
     expect(lay.win).toBeCloseTo(9.5); expect(lay.loss).toBeCloseTo(-20);
   });
 });
+
+describe("numeri con la virgola nei moduli", () => {
+  it("virgola o punto, testo a metà e vuoto", async () => {
+    const { parseDecimal } = await import("../src/ui/components/common");
+    expect(parseDecimal("2,50")).toBe(2.5);
+    expect(parseDecimal("2.5")).toBe(2.5);
+    expect(parseDecimal("1,")).toBe(1);
+    expect(parseDecimal(" 10,5 ")).toBe(10.5);
+    expect(parseDecimal("")).toBeNull();
+    expect(parseDecimal(",")).toBeNull();
+    expect(parseDecimal("abc")).toBeNull();
+  });
+});
