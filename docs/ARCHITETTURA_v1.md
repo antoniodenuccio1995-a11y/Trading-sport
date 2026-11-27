@@ -130,6 +130,12 @@ select public.ta_call_sync('{"mode":"publish"}'::jsonb);
 - **Forma**: le ultime 10 partite mostrano il punteggio nell'ordine casa–ospite (prima era dal punto di vista della squadra e sembrava invertito), con la squadra analizzata in grassetto.
 - **Scontri diretti** (`stats/h2h.ts`): riepilogo degli ultimi precedenti (vittorie, pareggi, gol medi, Over 2,5, entrambe a segno, gol nel 1° tempo, precedenti con le squadre nello stesso campo) e, con almeno 4–5 precedenti e uno schema netto, un punto chiave.
 
+### v1.7.1 · controllo delle percentuali
+- **Ricalcolo indipendente** sui dati reali (Serie A, Premier League, Liga, stagioni 2021/22–2025/26, 5.700 partite): esiti, gol, Over/Under, GG, porta inviolata, primo e secondo tempo, punti in classifica e scontri diretti coincidono con l'app per ogni squadra, in totale, in casa e in trasferta.
+- **Corretto**: nella tabella "Gol per tempo, squadra per squadra" del campionato, vista Totale, la riga "Media campionato" mostrava il doppio delle partite.
+- **Taratura del modello** (`stats/poisson.ts`), misurata su 4.520 partite (stagioni 2022/23–2025/26, solo dati precedenti a ogni partita): l'1X2 era già ben tarato; Over/Under, GG e gol nel 1° tempo erano troppo estremi (Over 2,5 dato al 74% usciva il 63%, dato al 26% usciva il 37%) e non facevano meglio della media del campionato. Ora il totale dei gol attesi è avvicinato a metà strada verso la media del campionato (anche per i singoli tempi) e i risultati bassi hanno la correzione di Dixon-Coles (rho −0,1). Verifica sulle stagioni 2024/25–2025/26, non usate per regolare: tutte le fasce entro pochi punti dalla realtà e punteggio di Brier migliore della media del campionato su 1X2, Over 1,5/2,5/3,5 e 1° tempo; sul GG il modello resta pari alla media del campionato (nessun vantaggio).
+- **Limiti della classifica** (invariati): a parità di punti si usano differenza reti e gol fatti, non gli scontri diretti; le penalizzazioni in punti non sono applicate.
+
 ## Cosa manca (prossime fasi)
 
 - Scanner dei mercati, strategie e backtest, validazione cronologica.

@@ -15,6 +15,7 @@ Aggiornata al 27 novembre 2026 (versione 1.7). Ordine = priorità proposta; si c
 | 1.5 | Temi a tema calcio (Notturna, Diurna, Azzurri, Classica) con il campo sullo sfondo, minuti dei gol, punti chiave della partita |
 | 1.6 | Profilo a esagono delle squadre, grafici a ciambella, movimenti di quota (apertura → chiusura, storico delle rilevazioni, studio "quando la quota si muove") |
 | 1.7 | Chi ha segnato e punteggio dopo ogni gol nella linea dei gol (Germania completa, altri campionati quando è certo), forma con punteggi casa–ospite, riepilogo degli scontri diretti |
+| 1.7.1 | Controllo di tutte le percentuali sui dati reali; modello tarato per Over/Under, GG e 1° tempo |
 
 ## Prossimi passi
 
@@ -61,6 +62,8 @@ Seconda divisione olandese (solo stagione in corso, senza storico). Già predisp
 Piano completo in [VENDERE.md](VENDERE.md): dati con licenza commerciale, stemmi, licenza Betfair, regole sulla pubblicità del gioco, progetto separato, abbonamenti.
 
 ## Limiti noti
+- Classifica: a parità di punti non si applicano gli scontri diretti (Serie A, Liga) e le penalizzazioni in punti non sono gestite (es. Juventus 2022/23, −10). Si possono aggiungere con un elenco verificato delle penalizzazioni.
+- Modello: sul GG non fa meglio della media del campionato; per gli altri mercati è tarato sullo storico (vedi ARCHITETTURA, v1.7.1).
 - Minuti dei gol: solo stagione in corso; completi, con squadra e marcatore, per Bundesliga e 2. Bundesliga; parziali e senza squadra per Serie A, Premier, Liga, Ligue 1 e Champions; assenti altrove.
 - Le fonti gratuite pubblicano i risultati con 1–3 giorni di ritardo.
 - Champions League e campionato croato: solo stagione in corso.

@@ -59,7 +59,7 @@ export function matchInsights(m: Match, fc: Forecast | null, league: Match[], na
     if (r2 - r1 >= 0.15) out.push({ tone: "info", text: `Le loro partite si accendono nella ripresa: gol nel 2° tempo nel ${P(r2)} dei casi contro il ${P(r1)} del primo.` });
   }
 
-  // 3) forma: ultime 5 partite (tutte le competizioni in archivio)
+  // 3) forma: ultime 5 partite nello stesso campionato
   const lastH = teamMatches(league, m.h, "all", { before: m.d, last: 5 }), lastA = teamMatches(league, m.a, "all", { before: m.d, last: 5 });
   if (lastH.length === 5 && lastA.length === 5) {
     const ph = pointsLast(lastH, m.h), pa = pointsLast(lastA, m.a);

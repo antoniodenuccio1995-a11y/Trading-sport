@@ -2,7 +2,7 @@ import { describe, expect, it } from "vitest";
 import { extractPersonal, tradePL, type Trade } from "../src/data/personal";
 import { buildStore } from "../src/data/store";
 import type { Match } from "../src/data/types";
-import { forecast, implied, probabilities } from "../src/stats/poisson";
+import { forecast, implied, matrix, probabilities } from "../src/stats/poisson";
 import { formTable, standings } from "../src/stats/standings";
 import { h2h, pct, teamAgg, teamMatches } from "../src/stats/team";
 
@@ -51,6 +51,14 @@ describe("Poisson", () => {
     expect(p.home + p.draw + p.away).toBeCloseTo(1, 4);
     expect(p.home).toBeGreaterThan(p.away);
     expect(p.o25).toBeGreaterThan(0.4);
+  });
+  it("risultati esatti normalizzati; Dixon-Coles alza 0-0 e 1-1 rispetto a Poisson semplice", () => {
+    const m = matrix(1.4, 1.1);
+    expect(m.flat().reduce((a, b) => a + b, 0)).toBeCloseTo(1, 10);
+    const pois = (k: number, l: number) => (Math.exp(-l) * l ** k) / [1, 1, 2][k];
+    expect(m[0][0]).toBeGreaterThan(pois(0, 1.4) * pois(0, 1.1));
+    expect(m[1][1]).toBeGreaterThan(pois(1, 1.4) * pois(1, 1.1));
+    expect(m[1][0]).toBeLessThan(pois(1, 1.4) * pois(0, 1.1));
   });
   it("niente previsione con pochi dati", () => {
     expect(forecast([mk(1, 1, 2, 1, 0)], "I1", 10, 1, 2)).toBeNull();
