@@ -33,6 +33,14 @@ Oggi le quote arrivano da football-data (medie e chiusura, aggiornate a giorni a
 - **The Odds API**: piano gratuito (500 richieste al mese), include le quote Betfair Exchange europee e i principali bookmaker. Serve una chiave gratuita, da salvare tra i segreti di Supabase (mai nel codice).
 - Con le quote automatiche: confronto modello/mercato già compilato, CLV calcolato da solo sui trade, storico dei movimenti di quota.
 
+### 1c. Risultati in diretta
+Punteggio e minuto nella lista partite e nella pagina della partita, avviso a ogni gol, e **probabilità in diretta** dal modello (es. "0-0 al 60': Over 2,5 al X%") da confrontare con la quota dell'exchange. Il server interroga la fonte negli orari delle partite e salva lo stato; l'app lo legge (la chiave della fonte resta sul server).
+- **Prova gratuita**: API-Football, piano gratuito (100 richieste al giorno): aggiornamento ogni 10–15 minuti sui campionati preferiti. Per la sola Germania anche OpenLigaDB (gratuito, aggiornato da volontari).
+- **Diretta vera**: API-Football Pro (circa 15–19 $/mese, prezzi da confermare sul sito ufficiale): aggiornamento ogni minuto su tutti i campionati, con gol, marcatori e cartellini. Effetti collaterali utili: risultati pronti a fine partita (oggi 1–3 giorni di ritardo) e chi ha segnato per tutti i campionati.
+- È lo stesso fornitore con licenza commerciale previsto per la vendita (`VENDERE.md`): per un prodotto venduto non costa in più.
+- Da escludere: copiare i dati da siti come Diretta, Flashscore o Sofascore (vietato dalle loro condizioni e protetto come banca dati).
+- Lavoro stimato: 3–5 giorni per la diretta, 1–2 giorni in più per le probabilità in diretta. Cosa serve da te: registrazione su API-Football e chiave salvata in modo sicuro su Supabase.
+
 ### 2. Scanner delle occasioni
 Ogni giorno, le partite in cui modello e quote si discostano oltre una soglia scelta da te, ordinate per differenza. Usa le stesse regole dei "Punti chiave", su tutte le partite.
 
