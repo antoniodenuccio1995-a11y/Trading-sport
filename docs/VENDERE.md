@@ -48,7 +48,7 @@ Stemmi e loghi: per l'uso commerciale serve il permesso di leghe e club (lo dice
 ## 3. Cosa c'è già
 - App web veloce, installabile sul telefono, temi grafici.
 - Database con controllo degli accessi: ogni utente vede solo i propri trade e impostazioni.
-- Aggiornamento automatico dei dati due volte al giorno.
+- Aggiornamento automatico dei dati tre volte al giorno.
 
 ## 4. Cosa manca tecnicamente
 1. **Progetto Supabase dedicato.** Oggi il progetto è condiviso con altre app: per un prodotto venduto serve un progetto separato, a pagamento (Supabase Pro), con backup.
