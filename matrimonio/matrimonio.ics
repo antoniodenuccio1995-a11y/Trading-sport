@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Antonio e Giulia//Partecipazione//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:matrimonio-antonio-giulia-20270527@partecipazione
+DTSTAMP:20261122T120000Z
+DTSTART:20270527T080000Z
+DTEND:20270527T160000Z
+SUMMARY:Matrimonio di Antonio e Giulia
+LOCATION:Chiesa Madre di Santa Maria Maddalena\, Piazza Umberto I\, Uggiano
+  la Chiesa (LE)
+DESCRIPTION:Cerimonia alle 10:00. A seguire festa a Villa Zaira\, via Giosu
+ è Carducci 90\, Maglie (LE).
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Domani il matrimonio di Antonio e Giulia
+END:VALARM
+END:VEVENT
+END:VCALENDAR

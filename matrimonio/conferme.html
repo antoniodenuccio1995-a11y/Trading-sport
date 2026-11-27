@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Conferme del matrimonio</title>
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#F3EDE3">
+<link rel="icon" href="img/icona.svg" type="image/svg+xml">
+<link rel="stylesheet" href="stile.css">
+<style>
+  /* pagina riservata ad Antonio e Giulia: elenco delle risposte degli invitati */
+  .riservata { width: min(100% - 28px, 720px); margin: 0 auto; padding: max(28px, env(safe-area-inset-top)) 0 56px; }
+  .riservata h1 { margin: 0; text-align: center; font-family: var(--script); font-weight: 400; font-size: clamp(40px, 11vw, 56px); color: var(--inchiostro); }
+  .riservata .sotto { text-align: center; }
+  .scheda { position: relative; margin-top: 22px; }
+  .scheda .testo { font-style: normal; text-align: left; }
+  #accesso .campo { margin-bottom: 14px; }
+  #accesso .pulsante { width: 100%; }
+  .totali { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; text-align: center; }
+  .totali .n { display: block; font-size: clamp(28px, 8vw, 38px); line-height: 1.1; color: var(--inchiostro); font-variant-numeric: lining-nums tabular-nums; }
+  .totali .u { font-style: italic; font-size: 13px; color: var(--tenue); }
+  .strumenti { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin-top: 18px; }
+  .strumenti .pulsante { min-height: 42px; padding: 8px 16px; font-size: .88em; }
+  .filtri { display: flex; gap: 8px; justify-content: center; margin: 26px 0 4px; flex-wrap: wrap; }
+  .filtri button { padding: 7px 14px; border: 1px solid rgba(62, 57, 55, .35); border-radius: 999px; background: transparent; cursor: pointer; font-size: .88em; color: var(--inchiostro); }
+  .filtri button[aria-pressed="true"] { background: var(--inchiostro); color: var(--carta); border-color: var(--inchiostro); }
+  .risposte { list-style: none; margin: 14px 0 0; padding: 0; display: grid; gap: 12px; }
+  .risposta { position: relative; padding: 16px 18px; background: rgba(255, 253, 248, .92); border-radius: 3px; box-shadow: 0 6px 16px -10px rgba(var(--ombra), .4), 0 1px 2px rgba(var(--ombra), .15); }
+  .risposta .chi { margin: 0; font-size: 1.05em; color: var(--inchiostro); display: flex; justify-content: space-between; gap: 10px; align-items: baseline; }
+  .risposta .quando { font-style: italic; font-size: .8em; color: var(--tenue); white-space: nowrap; }
+  .risposta .esito { margin: 4px 0 0; font-style: italic; color: var(--testo); }
+  .risposta .esito.no { color: var(--rosa-scuro); }
+  .risposta .nota { margin: 8px 0 0; font-size: .92em; color: var(--testo); }
+  .risposta .nota b { font-weight: 400; font-style: italic; color: var(--tenue); }
+  .vuoto { text-align: center; font-style: italic; color: var(--tenue); margin-top: 22px; }
+</style>
+</head>
+<body>
+<div class="cielo" aria-hidden="true" style="transform:none"></div>
+<main class="riservata">
+  <h1>Le conferme</h1>
+  <p class="sotto">Le risposte arrivate dall'invito di Antonio e Giulia</p>
+
+  <section class="biglietto scheda" id="scheda-accesso" aria-labelledby="titolo-accesso">
+    <span class="carta-ombra"><span class="carta"></span></span>
+    <div class="testo">
+      <form id="accesso" novalidate>
+        <div class="campo">
+          <label id="titolo-accesso" for="codice">Codice degli sposi</label>
+          <input id="codice" name="codice" type="text" autocomplete="off" autocapitalize="none" spellcheck="false" required>
+          <p class="errore" id="errore-codice" hidden></p>
+        </div>
+        <button class="pulsante" id="entra" type="submit">Mostra le risposte</button>
+      </form>
+    </div>
+  </section>
+
+  <section id="elenco" hidden aria-live="polite">
+    <div class="biglietto scheda">
+      <span class="carta-ombra"><span class="carta"></span></span>
+      <div class="testo">
+        <div class="totali">
+          <div><span class="n" id="t-persone">0</span><span class="u">persone in arrivo</span></div>
+          <div><span class="n" id="t-si">0</span><span class="u">risposte sì</span></div>
+          <div><span class="n" id="t-no">0</span><span class="u">risposte no</span></div>
+        </div>
+        <div class="strumenti">
+          <button class="pulsante chiaro" id="aggiorna" type="button">Aggiorna</button>
+          <button class="pulsante chiaro" id="scarica" type="button">Scarica per Excel</button>
+          <button class="pulsante chiaro" id="esci" type="button">Esci</button>
+        </div>
+      </div>
+    </div>
+    <div class="filtri" role="group" aria-label="Mostra">
+      <button type="button" data-filtro="tutte" aria-pressed="true">Tutte</button>
+      <button type="button" data-filtro="si" aria-pressed="false">Ci saranno</button>
+      <button type="button" data-filtro="no" aria-pressed="false">Non ci saranno</button>
+      <button type="button" data-filtro="allergie" aria-pressed="false">Con allergie</button>
+    </div>
+    <ul class="risposte" id="risposte"></ul>
+    <p class="vuoto" id="vuoto" hidden>Ancora nessuna risposta in questo elenco.</p>
+  </section>
+</main>
+<script>
+(() => {
+  "use strict";
+  const SUPABASE = { url: "https://cqfxjvrpspvycocvxghv.supabase.co", chiave: "sb_publishable_VQS48ywRaUafRirZIyo5EQ_8KMjSDfm" };
+  const $ = (s) => document.querySelector(s);
+  const form = $("#accesso"), codice = $("#codice"), errore = $("#errore-codice"), entra = $("#entra");
+  let righe = [], filtro = "tutte", codiceInUso = "";
+  const memoria = {
+    leggi() { try { return sessionStorage.getItem("codice-sposi") || ""; } catch (e) { return ""; } },
+    scrivi(v) { try { sessionStorage.setItem("codice-sposi", v); } catch (e) { /* niente */ } },
+    togli() { try { sessionStorage.removeItem("codice-sposi"); } catch (e) { /* niente */ } },
+  };
+
+  async function carica(c) {
+    const r = await fetch(`${SUPABASE.url}/rest/v1/rpc/nozze_riepilogo`, {
+      method: "POST", headers: { "Content-Type": "application/json", apikey: SUPABASE.chiave },
+      body: JSON.stringify({ p_codice: c }),
+    });
+    if (r.status === 400 || r.status === 401 || r.status === 403) throw new Error("codice");
+    if (!r.ok) throw new Error("rete");
+    return r.json();
+  }
+
+  async function accedi(c) {
+    entra.disabled = true; entra.textContent = "Controllo il codice…"; errore.hidden = true;
+    try {
+      righe = await carica(c);
+      codiceInUso = c; memoria.scrivi(c);
+      $("#scheda-accesso").hidden = true; $("#elenco").hidden = false;
+      disegna();
+    } catch (e) {
+      errore.textContent = e.message === "codice"
+        ? "Il codice non è giusto: controllalo e riprova."
+        : "Non riesco a raggiungere l'elenco. Controlla la connessione e riprova.";
+      errore.hidden = false; codice.focus();
+    } finally {
+      entra.disabled = false; entra.textContent = "Mostra le risposte";
+    }
+  }
+
+  const data = (s) => new Date(s).toLocaleString("it-IT", { day: "numeric", month: "short", hour: "2-digit", minute: "2-digit" });
+  function testo(tag, cls, t) { const e = document.createElement(tag); if (cls) e.className = cls; if (t != null) e.textContent = t; return e; }
+
+  function disegna() {
+    const si = righe.filter((r) => r.presenza), no = righe.filter((r) => !r.presenza);
+    $("#t-persone").textContent = si.reduce((a, r) => a + (r.persone || 0), 0);
+    $("#t-si").textContent = si.length; $("#t-no").textContent = no.length;
+    const lista = righe.filter((r) => filtro === "tutte" || (filtro === "si" && r.presenza) || (filtro === "no" && !r.presenza) || (filtro === "allergie" && r.allergie));
+    const ul = $("#risposte"); ul.replaceChildren();
+    for (const r of lista) {
+      const li = testo("li", "risposta");
+      const chi = testo("p", "chi"); chi.append(testo("span", null, r.nome), testo("span", "quando", data(r.creata))); li.append(chi);
+      li.append(testo("p", "esito" + (r.presenza ? "" : " no"), r.presenza ? `Ci sarà${r.persone > 1 ? `, in ${r.persone}` : ""}` : "Non ci sarà"));
+      if (r.invito_per && r.invito_per !== r.nome) { const p = testo("p", "nota"); p.append(testo("b", null, "Invito per: "), r.invito_per); li.append(p); }
+      if (r.allergie) { const p = testo("p", "nota"); p.append(testo("b", null, "Allergie: "), r.allergie); li.append(p); }
+      if (r.messaggio) { const p = testo("p", "nota"); p.append(testo("b", null, "Messaggio: "), r.messaggio); li.append(p); }
+      ul.append(li);
+    }
+    $("#vuoto").hidden = lista.length > 0;
+  }
+
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const c = codice.value.trim();
+    if (!c) { errore.textContent = "Scrivi il codice degli sposi."; errore.hidden = false; codice.focus(); return; }
+    accedi(c);
+  });
+  document.querySelectorAll("[data-filtro]").forEach((b) => b.addEventListener("click", () => {
+    filtro = b.dataset.filtro;
+    document.querySelectorAll("[data-filtro]").forEach((x) => x.setAttribute("aria-pressed", String(x === b)));
+    disegna();
+  }));
+  $("#aggiorna").addEventListener("click", async () => {
+    const b = $("#aggiorna"); b.textContent = "Aggiorno…";
+    try { righe = await carica(codiceInUso); disegna(); b.textContent = "Aggiornato"; }
+    catch (e) { b.textContent = "Non aggiornato, riprova"; }
+    setTimeout(() => { b.textContent = "Aggiorna"; }, 2000);
+  });
+  $("#esci").addEventListener("click", () => {
+    memoria.togli(); righe = []; codiceInUso = ""; codice.value = "";
+    $("#elenco").hidden = true; $("#scheda-accesso").hidden = false; codice.focus();
+  });
+  $("#scarica").addEventListener("click", () => {
+    const esc = (v) => `"${String(v ?? "").replace(/"/g, '""')}"`;
+    const intest = ["Data", "Nome", "Presenza", "Persone", "Allergie", "Messaggio", "Invito per"];
+    const corpo = righe.map((r) => [data(r.creata), r.nome, r.presenza ? "Sì" : "No", r.persone, r.allergie, r.messaggio, r.invito_per].map(esc).join(";"));
+    const blob = new Blob(["﻿" + [intest.join(";"), ...corpo].join("\r\n")], { type: "text/csv;charset=utf-8" });
+    const a = document.createElement("a"); a.href = URL.createObjectURL(blob); a.download = "conferme-matrimonio.csv"; a.click();
+    setTimeout(() => URL.revokeObjectURL(a.href), 1000);
+  });
+
+  const salvato = memoria.leggi();
+  if (salvato) accedi(salvato);
+})();
+</script>
+</body>
+</html>
