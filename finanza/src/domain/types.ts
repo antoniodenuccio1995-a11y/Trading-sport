@@ -96,6 +96,8 @@ export interface Category {
   color: string;
   icon: string; // un'emoji breve
   legacyAliases: string[];
+  /** Gruppo di spesa scelto dal titolare (id di GROUPS); assente = gruppo predefinito. */
+  group?: string;
 }
 
 /** Budget mensile per categoria. `default` vale per ogni mese senza override. */
@@ -122,6 +124,8 @@ export interface Settings {
   reduceMotion: "auto" | "on" | "off";
   monthStartDay: number; // 1 = mese solare; 27 = "mese dello stipendio"
   hideAmounts: boolean;
+  /** Nomi dei gruppi di spesa cambiati dal titolare (id gruppo -> nome). */
+  groupLabels?: Record<string, string>;
 }
 
 export interface Snapshot {
@@ -134,6 +138,8 @@ export interface Snapshot {
   imports: ImportLog[];
   settings: Settings;
   meta: { createdAt: string; migratedFrom?: string; demo?: boolean };
+  /** Portafoglio investimenti (strumenti, operazioni, prezzi): vedi src/invest/types.ts. */
+  investments?: Record<string, unknown>;
 }
 
 /** Riga prodotta da un importatore, prima di diventare Movement. */

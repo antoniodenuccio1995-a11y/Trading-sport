@@ -90,3 +90,23 @@ if (typeof window !== "undefined") {
   window.addEventListener("beforeunload", (e) => { if (hasPending()) { void flush(); e.preventDefault(); } });
   document.addEventListener("visibilitychange", () => { if (document.visibilityState === "hidden") void flush().catch(() => {}); });
 }
+
+// --- metadati accessori (es. stato della sincronizzazione), senza controllo di revisione ---
+export async function loadMeta<T>(key: string): Promise<T | null> {
+  if (!db) db = await open();
+  return new Promise((resolve, reject) => {
+    const tx = db!.transaction(STORE, "readonly");
+    const req = tx.objectStore(STORE).get("meta:" + key);
+    tx.oncomplete = () => resolve((req.result as T | undefined) ?? null);
+    tx.onabort = () => reject(tx.error ?? new Error("Lettura interrotta"));
+  });
+}
+export async function saveMeta(key: string, value: unknown): Promise<void> {
+  if (!db) db = await open();
+  return new Promise((resolve, reject) => {
+    const tx = db!.transaction(STORE, "readwrite");
+    tx.objectStore(STORE).put(value, "meta:" + key);
+    tx.oncomplete = () => resolve();
+    tx.onabort = () => reject(tx.error ?? new Error("Salvataggio interrotto"));
+  });
+}
