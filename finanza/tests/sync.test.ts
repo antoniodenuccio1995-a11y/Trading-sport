@@ -128,6 +128,22 @@ describe("sincronizzazione tra due dispositivi", () => {
     expect(b.s.accounts.find((x) => x.id === "Conto Nuovo")?.initialBalance).toBe(100);
   });
 
+  it("investimenti: strumenti, operazioni e prezzi arrivano all'altro dispositivo", () => {
+    const srv = new FakeServer(), a = new Device(srv), b = new Device(srv);
+    a.sync(); b.link();
+    a.s.investments = { instruments: [{ id: "i1", name: "ETF Mondo", kind: "etf", isin: "IE00B4L5Y983", currency: "EUR" }],
+      trades: [{ id: "t1", date: "2026-03-01", instrumentId: "i1", account: "Trade Republic", side: "buy", quantity: 2, price: 100, fees: 1, amount: -201 }],
+      prices: { i1: { price: 110, currency: "EUR", at: "2026-11-27T10:00:00Z", source: "manuale" } } };
+    a.sync(); b.sync();
+    expect(b.s.investments?.instruments.map((i) => i.id)).toEqual(["i1"]);
+    expect(b.s.investments?.trades[0].quantity).toBe(2);
+    expect(b.s.investments?.prices.i1.price).toBe(110);
+    expect(b.push().upserts).toHaveLength(0);
+    a.s.investments!.trades = [];
+    a.sync(); b.sync();
+    expect(b.s.investments?.trades).toHaveLength(0);
+  });
+
   it("calcolo delle differenze veloce su 10.000 movimenti", () => {
     const s = emptySnapshot();
     s.movements = Array.from({ length: 10000 }, (_, i) => mv(String(i), -i));

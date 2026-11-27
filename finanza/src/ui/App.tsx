@@ -17,6 +17,8 @@ const Accounts = lazy(() => import("./views/Accounts.tsx"), "Accounts");
 const ImportView = lazy(() => import("./views/Import.tsx"), "ImportView");
 const Rules = lazy(() => import("./views/Rules.tsx"), "Rules");
 const SettingsView = lazy(() => import("./views/Settings.tsx"), "SettingsView");
+const InvestmentsView = lazy(() => import("./views/Investments.tsx"), "InvestmentsView");
+const CategoriesView = lazy(() => import("./views/Categories.tsx"), "CategoriesView");
 
 interface R { id: string; label: string; icon: string; title: string; sub?: string }
 const ROUTES: R[] = [
@@ -24,12 +26,15 @@ const ROUTES: R[] = [
   { id: "analisi", label: "Analisi", icon: "chart", title: "Analisi" },
   { id: "movimenti", label: "Movimenti", icon: "list", title: "Movimenti" },
   { id: "budget", label: "Budget", icon: "target", title: "Budget" },
+  { id: "investimenti", label: "Investimenti", icon: "trend", title: "Investimenti" },
   { id: "conti", label: "Conti", icon: "wallet", title: "Conti e patrimonio" },
   { id: "importa", label: "Importa", icon: "upload", title: "Importa e backup" },
+  { id: "categorie", label: "Categorie", icon: "tag", title: "Categorie" },
   { id: "regole", label: "Regole", icon: "rules", title: "Regole" },
   { id: "impostazioni", label: "Impostazioni", icon: "settings", title: "Impostazioni" },
 ];
-const MOBILE = ["", "analisi", "movimenti", "budget", "importa"];
+const MOBILE = ["", "analisi", "movimenti", "budget"];
+const MORE = ["investimenti", "conti", "importa", "categorie", "regole", "impostazioni"];
 
 // Indirizzi semplici "#analisi" (accettati anche i vecchi "#/analisi"); "#panoramica" = pagina iniziale.
 const routeOf = () => { const r = location.hash.replace(/^#\/?/, "").split("?")[0]; return r === "panoramica" ? "" : r; };
@@ -48,6 +53,7 @@ function go(id: string) {
 export function App() {
   const [, force] = useState(0);
   const [route, setRoute] = useState(routeOf());
+  const [more, setMore] = useState(false);
   const [save, setSave] = useState<{ state: string; message?: string; at?: Date }>({ state: "saved" });
   useEffect(() => subscribe(() => force((x) => x + 1)), []);
   useEffect(() => onSave(setSave), []);
@@ -80,6 +86,8 @@ export function App() {
       case "importa": return <ImportView />;
       case "regole": return <Rules />;
       case "impostazioni": return <SettingsView />;
+      case "investimenti": return <InvestmentsView />;
+      case "categorie": return <CategoriesView />;
       default: return <Dashboard />;
     }
   })();
@@ -127,7 +135,18 @@ export function App() {
             {mid === "movimenti" && review > 0 && <span class="nav-badge">{review}</span>}
           </button>
         ); })}
+        <button aria-current={MORE.includes(id) ? "page" : undefined} aria-expanded={more} onClick={() => setMore((x) => !x)}><Icon name="more" />Altro</button>
       </nav>
+      {more && (
+        <>
+          <div class="scrim sheet-scrim" onClick={() => setMore(false)} />
+          <div class="sheet" role="menu">
+            {MORE.map((mid) => { const x = ROUTES.find((y) => y.id === mid)!; return (
+              <button key={mid} role="menuitem" class={mid === id ? "on" : ""} onClick={() => { setMore(false); go(mid); }}><span class="sheet-ico"><Icon name={x.icon} /></span>{x.label}</button>
+            ); })}
+          </div>
+        </>
+      )}
       <Toasts />
       <SyncDialogHost />
       <SyncPrompts />

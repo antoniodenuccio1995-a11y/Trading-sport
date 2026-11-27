@@ -16,7 +16,7 @@
 //
 // Fonte: Yahoo Finance (v1/finance/search per trovare il simbolo, v8/finance/chart per prezzo e
 // storico). Cache in memoria di 15 minuti per istanza + Cache-Control. Nessuna chiave richiesta:
-// da pubblicare con verify_jwt = false (la chiave publishable non è un JWT).
+// pubblicata con verify_jwt = true: risponde solo a chi ha fatto l'accesso (il titolare), così non è un proxy aperto.
 import { ISIN_RE, RANGES, SYMBOL_RE, parseChart, pickSymbol, toEur, type ChartData } from "./yahoo.ts";
 
 const HOSTS = ["https://query2.finance.yahoo.com", "https://query1.finance.yahoo.com"];

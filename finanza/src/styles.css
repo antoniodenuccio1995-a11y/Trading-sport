@@ -111,6 +111,7 @@ a { color: var(--accent); text-decoration: none; }
 .icon-btn svg { width: 17px; height: 17px; }
 
 .tabbar { display: none; }
+.sheet { display: none; }
 .filters { display: grid; grid-template-columns: minmax(240px, 2fr) repeat(4, minmax(120px, 1fr)) auto; gap: 8px; align-items: center; }
 @media (max-width: 1100px) { .filters { grid-template-columns: repeat(3, minmax(0, 1fr)); } .filters > .search { grid-column: 1 / -1; } }
 @media (max-width: 560px) { .filters { grid-template-columns: repeat(2, minmax(0, 1fr)); } .filters select.input { font-size: 13px; padding: 7px 8px; } }
@@ -123,7 +124,7 @@ a { color: var(--accent); text-decoration: none; }
   .main { padding-block: 14px 96px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
   .topbar h1 { font-size: 19px; }
   .tabbar {
-    display: grid; grid-template-columns: repeat(5, 1fr); position: fixed; z-index: 30; left: max(10px, env(safe-area-inset-left, 0px)); right: max(10px, env(safe-area-inset-right, 0px)); bottom: calc(10px + env(safe-area-inset-bottom, 0px));
+    display: grid; grid-template-columns: repeat(5, 1fr); position: fixed; z-index: 52; left: max(10px, env(safe-area-inset-left, 0px)); right: max(10px, env(safe-area-inset-right, 0px)); bottom: calc(10px + env(safe-area-inset-bottom, 0px));
     padding: 6px; border-radius: 20px; border: 1px solid var(--line-2);
     background: color-mix(in srgb, var(--surface-1) 82%, transparent); backdrop-filter: blur(18px) saturate(1.4); box-shadow: var(--shadow);
   }
@@ -413,3 +414,13 @@ tr.clickable td { transition: background-color 120ms ease; }
 @media (prefers-reduced-motion: reduce) { .success .draw, .cloud-ico .ck { stroke-dashoffset: 0; } }
 .mobile-only { display: none; }
 @media (max-width: 860px) { .mobile-only { display: inline-flex; } }
+
+/* foglio "Altro" su telefono */
+@media (max-width: 860px) {
+  .sheet { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; position: fixed; z-index: 51; left: max(10px, env(safe-area-inset-left, 0px)); right: max(10px, env(safe-area-inset-right, 0px));
+    bottom: calc(86px + env(safe-area-inset-bottom, 0px)); padding: 12px; border-radius: 22px; border: 1px solid var(--line-2); background: var(--surface-1); box-shadow: var(--shadow); animation: rise 220ms var(--ease-out) both; }
+  .sheet button { display: grid; justify-items: center; gap: 6px; padding: 12px 4px; border: 0; border-radius: 16px; background: var(--surface-2); color: var(--text); font-size: 12px; font-weight: 600; cursor: pointer; }
+  .sheet button.on { background: color-mix(in srgb, var(--accent) 18%, var(--surface-2)); }
+  .sheet-ico { width: 36px; height: 36px; border-radius: 12px; display: grid; place-items: center; background: var(--surface-3); color: var(--accent); }
+  .sheet-ico svg { width: 19px; height: 19px; }
+}

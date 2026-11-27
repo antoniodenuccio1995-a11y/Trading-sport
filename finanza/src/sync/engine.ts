@@ -31,6 +31,13 @@ function supa(): Promise<SupabaseClient> {
   return client;
 }
 
+/** Token dell'accesso in corso (per le funzioni Supabase riservate al titolare), o null se non hai fatto l'accesso. */
+export async function accessToken(): Promise<string | null> {
+  if (!hasStoredSession()) return null;
+  const { data } = await (await supa()).auth.getSession();
+  return data.session?.access_token ?? null;
+}
+
 /** C'è una sessione salvata? (senza caricare supabase-js) */
 export function hasStoredSession(): boolean {
   try { return Object.keys(localStorage).some((k) => k.startsWith("sb-") && k.endsWith("-auth-token")); } catch { return false; }

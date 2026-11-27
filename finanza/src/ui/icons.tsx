@@ -30,6 +30,8 @@ const P: Record<string, string> = {
   bolt: "M13 2 3 14h9l-1 8 10-12h-9z",
   more: "M12 13a1 1 0 1 0 0-2 1 1 0 0 0 0 2zM19 13a1 1 0 1 0 0-2 1 1 0 0 0 0 2zM5 13a1 1 0 1 0 0-2 1 1 0 0 0 0 2z",
   cash: "M2 6h20v12H2zM12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM6 12h.01M18 12h.01",
+  trend: "M3 17l6-6 4 4 8-8M15 7h6v6",
+  tag: "M20.6 13.4 13.4 20.6a2 2 0 0 1-2.8 0L3 13V3h10l7.6 7.6a2 2 0 0 1 0 2.8zM7.5 7.5h.01",
 };
 export function Icon({ name, size }: { name: keyof typeof P | string; size?: number }) {
   return (

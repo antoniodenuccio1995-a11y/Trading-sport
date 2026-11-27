@@ -2,8 +2,9 @@
 // Funzioni pure: niente rete, niente DOM (testate in tests/sync.test.ts).
 import type { Snapshot } from "../domain/types.ts";
 import { fnv } from "../domain/movement.ts";
+import { emptyInvest, type InvestData } from "../invest/types.ts";
 
-export type Kind = "movement" | "rule" | "account" | "category" | "budget" | "setting" | "import";
+export type Kind = "movement" | "rule" | "account" | "category" | "budget" | "setting" | "import" | "instrument" | "trade" | "invest";
 export interface Rec { kind: Kind; key: string; value: unknown }
 export interface RemoteRow { kind: Kind; key: string; value: unknown; deleted: boolean; updated_at: string }
 
@@ -23,6 +24,14 @@ export function toRecords(s: Snapshot): Rec[] {
   const shared: Record<string, unknown> = {};
   for (const [k, v] of Object.entries(s.settings)) if (!DEVICE_ONLY.has(k)) shared[k] = v;
   out.push({ kind: "setting", key: "settings", value: shared });
+  // investimenti: strumenti e operazioni una riga ciascuno; prezzi e storico in una riga sola
+  const inv = s.investments;
+  if (inv) {
+    for (const i of inv.instruments) out.push({ kind: "instrument", key: i.id, value: i });
+    for (const t of inv.trades) out.push({ kind: "trade", key: t.id, value: t });
+    const { instruments: _i, trades: _t, ...rest } = inv;
+    out.push({ kind: "invest", key: "state", value: rest });
+  }
   return out;
 }
 
@@ -102,6 +111,20 @@ export function applyRemote(s: Snapshot, rows: readonly RemoteRow[], synced: Map
       case "setting":
         if (!row.deleted) Object.assign(s.settings, row.value as object);
         break;
+      case "invest": {
+        const inv = (s.investments ??= emptyInvest());
+        if (!row.deleted) Object.assign(inv, row.value as Partial<InvestData>);
+        break;
+      }
+      case "instrument": case "trade": {
+        const inv = (s.investments ??= emptyInvest());
+        const list = (row.kind === "instrument" ? inv.instruments : inv.trades) as { id: string }[];
+        const i = list.findIndex((x) => x.id === row.key);
+        if (row.deleted) { if (i >= 0) list.splice(i, 1); }
+        else if (i >= 0) list[i] = row.value as { id: string };
+        else list.push(row.value as { id: string });
+        break;
+      }
       default: {
         const kind = row.kind;
         const list = (kind === "movement" ? s.movements : kind === "rule" ? s.rules : kind === "account" ? s.accounts : kind === "category" ? s.categories : s.imports) as { id: string }[];

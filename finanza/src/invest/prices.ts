@@ -2,7 +2,7 @@
 //  - Cripto: API pubblica di CoinGecko (CORS aperto, nessuna chiave). Con 429 si aspetta.
 //  - Azioni / ETF / obbligazioni: funzione Supabase fp-prices (Yahoo Finance lato server).
 // Nessuna scrittura qui: le funzioni restituiscono dati, investActions.ts li salva con mutate.
-import { SUPABASE_KEY, SUPABASE_URL } from "../sync/engine.ts";
+import { SUPABASE_KEY, SUPABASE_URL, accessToken } from "../sync/engine.ts";
 import { monthlyPoints } from "./portfolio.ts";
 import type { Instrument, PriceQuote } from "./types.ts";
 
@@ -103,7 +103,10 @@ export async function securityQuote(q: { isin?: string; symbol?: string }, withH
   if (q.isin) p.set("isin", q.isin);
   if (q.symbol) p.set("symbol", q.symbol);
   if (!withHistory) p.set("history", "0");
-  const j = await getJson(`${PRICES_FN}?${p}`, "yahoo", { headers: { apikey: SUPABASE_KEY, Authorization: `Bearer ${SUPABASE_KEY}` } }) as Partial<SecurityQuote> & { ok?: boolean; message?: string };
+  // la funzione è riservata al titolare: serve l'accesso (lo stesso della sincronizzazione)
+  const token = await accessToken().catch(() => null);
+  if (!token) throw new Error("Per i prezzi di ETF e azioni accedi da Impostazioni → Sincronizzazione (le cripto funzionano anche senza).");
+  const j = await getJson(`${PRICES_FN}?${p}`, "yahoo", { headers: { apikey: SUPABASE_KEY, Authorization: `Bearer ${token}` } }) as Partial<SecurityQuote> & { ok?: boolean; message?: string };
   if (!j?.ok || typeof j.price !== "number") throw new Error(j?.message || "Prezzo non disponibile");
   return { symbol: j.symbol ?? "", name: j.name ?? "", exchange: j.exchange ?? "", price: j.price, currency: j.currency ?? "EUR", at: j.at ?? new Date().toISOString(), native: j.native ?? null, history: j.history ?? [] };
 }
