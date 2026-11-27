@@ -1,10 +1,17 @@
 {
+  "id": "./",
   "name": "Trading Analytics",
   "short_name": "Trading",
+  "description": "Statistiche, modello e quote per il trading sportivo sul calcio.",
   "lang": "it",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
+  "orientation": "any",
+  "categories": [
+    "sports",
+    "utilities"
+  ],
   "background_color": "#f4f6f8",
   "theme_color": "#1d7a4d",
   "icons": [

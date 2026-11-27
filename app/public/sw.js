@@ -12,6 +12,9 @@ self.addEventListener("fetch", (e) => {
   if (url.pathname.includes("/assets/")) {
     e.respondWith(caches.open(CACHE).then(async (c) => (await c.match(e.request)) || fetch(e.request).then((r) => { if (r.ok) c.put(e.request, r.clone()); return r; })));
   } else if (e.request.mode === "navigate") {
+    // solo la pagina dell'app: le altre pagine pubblicate sullo stesso sito (es. /scheda/) non vanno in cache
+    const scope = new URL(self.registration.scope).pathname;
+    if (url.pathname !== scope && url.pathname !== `${scope}index.html`) return;
     e.respondWith(fetch(e.request).then((r) => { const copy = r.clone(); caches.open(CACHE).then((c) => c.put("./", copy)); return r; }).catch(() => caches.match("./")));
   }
 });
