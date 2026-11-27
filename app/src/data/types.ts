@@ -19,8 +19,10 @@ export interface Match {
   oh: number | null; od: number | null; oa: number | null; oo: number | null; ou: number | null;
   ch: number | null; cd: number | null; ca: number | null; co: number | null; cu: number | null;
   bh: number | null; bd: number | null; ba: number | null;
-  /** minuti dei gol in ordine ("12,49,93"; "" = 0-0), solo dove la fonte li dà */
+  /** minuti dei gol in ordine ("12,49,93"; "" = 0-0), solo dove la fonte li dà; con la squadra se nota ("5h,27a": h casa, a ospite) */
   gm?: string | null;
+  /** marcatori nello stesso ordine dei minuti, separati da "|" (dove la fonte li dà) */
+  gb?: string | null;
 }
 
 /** Istantanea colonnare di una stagione (prodotta da ta_snapshot). */

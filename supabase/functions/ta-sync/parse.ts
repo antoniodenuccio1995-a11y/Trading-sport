@@ -142,6 +142,51 @@ export function goalMinutes(raw: string | undefined, goals: number | undefined):
   return mins.join(",");
 }
 
+/** Un gol dal file goals_*.csv di Open Matchday: minuto, squadra che segna (h casa, a ospite), marcatore. */
+export interface GoalRow { minute: number; side: "h" | "a"; scorer: string }
+
+/**
+ * Gol per partita (chiave "data|casa|ospite") ricavati dal punteggio dopo ogni gol.
+ * Una partita resta fuori se il punteggio manca o non sale di un gol alla volta (dati incoerenti).
+ */
+export function goalsByMatch(rows: Row[]): Map<string, GoalRow[]> {
+  const raw = new Map<string, { minute: number; sh: number; sa: number; scorer: string }[] | null>();
+  for (const r of rows) {
+    const key = `${r.date}|${r.home}|${r.away}`;
+    if (raw.get(key) === null) continue;
+    const sh = int(r.score_home), sa = int(r.score_away);
+    const mm = /^(\d{1,3})(?:\+(\d{1,2}))?'?$/.exec((r.minute ?? "").trim());
+    if (sh === undefined || sa === undefined || !mm) { raw.set(key, null); continue; }
+    const list = raw.get(key) ?? [];
+    list.push({ minute: Number(mm[1]) + Number(mm[2] ?? 0), sh, sa, scorer: (r.scorer ?? "").replace(/[|,]/g, " ").trim() });
+    raw.set(key, list);
+  }
+  const out = new Map<string, GoalRow[]>();
+  for (const [key, list] of raw) {
+    if (!list) continue;
+    list.sort((x, y) => x.sh + x.sa - (y.sh + y.sa));
+    let ph = 0, pa = 0, ok = true;
+    const goals: GoalRow[] = [];
+    for (const g of list) {
+      if (g.sh === ph + 1 && g.sa === pa) goals.push({ minute: g.minute, side: "h", scorer: g.scorer });
+      else if (g.sa === pa + 1 && g.sh === ph) goals.push({ minute: g.minute, side: "a", scorer: g.scorer });
+      else { ok = false; break; }
+      ph = g.sh; pa = g.sa;
+    }
+    if (ok) out.set(key, goals);
+  }
+  return out;
+}
+
+/** Aggiunge alla riga squadra e marcatore di ogni gol, se il file dei gol torna con il risultato finale. */
+export function withGoalSides(row: MatchRow, goals: GoalRow[] | undefined): MatchRow {
+  const fh = row.fthg as number | undefined, fa = row.ftag as number | undefined;
+  if (!goals || fh === undefined || fa === undefined || !goals.length) return row;
+  const h = goals.filter((g) => g.side === "h").length;
+  if (h !== fh || goals.length - h !== fa) return row;
+  return { ...row, goal_min: goals.map((g) => `${g.minute}${g.side}`).join(","), goal_by: goals.map((g) => g.scorer).join("|") };
+}
+
 /** Riga Open Matchday (results_*.csv o fixtures_*.csv). */
 export function omRow(r: Row): MatchRow | undefined {
   const { home, away } = r, match_date = r.date;

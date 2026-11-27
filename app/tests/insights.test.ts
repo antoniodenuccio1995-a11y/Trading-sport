@@ -37,4 +37,14 @@ describe("punti chiave", () => {
     expect(pts.some((p) => p.text.startsWith("Quote non ancora disponibili"))).toBe(true);
     expect(pts.some((p) => p.tone === "warn" && p.text.includes("Campione piccolo"))).toBe(true);
   });
+  it("scontri diretti: solo con abbastanza precedenti e uno schema netto", () => {
+    const g = (fh: number, fa: number, home = 1) => base({ fh, fa, h: home, a: home === 1 ? 2 : 1, d: 10 });
+    const five = [g(2, 1), g(3, 1, 2), g(1, 1), g(2, 2), g(4, 0, 2)]; // 4 Over su 5; la squadra di casa ne perde 2
+    const t = (list: Match[]) => matchInsights(base({}), fc(), [], names, undefined, list).map((p) => p.text);
+    expect(t(five).some((x) => x.startsWith("Precedenti ricchi di gol"))).toBe(true);
+    expect(t(five).some((x) => x.includes("non ha mai perso"))).toBe(false);
+    const unbeaten = [g(2, 0), g(1, 1, 2), g(0, 1, 2), g(1, 0)];
+    expect(t(unbeaten).some((x) => x.startsWith("Casa non ha mai perso negli ultimi 4"))).toBe(true);
+    expect(t(unbeaten.slice(0, 3)).some((x) => x.includes("scontri diretti"))).toBe(false);
+  });
 });

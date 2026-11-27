@@ -1,14 +1,14 @@
 // Minuti dei gol: in quali fasce di gioco arrivano i gol (stagione in corso, dove la fonte li ha).
 import { useMemo } from "preact/hooks";
-import { getStore } from "../../data/store";
+import { getStore, teamName } from "../../data/store";
 import type { Match } from "../../data/types";
-import { BANDS, goalTimes, median, minuteAgg, minuteLeagues, type MinuteAgg } from "../../stats/minutes";
+import { BANDS, goalTimes, median, minuteAgg, minuteLeagues, type Goal, type MinuteAgg } from "../../stats/minutes";
 import { pct } from "../../stats/team";
 import { Card, PctTd } from "../components/common";
 
 export interface MinCol { label: string; list: Match[] }
 
-export const MINUTES_NOTE = "Minuti della stagione in corso (fonte Open Matchday): completi per Bundesliga e 2. Bundesliga; per Serie A, Premier League, Liga, Ligue 1 e Champions la fonte ne ha solo una parte e qui contano le sole partite con tutti i minuti. La fonte non dice chi ha segnato: per una squadra si contano tutti i gol delle sue partite.";
+export const MINUTES_NOTE = "Minuti della stagione in corso (fonte Open Matchday): completi per Bundesliga e 2. Bundesliga; per Serie A, Premier League, Liga, Ligue 1 e Champions la fonte ne ha solo una parte e qui contano le sole partite con tutti i minuti. Per una squadra si contano tutti i gol delle sue partite, fatti e subiti.";
 
 function useMinuteLeagues() {
   const s = getStore();
@@ -58,17 +58,50 @@ export function GoalMinutes({ cols, title = "Minuti dei gol" }: { cols: MinCol[]
   );
 }
 
-/** Linea del tempo dei gol di una partita giocata (se la fonte ha i minuti). */
+const minLabel = (x: Goal) => (x.half === 1 && x.min > 45 ? `45+${x.min - 45}` : x.min > 90 ? `90+${x.min - 90}` : `${x.min}`) + "'";
+
+/**
+ * Linea del tempo dei gol di una partita giocata (se la fonte ha i minuti): gol della casa sopra la linea,
+ * dell'ospite sotto, nei colori delle due squadre; sotto, il tabellino con punteggio progressivo e marcatore.
+ * Se la squadra non si può sapere il gol resta neutro.
+ */
 export function GoalTimeline({ m }: { m: Match }) {
   const g = goalTimes(m);
   if (!g || !g.length) return null;
-  const pos = (x: { min: number; half: 1 | 2 }) => (x.half === 1 ? Math.min(x.min, 47) / 95 : (Math.max(x.min, 46) + 2) / 95) * 100;
+  const pos = (x: Goal) => Math.min(99, (x.half === 1 ? Math.min(x.min, 47) / 95 : (Math.max(x.min, 46) + 2) / 95) * 100);
+  // etichette vicine sullo stesso lato: una più in alto (o più in basso) dell'altra
+  const last: Record<string, { p: number; l: number }> = {}, lvl: number[] = [];
+  g.forEach((x, i) => {
+    const k = x.side === "a" ? "a" : "h", p = pos(x), prev = last[k];
+    lvl[i] = prev && p - prev.p < 7 && prev.l === 0 ? 1 : 0;
+    last[k] = { p, l: lvl[i] };
+  });
+  const team = (x: Goal) => (x.side === "h" ? teamName(m.h) : x.side === "a" ? teamName(m.a) : "squadra non indicata");
+  const desc = (x: Goal) => `${minLabel(x)} ${team(x)}${x.score ? ` ${x.score[0]}–${x.score[1]}` : ""}${x.by ? ` (${x.by})` : ""}`;
+  const row = (x: Goal, i: number) => (
+    <li key={i} class={`gtl-row ${x.side ?? "n"}`} title={desc(x)}>
+      <i class="gtl-dot" /><span class="gtl-min">{minLabel(x)}</span>{x.score && <b>{x.score[0]}–{x.score[1]}</b>}{x.by && <span class="gtl-by">{x.by}</span>}
+    </li>
+  );
+  const home = g.filter((x) => x.side === "h"), away = g.filter((x) => x.side === "a"), unk = g.filter((x) => !x.side);
+  const sided = home.length + away.length > 0;
   return (
-    <div class="gtl" aria-label={`Minuti dei gol: ${g.map((x) => `${x.min}'`).join(", ")}`}>
+    <div class={`gtl${away.length || unk.length ? " has-below" : ""}`} aria-label={`Gol: ${g.map(desc).join(", ")}`}>
       <div class="gtl-track"><span class="gtl-ht" style="left:50.5%" title="Intervallo" />
-        {g.map((x, i) => <span key={i} class="gtl-goal" style={`left:${Math.min(99, pos(x)).toFixed(1)}%`} title={`${x.min > 90 ? `90+${x.min - 90}` : x.half === 1 && x.min > 45 ? `45+${x.min - 45}` : x.min}'`}><b>{x.half === 1 && x.min > 45 ? `45+${x.min - 45}` : x.min > 90 ? `90+${x.min - 90}` : x.min}'</b></span>)}
+        {g.map((x, i) => (
+          <span key={i} class={`gtl-goal ${x.side ?? "n"}${lvl[i] ? " up2" : ""}`} style={`left:${pos(x).toFixed(1)}%`} title={desc(x)}><b>{minLabel(x)}</b></span>
+        ))}
       </div>
       <div class="gtl-scale"><span>0'</span><span>45'</span><span>90'</span></div>
+      {sided && (
+        <div class="gtl-list">
+          <ul aria-label={`Gol di ${teamName(m.h)}`}>{home.map((x) => row(x, g.indexOf(x)))}</ul>
+          <ul class="away" aria-label={`Gol di ${teamName(m.a)}`}>{away.map((x) => row(x, g.indexOf(x)))}</ul>
+        </div>
+      )}
+      {unk.length > 0 && (
+        <p class="note gtl-note">{sided ? `Gol al ${unk.map(minLabel).join(", ")}: la fonte non indica la squadra.` : "La fonte dà i minuti ma non chi ha segnato."}</p>
+      )}
     </div>
   );
 }

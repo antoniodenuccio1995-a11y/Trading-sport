@@ -1,6 +1,6 @@
 # Roadmap · Trading Analytics
 
-Aggiornata al 23 novembre 2026 (versione 1.6). Ordine = priorità proposta; si cambia in qualsiasi momento.
+Aggiornata al 27 novembre 2026 (versione 1.7). Ordine = priorità proposta; si cambia in qualsiasi momento.
 
 ## Fatto
 
@@ -14,6 +14,7 @@ Aggiornata al 23 novembre 2026 (versione 1.6). Ordine = priorità proposta; si c
 | 1.4 | Chiusura parziale dei trade, righe partite "Casa vs Ospite", 2. Bundesliga |
 | 1.5 | Temi a tema calcio (Notturna, Diurna, Azzurri, Classica) con il campo sullo sfondo, minuti dei gol, punti chiave della partita |
 | 1.6 | Profilo a esagono delle squadre, grafici a ciambella, movimenti di quota (apertura → chiusura, storico delle rilevazioni, studio "quando la quota si muove") |
+| 1.7 | Chi ha segnato e punteggio dopo ogni gol nella linea dei gol (Germania completa, altri campionati quando è certo), forma con punteggi casa–ospite, riepilogo degli scontri diretti |
 
 ## Prossimi passi
 
@@ -42,7 +43,7 @@ Una regola (es. "Over 2,5 quando entrambe hanno almeno il 60% di Over") provata 
 Messaggi gratuiti con un bot: trade da chiudere, occasioni dello scanner, limite di perdita giornaliero raggiunto. Serve creare un bot (2 minuti con @BotFather) e salvare il token tra i segreti di Supabase.
 
 ### 6. Minuti dei gol per squadra (Germania)
-OpenLigaDB (gratuito) ha per Bundesliga e 2. Bundesliga anche chi ha segnato e lo storico delle stagioni passate; Open Matchday ha un file con ogni gol e il punteggio dopo il gol (quindi chi ha segnato) per la stagione in corso. Con questi: gol fatti e subiti per fascia, per squadra.
+Chi ha segnato ora arriva per la stagione in corso (versione 1.7) e si vede nella linea dei gol. Manca il passo successivo: gol **fatti e subiti** per fascia di minuti, per squadra, e lo storico delle stagioni passate (OpenLigaDB, gratuito, lo ha per la Germania).
 
 ### 7. Il tuo modo di fare trading
 Dove guadagni e dove perdi: fasce di quota, back contro lay, giorni, campionati, minuto di ingresso. Stake suggerito con Kelly frazionato dentro i limiti di capitale.
@@ -60,6 +61,6 @@ Seconda divisione olandese (solo stagione in corso, senza storico). Già predisp
 Piano completo in [VENDERE.md](VENDERE.md): dati con licenza commerciale, stemmi, licenza Betfair, regole sulla pubblicità del gioco, progetto separato, abbonamenti.
 
 ## Limiti noti
-- Minuti dei gol: solo stagione in corso; completi per Bundesliga e 2. Bundesliga, parziali per Serie A, Premier, Liga, Ligue 1 e Champions, assenti altrove.
+- Minuti dei gol: solo stagione in corso; completi, con squadra e marcatore, per Bundesliga e 2. Bundesliga; parziali e senza squadra per Serie A, Premier, Liga, Ligue 1 e Champions; assenti altrove.
 - Le fonti gratuite pubblicano i risultati con 1–3 giorni di ritardo.
 - Champions League e campionato croato: solo stagione in corso.

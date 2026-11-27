@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { fdDate, fdExtraSeason, fdRow, goalMinutes, omKickoff, omRow, parseCsv, seasonCode, seasonOf, zonedToUtc } from "../../supabase/functions/ta-sync/parse";
+import { fdDate, fdExtraSeason, fdRow, goalMinutes, goalsByMatch, withGoalSides, omKickoff, omRow, parseCsv, seasonCode, seasonOf, zonedToUtc } from "../../supabase/functions/ta-sync/parse";
 
 describe("CSV", () => {
   it("gestisce BOM, virgolette e a-capo", () => {
@@ -75,5 +75,23 @@ describe("minuti dei gol (Open Matchday)", () => {
     expect(omRow({ ...base, goal_minutes: "5,60,88" })!.goal_min).toBe("5,60,88");
     expect(omRow(base)!.goal_min).toBeUndefined();
     expect(omRow({ ...base, ft_home: "0", ft_away: "0", goal_minutes: "" })!.goal_min).toBe("");
+  });
+});
+
+describe("chi ha segnato (file dei gol)", () => {
+  const g = (minute: string, sh: string, sa: string, scorer = "X") => ({ date: "2026-11-20", home: "Darmstadt", away: "Heidenheim", minute, score_home: sh, score_away: sa, scorer });
+  it("ricava la squadra dal punteggio dopo ogni gol, anche se le righe sono in disordine", () => {
+    const m = goalsByMatch([g("22", "2", "0", "B"), g("5", "1", "0", "A"), g("62", "3", "1", "D"), g("27", "2", "1", "C")]);
+    expect(m.get("2026-11-20|Darmstadt|Heidenheim")!.map((x) => `${x.minute}${x.side}`)).toEqual(["5h", "22h", "27a", "62h"]);
+  });
+  it("scarta le partite con punteggi incoerenti o mancanti", () => {
+    expect(goalsByMatch([g("5", "1", "0"), g("22", "3", "0")]).size).toBe(0);
+    expect(goalsByMatch([g("5", "", "")]).size).toBe(0);
+  });
+  it("aggiunge minuti con squadra e marcatori solo se tornano con il risultato", () => {
+    const goals = goalsByMatch([g("5", "1", "0", "A"), g("22", "2", "0", "B"), g("27", "2", "1", "C"), g("62", "3", "1", "D")]).get("2026-11-20|Darmstadt|Heidenheim");
+    const row = { home: "Darmstadt", away: "Heidenheim", match_date: "2026-11-20", fthg: 3, ftag: 1 };
+    expect(withGoalSides(row, goals)).toMatchObject({ goal_min: "5h,22h,27a,62h", goal_by: "A|B|C|D" });
+    expect(withGoalSides({ ...row, fthg: 2 }, goals)).toEqual({ ...row, fthg: 2 });
   });
 });

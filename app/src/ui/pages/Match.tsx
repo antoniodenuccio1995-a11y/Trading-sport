@@ -6,6 +6,7 @@ import { leagueAll, matchForecast } from "../../stats/derived";
 import { implied, type Forecast } from "../../stats/poisson";
 import { standings } from "../../stats/standings";
 import { h2h, leagueTeamAgg, teamAgg, teamMatches } from "../../stats/team";
+import { h2hSummary } from "../../stats/h2h";
 import { Card, Form, Tabs, TeamLink, fmtOdd, fmtPct, heat, usePref, useStore } from "../components/common";
 import { PeriodSeg, periodLabel, periodSeasons, type Period } from "../components/period";
 import { href, type Route } from "../router";
@@ -184,6 +185,7 @@ function FormTab({ m }: { m: M }) {
         <LastMatches title={`Ultime 10 · ${teamName(m.h)}`} list={lastH} team={m.h} />
         <LastMatches title={`Ultime 10 · ${teamName(m.a)}`} list={lastA} team={m.a} />
       </div>
+      {meetings.length > 0 && <H2HCard m={m} meetings={meetings} />}
       <Card title={`Precedenti (${meetings.length})`} flush>
         {meetings.length ? <div class="tw"><table class="t"><tbody>{meetings.map((x) => (
           <tr key={x.id}><td class="l">{dateShort(x.d)}</td><td class="l muted">{leagueName(x.lg)}</td><td style="font-weight:600">{teamName(x.h)}</td>
@@ -194,15 +196,43 @@ function FormTab({ m }: { m: M }) {
   );
 }
 
+/** Riepilogo degli scontri diretti (ultimi precedenti in archivio, tutte le competizioni). */
+function H2HCard({ m, meetings }: { m: M; meetings: M[] }) {
+  const x = h2hSummary(meetings, m.h), H = teamName(m.h), A = teamName(m.a);
+  const w = (v: number) => `width:${(100 * v) / x.n}%`;
+  const r = (v: number, n: number) => (n ? `${fmtPct((100 * v) / n)}` : "—");
+  const dec = (v: number) => (v / x.n).toFixed(1).replace(".", ",");
+  return (
+    <Card title={`Scontri diretti · ${x.n === 1 ? "l'unico precedente" : `ultimi ${x.n} precedenti`}`}>
+      <div class="bar3" role="img" aria-label={`${H} ${x.w} vittorie, ${x.d} pareggi, ${A} ${x.l} vittorie`}>
+        {x.w > 0 && <div class="b1" style={w(x.w)}>{x.w}</div>}
+        {x.d > 0 && <div class="bx" style={w(x.d)}>{x.d}</div>}
+        {x.l > 0 && <div class="b2" style={w(x.l)}>{x.l}</div>}
+      </div>
+      <div class="h2h-leg"><span><i class="b1" />Vittorie {H}</span><span><i class="bx" />Pareggi</span><span><i class="b2" />Vittorie {A}</span></div>
+      <div class="kpis">
+        <div class="kpi"><b>{dec(x.gf + x.ga)}</b><span>gol a partita: {H} {dec(x.gf)} · {A} {dec(x.ga)}</span></div>
+        <div class="kpi"><b>{r(x.o25, x.n)}</b><span>Over 2,5 ({x.o25} su {x.n})</span></div>
+        <div class="kpi"><b>{r(x.gg, x.n)}</b><span>entrambe a segno ({x.gg} su {x.n})</span></div>
+        <div class="kpi"><b>{r(x.ht05, x.htN)}</b><span>gol nel 1° tempo ({x.ht05} su {x.htN})</span></div>
+      </div>
+      <p class="muted" style="margin:0">Con {H} in casa: {x.same.n ? `${x.same.w} vittorie, ${x.same.d} pareggi, ${x.same.l} sconfitte su ${x.same.n}` : "nessun precedente in archivio"}.</p>
+      <p class="note">{x.n < 6 ? "Pochi precedenti: leggili come contesto, non come previsione. " : ""}Le rose e gli allenatori cambiano negli anni: contano di più forma e statistiche della stagione. Archivio dal 2021/22.</p>
+    </Card>
+  );
+}
+
 function LastMatches({ title, list, team }: { title: string; list: M[]; team: number }) {
   return (
     <Card title={title} flush>
       {list.length ? <div class="tw"><table class="t"><tbody>{list.map((x) => {
         const f = x.h === team ? x.fh! : x.fa!, a = x.h === team ? x.fa! : x.fh!;
         const r = f > a ? "V" : f === a ? "N" : "P";
-        return <tr key={x.id}><td class="l">{dateShort(x.d)}</td><td class="l muted">{x.h === team ? "C" : "T"}</td>
-          <td class="l"><TeamLink id={x.h === team ? x.a : x.h} season={x.s} /></td>
-          <td><a href={href(["partita", x.id])}><b>{f}–{a}</b></a></td><td class="muted">{x.hh !== null ? `1T ${x.h === team ? x.hh : x.ha}–${x.h === team ? x.ha : x.hh}` : ""}</td><td><span class="form"><i class={r}>{r}</i></span></td></tr>;
+        // punteggi sempre nell'ordine casa–ospite, come si leggono di solito; la squadra analizzata è in grassetto
+        const side = (id: number) => (id === team ? <b>{teamName(id)}</b> : <TeamLink id={id} season={x.s} />);
+        return <tr key={x.id}><td class="l">{dateShort(x.d)}</td><td class="l muted" title={x.h === team ? "In casa" : "In trasferta"}>{x.h === team ? "C" : "T"}</td>
+          <td class="l fixture">{side(x.h)} <span class="muted">–</span> {side(x.a)}</td>
+          <td><a href={href(["partita", x.id])}><b>{x.fh}–{x.fa}</b></a></td><td class="muted">{x.hh !== null ? `1T ${x.hh}–${x.ha}` : ""}</td><td><span class="form"><i class={r}>{r}</i></span></td></tr>;
       })}</tbody></table></div> : <p class="empty">Nessuna partita precedente.</p>}
     </Card>
   );
@@ -221,7 +251,7 @@ function KeyPoints({ m, fc }: { m: M; fc: Forecast | null }) {
   const s = getStore();
   const lgs = useMemo(() => minuteLeagues(s.matches), [s.matches]);
   const list = leagueAll(m.lg);
-  const pts = matchInsights(m, fc, list, { h: teamName(m.h), a: teamName(m.a) }, lgs);
+  const pts = matchInsights(m, fc, list, { h: teamName(m.h), a: teamName(m.a) }, lgs, h2h(s.matches, m.h, m.a, m.d));
   if (!pts.length) return null;
   return (
     <Card title="Punti chiave">
