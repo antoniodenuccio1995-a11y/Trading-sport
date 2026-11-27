@@ -169,7 +169,7 @@ function LeagueHalves({ list, season }: { list: Match[]; season: string }) {
             <tr key={t}><td class="team"><TeamLink id={t} season={season} /></td><td>{g.n}</td>
               <PctTd v={pct(g.g1, g.n)} /><PctTd v={pct(g.g2, g.n)} /><td>{fmtPct(val(g, "share"))}</td>
               <PctTd v={pct(g.s1, g.n)} /><PctTd v={pct(g.c1, g.n)} /><PctTd v={pct(g.s2, g.n)} /><PctTd v={pct(g.c2, g.n)} /><PctTd v={pct(g.more2, g.n)} /></tr>))}
-          <tr class="hl"><td class="team">Media campionato</td><td>{L.n}</td><td>{fmtPct(pct(L.g1, L.n))}</td><td>{fmtPct(pct(L.g2, L.n))}</td><td>{fmtPct(pct(L.f1 + L.a1, L.f1 + L.a1 + L.f2 + L.a2))}</td>
+          <tr class="hl"><td class="team">Media campionato</td><td title="Partite con il risultato all'intervallo">{venue === "all" ? L.n / 2 : L.n}</td><td>{fmtPct(pct(L.g1, L.n))}</td><td>{fmtPct(pct(L.g2, L.n))}</td><td>{fmtPct(pct(L.f1 + L.a1, L.f1 + L.a1 + L.f2 + L.a2))}</td>
             <td>{fmtPct(pct(L.s1, L.n))}</td><td>{fmtPct(pct(L.c1, L.n))}</td><td>{fmtPct(pct(L.s2, L.n))}</td><td>{fmtPct(pct(L.c2, L.n))}</td><td>{fmtPct(pct(L.more2, L.n))}</td></tr>
         </tbody>
       </table></div>

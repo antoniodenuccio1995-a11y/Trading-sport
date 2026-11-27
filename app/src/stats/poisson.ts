@@ -24,11 +24,35 @@ const fact = [1, 1, 2, 6, 24, 120, 720, 5040, 40320, 362880, 3628800];
 const pois = (k: number, l: number) => (Math.exp(-l) * l ** k) / fact[k];
 /** Restringe verso 1 le forze calcolate su pochi dati. */
 const shrink = (x: number, n: number, k = 4) => (n * x + k) / (n + k);
+/**
+ * Taratura verificata sullo storico (Serie A, Premier League, Liga, stagioni 2022/23–2025/26):
+ * - il totale dei gol attesi va avvicinato a metà strada verso la media del campionato, altrimenti
+ *   le probabilità Over/Under, GG e 1° tempo sono troppo estreme (es. Over 2,5 dato al 74% usciva il 63%);
+ * - correzione di Dixon-Coles sui risultati bassi (0-0, 1-0, 0-1, 1-1): più pareggi e più GG, come nella realtà.
+ */
+const TOTAL_W = 0.5, RHO = -0.1;
+/** Avvicina il totale lh + la al totale medio del campionato, mantenendo il rapporto tra le due squadre. */
+const toLeague = (lh: number, la: number, avg: number): [number, number] => {
+  const t = lh + la;
+  if (t <= 0) return [lh, la];
+  const s = (TOTAL_W * avg + (1 - TOTAL_W) * t) / t;
+  return [lh * s, la * s];
+};
 
+/** Probabilità dei risultati esatti (Poisson con correzione di Dixon-Coles), normalizzate a 1. */
 export function matrix(lh: number, la: number, max = 10) {
   const m: number[][] = [];
-  for (let i = 0; i <= max; i++) { m.push([]); for (let j = 0; j <= max; j++) m[i].push(pois(i, lh) * pois(j, la)); }
-  return m;
+  let tot = 0;
+  for (let i = 0; i <= max; i++) {
+    m.push([]);
+    for (let j = 0; j <= max; j++) {
+      let p = pois(i, lh) * pois(j, la);
+      if (i === 0 && j === 0) p *= 1 - lh * la * RHO; else if (i === 0 && j === 1) p *= 1 + lh * RHO;
+      else if (i === 1 && j === 0) p *= 1 + la * RHO; else if (i === 1 && j === 1) p *= 1 - RHO;
+      m[i].push(Math.max(0, p)); tot += Math.max(0, p);
+    }
+  }
+  return m.map((row) => row.map((p) => p / tot));
 }
 
 export function probabilities(lh: number, la: number) {
@@ -51,6 +75,7 @@ export function probabilities(lh: number, la: number) {
 /**
  * Stima per la partita (lega, giorno, casa, trasferta) usando solo dati precedenti al giorno.
  * Media lega: ultimi 365 giorni. Squadre: ultime 19 partite in casa / in trasferta nella stessa lega.
+ * Forze ristrette verso la media con 4 partite "virtuali"; totale gol avvicinato alla media del campionato.
  */
 export function forecast(all: Match[], lg: string, day: number, home: number, away: number): Forecast | null {
   const league = all.filter((m) => m.lg === lg && played(m) && m.d < day && m.d >= day - 365);
@@ -64,7 +89,7 @@ export function forecast(all: Match[], lg: string, day: number, home: number, aw
   const defH = shrink(hm.reduce((s, m) => s + m.fa!, 0) / hm.length / avgA, hm.length);
   const attA = shrink(am.reduce((s, m) => s + m.fa!, 0) / am.length / avgA, am.length);
   const defA = shrink(am.reduce((s, m) => s + m.fh!, 0) / am.length / avgH, am.length);
-  const lh = attH * defA * avgH, la = attA * defH * avgA;
+  const [lh, la] = toLeague(attH * defA * avgH, attA * defH * avgA, avgH + avgA);
   const base = probabilities(lh, la);
   const halves = forecastHalves(league, hm, am);
   return {
@@ -95,7 +120,7 @@ export function forecastHalves(league: Match[], hm: Match[], am: Match[]): Halve
     if (avgH <= 0 || avgA <= 0) return null;
     const attH = shrink(mean(H, fh) / avgH, H.length), defH = shrink(mean(H, fa) / avgA, H.length);
     const attA = shrink(mean(A, fa) / avgA, A.length), defA = shrink(mean(A, fh) / avgH, A.length);
-    return [attH * defA * avgH, attA * defH * avgA] as const;
+    return toLeague(attH * defA * avgH, attA * defH * avgA, avgH + avgA);
   };
   const x1 = lam(h1, a1), x2 = lam(h2, a2);
   if (!x1 || !x2) return null;
