@@ -49,9 +49,9 @@ export function buildStore(ref: RefSnapshot, snaps: SeasonSnapshot[]): Pick<Stor
     const col = (k: string) => (s[k] as (number | null)[]) ?? [];
     const id = col("id"), lg = s.lg as string[], d = col("d"), ko = col("ko"), h = col("h"), a = col("a");
     const cols = COLS.map((k) => col(k));
-    const gm = (s.gm as (string | null)[] | undefined) ?? [];
+    const gm = (s.gm as (string | null)[] | undefined) ?? [], gb = (s.gb as (string | null)[] | undefined) ?? [];
     for (let i = 0; i < s.n; i++) {
-      const m = { i: 0, id: id[i]!, lg: lg[i], s: s.season, d: d[i]!, ko: ko[i] ?? null, h: h[i]!, a: a[i]!, gm: gm[i] ?? null } as Match;
+      const m = { i: 0, id: id[i]!, lg: lg[i], s: s.season, d: d[i]!, ko: ko[i] ?? null, h: h[i]!, a: a[i]!, gm: gm[i] ?? null, gb: gb[i] ?? null } as Match;
       for (let c = 0; c < COLS.length; c++) (m as unknown as Record<string, number | null>)[COLS[c]] = cols[c][i] ?? null;
       matches.push(m);
     }

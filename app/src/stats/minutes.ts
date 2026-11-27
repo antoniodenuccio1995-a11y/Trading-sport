@@ -1,5 +1,5 @@
 // Minuti dei gol: quando arrivano i gol nelle partite (dati della stagione in corso, solo dove la fonte li ha).
-// La fonte non dice quale squadra ha segnato: le statistiche sono "nelle partite di" una squadra, non "gol fatti".
+// Le statistiche sono "nelle partite di" una squadra (gol fatti e subiti): la squadra che segna è nota solo per alcuni campionati.
 import { played, type Match } from "../data/types";
 
 export const BANDS: { from: number; to: number; label: string }[] = [
@@ -7,20 +7,49 @@ export const BANDS: { from: number; to: number; label: string }[] = [
   { from: 46, to: 60, label: "46'–60'" }, { from: 61, to: 75, label: "61'–75'" }, { from: 76, to: 90, label: "76'–90'+" },
 ];
 
-export interface Goal { min: number; half: 1 | 2; band: number }
+export interface Goal {
+  min: number; half: 1 | 2; band: number;
+  /** squadra che ha segnato ("h" casa, "a" ospite), null se non si può sapere */
+  side: "h" | "a" | null;
+  /** punteggio dopo il gol (casa, ospite), null se un gol precedente ha la squadra ignota */
+  score: [number, number] | null;
+  /** marcatore, se la fonte lo dà */
+  by: string | null;
+}
 
-/** Gol di una partita finita con il minuto, se la fonte li ha tutti; null altrimenti. */
+/**
+ * Gol di una partita finita con il minuto, se la fonte li ha tutti; null altrimenti.
+ * La squadra viene dalla fonte quando c'è ("27a"); altrimenti si ricava solo quando è certa:
+ * in un tempo in cui ha segnato una sola squadra (dal risultato all'intervallo e finale).
+ */
 export function goalTimes(m: Match): Goal[] | null {
   if (!played(m) || m.gm === null || m.gm === undefined) return null;
-  const goals = m.fh! + m.fa!;
-  const mins = m.gm === "" ? [] : m.gm.split(",").map(Number);
-  if (mins.length !== goals || mins.some((x) => !Number.isFinite(x))) return null;
+  const fh = m.fh!, fa = m.fa!, goals = fh + fa;
+  const toks = m.gm === "" ? [] : m.gm.split(",").map((t) => /^(\d{1,3})([ha])?$/.exec(t.trim()));
+  if (toks.length !== goals || toks.some((t) => !t)) return null;
+  const mins = toks.map((t) => Number(t![1]));
+  const sides: ("h" | "a" | null)[] = toks.map((t) => (t![2] as "h" | "a" | undefined) ?? null);
+  // squadre dalla fonte: devono tornare con il risultato finale, altrimenti non si usano
+  if (sides.some((x) => x) && (sides.some((x) => !x) || sides.filter((x) => x === "h").length !== fh)) sides.fill(null);
   // i primi gol (in ordine) fino al punteggio dell'intervallo sono del 1° tempo: così i recuperi (45+2) finiscono nel tempo giusto
-  const ht = m.hh !== null && m.ha !== null && m.hh + m.ha <= goals ? m.hh + m.ha : null;
+  const ht = m.hh !== null && m.ha !== null && m.hh + m.ha <= goals && m.hh <= fh && m.ha <= fa ? m.hh + m.ha : null;
+  if (!sides.some((x) => x !== null) && goals) {
+    // [gol casa, gol ospite] in ogni tratto: se in un tratto ha segnato una sola squadra, i gol sono suoi
+    const parts: [number, number, number, number][] = ht !== null
+      ? [[0, ht, m.hh!, m.ha!], [ht, goals, fh - m.hh!, fa - m.ha!]]
+      : [[0, goals, fh, fa]];
+    for (const [from, to, h, a] of parts) if (!h !== !a) for (let k = from; k < to; k++) sides[k] = h ? "h" : "a";
+  }
+  const by = m.gb ? m.gb.split("|") : [];
+  let sh = 0, sa = 0, known = true;
   return mins.map((min, k) => {
     const half: 1 | 2 = ht !== null ? (k < ht ? 1 : 2) : min <= 45 ? 1 : 2;
     const band = half === 1 ? (min <= 15 ? 0 : min <= 30 ? 1 : 2) : (min <= 60 ? 3 : min <= 75 ? 4 : 5);
-    return { min, half, band };
+    const side = sides[k];
+    if (side === "h") sh++; else if (side === "a") sa++; else known = false;
+    // a fine primo tempo il punteggio torna noto dal risultato all'intervallo
+    if (!known && ht !== null && k === ht - 1) { sh = m.hh!; sa = m.ha!; known = true; }
+    return { min, half, band, side, score: known && side ? [sh, sa] as [number, number] : null, by: by.length === goals ? (by[k] || null) : null };
   });
 }
 

@@ -6,7 +6,7 @@
 //   {mode:'refresh'}                                      tutte le leghe (stagione corrente) + quote + pubblicazione
 //   {mode:'logos', limit?:12}                             cerca gli stemmi mancanti su TheSportsDB
 import { createClient } from "npm:@supabase/supabase-js@2.49.1";
-import { decode, fdExtraSeason, fdRow, MatchRow, omRow, parseCsv, seasonCode, seasonOf } from "./parse.ts";
+import { decode, fdExtraSeason, fdRow, goalsByMatch, MatchRow, omRow, parseCsv, seasonCode, seasonOf, withGoalSides } from "./parse.ts";
 
 const FD = "https://www.football-data.co.uk";
 const OM = "https://raw.githubusercontent.com/oladeeayo/open-matchday/master/data";
@@ -85,7 +85,10 @@ async function syncLeague(lg: League, scope: "current" | "all") {
     await step(`om results ${cur}`, cur, "om", "results", async () => {
       const csv = await fetchCsv(`${OM}/${lg.om_folder}/results_${code}.csv`);
       if (!csv) return { missing: true };
-      return await ingest(lg.code, cur, "om", "results", csv.map(omRow).filter((r): r is MatchRow => !!r && r.fthg !== undefined));
+      // file dei gol uno per uno (dove esiste): squadra che segna e marcatore
+      const goals = goalsByMatch((await fetchCsv(`${OM}/${lg.om_folder}/goals_${code}.csv`).catch(() => null)) ?? []);
+      const rows = csv.map((r) => { const x = omRow(r); return x ? withGoalSides(x, goals.get(`${r.date}|${r.home}|${r.away}`)) : x; });
+      return await ingest(lg.code, cur, "om", "results", rows.filter((r): r is MatchRow => !!r && r.fthg !== undefined));
     });
     await step(`om fixtures ${cur}`, cur, "om", "fixtures", async () => {
       const csv = await fetchCsv(`${OM}/${lg.om_folder}/fixtures_${code}.csv`);

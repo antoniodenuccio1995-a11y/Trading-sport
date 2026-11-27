@@ -1,6 +1,7 @@
 // Punti chiave di una partita: una lettura automatica dei numeri (modello, mercato, tempi, forma, minuti dei gol).
 // Sono indicazioni statistiche, non certezze: il testo lo dice sempre in modo misurato.
 import type { Match } from "../data/types";
+import { h2hSummary } from "./h2h";
 import { halfTeam } from "./halves";
 import { maxLay, minBack } from "./market";
 import { minuteAgg } from "./minutes";
@@ -30,7 +31,7 @@ const pointsLast = (list: Match[], team: number) =>
     return s + (f > a ? 3 : f === a ? 1 : 0);
   }, 0);
 
-export function matchInsights(m: Match, fc: Forecast | null, league: Match[], names: { h: string; a: string }, minuteLeagues?: Set<string>): Insight[] {
+export function matchInsights(m: Match, fc: Forecast | null, league: Match[], names: { h: string; a: string }, minuteLeagues?: Set<string>, meetings?: Match[]): Insight[] {
   const out: Insight[] = [];
   if (!fc) return [{ tone: "warn", text: "Dati insufficienti per il modello: servono più partite giocate delle due squadre in questo campionato." }];
 
@@ -79,7 +80,16 @@ export function matchInsights(m: Match, fc: Forecast | null, league: Match[], na
     }
   }
 
-  // 5) affidabilità del campione
+  // 5) scontri diretti: solo schemi netti e con abbastanza precedenti
+  if (meetings && meetings.length >= 4) {
+    const x = h2hSummary(meetings, m.h), n = x.n;
+    if (n >= 5 && x.o25 / n >= 0.8) out.push({ tone: "info", text: `Precedenti ricchi di gol: Over 2,5 in ${x.o25} degli ultimi ${n} scontri diretti.` });
+    else if (n >= 5 && x.o25 / n <= 0.2) out.push({ tone: "info", text: `Precedenti chiusi: Over 2,5 solo in ${x.o25} degli ultimi ${n} scontri diretti.` });
+    if (n >= 4 && x.l === 0 && x.w >= 2) out.push({ tone: "info", text: `${names.h} non ha mai perso negli ultimi ${n} scontri diretti (${x.w} vittorie, ${x.d} pareggi). Sono anni diversi: contesto, non previsione.` });
+    else if (n >= 4 && x.w === 0 && x.l >= 2) out.push({ tone: "info", text: `${names.a} non ha mai perso negli ultimi ${n} scontri diretti (${x.l} vittorie, ${x.d} pareggi). Sono anni diversi: contesto, non previsione.` });
+  }
+
+  // 6) affidabilità del campione
   if (fc.sample.home < 5 || fc.sample.away < 5) {
     out.push({ tone: "warn", text: `Campione piccolo (${fc.sample.home} partite in casa di ${names.h}, ${fc.sample.away} fuori di ${names.a}): prendi i numeri con prudenza.` });
   }

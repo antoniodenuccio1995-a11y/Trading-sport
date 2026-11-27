@@ -124,10 +124,16 @@ select public.ta_call_sync('{"mode":"publish"}'::jsonb);
 - **Movimenti di quota** (`stats/moves.ts`, `sections/OddsMoves.tsx`): apertura → chiusura per 1X2 e Over/Under 2,5 con probabilità senza margine; storico delle rilevazioni per le partite da giocare letto via REST dalla tabella pubblica `ta_odds_hist`, riempita da un trigger su `ta_matches` a ogni cambio di quota (migrazione `20261123120000_ta_odds_history.sql`); scheda "Movimenti quote" nel campionato con lo studio per fasce di movimento.
 - Corretto il "vs" nella lista partite (la classe `vs` della testata lo trasformava in una griglia).
 
+### v1.7
+- **Chi ha segnato**: dal file `goals_<stagione>.csv` di Open Matchday (punteggio dopo ogni gol e marcatore) `goalsByMatch` e `withGoalSides` in `parse.ts` ricavano la squadra di ogni gol; `goal_min` diventa per esempio `"5a,22h,27h,62h"` (h casa, a ospite) e la nuova colonna `goal_by` tiene i marcatori separati da `|` (migrazione `20261127120000_ta_goal_sides.sql`; `ta_ingest` preferisce i minuti con la squadra, `ta_snapshot` pubblica `gb`). Si usano solo se tornano con il risultato finale; oggi complete per Bundesliga e 2. Bundesliga. Dove la fonte non dà la squadra, `goalTimes` (`stats/minutes.ts`) la ricava solo quando è certa: in un tempo in cui ha segnato una sola squadra (risultato all'intervallo e finale).
+- **Linea dei gol** (`GoalTimeline`): gol della casa sopra la linea e dell'ospite sotto, nei colori delle due squadre; tabellino a due colonne con punteggio dopo ogni gol e marcatore; gol senza squadra in grigio, con una nota.
+- **Forma**: le ultime 10 partite mostrano il punteggio nell'ordine casa–ospite (prima era dal punto di vista della squadra e sembrava invertito), con la squadra analizzata in grassetto.
+- **Scontri diretti** (`stats/h2h.ts`): riepilogo degli ultimi precedenti (vittorie, pareggi, gol medi, Over 2,5, entrambe a segno, gol nel 1° tempo, precedenti con le squadre nello stesso campo) e, con almeno 4–5 precedenti e uno schema netto, un punto chiave.
+
 ## Cosa manca (prossime fasi)
 
 - Scanner dei mercati, strategie e backtest, validazione cronologica.
 - Sezione Temi con scelta dei colori: i colori sono già variabili CSS e ora si possono scegliere chiaro, scuro o automatico.
 - Scanner dei mercati, giudizi 0–100, diario di prova, registro automatico delle previsioni, comparatore libero tra due squadre, forza degli avversari affrontati.
-- Minuti dei gol: tabella `ta_goal_events` predisposta, nessuna fonte collegata per scelta.
+- Minuti dei gol: chi ha segnato c'è solo per Bundesliga e 2. Bundesliga (stagione in corso); la tabella `ta_goal_events` resta predisposta ma non usata.
 - Champions League e HNL hanno solo la stagione in corso: Open Matchday non ha lo storico e football-data non le copre.
