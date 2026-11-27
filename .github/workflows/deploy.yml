@@ -1,12 +1,13 @@
 # Compila l'app (cartella app/), esegue i test e la pubblica sul ramo gh-pages
-# insieme alla partecipazione di nozze (cartella matrimonio/) e alla scheda di investimento (scheda-investimento/).
+# insieme alla partecipazione di nozze (cartella matrimonio/), alla scheda di investimento (scheda-investimento/)
+# e a Finanza Personale v4 (cartella finanza/, pubblicata in /Trading-sport/finanza/; i dati restano nel browser).
 # (GitHub Pages: https://antoniodenuccio1995-a11y.github.io/Trading-sport/).
 name: Pubblica app
 
 on:
   push:
     branches: [main]
-    paths: ["app/**", "matrimonio/**", "scheda-investimento/index.html", "supabase/functions/**", ".github/workflows/deploy.yml"]
+    paths: ["app/**", "finanza/**", "matrimonio/**", "scheda-investimento/index.html", "supabase/functions/**", ".github/workflows/deploy.yml"]
   workflow_dispatch:
 
 permissions:
@@ -26,13 +27,23 @@ jobs:
         with:
           node-version: 22
           cache: npm
-          cache-dependency-path: app/package-lock.json
+          cache-dependency-path: |
+            app/package-lock.json
+            finanza/package-lock.json
       - run: npm ci
         working-directory: app
       - run: npm test
         working-directory: app
       - run: npm run build
         working-directory: app
+      # Finanza Personale v4: test, build e pubblicazione in /Trading-sport/finanza/
+      - run: npm ci
+        working-directory: finanza
+      - run: npm test
+        working-directory: finanza
+      - run: npm run build
+        working-directory: finanza
+      - run: cp -r finanza/dist app/dist/finanza
       # partecipazione di nozze: pagina statica pubblicata in /Trading-sport/matrimonio/
       - run: cp -r matrimonio app/dist/matrimonio
       # scheda di investimento DiSalento: pagina statica pubblicata in /Trading-sport/scheda/

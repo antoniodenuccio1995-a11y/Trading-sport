@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Finanza Personale</title>
+  <meta name="description" content="Finanza personale: movimenti, budget e analisi, tutto nel browser." />
+  <meta name="theme-color" content="#0a1222" media="(prefers-color-scheme: dark)" />
+  <meta name="theme-color" content="#f3f5f9" media="(prefers-color-scheme: light)" />
+  <link rel="icon" href="./icon.svg" type="image/svg+xml" />
+  <link rel="manifest" href="./manifest.webmanifest" />
+  <link rel="apple-touch-icon" href="./icon.svg" />
+  <style>
+    html,body{margin:0;background:#0a1222;color:#e6edf7;font:14px ui-sans-serif,-apple-system,"Segoe UI",Roboto,sans-serif}
+    @media (prefers-color-scheme: light){html,body{background:#f3f5f9;color:#141a22}}
+    #boot{position:fixed;inset:0;display:grid;place-items:center}
+    #boot b{width:44px;height:44px;border-radius:13px;display:grid;place-items:center;font-size:21px;color:#0b0a1a;background:linear-gradient(135deg,#8b7cf6,#5ec8f2);animation:p 1s ease-in-out infinite alternate}
+    @keyframes p{to{transform:scale(.92);opacity:.7}}
+    @media (prefers-reduced-motion: reduce){#boot b{animation:none}}
+  </style>
+</head>
+<body>
+  <div id="boot" aria-label="Caricamento"><b>€</b></div>
+  <div id="app"></div>
+  <script type="module" src="./src/main.tsx"></script>
+</body>
+</html>
