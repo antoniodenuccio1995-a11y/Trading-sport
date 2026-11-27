@@ -11,7 +11,7 @@ import {
 import { played } from "../../data/types";
 import { TeamBadge } from "../components/badge";
 import { Legend, PALETTE, useChartWidth } from "../components/charts";
-import { Card, Seg, fmtOdd, usePref } from "../components/common";
+import { Card, DecimalInput, Seg, fmtOdd, usePref } from "../components/common";
 import { Login, useSession } from "../components/session";
 import { href } from "../router";
 
@@ -220,7 +220,6 @@ export function TradeForm({ value, onSave, onCancel, isNew, strategies = [] }: {
     upd({ mid: x.id, d: dayToIso(x.d), lg: leagueName(x.lg), m: `${teamName(x.h)} – ${teamName(x.a)}` });
     setSearch("");
   };
-  const num = (s: string) => Number(s.replace(",", "."));
   const pl = tradePL(t);
   const box = useRef<HTMLDivElement>(null);
   useEffect(() => { box.current?.scrollIntoView({ behavior: "smooth", block: "start" }); }, []);
@@ -245,12 +244,12 @@ export function TradeForm({ value, onSave, onCancel, isNew, strategies = [] }: {
           {!t.mkey && <input class="input" style="margin-top:6px" placeholder="Descrizione mercato" value={t.mk} onInput={(e) => upd({ mk: (e.target as HTMLInputElement).value })} />}
         </label>
         <label>Lato<Seg<"back" | "lay"> label="Lato" value={t.side} onChange={(v) => upd({ side: v })} options={[["back", "Back (punta)"], ["lay", "Lay (banca)"]]} /></label>
-        <label>Quota<input class="input" inputMode="decimal" value={String(t.q)} onInput={(e) => upd({ q: num((e.target as HTMLInputElement).value) })} /></label>
-        <label>Stake (€){t.side === "lay" && <small class="muted"> · rischio {(risk(t) || 0).toFixed(2).replace(".", ",")} €</small>}<input class="input" inputMode="decimal" value={String(t.s)} onInput={(e) => upd({ s: num((e.target as HTMLInputElement).value) })} /></label>
-        <label>Commissione %<input class="input" inputMode="decimal" value={String(t.comm)} onInput={(e) => upd({ comm: num((e.target as HTMLInputElement).value) })} /></label>
+        <label>Quota<DecimalInput class="input" placeholder="es. 2,50" value={t.q} onValue={(n) => upd({ q: n ?? 0 })} /></label>
+        <label>Stake (€){t.side === "lay" && <small class="muted"> · rischio {(risk(t) || 0).toFixed(2).replace(".", ",")} €</small>}<DecimalInput class="input" placeholder="es. 10" value={t.s} onValue={(n) => upd({ s: n ?? 0 })} /></label>
+        <label>Commissione %<DecimalInput class="input" value={t.comm} onValue={(n) => upd({ comm: n ?? 0 })} /></label>
         <label>Esito<select class="input" value={t.res} onChange={(e) => upd({ res: (e.target as HTMLSelectElement).value })}>{Object.entries(RES).map(([k, v]) => <option key={k} value={k}>{v}</option>)}</select></label>
         {t.res === "exit" && <Partial t={t} onChange={(v) => upd({ exitpl: v })} />}
-        <label>Quota di chiusura<input class="input" inputMode="decimal" placeholder="per il CLV" value={t.cl ? String(t.cl) : ""} onInput={(e) => upd({ cl: num((e.target as HTMLInputElement).value) || null })} /></label>
+        <label>Quota di chiusura<DecimalInput class="input" placeholder="per il CLV" value={t.cl} onValue={(n) => upd({ cl: n || null })} /></label>
         <label>Strategia<input class="input" list="ta-strategies" placeholder="es. Over 1° tempo" value={t.st ?? ""} onInput={(e) => upd({ st: (e.target as HTMLInputElement).value })} />
           <datalist id="ta-strategies">{strategies.map((x) => <option key={x} value={x} />)}</datalist></label>
         <label>Note<input class="input" value={t.n ?? ""} onInput={(e) => upd({ n: (e.target as HTMLInputElement).value })} /></label>
@@ -297,13 +296,12 @@ function Partial({ t, onChange }: { t: Trade; onChange: (v: number | null) => vo
 
 function Settings({ value, onSave }: { value: TradeSettings; onSave: (v: TradeSettings) => void }) {
   const [v, setV] = useState(value);
-  const n = (s: string) => Math.max(0, Number(s.replace(",", ".")) || 0);
   return (
     <Card title="Capitale e limiti">
       <div class="form-grid">
-        <label>Capitale iniziale (€)<input class="input" inputMode="decimal" value={String(v.cap)} onInput={(e) => setV({ ...v, cap: n((e.target as HTMLInputElement).value) })} /></label>
-        <label>Stake per trade (% del capitale)<input class="input" inputMode="decimal" value={String(v.pct)} onInput={(e) => setV({ ...v, pct: n((e.target as HTMLInputElement).value) })} /></label>
-        <label>Limite di perdita giornaliero (% del capitale)<input class="input" inputMode="decimal" value={String(v.dl)} onInput={(e) => setV({ ...v, dl: n((e.target as HTMLInputElement).value) })} /></label>
+        <label>Capitale iniziale (€)<DecimalInput class="input" value={v.cap} onValue={(x) => setV({ ...v, cap: Math.max(0, x ?? 0) })} /></label>
+        <label>Stake per trade (% del capitale)<DecimalInput class="input" value={v.pct} onValue={(x) => setV({ ...v, pct: Math.max(0, x ?? 0) })} /></label>
+        <label>Limite di perdita giornaliero (% del capitale)<DecimalInput class="input" value={v.dl} onValue={(x) => setV({ ...v, dl: Math.max(0, x ?? 0) })} /></label>
       </div>
       <div class="row" style="margin-top:10px"><button class="btn primary" type="button" onClick={() => onSave(v)}>Salva impostazioni</button></div>
     </Card>
